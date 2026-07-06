@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 热点舆情运营看板</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">T</span>
+        <div><strong>TrendOS</strong><small>AI CONTENT INTELLIGENCE</small></div>
+      </div>
+      <nav>
+        <button class="nav-item active" data-view="overview"><i></i>总览</button>
+        <button class="nav-item" data-view="pool"><i></i>实时热点池</button>
+        <button class="nav-item" data-view="trend"><i></i>趋势监测</button>
+        <button class="nav-item" data-view="alerts"><i></i>爆发预警</button>
+        <button class="nav-item" data-view="candidates"><i></i>运营候选</button>
+        <button class="nav-item" data-view="strategy"><i></i>数据复盘</button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="pulse"></span>
+        <div><strong>机器人监测中</strong><small>12 个数据源 · 15 分钟更新</small></div>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">AI CREATION · TREND OPERATIONS</p>
+          <h1>全球热点机会中心</h1>
+          <p class="subtitle">从海量信号中识别可模板化机会，驱动内容生产、分发与复盘 <span class="demo-label">演示数据</span></p>
+        </div>
+        <div class="header-actions">
+          <span class="updated">更新于 17:15</span>
+          <button id="refreshBtn" class="secondary">↻ 刷新数据</button>
+          <button id="candidateBtn" class="primary">查看运营候选 <span id="candidateCount">6</span></button>
+        </div>
+      </header>
+
+      <section class="filter-bar">
+        <label>地区<select id="regionFilter"></select></label>
+        <label>时间<select id="timeFilter"><option value="24h">近 24 小时</option><option value="7d">近 7 天</option><option value="30d">近 30 天</option></select></label>
+        <label>平台<select id="sourceFilter"></select></label>
+        <div class="filter-hint">筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化</div>
+      </section>
+
+      <section id="overviewView" class="view active">
+        <div class="metrics" id="metrics"></div>
+
+        <div class="dashboard-grid">
+          <article class="card trend-card">
+            <div class="card-head">
+              <div><h2>热点趋势</h2><p>近 24 小时有效热点热度变化</p></div>
+              <div class="legend"><i class="blue"></i>有效热点<i class="orange"></i>可转模板</div>
+            </div>
+            <svg id="trendChart" viewBox="0 0 780 280" role="img" aria-label="热点趋势折线图"></svg>
+          </article>
+
+          <article class="card alert-card">
+            <div class="card-head">
+              <div><h2>爆发预警</h2><p>按增速和跨平台共振识别</p></div>
+              <span class="badge danger">4 个高优先级</span>
+            </div>
+            <div id="alerts"></div>
+          </article>
+        </div>
+
+        <article class="card table-card">
+          <div class="card-head">
+            <div><h2>实时热点池</h2><p>按模板潜力排序，点击任意热点查看判断依据</p></div>
+            <div class="table-actions">
+              <button class="chip active" data-table="all">全部</button>
+              <button class="chip" data-table="predictable">可预测</button>
+              <button class="chip" data-table="realtime">实时</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>排名</th><th>热点事件</th><th>地区</th><th>主要来源</th><th>热度</th><th>24h 趋势</th><th>模板潜力</th><th>状态</th><th>运营动作</th></tr></thead>
+              <tbody id="hotspotRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card gallery-card">
+          <div class="card-head">
+            <div><p class="eyebrow">TEMPLATE OUTPUT</p><h2>热点转模板 · 样图预览</h2><p>来自原热点看板的真实样图资产，用于判断视觉符号和模板转化方向</p></div>
+            <div class="gallery-tools">
+              <span id="galleryCount" class="gallery-count"></span>
+              <button id="galleryPrev" class="gallery-arrow" aria-label="向左查看">←</button>
+              <button id="galleryNext" class="gallery-arrow" aria-label="向右查看">→</button>
+            </div>
+          </div>
+          <div id="visualGallery" class="visual-gallery"></div>
+        </article>
+      </section>
+
+      <section id="poolView" class="view">
+        <div class="section-intro">
+          <div><p class="eyebrow">REGIONAL POOL</p><h2>核心地区热点池</h2><p>印度 / 印尼 / EE1 / SSA / 南美优先建设区域内容资产</p></div>
+        </div>
+        <div id="regionCards" class="region-grid"></div>
+      </section>
+
+      <section id="strategyView" class="view">
+        <div class="section-intro">
+          <div><p class="eyebrow">CAPTURE STRATEGY</p><h2>热点抓取策略</h2><p>不追短线热闹，只保留能够进入 AIGC 工作流并沉淀为模板资产的话题</p></div>
+        </div>
+        <div class="strategy-grid">
+          <article class="strategy-card accent"><span>01</span><h3>抓取节奏</h3><strong>预测与实时双轨</strong><p>可预测热点提前 4–6 周准备，提前一周定模板，提前三天上线；实时热点由机器人定时监测。</p></article>
+          <article class="strategy-card"><span>02</span><h3>核心地区</h3><strong>区域热点池优先</strong><p>印度、印尼、EE1、SSA、南美建立独立热度基线，避免全球热度掩盖本地机会。</p></article>
+          <article class="strategy-card"><span>03</span><h3>平台来源</h3><strong>跨平台交叉验证</strong><p>X、TikTok、YouTube、Google Trends、Instagram、Facebook、本地平台、媒体与音乐榜。</p></article>
+          <article class="strategy-card"><span>04</span><h3>筛选标准</h3><strong>只留可模板化机会</strong><p>具备持续热度、强视觉符号、正向情绪、可个性化四项特征，才进入运营候选池。</p></article>
+        </div>
+        <article class="decision-flow card">
+          <div class="card-head"><div><h2>进入 AIGC 的决策漏斗</h2><p>每个环节都有明确的淘汰理由</p></div></div>
+          <div class="funnel">
+            <div><b>1,284</b><span>原始话题</span></div><i>→</i>
+            <div><b>326</b><span>持续热点</span></div><i>→</i>
+            <div><b>86</b><span>视觉符号明确</span></div><i>→</i>
+            <div><b>38</b><span>可个性化</span></div><i>→</i>
+            <div class="selected"><b>16</b><span>进入模板生产</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  <aside id="detailDrawer" class="drawer">
+    <button id="closeDrawer" class="close">×</button>
+    <div id="drawerContent"></div>
+  </aside>
+  <dialog id="previewModal" class="preview-modal">
+    <button id="closePreview" class="preview-close">×</button>
+    <img id="previewImage" alt="样图大图预览">
+    <div id="previewCaption"></div>
+  </dialog>
+  <div id="toast" class="toast">数据已更新</div>
+  <script src="./app.js"></script>
+</body>
+</html>
