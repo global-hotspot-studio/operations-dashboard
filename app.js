@@ -17,6 +17,11 @@ const regionStats={
  "撒哈拉以南非洲":{count:47,growth:31,countries:["尼日利亚","南非","加纳","肯尼亚"],top:["城市时尚周","非洲音乐节","传统纹样"]},
  "南美洲":{count:78,growth:36,countries:["巴西","阿根廷","哥伦比亚","智利","秘鲁"],top:["世界杯淘汰赛","嘉年华色彩","拉美街头艺术"]}
 };
+const fusionStyles=[
+ {id:101,preview:"./assets/fusion-fashion-city.png",previewTitle:"三图融合｜人物 × 穿搭 × 城市",previewMeta:"南美 · 写实人像 · 城市时尚",prompt:"使用三张参考图：人物自拍、钴蓝与珊瑚色穿搭、圣保罗彩色街头背景。保持人物身份与五官一致，将服装和背景自然融合，统一日光方向、肤色、透视和景深，生成 9:16 高级时尚摄影锁屏壁纸，顶部留出时钟区域，无文字、无品牌标识。"},
+ {id:102,preview:"./assets/fusion-diwali-frame.png",previewTitle:"双图融合｜人物 × 节日框景",previewMeta:"印度 · 纸雕风格 · 节日限定",prompt:"使用两张参考图：人物肖像和排灯节纸雕装饰框。保持人物身份与姿态自然，将人物嵌入油灯、万寿菊和曼陀罗组成的节日框景，转化为有真实纸张层次的高级纸雕插画，9:16 锁屏构图，藏红花、洋红、深靛蓝与金色，无文字。"},
+ {id:103,preview:"./assets/fusion-pet-city.png",previewTitle:"三图融合｜人物 × 宠物 × 场景",previewMeta:"非洲 · 宠物合照 · 城市生活",prompt:"使用三张参考图：人物肖像、宠物照片和拉各斯日落屋顶背景。保持人物与宠物特征一致，让互动姿态自然，统一暖色轮廓光、视角和阴影；为人物融合靛蓝铜色几何纹样服装，生成 9:16 高级生活方式摄影壁纸，顶部留出时钟区域，无文字、无品牌标识。"}
+];
 let state={region:"全球",source:"全部平台",table:"all"};
 const $=s=>document.querySelector(s);
 const $$=s=>[...document.querySelectorAll(s)];
@@ -69,6 +74,15 @@ function renderGallery(){
   </div>
  </article>`).join("");
 }
+function renderFusionGallery(){
+ $("#fusionGallery").innerHTML=fusionStyles.map(h=>`<article class="visual-card">
+  <button class="visual-preview" data-preview="${h.preview}" data-caption="${h.previewTitle}" aria-label="预览${h.previewTitle}"><img src="${h.preview}" alt="${h.previewTitle}"></button>
+  <div class="visual-info"><b>${h.previewTitle}</b><small>${h.previewMeta}</small>
+   <div class="prompt-block"><span>多图融合提示词</span><p>${h.prompt}</p></div>
+   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${h.id}">复制提示词</button><a href="${h.preview}" download="${h.preview.split("/").pop()}">下载原图</a></div>
+  </div>
+ </article>`).join("");
+}
 function openDrawer(id){
  const h=hotspots.find(x=>x.id===Number(id)); if(!h)return;
  $("#drawerContent").innerHTML=`<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type==="predictable"?"可预测热点":"实时热点"}</p><div class="drawer-score"><div><small>综合评分</small><b>${h.score}</b></div><div><small>24h 增速</small><b class="up">+${h.trend}%</b></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p><h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected?"已加入运营候选":"加入候选并转模板"}</button>`;
@@ -79,7 +93,7 @@ function toggleCandidate(id){
  const h=hotspots.find(x=>x.id===Number(id));h.selected=!h.selected;renderAll();openDrawer(id);showToast(h.selected?"已加入运营候选":"已移出运营候选");
 }
 function showToast(text){const t=$("#toast");t.textContent=text;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1500)}
-function renderAll(){renderMetrics();renderChart();renderAlerts();renderTable();renderRegions();renderGallery()}
+function renderAll(){renderMetrics();renderChart();renderAlerts();renderTable();renderRegions();renderGallery();renderFusionGallery()}
 function bind(){
  $("#regionFilter").onchange=e=>{state.region=e.target.value;renderAll()};
  $("#sourceFilter").onchange=e=>{state.source=e.target.value;renderAll()};
@@ -96,12 +110,14 @@ function bind(){
   else window.scrollTo({top:0,behavior:"smooth"});
  });
  $$(".chip").forEach(b=>b.onclick=()=>{$$(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");state.table=b.dataset.table;renderTable()});
- document.addEventListener("click",async e=>{const row=e.target.closest("tr[data-id],.alert[data-id]");const preview=e.target.closest("[data-preview]");const copy=e.target.closest("[data-copy-id]");if(row&&!e.target.dataset.action)openDrawer(row.dataset.id);if(preview){$("#previewImage").src=preview.dataset.preview;$("#previewCaption").textContent=preview.dataset.caption;$("#previewModal").showModal()}if(copy){const h=hotspots.find(x=>x.id===Number(copy.dataset.copyId));try{await navigator.clipboard.writeText(h.prompt)}catch{const area=document.createElement("textarea");area.value=h.prompt;document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()}copy.textContent="已复制";showToast("提示词已复制，可直接粘贴使用");setTimeout(()=>copy.textContent="复制提示词",1300)}if(e.target.dataset.action){e.stopPropagation();toggleCandidate(e.target.dataset.action)}});
+ document.addEventListener("click",async e=>{const row=e.target.closest("tr[data-id],.alert[data-id]");const preview=e.target.closest("[data-preview]");const copy=e.target.closest("[data-copy-id]");if(row&&!e.target.dataset.action)openDrawer(row.dataset.id);if(preview){$("#previewImage").src=preview.dataset.preview;$("#previewCaption").textContent=preview.dataset.caption;$("#previewModal").showModal()}if(copy){const h=[...hotspots,...fusionStyles].find(x=>x.id===Number(copy.dataset.copyId));try{await navigator.clipboard.writeText(h.prompt)}catch{const area=document.createElement("textarea");area.value=h.prompt;document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()}copy.textContent="已复制";showToast("提示词已复制，可直接粘贴使用");setTimeout(()=>copy.textContent="复制提示词",1300)}if(e.target.dataset.action){e.stopPropagation();toggleCandidate(e.target.dataset.action)}});
  $("#closeDrawer").onclick=closeDrawer;$("#drawerBackdrop").onclick=closeDrawer;
  $("#refreshBtn").onclick=()=>{showToast("数据已更新 · 17:16");$("#refreshBtn").textContent="✓ 已更新";setTimeout(()=>$("#refreshBtn").textContent="↻ 刷新数据",1300)};
  $("#candidateBtn").onclick=()=>{state.table="all";$(".nav-item[data-view='overview']").click();showToast(`当前 ${hotspots.filter(x=>x.selected).length} 个运营候选`)};
  $("#galleryPrev").onclick=()=>$("#visualGallery").scrollBy({left:-260,behavior:"smooth"});
  $("#galleryNext").onclick=()=>$("#visualGallery").scrollBy({left:260,behavior:"smooth"});
+ $("#fusionPrev").onclick=()=>$("#fusionGallery").scrollBy({left:-306,behavior:"smooth"});
+ $("#fusionNext").onclick=()=>$("#fusionGallery").scrollBy({left:306,behavior:"smooth"});
  $("#closePreview").onclick=()=>$("#previewModal").close();
 }
 initSelects();bind();renderAll();
