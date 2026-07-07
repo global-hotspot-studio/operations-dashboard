@@ -22,6 +22,8 @@ jobs:
 
       - name: Refresh hotspot data
         run: node scripts/update-hotspots.js
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
