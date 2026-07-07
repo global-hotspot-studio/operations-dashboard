@@ -14,7 +14,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const dataPath = path.join(root, "data", "dashboard.json");
-const youtubeApiKey = process.env.YOUTUBE_API_KEY;
+const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 
 const youtubeMarkets = [
   { code: "IN", country: "印度", region: "印度" },
