@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "mode": "定时更新",
+  "generatedAt": "2026-07-07T03:57:06.853Z",
+  "cadence": "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。",
+  "regions": [
+    "全球",
+    "印度",
+    "印度尼西亚",
+    "俄罗斯（东欧）",
+    "撒哈拉以南非洲",
+    "南美洲"
+  ],
+  "sources": [
+    "全部平台",
+    "TikTok",
+    "YouTube",
+    "Google Trends",
+    "Instagram",
+    "X",
+    "Facebook",
+    "本地平台"
+  ],
+  "summary": {
+    "rawTopics": 1314,
+    "effectiveHotspots": 334,
+    "highPriorityAlerts": 2,
+    "templateCandidates": 5,
+    "rawDelta": 25,
+    "effectiveRate": "25.4%"
+  },
+  "trendSeries": {
+    "labels": [
+      "00:00",
+      "02:00",
+      "04:00",
+      "06:00",
+      "08:00",
+      "10:00",
+      "12:00",
+      "14:00",
+      "16:00",
+      "18:00",
+      "20:00",
+      "22:00"
+    ],
+    "effective": [
+      34,
+      52,
+      37,
+      69,
+      55,
+      71,
+      90,
+      71,
+      103,
+      99,
+      120,
+      128
+    ],
+    "template": [
+      9,
+      14,
+      8,
+      22,
+      18,
+      28,
+      33,
+      32,
+      45,
+      44,
+      55,
+      61
+    ]
+  },
+  "hotspots": [
+    {
+      "id": 1,
+      "name": "世界杯淘汰赛",
+      "region": "南美洲",
+      "country": "阿根廷 / 巴西",
+      "source": [
+        "X",
+        "Google Trends"
+      ],
+      "heat": "2.5M",
+      "trend": 71,
+      "score": 95,
+      "status": "爆发",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/worldcup_argentina_victory.png",
+      "previewTitle": "阿根廷｜胜利身份大片",
+      "previewMeta": "南美洲 · 世界杯 · 人像封面",
+      "prompt": "9:16 手机锁屏壁纸，成年阿根廷年轻男性球迷站在夜间足球场，蓝白围巾与脸部彩绘，手放心口，蓝白金色纸屑，胜利后的克制喜悦，高级体育杂志摄影，真实肤质，顶部留出时钟区域，无文字、无品牌标识。",
+      "reason": "强烈的国家情绪与应援视觉符号，适合生成球衣色、国旗色和漫画应援主题。"
+    },
+    {
+      "id": 2,
+      "name": "排灯节视觉季",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Instagram",
+        "本地平台"
+      ],
+      "heat": "1.8M",
+      "trend": 42,
+      "score": 91,
+      "status": "上升",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/diwali_template.png",
+      "previewTitle": "印度｜排灯节金色肖像",
+      "previewMeta": "印度 · 节日文化 · 金色纹样",
+      "prompt": "9:16 手机锁屏壁纸，成年印度女性身着优雅藏红花色传统服饰，置身排灯节真实家庭场景，油灯、万寿菊与曼陀罗光影，金色暖光，高级人像摄影，细腻真实，构图简洁，顶部留出时钟区域，无文字、无品牌标识。",
+      "reason": "可提前准备，灯光、曼陀罗和金色纹样具有明确视觉资产价值。"
+    },
+    {
+      "id": 3,
+      "name": "夏日音乐节",
+      "region": "俄罗斯（东欧）",
+      "country": "俄罗斯",
+      "source": [
+        "TikTok",
+        "YouTube"
+      ],
+      "heat": "922K",
+      "trend": 35,
+      "score": 85,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "reason": "持续时间较长，舞台灯光、音乐人物和年轻情绪适合动态壁纸。"
+    },
+    {
+      "id": 4,
+      "name": "嘉年华街头色彩",
+      "region": "南美洲",
+      "country": "巴西 / 哥伦比亚",
+      "source": [
+        "Instagram",
+        "TikTok"
+      ],
+      "heat": "873K",
+      "trend": 41,
+      "score": 92,
+      "status": "上升",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/carnival_template.png",
+      "previewTitle": "巴西｜嘉年华街头色彩",
+      "previewMeta": "南美洲 · 城市时尚 · 高饱和色彩",
+      "prompt": "9:16 手机锁屏壁纸，28 岁巴西女性穿钴蓝西装与珊瑚色长裙，站在圣保罗现代街区，青绿、珊瑚、蓝色与暖黄色几何节庆装置，高级拉美时尚大片，阳光自然，色彩鲜明但克制，无文字、无品牌标识。",
+      "reason": "鲜明服饰和高饱和色彩可快速转成多风格模板。"
+    },
+    {
+      "id": 5,
+      "name": "本地偶像新歌发布",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "YouTube",
+        "本地平台"
+      ],
+      "heat": "670K",
+      "trend": 21,
+      "score": 75,
+      "status": "观察",
+      "type": "realtime",
+      "selected": false,
+      "reason": "热度较高，但版权与肖像风险需要进一步审核。"
+    },
+    {
+      "id": 6,
+      "name": "非洲城市时尚周",
+      "region": "撒哈拉以南非洲",
+      "country": "尼日利亚 / 南非 / 加纳 / 肯尼亚",
+      "source": [
+        "Instagram",
+        "Facebook"
+      ],
+      "heat": "655K",
+      "trend": 37,
+      "score": 88,
+      "status": "上升",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/africa_fashion_template.png",
+      "previewTitle": "尼日利亚｜城市时尚大片",
+      "previewMeta": "非洲 · 高级时装 · 几何纹样",
+      "prompt": "9:16 手机锁屏壁纸，29 岁非洲女性身着靛蓝与铜色几何纹样高级时装，站在拉各斯现代建筑前，西非织物灵感与城市建筑融合，奢华杂志摄影，真实肤质与面料，电影感自然光，无文字、无品牌标识。",
+      "reason": "服饰纹样、城市文化和正向情绪具备模板化空间。"
+    },
+    {
+      "id": 7,
+      "name": "雨季治愈氛围",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "TikTok",
+        "Google Trends"
+      ],
+      "heat": "495K",
+      "trend": 16,
+      "score": 81,
+      "status": "观察",
+      "type": "realtime",
+      "selected": false,
+      "reason": "持续性较好，可转成动态雨滴和治愈系锁屏。"
+    },
+    {
+      "id": 8,
+      "name": "板球决赛应援",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "X",
+        "YouTube"
+      ],
+      "heat": "1.2M",
+      "trend": 55,
+      "score": 92,
+      "status": "爆发",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/cricket_template.png",
+      "previewTitle": "印度｜板球决赛应援",
+      "previewMeta": "印度 · 体育赛事 · 蓝金氛围",
+      "prompt": "9:16 手机锁屏壁纸，27 岁印度女性球迷身着皇家蓝外套，在现代板球场自信欢呼，蓝色光带与少量金色纸屑，蓝金应援氛围，高级体育广告摄影，活力但不杂乱，顶部留出时钟区域，无文字、无球队标识。",
+      "reason": "赛事节点明确，可提前定模板并在赛前三天上线。"
+    }
+  ],
+  "regionStats": {
+    "印度": {
+      "count": 93,
+      "growth": 32,
+      "countries": [
+        "印度"
+      ],
+      "top": [
+        "排灯节视觉季",
+        "板球决赛应援",
+        "宝莱坞复古风"
+      ]
+    },
+    "印度尼西亚": {
+      "count": 70,
+      "growth": 19,
+      "countries": [
+        "印度尼西亚"
+      ],
+      "top": [
+        "本地偶像新歌",
+        "雨季治愈氛围",
+        "开斋节穿搭"
+      ]
+    },
+    "俄罗斯（东欧）": {
+      "count": 44,
+      "growth": 19,
+      "countries": [
+        "俄罗斯"
+      ],
+      "top": [
+        "夏日音乐节",
+        "城市霓虹夜",
+        "足球漫画"
+      ]
+    },
+    "撒哈拉以南非洲": {
+      "count": 52,
+      "growth": 31,
+      "countries": [
+        "尼日利亚",
+        "南非",
+        "加纳",
+        "肯尼亚"
+      ],
+      "top": [
+        "城市时尚周",
+        "非洲音乐节",
+        "传统纹样"
+      ]
+    },
+    "南美洲": {
+      "count": 76,
+      "growth": 35,
+      "countries": [
+        "巴西",
+        "阿根廷",
+        "哥伦比亚",
+        "智利",
+        "秘鲁"
+      ],
+      "top": [
+        "世界杯淘汰赛",
+        "嘉年华色彩",
+        "拉美街头艺术"
+      ]
+    }
+  },
+  "fusionStyles": [
+    {
+      "id": 101,
+      "preview": "./assets/fusion-fashion-city.png",
+      "previewTitle": "三图融合｜人物 × 穿搭 × 城市",
+      "previewMeta": "南美 · 写实人像 · 城市时尚",
+      "prompt": "使用三张参考图：人物自拍、钴蓝与珊瑚色穿搭、圣保罗彩色街头背景。保持人物身份与五官一致，将服装和背景自然融合，统一日光方向、肤色、透视和景深，生成 9:16 高级时尚摄影锁屏壁纸，顶部留出时钟区域，无文字、无品牌标识。"
+    },
+    {
+      "id": 102,
+      "preview": "./assets/fusion-diwali-frame.png",
+      "previewTitle": "双图融合｜人物 × 节日框景",
+      "previewMeta": "印度 · 纸雕风格 · 节日限定",
+      "prompt": "使用两张参考图：人物肖像和排灯节纸雕装饰框。保持人物身份与姿态自然，将人物嵌入油灯、万寿菊和曼陀罗组成的节日框景，转化为有真实纸张层次的高级纸雕插画，9:16 锁屏构图，藏红花、洋红、深靛蓝与金色，无文字。"
+    },
+    {
+      "id": 103,
+      "preview": "./assets/fusion-pet-city.png",
+      "previewTitle": "三图融合｜人物 × 宠物 × 场景",
+      "previewMeta": "非洲 · 宠物合照 · 城市生活",
+      "prompt": "使用三张参考图：人物肖像、宠物照片和拉各斯日落屋顶背景。保持人物与宠物特征一致，让互动姿态自然，统一暖色轮廓光、视角和阴影；为人物融合靛蓝铜色几何纹样服装，生成 9:16 高级生活方式摄影壁纸，顶部留出时钟区域，无文字、无品牌标识。"
+    }
+  ],
+  "strategyCards": [
+    {
+      "index": "01",
+      "title": "抓取节奏",
+      "subtitle": "预测与实时双轨",
+      "body": "可预测热点提前 4–6 周准备，提前一周定模板，提前三天上线；实时热点由机器人定时监测。"
+    },
+    {
+      "index": "02",
+      "title": "核心地区",
+      "subtitle": "区域热点池优先",
+      "body": "印度、印尼、EE1、SSA、南美建立独立热度基线，避免全球热度掩盖本地机会。"
+    },
+    {
+      "index": "03",
+      "title": "平台来源",
+      "subtitle": "跨平台交叉验证",
+      "body": "X、TikTok、YouTube、Google Trends、Instagram、Facebook、本地平台、媒体与音乐榜。"
+    },
+    {
+      "index": "04",
+      "title": "筛选标准",
+      "subtitle": "只留可模板化机会",
+      "body": "具备持续热度、强视觉符号、正向情绪、可个性化四项特征，才进入运营候选池。"
+    }
+  ],
+  "funnel": [
+    {
+      "value": "1,284",
+      "label": "原始话题"
+    },
+    {
+      "value": "326",
+      "label": "持续热点"
+    },
+    {
+      "value": "86",
+      "label": "视觉符号明确"
+    },
+    {
+      "value": "38",
+      "label": "可个性化"
+    },
+    {
+      "value": "16",
+      "label": "进入模板生产",
+      "selected": true
+    }
+  ]
+}

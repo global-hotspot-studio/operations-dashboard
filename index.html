@@ -32,11 +32,11 @@
         <div>
           <p class="eyebrow">AI CREATION · TREND OPERATIONS</p>
           <h1>全球热点机会中心</h1>
-          <p class="subtitle">从海量信号中识别可模板化机会，驱动内容生产、分发与复盘 <span class="demo-label">演示数据</span></p>
+          <p class="subtitle">从海量信号中识别可模板化机会，驱动内容生产、分发与复盘 <span id="dataMode" class="demo-label">定时更新</span></p>
         </div>
         <div class="header-actions">
-          <span class="updated">更新于 17:15</span>
-          <button id="refreshBtn" class="secondary">↻ 刷新数据</button>
+          <span id="lastUpdated" class="updated">读取数据中…</span>
+          <button id="refreshBtn" class="secondary">↻ 拉取最新</button>
           <button id="candidateBtn" class="primary">查看运营候选 <span id="candidateCount">6</span></button>
         </div>
       </header>
@@ -45,7 +45,7 @@
         <label>地区<select id="regionFilter"></select></label>
         <label>时间<select id="timeFilter"><option value="24h">近 24 小时</option><option value="7d">近 7 天</option><option value="30d">近 30 天</option></select></label>
         <label>平台<select id="sourceFilter"></select></label>
-        <div class="filter-hint">筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化</div>
+        <div id="liveStatus" class="filter-hint">筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化</div>
       </section>
 
       <section id="overviewView" class="view active">
