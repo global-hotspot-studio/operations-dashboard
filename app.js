@@ -103,7 +103,16 @@ function renderAlerts() {
   $("#alerts").innerHTML = hotspots
     .filter(h => h.status !== "观察")
     .slice(0, 4)
-    .map(h => `<div class="alert" data-id="${h.id}"><div><strong>${h.name}</strong><small>${h.region} · ${h.source.join(" + ")}</small></div><span class="score">${h.score}</span></div>`)
+    .map(h => `<div class="alert" data-id="${h.id}">
+      <div class="alert-main">
+        <strong>${h.name}</strong>
+        <div class="alert-meta">
+          <span class="region-pill">${h.region}</span>
+          <span>${h.source.join(" + ")}</span>
+        </div>
+      </div>
+      <span class="score">${h.score}</span>
+    </div>`)
     .join("");
 }
 
