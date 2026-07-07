@@ -65,6 +65,36 @@ function filtered() {
   );
 }
 
+function escapeAttr(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function getPlatformUrl(h, source) {
+  if (source === "YouTube" && h.youtube?.url) return h.youtube.url;
+  if (source === "Instagram" && h.instagram?.url) return h.instagram.url;
+  if (source === "TikTok" && h.tiktok?.url) return h.tiktok.url;
+  if (source === "Google Trends" && h.trends?.url) return h.trends.url;
+  if (source === "Facebook" && h.facebook?.url) return h.facebook.url;
+  return "";
+}
+
+function getPrimarySource(h) {
+  const source = h.source.find(s => getPlatformUrl(h, s));
+  return source ? { source, url: getPlatformUrl(h, source) } : { source: h.source[0] || "待接入", url: "" };
+}
+
+function sourceTags(h) {
+  return h.source.map(source => {
+    const url = getPlatformUrl(h, source);
+    if (!url) return `<span class="source-pill pending" title="${source} 暂未接入真实跳转">${source}</span>`;
+    return `<a class="source-pill source-link" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer" title="打开 ${source} 原始内容">${source} ↗</a>`;
+  }).join("");
+}
+
 function renderMetrics() {
   const list = filtered();
   const selected = list.filter(x => x.selected).length;
@@ -118,7 +148,7 @@ function renderAlerts() {
 
 function renderTable() {
   const list = filtered();
-  $("#hotspotRows").innerHTML = list.map((h, i) => `<tr data-id="${h.id}"><td class="rank">${String(i + 1).padStart(2, "0")}</td><td class="event-name">${h.name}</td><td><b>${h.region}</b><small class="country-line">${h.country || h.region}</small></td><td class="source-tags">${h.source.map(s => `<span>${s}</span>`).join("")}</td><td>${h.heat}</td><td class="trend-up">↑ ${h.trend}%</td><td><div class="potential"><div class="potential-bar"><i style="width:${h.score}%"></i></div><b>${h.score}</b></div></td><td><span class="status ${h.status === "爆发" ? "burst" : h.status === "上升" ? "rising" : "watch"}">${h.status}</span></td><td><button class="action-btn ${h.selected ? "selected" : ""}" data-action="${h.id}">${h.selected ? "已入选" : "加入候选"}</button></td></tr>`).join("") || `<tr><td colspan="9" style="text-align:center;color:#8b97a8;padding:40px">当前筛选条件下暂无热点</td></tr>`;
+  $("#hotspotRows").innerHTML = list.map((h, i) => `<tr data-id="${h.id}"><td class="rank">${String(i + 1).padStart(2, "0")}</td><td class="event-name">${h.name}</td><td><b>${h.region}</b><small class="country-line">${h.country || h.region}</small></td><td class="source-tags">${sourceTags(h)}</td><td>${h.heat}</td><td class="trend-up">↑ ${h.trend}%</td><td><div class="potential"><div class="potential-bar"><i style="width:${h.score}%"></i></div><b>${h.score}</b></div></td><td><span class="status ${h.status === "爆发" ? "burst" : h.status === "上升" ? "rising" : "watch"}">${h.status}</span></td><td><button class="action-btn ${h.selected ? "selected" : ""}" data-action="${h.id}">${h.selected ? "已入选" : "加入候选"}</button></td></tr>`).join("") || `<tr><td colspan="9" style="text-align:center;color:#8b97a8;padding:40px">当前筛选条件下暂无热点</td></tr>`;
 }
 
 function renderRegions() {
@@ -156,7 +186,16 @@ function renderStrategy() {
 
 function openDrawer(id) {
   const h = hotspots.find(x => x.id === Number(id)); if (!h) return;
-  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p><div class="drawer-score"><div><small>综合评分</small><b>${h.score}</b></div><div><small>24h 增速</small><b class="up">+${h.trend}%</b></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p><h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
+  const primary = getPrimarySource(h);
+  const sourceCard = primary.url
+    ? `<a class="drawer-source-card" href="${escapeAttr(primary.url)}" target="_blank" rel="noopener noreferrer">
+        ${h.youtube?.thumbnail ? `<img src="${escapeAttr(h.youtube.thumbnail)}" alt="${escapeAttr(h.name)} 原始封面">` : ""}
+        <div><small>真实来源</small><b>打开 ${primary.source} 原始内容</b><span>${h.youtube?.channelTitle || "点击跳转到平台原页面"}</span></div><i>↗</i>
+      </a>`
+    : `<div class="drawer-source-card disabled">
+        <div><small>真实来源</small><b>${primary.source} 待接入真实链接</b><span>该平台还未完成 API/来源链接接入，暂不伪造跳转。</span></div>
+      </div>`;
+  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>综合评分</small><b>${h.score}</b></div><div><small>24h 增速</small><b class="up">+${h.trend}%</b></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p><h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
   $("#detailDrawer").classList.add("open"); $("#drawerBackdrop").classList.add("open");
 }
 
@@ -196,6 +235,7 @@ function bind() {
   });
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {
+    if (e.target.closest("a")) return;
     const row = e.target.closest("tr[data-id],.alert[data-id]");
     const preview = e.target.closest("[data-preview]");
     const copy = e.target.closest("[data-copy-id]");
