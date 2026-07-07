@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-07T08:25:00.786Z",
+  "generatedAt": "2026-07-07T09:27:53.804Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -22,12 +22,12 @@
     "本地平台"
   ],
   "summary": {
-    "rawTopics": 1482,
-    "effectiveHotspots": 400,
-    "highPriorityAlerts": 16,
-    "templateCandidates": 18,
+    "rawTopics": 1440,
+    "effectiveHotspots": 386,
+    "highPriorityAlerts": 24,
+    "templateCandidates": 24,
     "rawDelta": 42,
-    "effectiveRate": "27.1%"
+    "effectiveRate": "27%"
   },
   "trendSeries": {
     "labels": [
@@ -45,32 +45,32 @@
       "22:00"
     ],
     "effective": [
+      30,
+      76,
       23,
-      82,
-      20,
-      72,
-      71,
-      44,
-      123,
-      45,
+      73,
+      67,
+      50,
       116,
-      103,
-      101,
-      151
+      50,
+      114,
+      102,
+      106,
+      144
     ],
     "template": [
-      11,
-      34,
-      5,
-      32,
+      14,
+      31,
+      8,
+      31,
       25,
-      22,
-      51,
-      19,
+      25,
+      48,
+      23,
+      54,
+      42,
       56,
-      41,
-      55,
-      74
+      72
     ]
   },
   "hotspots": [
@@ -83,9 +83,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "10.7M",
-      "trend": 69,
-      "score": 96,
+      "heat": "10.8M",
+      "trend": 66,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -93,7 +93,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'I LIKE IT' M/V》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 11.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 11.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "9cS2wv6AfHk",
         "channelTitle": "BABYMONSTER",
@@ -103,7 +103,56 @@
       }
     },
     {
-      "id": 1001,
+      "id": 4,
+      "name": "嘉年华街头色彩",
+      "region": "南美洲",
+      "country": "巴西 / 哥伦比亚",
+      "source": [
+        "Instagram",
+        "TikTok"
+      ],
+      "heat": "1.0M",
+      "trend": 65,
+      "score": 95,
+      "status": "爆发",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/carnival_template.png",
+      "previewTitle": "巴西｜嘉年华街头色彩",
+      "previewMeta": "南美洲 · 城市时尚 · 高饱和色彩",
+      "prompt": "9:16 手机锁屏壁纸，28 岁巴西女性穿钴蓝西装与珊瑚色长裙，站在圣保罗现代街区，青绿、珊瑚、蓝色与暖黄色几何节庆装置，高级拉美时尚大片，阳光自然，色彩鲜明但克制，无文字、无品牌标识。",
+      "reason": "鲜明服饰和高饱和色彩可快速转成多风格模板。"
+    },
+    {
+      "id": 1002,
+      "name": "MY FRIEND GOT KIDNAPPE…",
+      "originalTitle": "MY FRIEND GOT KIDNAPPED | GTA GAMEPLAY #170",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "8.0M",
+      "trend": 63,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《MY FRIEND GOT KIDNAPPED | GTA GAMEPLAY #170》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 8.4M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "Z2XKA-wQjac",
+        "channelTitle": "Techno Gamerz",
+        "publishedAt": "2026-07-05T11:41:38Z",
+        "thumbnail": "https://i.ytimg.com/vi/Z2XKA-wQjac/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Z2XKA-wQjac"
+      }
+    },
+    {
+      "id": 1003,
       "name": "Joe | Official Trailer",
       "originalTitle": "Joe | Official Trailer",
       "region": "撒哈拉以南非洲",
@@ -111,8 +160,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "6.0M",
-      "trend": 68,
+      "heat": "6.1M",
+      "trend": 70,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -131,7 +180,7 @@
       }
     },
     {
-      "id": 1002,
+      "id": 1004,
       "name": "SPIDER-MAN: BRAND NEW …",
       "originalTitle": "SPIDER-MAN: BRAND NEW DAY – New Trailer (4K)",
       "region": "撒哈拉以南非洲",
@@ -139,8 +188,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "29.4M",
-      "trend": 72,
+      "heat": "29.0M",
+      "trend": 70,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -149,7 +198,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《SPIDER-MAN: BRAND NEW DAY – New Trailer (4K)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 28.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 28.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "62bIsvRcPv0",
         "channelTitle": "Sony Pictures Entertainment",
@@ -159,74 +208,25 @@
       }
     },
     {
-      "id": 4,
-      "name": "嘉年华街头色彩",
-      "region": "南美洲",
-      "country": "巴西 / 哥伦比亚",
-      "source": [
-        "Instagram",
-        "TikTok"
-      ],
-      "heat": "1.1M",
-      "trend": 71,
-      "score": 98,
-      "status": "爆发",
-      "type": "predictable",
-      "selected": true,
-      "preview": "./assets/carnival_template.png",
-      "previewTitle": "巴西｜嘉年华街头色彩",
-      "previewMeta": "南美洲 · 城市时尚 · 高饱和色彩",
-      "prompt": "9:16 手机锁屏壁纸，28 岁巴西女性穿钴蓝西装与珊瑚色长裙，站在圣保罗现代街区，青绿、珊瑚、蓝色与暖黄色几何节庆装置，高级拉美时尚大片，阳光自然，色彩鲜明但克制，无文字、无品牌标识。",
-      "reason": "鲜明服饰和高饱和色彩可快速转成多风格模板。"
-    },
-    {
-      "id": 1004,
-      "name": "MY FRIEND GOT KIDNAPPE…",
-      "originalTitle": "MY FRIEND GOT KIDNAPPED | GTA GAMEPLAY #170",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "8.9M",
-      "trend": 74,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《MY FRIEND GOT KIDNAPPED | GTA GAMEPLAY #170》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 8.3M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "Z2XKA-wQjac",
-        "channelTitle": "Techno Gamerz",
-        "publishedAt": "2026-07-05T11:41:38Z",
-        "thumbnail": "https://i.ytimg.com/vi/Z2XKA-wQjac/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=Z2XKA-wQjac"
-      }
-    },
-    {
       "id": 1005,
       "name": "i-dle (아이들) 'Gimme Dat…",
       "originalTitle": "i-dle (아이들) 'Gimme Dat Love' Official Music Video",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
+      "region": "南美洲",
+      "country": "巴西",
       "source": [
         "YouTube"
       ],
-      "heat": "2.4M",
-      "trend": 61,
-      "score": 95,
+      "heat": "2.6M",
+      "trend": 57,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 俄罗斯 热门内容《i-dle (아이들) 'Gimme Dat Love' Official Music Video》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 俄罗斯 热门榜，播放量 2.6M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 巴西 热门内容《i-dle (아이들) 'Gimme Dat Love' Official Music Video》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 巴西 热门榜，播放量 2.7M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "FFjDEkZg-54",
         "channelTitle": "i-dle (아이들)",
@@ -244,8 +244,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "2.7M",
-      "trend": 65,
+      "heat": "2.8M",
+      "trend": 69,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -272,9 +272,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "450K",
-      "trend": 62,
-      "score": 98,
+      "heat": "419K",
+      "trend": 54,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -282,7 +282,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 哥伦比亚 热门内容《KRIS R - 4LIFE ❤️‍🔥(VIDEO OFICIAL)》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 哥伦比亚 热门榜，播放量 446K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 哥伦比亚 热门榜，播放量 450K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "bslNoCMejnw",
         "channelTitle": "Kris R.",
@@ -300,9 +300,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "540K",
-      "trend": 56,
-      "score": 96,
+      "heat": "622K",
+      "trend": 65,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -310,7 +310,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Pinaka Teaser | Golden Megastar Ganesh | B Dhananjaya | TG Vishwa Prasad | Krithi Prasad |Gowra Hari》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 563K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 592K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "qSinkXC6GBY",
         "channelTitle": "People Media Factory",
@@ -328,8 +328,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "947K",
-      "trend": 67,
+      "heat": "879K",
+      "trend": 59,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -338,7 +338,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 巴西 热门内容《O MEU FILHO DESAPARECEU NO MINECRAFT E ERA MELHOR NÃO TER IDO ATRÁS DELE...》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 巴西 热门榜，播放量 885K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 巴西 热门榜，播放量 888K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "Hh_SGYiChGY",
         "channelTitle": "Jazzghost",
@@ -356,9 +356,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "864K",
-      "trend": 53,
-      "score": 95,
+      "heat": "929K",
+      "trend": 58,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -366,7 +366,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 阿根廷 热门内容《Atrapado por CHICA TIBURÓN en Minecraft!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 阿根廷 热门榜，播放量 929K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 阿根廷 热门榜，播放量 948K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "oFcYiIDR7nU",
         "channelTitle": "Dagar",
@@ -412,9 +412,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "264K",
-      "trend": 58,
-      "score": 97,
+      "heat": "251K",
+      "trend": 53,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -422,7 +422,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《ALEX KASAU KATOMBI-KIWANZA(OFFICIAL AUDIO)》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 269K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 270K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "eYEs9V8MDyY",
         "channelTitle": "Alex Kasau Katombi",
@@ -440,9 +440,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.4M",
-      "trend": 57,
-      "score": 97,
+      "heat": "1.5M",
+      "trend": 65,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -460,6 +460,130 @@
       }
     },
     {
+      "id": 1014,
+      "name": "usa vs belgium",
+      "originalTitle": "usa vs belgium",
+      "region": "撒哈拉以南非洲",
+      "country": "加纳",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 61,
+      "score": 92,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 加纳 搜索趋势「usa vs belgium」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 加纳 搜索趋势，搜索热度约 10000+。关联新闻源：BBC / Chelsea；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "usa vs belgium",
+        "traffic": 10000,
+        "publishedAt": "Mon, 6 Jul 2026 16:20:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVc48QTrYvbf_A2a_jpdxSsYQIfQkOBzQNmqX8DAwu-zXAzQM45x1IZLyv5M",
+        "url": "https://trends.google.com/trends/explore?geo=GH&q=usa%20vs%20belgium",
+        "newsUrl": "https://www.bbc.com/news/videos/cdxd791zzd4o",
+        "newsTitle": "Fans react to US World Cup loss after red card drama",
+        "newsSource": "BBC"
+      }
+    },
+    {
+      "id": 1015,
+      "name": "நடிகர்",
+      "originalTitle": "நடிகர்",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 65,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「நடிகர்」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 5000+。关联新闻源：Lokal Tamil / Top Tamil News；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "நடிகர்",
+        "traffic": 5000,
+        "publishedAt": "Tue, 7 Jul 2026 01:10:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIwg5lKl1xVKTqRl2-S-Mt7DjVX06VlLrCbIQaw-Z6LSvBdvYGZ37WzPhLpcU",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AE%A8%E0%AE%9F%E0%AE%BF%E0%AE%95%E0%AE%B0%E0%AF%8D",
+        "newsUrl": "https://tamil.getlokalapp.com/tamilnadu-news/if-ops-joins-thaweka-the-entire-aiadmk-will-come-actor-j-m-basheer-17016733",
+        "newsTitle": "“ஓபிஎஸ் தவெகவில் இணைந்தால் மொத்த அதிமுகவும் வரும்”.. நடிகர் ஜெ.எம் பஷீர்",
+        "newsSource": "Lokal Tamil"
+      }
+    },
+    {
+      "id": 1016,
+      "name": "бензин",
+      "originalTitle": "бензин",
+      "region": "俄罗斯（东欧）",
+      "country": "俄罗斯",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 67,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 俄罗斯 搜索趋势「бензин」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 俄罗斯 搜索趋势，搜索热度约 20000+。关联新闻源：Континент Сибирь Online / Gorod55；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "бензин",
+        "traffic": 20000,
+        "publishedAt": "Tue, 7 Jul 2026 01:10:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKhKr1VVBvVw7rWSXQQ7RV28jQwvBCE4n_14-5fcyMX0qDi8lO61U-38qdr_w",
+        "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B1%D0%B5%D0%BD%D0%B7%D0%B8%D0%BD",
+        "newsUrl": "https://ksonline.ru/613337/v-omskoj-oblasti-oslabili-ogranicheniya-na-prodazhu-topliva/",
+        "newsTitle": "В Омской области ослабили ограничения на продажу топлива",
+        "newsSource": "Континент Сибирь Online"
+      }
+    },
+    {
+      "id": 1017,
+      "name": "സ്വര്ണം",
+      "originalTitle": "സ്വര്ണം",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 56,
+      "score": 90,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「സ്വര്ണം」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 5000+。关联新闻源：Manorama Online / Asianet News Malayalam；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "സ്വര്ണം",
+        "traffic": 5000,
+        "publishedAt": "Tue, 7 Jul 2026 01:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdRTcKtu39eX2H5Y5y4LNGsBN9G8I6h68qYzg-6Ml2N4UVG7kj-MGojfFcdjg",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%B8%E0%B5%8D%E0%B4%B5%E0%B4%B0%E0%B5%8D%E0%B4%A3%E0%B4%82",
+        "newsUrl": "https://www.manoramaonline.com/business/stock-market/2026/07/07/kerala-gold-price-today-gold-rate-falls-third-day-fed-dollar-july-2026.html",
+        "newsTitle": "സ്വർണവിലയിൽ കനത്ത ഇടിവ്; പവന് 1000ന്റെ വീഴ്ച, സ്വർണം വാരിക്കൂട്ടി ചൈന, വിറ്റത് തുർക്കിയും റഷ്യയും",
+        "newsSource": "Manorama Online"
+      }
+    },
+    {
       "id": 2,
       "name": "排灯节视觉季",
       "region": "印度",
@@ -468,9 +592,9 @@
         "Instagram",
         "本地平台"
       ],
-      "heat": "2.2M",
-      "trend": 69,
-      "score": 92,
+      "heat": "2.1M",
+      "trend": 63,
+      "score": 89,
       "status": "爆发",
       "type": "predictable",
       "selected": true,
@@ -481,6 +605,37 @@
       "reason": "可提前准备，灯光、曼陀罗和金色纹样具有明确视觉资产价值。"
     },
     {
+      "id": 1019,
+      "name": "hasta donde llego colo…",
+      "originalTitle": "hasta donde llego colombia en el mundial 2026",
+      "region": "南美洲",
+      "country": "哥伦比亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 57,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「hasta donde llego colombia en el mundial 2026」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 20000+。关联新闻源：ELTIEMPO.COM / MARCA；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "hasta donde llego colombia en el mundial 2026",
+        "traffic": 20000,
+        "publishedAt": "Mon, 6 Jul 2026 19:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTQ8zIpyZ9sPvEUoe2CnNrKZI2xhGhNMi_5kJnu-K_jjMo5qvq0Jvswf3bka4",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=hasta%20donde%20llego%20colombia%20en%20el%20mundial%202026",
+        "newsUrl": "https://www.eltiempo.com/deportes/futbol-internacional/el-dia-de-lucho-colombia-a-desarmar-el-reloj-suizo-3569518",
+        "newsTitle": "La Selección Colombia, con Luis Díaz, a desarmar el reloj suizo, para avanzar a los cuartos de final del Mundial de Fútbol 2026",
+        "newsSource": "ELTIEMPO.COM"
+      }
+    },
+    {
       "id": 1,
       "name": "世界杯淘汰赛",
       "region": "南美洲",
@@ -489,9 +644,9 @@
         "X",
         "Google Trends"
       ],
-      "heat": "2.2M",
-      "trend": 61,
-      "score": 92,
+      "heat": "2.3M",
+      "trend": 64,
+      "score": 93,
       "status": "爆发",
       "type": "predictable",
       "selected": true,
@@ -502,52 +657,103 @@
       "reason": "强烈的国家情绪与应援视觉符号，适合生成球衣色、国旗色和漫画应援主题。"
     },
     {
-      "id": 6,
-      "name": "非洲城市时尚周",
-      "region": "撒哈拉以南非洲",
-      "country": "尼日利亚 / 南非 / 加纳 / 肯尼亚",
-      "source": [
-        "Instagram",
-        "Facebook"
-      ],
-      "heat": "664K",
-      "trend": 40,
-      "score": 88,
-      "status": "上升",
-      "type": "predictable",
-      "selected": true,
-      "preview": "./assets/africa_fashion_template.png",
-      "previewTitle": "尼日利亚｜城市时尚大片",
-      "previewMeta": "非洲 · 高级时装 · 几何纹样",
-      "prompt": "9:16 手机锁屏壁纸，29 岁非洲女性身着靛蓝与铜色几何纹样高级时装，站在拉各斯现代建筑前，西非织物灵感与城市建筑融合，奢华杂志摄影，真实肤质与面料，电影感自然光，无文字、无品牌标识。",
-      "reason": "服饰纹样、城市文化和正向情绪具备模板化空间。"
-    },
-    {
-      "id": 8,
-      "name": "板球决赛应援",
+      "id": 1021,
+      "name": "वेलकम तो थे जंगल",
+      "originalTitle": "वेलकम तो थे जंगल",
       "region": "印度",
       "country": "印度",
       "source": [
-        "X",
-        "YouTube"
+        "Google Trends"
       ],
-      "heat": "853K",
-      "trend": 28,
-      "score": 80,
-      "status": "上升",
-      "type": "predictable",
+      "heat": "180K",
+      "trend": 60,
+      "score": 92,
+      "status": "爆发",
+      "type": "realtime",
       "selected": true,
-      "preview": "./assets/cricket_template.png",
-      "previewTitle": "印度｜板球决赛应援",
-      "previewMeta": "印度 · 体育赛事 · 蓝金氛围",
-      "prompt": "9:16 手机锁屏壁纸，27 岁印度女性球迷身着皇家蓝外套，在现代板球场自信欢呼，蓝色光带与少量金色纸屑，蓝金应援氛围，高级体育广告摄影，活力但不杂乱，顶部留出时钟区域，无文字、无球队标识。",
-      "reason": "赛事节点明确，可提前定模板并在赛前三天上线。"
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「वेलकम तो थे जंगल」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：AajTak / ABP News；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "वेलकम तो थे जंगल",
+        "traffic": 2000,
+        "publishedAt": "Tue, 7 Jul 2026 01:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeBEewHKs3ikT7s3NxBi3l3lMWlr5rcsXuTugJAJjyCaCVt7Mol-G4QL4FloE",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%B5%E0%A5%87%E0%A4%B2%E0%A4%95%E0%A4%AE%20%E0%A4%A4%E0%A5%8B%20%E0%A4%A5%E0%A5%87%20%E0%A4%9C%E0%A4%82%E0%A4%97%E0%A4%B2",
+        "newsUrl": "https://www.aajtak.in/entertainment/bollywood-news/story/welcome-to-the-jungle-actual-budget-ahmed-khan-reveals-akshay-kumar-film-earned-before-release-tmova-dskc-2595662-2026-07-07",
+        "newsTitle": "900 लोग, 50 वैनिटी वैन, फिर भी सिर्फ 125 करोड़ में बनी 'वेलकम 3', डायरेक्टर बोले- रिलीज से पहले की कमाई",
+        "newsSource": "AajTak"
+      }
+    },
+    {
+      "id": 1022,
+      "name": "praperadilan",
+      "originalTitle": "praperadilan",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 55,
+      "score": 90,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「praperadilan」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 500+。关联新闻源：detikNews / Tribrata News；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "praperadilan",
+        "traffic": 500,
+        "publishedAt": "Tue, 7 Jul 2026 01:50:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEj9wUEj84dCZqHuO_CicBg-uPXToK76XzkncAtSa92DfB9NMLGEiwTG_rFIc",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=praperadilan",
+        "newsUrl": "https://news.detik.com/berita/d-8563438/hakim-kabulkan-sebagian-gugatan-praperadilan-roy-suryo",
+        "newsTitle": "Hakim Kabulkan Sebagian Gugatan Praperadilan Roy Suryo",
+        "newsSource": "detikNews"
+      }
+    },
+    {
+      "id": 1023,
+      "name": "thiago almada",
+      "originalTitle": "thiago almada",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 65,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「thiago almada」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 200+。关联新闻源：Olé / TyC Sports；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "thiago almada",
+        "traffic": 200,
+        "publishedAt": "Tue, 7 Jul 2026 02:10:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnPi0SN-82Q_v4MGaNZLnxoZIFlNHsv5wX2q854fWhE6LS-RICIVsDFIv0rVQ",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=thiago%20almada",
+        "newsUrl": "https://www.ole.com.ar/river-plate/river-almada-atletico-madrid-pase-coudet-di-carlo_0_4w6eMdhU93.html",
+        "newsTitle": "Bomba de River en el mercado: acordó la comprá del 50% del pase de Thiago Almada",
+        "newsSource": "Olé"
+      }
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 99,
-      "growth": 44,
+      "count": 98,
+      "growth": 48,
       "countries": [
         "印度"
       ],
@@ -558,8 +764,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 99,
-      "growth": 9,
+      "count": 98,
+      "growth": 8,
       "countries": [
         "印度尼西亚"
       ],
@@ -570,8 +776,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 41,
-      "growth": 9,
+      "count": 40,
+      "growth": 8,
       "countries": [
         "俄罗斯"
       ],
@@ -582,8 +788,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 46,
-      "growth": 38,
+      "count": 48,
+      "growth": 35,
       "countries": [
         "尼日利亚",
         "南非",
@@ -597,8 +803,8 @@
       ]
     },
     "南美洲": {
-      "count": 75,
-      "growth": 39,
+      "count": 77,
+      "growth": 42,
       "countries": [
         "巴西",
         "阿根廷",
