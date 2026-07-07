@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "定时更新",
-  "generatedAt": "2026-07-07T06:40:31.429Z",
+  "generatedAt": "2026-07-07T06:47:11.431Z",
   "cadence": "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。",
   "regions": [
     "全球",
@@ -22,12 +22,12 @@
     "本地平台"
   ],
   "summary": {
-    "rawTopics": 1332,
-    "effectiveHotspots": 352,
+    "rawTopics": 1338,
+    "effectiveHotspots": 358,
     "highPriorityAlerts": 1,
     "templateCandidates": 5,
-    "rawDelta": 23,
-    "effectiveRate": "26.1%"
+    "rawDelta": 22,
+    "effectiveRate": "26.4%"
   },
   "trendSeries": {
     "labels": [
@@ -45,32 +45,32 @@
       "22:00"
     ],
     "effective": [
-      25,
+      22,
       52,
-      49,
-      51,
-      76,
       53,
-      99,
-      74,
-      88,
-      120,
-      99,
-      143
+      45,
+      83,
+      47,
+      102,
+      75,
+      83,
+      127,
+      92,
+      148
     ],
     "template": [
       5,
-      20,
-      11,
+      22,
+      12,
+      14,
+      34,
       16,
-      30,
-      19,
-      42,
-      29,
-      42,
-      53,
-      46,
-      73
+      45,
+      28,
+      41,
+      56,
+      43,
+      77
     ]
   },
   "hotspots": [
@@ -83,9 +83,9 @@
         "X",
         "Google Trends"
       ],
-      "heat": "2.0M",
-      "trend": 50,
-      "score": 86,
+      "heat": "1.9M",
+      "trend": 43,
+      "score": 83,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -104,8 +104,8 @@
         "Instagram",
         "本地平台"
       ],
-      "heat": "2.1M",
-      "trend": 60,
+      "heat": "2.2M",
+      "trend": 66,
       "score": 98,
       "status": "爆发",
       "type": "predictable",
@@ -125,10 +125,10 @@
         "TikTok",
         "YouTube"
       ],
-      "heat": "841K",
-      "trend": 26,
-      "score": 82,
-      "status": "上升",
+      "heat": "816K",
+      "trend": 23,
+      "score": 81,
+      "status": "观察",
       "type": "realtime",
       "selected": false,
       "reason": "持续时间较长，舞台灯光、音乐人物和年轻情绪适合动态壁纸。"
@@ -163,9 +163,9 @@
         "YouTube",
         "本地平台"
       ],
-      "heat": "754K",
-      "trend": 33,
-      "score": 81,
+      "heat": "784K",
+      "trend": 37,
+      "score": 83,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -180,9 +180,9 @@
         "Instagram",
         "Facebook"
       ],
-      "heat": "544K",
-      "trend": 19,
-      "score": 79,
+      "heat": "511K",
+      "trend": 13,
+      "score": 76,
       "status": "观察",
       "type": "predictable",
       "selected": true,
@@ -201,9 +201,9 @@
         "TikTok",
         "Google Trends"
       ],
-      "heat": "607K",
-      "trend": 37,
-      "score": 90,
+      "heat": "649K",
+      "trend": 44,
+      "score": 93,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -218,9 +218,9 @@
         "X",
         "YouTube"
       ],
-      "heat": "940K",
-      "trend": 37,
-      "score": 83,
+      "heat": "884K",
+      "trend": 31,
+      "score": 80,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -233,8 +233,8 @@
   ],
   "regionStats": {
     "印度": {
-      "count": 87,
-      "growth": 36,
+      "count": 93,
+      "growth": 40,
       "countries": [
         "印度"
       ],
@@ -245,8 +245,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 88,
-      "growth": 18,
+      "count": 81,
+      "growth": 15,
       "countries": [
         "印度尼西亚"
       ],
@@ -257,8 +257,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 29,
-      "growth": 18,
+      "count": 35,
+      "growth": 15,
       "countries": [
         "俄罗斯"
       ],
@@ -269,8 +269,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 54,
-      "growth": 40,
+      "count": 48,
+      "growth": 38,
       "countries": [
         "尼日利亚",
         "南非",
@@ -284,8 +284,8 @@
       ]
     },
     "南美洲": {
-      "count": 72,
-      "growth": 34,
+      "count": 77,
+      "growth": 36,
       "countries": [
         "巴西",
         "阿根廷",
