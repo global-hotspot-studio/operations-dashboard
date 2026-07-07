@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "定时更新",
-  "generatedAt": "2026-07-07T03:57:06.853Z",
+  "generatedAt": "2026-07-07T06:07:08.490Z",
   "cadence": "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。",
   "regions": [
     "全球",
@@ -22,11 +22,11 @@
     "本地平台"
   ],
   "summary": {
-    "rawTopics": 1314,
-    "effectiveHotspots": 334,
-    "highPriorityAlerts": 2,
+    "rawTopics": 1320,
+    "effectiveHotspots": 340,
+    "highPriorityAlerts": 1,
     "templateCandidates": 5,
-    "rawDelta": 25,
+    "rawDelta": 24,
     "effectiveRate": "25.4%"
   },
   "trendSeries": {
@@ -45,32 +45,32 @@
       "22:00"
     ],
     "effective": [
-      34,
+      31,
       52,
-      37,
-      69,
-      55,
-      71,
-      90,
-      71,
-      103,
-      99,
-      120,
-      128
+      41,
+      63,
+      62,
+      65,
+      93,
+      72,
+      98,
+      106,
+      113,
+      133
     ],
     "template": [
+      6,
+      16,
       9,
-      14,
-      8,
+      20,
       22,
-      18,
-      28,
-      33,
-      32,
-      45,
+      25,
+      36,
+      31,
       44,
-      55,
-      61
+      47,
+      52,
+      65
     ]
   },
   "hotspots": [
@@ -83,9 +83,9 @@
         "X",
         "Google Trends"
       ],
-      "heat": "2.5M",
-      "trend": 71,
-      "score": 95,
+      "heat": "2.3M",
+      "trend": 64,
+      "score": 92,
       "status": "爆发",
       "type": "predictable",
       "selected": true,
@@ -104,9 +104,9 @@
         "Instagram",
         "本地平台"
       ],
-      "heat": "1.8M",
-      "trend": 42,
-      "score": 91,
+      "heat": "1.9M",
+      "trend": 48,
+      "score": 94,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -125,9 +125,9 @@
         "TikTok",
         "YouTube"
       ],
-      "heat": "922K",
-      "trend": 35,
-      "score": 85,
+      "heat": "894K",
+      "trend": 32,
+      "score": 84,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -163,10 +163,10 @@
         "YouTube",
         "本地平台"
       ],
-      "heat": "670K",
-      "trend": 21,
-      "score": 75,
-      "status": "观察",
+      "heat": "697K",
+      "trend": 25,
+      "score": 77,
+      "status": "上升",
       "type": "realtime",
       "selected": false,
       "reason": "热度较高，但版权与肖像风险需要进一步审核。"
@@ -180,9 +180,9 @@
         "Instagram",
         "Facebook"
       ],
-      "heat": "655K",
-      "trend": 37,
-      "score": 88,
+      "heat": "616K",
+      "trend": 31,
+      "score": 85,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -201,9 +201,9 @@
         "TikTok",
         "Google Trends"
       ],
-      "heat": "495K",
-      "trend": 16,
-      "score": 81,
+      "heat": "530K",
+      "trend": 23,
+      "score": 84,
       "status": "观察",
       "type": "realtime",
       "selected": false,
@@ -218,10 +218,10 @@
         "X",
         "YouTube"
       ],
-      "heat": "1.2M",
-      "trend": 55,
-      "score": 92,
-      "status": "爆发",
+      "heat": "1.1M",
+      "trend": 49,
+      "score": 89,
+      "status": "上升",
       "type": "predictable",
       "selected": true,
       "preview": "./assets/cricket_template.png",
@@ -233,8 +233,8 @@
   ],
   "regionStats": {
     "印度": {
-      "count": 93,
-      "growth": 32,
+      "count": 87,
+      "growth": 31,
       "countries": [
         "印度"
       ],
@@ -245,8 +245,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 70,
-      "growth": 19,
+      "count": 77,
+      "growth": 23,
       "countries": [
         "印度尼西亚"
       ],
@@ -257,8 +257,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 44,
-      "growth": 19,
+      "count": 42,
+      "growth": 23,
       "countries": [
         "俄罗斯"
       ],
@@ -269,8 +269,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 52,
-      "growth": 31,
+      "count": 46,
+      "growth": 34,
       "countries": [
         "尼日利亚",
         "南非",
@@ -284,8 +284,8 @@
       ]
     },
     "南美洲": {
-      "count": 76,
-      "growth": 35,
+      "count": 69,
+      "growth": 32,
       "countries": [
         "巴西",
         "阿根廷",
