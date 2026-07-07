@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "定时更新",
-  "generatedAt": "2026-07-07T08:07:37.226Z",
+  "generatedAt": "2026-07-07T08:14:03.934Z",
   "cadence": "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。",
   "regions": [
     "全球",
@@ -22,12 +22,12 @@
     "本地平台"
   ],
   "summary": {
-    "rawTopics": 1470,
+    "rawTopics": 1476,
     "effectiveHotspots": 400,
-    "highPriorityAlerts": 2,
+    "highPriorityAlerts": 3,
     "templateCandidates": 5,
-    "rawDelta": 23,
-    "effectiveRate": "27.3%"
+    "rawDelta": 24,
+    "effectiveRate": "27.2%"
   },
   "trendSeries": {
     "labels": [
@@ -45,32 +45,32 @@
       "22:00"
     ],
     "effective": [
-      21,
-      76,
-      32,
-      58,
-      83,
-      36,
+      22,
+      79,
+      26,
+      65,
+      77,
+      40,
       123,
-      51,
-      104,
-      117,
-      89,
-      157
+      48,
+      110,
+      110,
+      95,
+      154
     ],
     "template": [
-      7,
+      9,
       34,
       5,
-      26,
-      31,
-      16,
-      53,
+      29,
+      28,
       19,
       52,
-      47,
-      47,
-      80
+      19,
+      54,
+      44,
+      51,
+      77
     ]
   },
   "hotspots": [
@@ -83,10 +83,10 @@
         "X",
         "Google Trends"
       ],
-      "heat": "2.0M",
-      "trend": 47,
-      "score": 86,
-      "status": "上升",
+      "heat": "2.1M",
+      "trend": 54,
+      "score": 89,
+      "status": "爆发",
       "type": "predictable",
       "selected": true,
       "preview": "./assets/worldcup_argentina_victory.png",
@@ -104,9 +104,9 @@
         "Instagram",
         "本地平台"
       ],
-      "heat": "2.4M",
-      "trend": 77,
-      "score": 96,
+      "heat": "2.3M",
+      "trend": 73,
+      "score": 94,
       "status": "爆发",
       "type": "predictable",
       "selected": true,
@@ -125,8 +125,8 @@
         "TikTok",
         "YouTube"
       ],
-      "heat": "664K",
-      "trend": 9,
+      "heat": "671K",
+      "trend": 10,
       "score": 72,
       "status": "观察",
       "type": "realtime",
@@ -143,7 +143,7 @@
         "TikTok"
       ],
       "heat": "1.1M",
-      "trend": 65,
+      "trend": 68,
       "score": 98,
       "status": "爆发",
       "type": "predictable",
@@ -163,9 +163,9 @@
         "YouTube",
         "本地平台"
       ],
-      "heat": "633K",
-      "trend": 16,
-      "score": 74,
+      "heat": "595K",
+      "trend": 10,
+      "score": 71,
       "status": "观察",
       "type": "realtime",
       "selected": false,
@@ -180,9 +180,9 @@
         "Instagram",
         "Facebook"
       ],
-      "heat": "580K",
-      "trend": 26,
-      "score": 82,
+      "heat": "621K",
+      "trend": 33,
+      "score": 85,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -201,9 +201,9 @@
         "TikTok",
         "Google Trends"
       ],
-      "heat": "648K",
-      "trend": 44,
-      "score": 93,
+      "heat": "609K",
+      "trend": 38,
+      "score": 90,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -218,10 +218,10 @@
         "X",
         "YouTube"
       ],
-      "heat": "788K",
-      "trend": 20,
-      "score": 76,
-      "status": "观察",
+      "heat": "820K",
+      "trend": 24,
+      "score": 78,
+      "status": "上升",
       "type": "predictable",
       "selected": true,
       "preview": "./assets/cricket_template.png",
@@ -233,7 +233,7 @@
   ],
   "regionStats": {
     "印度": {
-      "count": 88,
+      "count": 95,
       "growth": 44,
       "countries": [
         "印度"
@@ -245,7 +245,7 @@
       ]
     },
     "印度尼西亚": {
-      "count": 88,
+      "count": 95,
       "growth": 9,
       "countries": [
         "印度尼西亚"
@@ -257,7 +257,7 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 30,
+      "count": 37,
       "growth": 9,
       "countries": [
         "俄罗斯"
@@ -269,7 +269,7 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 46,
+      "count": 40,
       "growth": 38,
       "countries": [
         "尼日利亚",
@@ -284,8 +284,8 @@
       ]
     },
     "南美洲": {
-      "count": 75,
-      "growth": 33,
+      "count": 69,
+      "growth": 35,
       "countries": [
         "巴西",
         "阿根廷",
