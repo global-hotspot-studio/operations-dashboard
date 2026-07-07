@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "mode": "定时更新",
-  "generatedAt": "2026-07-07T08:14:03.934Z",
-  "cadence": "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。",
+  "mode": "真实数据更新",
+  "generatedAt": "2026-07-07T08:25:00.786Z",
+  "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
     "印度",
@@ -22,12 +22,12 @@
     "本地平台"
   ],
   "summary": {
-    "rawTopics": 1476,
+    "rawTopics": 1482,
     "effectiveHotspots": 400,
-    "highPriorityAlerts": 3,
-    "templateCandidates": 5,
-    "rawDelta": 24,
-    "effectiveRate": "27.2%"
+    "highPriorityAlerts": 16,
+    "templateCandidates": 18,
+    "rawDelta": 42,
+    "effectiveRate": "27.1%"
   },
   "trendSeries": {
     "labels": [
@@ -45,93 +45,118 @@
       "22:00"
     ],
     "effective": [
-      22,
-      79,
-      26,
-      65,
-      77,
-      40,
+      23,
+      82,
+      20,
+      72,
+      71,
+      44,
       123,
-      48,
-      110,
-      110,
-      95,
-      154
+      45,
+      116,
+      103,
+      101,
+      151
     ],
     "template": [
-      9,
+      11,
       34,
       5,
-      29,
-      28,
-      19,
-      52,
-      19,
-      54,
-      44,
+      32,
+      25,
+      22,
       51,
-      77
+      19,
+      56,
+      41,
+      55,
+      74
     ]
   },
   "hotspots": [
     {
-      "id": 1,
-      "name": "世界杯淘汰赛",
-      "region": "南美洲",
-      "country": "阿根廷 / 巴西",
+      "id": 1000,
+      "name": "BABYMONSTER - 'I LIKE …",
+      "originalTitle": "BABYMONSTER - 'I LIKE IT' M/V",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
-        "X",
-        "Google Trends"
-      ],
-      "heat": "2.1M",
-      "trend": 54,
-      "score": 89,
-      "status": "爆发",
-      "type": "predictable",
-      "selected": true,
-      "preview": "./assets/worldcup_argentina_victory.png",
-      "previewTitle": "阿根廷｜胜利身份大片",
-      "previewMeta": "南美洲 · 世界杯 · 人像封面",
-      "prompt": "9:16 手机锁屏壁纸，成年阿根廷年轻男性球迷站在夜间足球场，蓝白围巾与脸部彩绘，手放心口，蓝白金色纸屑，胜利后的克制喜悦，高级体育杂志摄影，真实肤质，顶部留出时钟区域，无文字、无品牌标识。",
-      "reason": "强烈的国家情绪与应援视觉符号，适合生成球衣色、国旗色和漫画应援主题。"
-    },
-    {
-      "id": 2,
-      "name": "排灯节视觉季",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Instagram",
-        "本地平台"
-      ],
-      "heat": "2.3M",
-      "trend": 73,
-      "score": 94,
-      "status": "爆发",
-      "type": "predictable",
-      "selected": true,
-      "preview": "./assets/diwali_template.png",
-      "previewTitle": "印度｜排灯节金色肖像",
-      "previewMeta": "印度 · 节日文化 · 金色纹样",
-      "prompt": "9:16 手机锁屏壁纸，成年印度女性身着优雅藏红花色传统服饰，置身排灯节真实家庭场景，油灯、万寿菊与曼陀罗光影，金色暖光，高级人像摄影，细腻真实，构图简洁，顶部留出时钟区域，无文字、无品牌标识。",
-      "reason": "可提前准备，灯光、曼陀罗和金色纹样具有明确视觉资产价值。"
-    },
-    {
-      "id": 3,
-      "name": "夏日音乐节",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
-      "source": [
-        "TikTok",
         "YouTube"
       ],
-      "heat": "671K",
-      "trend": 10,
-      "score": 72,
-      "status": "观察",
+      "heat": "10.7M",
+      "trend": 69,
+      "score": 96,
+      "status": "爆发",
       "type": "realtime",
-      "selected": false,
-      "reason": "持续时间较长，舞台灯光、音乐人物和年轻情绪适合动态壁纸。"
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'I LIKE IT' M/V》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 11.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "9cS2wv6AfHk",
+        "channelTitle": "BABYMONSTER",
+        "publishedAt": "2026-07-05T15:00:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/9cS2wv6AfHk/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
+      }
+    },
+    {
+      "id": 1001,
+      "name": "Joe | Official Trailer",
+      "originalTitle": "Joe | Official Trailer",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "6.0M",
+      "trend": 68,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 6.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "Js7PKsarC5Q",
+        "channelTitle": "Druski",
+        "publishedAt": "2026-06-29T01:05:56Z",
+        "thumbnail": "https://i.ytimg.com/vi/Js7PKsarC5Q/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
+      }
+    },
+    {
+      "id": 1002,
+      "name": "SPIDER-MAN: BRAND NEW …",
+      "originalTitle": "SPIDER-MAN: BRAND NEW DAY – New Trailer (4K)",
+      "region": "撒哈拉以南非洲",
+      "country": "肯尼亚",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "29.4M",
+      "trend": 72,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 肯尼亚 热门内容《SPIDER-MAN: BRAND NEW DAY – New Trailer (4K)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 28.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "62bIsvRcPv0",
+        "channelTitle": "Sony Pictures Entertainment",
+        "publishedAt": "2026-06-17T18:58:31Z",
+        "thumbnail": "https://i.ytimg.com/vi/62bIsvRcPv0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=62bIsvRcPv0"
+      }
     },
     {
       "id": 4,
@@ -143,7 +168,7 @@
         "TikTok"
       ],
       "heat": "1.1M",
-      "trend": 68,
+      "trend": 71,
       "score": 98,
       "status": "爆发",
       "type": "predictable",
@@ -155,21 +180,326 @@
       "reason": "鲜明服饰和高饱和色彩可快速转成多风格模板。"
     },
     {
-      "id": 5,
-      "name": "本地偶像新歌发布",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
+      "id": 1004,
+      "name": "MY FRIEND GOT KIDNAPPE…",
+      "originalTitle": "MY FRIEND GOT KIDNAPPED | GTA GAMEPLAY #170",
+      "region": "印度",
+      "country": "印度",
       "source": [
-        "YouTube",
+        "YouTube"
+      ],
+      "heat": "8.9M",
+      "trend": 74,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《MY FRIEND GOT KIDNAPPED | GTA GAMEPLAY #170》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 8.3M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "Z2XKA-wQjac",
+        "channelTitle": "Techno Gamerz",
+        "publishedAt": "2026-07-05T11:41:38Z",
+        "thumbnail": "https://i.ytimg.com/vi/Z2XKA-wQjac/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Z2XKA-wQjac"
+      }
+    },
+    {
+      "id": 1005,
+      "name": "i-dle (아이들) 'Gimme Dat…",
+      "originalTitle": "i-dle (아이들) 'Gimme Dat Love' Official Music Video",
+      "region": "俄罗斯（东欧）",
+      "country": "俄罗斯",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "2.4M",
+      "trend": 61,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 俄罗斯 热门内容《i-dle (아이들) 'Gimme Dat Love' Official Music Video》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 俄罗斯 热门榜，播放量 2.6M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "FFjDEkZg-54",
+        "channelTitle": "i-dle (아이들)",
+        "publishedAt": "2026-07-06T09:00:01Z",
+        "thumbnail": "https://i.ytimg.com/vi/FFjDEkZg-54/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=FFjDEkZg-54"
+      }
+    },
+    {
+      "id": 1006,
+      "name": "The Odyssey - Oh, Dear…",
+      "originalTitle": "The Odyssey - Oh, Dear...",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "2.7M",
+      "trend": 65,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 南非 热门内容《The Odyssey - Oh, Dear...》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 2.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "BkGOs3_q79I",
+        "channelTitle": "The Critical Drinker",
+        "publishedAt": "2026-07-03T16:00:04Z",
+        "thumbnail": "https://i.ytimg.com/vi/BkGOs3_q79I/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=BkGOs3_q79I"
+      }
+    },
+    {
+      "id": 1007,
+      "name": "KRIS R - 4LIFE ❤️‍🔥(V…",
+      "originalTitle": "KRIS R - 4LIFE ❤️‍🔥(VIDEO OFICIAL)",
+      "region": "南美洲",
+      "country": "哥伦比亚",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "450K",
+      "trend": 62,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 哥伦比亚 热门内容《KRIS R - 4LIFE ❤️‍🔥(VIDEO OFICIAL)》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 哥伦比亚 热门榜，播放量 446K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "bslNoCMejnw",
+        "channelTitle": "Kris R.",
+        "publishedAt": "2026-07-06T00:00:06Z",
+        "thumbnail": "https://i.ytimg.com/vi/bslNoCMejnw/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=bslNoCMejnw"
+      }
+    },
+    {
+      "id": 1008,
+      "name": "Pinaka Teaser | Golden…",
+      "originalTitle": "Pinaka Teaser | Golden Megastar Ganesh | B Dhananjaya | TG Vishwa Prasad | Krithi Prasad |Gowra Hari",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "540K",
+      "trend": 56,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《Pinaka Teaser | Golden Megastar Ganesh | B Dhananjaya | TG Vishwa Prasad | Krithi Prasad |Gowra Hari》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 563K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "qSinkXC6GBY",
+        "channelTitle": "People Media Factory",
+        "publishedAt": "2026-07-06T06:15:04Z",
+        "thumbnail": "https://i.ytimg.com/vi/qSinkXC6GBY/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=qSinkXC6GBY"
+      }
+    },
+    {
+      "id": 1009,
+      "name": "O MEU FILHO DESAPARECE…",
+      "originalTitle": "O MEU FILHO DESAPARECEU NO MINECRAFT E ERA MELHOR NÃO TER IDO ATRÁS DELE...",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "947K",
+      "trend": 67,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 巴西 热门内容《O MEU FILHO DESAPARECEU NO MINECRAFT E ERA MELHOR NÃO TER IDO ATRÁS DELE...》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 巴西 热门榜，播放量 885K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "Hh_SGYiChGY",
+        "channelTitle": "Jazzghost",
+        "publishedAt": "2026-07-06T15:00:39Z",
+        "thumbnail": "https://i.ytimg.com/vi/Hh_SGYiChGY/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Hh_SGYiChGY"
+      }
+    },
+    {
+      "id": 1010,
+      "name": "Atrapado por CHICA TIB…",
+      "originalTitle": "Atrapado por CHICA TIBURÓN en Minecraft!",
+      "region": "南美洲",
+      "country": "阿根廷",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "864K",
+      "trend": 53,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 阿根廷 热门内容《Atrapado por CHICA TIBURÓN en Minecraft!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 阿根廷 热门榜，播放量 929K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "oFcYiIDR7nU",
+        "channelTitle": "Dagar",
+        "publishedAt": "2026-07-06T18:27:17Z",
+        "thumbnail": "https://i.ytimg.com/vi/oFcYiIDR7nU/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=oFcYiIDR7nU"
+      }
+    },
+    {
+      "id": 1011,
+      "name": "Un Juego de Ordenar Li…",
+      "originalTitle": "Un Juego de Ordenar Libros no deberia ser tan bueno",
+      "region": "南美洲",
+      "country": "智利",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "1.2M",
+      "trend": 65,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 智利 热门内容《Un Juego de Ordenar Libros no deberia ser tan bueno》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 智利 热门榜，播放量 1.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "QCz6gJyztec",
+        "channelTitle": "Rubius Z",
+        "publishedAt": "2026-07-06T18:42:37Z",
+        "thumbnail": "https://i.ytimg.com/vi/QCz6gJyztec/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=QCz6gJyztec"
+      }
+    },
+    {
+      "id": 1012,
+      "name": "ALEX KASAU KATOMBI-KIW…",
+      "originalTitle": "ALEX KASAU KATOMBI-KIWANZA(OFFICIAL AUDIO)",
+      "region": "撒哈拉以南非洲",
+      "country": "肯尼亚",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "264K",
+      "trend": 58,
+      "score": 97,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 肯尼亚 热门内容《ALEX KASAU KATOMBI-KIWANZA(OFFICIAL AUDIO)》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 269K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "eYEs9V8MDyY",
+        "channelTitle": "Alex Kasau Katombi",
+        "publishedAt": "2026-07-01T09:00:06Z",
+        "thumbnail": "https://i.ytimg.com/vi/eYEs9V8MDyY/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=eYEs9V8MDyY"
+      }
+    },
+    {
+      "id": 1013,
+      "name": "#Video | दरदिया ए बालम…",
+      "originalTitle": "#Video | दरदिया ए बालम | #Khesari Lal Yadav | Dardiya Ae Balam | #Shilpi Raj | #Rani | New Song 2026",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "1.4M",
+      "trend": 57,
+      "score": 97,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《#Video | दरदिया ए बालम | #Khesari Lal Yadav | Dardiya Ae Balam | #Shilpi Raj | #Rani | New Song 2026》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 1.4M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "aPK_H9ZN0Ak",
+        "channelTitle": "GMJ - Global Music Junction - Bhojpuri",
+        "publishedAt": "2026-07-04T01:40:27Z",
+        "thumbnail": "https://i.ytimg.com/vi/aPK_H9ZN0Ak/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=aPK_H9ZN0Ak"
+      }
+    },
+    {
+      "id": 2,
+      "name": "排灯节视觉季",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Instagram",
         "本地平台"
       ],
-      "heat": "595K",
-      "trend": 10,
-      "score": 71,
-      "status": "观察",
-      "type": "realtime",
-      "selected": false,
-      "reason": "热度较高，但版权与肖像风险需要进一步审核。"
+      "heat": "2.2M",
+      "trend": 69,
+      "score": 92,
+      "status": "爆发",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/diwali_template.png",
+      "previewTitle": "印度｜排灯节金色肖像",
+      "previewMeta": "印度 · 节日文化 · 金色纹样",
+      "prompt": "9:16 手机锁屏壁纸，成年印度女性身着优雅藏红花色传统服饰，置身排灯节真实家庭场景，油灯、万寿菊与曼陀罗光影，金色暖光，高级人像摄影，细腻真实，构图简洁，顶部留出时钟区域，无文字、无品牌标识。",
+      "reason": "可提前准备，灯光、曼陀罗和金色纹样具有明确视觉资产价值。"
+    },
+    {
+      "id": 1,
+      "name": "世界杯淘汰赛",
+      "region": "南美洲",
+      "country": "阿根廷 / 巴西",
+      "source": [
+        "X",
+        "Google Trends"
+      ],
+      "heat": "2.2M",
+      "trend": 61,
+      "score": 92,
+      "status": "爆发",
+      "type": "predictable",
+      "selected": true,
+      "preview": "./assets/worldcup_argentina_victory.png",
+      "previewTitle": "阿根廷｜胜利身份大片",
+      "previewMeta": "南美洲 · 世界杯 · 人像封面",
+      "prompt": "9:16 手机锁屏壁纸，成年阿根廷年轻男性球迷站在夜间足球场，蓝白围巾与脸部彩绘，手放心口，蓝白金色纸屑，胜利后的克制喜悦，高级体育杂志摄影，真实肤质，顶部留出时钟区域，无文字、无品牌标识。",
+      "reason": "强烈的国家情绪与应援视觉符号，适合生成球衣色、国旗色和漫画应援主题。"
     },
     {
       "id": 6,
@@ -180,9 +510,9 @@
         "Instagram",
         "Facebook"
       ],
-      "heat": "621K",
-      "trend": 33,
-      "score": 85,
+      "heat": "664K",
+      "trend": 40,
+      "score": 88,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -193,23 +523,6 @@
       "reason": "服饰纹样、城市文化和正向情绪具备模板化空间。"
     },
     {
-      "id": 7,
-      "name": "雨季治愈氛围",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "TikTok",
-        "Google Trends"
-      ],
-      "heat": "609K",
-      "trend": 38,
-      "score": 90,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "reason": "持续性较好，可转成动态雨滴和治愈系锁屏。"
-    },
-    {
       "id": 8,
       "name": "板球决赛应援",
       "region": "印度",
@@ -218,9 +531,9 @@
         "X",
         "YouTube"
       ],
-      "heat": "820K",
-      "trend": 24,
-      "score": 78,
+      "heat": "853K",
+      "trend": 28,
+      "score": 80,
       "status": "上升",
       "type": "predictable",
       "selected": true,
@@ -233,7 +546,7 @@
   ],
   "regionStats": {
     "印度": {
-      "count": 95,
+      "count": 99,
       "growth": 44,
       "countries": [
         "印度"
@@ -245,7 +558,7 @@
       ]
     },
     "印度尼西亚": {
-      "count": 95,
+      "count": 99,
       "growth": 9,
       "countries": [
         "印度尼西亚"
@@ -257,7 +570,7 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 37,
+      "count": 41,
       "growth": 9,
       "countries": [
         "俄罗斯"
@@ -269,7 +582,7 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 40,
+      "count": 46,
       "growth": 38,
       "countries": [
         "尼日利亚",
@@ -284,8 +597,8 @@
       ]
     },
     "南美洲": {
-      "count": 69,
-      "growth": 35,
+      "count": 75,
+      "growth": 39,
       "countries": [
         "巴西",
         "阿根廷",
