@@ -15,7 +15,7 @@
 当前版本已经从“静态展示页”升级为“定时更新工具底座”：
 
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
-- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API。
+- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API 和 Google Trends RSS。
 - `.github/workflows/update-hotspots.yml`：GitHub Actions 自动任务，每 6 小时更新一次数据，也支持手动触发。
 
 ### YouTube 真实热点接入
@@ -37,10 +37,21 @@ YOUTUBE_API_KEY
 
 如果没有配置 `YOUTUBE_API_KEY`，脚本会自动跳过 YouTube 抓取，保留当前示例数据和定时刷新结构。
 
+### Google Trends 真实热点接入
+
+Google Trends 使用公开 RSS 趋势源，不需要额外配置 Secret。GitHub Actions 每次更新时会按重点市场抓取搜索趋势，并自动映射成看板热点：
+
+- 热点名称：Google Trends 搜索词
+- 地区/国家：按 `geo` 映射
+- 来源：Google Trends
+- 热度：RSS 中的 `approx_traffic`
+- 趋势/模板潜力：基于搜索热度、地区和排序计算
+- 原始链接：点击热点标题或来源标签可打开对应 Google Trends 查询页
+- 新闻线索：保留 RSS 关联新闻标题、媒体源和新闻链接，用于设计师判断视觉符号
+
 后续接入更多热点源时，只需要扩展 `scripts/update-hotspots.js` 里的 `fetchExternalSignals()`：
 
-- Google Trends / YouTube Trends：用于趋势和搜索热度。
 - TikTok / Instagram / X：用于视觉符号、传播速度和社媒热度，通常需要第三方或内部数据权限。
 - 飞书表格 / 内部 CMS：用于运营手动入选、备注、复盘和样图资产管理。
 
-> 当前数据仍是产品评审用的可运行示例数据；结构已经支持长期运营，真实上线前建议补齐合规数据源、团队权限、数据库和操作日志。
+> 当前 YouTube 与 Google Trends 已接入真实来源；TikTok / Instagram / X / Facebook / 本地平台仍需要后续补齐合规数据源、团队权限、数据库和操作日志。

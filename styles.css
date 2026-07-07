@@ -87,6 +87,8 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .source-link{background:#eaf4ff;color:#0071e3;font-weight:700}
 .source-link:hover{background:#dcecff}
 .source-pill.pending{color:#8b97a8}
+.hotspot-title-link{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.hotspot-title-link:hover{color:#0071e3;border-bottom-color:#0071e3}
 .drawer-source-card{display:grid;grid-template-columns:82px 1fr auto;align-items:center;gap:12px;margin:18px 0 8px;padding:11px;border:1px solid #dfe7f1;border-radius:15px;background:#fbfdff;color:#1d1d1f;text-decoration:none;transition:.18s}
 .drawer-source-card:hover{border-color:#a8c8f0;background:#f3f8ff}
 .drawer-source-card img{width:82px;height:54px;border-radius:11px;object-fit:cover;background:#edf1f6}

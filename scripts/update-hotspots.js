@@ -7,6 +7,7 @@
  * 1. 按固定节奏刷新热点趋势、热度、状态和汇总指标，保证线上看板是“活数据结构”。
  * 2. 已支持 YouTube Data API。配置 YOUTUBE_API_KEY 后，会按重点国家抓取 YouTube 热门视频，
  *    并映射成看板里的热点信号。
+ * 3. 已支持 Google Trends RSS。无需密钥，按重点国家抓取搜索趋势和相关新闻源。
  */
 
 const fs = require("fs");
@@ -31,6 +32,8 @@ const youtubeMarkets = [
   { code: "RU", country: "俄罗斯", region: "俄罗斯（东欧）" }
 ];
 
+const googleTrendsMarkets = youtubeMarkets;
+
 function readDashboard() {
   return JSON.parse(fs.readFileSync(dataPath, "utf8"));
 }
@@ -53,6 +56,40 @@ function parseHeat(heat) {
   if (normalized.endsWith("M")) return Number.parseFloat(normalized) * 1000000;
   if (normalized.endsWith("K")) return Number.parseFloat(normalized) * 1000;
   return Number.parseFloat(normalized) || 0;
+}
+
+function stripCdata(value = "") {
+  return value.replace(/^<!\[CDATA\[/, "").replace(/\]\]>$/, "");
+}
+
+function decodeXml(value = "") {
+  return stripCdata(value)
+    .replaceAll("&amp;", "&")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&apos;", "'")
+    .trim();
+}
+
+function tagValue(xml, tag) {
+  const escaped = tag.replace(":", "\\:");
+  const match = xml.match(new RegExp(`<${escaped}[^>]*>([\\s\\S]*?)<\\/${escaped}>`, "i"));
+  return match ? decodeXml(match[1]) : "";
+}
+
+function tagValues(xml, tag) {
+  const escaped = tag.replace(":", "\\:");
+  return [...xml.matchAll(new RegExp(`<${escaped}[^>]*>([\\s\\S]*?)<\\/${escaped}>`, "gi"))].map(match => decodeXml(match[1]));
+}
+
+function parseTraffic(traffic = "") {
+  const normalized = String(traffic).replaceAll(",", "").replace("+", "").trim().toUpperCase();
+  const number = Number.parseFloat(normalized);
+  if (!Number.isFinite(number)) return 0;
+  if (normalized.endsWith("M")) return number * 1000000;
+  if (normalized.endsWith("K")) return number * 1000;
+  return number;
 }
 
 function statusFromTrend(trend, score) {
@@ -100,6 +137,11 @@ function promptFromVideo(video, market) {
   const title = video.snippet?.title || "热门视频";
   const visual = visualSignalFromTitle(title);
   return `基于 YouTube ${market.country} 热门内容《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。`;
+}
+
+function promptFromTrend(topic, market, newsTitle) {
+  const visual = visualSignalFromTitle(`${topic} ${newsTitle}`);
+  return `基于 Google Trends ${market.country} 搜索趋势「${topic}」和相关新闻视觉线索，提取可转模板方向：${visual}。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。`;
 }
 
 async function fetchYoutubeMostPopularForMarket(market) {
@@ -171,6 +213,81 @@ async function fetchYoutubeSignals() {
     .slice(0, 16);
 }
 
+function parseGoogleTrendsRss(xml, market) {
+  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map(match => match[1]);
+  return items.slice(0, 8).map((item, rank) => {
+    const topic = tagValue(item, "title") || "Google 搜索趋势";
+    const traffic = parseTraffic(tagValue(item, "ht:approx_traffic"));
+    const picture = tagValue(item, "ht:picture") || tagValue(item, "ht:news_item_picture");
+    const newsTitles = tagValues(item, "ht:news_item_title");
+    const newsUrls = tagValues(item, "ht:news_item_url");
+    const newsSources = tagValues(item, "ht:news_item_source");
+    const newsTitle = newsTitles[0] || "";
+    const searchUrl = `https://trends.google.com/trends/explore?geo=${market.code}&q=${encodeURIComponent(topic)}`;
+    const score = clamp(Math.round(68 + Math.log10(Math.max(traffic, 1000)) * 4 + Math.max(0, 12 - rank)), 64, 94);
+    const trend = clamp(Math.round(28 + Math.log10(Math.max(traffic, 1000)) * 7 + Math.max(0, 10 - rank)), 18, 82);
+    return {
+      id: `gt-${market.code}-${encodeURIComponent(topic).slice(0, 38)}`,
+      name: topic.length > 22 ? `${topic.slice(0, 22)}…` : topic,
+      originalTitle: topic,
+      region: market.region,
+      country: market.country,
+      source: ["Google Trends"],
+      heat: formatHeat(Math.max(traffic, 1000)),
+      trend,
+      score,
+      status: statusFromTrend(trend, score),
+      type: "realtime",
+      selected: score >= 86,
+      preview: "",
+      previewTitle: "",
+      previewMeta: "",
+      prompt: promptFromTrend(topic, market, newsTitle),
+      reason: `来自 Google Trends ${market.country} 搜索趋势，搜索热度约 ${tagValue(item, "ht:approx_traffic") || "上升中"}。关联新闻源：${newsSources.slice(0, 2).join(" / ") || "Google Trends"}；适合判断地区搜索兴趣和热点持续性。`,
+      trends: {
+        topic,
+        traffic,
+        publishedAt: tagValue(item, "pubDate"),
+        picture,
+        url: searchUrl,
+        newsUrl: newsUrls[0] || "",
+        newsTitle,
+        newsSource: newsSources[0] || ""
+      }
+    };
+  });
+}
+
+async function fetchGoogleTrendsForMarket(market) {
+  const url = new URL("https://trends.google.com/trending/rss");
+  url.searchParams.set("geo", market.code);
+  const response = await fetch(url, {
+    headers: {
+      "user-agent": "Mozilla/5.0 HotspotOperationsDashboard/1.0"
+    }
+  });
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`Google Trends ${market.code} 请求失败：${response.status} ${body.slice(0, 180)}`);
+  }
+  return parseGoogleTrendsRss(await response.text(), market);
+}
+
+async function fetchGoogleTrendsSignals() {
+  const batches = [];
+  for (const market of googleTrendsMarkets) {
+    try {
+      const rows = await fetchGoogleTrendsForMarket(market);
+      batches.push(...rows);
+    } catch (error) {
+      console.warn(error.message);
+    }
+  }
+  return batches
+    .sort((a, b) => b.score - a.score || b.trend - a.trend)
+    .slice(0, 16);
+}
+
 async function fetchExternalSignals() {
   /**
    * 可继续扩展更多真实数据源，统一返回格式：
@@ -180,12 +297,13 @@ async function fetchExternalSignals() {
    *
    * 可接入来源建议：
    * - YouTube Data API：已接入，配置 YOUTUBE_API_KEY 即可启用。
-   * - Google Trends：适合趋势和搜索热度
+   * - Google Trends RSS：已接入，无需密钥，适合趋势和搜索热度
    * - Instagram / TikTok / X：适合视觉符号和传播速度，通常需要第三方或内部数据权限
    * - 公司内部飞书表格 / CMS：适合运营手动入选与复盘
    */
   const youtubeSignals = await fetchYoutubeSignals();
-  return [...youtubeSignals];
+  const googleTrendsSignals = await fetchGoogleTrendsSignals();
+  return [...youtubeSignals, ...googleTrendsSignals];
 }
 
 async function update() {

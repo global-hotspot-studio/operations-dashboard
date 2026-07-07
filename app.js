@@ -87,12 +87,34 @@ function getPrimarySource(h) {
   return source ? { source, url: getPlatformUrl(h, source) } : { source: h.source[0] || "待接入", url: "" };
 }
 
+function getSourceVisual(h, source) {
+  if (source === "YouTube") {
+    return {
+      image: h.youtube?.thumbnail || "",
+      label: h.youtube?.channelTitle || "点击跳转到平台原页面"
+    };
+  }
+  if (source === "Google Trends") {
+    return {
+      image: h.trends?.picture || "",
+      label: h.trends?.newsSource ? `${h.trends.newsSource} · 搜索趋势` : "Google Trends 搜索趋势"
+    };
+  }
+  return { image: "", label: "点击跳转到平台原页面" };
+}
+
 function sourceTags(h) {
   return h.source.map(source => {
     const url = getPlatformUrl(h, source);
     if (!url) return `<span class="source-pill pending" title="${source} 暂未接入真实跳转">${source}</span>`;
     return `<a class="source-pill source-link" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer" title="打开 ${source} 原始内容">${source} ↗</a>`;
   }).join("");
+}
+
+function hotspotTitle(h) {
+  const primary = getPrimarySource(h);
+  if (!primary.url) return h.name;
+  return `<a class="hotspot-title-link" href="${escapeAttr(primary.url)}" target="_blank" rel="noopener noreferrer" title="打开 ${primary.source} 原始内容">${h.name}</a>`;
 }
 
 function renderMetrics() {
@@ -135,7 +157,7 @@ function renderAlerts() {
     .slice(0, 4)
     .map(h => `<div class="alert" data-id="${h.id}">
       <div class="alert-main">
-        <strong>${h.name}</strong>
+        <strong>${hotspotTitle(h)}</strong>
         <div class="alert-meta">
           <span class="region-pill">${h.region}</span>
           <span>${h.source.join(" + ")}</span>
@@ -148,7 +170,7 @@ function renderAlerts() {
 
 function renderTable() {
   const list = filtered();
-  $("#hotspotRows").innerHTML = list.map((h, i) => `<tr data-id="${h.id}"><td class="rank">${String(i + 1).padStart(2, "0")}</td><td class="event-name">${h.name}</td><td><b>${h.region}</b><small class="country-line">${h.country || h.region}</small></td><td class="source-tags">${sourceTags(h)}</td><td>${h.heat}</td><td class="trend-up">↑ ${h.trend}%</td><td><div class="potential"><div class="potential-bar"><i style="width:${h.score}%"></i></div><b>${h.score}</b></div></td><td><span class="status ${h.status === "爆发" ? "burst" : h.status === "上升" ? "rising" : "watch"}">${h.status}</span></td><td><button class="action-btn ${h.selected ? "selected" : ""}" data-action="${h.id}">${h.selected ? "已入选" : "加入候选"}</button></td></tr>`).join("") || `<tr><td colspan="9" style="text-align:center;color:#8b97a8;padding:40px">当前筛选条件下暂无热点</td></tr>`;
+  $("#hotspotRows").innerHTML = list.map((h, i) => `<tr data-id="${h.id}"><td class="rank">${String(i + 1).padStart(2, "0")}</td><td class="event-name">${hotspotTitle(h)}</td><td><b>${h.region}</b><small class="country-line">${h.country || h.region}</small></td><td class="source-tags">${sourceTags(h)}</td><td>${h.heat}</td><td class="trend-up">↑ ${h.trend}%</td><td><div class="potential"><div class="potential-bar"><i style="width:${h.score}%"></i></div><b>${h.score}</b></div></td><td><span class="status ${h.status === "爆发" ? "burst" : h.status === "上升" ? "rising" : "watch"}">${h.status}</span></td><td><button class="action-btn ${h.selected ? "selected" : ""}" data-action="${h.id}">${h.selected ? "已入选" : "加入候选"}</button></td></tr>`).join("") || `<tr><td colspan="9" style="text-align:center;color:#8b97a8;padding:40px">当前筛选条件下暂无热点</td></tr>`;
 }
 
 function renderRegions() {
@@ -187,10 +209,11 @@ function renderStrategy() {
 function openDrawer(id) {
   const h = hotspots.find(x => x.id === Number(id)); if (!h) return;
   const primary = getPrimarySource(h);
+  const sourceVisual = getSourceVisual(h, primary.source);
   const sourceCard = primary.url
     ? `<a class="drawer-source-card" href="${escapeAttr(primary.url)}" target="_blank" rel="noopener noreferrer">
-        ${h.youtube?.thumbnail ? `<img src="${escapeAttr(h.youtube.thumbnail)}" alt="${escapeAttr(h.name)} 原始封面">` : ""}
-        <div><small>真实来源</small><b>打开 ${primary.source} 原始内容</b><span>${h.youtube?.channelTitle || "点击跳转到平台原页面"}</span></div><i>↗</i>
+        ${sourceVisual.image ? `<img src="${escapeAttr(sourceVisual.image)}" alt="${escapeAttr(h.name)} 原始封面">` : ""}
+        <div><small>真实来源</small><b>打开 ${primary.source} 原始内容</b><span>${escapeAttr(sourceVisual.label)}</span></div><i>↗</i>
       </a>`
     : `<div class="drawer-source-card disabled">
         <div><small>真实来源</small><b>${primary.source} 待接入真实链接</b><span>该平台还未完成 API/来源链接接入，暂不伪造跳转。</span></div>
