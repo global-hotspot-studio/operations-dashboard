@@ -15,7 +15,7 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
 async function loadDashboardData(force = false) {
-  const url = `./data/dashboard.json${force ? `?t=${Date.now()}` : ""}`;
+  const url = `./data/dashboard.json?t=${Date.now()}${force ? "&force=1" : ""}`;
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) throw new Error(`数据读取失败：${response.status}`);
   const data = await response.json();
@@ -242,7 +242,7 @@ function renderRegions() {
 
 function renderGallery() {
   const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
-  $("#galleryCount").textContent = `${list.length} 个每日方向`;
+  $("#galleryCount").textContent = `${list.length} 个玩法模板`;
   $("#visualGallery").innerHTML = list.map(h => `<article class="visual-card">
   <button class="visual-preview" data-preview="${h.preview}" data-caption="${h.previewTitle}" aria-label="预览${h.previewTitle}"><img src="${h.preview}" alt="${h.previewTitle}"></button>
   <div class="visual-info"><b>${h.previewTitle}</b><small>${h.previewMeta}</small>
