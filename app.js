@@ -15,12 +15,33 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
 async function loadDashboardData(force = false) {
-  const url = `./data/dashboard.json?t=${Date.now()}${force ? "&force=1" : ""}`;
-  const response = await fetch(url, { cache: "no-store" });
-  if (!response.ok) throw new Error(`数据读取失败：${response.status}`);
-  const data = await response.json();
+  const stamp = Date.now();
+  const urls = [
+    `./data/dashboard.json?t=${stamp}${force ? "&force=1" : ""}`,
+    `https://cdn.jsdelivr.net/gh/global-hotspot-studio/operations-dashboard@main/data/dashboard.json?t=${stamp}`,
+    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/dashboard.json?t=${stamp}`
+  ];
+  let data;
+  let loadedFrom = "";
+  const errors = [];
+  for (const url of urls) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000);
+      const response = await fetch(url, { cache: "no-store", signal: controller.signal });
+      clearTimeout(timeout);
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      data = await response.json();
+      loadedFrom = url;
+      break;
+    } catch (error) {
+      errors.push(`${url}: ${error.message || error}`);
+    }
+  }
+  if (!data) throw new Error(`数据读取失败；已尝试 ${urls.length} 个地址。${errors.join(" | ")}`);
 
   dashboardMeta = data;
+  dashboardMeta.dataUrl = loadedFrom;
   regions = data.regions || ["全球"];
   sources = data.sources || ["全部平台"];
   hotspots = data.hotspots || [];
