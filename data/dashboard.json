@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-08T04:51:34.520Z",
+  "generatedAt": "2026-07-08T05:24:46.108Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1434,
-    "effectiveHotspots": 380,
-    "highPriorityAlerts": 13,
-    "templateCandidates": 13,
+    "rawTopics": 1392,
+    "effectiveHotspots": 368,
+    "highPriorityAlerts": 14,
+    "templateCandidates": 16,
     "rawDelta": 42,
-    "effectiveRate": "26.9%"
+    "effectiveRate": "26.5%"
   },
   "trendSeries": {
     "labels": [
@@ -47,31 +47,31 @@
       "22:00"
     ],
     "effective": [
-      32,
-      75,
-      21,
-      77,
+      38,
+      68,
+      27,
+      73,
       62,
-      54,
-      113,
-      49,
-      116,
-      99,
+      57,
+      107,
+      56,
       110,
-      141
+      102,
+      110,
+      137
     ],
     "template": [
-      17,
+      19,
+      27,
+      13,
       30,
-      9,
-      33,
-      25,
+      27,
       28,
-      47,
-      25,
-      55,
-      42,
-      59,
+      45,
+      28,
+      52,
+      45,
+      58,
       71
     ]
   },
@@ -85,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "14.5M",
-      "trend": 67,
-      "score": 95,
+      "heat": "15.2M",
+      "trend": 71,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -95,14 +95,21 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'I LIKE IT' M/V》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 15.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 15.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "9cS2wv6AfHk",
         "channelTitle": "BABYMONSTER",
         "publishedAt": "2026-07-05T15:00:00Z",
         "thumbnail": "https://i.ytimg.com/vi/9cS2wv6AfHk/hqdefault.jpg",
         "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
-      }
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "BABYMONSTER - 'I LIKE IT' M/V",
+          "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
+        }
+      ]
     },
     {
       "id": 1001,
@@ -113,8 +120,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "4.4M",
-      "trend": 73,
+      "heat": "4.9M",
+      "trend": 75,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -123,14 +130,21 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Ve Junoon | Awarapan 2 | Emraan Hashmi, Disha Patani | Vishesh Bhatt | Mithoon, Sayeed Q., Subodhh》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 4.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 4.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "HX1EXb5kWwY",
         "channelTitle": "Sony Music India",
         "publishedAt": "2026-07-07T05:41:05Z",
         "thumbnail": "https://i.ytimg.com/vi/HX1EXb5kWwY/hqdefault.jpg",
         "url": "https://www.youtube.com/watch?v=HX1EXb5kWwY"
-      }
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Ve Junoon | Awarapan 2 | Emraan Hashmi, Disha Patani | Vishesh Bhatt | Mithoon, Sayeed Q., Subodhh",
+          "url": "https://www.youtube.com/watch?v=HX1EXb5kWwY"
+        }
+      ]
     },
     {
       "id": 1002,
@@ -141,9 +155,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "6.1M",
-      "trend": 67,
-      "score": 98,
+      "heat": "5.8M",
+      "trend": 61,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -158,10 +172,52 @@
         "publishedAt": "2026-06-29T01:05:56Z",
         "thumbnail": "https://i.ytimg.com/vi/Js7PKsarC5Q/hqdefault.jpg",
         "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
-      }
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Joe | Official Trailer",
+          "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
+        }
+      ]
     },
     {
       "id": 1003,
+      "name": "Stray Kids \"THIS & THA…",
+      "originalTitle": "Stray Kids \"THIS & THAT\" Trailer",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "1.4M",
+      "trend": 70,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 巴西 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 阿根廷 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 哥伦比亚 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 智利 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 秘鲁 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 俄罗斯 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "hQUVIT8m-c0",
+        "channelTitle": "JYP Entertainment",
+        "publishedAt": "2026-07-07T15:00:03Z",
+        "thumbnail": "https://i.ytimg.com/vi/hQUVIT8m-c0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Stray Kids \"THIS & THAT\" Trailer",
+          "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
+        }
+      ]
+    },
+    {
+      "id": 1004,
       "name": "Avatar Aang: The Last …",
       "originalTitle": "Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar",
       "region": "撒哈拉以南非洲",
@@ -169,7 +225,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.6M",
+      "heat": "1.7M",
       "trend": 61,
       "score": 97,
       "status": "爆发",
@@ -179,45 +235,62 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 加纳 热门榜，播放量 1.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 加纳 热门榜，播放量 1.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7b20GRFZBFE",
         "channelTitle": "Avatar Legends",
         "publishedAt": "2026-07-07T15:00:30Z",
         "thumbnail": "https://i.ytimg.com/vi/7b20GRFZBFE/hqdefault.jpg",
         "url": "https://www.youtube.com/watch?v=7b20GRFZBFE"
-      }
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar",
+          "url": "https://www.youtube.com/watch?v=7b20GRFZBFE"
+        }
+      ]
     },
     {
-      "id": 1004,
-      "name": "Stray Kids \"THIS & THA…",
-      "originalTitle": "Stray Kids \"THIS & THAT\" Trailer",
-      "region": "南美洲",
-      "country": "巴西",
+      "id": 1005,
+      "name": "argentina vs switzerla…",
+      "originalTitle": "argentina vs switzerland",
+      "region": "撒哈拉以南非洲",
+      "country": "尼日利亚",
       "source": [
-        "YouTube"
+        "Google Trends"
       ],
-      "heat": "1.4M",
-      "trend": 69,
-      "score": 98,
+      "heat": "180K",
+      "trend": 71,
+      "score": 94,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 巴西 热门榜，播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "hQUVIT8m-c0",
-        "channelTitle": "JYP Entertainment",
-        "publishedAt": "2026-07-07T15:00:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/hQUVIT8m-c0/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
-      }
+      "prompt": "基于 Google Trends 尼日利亚 搜索趋势「argentina vs switzerland」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 尼日利亚 搜索趋势，搜索热度约 100000+。关联新闻源：BBC / Al Jazeera；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "argentina vs switzerland",
+        "traffic": 100000,
+        "publishedAt": "Tue, 7 Jul 2026 17:00:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQOQ-a7qmoD-PUULYRaDq-Yo0yHnFMp-FZtu7U2pvG7av6zxbr9kLIO1tajJk",
+        "url": "https://trends.google.com/trends/explore?geo=NG&q=argentina%20vs%20switzerland",
+        "newsUrl": "https://www.bbc.com/sport/football/articles/cz6v407y3qjo",
+        "newsTitle": "World Cup 2026: Lionel Messi's tears of relief after Argentina comeback",
+        "newsSource": "BBC"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "argentina vs switzerland",
+          "url": "https://trends.google.com/trends/explore?geo=NG&q=argentina%20vs%20switzerland"
+        }
+      ]
     },
     {
-      "id": 1005,
+      "id": 1006,
       "name": "tiempo de mañana",
       "originalTitle": "tiempo de mañana",
       "region": "南美洲",
@@ -226,8 +299,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 91,
+      "trend": 72,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -245,10 +318,17 @@
         "newsUrl": "",
         "newsTitle": "",
         "newsSource": ""
-      }
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "tiempo de mañana",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo%20de%20ma%C3%B1ana"
+        }
+      ]
     },
     {
-      "id": 1006,
+      "id": 1007,
       "name": "anses",
       "originalTitle": "anses",
       "region": "南美洲",
@@ -257,8 +337,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 72,
-      "score": 97,
+      "trend": 60,
+      "score": 91,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -276,10 +356,17 @@
         "newsUrl": "https://www.lanacion.com.ar/economia/pnc-cuando-cobro-las-pensiones-no-contributivas-de-la-anses-en-julio-2026-con-el-aumento-confirmado-nid07072026/",
         "newsTitle": "PNC: cuándo cobro las Pensiones no Contributivas de la Anses en julio 2026, con el aumento confirmado",
         "newsSource": "La Nación"
-      }
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "anses",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=anses"
+        }
+      ]
     },
     {
-      "id": 1007,
+      "id": 1008,
       "name": "switzerland vs colombi…",
       "originalTitle": "switzerland vs colombia",
       "region": "撒哈拉以南非洲",
@@ -288,8 +375,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 92,
+      "trend": 73,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -307,10 +394,17 @@
         "newsUrl": "https://www.bbc.com/sport/football/live/cx2vrg8gzr1t",
         "newsTitle": "Switzerland vs Colombia LIVE: FIFA World Cup last 16 score, penalties, commentary & updates",
         "newsSource": "BBC"
-      }
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "switzerland vs colombia",
+          "url": "https://trends.google.com/trends/explore?geo=GH&q=switzerland%20vs%20colombia"
+        }
+      ]
     },
     {
-      "id": 1008,
+      "id": 1009,
       "name": "lotería cruz roja hoy",
       "originalTitle": "lotería cruz roja hoy",
       "region": "南美洲",
@@ -319,8 +413,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 64,
-      "score": 94,
+      "trend": 59,
+      "score": 92,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -328,29 +422,36 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「lotería cruz roja hoy」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：ELTIEMPO.COM / Blu Radio；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：Noticias Caracol / ELTIEMPO.COM；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "lotería cruz roja hoy",
         "traffic": 5000,
         "publishedAt": "Tue, 7 Jul 2026 21:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgaZTGbP5WWvGTbxSQWexoD0uBpLT-Ur28SnUUo1MP2aCQxIxudG6684iV8VE",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXMxu1OScuBZG5X2A8v_p9Dr8g7IokGI2C4NqjemaiF1n0j1cMFSBK6PRSrLw",
         "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20cruz%20roja%20hoy",
-        "newsUrl": "https://www.eltiempo.com/economia/finanzas-personales/loteria-del-huila-conozca-los-numeros-ganadores-del-martes-07-de-julio-de-3569781",
-        "newsTitle": "Lotería del Huila: conozca los números ganadores del martes 07 de julio de 2026",
-        "newsSource": "ELTIEMPO.COM"
-      }
+        "newsUrl": "https://www.noticiascaracol.com/economia/resultados-de-la-loteria-de-la-cruz-roja-hoy-martes-7-de-julio-de-2026-numeros-ganadores-so35",
+        "newsTitle": "Resultados de la Lotería de la Cruz Roja hoy, martes 7 de julio de 2026: números ganadores",
+        "newsSource": "Noticias Caracol"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "lotería cruz roja hoy",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20cruz%20roja%20hoy"
+        }
+      ]
     },
     {
-      "id": 1009,
-      "name": "vedanta power share pr…",
-      "originalTitle": "vedanta power share price",
+      "id": 1010,
+      "name": "kusumgar ipo",
+      "originalTitle": "kusumgar ipo",
       "region": "印度",
       "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 62,
+      "trend": 61,
       "score": 93,
       "status": "爆发",
       "type": "realtime",
@@ -358,21 +459,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「vedanta power share price」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：Saur Energy / The Economic Times；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「kusumgar ipo」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 1000+。关联新闻源：The Economic Times / Moneycontrol.com；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "vedanta power share price",
-        "traffic": 500,
-        "publishedAt": "Tue, 7 Jul 2026 21:30:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxkft5AkooEISbBanDTHatCvc-q2CIfFsxfYVtsbqKRUGj_rK9UTuMJWtnTm4",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=vedanta%20power%20share%20price",
-        "newsUrl": "https://www.saurenergy.com/solar-energy-news/vedanta-power-q1-sales-rise-38-yoy-to-5225-million-units-12138287",
-        "newsTitle": "Vedanta Power Q1 Sales Rise 38% YoY to 5,225 Million Units",
-        "newsSource": "Saur Energy"
-      }
+        "topic": "kusumgar ipo",
+        "traffic": 1000,
+        "publishedAt": "Tue, 7 Jul 2026 21:40:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaZbIDyYLqLHEHP6tIMvyyqc9F5FhPJrfqQs4nd-1yjI7IqPBkaYHJBjEZqKE",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=kusumgar%20ipo",
+        "newsUrl": "https://m.economictimes.com/markets/ipos/fpos/can-kusumgar-ipo-deliver-long-term-growth-for-high-risk-investors/articleshow/132228059.cms",
+        "newsTitle": "Can Kusumgar IPO deliver long-term growth for high risk investors?",
+        "newsSource": "The Economic Times"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "kusumgar ipo",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=kusumgar%20ipo"
+        }
+      ]
     },
     {
-      "id": 1010,
+      "id": 1011,
       "name": "boeing 737",
       "originalTitle": "boeing 737",
       "region": "印度尼西亚",
@@ -381,8 +489,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 53,
-      "score": 89,
+      "trend": 60,
+      "score": 92,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -390,20 +498,27 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「boeing 737」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 500+。关联新闻源：Flightradar24 / Tempo.co English；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 500+。关联新闻源：detikNews / Kumparan.com；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "boeing 737",
         "traffic": 500,
         "publishedAt": "Tue, 7 Jul 2026 21:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLTvSfZElGh0aJLW5YjxJvkhMEZCzIE_secVaqbAKBKRfXjffNLzW8cX5OUW0",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuzMhxK7ZMyoDLnPFEkcQHzVLoEehjL9zOSnTzmEe2b4rt6x9BJJ3HTqTg2-0",
         "url": "https://trends.google.com/trends/explore?geo=ID&q=boeing%20737",
-        "newsUrl": "https://www.flightradar24.com/blog/flight-tracking-news/major-incident/k2-airways-cargo-737-accident/",
-        "newsTitle": "K2 Airways Cargo 737 overdue in Karachi",
-        "newsSource": "Flightradar24"
-      }
+        "newsUrl": "https://news.detik.com/internasional/d-8564825/pesawat-boeing-737-hilang-kontak-pencarian-dilakukan",
+        "newsTitle": "Pesawat Boeing 737 Hilang Kontak, Pencarian Dilakukan",
+        "newsSource": "detikNews"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "boeing 737",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=boeing%20737"
+        }
+      ]
     },
     {
-      "id": 1011,
+      "id": 1012,
       "name": "cte",
       "originalTitle": "cte",
       "region": "南美洲",
@@ -412,8 +527,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 66,
-      "score": 95,
+      "trend": 54,
+      "score": 90,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -421,29 +536,36 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 巴西 搜索趋势「cte」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 100+。关联新闻源：ESPN / BBC；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 200+。关联新闻源：ESPN / The New York Times；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "cte",
-        "traffic": 100,
+        "traffic": 200,
         "publishedAt": "Tue, 7 Jul 2026 20:40:00 -0700",
         "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQy4L3QaFhGSrVn_5fX12hUHWsJDXlzIRVSITsaJeLnxPMxitoq856EpwxOA",
         "url": "https://trends.google.com/trends/explore?geo=BR&q=cte",
         "newsUrl": "https://www.espn.com/nfl/story/_/id/49296262/late-cowboys-player-marshawn-kneeland-diagnosed-cte",
         "newsTitle": "Late Cowboys player Marshawn Kneeland diagnosed with CTE",
         "newsSource": "ESPN"
-      }
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "cte",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=cte"
+        }
+      ]
     },
     {
-      "id": 1012,
-      "name": "mega go",
-      "originalTitle": "mega go",
-      "region": "南美洲",
-      "country": "智利",
+      "id": 1013,
+      "name": "„ Lauksnos Klaipėdoj…",
+      "originalTitle": "„ Lauksnos Klaipėdoje pristatys pasaulio tradicijas , bus dainų , tango ir flamenko",
+      "region": "全球",
+      "country": "全球",
       "source": [
-        "Google Trends"
+        "GDELT"
       ],
       "heat": "180K",
-      "trend": 53,
+      "trend": 64,
       "score": 89,
       "status": "爆发",
       "type": "realtime",
@@ -451,21 +573,165 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「mega go」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 200+。关联新闻源：Mega.cl / En Cancha；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "mega go",
-        "traffic": 200,
-        "publishedAt": "Tue, 7 Jul 2026 21:30:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhNmiLXJ9l301m_KwKt12aULutkRM6YMmtTz0X99HyFh_s7Q32TohBp1NpBMg",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=mega%20go",
-        "newsUrl": "https://www.mega.cl/programas/volverias-con-tu-ex/mejores-momentos/217325-ludmila-ksenofontova-revelo-como-es-relacion-carla-ballero-sorprendio-respuesta.html",
-        "newsTitle": "Ludmila Ksenofontova reveló cómo es su relación con Carla Ballero y sorprendió con su respuesta",
-        "newsSource": "Mega.cl"
-      }
+      "prompt": "基于 GDELT 全球新闻源中 全球 热点《 „ Lauksnos  Klaipėdoje pristatys pasaulio tradicijas , bus dainų , tango ir flamenko ( programa ) 》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
+      "reason": "来自 GDELT 全球新闻数据库，媒体域名：ve.lt。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
+      "gdelt": {
+        "domain": "ve.lt",
+        "language": "Lithuanian",
+        "publishedAt": "20260707T094500Z",
+        "picture": "https://ve.lt/sites/default/files/styles/facebook/public/2026-07/lauksnos.jpg?c41867b&itok=elGn1yMC",
+        "url": "https://ve.lt/gyvenimas/kultura/lauksnos-klaipedoje-pristatys-pasaulio-tradicijas-bus-dainu-tango-ir-flamenko"
+      },
+      "signals": [
+        {
+          "source": "GDELT",
+          "title": "„ Lauksnos Klaipėdoje pristatys pasaulio tradicijas , bus dainų , tango ir flamenko",
+          "url": "https://ve.lt/gyvenimas/kultura/lauksnos-klaipedoje-pristatys-pasaulio-tradicijas-bus-dainu-tango-ir-flamenko"
+        }
+      ]
     },
     {
-      "id": 1013,
+      "id": 1014,
+      "name": "Provodite ljeto u Zagr…",
+      "originalTitle": "Provodite ljeto u Zagrebu ? Green River Fest donosi bogat program uz Savu",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "GDELT"
+      ],
+      "heat": "180K",
+      "trend": 50,
+      "score": 82,
+      "status": "上升",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 GDELT 全球新闻源中 全球 热点《Provodite ljeto u Zagrebu ? Green River Fest donosi bogat program uz Savu》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
+      "reason": "来自 GDELT 全球新闻数据库，媒体域名：index.hr。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
+      "gdelt": {
+        "domain": "index.hr",
+        "language": "Croatian",
+        "publishedAt": "20260707T071500Z",
+        "picture": "https://ip.index.hr/remote/bucket.index.hr/b/index/39bfa53f-a721-417a-beb8-a1608d0522e9.png?fb_wtrmrk=magazin.jpg&mode=crop&format=png",
+        "url": "https://www.index.hr/magazin/clanak/green-river-fest-predstavio-bogat-ljetni-program-na-obali-save-u-zagrebu/2810709.aspx"
+      },
+      "signals": [
+        {
+          "source": "GDELT",
+          "title": "Provodite ljeto u Zagrebu ? Green River Fest donosi bogat program uz Savu",
+          "url": "https://www.index.hr/magazin/clanak/green-river-fest-predstavio-bogat-ljetni-program-na-obali-save-u-zagrebu/2810709.aspx"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "Tarptautinis festivali…",
+      "originalTitle": "Tarptautinis festivalis „ Lauksnos pradeda penkių dienų kelionę po pasaulio tradicijas",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "GDELT"
+      ],
+      "heat": "180K",
+      "trend": 61,
+      "score": 87,
+      "status": "上升",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 GDELT 全球新闻源中 全球 热点《Tarptautinis festivalis „ Lauksnos  pradeda penkių dienų kelionę po pasaulio tradicijas》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
+      "reason": "来自 GDELT 全球新闻数据库，媒体域名：m.kauno.diena.lt。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
+      "gdelt": {
+        "domain": "m.kauno.diena.lt",
+        "language": "Lithuanian",
+        "publishedAt": "20260707T100000Z",
+        "picture": "https://administravimas.diena.lt/sites/default/files-sync/2026-07/Domas%20Rimeika-185.jpg",
+        "url": "https://m.kauno.diena.lt/naujienos/klaipeda/menas-ir-pramogos/tarptautinis-festivalis-lauksnos-pradeda-penkiu-dienu-kelione-po-pasaulio-tradicijas-1764539"
+      },
+      "signals": [
+        {
+          "source": "GDELT",
+          "title": "Tarptautinis festivalis „ Lauksnos pradeda penkių dienų kelionę po pasaulio tradicijas",
+          "url": "https://m.kauno.diena.lt/naujienos/klaipeda/menas-ir-pramogos/tarptautinis-festivalis-lauksnos-pradeda-penkiu-dienu-kelione-po-pasaulio-tradicijas-1764539"
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "name": "GREEN RIVER FESTIVAL J…",
+      "originalTitle": "GREEN RIVER FESTIVAL Jedno od najljepših mjesta zagrebačkog ljeta nalazi se na obali Save | NACIONAL . HR | News portal najutjecajnijeg političkog tjednika",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "GDELT"
+      ],
+      "heat": "180K",
+      "trend": 53,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 GDELT 全球新闻源中 全球 热点《GREEN RIVER FESTIVAL Jedno od najljepših mjesta zagrebačkog ljeta nalazi se na obali Save | NACIONAL . HR | News portal najutjecajnijeg političkog tjednika》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
+      "reason": "来自 GDELT 全球新闻数据库，媒体域名：nacional.hr。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
+      "gdelt": {
+        "domain": "nacional.hr",
+        "language": "Croatian",
+        "publishedAt": "20260707T104500Z",
+        "picture": "https://www.nacional.hr/wp-content/uploads/2026/07/Festival-1.jpg",
+        "url": "https://www.nacional.hr/green-river-festival-jedno-od-najljepsih-mjesta-zagrebackog-ljeta-nalazi-se-na-obali-save/"
+      },
+      "signals": [
+        {
+          "source": "GDELT",
+          "title": "GREEN RIVER FESTIVAL Jedno od najljepših mjesta zagrebačkog ljeta nalazi se na obali Save | NACIONAL . HR | News portal najutjecajnijeg političkog tjednika",
+          "url": "https://www.nacional.hr/green-river-festival-jedno-od-najljepsih-mjesta-zagrebackog-ljeta-nalazi-se-na-obali-save/"
+        }
+      ]
+    },
+    {
+      "id": 1017,
+      "name": "Πολιτιστική ατζέντα , …",
+      "originalTitle": "Πολιτιστική ατζέντα , Τετάρτη 8 Ιουλίου",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "GDELT"
+      ],
+      "heat": "180K",
+      "trend": 52,
+      "score": 82,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 GDELT 全球新闻源中 全球 热点《Πολιτιστική ατζέντα , Τετάρτη 8 Ιουλίου》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
+      "reason": "来自 GDELT 全球新闻数据库，媒体域名：philenews.com。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
+      "gdelt": {
+        "domain": "philenews.com",
+        "language": "Greek",
+        "publishedAt": "20260708T041500Z",
+        "picture": "https://www.philenews.com/wp-content/uploads/2026/07/GB_08519_photo_Andrianos_Panos-scaled.jpg",
+        "url": "https://www.philenews.com/politismos/article/1742904/politistiki-atzenta-tetarti-8-iouliou/"
+      },
+      "signals": [
+        {
+          "source": "GDELT",
+          "title": "Πολιτιστική ατζέντα , Τετάρτη 8 Ιουλίου",
+          "url": "https://www.philenews.com/politismos/article/1742904/politistiki-atzenta-tetarti-8-iouliou/"
+        }
+      ]
+    },
+    {
+      "id": 1018,
       "name": "Bangladesh forms commi…",
       "originalTitle": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
       "region": "印度",
@@ -474,8 +740,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 56,
-      "score": 84,
+      "trend": 58,
+      "score": 85,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -491,10 +757,17 @@
         "title": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
         "publishedAt": "Tue, 07 Jul 2026 22:34:03 GMT",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYjB6SnlDTUgzYWhwUzZWbjZia2Mtc1ZWTThKRTJtaEZoUktra2lxRzlJcjNzTGFlY3d1VVBuVWN2UTZJZTNUamV2elIyd1VtWURzamFZVzh4UUN4OU9NOTlsZTZTVnphSkhpMlhNYnBVQ2R4dG9sSHoyaS1yUXdobVhRRTdMVG41Mm4ySjdaak9ZTHotdllsV0I3SnZScWE0LTdzRjhkUHp2MmQ1Tm5tUm95aTNIYUJQYWtvV2NSbzgtVEtlYkZ6dlBxNEFwWHZ4QXdhOTNBbzBobTNLLVFV?oc=5"
-      }
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYjB6SnlDTUgzYWhwUzZWbjZia2Mtc1ZWTThKRTJtaEZoUktra2lxRzlJcjNzTGFlY3d1VVBuVWN2UTZJZTNUamV2elIyd1VtWURzamFZVzh4UUN4OU9NOTlsZTZTVnphSkhpMlhNYnBVQ2R4dG9sSHoyaS1yUXdobVhRRTdMVG41Mm4ySjdaak9ZTHotdllsV0I3SnZScWE0LTdzRjhkUHp2MmQ1Tm5tUm95aTNIYUJQYWtvV2NSbzgtVEtlYkZ6dlBxNEFwWHZ4QXdhOTNBbzBobTNLLVFV?oc=5"
+        }
+      ]
     },
     {
-      "id": 1014,
+      "id": 1019,
       "name": "Bollywood stars shower…",
       "originalTitle": "Bollywood stars shower blessings on Anshula Kapoor, Rohan Thakkar at wedding reception",
       "region": "印度",
@@ -503,8 +776,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 54,
-      "score": 83,
+      "trend": 46,
+      "score": 80,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -520,10 +793,17 @@
         "title": "Bollywood stars shower blessings on Anshula Kapoor, Rohan Thakkar at wedding reception",
         "publishedAt": "Wed, 08 Jul 2026 03:15:02 GMT",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUUx4Ulh6aHpzYzFKV3Vxd0dVSFBqNE9FamNJSTAweGRscUIxVVp5cjN4R0Zhang0MjJwQUlqVzkxUkF4ZkVQYUgwamRDLXFYN2hDbENKcVJzU09rdDA0NFVoNW9ySGdhS1lsSWhrZWxaZnFCWHhhSEJVanNxaHRDMjh2WExyekNIa3lwV0hScDdkWnRwaktXazB5dlA4Vzl5T0htRnNiN2cyb3RsbXBKQnBR?oc=5"
-      }
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bollywood stars shower blessings on Anshula Kapoor, Rohan Thakkar at wedding reception",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUUx4Ulh6aHpzYzFKV3Vxd0dVSFBqNE9FamNJSTAweGRscUIxVVp5cjN4R0Zhang0MjJwQUlqVzkxUkF4ZkVQYUgwamRDLXFYN2hDbENKcVJzU09rdDA0NFVoNW9ySGdhS1lsSWhrZWxaZnFCWHhhSEJVanNxaHRDMjh2WExyekNIa3lwV0hScDdkWnRwaktXazB5dlA4Vzl5T0htRnNiN2cyb3RsbXBKQnBR?oc=5"
+        }
+      ]
     },
     {
-      "id": 1015,
+      "id": 1020,
       "name": "Bangalore Internationa…",
       "originalTitle": "Bangalore International Short Film Festival hosts pre-show gala",
       "region": "印度",
@@ -532,8 +812,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 49,
-      "score": 81,
+      "trend": 60,
+      "score": 86,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -549,10 +829,17 @@
         "title": "Bangalore International Short Film Festival hosts pre-show gala",
         "publishedAt": "Wed, 08 Jul 2026 04:09:54 GMT",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTWdYcTZOUGlLejFULUJIWWR5OVcyeC15ZFhCc212Q2tJWklXZk93aGhUNEZhdXZoR3dYNjBBd05EVjZXU29JMXlBbU9pS3lzQ3p6aUhMZldvQ3k5aHd6VW5McGg2Z2VpOUJMT2V2VFBFSV85cXI4WWo4cHRDdEdXMlhrWW1DaUNqbnVVTE93Rk1Db25kTzR1ZjFYTG9KR3dZNWoxYU9lV3VtUHJLRE41VjY1MGRiQUM3UHJPQzZ1WHrSAccBQVVfeXFMTV9pWkU0U2lxaThFZDVLY2JHdkppRFZyMkJfdFQ5S2d1VUdQUTM3SHFROUNBOXByX09nbkVXVlYwWnZJaDJoOVFYbkVQd2JpZVZrSklkUUNmYXhZUE5XT1V1dnFQcGxfXzJxWm9ydHF2Ni00YVlnYVlzUzVsa1BLSERBZVpHZ0VkQVF4ZVljdzItb2xhSnVBNk5iZWRLMWtIQ3llR1EzdDZReG8yNHIxbWpfcVFnSXdjWVI2Y2UzUF9CNW0za2ZsOA?oc=5"
-      }
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bangalore International Short Film Festival hosts pre-show gala",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTWdYcTZOUGlLejFULUJIWWR5OVcyeC15ZFhCc212Q2tJWklXZk93aGhUNEZhdXZoR3dYNjBBd05EVjZXU29JMXlBbU9pS3lzQ3p6aUhMZldvQ3k5aHd6VW5McGg2Z2VpOUJMT2V2VFBFSV85cXI4WWo4cHRDdEdXMlhrWW1DaUNqbnVVTE93Rk1Db25kTzR1ZjFYTG9KR3dZNWoxYU9lV3VtUHJLRE41VjY1MGRiQUM3UHJPQzZ1WHrSAccBQVVfeXFMTV9pWkU0U2lxaThFZDVLY2JHdkppRFZyMkJfdFQ5S2d1VUdQUTM3SHFROUNBOXByX09nbkVXVlYwWnZJaDJoOVFYbkVQd2JpZVZrSklkUUNmYXhZUE5XT1V1dnFQcGxfXzJxWm9ydHF2Ni00YVlnYVlzUzVsa1BLSERBZVpHZ0VkQVF4ZVljdzItb2xhSnVBNk5iZWRLMWtIQ3llR1EzdDZReG8yNHIxbWpfcVFnSXdjWVI2Y2UzUF9CNW0za2ZsOA?oc=5"
+        }
+      ]
     },
     {
-      "id": 1016,
+      "id": 1021,
       "name": "Prabowo di Depan PM Mo…",
       "originalTitle": "Prabowo di Depan PM Modi: Saya Punya DNA India, Dengar Musik Tubuh Bergerak",
       "region": "印度尼西亚",
@@ -561,8 +848,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 59,
-      "score": 86,
+      "trend": 49,
+      "score": 81,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -578,39 +865,53 @@
         "title": "Prabowo di Depan PM Modi: Saya Punya DNA India, Dengar Musik Tubuh Bergerak",
         "publishedAt": "Wed, 08 Jul 2026 02:03:11 GMT",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXpQZEZIYmJaQlUxVDVfTW9JaHFRS3RNTUxBQW1LTTZ5VWtLVW1rTDhoS2JYS0R4NmdQQzlka2tobU9KRWptVFc5cmtfR2xBWGZzQk5POHZnSHRFbTdBampyNnNWTHJNTWpZM2wtS1VWLXdyOURNaVBqT3dTdEE3WV9ZRUpjZHRzOU9RMklERFVEcHVubWJ6QjVwQTZ3VVBhMXF1MFB2LS1YZ3ptaFREeklSONIBuAFBVV95cUxQcjZpYUpoTE84ck1ta1A2WDFrWTFYWXFxMEdiT3Y1d2tSYW1KTWE5N0FLWkFSa3BNbzdUNWhFWkljNkxrUFg5N3dMNzFxZVRkNmVnYlhuRlMyNXNJNEVUZVRtSmlDb0FuemNjLTFsUDRYVkVnTGg0dnZJWXhOQ3hKXzlHNUFncmh0eG5uMUFJOXIwOHlDbW9OWFlxdjZ3ek1BNUxCYU1KYUhfN1FaZ3ljQnEycW9lSzZM?oc=5"
-      }
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Prabowo di Depan PM Modi: Saya Punya DNA India, Dengar Musik Tubuh Bergerak",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXpQZEZIYmJaQlUxVDVfTW9JaHFRS3RNTUxBQW1LTTZ5VWtLVW1rTDhoS2JYS0R4NmdQQzlka2tobU9KRWptVFc5cmtfR2xBWGZzQk5POHZnSHRFbTdBampyNnNWTHJNTWpZM2wtS1VWLXdyOURNaVBqT3dTdEE3WV9ZRUpjZHRzOU9RMklERFVEcHVubWJ6QjVwQTZ3VVBhMXF1MFB2LS1YZ3ptaFREeklSONIBuAFBVV95cUxQcjZpYUpoTE84ck1ta1A2WDFrWTFYWXFxMEdiT3Y1d2tSYW1KTWE5N0FLWkFSa3BNbzdUNWhFWkljNkxrUFg5N3dMNzFxZVRkNmVnYlhuRlMyNXNJNEVUZVRtSmlDb0FuemNjLTFsUDRYVkVnTGg0dnZJWXhOQ3hKXzlHNUFncmh0eG5uMUFJOXIwOHlDbW9OWFlxdjZ3ek1BNUxCYU1KYUhfN1FaZ3ljQnEycW9lSzZM?oc=5"
+        }
+      ]
     },
     {
-      "id": 1017,
-      "name": "Tahan Imbang Batam, Ta…",
-      "originalTitle": "Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026",
+      "id": 1022,
+      "name": "Bisakah Sepak Bola Lep…",
+      "originalTitle": "Bisakah Sepak Bola Lepas dari FIFA dan Piala Dunia?",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 46,
-      "score": 80,
+      "trend": 54,
+      "score": 83,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Pemerintah Kota Tanjungpinang」热点《Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Pemerintah Kota Tanjungpinang。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「DW.com」热点《Bisakah Sepak Bola Lepas dari FIFA dan Piala Dunia?》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：DW.com。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "sepak bola",
         "category": "垂类补充",
-        "sourceName": "Pemerintah Kota Tanjungpinang",
-        "title": "Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026",
-        "publishedAt": "Wed, 08 Jul 2026 01:18:04 GMT",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaTVFeVFOcEFZMS1jb2pNNGVBNjFyc2lWMUlOR2pnMmFTRVJ1czh6WGpNMVdtTUZURzZBYlZ4MDg1SDhfNnU0aW5jTi0zLUlncEJCYWNkWFRHdy1IOHJfV1c1WktIVHFZekJYcVAyRmJ6YU1RWDJMNFBQeVQ5ZlVoMmZkTVY1TnFXb3dOd0s5WDdVSTdhOGI4TXhhZlpyd0ZKcl9uZDdHMWNIQlIyY2R2Um1PWW1Ndw?oc=5"
-      }
+        "sourceName": "DW.com",
+        "title": "Bisakah Sepak Bola Lepas dari FIFA dan Piala Dunia?",
+        "publishedAt": "Wed, 08 Jul 2026 04:26:08 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaDlDdlUzWDdHaDZwT2x0Q2Y3MzZpQ0hXUzJiTjczdUNfdXp4MWxOc3prY2pmcXdVRFNqRDlOTi1lTHcwUVkxMXp3N1dNLU1KVVZYaGUtSmFIcHlqVlJ2SENwUTJ0YmFyZGR3VG9SSTZJLWlzVkdkY0ZUYUdBMlFoazRLZkctZXRoOF840gGLAUFVX3lxTFBoOUN2VTNYN0doNnBPbHRDZjczNmlDSFdTMmJONzN1Q191engxbE5zemtjamZxd1VEU2pEOU5OLWVMdzBRWTExenc3V00tTUpVVlhoZS1KYUhweWpWUnZIQ3BRMnRiYXJkZHdUb1JJNkktaXNWR2RjRlRhR0EyUWhrNEtmRy1ldGg4Xzg?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bisakah Sepak Bola Lepas dari FIFA dan Piala Dunia?",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaDlDdlUzWDdHaDZwT2x0Q2Y3MzZpQ0hXUzJiTjczdUNfdXp4MWxOc3prY2pmcXdVRFNqRDlOTi1lTHcwUVkxMXp3N1dNLU1KVVZYaGUtSmFIcHlqVlJ2SENwUTJ0YmFyZGR3VG9SSTZJLWlzVkdkY0ZUYUdBMlFoazRLZkctZXRoOF840gGLAUFVX3lxTFBoOUN2VTNYN0doNnBPbHRDZjczNmlDSFdTMmJONzN1Q191engxbE5zemtjamZxd1VEU2pEOU5OLWVMdzBRWTExenc3V00tTUpVVlhoZS1KYUhweWpWUnZIQ3BRMnRiYXJkZHdUb1JJNkktaXNWR2RjRlRhR0EyUWhrNEtmRy1ldGg4Xzg?oc=5"
+        }
+      ]
     },
     {
-      "id": 1018,
+      "id": 1023,
       "name": "Screening Film Anak-An…",
       "originalTitle": "Screening Film Anak-Anak Bamu",
       "region": "印度尼西亚",
@@ -619,8 +920,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 58,
-      "score": 85,
+      "trend": 56,
+      "score": 84,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -636,71 +937,20 @@
         "title": "Screening Film Anak-Anak Bamu",
         "publishedAt": "Wed, 08 Jul 2026 01:18:30 GMT",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vNlV4Mk9mQUl0ZVREOElWN2hnWWVMa1RlZG10RnVldWR3Q2NuY29QcW9IcE0tSVA2RE9Kenk1QU9TNDQ5SUVvNHphWjZnN1FWQlE4U1hvcE5RYmlYMEtBd3pBbFdxUk5RNTBiaENR?oc=5"
-      }
-    },
-    {
-      "id": 1019,
-      "name": "Quando o futebol termi…",
-      "originalTitle": "Quando o futebol termina, a violência continua",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 51,
-      "score": 82,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「Jornal da USP」热点《Quando o futebol termina, a violência continua》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Jornal da USP。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "futebol",
-        "category": "核心话题",
-        "sourceName": "Jornal da USP",
-        "title": "Quando o futebol termina, a violência continua",
-        "publishedAt": "Wed, 08 Jul 2026 00:39:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeEtOSUFKMmZ1c29wUEdGUzlnSVpmS25nSFN3MFQ4ejRLdXRSRm1rUVFWdmJ3RlFvYzJobkNOQ0NDLU5QV3BMaVUzelllVFdfc3ZZa0prVUprN2dDUUc4bGJDWFhwVnZ3QkZ3OW1uNFhTNDl6MWZQR19NbG91LVprbGVn?oc=5"
-      }
-    },
-    {
-      "id": 1020,
-      "name": "Escola Municipal de Mú…",
-      "originalTitle": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 52,
-      "score": 83,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「CONCERTO | Home」热点《Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：CONCERTO | Home。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "musica",
-        "category": "垂类补充",
-        "sourceName": "CONCERTO | Home",
-        "title": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
-        "publishedAt": "Tue, 07 Jul 2026 23:52:30 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNEpjWVpJTU8wanNxWGNfaXhMZWM1N1M1Z0hZVHR0blR5bUNEM0JWZGxGcE8xSEtsczh5clNxd2xYWmdDOEY0VXFmdGJVSWM5b2lJeHZlQTF6MTFQT2ZaczFZUWQxOU83T2dZRGstNHpOM19ZUkx5N2VkRE5jcjQ3WDRRWE9heFpmLWlsY2lqTFRsdXhRSEVkdGxpNDhzZFVaTzBuUlRpcXZ3ZWJrN19KOG1kVk9GV0ZFeWljakJ1cmt0QQ?oc=5"
-      }
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Screening Film Anak-Anak Bamu",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vNlV4Mk9mQUl0ZVREOElWN2hnWWVMa1RlZG10RnVldWR3Q2NuY29QcW9IcE0tSVA2RE9Kenk1QU9TNDQ5SUVvNHphWjZnN1FWQlE4U1hvcE5RYmlYMEtBd3pBbFdxUk5RNTBiaENR?oc=5"
+        }
+      ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 98,
-      "growth": 50,
+      "count": 92,
+      "growth": 47,
       "countries": [
         "印度"
       ],
@@ -711,8 +961,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 98,
-      "growth": 12,
+      "count": 92,
+      "growth": 14,
       "countries": [
         "印度尼西亚"
       ],
@@ -723,8 +973,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 40,
-      "growth": 12,
+      "count": 34,
+      "growth": 14,
       "countries": [
         "俄罗斯"
       ],
@@ -735,8 +985,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 54,
-      "growth": 34,
+      "count": 56,
+      "growth": 37,
       "countries": [
         "尼日利亚",
         "南非",
@@ -750,8 +1000,8 @@
       ]
     },
     "南美洲": {
-      "count": 83,
-      "growth": 46,
+      "count": 85,
+      "growth": 49,
       "countries": [
         "巴西",
         "阿根廷",
