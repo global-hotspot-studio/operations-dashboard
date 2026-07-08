@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-08T06:24:19.818Z",
+  "generatedAt": "2026-07-08T09:17:03.266Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1362,
-    "effectiveHotspots": 368,
-    "highPriorityAlerts": 12,
-    "templateCandidates": 12,
+    "rawTopics": 1320,
+    "effectiveHotspots": 354,
+    "highPriorityAlerts": 13,
+    "templateCandidates": 13,
     "rawDelta": 42,
-    "effectiveRate": "26.7%"
+    "effectiveRate": "27%"
   },
   "trendSeries": {
     "labels": [
@@ -47,72 +47,37 @@
       "22:00"
     ],
     "effective": [
-      38,
-      61,
-      41,
-      57,
-      76,
-      48,
-      107,
-      65,
-      94,
-      119,
-      96,
-      143
+      45,
+      55,
+      44,
+      58,
+      72,
+      54,
+      100,
+      70,
+      92,
+      118,
+      101,
+      136
     ],
     "template": [
-      15,
-      28,
-      19,
-      23,
-      37,
+      18,
+      25,
       22,
-      49,
-      29,
-      47,
-      54,
-      51,
-      79
+      22,
+      37,
+      25,
+      46,
+      33,
+      45,
+      55,
+      52,
+      77
     ]
   },
   "hotspots": [
     {
       "id": 1000,
-      "name": "BABYMONSTER - 'I LIKE …",
-      "originalTitle": "BABYMONSTER - 'I LIKE IT' M/V",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "16.7M",
-      "trend": 79,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'I LIKE IT' M/V》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 15.9M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "9cS2wv6AfHk",
-        "channelTitle": "BABYMONSTER",
-        "publishedAt": "2026-07-05T15:00:00Z",
-        "thumbnail": "https://i.ytimg.com/vi/9cS2wv6AfHk/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "BABYMONSTER - 'I LIKE IT' M/V",
-          "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
-        }
-      ]
-    },
-    {
-      "id": 1001,
       "name": "Ve Junoon | Awarapan 2…",
       "originalTitle": "Ve Junoon | Awarapan 2 | Emraan Hashmi, Disha Patani | Vishesh Bhatt | Mithoon, Sayeed Q., Subodhh",
       "region": "印度",
@@ -120,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "5.2M",
-      "trend": 68,
-      "score": 97,
+      "heat": "6.7M",
+      "trend": 64,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -130,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Ve Junoon | Awarapan 2 | Emraan Hashmi, Disha Patani | Vishesh Bhatt | Mithoon, Sayeed Q., Subodhh》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 5.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 7.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "HX1EXb5kWwY",
         "channelTitle": "Sony Music India",
@@ -147,6 +112,41 @@
       ]
     },
     {
+      "id": 1001,
+      "name": "BABYMONSTER - 'I LIKE …",
+      "originalTitle": "BABYMONSTER - 'I LIKE IT' M/V",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "17.5M",
+      "trend": 75,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'I LIKE IT' M/V》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 16.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "9cS2wv6AfHk",
+        "channelTitle": "BABYMONSTER",
+        "publishedAt": "2026-07-05T15:00:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/9cS2wv6AfHk/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "BABYMONSTER - 'I LIKE IT' M/V",
+          "url": "https://www.youtube.com/watch?v=9cS2wv6AfHk"
+        }
+      ]
+    },
+    {
       "id": 1002,
       "name": "Joe | Official Trailer",
       "originalTitle": "Joe | Official Trailer",
@@ -155,9 +155,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "6.1M",
-      "trend": 67,
-      "score": 98,
+      "heat": "5.9M",
+      "trend": 63,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -183,41 +183,6 @@
     },
     {
       "id": 1003,
-      "name": "Stray Kids \"THIS & THA…",
-      "originalTitle": "Stray Kids \"THIS & THAT\" Trailer",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "1.5M",
-      "trend": 69,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 巴西 热门榜，播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 阿根廷 热门榜，播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 哥伦比亚 热门榜，播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 智利 热门榜，播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 秘鲁 热门榜，播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 俄罗斯 热门榜，播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "hQUVIT8m-c0",
-        "channelTitle": "JYP Entertainment",
-        "publishedAt": "2026-07-07T15:00:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/hQUVIT8m-c0/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Stray Kids \"THIS & THAT\" Trailer",
-          "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
-        }
-      ]
-    },
-    {
-      "id": 1004,
       "name": "Avatar Aang: The Last …",
       "originalTitle": "Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar",
       "region": "撒哈拉以南非洲",
@@ -225,9 +190,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.8M",
-      "trend": 57,
-      "score": 95,
+      "heat": "2.2M",
+      "trend": 67,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -235,7 +200,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 加纳 热门榜，播放量 1.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 加纳 热门榜，播放量 2.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7b20GRFZBFE",
         "channelTitle": "Avatar Legends",
@@ -252,9 +217,82 @@
       ]
     },
     {
+      "id": 1004,
+      "name": "Stray Kids \"THIS & THA…",
+      "originalTitle": "Stray Kids \"THIS & THAT\" Trailer",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "1.5M",
+      "trend": 66,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 巴西 热门榜，播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 阿根廷 热门榜，播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 哥伦比亚 热门榜，播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 智利 热门榜，播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 秘鲁 热门榜，播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 俄罗斯 热门榜，播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "hQUVIT8m-c0",
+        "channelTitle": "JYP Entertainment",
+        "publishedAt": "2026-07-07T15:00:03Z",
+        "thumbnail": "https://i.ytimg.com/vi/hQUVIT8m-c0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Stray Kids \"THIS & THAT\" Trailer",
+          "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
+        }
+      ]
+    },
+    {
       "id": 1005,
-      "name": "anses",
-      "originalTitle": "anses",
+      "name": "quartas de final da co…",
+      "originalTitle": "quartas de final da copa do mundo",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 61,
+      "score": 92,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「quartas de final da copa do mundo」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 20000+。关联新闻源：GE / UOL；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "quartas de final da copa do mundo",
+        "traffic": 20000,
+        "publishedAt": "Wed, 8 Jul 2026 01:50:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0FQaKxaffQWVj39H7bLP_tEXsQE9J8ZKDnS5P6FqUrUwaZ30SIvPgN8Kuk0o",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=quartas%20de%20final%20da%20copa%20do%20mundo",
+        "newsUrl": "https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/07/quartas-da-copa-do-mundo-2026-veja-os-confrontos-e-o-chaveamento-ate-a-final.ghtml",
+        "newsTitle": "Quartas da Copa do Mundo 2026: veja os confrontos e o chaveamento até a final",
+        "newsSource": "GE"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "quartas de final da copa do mundo",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=quartas%20de%20final%20da%20copa%20do%20mundo"
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "zlatan ibrahimović",
+      "originalTitle": "zlatan ibrahimović",
       "region": "南美洲",
       "country": "阿根廷",
       "source": [
@@ -269,71 +307,66 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「anses」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 10000+。关联新闻源：Infobae / Radiocanal；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「zlatan ibrahimović」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 10000+。关联新闻源：The Guardian / BBC；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "anses",
+        "topic": "zlatan ibrahimović",
         "traffic": 10000,
-        "publishedAt": "Tue, 7 Jul 2026 19:50:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wltFjmG3vkbMi821tHVZIu499NuNmqPfOW5dFKzJ0rBy2R19CAya0e1z4Hk",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=anses",
-        "newsUrl": "https://www.infobae.com/economia/2026/07/07/anses-cuando-cobro-en-julio-2026-si-mi-dni-termina-en-5/",
-        "newsTitle": "ANSES: cuándo cobro en julio 2026 si mi DNI termina en 5",
-        "newsSource": "Infobae"
+        "publishedAt": "Wed, 8 Jul 2026 02:00:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3hZIDajSdKP8HBb4besietqerYylXOOdoPvs9Ynai447WpuOzzCzABStG3io",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=zlatan%20ibrahimovi%C4%87",
+        "newsUrl": "https://www.theguardian.com/football/2026/jul/07/argentina-egypt-world-cup-2026-last-16-match-report",
+        "newsTitle": "Tearful Messi inspires Argentina’s great escape in World Cup thriller with Egypt",
+        "newsSource": "The Guardian"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "anses",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=anses"
+          "title": "zlatan ibrahimović",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=zlatan%20ibrahimovi%C4%87"
         }
       ]
     },
     {
-      "id": 1006,
-      "name": "switzerland vs colombi…",
-      "originalTitle": "switzerland vs colombia",
+      "id": 1007,
+      "name": "kuccps portal",
+      "originalTitle": "kuccps portal",
       "region": "撒哈拉以南非洲",
-      "country": "加纳",
+      "country": "肯尼亚",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 92,
+      "trend": 57,
+      "score": 91,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 加纳 搜索趋势「switzerland vs colombia」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 加纳 搜索趋势，搜索热度约 20000+。关联新闻源：BBC / AP News；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 肯尼亚 搜索趋势，搜索热度约 10000+。关联新闻源：ESPN / The New York Times；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 肯尼亚 搜索趋势「kuccps portal」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 肯尼亚 搜索趋势，搜索热度约 10000+。关联新闻源：The Star, Kenya / The Standard；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "switzerland vs colombia",
-        "traffic": 20000,
-        "publishedAt": "Tue, 7 Jul 2026 12:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPDHN7oDGq33J2P2EddNknFFqrFjPKUeQJoDaf8l_Q2sP2Vqjx4u1MJoVN-To",
-        "url": "https://trends.google.com/trends/explore?geo=GH&q=switzerland%20vs%20colombia",
-        "newsUrl": "https://www.bbc.com/sport/football/live/cx2vrg8gzr1t",
-        "newsTitle": "Switzerland vs Colombia LIVE: FIFA World Cup last 16 score, penalties, commentary & updates",
-        "newsSource": "BBC"
+        "topic": "kuccps portal",
+        "traffic": 10000,
+        "publishedAt": "Tue, 7 Jul 2026 23:10:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR18vqRP_GQMugtwPbUvVfVv_97OinXQ01tLJGxA6lInVvHyzu-1YZCxFj-aTM",
+        "url": "https://trends.google.com/trends/explore?geo=KE&q=kuccps%20portal",
+        "newsUrl": "https://www.the-star.co.ke/news/2026-07-08-kuccps-placement-what-students-should-expect",
+        "newsTitle": "KUCCPS to release placement results today: What students should expect",
+        "newsSource": "The Star, Kenya"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "switzerland vs colombia",
-          "url": "https://trends.google.com/trends/explore?geo=GH&q=switzerland%20vs%20colombia"
-        },
-        {
-          "source": "Google Trends",
-          "title": "colombia vs switzerland",
-          "url": "https://trends.google.com/trends/explore?geo=KE&q=colombia%20vs%20switzerland"
+          "title": "kuccps portal",
+          "url": "https://trends.google.com/trends/explore?geo=KE&q=kuccps%20portal"
         }
       ]
     },
     {
-      "id": 1007,
+      "id": 1008,
       "name": "tiempo de mañana",
       "originalTitle": "tiempo de mañana",
       "region": "南美洲",
@@ -342,8 +375,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 68,
-      "score": 94,
+      "trend": 71,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -371,92 +404,92 @@
       ]
     },
     {
-      "id": 1008,
-      "name": "partidos de mañana",
-      "originalTitle": "partidos de mañana",
-      "region": "南美洲",
-      "country": "秘鲁",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 65,
-      "score": 94,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 秘鲁 搜索趋势「partidos de mañana」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 10000+。关联新闻源：Bolavip / Minutouno；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "partidos de mañana",
-        "traffic": 10000,
-        "publishedAt": "Tue, 7 Jul 2026 16:10:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0k6en6Ws4dtvuXo6ifTJCkRW6Q0VzZPzlcT8RXrOp39-H1Wd_u7eu7IBt_eA",
-        "url": "https://trends.google.com/trends/explore?geo=PE&q=partidos%20de%20ma%C3%B1ana",
-        "newsUrl": "https://bolavip.com/mundial/partidos-de-manana-hoy-miercoles-8-de-julio-en-el-mundial-2026-por-que-no-se-juega",
-        "newsTitle": "Partidos de mañana, miércoles 8 de julio, en el Mundial 2026: ¿por qué no se juega?",
-        "newsSource": "Bolavip"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "partidos de mañana",
-          "url": "https://trends.google.com/trends/explore?geo=PE&q=partidos%20de%20ma%C3%B1ana"
-        }
-      ]
-    },
-    {
       "id": 1009,
-      "name": "lotería cruz roja hoy",
-      "originalTitle": "lotería cruz roja hoy",
+      "name": "gesto del dt de egipto",
+      "originalTitle": "gesto del dt de egipto",
       "region": "南美洲",
-      "country": "哥伦比亚",
+      "country": "阿根廷",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 57,
-      "score": 91,
+      "trend": 64,
+      "score": 93,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「lotería cruz roja hoy」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：Noticias Caracol / ELTIEMPO.COM；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「gesto del dt de egipto」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 50000+。关联新闻源：Infobae / MARCA；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "lotería cruz roja hoy",
-        "traffic": 5000,
-        "publishedAt": "Tue, 7 Jul 2026 21:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXMxu1OScuBZG5X2A8v_p9Dr8g7IokGI2C4NqjemaiF1n0j1cMFSBK6PRSrLw",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20cruz%20roja%20hoy",
-        "newsUrl": "https://www.noticiascaracol.com/economia/resultados-de-la-loteria-de-la-cruz-roja-hoy-martes-7-de-julio-de-2026-numeros-ganadores-so35",
-        "newsTitle": "Resultados de la Lotería de la Cruz Roja hoy, martes 7 de julio de 2026: números ganadores",
-        "newsSource": "Noticias Caracol"
+        "topic": "gesto del dt de egipto",
+        "traffic": 50000,
+        "publishedAt": "Tue, 7 Jul 2026 18:40:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1i7G3oOhZFxB8mB_pbMpL1HbOPIvP4Okky4UKa2aXSJGf1VEIPtZ0t6abR4",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=gesto%20del%20dt%20de%20egipto",
+        "newsUrl": "https://www.infobae.com/deportes/2026/07/07/que-significa-el-gesto-que-le-hizo-el-tecnico-de-egipto-al-arbitro-durante-la-derrota-ante-argentina-en-el-mundial-2026/",
+        "newsTitle": "Qué significa el gesto que le hizo el técnico de Egipto al árbitro durante la derrota ante Argentina en el Mundial 2026",
+        "newsSource": "Infobae"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "lotería cruz roja hoy",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20cruz%20roja%20hoy"
+          "title": "gesto del dt de egipto",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=gesto%20del%20dt%20de%20egipto"
         }
       ]
     },
     {
       "id": 1010,
-      "name": "zlatan ibrahimovic",
-      "originalTitle": "zlatan ibrahimovic",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
+      "name": "why market is down tod…",
+      "originalTitle": "why market is down today",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 68,
+      "trend": 62,
+      "score": 92,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「why market is down today」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 20000+。关联新闻源：Moneycontrol.com / The Economic Times；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "why market is down today",
+        "traffic": 20000,
+        "publishedAt": "Wed, 8 Jul 2026 01:30:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwwL0Yn74KuNeVdGQhHi--n7DyM3KBNM9GiEzohqPOmrzYgy-ZVKe37FWA5rA",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=why%20market%20is%20down%20today",
+        "newsUrl": "https://www.moneycontrol.com/news/business/markets/the-trump-candle-here-s-why-sensex-fell-500-pts-within-15-minutes-today-13968926.html",
+        "newsTitle": "The Trump candle: Here's why Sensex crashed 1,000 pts within 30 minutes today",
+        "newsSource": "Moneycontrol.com"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "why market is down today",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=why%20market%20is%20down%20today"
+        }
+      ]
+    },
+    {
+      "id": 1011,
+      "name": "switzerland vs colombi…",
+      "originalTitle": "switzerland vs colombia",
+      "region": "撒哈拉以南非洲",
+      "country": "加纳",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 69,
       "score": 95,
       "status": "爆发",
       "type": "realtime",
@@ -464,178 +497,70 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「zlatan ibrahimovic」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 5000+。关联新闻源：La Gazzetta dello Sport / HuffPost Italia；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 加纳 搜索趋势「switzerland vs colombia」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 加纳 搜索趋势，搜索热度约 20000+。关联新闻源：BBC / AP News；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "zlatan ibrahimovic",
-        "traffic": 5000,
-        "publishedAt": "Tue, 7 Jul 2026 16:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxkU0hT8eAIytMxMg6zY8HMNkn1zK1J2SNbRQCAe4gsbbcBHfnyh7L6ilrKmQ",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=zlatan%20ibrahimovic",
-        "newsUrl": "https://www.gazzetta.it/Calcio/Mondiali/07-07-2026/cristiano-ronaldo-dopo-l-eliminazione-ai-mondiali-ho-dato-tutto.shtml",
-        "newsTitle": "CR7, addio al Mondiale: \"Ho dato tutto, ora penserò al futuro\". Ma in Portogallo lo vogliono fuori",
-        "newsSource": "La Gazzetta dello Sport"
+        "topic": "switzerland vs colombia",
+        "traffic": 20000,
+        "publishedAt": "Tue, 7 Jul 2026 12:10:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPDHN7oDGq33J2P2EddNknFFqrFjPKUeQJoDaf8l_Q2sP2Vqjx4u1MJoVN-To",
+        "url": "https://trends.google.com/trends/explore?geo=GH&q=switzerland%20vs%20colombia",
+        "newsUrl": "https://www.bbc.com/sport/football/live/cx2vrg8gzr1t",
+        "newsTitle": "Switzerland vs Colombia LIVE: FIFA World Cup last 16 score, penalties, commentary & updates",
+        "newsSource": "BBC"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "zlatan ibrahimovic",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=zlatan%20ibrahimovic"
+          "title": "switzerland vs colombia",
+          "url": "https://trends.google.com/trends/explore?geo=GH&q=switzerland%20vs%20colombia"
         }
       ]
     },
     {
-      "id": 1011,
-      "name": "taiwan index",
-      "originalTitle": "taiwan index",
-      "region": "印度",
-      "country": "印度",
+      "id": 1012,
+      "name": "anses",
+      "originalTitle": "anses",
+      "region": "南美洲",
+      "country": "阿根廷",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 53,
-      "score": 89,
+      "trend": 56,
+      "score": 90,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「taiwan index」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：Investing.com India / Taiwan News；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「anses」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 10000+。关联新闻源：Infobae / Radiocanal；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "taiwan index",
-        "traffic": 2000,
-        "publishedAt": "Tue, 7 Jul 2026 22:50:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxjqQWNb3vfMd_IGWt2nKoeb0bpEW1JDlNEbEG-ChavzJSmx0ex-crjrozmwI",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=taiwan%20index",
-        "newsUrl": "https://in.investing.com/news/stock-market-news/taiwan-shares-higher-at-close-of-trade-taiwan-weighted-up-008-5484434",
-        "newsTitle": "Taiwan shares higher at close of trade; Taiwan Weighted up 0.08% By Investing.com",
-        "newsSource": "Investing.com India"
+        "topic": "anses",
+        "traffic": 10000,
+        "publishedAt": "Tue, 7 Jul 2026 19:50:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgvoLQrsG9YPqhCGoymSHovYMNGXL6mPgxjB6KZc0efxv8qT_Drb81WXJvKtY",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=anses",
+        "newsUrl": "https://www.infobae.com/economia/2026/07/08/anses-quienes-cobran-hoy-miercoles-8-de-julio-de-2026/",
+        "newsTitle": "ANSES: quiénes cobran hoy, miércoles 8 de julio de 2026",
+        "newsSource": "Infobae"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "taiwan index",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=taiwan%20index"
-        }
-      ]
-    },
-    {
-      "id": 1012,
-      "name": "Bangladesh forms commi…",
-      "originalTitle": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 57,
-      "score": 85,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「News On AIR」热点《Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：News On AIR。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "cricket",
-        "category": "核心话题",
-        "sourceName": "News On AIR",
-        "title": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
-        "publishedAt": "Tue, 07 Jul 2026 22:34:03 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYjB6SnlDTUgzYWhwUzZWbjZia2Mtc1ZWTThKRTJtaEZoUktra2lxRzlJcjNzTGFlY3d1VVBuVWN2UTZJZTNUamV2elIyd1VtWURzamFZVzh4UUN4OU9NOTlsZTZTVnphSkhpMlhNYnBVQ2R4dG9sSHoyaS1yUXdobVhRRTdMVG41Mm4ySjdaak9ZTHotdllsV0I3SnZScWE0LTdzRjhkUHp2MmQ1Tm5tUm95aTNIYUJQYWtvV2NSbzgtVEtlYkZ6dlBxNEFwWHZ4QXdhOTNBbzBobTNLLVFV?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYjB6SnlDTUgzYWhwUzZWbjZia2Mtc1ZWTThKRTJtaEZoUktra2lxRzlJcjNzTGFlY3d1VVBuVWN2UTZJZTNUamV2elIyd1VtWURzamFZVzh4UUN4OU9NOTlsZTZTVnphSkhpMlhNYnBVQ2R4dG9sSHoyaS1yUXdobVhRRTdMVG41Mm4ySjdaak9ZTHotdllsV0I3SnZScWE0LTdzRjhkUHp2MmQ1Tm5tUm95aTNIYUJQYWtvV2NSbzgtVEtlYkZ6dlBxNEFwWHZ4QXdhOTNBbzBobTNLLVFV?oc=5"
+          "title": "anses",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=anses"
         }
       ]
     },
     {
       "id": 1013,
-      "name": "Ranveer Singh: Dhurand…",
-      "originalTitle": "Ranveer Singh: Dhurandhar made him Bollywood's undisputed box office king",
+      "name": "Women’s Cricket Week u…",
+      "originalTitle": "Women’s Cricket Week unites women and girls worldwide",
       "region": "印度",
       "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 52,
-      "score": 83,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「t2ONLINE」热点《Ranveer Singh: Dhurandhar made him Bollywood's undisputed box office king》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：t2ONLINE。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "bollywood",
-        "category": "垂类补充",
-        "sourceName": "t2ONLINE",
-        "title": "Ranveer Singh: Dhurandhar made him Bollywood's undisputed box office king",
-        "publishedAt": "Wed, 08 Jul 2026 05:29:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdXE2UzhWNXRPZGlneVQyd1FERkVJV2ZHam5FT3JSeXozYmItTXlNVWh2U0tScGhaRDBpZzVGMGx0QU04LThTcjI0SVVXVnZWMWNKdTBGa1kydHNta1dIT0ZoX29lbjFfLVJuQ1Z1UFR1Ni1QVy1hYTNvMlEtcThYNGhGVVBvNzBObmlfZEJwWjBmVTQwbExZUjhyRGdJMEh4RXVoZ3Jva0lKeF84RjZCZEpkdkhfVFJnN2c?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Ranveer Singh: Dhurandhar made him Bollywood's undisputed box office king",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdXE2UzhWNXRPZGlneVQyd1FERkVJV2ZHam5FT3JSeXozYmItTXlNVWh2U0tScGhaRDBpZzVGMGx0QU04LThTcjI0SVVXVnZWMWNKdTBGa1kydHNta1dIT0ZoX29lbjFfLVJuQ1Z1UFR1Ni1QVy1hYTNvMlEtcThYNGhGVVBvNzBObmlfZEJwWjBmVTQwbExZUjhyRGdJMEh4RXVoZ3Jva0lKeF84RjZCZEpkdkhfVFJnN2c?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1014,
-      "name": "2026 Library of Congre…",
-      "originalTitle": "2026 Library of Congress National Book Festival Features More Than 80 Authors and New Programming to Celebrate America 250",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 50,
-      "score": 82,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「The Library of Congress (.gov)」热点《2026 Library of Congress National Book Festival Features More Than 80 Authors and New Programming to Celebrate America 250》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Library of Congress (.gov)。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "festival",
-        "category": "垂类补充",
-        "sourceName": "The Library of Congress (.gov)",
-        "title": "2026 Library of Congress National Book Festival Features More Than 80 Authors and New Programming to Celebrate America 250",
-        "publishedAt": "Tue, 07 Jul 2026 14:08:05 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcjU4S1owUHNRT3NXZFBlaVc0U092WVhOZDJSNU40cWxHemtCTGVscHhtTWZpaGstTnZYVkhyZHk1ZWpyRXVYaHY1ejlaSmJGTVREQ25CSmI2RDYtSzQ0ZVltY2tqWHhPQm1UMkI1SnFOcE93ZlAteFhhaTBXU1RsV2xzbGIxelVMckwxajBPXzVOMjM1dTVnY3JQRFJDQUloeHp5Zmo2TlNJX3dWMU9LNkxwU0Jld1dKTXY0UFNqaDd4eTlQQ01UUHgxLXFlX1k3MmFRVDdON1ZxckxrbE8wanA1TDR6a201Z0VzSE5Vb3htQVNBRy04Vm5GVWUxQQ?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "2026 Library of Congress National Book Festival Features More Than 80 Authors and New Programming to Celebrate America 250",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcjU4S1owUHNRT3NXZFBlaVc0U092WVhOZDJSNU40cWxHemtCTGVscHhtTWZpaGstTnZYVkhyZHk1ZWpyRXVYaHY1ejlaSmJGTVREQ25CSmI2RDYtSzQ0ZVltY2tqWHhPQm1UMkI1SnFOcE93ZlAteFhhaTBXU1RsV2xzbGIxelVMckwxajBPXzVOMjM1dTVnY3JQRFJDQUloeHp5Zmo2TlNJX3dWMU9LNkxwU0Jld1dKTXY0UFNqaDd4eTlQQ01UUHgxLXFlX1k3MmFRVDdON1ZxckxrbE8wanA1TDR6a201Z0VzSE5Vb3htQVNBRy04Vm5GVWUxQQ?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1015,
-      "name": "Canda Prabowo Selalu I…",
-      "originalTitle": "Canda Prabowo Selalu Ingin Bergerak dan Menyanyi Jika Mendengar Musik India",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
@@ -648,26 +573,134 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Kompas.com」热点《Canda Prabowo Selalu Ingin Bergerak dan Menyanyi Jika Mendengar Musik India》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Kompas.com。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「ICC」热点《Women’s Cricket Week unites women and girls worldwide》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "musik",
+        "topic": "cricket",
         "category": "核心话题",
-        "sourceName": "Kompas.com",
-        "title": "Canda Prabowo Selalu Ingin Bergerak dan Menyanyi Jika Mendengar Musik India",
-        "publishedAt": "Wed, 08 Jul 2026 05:31:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTGRwVTVEcVE4Z3RUWmVVV2FDSUFyZTJSbG4xdkd2bXg2VWtMQjRVeG42bkZHNEJ6TC1Cb0VLeTZSOHA4R05UZXR6eENSbUJDMktCOXJ4ZTBPNVFFY3ZtTzBQNTZ6NGZjNUFWTTl0bzdYb1ExdXlvRDVyT1dldG8tcFlLRXJFZ2FDejNJeW9raEM2bGF6ZVNSRlN4b25fY0g1TjNtU3BibWVvZmVuZDBvRzduSnJia0JFUVgzbEsyU0FCOFFhbHlj?oc=5"
+        "sourceName": "ICC",
+        "title": "Women’s Cricket Week unites women and girls worldwide",
+        "publishedAt": "Wed, 08 Jul 2026 08:07:20 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSU9tY3ptc1V0TUg0TTZySDNaMnRsV1d6WjN6ZVdkOUdva0thdGtaSENsb2twR1VObHBYdTR1ZFYwaUE5cF9WZDcxVmNqTURjbmZjUFhQVlJRMXc0bWk5OXhjbTNBNFVPMkNnTG1iWnI0YWhJd2g0QnBIb0ZIN0FRTEUwWk5ndmRlRk1mLWNNS3NyMmtrVE53Wm9oTnZvWl9WWkdrTHM3aWk0dmd3TV9VN3BlaU9zaEFUNzJxOEkzT2c?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Canda Prabowo Selalu Ingin Bergerak dan Menyanyi Jika Mendengar Musik India",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTGRwVTVEcVE4Z3RUWmVVV2FDSUFyZTJSbG4xdkd2bXg2VWtMQjRVeG42bkZHNEJ6TC1Cb0VLeTZSOHA4R05UZXR6eENSbUJDMktCOXJ4ZTBPNVFFY3ZtTzBQNTZ6NGZjNUFWTTl0bzdYb1ExdXlvRDVyT1dldG8tcFlLRXJFZ2FDejNJeW9raEM2bGF6ZVNSRlN4b25fY0g1TjNtU3BibWVvZmVuZDBvRzduSnJia0JFUVgzbEsyU0FCOFFhbHlj?oc=5"
+          "title": "Women’s Cricket Week unites women and girls worldwide",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSU9tY3ptc1V0TUg0TTZySDNaMnRsV1d6WjN6ZVdkOUdva0thdGtaSENsb2twR1VObHBYdTR1ZFYwaUE5cF9WZDcxVmNqTURjbmZjUFhQVlJRMXc0bWk5OXhjbTNBNFVPMkNnTG1iWnI0YWhJd2g0QnBIb0ZIN0FRTEUwWk5ndmRlRk1mLWNNS3NyMmtrVE53Wm9oTnZvWl9WWkdrTHM3aWk0dmd3TV9VN3BlaU9zaEFUNzJxOEkzT2c?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "name": "The business of cricke…",
+      "originalTitle": "The business of cricket biopics: Why Bollywood keeps betting on India's biggest sport - CNBC TV18",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 49,
+      "score": 81,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「LinkedIn」热点《The business of cricket biopics: Why Bollywood keeps betting on India's biggest sport - CNBC TV18》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：LinkedIn。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "bollywood",
+        "category": "垂类补充",
+        "sourceName": "LinkedIn",
+        "title": "The business of cricket biopics: Why Bollywood keeps betting on India's biggest sport - CNBC TV18",
+        "publishedAt": "Wed, 08 Jul 2026 08:58:57 GMT",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeGxVXzA1Y3VrVGlveGp1aDdGZXJkaVJVVzMwV1JmZUxzOEx1c2prMWRNMHloVjl5TTVPVEtJeHE3MXN6azRhTjJURzdpdDA5c3NxbUtVeFFCTmpNT3lreHZtajlMczIza3FVTURTNUlyRW0wTi1TV3QwdmpMbFJndHVieXkzSHoyenhZcDNCQ3IzWFRHZU5EeURXVXZkWElfNEpQalEtdzBDYVlRTXQ5bjhSaU03UjVhdURpYQ?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "The business of cricket biopics: Why Bollywood keeps betting on India's biggest sport - CNBC TV18",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeGxVXzA1Y3VrVGlveGp1aDdGZXJkaVJVVzMwV1JmZUxzOEx1c2prMWRNMHloVjl5TTVPVEtJeHE3MXN6azRhTjJURzdpdDA5c3NxbUtVeFFCTmpNT3lreHZtajlMczIza3FVTURTNUlyRW0wTi1TV3QwdmpMbFJndHVieXkzSHoyenhZcDNCQ3IzWFRHZU5EeURXVXZkWElfNEpQalEtdzBDYVlRTXQ5bjhSaU03UjVhdURpYQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "Indian Film Festival o…",
+      "originalTitle": "Indian Film Festival of Melbourne 2026 unveils nominations; Aamir Khan, Mammootty, Rishab Shetty and Ranv",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 54,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「The Times of India」热点《Indian Film Festival of Melbourne 2026 unveils nominations; Aamir Khan, Mammootty, Rishab Shetty and Ranv》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Times of India。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "festival",
+        "category": "垂类补充",
+        "sourceName": "The Times of India",
+        "title": "Indian Film Festival of Melbourne 2026 unveils nominations; Aamir Khan, Mammootty, Rishab Shetty and Ranv",
+        "publishedAt": "Wed, 08 Jul 2026 05:11:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOX0hzOU9ib1piS0pfdFZkZGFaamNiYUFJSVF2VlltbjQxaFhGWXM4cG00Q2NERDZWZUNKU0FfMTBEbThRYjdSV3RXd3dyMkV5TFlVenVUWF93QW8ySW1nWk51S21XRnE4UUZKLVBLMFlJb1d0SDRPajhfM1VxbjZ4NG5aWEZyMGQzME43Qk80ZXJRMnpHMWotNDNER3FTcWtIcm5NcHpqNDNzVTNaSkJ3TzlJUktPSlZMS2hEclpWZ0NETGFLLXpMUm4zc2Zkd0VCVXRoNXN1MGNEVXV1Uk1HOFlFZXc4WjRqVUMzb3pxaUZNWlFYSTh5dnR3TW5faFJrR3pxV3FpNlo3MGRfaTZBTlZPdVVJbC1FQjBKMS1YTUpBR01vQllfaEZkbmlIdl9heXByN2F0Q3c3d25FeDl4RjNIVENjYjhVeUVCSmxiVnNBLWvSAdgCQVVfeXFMTllKX3ZyY0pNX05iRFJ3cmVEdHpncUtOb2JTRl9xYXB0VlpCNWxiR3BKMUdoQVNSU29SeUNkUkRTangxZGlTcEtrUWNTa0lhdldIRWlLUkhaNkgtUHdyUXJmQmtTblFvdno0M3c0QTI5Mk4tRGdQbms4TGN4eTFEbklLT3hiRDdyMklvMGoxMFczdFRSWUQyWFRXN3g1b1NBWG1tSUlEWWJNejJNOTVIQWVRbmlVVExXR0JwelM1YUZZNFRnOUlIZlpGZ1lnN25rWVBIeVZWZzVWNTV5SWg2TW9PSW5FVmRsZEtTclVZWWY5bEZCOU5oRnk2cEdFR25SSm1iQk1LcnBwb3ZacHJPREJXZ1pqZFBXWWJXQmVLcjlGR2o1MUNIeWNReHdwVHMyTzg0VGhwUlNpRlpSSWpCOVFvRzJXR0dQVnJjSTlYLXktLS1uNXBOdlY?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Indian Film Festival of Melbourne 2026 unveils nominations; Aamir Khan, Mammootty, Rishab Shetty and Ranv",
+          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOX0hzOU9ib1piS0pfdFZkZGFaamNiYUFJSVF2VlltbjQxaFhGWXM4cG00Q2NERDZWZUNKU0FfMTBEbThRYjdSV3RXd3dyMkV5TFlVenVUWF93QW8ySW1nWk51S21XRnE4UUZKLVBLMFlJb1d0SDRPajhfM1VxbjZ4NG5aWEZyMGQzME43Qk80ZXJRMnpHMWotNDNER3FTcWtIcm5NcHpqNDNzVTNaSkJ3TzlJUktPSlZMS2hEclpWZ0NETGFLLXpMUm4zc2Zkd0VCVXRoNXN1MGNEVXV1Uk1HOFlFZXc4WjRqVUMzb3pxaUZNWlFYSTh5dnR3TW5faFJrR3pxV3FpNlo3MGRfaTZBTlZPdVVJbC1FQjBKMS1YTUpBR01vQllfaEZkbmlIdl9heXByN2F0Q3c3d25FeDl4RjNIVENjYjhVeUVCSmxiVnNBLWvSAdgCQVVfeXFMTllKX3ZyY0pNX05iRFJ3cmVEdHpncUtOb2JTRl9xYXB0VlpCNWxiR3BKMUdoQVNSU29SeUNkUkRTangxZGlTcEtrUWNTa0lhdldIRWlLUkhaNkgtUHdyUXJmQmtTblFvdno0M3c0QTI5Mk4tRGdQbms4TGN4eTFEbklLT3hiRDdyMklvMGoxMFczdFRSWUQyWFRXN3g1b1NBWG1tSUlEWWJNejJNOTVIQWVRbmlVVExXR0JwelM1YUZZNFRnOUlIZlpGZ1lnN25rWVBIeVZWZzVWNTV5SWg2TW9PSW5FVmRsZEtTclVZWWY5bEZCOU5oRnk2cEdFR25SSm1iQk1LcnBwb3ZacHJPREJXZ1pqZFBXWWJXQmVLcjlGR2o1MUNIeWNReHdwVHMyTzg0VGhwUlNpRlpSSWpCOVFvRzJXR0dQVnJjSTlYLXktLS1uNXBOdlY?oc=5"
         }
       ]
     },
     {
       "id": 1016,
+      "name": "Bupati Garut Dorong Se…",
+      "originalTitle": "Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 56,
+      "score": 84,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Jabarprov」热点《Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Jabarprov。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musik",
+        "category": "核心话题",
+        "sourceName": "Jabarprov",
+        "title": "Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah",
+        "publishedAt": "Wed, 08 Jul 2026 07:41:22 GMT",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNXBoWVdSR0RBVng3MUFQcS1ObVBVV2dUWTczOEVBaV8xWkJSbmk5MFowVWxhSGNJMHh2eXhtTEZPbHNROVZWSXF3ME91VG8zeUpZZHNJOENpZ3NoQ0VNcDhaMHNWNHcyMXhfY1N1VEI0VDlpVE45RVJWVWxsYjhaRkozUGVBWnR1dXE0WXgzb1V2ejdMbE15LU1KengwVmlPNF9YQzhyeGdDY3pyMk1xU3VHWVpVVlJLYjZkNWNB?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNXBoWVdSR0RBVng3MUFQcS1ObVBVV2dUWTczOEVBaV8xWkJSbmk5MFowVWxhSGNJMHh2eXhtTEZPbHNROVZWSXF3ME91VG8zeUpZZHNJOENpZ3NoQ0VNcDhaMHNWNHcyMXhfY1N1VEI0VDlpVE45RVJWVWxsYjhaRkozUGVBWnR1dXE0WXgzb1V2ejdMbE15LU1KengwVmlPNF9YQzhyeGdDY3pyMk1xU3VHWVpVVlJLYjZkNWNB?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1017,
       "name": "Tahan Imbang Batam, Ta…",
       "originalTitle": "Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026",
       "region": "印度尼西亚",
@@ -676,7 +709,7 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 46,
+      "trend": 47,
       "score": 80,
       "status": "上升",
       "type": "realtime",
@@ -703,16 +736,16 @@
       ]
     },
     {
-      "id": 1017,
-      "name": "Screening Film Anak-An…",
-      "originalTitle": "Screening Film Anak-Anak Bamu",
+      "id": 1018,
+      "name": "Mahasiswa SPI UIN Alau…",
+      "originalTitle": "Mahasiswa SPI UIN Alauddin Luncurkan Empat Film Dokumenter Sejarah dan Budaya",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 59,
+      "trend": 60,
       "score": 86,
       "status": "上升",
       "type": "realtime",
@@ -720,101 +753,101 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Bank Syariah Indonesia」热点《Screening Film Anak-Anak Bamu》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Bank Syariah Indonesia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「UIN Alauddin Makassar」热点《Mahasiswa SPI UIN Alauddin Luncurkan Empat Film Dokumenter Sejarah dan Budaya》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：UIN Alauddin Makassar。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "film",
         "category": "垂类补充",
-        "sourceName": "Bank Syariah Indonesia",
-        "title": "Screening Film Anak-Anak Bamu",
-        "publishedAt": "Wed, 08 Jul 2026 01:18:30 GMT",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vNlV4Mk9mQUl0ZVREOElWN2hnWWVMa1RlZG10RnVldWR3Q2NuY29QcW9IcE0tSVA2RE9Kenk1QU9TNDQ5SUVvNHphWjZnN1FWQlE4U1hvcE5RYmlYMEtBd3pBbFdxUk5RNTBiaENR?oc=5"
+        "sourceName": "UIN Alauddin Makassar",
+        "title": "Mahasiswa SPI UIN Alauddin Luncurkan Empat Film Dokumenter Sejarah dan Budaya",
+        "publishedAt": "Wed, 08 Jul 2026 08:28:02 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRURwQU5qNjF1QWVONWFtb3RMdHhuVl8zSHg1NDAxS0FTNGI2Mks1R1dvOC0wdm84T3plRmRZa3FtS1B1VFpyYnNiOUozRU9EUi1SVnpoZmxLc2RWd2NuN3hqWFN3UEFqT3hhNkxhWFJaaFYwYl9EUlZJZWJXN0JBVmRpSVo3RUJIR1BfVVlva2FnZW5PMTZJdlhhWGk1ODJBeDlWb3hjZVhCaTBLY0NDX19qeWFYNnpCMHc?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Screening Film Anak-Anak Bamu",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vNlV4Mk9mQUl0ZVREOElWN2hnWWVMa1RlZG10RnVldWR3Q2NuY29QcW9IcE0tSVA2RE9Kenk1QU9TNDQ5SUVvNHphWjZnN1FWQlE4U1hvcE5RYmlYMEtBd3pBbFdxUk5RNTBiaENR?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1018,
-      "name": "‘Equipa’, ‘guarda‑rede…",
-      "originalTitle": "‘Equipa’, ‘guarda‑redes’ e ‘relvado’: por que Portugal usa termos diferentes do Brasil no futebol?",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 49,
-      "score": 81,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「G1」热点《‘Equipa’, ‘guarda‑redes’ e ‘relvado’: por que Portugal usa termos diferentes do Brasil no futebol?》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：G1。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "futebol",
-        "category": "核心话题",
-        "sourceName": "G1",
-        "title": "‘Equipa’, ‘guarda‑redes’ e ‘relvado’: por que Portugal usa termos diferentes do Brasil no futebol?",
-        "publishedAt": "Wed, 08 Jul 2026 06:00:46 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQN1A1THVmZ1V5T0dsYTkxUm9YcXAyc3ZxN05zckVITUdjNHc5azBjbHNPRDRYZXFhSVowVmlUemF6ZS1JdmtsTGcxM2JrUGxweWtaU3VCVDZwU3Q0Wk11Sy1mMUpHVEZkS1piMFZ6SFJuV3ZTNzBid2JPRHQtRnByOEp4MVgwYWtwc1dvcHJva1NZc29GRHoxWXB4QjY3amJTMjk0NzZkdDg1LWxNbWQ0dThHZnUxeGRGWjNVdHBYbWk0a2JYcUNVdXdVWV9IaHBUOFZtNHFwLVpJZVnSAeoBQVVfeXFMUHEwU0d1SURuWlp1ME1mcUxCM1B6UUtnUkkwX29xamozWWZZcUt3akFoUm95NDRKYWNvbVQ1dVYwWHFJSFpxWjRWSHNCU0NtVl8tTUFUUlNUUjZrSjRaSzJ1Ync3MFZUemFXbnRTZmU2TmdKTkNLTndudHhFWWtvSENTbzYxM1pxME1MbmVNaV9sX1FvVDRJMlFidlZzRnBBc3FRT09mY3o5X0xHcGFTS2hoQnk5SEZGbExlMk1oNFFXNlF6SDE3YmlKLUM4UWozUmNXb0VWclJ1UXY1ZFVTdm1WbHByMXZnRlRn?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "‘Equipa’, ‘guarda‑redes’ e ‘relvado’: por que Portugal usa termos diferentes do Brasil no futebol?",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQN1A1THVmZ1V5T0dsYTkxUm9YcXAyc3ZxN05zckVITUdjNHc5azBjbHNPRDRYZXFhSVowVmlUemF6ZS1JdmtsTGcxM2JrUGxweWtaU3VCVDZwU3Q0Wk11Sy1mMUpHVEZkS1piMFZ6SFJuV3ZTNzBid2JPRHQtRnByOEp4MVgwYWtwc1dvcHJva1NZc29GRHoxWXB4QjY3amJTMjk0NzZkdDg1LWxNbWQ0dThHZnUxeGRGWjNVdHBYbWk0a2JYcUNVdXdVWV9IaHBUOFZtNHFwLVpJZVnSAeoBQVVfeXFMUHEwU0d1SURuWlp1ME1mcUxCM1B6UUtnUkkwX29xamozWWZZcUt3akFoUm95NDRKYWNvbVQ1dVYwWHFJSFpxWjRWSHNCU0NtVl8tTUFUUlNUUjZrSjRaSzJ1Ync3MFZUemFXbnRTZmU2TmdKTkNLTndudHhFWWtvSENTbzYxM1pxME1MbmVNaV9sX1FvVDRJMlFidlZzRnBBc3FRT09mY3o5X0xHcGFTS2hoQnk5SEZGbExlMk1oNFFXNlF6SDE3YmlKLUM4UWozUmNXb0VWclJ1UXY1ZFVTdm1WbHByMXZnRlRn?oc=5"
+          "title": "Mahasiswa SPI UIN Alauddin Luncurkan Empat Film Dokumenter Sejarah dan Budaya",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRURwQU5qNjF1QWVONWFtb3RMdHhuVl8zSHg1NDAxS0FTNGI2Mks1R1dvOC0wdm84T3plRmRZa3FtS1B1VFpyYnNiOUozRU9EUi1SVnpoZmxLc2RWd2NuN3hqWFN3UEFqT3hhNkxhWFJaaFYwYl9EUlZJZWJXN0JBVmRpSVo3RUJIR1BfVVlva2FnZW5PMTZJdlhhWGk1ODJBeDlWb3hjZVhCaTBLY0NDX19qeWFYNnpCMHc?oc=5"
         }
       ]
     },
     {
       "id": 1019,
-      "name": "Escola Municipal de Mú…",
-      "originalTitle": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
+      "name": "Êxito no futebol se tr…",
+      "originalTitle": "Êxito no futebol se traduz em escola em alta, diz estudo",
       "region": "南美洲",
       "country": "巴西",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 53,
-      "score": 83,
+      "trend": 47,
+      "score": 80,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「CONCERTO | Home」热点《Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：CONCERTO | Home。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「Valor Econômico」热点《Êxito no futebol se traduz em escola em alta, diz estudo》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Valor Econômico。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "musica",
-        "category": "垂类补充",
-        "sourceName": "CONCERTO | Home",
-        "title": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
-        "publishedAt": "Tue, 07 Jul 2026 23:52:30 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNEpjWVpJTU8wanNxWGNfaXhMZWM1N1M1Z0hZVHR0blR5bUNEM0JWZGxGcE8xSEtsczh5clNxd2xYWmdDOEY0VXFmdGJVSWM5b2lJeHZlQTF6MTFQT2ZaczFZUWQxOU83T2dZRGstNHpOM19ZUkx5N2VkRE5jcjQ3WDRRWE9heFpmLWlsY2lqTFRsdXhRSEVkdGxpNDhzZFVaTzBuUlRpcXZ3ZWJrN19KOG1kVk9GV0ZFeWljakJ1cmt0QQ?oc=5"
+        "topic": "futebol",
+        "category": "核心话题",
+        "sourceName": "Valor Econômico",
+        "title": "Êxito no futebol se traduz em escola em alta, diz estudo",
+        "publishedAt": "Wed, 08 Jul 2026 08:00:41 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSDNWZDZyRXYxV2dDcjBNaGFjVGNETE5GMEtZR0lzSlhiVDNqTUptWmJ6UlZTSVpadUhhcVhuaDQtNkNRREQ2RUNNUEJYdWh3b3NsZWRPblBXTGZfX3c3TXhmeWM5bEt4MWoxQ3puWXVrSkZwX19CbzVKX3VFYkdpX05oS1JRM0Y2Wk1lMTBNMkZwejZkbVd6MmR4YjFHT2ZyeGw1LUJaVHNsMHd3VjB6c9IBvwFBVV95cUxPOFRRcGJUZ01FY3N3X01Tdng2RHQ4RG9SUjZTel9hRmF6eVlGcnRqY3o5b1VsQzJCMkJaVTdmMmc1bEdfaEp3REZBLWFiekNSaV80X1hjRVRDS054bFRHZ1VucjJBOU1KTmlEZFoyQllUS0xCYXZUeUdNN3FFVm95dG1LbFZoQ285ZjV2Vy1LNXZuQWN0RGRxeWlLb1RXd2JlbnQ4ODlGVHVNck80VmpHN2FiY3dSejdGSXJzNWZ2cw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNEpjWVpJTU8wanNxWGNfaXhMZWM1N1M1Z0hZVHR0blR5bUNEM0JWZGxGcE8xSEtsczh5clNxd2xYWmdDOEY0VXFmdGJVSWM5b2lJeHZlQTF6MTFQT2ZaczFZUWQxOU83T2dZRGstNHpOM19ZUkx5N2VkRE5jcjQ3WDRRWE9heFpmLWlsY2lqTFRsdXhRSEVkdGxpNDhzZFVaTzBuUlRpcXZ3ZWJrN19KOG1kVk9GV0ZFeWljakJ1cmt0QQ?oc=5"
+          "title": "Êxito no futebol se traduz em escola em alta, diz estudo",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSDNWZDZyRXYxV2dDcjBNaGFjVGNETE5GMEtZR0lzSlhiVDNqTUptWmJ6UlZTSVpadUhhcVhuaDQtNkNRREQ2RUNNUEJYdWh3b3NsZWRPblBXTGZfX3c3TXhmeWM5bEt4MWoxQ3puWXVrSkZwX19CbzVKX3VFYkdpX05oS1JRM0Y2Wk1lMTBNMkZwejZkbVd6MmR4YjFHT2ZyeGw1LUJaVHNsMHd3VjB6c9IBvwFBVV95cUxPOFRRcGJUZ01FY3N3X01Tdng2RHQ4RG9SUjZTel9hRmF6eVlGcnRqY3o5b1VsQzJCMkJaVTdmMmc1bEdfaEp3REZBLWFiekNSaV80X1hjRVRDS054bFRHZ1VucjJBOU1KTmlEZFoyQllUS0xCYXZUeUdNN3FFVm95dG1LbFZoQ285ZjV2Vy1LNXZuQWN0RGRxeWlLb1RXd2JlbnQ4ODlGVHVNck80VmpHN2FiY3dSejdGSXJzNWZ2cw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "name": "'La Cuarta Estrella': …",
+      "originalTitle": "'La Cuarta Estrella': música que embala Argentina na Copa cita trauma de Maradona e Malvinas",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 57,
+      "score": 85,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 巴西 本地媒体「G1」热点《'La Cuarta Estrella': música que embala Argentina na Copa cita trauma de Maradona e Malvinas》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：G1。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musica",
+        "category": "垂类补充",
+        "sourceName": "G1",
+        "title": "'La Cuarta Estrella': música que embala Argentina na Copa cita trauma de Maradona e Malvinas",
+        "publishedAt": "Wed, 08 Jul 2026 07:00:20 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcTdMYzN0ZnR4ellMVDJ2eEtwRW9SbWtPd3l2dGhwWDY4OW9JMHdLMUE1d19QZVk2dy1iOExyQnFNSzJsV1dkbEFJZ1JneHJacDVTeUMxenNxMFI5X1VyMlM0anZqMXVfWkZDRnlKN05VcWFYVzJGTjdpV0VDS084Y3VxLUJEZEhUMjdhblY3TVYzUV84b1Y4OEhVWjBXNjhVNzZGUHBEbGg5TXlHOVFqbmNCUnpkYngxM3J1NDUxYU1UamlDV1JhTXVSM2J0M0xuTTcyd0JhdERoTlFXNWw5Rm9LVE9TZ9IB9AFBVV95cUxPdnhIY0hpNFZxbzhRSk5FWk5zZnVzdWQtWXQ0WDNQRWZOamt2Nko0eXhiZTY0dWVXR3kzNUxDTWlpWHMxcXd2WjZCc3ZRb0NLYUFXeUJKMnBGalBoMTgydHdIUkc0SjVfNnZUa1ZGZkt6UFFOcnZaRlR4OS1TN0QwMHlGQ2VJNTlaT1EyZkU3M2pxbk5zblZnMnBVWFBnYVZXa3ZDRVoyRmhhZXpBMVZPN2NlOXNJRlRjQU95bWl2dUYzcW1aSTNWRW01Uzd3M2Fqdzg1bTJ2SmtSbERDMFQyTG1lNnJ3TXozOG4zcGVFUTZSUXNh?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "'La Cuarta Estrella': música que embala Argentina na Copa cita trauma de Maradona e Malvinas",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcTdMYzN0ZnR4ellMVDJ2eEtwRW9SbWtPd3l2dGhwWDY4OW9JMHdLMUE1d19QZVk2dy1iOExyQnFNSzJsV1dkbEFJZ1JneHJacDVTeUMxenNxMFI5X1VyMlM0anZqMXVfWkZDRnlKN05VcWFYVzJGTjdpV0VDS084Y3VxLUJEZEhUMjdhblY3TVYzUV84b1Y4OEhVWjBXNjhVNzZGUHBEbGg5TXlHOVFqbmNCUnpkYngxM3J1NDUxYU1UamlDV1JhTXVSM2J0M0xuTTcyd0JhdERoTlFXNWw5Rm9LVE9TZ9IB9AFBVV95cUxPdnhIY0hpNFZxbzhRSk5FWk5zZnVzdWQtWXQ0WDNQRWZOamt2Nko0eXhiZTY0dWVXR3kzNUxDTWlpWHMxcXd2WjZCc3ZRb0NLYUFXeUJKMnBGalBoMTgydHdIUkc0SjVfNnZUa1ZGZkt6UFFOcnZaRlR4OS1TN0QwMHlGQ2VJNTlaT1EyZkU3M2pxbk5zblZnMnBVWFBnYVZXa3ZDRVoyRmhhZXpBMVZPN2NlOXNJRlRjQU95bWl2dUYzcW1aSTNWRW01Uzd3M2Fqdzg1bTJ2SmtSbERDMFQyTG1lNnJ3TXozOG4zcGVFUTZSUXNh?oc=5"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 101,
-      "growth": 47,
+      "count": 94,
+      "growth": 48,
       "countries": [
         "印度"
       ],
@@ -825,8 +858,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 101,
-      "growth": 15,
+      "count": 94,
+      "growth": 19,
       "countries": [
         "印度尼西亚"
       ],
@@ -837,8 +870,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 43,
-      "growth": 15,
+      "count": 36,
+      "growth": 19,
       "countries": [
         "俄罗斯"
       ],
@@ -849,8 +882,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 70,
-      "growth": 38,
+      "count": 69,
+      "growth": 35,
       "countries": [
         "尼日利亚",
         "南非",
@@ -864,8 +897,8 @@
       ]
     },
     "南美洲": {
-      "count": 99,
-      "growth": 57,
+      "count": 98,
+      "growth": 55,
       "countries": [
         "巴西",
         "阿根廷",
@@ -956,67 +989,81 @@
     {
       "id": "tpl-0-selfie_comic",
       "hotspotId": 1003,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜自拍漫画壁纸",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 98 · 用户自拍一张，AI 转成热点同款漫画主角",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23111827%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f472b6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22240%22%20cy%3D%22348%22%20r%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.86%22%2F%3E%3Cpath%20d%3D%22M176%20338%20C185%20250%20292%20242%20307%20336%20C328%20390%20288%20444%20240%20444%20C190%20444%20152%20390%20176%20338Z%22%20fill%3D%22%2338bdf8%22%20opacity%3D%22.7%22%2F%3E%3Ccircle%20cx%3D%22210%22%20cy%3D%22352%22%20r%3D%2210%22%20fill%3D%22%23111827%22%20opacity%3D%22.72%22%2F%3E%3Ccircle%20cx%3D%22270%22%20cy%3D%22352%22%20r%3D%2210%22%20fill%3D%22%23111827%22%20opacity%3D%22.72%22%2F%3E%3Cpath%20d%3D%22M210%20398%20C230%20416%20260%20416%20278%20398%22%20stroke%3D%22%23f472b6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%228%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M112%20600%20C170%20510%20310%20510%20368%20600%20L392%20770%20L88%20770Z%22%20fill%3D%22%23f472b6%22%20opacity%3D%22.52%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%87%AA%E6%8B%8D%E6%BC%AB%E7%94%BB%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%94%A8%E6%88%B7%E8%87%AA%E6%8B%8D%E4%B8%80%E5%BC%A0%EF%BC%8CAI%20%E8%BD%AC%E6%88%90%E7%83%AD%E7%82%B9%E5%90%8C%E6%AC%BE%E6%BC%AB%E7%94%BB%E4%B8%BB%E8%A7%92%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：自拍漫画壁纸（AI创作玩法）。用户上传一张自拍照，保留人物五官气质，把服饰、背景和色彩转译成当前热点氛围，生成原创漫画锁屏壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜自拍漫画壁纸",
+      "previewMeta": "AI创作玩法 · 撒哈拉以南非洲 · 模板潜力 98 · 用户自拍一张，AI 转成热点同款漫画主角",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23111827%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f472b6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22240%22%20cy%3D%22348%22%20r%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.86%22%2F%3E%3Cpath%20d%3D%22M176%20338%20C185%20250%20292%20242%20307%20336%20C328%20390%20288%20444%20240%20444%20C190%20444%20152%20390%20176%20338Z%22%20fill%3D%22%2338bdf8%22%20opacity%3D%22.7%22%2F%3E%3Ccircle%20cx%3D%22210%22%20cy%3D%22352%22%20r%3D%2210%22%20fill%3D%22%23111827%22%20opacity%3D%22.72%22%2F%3E%3Ccircle%20cx%3D%22270%22%20cy%3D%22352%22%20r%3D%2210%22%20fill%3D%22%23111827%22%20opacity%3D%22.72%22%2F%3E%3Cpath%20d%3D%22M210%20398%20C230%20416%20260%20416%20278%20398%22%20stroke%3D%22%23f472b6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%228%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M112%20600%20C170%20510%20310%20510%20368%20600%20L392%20770%20L88%20770Z%22%20fill%3D%22%23f472b6%22%20opacity%3D%22.52%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%87%AA%E6%8B%8D%E6%BC%AB%E7%94%BB%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%94%A8%E6%88%B7%E8%87%AA%E6%8B%8D%E4%B8%80%E5%BC%A0%EF%BC%8CAI%20%E8%BD%AC%E6%88%90%E7%83%AD%E7%82%B9%E5%90%8C%E6%AC%BE%E6%BC%AB%E7%94%BB%E4%B8%BB%E8%A7%92%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：自拍漫画壁纸（AI创作玩法）。用户上传一张自拍照，保留人物五官气质，把服饰、背景和色彩转译成当前热点氛围，生成原创漫画锁屏壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
       "id": "tpl-0-screenshot_theme",
       "hotspotId": 1003,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜截图即主题",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 98 · 看到喜欢的画面截一下，自动长成一套主题",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23eff6ff%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2360a5fa%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23a78bfa%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2296%22%20y%3D%22210%22%20width%3D%22288%22%20height%3D%22420%22%20rx%3D%2242%22%20fill%3D%22%23fff%22%20opacity%3D%22.28%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%22248%22%20width%3D%22232%22%20height%3D%22128%22%20rx%3D%2224%22%20fill%3D%22%23a78bfa%22%20opacity%3D%22.35%22%2F%3E%3Ccircle%20cx%3D%22168%22%20cy%3D%22438%22%20r%3D%2244%22%20fill%3D%22%2360a5fa%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M150%20558%20C218%20490%20278%20630%20344%20520%22%20stroke%3D%22%23a78bfa%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20opacity%3D%22.8%22%2F%3E%3Crect%20x%3D%22138%22%20y%3D%22658%22%20width%3D%22204%22%20height%3D%2230%22%20rx%3D%2215%22%20fill%3D%22%23fff%22%20opacity%3D%22.46%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E6%88%AA%E5%9B%BE%E5%8D%B3%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%9C%8B%E5%88%B0%E5%96%9C%E6%AC%A2%E7%9A%84%E7%94%BB%E9%9D%A2%E6%88%AA%E4%B8%80%E4%B8%8B%EF%BC%8C%E8%87%AA%E5%8A%A8%E9%95%BF%E6%88%90%E4%B8%80%E5%A5%97%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：截图即主题（AI创作玩法）。用户上传截图或照片，AI 提取主体、色彩、纹理和情绪，生成同风格手机壁纸、锁屏组件和主题色。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜截图即主题",
+      "previewMeta": "AI创作玩法 · 撒哈拉以南非洲 · 模板潜力 98 · 看到喜欢的画面截一下，自动长成一套主题",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23eff6ff%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2360a5fa%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23a78bfa%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2296%22%20y%3D%22210%22%20width%3D%22288%22%20height%3D%22420%22%20rx%3D%2242%22%20fill%3D%22%23fff%22%20opacity%3D%22.28%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%22248%22%20width%3D%22232%22%20height%3D%22128%22%20rx%3D%2224%22%20fill%3D%22%23a78bfa%22%20opacity%3D%22.35%22%2F%3E%3Ccircle%20cx%3D%22168%22%20cy%3D%22438%22%20r%3D%2244%22%20fill%3D%22%2360a5fa%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M150%20558%20C218%20490%20278%20630%20344%20520%22%20stroke%3D%22%23a78bfa%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20opacity%3D%22.8%22%2F%3E%3Crect%20x%3D%22138%22%20y%3D%22658%22%20width%3D%22204%22%20height%3D%2230%22%20rx%3D%2215%22%20fill%3D%22%23fff%22%20opacity%3D%22.46%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E6%88%AA%E5%9B%BE%E5%8D%B3%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%9C%8B%E5%88%B0%E5%96%9C%E6%AC%A2%E7%9A%84%E7%94%BB%E9%9D%A2%E6%88%AA%E4%B8%80%E4%B8%8B%EF%BC%8C%E8%87%AA%E5%8A%A8%E9%95%BF%E6%88%90%E4%B8%80%E5%A5%97%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：截图即主题（AI创作玩法）。用户上传截图或照片，AI 提取主体、色彩、纹理和情绪，生成同风格手机壁纸、锁屏组件和主题色。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
       "id": "tpl-0-local_festival",
       "hotspotId": 1003,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜本地节庆纹样",
-      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 把当地节日、服饰、建筑纹样变成高级装饰壁纸",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff7ed%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23fb923c%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23facc15%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22240%22%20cy%3D%22410%22%20r%3D%22142%22%20fill%3D%22%23facc15%22%20opacity%3D%22.24%22%2F%3E%3Cpath%20d%3D%22M240%20230%20C300%20300%20300%20380%20240%20450%20C180%20380%20180%20300%20240%20230Z%22%20fill%3D%22%23fff%22%20opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M98%20582%20C178%20518%20302%20518%20382%20582%22%20stroke%3D%22%23facc15%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2216%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M122%20650%20C194%20594%20286%20594%20358%20650%22%20stroke%3D%22%23fb923c%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%20opacity%3D%22.58%22%2F%3E%3Ccircle%20cx%3D%22114%22%20cy%3D%22246%22%20r%3D%2230%22%20fill%3D%22%23fb923c%22%20opacity%3D%22.42%22%2F%3E%3Ccircle%20cx%3D%22366%22%20cy%3D%22246%22%20r%3D%2230%22%20fill%3D%22%23fb923c%22%20opacity%3D%22.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E6%9C%AC%E5%9C%B0%E8%8A%82%E5%BA%86%E7%BA%B9%E6%A0%B7%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E6%8A%8A%E5%BD%93%E5%9C%B0%E8%8A%82%E6%97%A5%E3%80%81%E6%9C%8D%E9%A5%B0%E3%80%81%E5%BB%BA%E7%AD%91%E7%BA%B9%E6%A0%B7%E5%8F%98%E6%88%90%E9%AB%98%E7%BA%A7%E8%A3%85%E9%A5%B0%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：本地节庆纹样（精品壁纸库）。提取当地节庆、城市、服饰或民俗纹样，做成可商用的高级装饰壁纸，强调本地文化识别。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜本地节庆纹样",
+      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 98 · 把当地节日、服饰、建筑纹样变成高级装饰壁纸",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff7ed%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23fb923c%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23facc15%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22240%22%20cy%3D%22410%22%20r%3D%22142%22%20fill%3D%22%23facc15%22%20opacity%3D%22.24%22%2F%3E%3Cpath%20d%3D%22M240%20230%20C300%20300%20300%20380%20240%20450%20C180%20380%20180%20300%20240%20230Z%22%20fill%3D%22%23fff%22%20opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M98%20582%20C178%20518%20302%20518%20382%20582%22%20stroke%3D%22%23facc15%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2216%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M122%20650%20C194%20594%20286%20594%20358%20650%22%20stroke%3D%22%23fb923c%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%20opacity%3D%22.58%22%2F%3E%3Ccircle%20cx%3D%22114%22%20cy%3D%22246%22%20r%3D%2230%22%20fill%3D%22%23fb923c%22%20opacity%3D%22.42%22%2F%3E%3Ccircle%20cx%3D%22366%22%20cy%3D%22246%22%20r%3D%2230%22%20fill%3D%22%23fb923c%22%20opacity%3D%22.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E6%9C%AC%E5%9C%B0%E8%8A%82%E5%BA%86%E7%BA%B9%E6%A0%B7%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E6%8A%8A%E5%BD%93%E5%9C%B0%E8%8A%82%E6%97%A5%E3%80%81%E6%9C%8D%E9%A5%B0%E3%80%81%E5%BB%BA%E7%AD%91%E7%BA%B9%E6%A0%B7%E5%8F%98%E6%88%90%E9%AB%98%E7%BA%A7%E8%A3%85%E9%A5%B0%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：本地节庆纹样（精品壁纸库）。提取当地节庆、城市、服饰或民俗纹样，做成可商用的高级装饰壁纸，强调本地文化识别。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
       "id": "tpl-0-sticker_pack",
       "hotspotId": 1003,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜贴纸拼贴壁纸",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 98 · 热点元素变贴纸，年轻、有趣、可二创",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff1f2%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23fb7185%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2292%22%20y%3D%22230%22%20width%3D%22126%22%20height%3D%22126%22%20rx%3D%2234%22%20fill%3D%22%23fff%22%20opacity%3D%22.72%22%20transform%3D%22rotate(-10%20155%20293)%22%2F%3E%3Ccircle%20cx%3D%22326%22%20cy%3D%22300%22%20r%3D%2272%22%20fill%3D%22%23fff%22%20opacity%3D%22.65%22%2F%3E%3Cpath%20d%3D%22M132%20520%20C190%20420%20322%20420%20380%20520%22%20stroke%3D%22%2338bdf8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2222%22%20fill%3D%22none%22%2F%3E%3Crect%20x%3D%22144%22%20y%3D%22584%22%20width%3D%22202%22%20height%3D%2286%22%20rx%3D%2243%22%20fill%3D%22%23fb7185%22%20opacity%3D%22.48%22%20transform%3D%22rotate(8%20245%20627)%22%2F%3E%3Ctext%20x%3D%22192%22%20y%3D%22640%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-weight%3D%22800%22%20font-size%3D%2234%22%3EWOW%3C%2Ftext%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%B4%B4%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%83%AD%E7%82%B9%E5%85%83%E7%B4%A0%E5%8F%98%E8%B4%B4%E7%BA%B8%EF%BC%8C%E5%B9%B4%E8%BD%BB%E3%80%81%E6%9C%89%E8%B6%A3%E3%80%81%E5%8F%AF%E4%BA%8C%E5%88%9B%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：贴纸拼贴壁纸（AI创作玩法）。把热点里的物品、动作、颜色和情绪转译成一组原创贴纸元素，拼成轻松有趣的锁屏壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜贴纸拼贴壁纸",
+      "previewMeta": "AI创作玩法 · 撒哈拉以南非洲 · 模板潜力 98 · 热点元素变贴纸，年轻、有趣、可二创",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff1f2%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23fb7185%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2292%22%20y%3D%22230%22%20width%3D%22126%22%20height%3D%22126%22%20rx%3D%2234%22%20fill%3D%22%23fff%22%20opacity%3D%22.72%22%20transform%3D%22rotate(-10%20155%20293)%22%2F%3E%3Ccircle%20cx%3D%22326%22%20cy%3D%22300%22%20r%3D%2272%22%20fill%3D%22%23fff%22%20opacity%3D%22.65%22%2F%3E%3Cpath%20d%3D%22M132%20520%20C190%20420%20322%20420%20380%20520%22%20stroke%3D%22%2338bdf8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2222%22%20fill%3D%22none%22%2F%3E%3Crect%20x%3D%22144%22%20y%3D%22584%22%20width%3D%22202%22%20height%3D%2286%22%20rx%3D%2243%22%20fill%3D%22%23fb7185%22%20opacity%3D%22.48%22%20transform%3D%22rotate(8%20245%20627)%22%2F%3E%3Ctext%20x%3D%22192%22%20y%3D%22640%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-weight%3D%22800%22%20font-size%3D%2234%22%3EWOW%3C%2Ftext%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%B4%B4%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%83%AD%E7%82%B9%E5%85%83%E7%B4%A0%E5%8F%98%E8%B4%B4%E7%BA%B8%EF%BC%8C%E5%B9%B4%E8%BD%BB%E3%80%81%E6%9C%89%E8%B6%A3%E3%80%81%E5%8F%AF%E4%BA%8C%E5%88%9B%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：贴纸拼贴壁纸（AI创作玩法）。把热点里的物品、动作、颜色和情绪转译成一组原创贴纸元素，拼成轻松有趣的锁屏壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
       "id": "tpl-0-aod_set",
       "hotspotId": 1003,
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜锁屏+AOD套装",
+      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 98 · 同一主题适配锁屏、桌面和息屏显示",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23020617%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%230ea5e9%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2314b8a6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22106%22%20y%3D%22174%22%20width%3D%22268%22%20height%3D%22500%22%20rx%3D%2246%22%20fill%3D%22%23020617%22%20opacity%3D%22.72%22%2F%3E%3Cpath%20d%3D%22M170%20348%20C206%20286%20276%20286%20312%20348%20C328%20420%20282%20488%20240%20540%20C198%20488%20152%20420%20170%20348Z%22%20stroke%3D%22%2314b8a6%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22410%22%20r%3D%22104%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20opacity%3D%22.28%22%20fill%3D%22none%22%2F%3E%3Crect%20x%3D%22150%22%20y%3D%22716%22%20width%3D%22180%22%20height%3D%2236%22%20rx%3D%2218%22%20fill%3D%22%230ea5e9%22%20opacity%3D%22.52%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E9%94%81%E5%B1%8F%2BAOD%E5%A5%97%E8%A3%85%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%90%8C%E4%B8%80%E4%B8%BB%E9%A2%98%E9%80%82%E9%85%8D%E9%94%81%E5%B1%8F%E3%80%81%E6%A1%8C%E9%9D%A2%E5%92%8C%E6%81%AF%E5%B1%8F%E6%98%BE%E7%A4%BA%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：锁屏+AOD套装（精品壁纸库）。生成一套低功耗深色主题：锁屏主图、桌面延展、AOD 极简线稿，保持同一个视觉符号。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
+      "generatedFrom": "daily_top3_wallpaper_playbook"
+    },
+    {
+      "id": "tpl-1-sports_cheer",
+      "hotspotId": 1004,
       "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜锁屏+AOD套装",
-      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 同一主题适配锁屏、桌面和息屏显示",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23020617%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%230ea5e9%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2314b8a6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22106%22%20y%3D%22174%22%20width%3D%22268%22%20height%3D%22500%22%20rx%3D%2246%22%20fill%3D%22%23020617%22%20opacity%3D%22.72%22%2F%3E%3Cpath%20d%3D%22M170%20348%20C206%20286%20276%20286%20312%20348%20C328%20420%20282%20488%20240%20540%20C198%20488%20152%20420%20170%20348Z%22%20stroke%3D%22%2314b8a6%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22410%22%20r%3D%22104%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20opacity%3D%22.28%22%20fill%3D%22none%22%2F%3E%3Crect%20x%3D%22150%22%20y%3D%22716%22%20width%3D%22180%22%20height%3D%2236%22%20rx%3D%2218%22%20fill%3D%22%230ea5e9%22%20opacity%3D%22.52%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E9%94%81%E5%B1%8F%2BAOD%E5%A5%97%E8%A3%85%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%90%8C%E4%B8%80%E4%B8%BB%E9%A2%98%E9%80%82%E9%85%8D%E9%94%81%E5%B1%8F%E3%80%81%E6%A1%8C%E9%9D%A2%E5%92%8C%E6%81%AF%E5%B1%8F%E6%98%BE%E7%A4%BA%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：锁屏+AOD套装（精品壁纸库）。生成一套低功耗深色主题：锁屏主图、桌面延展、AOD 极简线稿，保持同一个视觉符号。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "previewTitle": "Stray Kids \"THIS & THA…｜赛事应援风",
+      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 国家色、速度线、欢呼粒子，适合比赛和应援",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23020617%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2322c55e%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20562%20L430%20352%20L386%20740%20L104%20672Z%22%20fill%3D%22%2338bdf8%22%20opacity%3D%22.32%22%2F%3E%3Cpath%20d%3D%22M80%20250%20L220%20330%20L80%20410Z%22%20fill%3D%22%23fff%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M110%20232%20L300%20340%22%20stroke%3D%22%2338bdf8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2212%22%2F%3E%3Cpath%20d%3D%22M72%20700%20C180%20610%20302%20610%20420%20700%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20opacity%3D%22.36%22%2F%3E%3Ccircle%20cx%3D%22376%22%20cy%3D%22222%22%20r%3D%2258%22%20fill%3D%22%2322c55e%22%20opacity%3D%22.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%B5%9B%E4%BA%8B%E5%BA%94%E6%8F%B4%E9%A3%8E%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%9B%BD%E5%AE%B6%E8%89%B2%E3%80%81%E9%80%9F%E5%BA%A6%E7%BA%BF%E3%80%81%E6%AC%A2%E5%91%BC%E7%B2%92%E5%AD%90%EF%BC%8C%E9%80%82%E5%90%88%E6%AF%94%E8%B5%9B%E5%92%8C%E5%BA%94%E6%8F%B4%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：赛事应援风（精品壁纸库）。使用国家色、速度线、旗帜感色块、聚光灯和欢呼粒子表达赛事氛围，避免真实队徽和版权 Logo。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
@@ -1024,41 +1071,41 @@
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
-      "id": "tpl-1-sports_cheer",
-      "hotspotId": 1002,
-      "hotspotName": "Joe | Official Trailer",
-      "previewTitle": "Joe | Official Trailer｜赛事应援风",
-      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 98 · 国家色、速度线、欢呼粒子，适合比赛和应援",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23020617%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2322c55e%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20562%20L430%20352%20L386%20740%20L104%20672Z%22%20fill%3D%22%2338bdf8%22%20opacity%3D%22.32%22%2F%3E%3Cpath%20d%3D%22M80%20250%20L220%20330%20L80%20410Z%22%20fill%3D%22%23fff%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M110%20232%20L300%20340%22%20stroke%3D%22%2338bdf8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2212%22%2F%3E%3Cpath%20d%3D%22M72%20700%20C180%20610%20302%20610%20420%20700%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20opacity%3D%22.36%22%2F%3E%3Ccircle%20cx%3D%22376%22%20cy%3D%22222%22%20r%3D%2258%22%20fill%3D%22%2322c55e%22%20opacity%3D%22.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%B5%9B%E4%BA%8B%E5%BA%94%E6%8F%B4%E9%A3%8E%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EJoe%20%7C%20Official%20Trailer%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%9B%BD%E5%AE%B6%E8%89%B2%E3%80%81%E9%80%9F%E5%BA%A6%E7%BA%BF%E3%80%81%E6%AC%A2%E5%91%BC%E7%B2%92%E5%AD%90%EF%BC%8C%E9%80%82%E5%90%88%E6%AF%94%E8%B5%9B%E5%92%8C%E5%BA%94%E6%8F%B4%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：赛事应援风（精品壁纸库）。使用国家色、速度线、旗帜感色块、聚光灯和欢呼粒子表达赛事氛围，避免真实队徽和版权 Logo。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=Js7PKsarC5Q",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
       "id": "tpl-1-cinematic_poster",
-      "hotspotId": 1002,
-      "hotspotName": "Joe | Official Trailer",
-      "previewTitle": "Joe | Official Trailer｜电影海报感",
-      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 98 · 大片构图和角色氛围，适合影视/音乐热点",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23111827%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23ef4444%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fbbf24%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2296%22%20y%3D%22196%22%20width%3D%22288%22%20height%3D%22460%22%20rx%3D%2222%22%20fill%3D%22%23111827%22%20opacity%3D%22.48%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22322%22%20r%3D%2286%22%20fill%3D%22%23fbbf24%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M120%20656%20L240%20420%20L360%20656Z%22%20fill%3D%22%23ef4444%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M86%20742%20H394%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2214%22%20opacity%3D%22.42%22%2F%3E%3Cpath%20d%3D%22M142%20704%20H338%22%20stroke%3D%22%23fbbf24%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2210%22%20opacity%3D%22.8%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E7%94%B5%E5%BD%B1%E6%B5%B7%E6%8A%A5%E6%84%9F%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EJoe%20%7C%20Official%20Trailer%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%A4%A7%E7%89%87%E6%9E%84%E5%9B%BE%E5%92%8C%E8%A7%92%E8%89%B2%E6%B0%9B%E5%9B%B4%EF%BC%8C%E9%80%82%E5%90%88%E5%BD%B1%E8%A7%86%2F%E9%9F%B3%E4%B9%90%E7%83%AD%E7%82%B9%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：电影海报感（精品壁纸库）。以电影海报构图、逆光、景深和大面积留白表达热点故事感，不使用真实明星肖像、剧照或版权角色。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "hotspotId": 1004,
+      "hotspotName": "Stray Kids \"THIS & THA…",
+      "previewTitle": "Stray Kids \"THIS & THA…｜电影海报感",
+      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 大片构图和角色氛围，适合影视/音乐热点",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23111827%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23ef4444%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fbbf24%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2296%22%20y%3D%22196%22%20width%3D%22288%22%20height%3D%22460%22%20rx%3D%2222%22%20fill%3D%22%23111827%22%20opacity%3D%22.48%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22322%22%20r%3D%2286%22%20fill%3D%22%23fbbf24%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M120%20656%20L240%20420%20L360%20656Z%22%20fill%3D%22%23ef4444%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M86%20742%20H394%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2214%22%20opacity%3D%22.42%22%2F%3E%3Cpath%20d%3D%22M142%20704%20H338%22%20stroke%3D%22%23fbbf24%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2210%22%20opacity%3D%22.8%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E7%94%B5%E5%BD%B1%E6%B5%B7%E6%8A%A5%E6%84%9F%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%A4%A7%E7%89%87%E6%9E%84%E5%9B%BE%E5%92%8C%E8%A7%92%E8%89%B2%E6%B0%9B%E5%9B%B4%EF%BC%8C%E9%80%82%E5%90%88%E5%BD%B1%E8%A7%86%2F%E9%9F%B3%E4%B9%90%E7%83%AD%E7%82%B9%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：电影海报感（精品壁纸库）。以电影海报构图、逆光、景深和大面积留白表达热点故事感，不使用真实明星肖像、剧照或版权角色。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=Js7PKsarC5Q",
+      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
       "id": "tpl-1-city_color",
+      "hotspotId": 1004,
+      "hotspotName": "Stray Kids \"THIS & THA…",
+      "previewTitle": "Stray Kids \"THIS & THA…｜城市色彩采样",
+      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 从本地街景、建筑、服饰里提取城市色盘",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f5f5f4%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2364748b%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f172a%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20690%20V390%20L138%20338%20L204%20430%20L280%20300%20L394%20420%20V690Z%22%20fill%3D%22%2364748b%22%20opacity%3D%22.35%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22510%22%20width%3D%2256%22%20height%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.32%22%2F%3E%3Crect%20x%3D%22192%22%20y%3D%22468%22%20width%3D%2268%22%20height%3D%22222%22%20fill%3D%22%23fff%22%20opacity%3D%22.22%22%2F%3E%3Crect%20x%3D%22306%22%20y%3D%22540%22%20width%3D%2252%22%20height%3D%22150%22%20fill%3D%22%230f172a%22%20opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M72%20718%20H410%22%20stroke%3D%22%230f172a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2212%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E5%9F%8E%E5%B8%82%E8%89%B2%E5%BD%A9%E9%87%87%E6%A0%B7%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E4%BB%8E%E6%9C%AC%E5%9C%B0%E8%A1%97%E6%99%AF%E3%80%81%E5%BB%BA%E7%AD%91%E3%80%81%E6%9C%8D%E9%A5%B0%E9%87%8C%E6%8F%90%E5%8F%96%E5%9F%8E%E5%B8%82%E8%89%B2%E7%9B%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 巴西 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：城市色彩采样（精品壁纸库）。从热点所在地提取城市色彩、街头图形、建筑轮廓和生活方式元素，做成高级城市系列壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
+      "generatedFrom": "daily_top3_wallpaper_playbook"
+    },
+    {
+      "id": "tpl-2-multi_image_fusion",
       "hotspotId": 1002,
       "hotspotName": "Joe | Official Trailer",
-      "previewTitle": "Joe | Official Trailer｜城市色彩采样",
-      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 98 · 从本地街景、建筑、服饰里提取城市色盘",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f5f5f4%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2364748b%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f172a%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20690%20V390%20L138%20338%20L204%20430%20L280%20300%20L394%20420%20V690Z%22%20fill%3D%22%2364748b%22%20opacity%3D%22.35%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22510%22%20width%3D%2256%22%20height%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.32%22%2F%3E%3Crect%20x%3D%22192%22%20y%3D%22468%22%20width%3D%2268%22%20height%3D%22222%22%20fill%3D%22%23fff%22%20opacity%3D%22.22%22%2F%3E%3Crect%20x%3D%22306%22%20y%3D%22540%22%20width%3D%2252%22%20height%3D%22150%22%20fill%3D%22%230f172a%22%20opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M72%20718%20H410%22%20stroke%3D%22%230f172a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2212%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E5%9F%8E%E5%B8%82%E8%89%B2%E5%BD%A9%E9%87%87%E6%A0%B7%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EJoe%20%7C%20Official%20Trailer%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E4%BB%8E%E6%9C%AC%E5%9C%B0%E8%A1%97%E6%99%AF%E3%80%81%E5%BB%BA%E7%AD%91%E3%80%81%E6%9C%8D%E9%A5%B0%E9%87%8C%E6%8F%90%E5%8F%96%E5%9F%8E%E5%B8%82%E8%89%B2%E7%9B%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：城市色彩采样（精品壁纸库）。从热点所在地提取城市色彩、街头图形、建筑轮廓和生活方式元素，做成高级城市系列壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "previewTitle": "Joe | Official Trailer｜三图融合玩法",
+      "previewMeta": "AI创作玩法 · 撒哈拉以南非洲 · 模板潜力 96 · 人物+服饰+背景三图合成，一次生成个人主题",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23312e81%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%238b5cf6%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f0abfc%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2264%22%20y%3D%22210%22%20width%3D%22154%22%20height%3D%22230%22%20rx%3D%2234%22%20fill%3D%22%23fff%22%20opacity%3D%22.34%22%2F%3E%3Crect%20x%3D%22262%22%20y%3D%22190%22%20width%3D%22154%22%20height%3D%22230%22%20rx%3D%2234%22%20fill%3D%22%23f0abfc%22%20opacity%3D%22.34%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22478%22%20width%3D%22216%22%20height%3D%22250%22%20rx%3D%2242%22%20fill%3D%22%238b5cf6%22%20opacity%3D%22.48%22%2F%3E%3Cpath%20d%3D%22M218%20348%20C254%20430%20238%20510%20192%20594%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2214%22%20fill%3D%22none%22%20opacity%3D%22.62%22%2F%3E%3Cpath%20d%3D%22M270%20330%20C220%20450%20252%20548%20322%20626%22%20stroke%3D%22%23f0abfc%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2214%22%20fill%3D%22none%22%20opacity%3D%22.8%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E4%B8%89%E5%9B%BE%E8%9E%8D%E5%90%88%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EJoe%20%7C%20Official%20Trailer%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E4%BA%BA%E7%89%A9%2B%E6%9C%8D%E9%A5%B0%2B%E8%83%8C%E6%99%AF%E4%B8%89%E5%9B%BE%E5%90%88%E6%88%90%EF%BC%8C%E4%B8%80%E6%AC%A1%E7%94%9F%E6%88%90%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：三图融合玩法（AI创作玩法）。用户上传人物照、喜欢的服饰图和背景图，AI 融合为同一风格的原创个人主题壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
@@ -1066,31 +1113,17 @@
       "generatedFrom": "daily_top3_wallpaper_playbook"
     },
     {
-      "id": "tpl-2-multi_image_fusion",
-      "hotspotId": 1004,
-      "hotspotName": "Avatar Aang: The Last …",
-      "previewTitle": "Avatar Aang: The Last …｜三图融合玩法",
-      "previewMeta": "AI创作玩法 · 撒哈拉以南非洲 · 模板潜力 95 · 人物+服饰+背景三图合成，一次生成个人主题",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23312e81%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%238b5cf6%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f0abfc%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2264%22%20y%3D%22210%22%20width%3D%22154%22%20height%3D%22230%22%20rx%3D%2234%22%20fill%3D%22%23fff%22%20opacity%3D%22.34%22%2F%3E%3Crect%20x%3D%22262%22%20y%3D%22190%22%20width%3D%22154%22%20height%3D%22230%22%20rx%3D%2234%22%20fill%3D%22%23f0abfc%22%20opacity%3D%22.34%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22478%22%20width%3D%22216%22%20height%3D%22250%22%20rx%3D%2242%22%20fill%3D%22%238b5cf6%22%20opacity%3D%22.48%22%2F%3E%3Cpath%20d%3D%22M218%20348%20C254%20430%20238%20510%20192%20594%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2214%22%20fill%3D%22none%22%20opacity%3D%22.62%22%2F%3E%3Cpath%20d%3D%22M270%20330%20C220%20450%20252%20548%20322%20626%22%20stroke%3D%22%23f0abfc%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2214%22%20fill%3D%22none%22%20opacity%3D%22.8%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E4%B8%89%E5%9B%BE%E8%9E%8D%E5%90%88%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E4%BA%BA%E7%89%A9%2B%E6%9C%8D%E9%A5%B0%2B%E8%83%8C%E6%99%AF%E4%B8%89%E5%9B%BE%E5%90%88%E6%88%90%EF%BC%8C%E4%B8%80%E6%AC%A1%E7%94%9F%E6%88%90%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：三图融合玩法（AI创作玩法）。用户上传人物照、喜欢的服饰图和背景图，AI 融合为同一风格的原创个人主题壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
       "id": "tpl-2-music_visualizer",
-      "hotspotId": 1004,
-      "hotspotName": "Avatar Aang: The Last …",
-      "previewTitle": "Avatar Aang: The Last …｜音乐律动壁纸",
-      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 95 · 声波、舞台光、节奏感，适合音乐和舞蹈热点",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230f172a%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2306b6d4%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f97316%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M78%20580%20C150%20464%20236%20668%20310%20516%20C352%20432%20388%20460%20430%20396%22%20stroke%3D%22%23f97316%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22146%22%20cy%3D%22326%22%20r%3D%2266%22%20fill%3D%22%23f97316%22%20opacity%3D%22.34%22%2F%3E%3Ccircle%20cx%3D%22334%22%20cy%3D%22300%22%20r%3D%22104%22%20fill%3D%22%2306b6d4%22%20opacity%3D%22.28%22%2F%3E%3Crect%20x%3D%2294%22%20y%3D%22688%22%20width%3D%2228%22%20height%3D%2288%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.5%22%2F%3E%3Crect%20x%3D%22152%22%20y%3D%22628%22%20width%3D%2228%22%20height%3D%22148%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.55%22%2F%3E%3Crect%20x%3D%22210%22%20y%3D%22668%22%20width%3D%2228%22%20height%3D%22108%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.45%22%2F%3E%3Crect%20x%3D%22268%22%20y%3D%22590%22%20width%3D%2228%22%20height%3D%22186%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.58%22%2F%3E%3Crect%20x%3D%22326%22%20y%3D%22642%22%20width%3D%2228%22%20height%3D%22134%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.48%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E9%9F%B3%E4%B9%90%E5%BE%8B%E5%8A%A8%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EAvatar%20Aang%3A%20The%20Last%20Airben%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%A3%B0%E6%B3%A2%E3%80%81%E8%88%9E%E5%8F%B0%E5%85%89%E3%80%81%E8%8A%82%E5%A5%8F%E6%84%9F%EF%BC%8C%E9%80%82%E5%90%88%E9%9F%B3%E4%B9%90%E5%92%8C%E8%88%9E%E8%B9%88%E7%83%AD%E7%82%B9%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：音乐律动壁纸（精品壁纸库）。把音乐或舞蹈热点转译成声波线、舞台光、节奏粒子和动态感构图，适合静态/动态壁纸延展。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "hotspotId": 1002,
+      "hotspotName": "Joe | Official Trailer",
+      "previewTitle": "Joe | Official Trailer｜音乐律动壁纸",
+      "previewMeta": "精品壁纸库 · 撒哈拉以南非洲 · 模板潜力 96 · 声波、舞台光、节奏感，适合音乐和舞蹈热点",
+      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230f172a%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2306b6d4%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f97316%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M78%20580%20C150%20464%20236%20668%20310%20516%20C352%20432%20388%20460%20430%20396%22%20stroke%3D%22%23f97316%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22146%22%20cy%3D%22326%22%20r%3D%2266%22%20fill%3D%22%23f97316%22%20opacity%3D%22.34%22%2F%3E%3Ccircle%20cx%3D%22334%22%20cy%3D%22300%22%20r%3D%22104%22%20fill%3D%22%2306b6d4%22%20opacity%3D%22.28%22%2F%3E%3Crect%20x%3D%2294%22%20y%3D%22688%22%20width%3D%2228%22%20height%3D%2288%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.5%22%2F%3E%3Crect%20x%3D%22152%22%20y%3D%22628%22%20width%3D%2228%22%20height%3D%22148%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.55%22%2F%3E%3Crect%20x%3D%22210%22%20y%3D%22668%22%20width%3D%2228%22%20height%3D%22108%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.45%22%2F%3E%3Crect%20x%3D%22268%22%20y%3D%22590%22%20width%3D%2228%22%20height%3D%22186%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.58%22%2F%3E%3Crect%20x%3D%22326%22%20y%3D%22642%22%20width%3D%2228%22%20height%3D%22134%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.48%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E9%9F%B3%E4%B9%90%E5%BE%8B%E5%8A%A8%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E6%92%92%E5%93%88%E6%8B%89%E4%BB%A5%E5%8D%97%E9%9D%9E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EJoe%20%7C%20Official%20Trailer%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%A3%B0%E6%B3%A2%E3%80%81%E8%88%9E%E5%8F%B0%E5%85%89%E3%80%81%E8%8A%82%E5%A5%8F%E6%84%9F%EF%BC%8C%E9%80%82%E5%90%88%E9%9F%B3%E4%B9%90%E5%92%8C%E8%88%9E%E8%B9%88%E7%83%AD%E7%82%B9%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：音乐律动壁纸（精品壁纸库）。把音乐或舞蹈热点转译成声波线、舞台光、节奏粒子和动态感构图，适合静态/动态壁纸延展。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
       "source": [
         "YouTube"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
+      "sourceUrl": "https://www.youtube.com/watch?v=Js7PKsarC5Q",
       "generatedFrom": "daily_top3_wallpaper_playbook"
     }
   ]
