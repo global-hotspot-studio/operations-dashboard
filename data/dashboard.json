@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-08T03:25:46.839Z",
+  "generatedAt": "2026-07-08T04:51:34.520Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -13,17 +13,19 @@
   ],
   "sources": [
     "全部平台",
-    "TikTok",
     "YouTube",
     "Google Trends",
+    "本地平台",
+    "GDELT",
+    "人工录入",
+    "TikTok",
     "Instagram",
     "X",
-    "Facebook",
-    "本地平台"
+    "Facebook"
   ],
   "summary": {
-    "rawTopics": 1452,
-    "effectiveHotspots": 390,
+    "rawTopics": 1434,
+    "effectiveHotspots": 380,
     "highPriorityAlerts": 13,
     "templateCandidates": 13,
     "rawDelta": 42,
@@ -45,32 +47,32 @@
       "22:00"
     ],
     "effective": [
-      27,
+      32,
+      75,
+      21,
       77,
-      23,
-      72,
-      69,
-      47,
-      118,
-      48,
-      114,
-      104,
-      103,
-      147
+      62,
+      54,
+      113,
+      49,
+      116,
+      99,
+      110,
+      141
     ],
     "template": [
-      13,
-      32,
-      8,
-      32,
-      27,
-      24,
-      50,
-      23,
+      17,
+      30,
+      9,
+      33,
+      25,
+      28,
+      47,
+      25,
       55,
-      43,
-      56,
-      74
+      42,
+      59,
+      71
     ]
   },
   "hotspots": [
@@ -83,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "15.5M",
-      "trend": 75,
-      "score": 98,
+      "heat": "14.5M",
+      "trend": 67,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -93,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'I LIKE IT' M/V》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 15.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 15.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "9cS2wv6AfHk",
         "channelTitle": "BABYMONSTER",
@@ -111,9 +113,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "3.2M",
-      "trend": 63,
-      "score": 96,
+      "heat": "4.4M",
+      "trend": 73,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -121,7 +123,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Ve Junoon | Awarapan 2 | Emraan Hashmi, Disha Patani | Vishesh Bhatt | Mithoon, Sayeed Q., Subodhh》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 3.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 4.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "HX1EXb5kWwY",
         "channelTitle": "Sony Music India",
@@ -139,8 +141,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "6.5M",
-      "trend": 75,
+      "heat": "6.1M",
+      "trend": 67,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -149,7 +151,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 6.1M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 6.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "Js7PKsarC5Q",
         "channelTitle": "Druski",
@@ -167,9 +169,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.5M",
-      "trend": 57,
-      "score": 95,
+      "heat": "1.6M",
+      "trend": 61,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -177,7 +179,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 加纳 热门榜，播放量 1.6M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 加纳 热门榜，播放量 1.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7b20GRFZBFE",
         "channelTitle": "Avatar Legends",
@@ -196,7 +198,7 @@
         "YouTube"
       ],
       "heat": "1.4M",
-      "trend": 68,
+      "trend": 69,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -216,6 +218,68 @@
     },
     {
       "id": 1005,
+      "name": "tiempo de mañana",
+      "originalTitle": "tiempo de mañana",
+      "region": "南美洲",
+      "country": "智利",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 61,
+      "score": 91,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 智利 搜索趋势「tiempo de mañana」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 100000+。关联新闻源：Google Trends；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "tiempo de mañana",
+        "traffic": 100000,
+        "publishedAt": "Tue, 7 Jul 2026 18:00:00 -0700",
+        "picture": "",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo%20de%20ma%C3%B1ana",
+        "newsUrl": "",
+        "newsTitle": "",
+        "newsSource": ""
+      }
+    },
+    {
+      "id": 1006,
+      "name": "anses",
+      "originalTitle": "anses",
+      "region": "南美洲",
+      "country": "阿根廷",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 72,
+      "score": 97,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「anses」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 10000+。关联新闻源：La Nación / Radiocanal；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "anses",
+        "traffic": 10000,
+        "publishedAt": "Tue, 7 Jul 2026 19:50:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3JeiFRpPaGFLnYQmWUIx0b3BNgjoH0sFGvzmKnsFEKf0OSrk3yytM9aBCW8o",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=anses",
+        "newsUrl": "https://www.lanacion.com.ar/economia/pnc-cuando-cobro-las-pensiones-no-contributivas-de-la-anses-en-julio-2026-con-el-aumento-confirmado-nid07072026/",
+        "newsTitle": "PNC: cuándo cobro las Pensiones no Contributivas de la Anses en julio 2026, con el aumento confirmado",
+        "newsSource": "La Nación"
+      }
+    },
+    {
+      "id": 1007,
       "name": "switzerland vs colombi…",
       "originalTitle": "switzerland vs colombia",
       "region": "撒哈拉以南非洲",
@@ -224,8 +288,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 64,
-      "score": 93,
+      "trend": 61,
+      "score": 92,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -246,11 +310,42 @@
       }
     },
     {
-      "id": 1006,
-      "name": "anses",
-      "originalTitle": "anses",
+      "id": 1008,
+      "name": "lotería cruz roja hoy",
+      "originalTitle": "lotería cruz roja hoy",
       "region": "南美洲",
-      "country": "阿根廷",
+      "country": "哥伦比亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 64,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「lotería cruz roja hoy」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：ELTIEMPO.COM / Blu Radio；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "lotería cruz roja hoy",
+        "traffic": 5000,
+        "publishedAt": "Tue, 7 Jul 2026 21:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgaZTGbP5WWvGTbxSQWexoD0uBpLT-Ur28SnUUo1MP2aCQxIxudG6684iV8VE",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20cruz%20roja%20hoy",
+        "newsUrl": "https://www.eltiempo.com/economia/finanzas-personales/loteria-del-huila-conozca-los-numeros-ganadores-del-martes-07-de-julio-de-3569781",
+        "newsTitle": "Lotería del Huila: conozca los números ganadores del martes 07 de julio de 2026",
+        "newsSource": "ELTIEMPO.COM"
+      }
+    },
+    {
+      "id": 1009,
+      "name": "vedanta power share pr…",
+      "originalTitle": "vedanta power share price",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
@@ -263,61 +358,30 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「anses」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 5000+。关联新闻源：La Nación / Radiocanal；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「vedanta power share price」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：Saur Energy / The Economic Times；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "anses",
-        "traffic": 5000,
-        "publishedAt": "Tue, 7 Jul 2026 19:50:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3JeiFRpPaGFLnYQmWUIx0b3BNgjoH0sFGvzmKnsFEKf0OSrk3yytM9aBCW8o",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=anses",
-        "newsUrl": "https://www.lanacion.com.ar/economia/pnc-cuando-cobro-las-pensiones-no-contributivas-de-la-anses-en-julio-2026-con-el-aumento-confirmado-nid07072026/",
-        "newsTitle": "PNC: cuándo cobro las Pensiones no Contributivas de la Anses en julio 2026, con el aumento confirmado",
-        "newsSource": "La Nación"
+        "topic": "vedanta power share price",
+        "traffic": 500,
+        "publishedAt": "Tue, 7 Jul 2026 21:30:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxkft5AkooEISbBanDTHatCvc-q2CIfFsxfYVtsbqKRUGj_rK9UTuMJWtnTm4",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=vedanta%20power%20share%20price",
+        "newsUrl": "https://www.saurenergy.com/solar-energy-news/vedanta-power-q1-sales-rise-38-yoy-to-5225-million-units-12138287",
+        "newsTitle": "Vedanta Power Q1 Sales Rise 38% YoY to 5,225 Million Units",
+        "newsSource": "Saur Energy"
       }
     },
     {
-      "id": 1007,
-      "name": "tiempo mañana",
-      "originalTitle": "tiempo mañana",
-      "region": "南美洲",
-      "country": "哥伦比亚",
+      "id": 1010,
+      "name": "boeing 737",
+      "originalTitle": "boeing 737",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 67,
-      "score": 95,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「tiempo mañana」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：Noticiasdel6.com / Clarin.com；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "tiempo mañana",
-        "traffic": 5000,
-        "publishedAt": "Tue, 7 Jul 2026 18:50:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6x5rBtQOo7umb_v5MXrcnUDn3bLLAU0srkdM5MPMEOFSXR9sQkP6ljz8BdCQ",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=tiempo%20ma%C3%B1ana",
-        "newsUrl": "https://noticiasdel6.com/tiempo-nublado-y-frio-por-la-manana-con-bancos-de-niebla-bueno-y-fresco-por-la-tarde/",
-        "newsTitle": "Tiempo: Nublado y frio por la mañana con bancos de niebla. Bueno y fresco por la tarde",
-        "newsSource": "Noticiasdel6.com"
-      }
-    },
-    {
-      "id": 1008,
-      "name": "sams",
-      "originalTitle": "sams",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 52,
+      "trend": 53,
       "score": 89,
       "status": "爆发",
       "type": "realtime",
@@ -325,25 +389,25 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「sams」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：https://hrtoday.in/ / WSJ；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「boeing 737」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 500+。关联新闻源：Flightradar24 / Tempo.co English；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "sams",
+        "topic": "boeing 737",
         "traffic": 500,
-        "publishedAt": "Tue, 7 Jul 2026 20:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRB-0om2ckPcKT8WDr4UB_Xy6s4H7ELSpxGhkQ8doTHkNzSphDNzHkyMAZjBo8",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=sams",
-        "newsUrl": "https://hrtoday.in/pilar-d-appointed-vice-president-people-sams-club/",
-        "newsTitle": "Pilar D. Appointed Vice President, People – Sam’s Club",
-        "newsSource": "https://hrtoday.in/"
+        "publishedAt": "Tue, 7 Jul 2026 21:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLTvSfZElGh0aJLW5YjxJvkhMEZCzIE_secVaqbAKBKRfXjffNLzW8cX5OUW0",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=boeing%20737",
+        "newsUrl": "https://www.flightradar24.com/blog/flight-tracking-news/major-incident/k2-airways-cargo-737-accident/",
+        "newsTitle": "K2 Airways Cargo 737 overdue in Karachi",
+        "newsSource": "Flightradar24"
       }
     },
     {
-      "id": 1009,
-      "name": "pemadaman bergilir",
-      "originalTitle": "pemadaman bergilir",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
+      "id": 1011,
+      "name": "cte",
+      "originalTitle": "cte",
+      "region": "南美洲",
+      "country": "巴西",
       "source": [
         "Google Trends"
       ],
@@ -356,110 +420,48 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「pemadaman bergilir」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 500+。关联新闻源：ANTARA News / detikcom；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「cte」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 100+。关联新闻源：ESPN / BBC；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "pemadaman bergilir",
-        "traffic": 500,
-        "publishedAt": "Tue, 7 Jul 2026 18:30:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaCE98Tk3Q4Dx6xWzjfdzMCGMRdmDPdYd3k2TPBPV7VsQNPwYRPg2-atQkrKk",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=pemadaman%20bergilir",
-        "newsUrl": "https://kalbar.antaranews.com/berita/705520/pln-kalbar-kebut-pemulihan-listrik-hingga-11-juli",
-        "newsTitle": "PLN Kalbar kebut pemulihan listrik hingga 11 Juli",
-        "newsSource": "ANTARA News"
-      }
-    },
-    {
-      "id": 1010,
-      "name": "gakuran codes",
-      "originalTitle": "gakuran codes",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 55,
-      "score": 90,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「gakuran codes」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 100+。关联新闻源：Radio Times / Nerd's Chalk；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "gakuran codes",
+        "topic": "cte",
         "traffic": 100,
-        "publishedAt": "Tue, 7 Jul 2026 20:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLYW761l4BSfzuRLVLcRtYyCk-OcJU4CQYUdUmILog4cL1I5JYQ9_e-4vcapg",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=gakuran%20codes",
-        "newsUrl": "https://www.radiotimes.com/technology/gaming/gakuran-codes/",
-        "newsTitle": "Gakuran codes (July 2026): Full list of codes and how to redeem",
-        "newsSource": "Radio Times"
-      }
-    },
-    {
-      "id": 1011,
-      "name": "alcalde de barranquill…",
-      "originalTitle": "alcalde de barranquilla",
-      "region": "南美洲",
-      "country": "哥伦比亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 60,
-      "score": 92,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「alcalde de barranquilla」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 500+。关联新闻源：ELTIEMPO.COM / El Espectador；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "alcalde de barranquilla",
-        "traffic": 500,
-        "publishedAt": "Tue, 7 Jul 2026 19:50:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRm8cUxMKh7zLLmz015dE47UfX1UW9dpwtxrPaFfHAdaggBe566ubLYR4EutA",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=alcalde%20de%20barranquilla",
-        "newsUrl": "https://www.eltiempo.com/politica/abelardo-de-la-espriella/abelardo-de-la-espriella-nombra-como-ministros-a-elsa-noguera-viviane-morales-mauricio-gomez-jaime-andres-beltran-juliana-gutierrez-e-ivan-cancino-3569652",
-        "newsTitle": "Abelardo de la Espriella nombra como ministros a Elsa Noguera, Viviane Morales, Mauricio Gómez, Jaime Andrés Beltrán, Juliana Gutiérrez e Iván Cancino",
-        "newsSource": "ELTIEMPO.COM"
+        "publishedAt": "Tue, 7 Jul 2026 20:40:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQy4L3QaFhGSrVn_5fX12hUHWsJDXlzIRVSITsaJeLnxPMxitoq856EpwxOA",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=cte",
+        "newsUrl": "https://www.espn.com/nfl/story/_/id/49296262/late-cowboys-player-marshawn-kneeland-diagnosed-cte",
+        "newsTitle": "Late Cowboys player Marshawn Kneeland diagnosed with CTE",
+        "newsSource": "ESPN"
       }
     },
     {
       "id": 1012,
-      "name": "connor murphy",
-      "originalTitle": "connor murphy",
+      "name": "mega go",
+      "originalTitle": "mega go",
       "region": "南美洲",
       "country": "智利",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 62,
-      "score": 93,
+      "trend": 53,
+      "score": 89,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「connor murphy」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 200+。关联新闻源：The Times of India / The Economic Times；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 智利 搜索趋势「mega go」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 200+。关联新闻源：Mega.cl / En Cancha；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "connor murphy",
+        "topic": "mega go",
         "traffic": 200,
-        "publishedAt": "Tue, 7 Jul 2026 19:00:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIbB-9lYDp2A0rKZkgKEWCQrdUvu-dN2USBbUrSWVTApLIhxuV1PVw3SM2B4s",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=connor%20murphy",
-        "newsUrl": "https://timesofindia.indiatimes.com/world/us-streamers/is-connor-murphy-dead-or-alive-what-we-know-about-the-viral-rumor-surrounding-the-youtube-bodybuilder/articleshow/132250995.cms",
-        "newsTitle": "Is Connor Murphy dead or alive? What we know about the viral rumor surrounding the YouTube bodybuilder",
-        "newsSource": "The Times of India"
+        "publishedAt": "Tue, 7 Jul 2026 21:30:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhNmiLXJ9l301m_KwKt12aULutkRM6YMmtTz0X99HyFh_s7Q32TohBp1NpBMg",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=mega%20go",
+        "newsUrl": "https://www.mega.cl/programas/volverias-con-tu-ex/mejores-momentos/217325-ludmila-ksenofontova-revelo-como-es-relacion-carla-ballero-sorprendio-respuesta.html",
+        "newsTitle": "Ludmila Ksenofontova reveló cómo es su relación con Carla Ballero y sorprendió con su respuesta",
+        "newsSource": "Mega.cl"
       }
     },
     {
@@ -472,8 +474,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 47,
-      "score": 80,
+      "trend": 56,
+      "score": 84,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -481,9 +483,10 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 印度 本地媒体「News On AIR」热点《Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，媒体：News On AIR。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：News On AIR。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "cricket",
+        "category": "核心话题",
         "sourceName": "News On AIR",
         "title": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
         "publishedAt": "Tue, 07 Jul 2026 22:34:03 GMT",
@@ -492,6 +495,64 @@
     },
     {
       "id": 1014,
+      "name": "Bollywood stars shower…",
+      "originalTitle": "Bollywood stars shower blessings on Anshula Kapoor, Rohan Thakkar at wedding reception",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 54,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「Telangana Today」热点《Bollywood stars shower blessings on Anshula Kapoor, Rohan Thakkar at wedding reception》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Telangana Today。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "bollywood",
+        "category": "垂类补充",
+        "sourceName": "Telangana Today",
+        "title": "Bollywood stars shower blessings on Anshula Kapoor, Rohan Thakkar at wedding reception",
+        "publishedAt": "Wed, 08 Jul 2026 03:15:02 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUUx4Ulh6aHpzYzFKV3Vxd0dVSFBqNE9FamNJSTAweGRscUIxVVp5cjN4R0Zhang0MjJwQUlqVzkxUkF4ZkVQYUgwamRDLXFYN2hDbENKcVJzU09rdDA0NFVoNW9ySGdhS1lsSWhrZWxaZnFCWHhhSEJVanNxaHRDMjh2WExyekNIa3lwV0hScDdkWnRwaktXazB5dlA4Vzl5T0htRnNiN2cyb3RsbXBKQnBR?oc=5"
+      }
+    },
+    {
+      "id": 1015,
+      "name": "Bangalore Internationa…",
+      "originalTitle": "Bangalore International Short Film Festival hosts pre-show gala",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 49,
+      "score": 81,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「The Hindu」热点《Bangalore International Short Film Festival hosts pre-show gala》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Hindu。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "festival",
+        "category": "垂类补充",
+        "sourceName": "The Hindu",
+        "title": "Bangalore International Short Film Festival hosts pre-show gala",
+        "publishedAt": "Wed, 08 Jul 2026 04:09:54 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTWdYcTZOUGlLejFULUJIWWR5OVcyeC15ZFhCc212Q2tJWklXZk93aGhUNEZhdXZoR3dYNjBBd05EVjZXU29JMXlBbU9pS3lzQ3p6aUhMZldvQ3k5aHd6VW5McGg2Z2VpOUJMT2V2VFBFSV85cXI4WWo4cHRDdEdXMlhrWW1DaUNqbnVVTE93Rk1Db25kTzR1ZjFYTG9KR3dZNWoxYU9lV3VtUHJLRE41VjY1MGRiQUM3UHJPQzZ1WHrSAccBQVVfeXFMTV9pWkU0U2lxaThFZDVLY2JHdkppRFZyMkJfdFQ5S2d1VUdQUTM3SHFROUNBOXByX09nbkVXVlYwWnZJaDJoOVFYbkVQd2JpZVZrSklkUUNmYXhZUE5XT1V1dnFQcGxfXzJxWm9ydHF2Ni00YVlnYVlzUzVsa1BLSERBZVpHZ0VkQVF4ZVljdzItb2xhSnVBNk5iZWRLMWtIQ3llR1EzdDZReG8yNHIxbWpfcVFnSXdjWVI2Y2UzUF9CNW0za2ZsOA?oc=5"
+      }
+    },
+    {
+      "id": 1016,
       "name": "Prabowo di Depan PM Mo…",
       "originalTitle": "Prabowo di Depan PM Modi: Saya Punya DNA India, Dengar Musik Tubuh Bergerak",
       "region": "印度尼西亚",
@@ -500,7 +561,7 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 60,
+      "trend": 59,
       "score": 86,
       "status": "上升",
       "type": "realtime",
@@ -509,9 +570,10 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 印度尼西亚 本地媒体「detikNews」热点《Prabowo di Depan PM Modi: Saya Punya DNA India, Dengar Musik Tubuh Bergerak》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，媒体：detikNews。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：detikNews。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musik",
+        "category": "核心话题",
         "sourceName": "detikNews",
         "title": "Prabowo di Depan PM Modi: Saya Punya DNA India, Dengar Musik Tubuh Bergerak",
         "publishedAt": "Wed, 08 Jul 2026 02:03:11 GMT",
@@ -519,7 +581,65 @@
       }
     },
     {
-      "id": 1015,
+      "id": 1017,
+      "name": "Tahan Imbang Batam, Ta…",
+      "originalTitle": "Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 46,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Pemerintah Kota Tanjungpinang」热点《Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Pemerintah Kota Tanjungpinang。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "sepak bola",
+        "category": "垂类补充",
+        "sourceName": "Pemerintah Kota Tanjungpinang",
+        "title": "Tahan Imbang Batam, Tanjungpinang Sabet Perak Sepak Bola POPDA Kepri 2026",
+        "publishedAt": "Wed, 08 Jul 2026 01:18:04 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaTVFeVFOcEFZMS1jb2pNNGVBNjFyc2lWMUlOR2pnMmFTRVJ1czh6WGpNMVdtTUZURzZBYlZ4MDg1SDhfNnU0aW5jTi0zLUlncEJCYWNkWFRHdy1IOHJfV1c1WktIVHFZekJYcVAyRmJ6YU1RWDJMNFBQeVQ5ZlVoMmZkTVY1TnFXb3dOd0s5WDdVSTdhOGI4TXhhZlpyd0ZKcl9uZDdHMWNIQlIyY2R2Um1PWW1Ndw?oc=5"
+      }
+    },
+    {
+      "id": 1018,
+      "name": "Screening Film Anak-An…",
+      "originalTitle": "Screening Film Anak-Anak Bamu",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 58,
+      "score": 85,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Bank Syariah Indonesia」热点《Screening Film Anak-Anak Bamu》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Bank Syariah Indonesia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "film",
+        "category": "垂类补充",
+        "sourceName": "Bank Syariah Indonesia",
+        "title": "Screening Film Anak-Anak Bamu",
+        "publishedAt": "Wed, 08 Jul 2026 01:18:30 GMT",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vNlV4Mk9mQUl0ZVREOElWN2hnWWVMa1RlZG10RnVldWR3Q2NuY29QcW9IcE0tSVA2RE9Kenk1QU9TNDQ5SUVvNHphWjZnN1FWQlE4U1hvcE5RYmlYMEtBd3pBbFdxUk5RNTBiaENR?oc=5"
+      }
+    },
+    {
+      "id": 1019,
       "name": "Quando o futebol termi…",
       "originalTitle": "Quando o futebol termina, a violência continua",
       "region": "南美洲",
@@ -528,91 +648,7 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 47,
-      "score": 80,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「Jornal da USP」热点《Quando o futebol termina, a violência continua》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，媒体：Jornal da USP。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "futebol",
-        "sourceName": "Jornal da USP",
-        "title": "Quando o futebol termina, a violência continua",
-        "publishedAt": "Wed, 08 Jul 2026 00:39:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeEtOSUFKMmZ1c29wUEdGUzlnSVpmS25nSFN3MFQ4ejRLdXRSRm1rUVFWdmJ3RlFvYzJobkNOQ0NDLU5QV3BMaVUzelllVFdfc3ZZa0prVUprN2dDUUc4bGJDWFhwVnZ3QkZ3OW1uNFhTNDl6MWZQR19NbG91LVprbGVn?oc=5"
-      }
-    },
-    {
-      "id": 1016,
-      "name": "Las jugadas polémicas …",
-      "originalTitle": "Las jugadas polémicas que dejó el Argentina vs. Egipto",
-      "region": "南美洲",
-      "country": "阿根廷",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 57,
-      "score": 85,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 阿根廷 本地媒体「TUDN」热点《Las jugadas polémicas que dejó el Argentina vs. Egipto》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 阿根廷 本地媒体/Google News 公开新闻源，媒体：TUDN。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "futbol",
-        "sourceName": "TUDN",
-        "title": "Las jugadas polémicas que dejó el Argentina vs. Egipto",
-        "publishedAt": "Tue, 07 Jul 2026 20:27:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSFRPMmtYeENzLVZwVFhNTkRhdVZmRUJzbGsyY0Z1c0hBWWdBZVlTQlNqZTVxMkx2aDVSSHg5dmZCSjU3a1pnM2NOU1FUMFdsZlpmazBrWmx3dHQ5UlNRZGZVTXUtTWEzQV9iMzVQNzAxangxX2FnbDZodFdPcVBXSDNkRF9ud0FaZmlQS3J1SUJ0UWQxc1dJVUVyMS1ZUQ?oc=5"
-      }
-    },
-    {
-      "id": 1017,
-      "name": "Radamel Falcao explotó…",
-      "originalTitle": "Radamel Falcao explotó por eliminación de Colombia del Mundial 2026",
-      "region": "南美洲",
-      "country": "哥伦比亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 53,
-      "score": 83,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 哥伦比亚 本地媒体「TUDN」热点《Radamel Falcao explotó por eliminación de Colombia del Mundial 2026》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 哥伦比亚 本地媒体/Google News 公开新闻源，媒体：TUDN。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "futbol",
-        "sourceName": "TUDN",
-        "title": "Radamel Falcao explotó por eliminación de Colombia del Mundial 2026",
-        "publishedAt": "Wed, 08 Jul 2026 01:44:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ1gxZ0FkUDBHcUowMmcwSDVUS0lrb196TWgyMC0wT185aTBOUkRSNmp3S0YtOHpsTGZjNVdtZjJHM2xRNWlJUTFzX09QWDBrUTd2Y2NVa3o2eEdZR1ZBYlVlRW52VkNUQ0t4UlVjMGJxcm80SG5OcDR4M24xc3FzQ05xbV9CTEtFLWRObDVQTllEeW4wZ2dWNThpdmtIeXV4UUx6VVlZTE9yM3FiZUE0dzhNb3dIUQ?oc=5"
-      }
-    },
-    {
-      "id": 1018,
-      "name": "Refuerzos del fútbol c…",
-      "originalTitle": "Refuerzos del fútbol chileno: rumores y bajas del mercado de fichajes de invierno para la segunda rueda 2026",
-      "region": "南美洲",
-      "country": "智利",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 50,
+      "trend": 51,
       "score": 82,
       "status": "上升",
       "type": "realtime",
@@ -620,21 +656,51 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 智利 本地媒体「RedGol」热点《Refuerzos del fútbol chileno: rumores y bajas del mercado de fichajes de invierno para la segunda rueda 2026》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 智利 本地媒体/Google News 公开新闻源，媒体：RedGol。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「Jornal da USP」热点《Quando o futebol termina, a violência continua》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Jornal da USP。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "futbol",
-        "sourceName": "RedGol",
-        "title": "Refuerzos del fútbol chileno: rumores y bajas del mercado de fichajes de invierno para la segunda rueda 2026",
-        "publishedAt": "Tue, 07 Jul 2026 23:48:52 GMT",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZnY1bHRZN3Qtazh3UGt4X3pBckJIS1d0YVd5OUpoSWJ4SHkwRXJzSExmUGt4M0RZcTJRd2xEYkhkQnFvb2hjVkJyUGdhZW1hR1BDQ0ltanVRQlF6dkxLeUF1U0FhdUFaQ2VnZ0hHYWRhTEsxZ1NNRi0xamlRWlRoWHBqblppUnBBbXl3VDlucHdKeldaZ3dHNkZTNklXWjRZSklBM2hTNHppSlpVeHFENdIBtgFBVV95cUxOT1FVR2daRzREcklRSEJ6Qmx6cXRJZkVWSDRuNkpDQmFiVW5SVE0xdjYzLVFJV2gxbW03Y0IyalJoWjVqSkxITEhYTXd6ek1WYjV2M2lQVzJBU0tnOExiYVBkdWdUNW9jYmZ5R2JtdVhIeTlmbnNQZkxkUkVicTQ2d2lObV9HaklNTWhBT1oxenc5VFlIeldpNk1YYUY2bDNYQWdlQWRRclcyNjVlMmVrdGxZdmI0dw?oc=5"
+        "topic": "futebol",
+        "category": "核心话题",
+        "sourceName": "Jornal da USP",
+        "title": "Quando o futebol termina, a violência continua",
+        "publishedAt": "Wed, 08 Jul 2026 00:39:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeEtOSUFKMmZ1c29wUEdGUzlnSVpmS25nSFN3MFQ4ejRLdXRSRm1rUVFWdmJ3RlFvYzJobkNOQ0NDLU5QV3BMaVUzelllVFdfc3ZZa0prVUprN2dDUUc4bGJDWFhwVnZ3QkZ3OW1uNFhTNDl6MWZQR19NbG91LVprbGVn?oc=5"
+      }
+    },
+    {
+      "id": 1020,
+      "name": "Escola Municipal de Mú…",
+      "originalTitle": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 52,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 巴西 本地媒体「CONCERTO | Home」热点《Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：CONCERTO | Home。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musica",
+        "category": "垂类补充",
+        "sourceName": "CONCERTO | Home",
+        "title": "Escola Municipal de Música se mobiliza contra afastamento de maestro e em defesa da Orquestra Infantojuvenil",
+        "publishedAt": "Tue, 07 Jul 2026 23:52:30 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNEpjWVpJTU8wanNxWGNfaXhMZWM1N1M1Z0hZVHR0blR5bUNEM0JWZGxGcE8xSEtsczh5clNxd2xYWmdDOEY0VXFmdGJVSWM5b2lJeHZlQTF6MTFQT2ZaczFZUWQxOU83T2dZRGstNHpOM19ZUkx5N2VkRE5jcjQ3WDRRWE9heFpmLWlsY2lqTFRsdXhRSEVkdGxpNDhzZFVaTzBuUlRpcXZ3ZWJrN19KOG1kVk9GV0ZFeWljakJ1cmt0QQ?oc=5"
       }
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 97,
-      "growth": 53,
+      "count": 98,
+      "growth": 50,
       "countries": [
         "印度"
       ],
@@ -645,8 +711,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 97,
-      "growth": 8,
+      "count": 98,
+      "growth": 12,
       "countries": [
         "印度尼西亚"
       ],
@@ -657,8 +723,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 39,
-      "growth": 8,
+      "count": 40,
+      "growth": 12,
       "countries": [
         "俄罗斯"
       ],
@@ -669,8 +735,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 58,
-      "growth": 30,
+      "count": 54,
+      "growth": 34,
       "countries": [
         "尼日利亚",
         "南非",
@@ -684,8 +750,8 @@
       ]
     },
     "南美洲": {
-      "count": 87,
-      "growth": 44,
+      "count": 83,
+      "growth": 46,
       "countries": [
         "巴西",
         "阿根廷",
