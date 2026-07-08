@@ -81,6 +81,8 @@ function getPlatformUrl(h, source) {
   if (source === "X" && h.x?.url) return h.x.url;
   if (source === "Facebook" && h.facebook?.url) return h.facebook.url;
   if (source === "本地平台" && h.local?.url) return h.local.url;
+  if (source === "GDELT" && h.gdelt?.url) return h.gdelt.url;
+  if (source === "人工录入" && h.manual?.url) return h.manual.url;
   return "";
 }
 
@@ -130,6 +132,18 @@ function getSourceVisual(h, source) {
     return {
       image: h.local?.picture || "",
       label: h.local?.sourceName ? `${h.local.sourceName} · 本地媒体` : "本地媒体 / 新闻源"
+    };
+  }
+  if (source === "GDELT") {
+    return {
+      image: h.gdelt?.picture || "",
+      label: h.gdelt?.domain ? `${h.gdelt.domain} · GDELT 全球新闻` : "GDELT 全球新闻数据库"
+    };
+  }
+  if (source === "人工录入") {
+    return {
+      image: h.manual?.picture || "",
+      label: h.manual?.sourceName ? `${h.manual.sourceName} · 运营人工录入` : "运营人工录入"
     };
   }
   return { image: "", label: "点击跳转到平台原页面" };

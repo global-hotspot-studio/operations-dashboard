@@ -8,7 +8,8 @@
  * 2. 已支持 YouTube Data API。配置 YOUTUBE_API_KEY 后，会按重点国家抓取 YouTube 热门视频，
  *    并映射成看板里的热点信号。
  * 3. 已支持 Google Trends RSS。无需密钥，按重点国家抓取搜索趋势和相关新闻源。
- * 4. 已预留 X / Instagram / Facebook / TikTok 官方接口连接器；配置对应 Secret 后自动启用。
+ * 4. 已支持 Google News RSS 和 GDELT 新闻源，补充本地媒体与全球新闻热度。
+ * 5. 已预留 X / Instagram / Facebook / TikTok 官方接口连接器；配置对应 Secret 后自动启用。
  */
 
 const fs = require("fs");
@@ -16,6 +17,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const dataPath = path.join(root, "data", "dashboard.json");
+const manualDataPath = path.join(root, "data", "manual-hotspots.json");
 const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaAccessToken = (process.env.META_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
@@ -40,6 +42,7 @@ const youtubeMarkets = [
 
 const googleTrendsMarkets = youtubeMarkets;
 const localMediaMarkets = youtubeMarkets;
+const gdeltMarkets = youtubeMarkets;
 
 const marketTopics = {
   IN: ["cricket", "bollywood", "festival", "music", "fashion"],
@@ -77,6 +80,17 @@ function readDashboard() {
 
 function writeDashboard(data) {
   fs.writeFileSync(dataPath, `${JSON.stringify(data, null, 2)}\n`);
+}
+
+function readManualHotspots() {
+  if (!fs.existsSync(manualDataPath)) return [];
+  try {
+    const rows = JSON.parse(fs.readFileSync(manualDataPath, "utf8"));
+    return Array.isArray(rows) ? rows : [];
+  } catch (error) {
+    console.warn(`人工热点读取失败：${error.message}`);
+    return [];
+  }
 }
 
 function clamp(value, min, max) {
@@ -201,6 +215,16 @@ function promptFromSocial(platform, title, market) {
 function promptFromLocalMedia(title, market, sourceName) {
   const visual = visualSignalFromTitle(title);
   return `基于 ${market.country} 本地媒体「${sourceName || "本地新闻源"}」热点《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。`;
+}
+
+function promptFromGdelt(title, market, sourceName) {
+  const visual = visualSignalFromTitle(title);
+  return `基于 GDELT 全球新闻源中 ${market.country || "重点市场"} 热点《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。`;
+}
+
+function promptFromManual(title, sourceName) {
+  const visual = visualSignalFromTitle(title);
+  return `基于运营人工录入热点《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，强调可转模板的主题符号、色彩和情绪，画面高级、干净、可商业化，避免直接复刻原图或版权元素。`;
 }
 
 async function fetchYoutubeMostPopularForMarket(market) {
@@ -347,9 +371,9 @@ async function fetchGoogleTrendsSignals() {
     .slice(0, 16);
 }
 
-function parseGoogleNewsRss(xml, market, topic) {
+function parseGoogleNewsRss(xml, market, topic, category = "综合") {
   const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map(match => match[1]);
-  return items.slice(0, 5).map((item, rank) => {
+  return items.slice(0, 4).map((item, rank) => {
     const rawTitle = tagValue(item, "title") || topic;
     const sourceName = tagValue(item, "source") || "Google News";
     const title = rawTitle.replace(/\s-\s[^-]+$/, "").trim();
@@ -357,7 +381,7 @@ function parseGoogleNewsRss(xml, market, topic) {
     const score = sourceScore(58, rank, 5000);
     const trend = sourceTrend(22, rank, 5000);
     return {
-      id: `local-${market.code}-${encodeURIComponent(title).slice(0, 42)}`,
+      id: `local-${market.code}-${category}-${encodeURIComponent(title).slice(0, 42)}`,
       name: textSnippet(title),
       originalTitle: title,
       region: market.region,
@@ -373,9 +397,10 @@ function parseGoogleNewsRss(xml, market, topic) {
       previewTitle: "",
       previewMeta: "",
       prompt: promptFromLocalMedia(title, market, sourceName),
-      reason: `来自 ${market.country} 本地媒体/Google News 公开新闻源，媒体：${sourceName}。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。`,
+      reason: `来自 ${market.country} 本地媒体/Google News 公开新闻源，分类：${category}，媒体：${sourceName}。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。`,
       local: {
         topic,
+        category,
         sourceName,
         title,
         publishedAt: tagValue(item, "pubDate"),
@@ -386,22 +411,26 @@ function parseGoogleNewsRss(xml, market, topic) {
 }
 
 async function fetchLocalMediaForMarket(market) {
-  const topic = (marketTopics[market.code] || ["music", "football", "fashion"])[0];
+  const topics = (marketTopics[market.code] || ["music", "football", "fashion"]).slice(0, 3);
   const locale = googleNewsLocales[market.code] || { hl: "en-US", ceid: `${market.code}:en` };
-  const url = new URL("https://news.google.com/rss/search");
-  url.searchParams.set("q", `${topic} when:2d`);
-  url.searchParams.set("hl", locale.hl);
-  url.searchParams.set("gl", market.code);
-  url.searchParams.set("ceid", locale.ceid);
+  const rows = [];
+  for (const [index, topic] of topics.entries()) {
+    const url = new URL("https://news.google.com/rss/search");
+    url.searchParams.set("q", `${topic} when:2d`);
+    url.searchParams.set("hl", locale.hl);
+    url.searchParams.set("gl", market.code);
+    url.searchParams.set("ceid", locale.ceid);
 
-  const response = await fetch(url, {
-    headers: { "user-agent": "Mozilla/5.0 HotspotOperationsDashboard/1.0" }
-  });
-  if (!response.ok) {
-    const body = await response.text();
-    throw new Error(`本地媒体 ${market.code} 请求失败：${response.status} ${body.slice(0, 180)}`);
+    const response = await fetch(url, {
+      headers: { "user-agent": "Mozilla/5.0 HotspotOperationsDashboard/1.0" }
+    });
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error(`本地媒体 ${market.code} ${topic} 请求失败：${response.status} ${body.slice(0, 180)}`);
+    }
+    rows.push(...parseGoogleNewsRss(await response.text(), market, topic, index === 0 ? "核心话题" : "垂类补充"));
   }
-  return parseGoogleNewsRss(await response.text(), market, topic);
+  return rows;
 }
 
 async function fetchLocalMediaSignals() {
@@ -416,7 +445,112 @@ async function fetchLocalMediaSignals() {
   }
   return batches
     .sort((a, b) => b.score - a.score || b.trend - a.trend)
-    .slice(0, 10);
+    .slice(0, 14);
+}
+
+function gdeltMarketFromArticle(article = {}) {
+  const countryCode = String(article.sourceCountry || "").toUpperCase();
+  return gdeltMarkets.find(market => market.code === countryCode)
+    || gdeltMarkets.find(market => article.url?.toLowerCase().includes(`.${market.code.toLowerCase()}/`))
+    || { code: "GLOBAL", country: "全球", region: "全球" };
+}
+
+async function fetchGdeltSignals() {
+  const query = "(football OR soccer OR cricket OR music OR film OR fashion OR festival OR concert OR celebrity OR art)";
+  const url = new URL("https://api.gdeltproject.org/api/v2/doc/doc");
+  url.searchParams.set("query", query);
+  url.searchParams.set("mode", "ArtList");
+  url.searchParams.set("format", "json");
+  url.searchParams.set("maxrecords", "18");
+  url.searchParams.set("sort", "HybridRel");
+  url.searchParams.set("timespan", "24h");
+
+  try {
+    const response = await fetch(url, {
+      headers: { "user-agent": "Mozilla/5.0 HotspotOperationsDashboard/1.0" }
+    });
+    const body = await response.text();
+    if (!response.ok) throw new Error(`GDELT 请求失败：${response.status} ${body.slice(0, 180)}`);
+    if (!body.trim().startsWith("{")) throw new Error(`GDELT 暂时限流或返回非 JSON：${body.slice(0, 120)}`);
+    const json = JSON.parse(body);
+    return (json.articles || []).slice(0, 12).map((article, rank) => {
+      const market = gdeltMarketFromArticle(article);
+      const title = article.title || "GDELT 全球新闻热点";
+      const volume = 7000 + rank * 1500 + Number(article.socialimage ? 4000 : 0);
+      const score = sourceScore(60, rank, volume);
+      const trend = sourceTrend(24, rank, volume);
+      return {
+        id: `gdelt-${encodeURIComponent(article.url || title).slice(0, 52)}`,
+        name: textSnippet(title),
+        originalTitle: title,
+        region: market.region,
+        country: market.country,
+        source: ["GDELT"],
+        heat: formatHeat(volume),
+        trend,
+        score,
+        status: statusFromTrend(trend, score),
+        type: "realtime",
+        selected: score >= 85,
+        preview: "",
+        previewTitle: "",
+        previewMeta: "",
+        prompt: promptFromGdelt(title, market, article.domain || article.sourceCollection),
+        reason: `来自 GDELT 全球新闻数据库，媒体域名：${article.domain || "未知"}。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。`,
+        gdelt: {
+          domain: article.domain || "",
+          language: article.language || "",
+          publishedAt: article.seendate || "",
+          picture: article.socialimage || "",
+          url: article.url || ""
+        }
+      };
+    });
+  } catch (error) {
+    console.warn(error.message);
+    return [];
+  }
+}
+
+function normalizeManualHotspot(row, index) {
+  if (row?.enabled === false) return null;
+  if (!row || !row.name) return null;
+  const source = row.source || "人工录入";
+  const score = clamp(Number(row.score || 86), 62, 98);
+  const trend = clamp(Number(row.trend || 35), 8, 88);
+  return {
+    id: `manual-${index}-${encodeURIComponent(row.name).slice(0, 36)}`,
+    name: textSnippet(row.name),
+    originalTitle: row.name,
+    region: row.region || "全球",
+    country: row.country || row.region || "全球",
+    source: ["人工录入"],
+    heat: row.heat || "人工判断",
+    trend,
+    score,
+    status: row.status || statusFromTrend(trend, score),
+    type: row.type || "realtime",
+    selected: row.selected ?? true,
+    preview: row.preview || "",
+    previewTitle: row.previewTitle || "",
+    previewMeta: row.previewMeta || "",
+    prompt: row.prompt || promptFromManual(row.name, source),
+    reason: row.reason || `来自运营人工录入，原始来源：${source}。适合补齐机器抓取暂未覆盖的平台热点，由设计师进一步判断是否转模板。`,
+    manual: {
+      sourceName: source,
+      owner: row.owner || "",
+      note: row.note || "",
+      publishedAt: row.publishedAt || "",
+      url: row.url || ""
+    }
+  };
+}
+
+async function fetchManualSignals() {
+  return readManualHotspots()
+    .map(normalizeManualHotspot)
+    .filter(Boolean)
+    .slice(0, 12);
 }
 
 async function fetchXSignals() {
@@ -661,7 +795,9 @@ function composeSignals(groups) {
   const mixed = [
     ...takeBySource(groups.youtube, "YouTube", 10),
     ...takeBySource(groups.googleTrends, "Google Trends", 8),
-    ...takeBySource(groups.localMedia, "本地平台", 6),
+    ...takeBySource(groups.localMedia, "本地平台", 8),
+    ...takeBySource(groups.gdelt, "GDELT", 6),
+    ...takeBySource(groups.manual, "人工录入", 6),
     ...takeBySource(groups.x, "X", 4),
     ...takeBySource(groups.instagram, "Instagram", 4),
     ...takeBySource(groups.facebook, "Facebook", 4),
@@ -689,6 +825,8 @@ async function fetchExternalSignals() {
   const youtubeSignals = await fetchYoutubeSignals();
   const googleTrendsSignals = await fetchGoogleTrendsSignals();
   const localMediaSignals = await fetchLocalMediaSignals();
+  const gdeltSignals = await fetchGdeltSignals();
+  const manualSignals = await fetchManualSignals();
   const xSignals = await fetchXSignals();
   const instagramSignals = await fetchInstagramSignals();
   const facebookSignals = await fetchFacebookSignals();
@@ -697,6 +835,8 @@ async function fetchExternalSignals() {
     youtube: youtubeSignals,
     googleTrends: googleTrendsSignals,
     localMedia: localMediaSignals,
+    gdelt: gdeltSignals,
+    manual: manualSignals,
     x: xSignals,
     instagram: instagramSignals,
     facebook: facebookSignals,
@@ -724,6 +864,19 @@ async function update() {
       .map((item, index) => ({ ...item, id: typeof item.id === "number" ? item.id : 1000 + index }));
     data.hotspots = merged;
   }
+
+  data.sources = [
+    "全部平台",
+    "YouTube",
+    "Google Trends",
+    "本地平台",
+    "GDELT",
+    "人工录入",
+    "TikTok",
+    "Instagram",
+    "X",
+    "Facebook"
+  ];
 
   data.hotspots = data.hotspots.map((item, index) => {
     const delta = deterministicDelta(item.id || index + 1, hour);

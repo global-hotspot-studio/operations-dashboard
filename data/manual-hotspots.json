@@ -1,0 +1,16 @@
+[
+  {
+    "enabled": false,
+    "name": "示例：运营可在这里补充 TikTok / Instagram / X 观察到的热点",
+    "region": "全球",
+    "country": "全球",
+    "source": "人工录入",
+    "url": "",
+    "heat": "人工判断",
+    "trend": 35,
+    "score": 82,
+    "selected": false,
+    "owner": "运营/设计团队",
+    "note": "这是格式示例；上线使用时可删除或替换为真实人工热点。"
+  }
+]

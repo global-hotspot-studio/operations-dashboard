@@ -15,7 +15,8 @@
 当前版本已经从“静态展示页”升级为“定时更新工具底座”：
 
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
-- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、本地媒体 RSS，并预留 X / Instagram / Facebook / TikTok 官方接口连接器。
+- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT 新闻源，并预留 X / Instagram / Facebook / TikTok 官方接口连接器。
+- `data/manual-hotspots.json`：人工热点入口，运营/设计师可手动补充 TikTok、Instagram、X 等暂未授权平台上观察到的热点。
 - `.github/workflows/update-hotspots.yml`：GitHub Actions 自动任务，每 6 小时更新一次数据，也支持手动触发。
 
 ### YouTube 真实热点接入
@@ -51,13 +52,41 @@ Google Trends 使用公开 RSS 趋势源，不需要额外配置 Secret。GitHub
 
 ### 本地平台 / 本地媒体真实热点接入
 
-本地平台目前先用 Google News RSS 作为合规公开来源，不需要额外 Secret。它会按印度、印尼、南美、SSA、俄罗斯等重点国家抓取本地媒体热点，用于补充本地语境：
+本地平台目前先用 Google News RSS 作为合规公开来源，不需要额外 Secret。它会按印度、印尼、南美、SSA、俄罗斯等重点国家抓取本地媒体热点，并按体育、音乐、影视、时尚、节日等垂类扩展，用于补充本地语境：
 
 - 来源：本地平台
 - 热点名称：本地媒体新闻标题
 - 地区/国家：按新闻 RSS 的 `gl/ceid` 映射
 - 原始链接：点击热点标题或来源标签可进入新闻源页面
 - 价值：帮助运营判断本地文化、体育、音乐、影视、时尚等热点是否值得转模板
+
+### GDELT 全球新闻源
+
+GDELT 用于补充跨语言、跨国家的新闻热度信号，不需要额外 Secret。脚本会抓取近 24 小时内与体育、音乐、影视、时尚、节日、艺术等相关的全球新闻。
+
+注意：GDELT 对请求频率有保护。如果临时限流，脚本会自动跳过 GDELT，不影响 YouTube、Google Trends、本地媒体等其他真实来源继续更新。
+
+### 人工热点入口
+
+如果 TikTok / Instagram / X 暂时拿不到官方 token，可以先用 `data/manual-hotspots.json` 人工补充：
+
+```json
+{
+  "enabled": true,
+  "name": "热点名称",
+  "region": "南美洲",
+  "country": "巴西",
+  "source": "TikTok 人工观察",
+  "url": "https://...",
+  "heat": "人工判断",
+  "trend": 45,
+  "score": 88,
+  "selected": true,
+  "note": "为什么值得转模板"
+}
+```
+
+这条数据会以「人工录入」来源进入看板，并保留原始链接。后续也可以把飞书表格同步到这个 JSON。
 
 ### 其他社媒平台真实接入
 
@@ -84,4 +113,4 @@ TIKTOK_ACCESS_TOKEN
 
 - 飞书表格 / 内部 CMS：用于运营手动入选、备注、复盘和样图资产管理。
 
-> 当前 YouTube、Google Trends、本地平台/本地媒体已接入真实来源；TikTok / Instagram / X / Facebook 已完成接口框架，等待官方权限和 token。
+> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、人工热点入口已接入或可用；TikTok / Instagram / X / Facebook 已完成接口框架，等待官方权限和 token。
