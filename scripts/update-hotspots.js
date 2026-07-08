@@ -123,6 +123,15 @@ function decodeXml(value = "") {
     .trim();
 }
 
+function escapeSvgText(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 function tagValue(xml, tag) {
   const escaped = tag.replace(":", "\\:");
   const match = xml.match(new RegExp(`<${escaped}[^>]*>([\\s\\S]*?)<\\/${escaped}>`, "i"));
@@ -486,8 +495,11 @@ function previewMotif(direction, mid, accent, pattern) {
 
 function svgPreview({ title, direction, hotspot, index }) {
   const [bg, mid, accent] = direction.colors;
-  const safeTitle = cleanTitle(title).slice(0, 28);
-  const safeRegion = `${hotspot.region || "全球"} · ${hotspot.source?.join(" + ") || "热点"}`.slice(0, 34);
+  const safeTitle = escapeSvgText(cleanTitle(title).slice(0, 28));
+  const safeRegion = escapeSvgText(`${hotspot.region || "全球"} · ${hotspot.source?.join(" + ") || "热点"}`.slice(0, 34));
+  const safeCategory = escapeSvgText(direction.category);
+  const safeName = escapeSvgText(direction.name);
+  const safeStyle = escapeSvgText(direction.style.slice(0, 34));
   const pattern = index % 3;
   const shape = previewMotif(direction, mid, accent, pattern);
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="854" viewBox="0 0 480 854">
@@ -500,11 +512,11 @@ function svgPreview({ title, direction, hotspot, index }) {
     <circle cx="430" cy="770" r="180" fill="#fff" opacity=".12" filter="url(#blur)"/>
     ${shape}
     <rect x="34" y="34" width="412" height="786" rx="34" fill="none" stroke="#fff" stroke-opacity=".34"/>
-    <text x="58" y="86" fill="#fff" opacity=".68" font-family="Arial, sans-serif" font-size="13" font-weight="800">${direction.category}</text>
-    <text x="58" y="118" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="800">${direction.name}</text>
+    <text x="58" y="86" fill="#fff" opacity=".68" font-family="Arial, sans-serif" font-size="13" font-weight="800">${safeCategory}</text>
+    <text x="58" y="118" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="800">${safeName}</text>
     <text x="58" y="152" fill="#fff" opacity=".62" font-family="Arial, sans-serif" font-size="14">${safeRegion}</text>
     <text x="58" y="704" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="800">${safeTitle}</text>
-    <text x="58" y="744" fill="#fff" opacity=".78" font-family="Arial, sans-serif" font-size="15">${direction.style.slice(0, 34)}</text>
+    <text x="58" y="744" fill="#fff" opacity=".78" font-family="Arial, sans-serif" font-size="15">${safeStyle}</text>
   </svg>`;
   return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
 }
