@@ -75,6 +75,10 @@ function escapeAttr(value = "") {
     .replaceAll(">", "&gt;");
 }
 
+function escapeHtml(value = "") {
+  return escapeAttr(value).replaceAll("'", "&#39;");
+}
+
 function getPlatformUrl(h, source) {
   if (source === "YouTube" && h.youtube?.url) return h.youtube.url;
   if (source === "Instagram" && h.instagram?.url) return h.instagram.url;
@@ -244,20 +248,20 @@ function renderGallery() {
   const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
   $("#galleryCount").textContent = `${list.length} 个玩法模板`;
   $("#visualGallery").innerHTML = list.map(h => `<article class="visual-card">
-  <button class="visual-preview" data-preview="${h.preview}" data-caption="${h.previewTitle}" aria-label="预览${h.previewTitle}"><img src="${h.preview}" alt="${h.previewTitle}"></button>
-  <div class="visual-info"><b>${h.previewTitle}</b><small>${h.previewMeta}</small>
-   <div class="prompt-block"><span>AI 生成提示词</span><p>${h.prompt}</p></div>
-   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${h.id}">复制提示词</button><a href="${h.preview}" download="${previewDownloadName(h)}">下载样图</a></div>
+  <button class="visual-preview" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}"><img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}"></button>
+  <div class="visual-info"><b>${escapeHtml(h.previewTitle)}</b><small>${escapeHtml(h.previewMeta)}</small>
+   <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
+   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button><a href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">下载样图</a></div>
   </div>
  </article>`).join("");
 }
 
 function renderFusionGallery() {
   $("#fusionGallery").innerHTML = fusionStyles.map(h => `<article class="visual-card">
-  <button class="visual-preview" data-preview="${h.preview}" data-caption="${h.previewTitle}" aria-label="预览${h.previewTitle}"><img src="${h.preview}" alt="${h.previewTitle}"></button>
-  <div class="visual-info"><b>${h.previewTitle}</b><small>${h.previewMeta}</small>
-   <div class="prompt-block"><span>多图融合提示词</span><p>${h.prompt}</p></div>
-   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${h.id}">复制提示词</button><a href="${h.preview}" download="${h.preview.split("/").pop()}">下载原图</a></div>
+  <button class="visual-preview" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}"><img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}"></button>
+  <div class="visual-info"><b>${escapeHtml(h.previewTitle)}</b><small>${escapeHtml(h.previewMeta)}</small>
+   <div class="prompt-block"><span>多图融合提示词</span><p>${escapeHtml(h.prompt)}</p></div>
+   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button><a href="${escapeAttr(h.preview)}" download="${escapeAttr(h.preview.split("/").pop())}">下载原图</a></div>
   </div>
  </article>`).join("");
 }
@@ -369,7 +373,7 @@ async function bootstrap() {
     renderAll();
   } catch (error) {
     $("#lastUpdated").textContent = "数据读取失败";
-    $("#liveStatus").textContent = "没有读到 data/dashboard.json，请检查部署文件是否完整。";
+    $("#liveStatus").textContent = `页面初始化失败：${error.message || error}`;
     showToast("数据读取失败");
     console.error(error);
   }
