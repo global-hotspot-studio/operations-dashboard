@@ -99,3 +99,8 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .drawer-source-card.disabled{grid-template-columns:1fr;background:#f7f7f8;color:#8b97a8;border-style:dashed}
 .drawer-source-card.disabled small{color:#8b97a8}
 .drawer-source-card.disabled b{color:#596273}
+.signal-list{display:grid;gap:8px;margin:10px 0 18px}
+.signal-list a,.signal-list div{display:grid;grid-template-columns:86px 1fr auto;align-items:center;gap:9px;padding:10px 11px;border:1px solid #edf0f4;border-radius:12px;background:#fbfbfd;text-decoration:none;color:#1d1d1f}
+.signal-list span{font-size:10px;font-weight:800;color:#0071e3}
+.signal-list b{font-size:11px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.signal-list i{font-style:normal;color:#0071e3;font-weight:900}

@@ -157,6 +157,16 @@ function sourceTags(h) {
   }).join("");
 }
 
+function signalList(h) {
+  if (!Array.isArray(h.signals) || !h.signals.length) return "";
+  return `<h3>多源信号</h3><div class="signal-list">${h.signals.slice(0, 4).map(signal => {
+    const body = `<span>${signal.source}</span><b>${signal.title}</b>`;
+    return signal.url
+      ? `<a href="${escapeAttr(signal.url)}" target="_blank" rel="noopener noreferrer">${body}<i>↗</i></a>`
+      : `<div>${body}</div>`;
+  }).join("")}</div>`;
+}
+
 function hotspotTitle(h) {
   const primary = getPrimarySource(h);
   if (!primary.url) return h.name;
@@ -264,7 +274,7 @@ function openDrawer(id) {
     : `<div class="drawer-source-card disabled">
         <div><small>真实来源</small><b>${primary.source} 待接入真实链接</b><span>该平台还未完成 API/来源链接接入，暂不伪造跳转。</span></div>
       </div>`;
-  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>综合评分</small><b>${h.score}</b></div><div><small>24h 增速</small><b class="up">+${h.trend}%</b></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p><h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
+  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>综合评分</small><b>${h.score}</b></div><div><small>24h 增速</small><b class="up">+${h.trend}%</b></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p>${signalList(h)}<h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
   $("#detailDrawer").classList.add("open"); $("#drawerBackdrop").classList.add("open");
 }
 

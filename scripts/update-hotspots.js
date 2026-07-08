@@ -147,6 +147,120 @@ function textSnippet(value = "", length = 22) {
   return value.length > length ? `${value.slice(0, length)}…` : value;
 }
 
+function cleanTitle(value = "") {
+  return String(value)
+    .replace(/\s+/g, " ")
+    .replace(/\s[-–—|]\s(?:YouTube|Google News|BBC|CNN|Reuters|AP News|The Guardian|Al Jazeera|NDTV|Times of India|detikNews|Globo|UOL|ESPN|Sky Sports).*$/i, "")
+    .replace(/\[[^\]]{1,40}\]/g, "")
+    .replace(/\([^)]{1,40}\)/g, "")
+    .replace(/#[\p{L}\p{N}_-]+/gu, "")
+    .replace(/https?:\/\/\S+/g, "")
+    .trim();
+}
+
+function normalizeTopic(value = "") {
+  return cleanTitle(value)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/['"“”‘’`]/g, "")
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .replace(/\b(official|video|trailer|full|live|news|latest|breaking|update|updates|today|watch|hd|mv|teaser|clip)\b/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokenSet(value = "") {
+  const stopwords = new Set(["the", "and", "for", "with", "from", "this", "that", "what", "when", "where", "como", "para", "que", "com", "uma", "por", "los", "las", "del", "das", "dos"]);
+  return new Set(normalizeTopic(value).split(" ").filter(token => token.length > 2 && !stopwords.has(token)));
+}
+
+function jaccardSimilarity(a, b) {
+  const left = tokenSet(a);
+  const right = tokenSet(b);
+  if (!left.size || !right.size) return 0;
+  const intersection = [...left].filter(token => right.has(token)).length;
+  const union = new Set([...left, ...right]).size;
+  return intersection / union;
+}
+
+function canonicalKey(item) {
+  const title = normalizeTopic(item.originalTitle || item.name);
+  const tokens = title.split(" ").filter(Boolean).slice(0, 8);
+  return `${item.region || "全球"}:${tokens.join(" ")}`;
+}
+
+function mergeSources(left = [], right = []) {
+  return [...new Set([...left, ...right])];
+}
+
+function mergeLinks(target, incoming) {
+  for (const key of ["youtube", "trends", "local", "gdelt", "manual", "x", "instagram", "facebook", "tiktok"]) {
+    if (!target[key] && incoming[key]) target[key] = incoming[key];
+  }
+}
+
+function cleanSignal(item) {
+  const originalTitle = cleanTitle(item.originalTitle || item.name);
+  const name = cleanTitle(item.name || originalTitle);
+  const source = Array.isArray(item.source) ? item.source : [item.source || "未知来源"];
+  const url = item.youtube?.url || item.trends?.url || item.local?.url || item.gdelt?.url || item.manual?.url || item.x?.url || item.instagram?.url || item.facebook?.url || item.tiktok?.url || "";
+  return {
+    ...item,
+    name: textSnippet(name || originalTitle || "未命名热点"),
+    originalTitle: originalTitle || name || item.originalTitle || item.name,
+    region: item.region || "全球",
+    country: item.country || item.region || "全球",
+    source,
+    heatValue: parseHeat(item.heat),
+    canonicalKey: canonicalKey({ ...item, originalTitle, name }),
+    signals: item.signals || [{ source: source.join(" + "), title: originalTitle || name || item.name, url }]
+  };
+}
+
+function mergeSignals(target, incoming) {
+  const sources = mergeSources(target.source, incoming.source);
+  const heatValue = Math.max(Number(target.heatValue || 0), Number(incoming.heatValue || 0));
+  const score = clamp(Math.round(Math.max(target.score || 0, incoming.score || 0) + Math.min(6, (sources.length - 1) * 2)), 62, 99);
+  const trend = clamp(Math.round(Math.max(target.trend || 0, incoming.trend || 0) + Math.min(8, (sources.length - 1) * 3)), 8, 92);
+  const reasonParts = [target.reason, incoming.reason].filter(Boolean);
+  target.source = sources;
+  target.heatValue = heatValue;
+  target.heat = formatHeat(heatValue);
+  target.score = score;
+  target.trend = trend;
+  target.status = statusFromTrend(trend, score);
+  target.selected = Boolean(target.selected || incoming.selected || score >= 88);
+  target.reason = [...new Set(reasonParts)].slice(0, 2).join("；");
+  target.signals = [
+    ...(target.signals || [{ source: target.source[0], title: target.originalTitle, url: target.youtube?.url || target.trends?.url || target.local?.url || target.gdelt?.url || target.manual?.url || target.x?.url || target.instagram?.url || target.facebook?.url || target.tiktok?.url || "" }]),
+    { source: incoming.source.join(" + "), title: incoming.originalTitle, url: incoming.youtube?.url || incoming.trends?.url || incoming.local?.url || incoming.gdelt?.url || incoming.manual?.url || incoming.x?.url || incoming.instagram?.url || incoming.facebook?.url || incoming.tiktok?.url || "" }
+  ].filter((signal, index, array) => array.findIndex(item => item.source === signal.source && item.title === signal.title) === index);
+  mergeLinks(target, incoming);
+  return target;
+}
+
+function cleanAndDeduplicateSignals(items) {
+  const cleaned = items
+    .map(cleanSignal)
+    .filter(item => normalizeTopic(item.originalTitle).length >= 2);
+  const clusters = [];
+
+  for (const item of cleaned) {
+    const existing = clusters.find(cluster =>
+      cluster.canonicalKey === item.canonicalKey ||
+      (cluster.region === item.region && jaccardSimilarity(cluster.originalTitle, item.originalTitle) >= 0.58) ||
+      jaccardSimilarity(cluster.originalTitle, item.originalTitle) >= 0.72
+    );
+    if (existing) mergeSignals(existing, item);
+    else clusters.push({ ...item });
+  }
+
+  return clusters
+    .map(({ canonicalKey: _canonicalKey, heatValue: _heatValue, ...item }) => item)
+    .sort((a, b) => b.score - a.score || b.trend - a.trend);
+}
+
 function sourceScore(base, rank, volume = 1000) {
   return clamp(Math.round(base + Math.log10(Math.max(volume, 1000)) * 4 + Math.max(0, 10 - rank)), 62, 96);
 }
@@ -803,10 +917,7 @@ function composeSignals(groups) {
     ...takeBySource(groups.facebook, "Facebook", 4),
     ...takeBySource(groups.tiktok, "TikTok", 4)
   ];
-  return mixed
-    .filter((item, index, array) => array.findIndex(candidate => candidate.id === item.id || candidate.name === item.name) === index)
-    .sort((a, b) => b.score - a.score || b.trend - a.trend)
-    .slice(0, 30);
+  return cleanAndDeduplicateSignals(mixed).slice(0, 30);
 }
 
 async function fetchExternalSignals() {
@@ -857,9 +968,7 @@ async function update() {
     : "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。";
 
   if (externalSignals.length) {
-    const merged = [...externalSignals]
-      .filter((item, index, array) => array.findIndex(candidate => candidate.id === item.id || candidate.name === item.name) === index)
-      .sort((a, b) => b.score - a.score || b.trend - a.trend)
+    const merged = cleanAndDeduplicateSignals(externalSignals)
       .slice(0, 24)
       .map((item, index) => ({ ...item, id: typeof item.id === "number" ? item.id : 1000 + index }));
     data.hotspots = merged;
