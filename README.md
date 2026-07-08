@@ -17,6 +17,15 @@
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
 - `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT 新闻源，并预留 X / Instagram / Facebook / TikTok 官方接口连接器。
 - `data/manual-hotspots.json`：人工热点入口，运营/设计师可手动补充 TikTok、Instagram、X 等暂未授权平台上观察到的热点。
+
+### 每日样图方向生成
+
+更新脚本会每天随热点数据自动生成 `templateOutputs`：
+
+- 从实时热点池中选择模板潜力最高的 Top 3
+- 每个热点生成 6 个方向：情绪主视觉、抽象色彩主题、节日纹样套装、赛事应援风、电影海报感、时尚杂志风
+- 每个方向包含程序化视觉预览图、可复制 AI 出图提示词、来源热点和模板转化说明
+- 当前为“方向样图卡”，用于运营/设计快速判断视觉方向；后续如接入图片生成 API，可把 SVG 方向卡替换为真实 AI 出图资产
 - `.github/workflows/update-hotspots.yml`：GitHub Actions 自动任务，每 6 小时更新一次数据，也支持手动触发。
 
 ### YouTube 真实热点接入

@@ -3,6 +3,7 @@ let sources = [];
 let hotspots = [];
 let regionStats = {};
 let fusionStyles = [];
+let templateOutputs = [];
 let trendSeries = { labels: [], effective: [], template: [] };
 let summary = {};
 let strategyCards = [];
@@ -23,6 +24,7 @@ async function loadDashboardData(force = false) {
   regions = data.regions || ["全球"];
   sources = data.sources || ["全部平台"];
   hotspots = data.hotspots || [];
+  templateOutputs = data.templateOutputs || [];
   regionStats = data.regionStats || {};
   fusionStyles = data.fusionStyles || [];
   trendSeries = data.trendSeries || trendSeries;
@@ -173,6 +175,11 @@ function hotspotTitle(h) {
   return `<a class="hotspot-title-link" href="${escapeAttr(primary.url)}" target="_blank" rel="noopener noreferrer" title="打开 ${primary.source} 原始内容">${h.name}</a>`;
 }
 
+function previewDownloadName(item) {
+  if (item.preview?.startsWith("data:image/svg+xml")) return `${item.id || "template-preview"}.svg`;
+  return item.preview?.split("/").pop() || `${item.id || "template-preview"}.png`;
+}
+
 function renderMetrics() {
   const list = filtered();
   const selected = list.filter(x => x.selected).length;
@@ -234,13 +241,13 @@ function renderRegions() {
 }
 
 function renderGallery() {
-  const list = hotspots.filter(h => h.selected && h.preview);
-  $("#galleryCount").textContent = `${list.length} 个已入选样图`;
+  const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
+  $("#galleryCount").textContent = `${list.length} 个每日方向`;
   $("#visualGallery").innerHTML = list.map(h => `<article class="visual-card">
   <button class="visual-preview" data-preview="${h.preview}" data-caption="${h.previewTitle}" aria-label="预览${h.previewTitle}"><img src="${h.preview}" alt="${h.previewTitle}"></button>
   <div class="visual-info"><b>${h.previewTitle}</b><small>${h.previewMeta}</small>
    <div class="prompt-block"><span>AI 生成提示词</span><p>${h.prompt}</p></div>
-   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${h.id}">复制提示词</button><a href="${h.preview}" download="${h.preview.split("/").pop()}">下载原图</a></div>
+   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${h.id}">复制提示词</button><a href="${h.preview}" download="${previewDownloadName(h)}">下载样图</a></div>
   </div>
  </article>`).join("");
 }
@@ -321,7 +328,7 @@ function bind() {
     if (row && !e.target.dataset.action) openDrawer(row.dataset.id);
     if (preview) { $("#previewImage").src = preview.dataset.preview; $("#previewCaption").textContent = preview.dataset.caption; $("#previewModal").showModal(); }
     if (copy) {
-      const h = [...hotspots, ...fusionStyles].find(x => x.id === Number(copy.dataset.copyId));
+      const h = [...hotspots, ...templateOutputs, ...fusionStyles].find(x => String(x.id) === String(copy.dataset.copyId));
       try { await navigator.clipboard.writeText(h.prompt); } catch {
         const area = document.createElement("textarea"); area.value = h.prompt; document.body.appendChild(area); area.select(); document.execCommand("copy"); area.remove();
       }

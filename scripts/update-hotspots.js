@@ -341,6 +341,116 @@ function promptFromManual(title, sourceName) {
   return `基于运营人工录入热点《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，强调可转模板的主题符号、色彩和情绪，画面高级、干净、可商业化，避免直接复刻原图或版权元素。`;
 }
 
+const templateDirections = [
+  {
+    id: "hero",
+    name: "情绪主视觉",
+    style: "人物/主体居中，情绪强，适合锁屏第一眼吸引",
+    colors: ["#0f172a", "#2563eb", "#7dd3fc"],
+    prompt: "以一个抽象人物或主体剪影作为画面中心，强化情绪张力和地区色彩，留出顶部时钟区域"
+  },
+  {
+    id: "abstract",
+    name: "抽象色彩主题",
+    style: "无人物、低版权风险，适合规模化主题模板",
+    colors: ["#f8fafc", "#60a5fa", "#c084fc"],
+    prompt: "把热点转译为抽象渐变、流体线条、光影粒子和色彩氛围，不出现文字与品牌"
+  },
+  {
+    id: "festival",
+    name: "节日纹样套装",
+    style: "文化纹样、装饰感强，适合节日/地区运营",
+    colors: ["#fff7ed", "#fb923c", "#facc15"],
+    prompt: "提取当地节日、城市、音乐、服饰或民俗纹样，形成高级装饰画风格"
+  },
+  {
+    id: "sports",
+    name: "赛事应援风",
+    style: "速度感和团队色，适合体育/比赛热点",
+    colors: ["#020617", "#22c55e", "#38bdf8"],
+    prompt: "使用速度线、旗帜感色块、聚光灯和欢呼粒子表达赛事氛围，避免真实队徽"
+  },
+  {
+    id: "cinematic",
+    name: "电影海报感",
+    style: "故事感强，适合影视/音乐/娱乐热点",
+    colors: ["#111827", "#ef4444", "#fbbf24"],
+    prompt: "以电影海报构图、逆光、景深和大面积留白表达热点故事感，不使用真实明星肖像"
+  },
+  {
+    id: "editorial",
+    name: "时尚杂志风",
+    style: "高级、干净，适合妆造/时尚/城市生活",
+    colors: ["#f5f5f4", "#64748b", "#0f172a"],
+    prompt: "用高级杂志大片的构图、柔和布光、服饰色块和城市背景表达风格趋势"
+  }
+];
+
+function svgPreview({ title, direction, hotspot, index }) {
+  const [bg, mid, accent] = direction.colors;
+  const safeTitle = cleanTitle(title).slice(0, 28);
+  const safeRegion = `${hotspot.region || "全球"} · ${hotspot.source?.join(" + ") || "热点"}`.slice(0, 34);
+  const pattern = index % 3;
+  const shape = pattern === 0
+    ? `<circle cx="245" cy="360" r="150" fill="${accent}" opacity=".2"/><path d="M70 580 C180 420 320 620 470 430" stroke="${accent}" stroke-width="20" fill="none" opacity=".65"/><path d="M82 632 C205 510 320 690 458 560" stroke="${mid}" stroke-width="10" fill="none" opacity=".65"/>`
+    : pattern === 1
+      ? `<rect x="60" y="320" width="360" height="360" rx="180" fill="${mid}" opacity=".18"/><path d="M80 460 L430 300 L390 710 L100 620 Z" fill="${accent}" opacity=".22"/><circle cx="160" cy="630" r="48" fill="${mid}" opacity=".45"/>`
+      : `<path d="M0 420 C120 330 170 530 290 450 C390 380 410 220 480 260 L480 854 L0 854 Z" fill="${mid}" opacity=".28"/><path d="M42 190 C160 120 260 210 438 112" stroke="${accent}" stroke-width="16" fill="none" opacity=".55"/><circle cx="350" cy="590" r="88" fill="${accent}" opacity=".22"/>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="854" viewBox="0 0 480 854">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${bg}"/><stop offset=".58" stop-color="${mid}"/><stop offset="1" stop-color="${accent}"/></linearGradient>
+      <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    </defs>
+    <rect width="480" height="854" fill="url(#g)"/>
+    <circle cx="70" cy="110" r="150" fill="#fff" opacity=".14" filter="url(#blur)"/>
+    <circle cx="430" cy="770" r="180" fill="#fff" opacity=".12" filter="url(#blur)"/>
+    ${shape}
+    <rect x="34" y="34" width="412" height="786" rx="34" fill="none" stroke="#fff" stroke-opacity=".34"/>
+    <text x="58" y="90" fill="#fff" opacity=".72" font-family="Arial, sans-serif" font-size="18" font-weight="700">${direction.name}</text>
+    <text x="58" y="128" fill="#fff" opacity=".62" font-family="Arial, sans-serif" font-size="14">${safeRegion}</text>
+    <text x="58" y="704" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="800">${safeTitle}</text>
+    <text x="58" y="744" fill="#fff" opacity=".76" font-family="Arial, sans-serif" font-size="15">${direction.style.slice(0, 30)}</text>
+  </svg>`;
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
+function buildTemplateOutputs(hotspots) {
+  const positivePattern = /music|song|mv|dance|concert|festival|football|soccer|cricket|match|cup|final|movie|trailer|film|series|fashion|makeup|beauty|style|art|city|travel|carnaval|futebol|musica|moda|afrobeats|amapiano|bollywood|kpop|idol|celebrity|artist|show|game|sports/i;
+  const negativePattern = /weather|tiempo|lottery|loter[ií]a|tax|anses|cte|gasolina|petrol|gold price|stock|bank|government|minister|election|policy|crime|death|accident|war|court|visa|exam|result|salary|pension|fuel|diesel/i;
+  const templateFit = item => {
+    const text = `${item.originalTitle || item.name} ${item.prompt || ""}`;
+    const positive = positivePattern.test(text) ? 12 : 0;
+    const negative = negativePattern.test(text) ? -30 : 0;
+    const sourceBoost = item.source?.includes("YouTube") ? 10 : item.source?.includes("Google Trends") ? 4 : item.source?.includes("本地平台") ? 2 : 0;
+    const crossSourceBoost = Math.min(8, Math.max(0, (item.source?.length || 1) - 1) * 4);
+    return item.score + positive + negative + sourceBoost + crossSourceBoost;
+  };
+  const topHotspots = [...hotspots]
+    .filter(item => item.score >= 78)
+    .map(item => ({ ...item, templateFitScore: templateFit(item) }))
+    .filter(item => item.templateFitScore >= 72)
+    .sort((a, b) => b.templateFitScore - a.templateFitScore || b.score - a.score || b.trend - a.trend)
+    .slice(0, 3);
+
+  return topHotspots.flatMap((hotspot, hotspotIndex) =>
+    templateDirections.map((direction, directionIndex) => {
+      const title = hotspot.originalTitle || hotspot.name;
+      return {
+        id: `tpl-${hotspotIndex}-${direction.id}`,
+        hotspotId: hotspot.id,
+        hotspotName: hotspot.name,
+        previewTitle: `${hotspot.name}｜${direction.name}`,
+        previewMeta: `${hotspot.region} · 模板潜力 ${hotspot.score} · ${direction.style}`,
+        preview: svgPreview({ title, direction, hotspot, index: hotspotIndex + directionIndex }),
+        prompt: `${hotspot.prompt || ""}\n\n样图方向：${direction.name}。${direction.prompt}。画幅 9:16，手机锁屏主题，顶部留时钟区，避免文字、Logo、真实明星肖像和版权角色，视觉高级、干净、可商业化。`,
+        source: hotspot.source,
+        sourceUrl: hotspot.youtube?.url || hotspot.trends?.url || hotspot.local?.url || hotspot.gdelt?.url || hotspot.manual?.url || "",
+        generatedFrom: "daily_top3_template_potential"
+      };
+    })
+  );
+}
+
 async function fetchYoutubeMostPopularForMarket(market) {
   const url = new URL("https://www.googleapis.com/youtube/v3/videos");
   url.searchParams.set("part", "snippet,statistics");
@@ -1000,6 +1110,8 @@ async function update() {
       status: statusFromTrend(trend, score)
     };
   });
+
+  data.templateOutputs = buildTemplateOutputs(data.hotspots);
 
   const selectedCount = data.hotspots.filter(item => item.selected).length;
   const highPriorityCount = data.hotspots.filter(item => item.status === "爆发").length;

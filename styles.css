@@ -104,3 +104,5 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .signal-list span{font-size:10px;font-weight:800;color:#0071e3}
 .signal-list b{font-size:11px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .signal-list i{font-style:normal;color:#0071e3;font-weight:900}
+.visual-card small{min-height:34px;line-height:1.5}
+.visual-card .prompt-block{min-height:118px}
