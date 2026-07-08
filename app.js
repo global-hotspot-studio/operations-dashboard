@@ -78,7 +78,9 @@ function getPlatformUrl(h, source) {
   if (source === "Instagram" && h.instagram?.url) return h.instagram.url;
   if (source === "TikTok" && h.tiktok?.url) return h.tiktok.url;
   if (source === "Google Trends" && h.trends?.url) return h.trends.url;
+  if (source === "X" && h.x?.url) return h.x.url;
   if (source === "Facebook" && h.facebook?.url) return h.facebook.url;
+  if (source === "本地平台" && h.local?.url) return h.local.url;
   return "";
 }
 
@@ -98,6 +100,36 @@ function getSourceVisual(h, source) {
     return {
       image: h.trends?.picture || "",
       label: h.trends?.newsSource ? `${h.trends.newsSource} · 搜索趋势` : "Google Trends 搜索趋势"
+    };
+  }
+  if (source === "Instagram") {
+    return {
+      image: h.instagram?.mediaUrl || "",
+      label: h.instagram?.hashtag ? `#${h.instagram.hashtag} · Instagram` : "Instagram 视觉趋势"
+    };
+  }
+  if (source === "Facebook") {
+    return {
+      image: h.facebook?.picture || "",
+      label: h.facebook?.pageId ? `${h.facebook.pageId} · Facebook` : "Facebook 公开内容"
+    };
+  }
+  if (source === "TikTok") {
+    return {
+      image: h.tiktok?.thumbnail || "",
+      label: h.tiktok?.username ? `@${h.tiktok.username} · TikTok` : "TikTok 短视频趋势"
+    };
+  }
+  if (source === "X") {
+    return {
+      image: "",
+      label: h.x?.username ? `@${h.x.username} · X 实时讨论` : "X 实时讨论"
+    };
+  }
+  if (source === "本地平台") {
+    return {
+      image: h.local?.picture || "",
+      label: h.local?.sourceName ? `${h.local.sourceName} · 本地媒体` : "本地媒体 / 新闻源"
     };
   }
   return { image: "", label: "点击跳转到平台原页面" };

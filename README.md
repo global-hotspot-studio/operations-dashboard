@@ -15,7 +15,7 @@
 当前版本已经从“静态展示页”升级为“定时更新工具底座”：
 
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
-- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API 和 Google Trends RSS。
+- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、本地媒体 RSS，并预留 X / Instagram / Facebook / TikTok 官方接口连接器。
 - `.github/workflows/update-hotspots.yml`：GitHub Actions 自动任务，每 6 小时更新一次数据，也支持手动触发。
 
 ### YouTube 真实热点接入
@@ -49,9 +49,39 @@ Google Trends 使用公开 RSS 趋势源，不需要额外配置 Secret。GitHub
 - 原始链接：点击热点标题或来源标签可打开对应 Google Trends 查询页
 - 新闻线索：保留 RSS 关联新闻标题、媒体源和新闻链接，用于设计师判断视觉符号
 
+### 本地平台 / 本地媒体真实热点接入
+
+本地平台目前先用 Google News RSS 作为合规公开来源，不需要额外 Secret。它会按印度、印尼、南美、SSA、俄罗斯等重点国家抓取本地媒体热点，用于补充本地语境：
+
+- 来源：本地平台
+- 热点名称：本地媒体新闻标题
+- 地区/国家：按新闻 RSS 的 `gl/ceid` 映射
+- 原始链接：点击热点标题或来源标签可进入新闻源页面
+- 价值：帮助运营判断本地文化、体育、音乐、影视、时尚等热点是否值得转模板
+
+### 其他社媒平台真实接入
+
+X / Instagram / Facebook / TikTok 都需要官方开发者权限和 token。代码连接器已经写好，拿到权限后在 GitHub 仓库 Secrets 里补齐即可启用：
+
+```text
+X_BEARER_TOKEN
+META_ACCESS_TOKEN
+INSTAGRAM_BUSINESS_ACCOUNT_ID
+FACEBOOK_PAGE_IDS
+TIKTOK_ACCESS_TOKEN
+```
+
+启用逻辑：
+
+- X：调用 X API recent search，获取实时讨论与互动数据。
+- Instagram：调用 Instagram Graph API 的 hashtag search / recent media，获取视觉内容线索。
+- Facebook：调用 Facebook Graph API 的 Page posts，获取公开页面传播数据。
+- TikTok：调用 TikTok Research API，获取短视频播放、互动、标签数据。
+
+如果 Secret 未配置，脚本会明确跳过该平台，不会生成假数据。
+
 后续接入更多热点源时，只需要扩展 `scripts/update-hotspots.js` 里的 `fetchExternalSignals()`：
 
-- TikTok / Instagram / X：用于视觉符号、传播速度和社媒热度，通常需要第三方或内部数据权限。
 - 飞书表格 / 内部 CMS：用于运营手动入选、备注、复盘和样图资产管理。
 
-> 当前 YouTube 与 Google Trends 已接入真实来源；TikTok / Instagram / X / Facebook / 本地平台仍需要后续补齐合规数据源、团队权限、数据库和操作日志。
+> 当前 YouTube、Google Trends、本地平台/本地媒体已接入真实来源；TikTok / Instagram / X / Facebook 已完成接口框架，等待官方权限和 token。

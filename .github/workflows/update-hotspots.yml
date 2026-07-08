@@ -24,6 +24,11 @@ jobs:
         run: node scripts/update-hotspots.js
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          FACEBOOK_PAGE_IDS: ${{ secrets.FACEBOOK_PAGE_IDS }}
+          TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
