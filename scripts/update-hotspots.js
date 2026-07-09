@@ -350,111 +350,111 @@ function promptFromManual(title, sourceName) {
   return `基于运营人工录入热点《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，强调可转模板的主题符号、色彩和情绪，画面高级、干净、可商业化，避免直接复刻原图或版权元素。`;
 }
 
-const personStyleTemplates = [
+const visualPlaySamples = [
   {
-    id: "korean_idol_comic",
-    name: "韩系偶像漫画",
-    category: "人物风格模版",
-    preview: "assets/style-templates/korean-idol-comic.png",
-    style: "年轻、精致、偶像感强，适合音乐/K-pop/明星热点",
-    ability: "图生图：保留人物五官与发型气质，替换成热点同款妆造、服饰和舞台氛围",
-    prompt: "上传人物自拍或半身照，保持人物身份一致，转为精致韩系偶像漫画风；结合热点主题提取妆造、服装色彩、舞台灯光和情绪，生成 9:16 手机锁屏壁纸"
-  },
-  {
-    id: "retro_poster_portrait",
-    name: "复古电影海报人像",
-    category: "人物风格模版",
+    id: "cinematic_poster",
+    name: "电影海报感",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/realistic-retro-poster.png",
-    style: "叙事感、胶片颗粒、海报构图，适合影视/预告片热点",
-    ability: "图生图/文生图：人物主体居中，背景做电影级氛围，不复刻真实剧照或明星肖像",
-    prompt: "以用户人物照或虚拟人物为主体，保留面部结构和姿态，转成复古电影海报质感；结合热点关键词生成场景光影、服装轮廓和色彩基调，9:16，顶部留时钟区"
+    style: "强叙事、强氛围，适合影视/预告片/剧情类热点",
+    playability: "可做锁屏主视觉、海报式壁纸、暗色主题套装",
+    prompt: "把热点转译成电影海报式主视觉：主体明确、逆光/轮廓光、胶片颗粒、大面积留白，适合手机锁屏第一眼识别"
   },
   {
-    id: "local_outfit_india",
-    name: "本地装束·印度",
-    category: "人物风格模版",
+    id: "idol_comic",
+    name: "偶像漫画化",
+    category: "视觉可玩性样图",
+    preview: "assets/style-templates/korean-idol-comic.png",
+    style: "精致、年轻、人物情绪强，适合音乐/明星/舞台类热点",
+    playability: "可做自拍图生图、粉丝应援壁纸、人物主题模板",
+    prompt: "将热点情绪转译成精致漫画人物与舞台氛围：妆造、服饰、灯光、色彩都围绕热点主题重组，人物保持原创或用户上传"
+  },
+  {
+    id: "local_outfit",
+    name: "本地装束化",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/india-outfit.png",
-    style: "地域服饰、节庆色彩、精致妆造，适合印度市场运营",
-    ability: "图生图：人物不变，替换为本地节庆/地域服饰，适配当地热点",
-    prompt: "上传人物照，保持五官身份一致，将服装、饰品、妆造转为印度本地节庆灵感；背景加入柔和灯光、金色纹样和热点主题元素，生成高级人物锁屏壁纸"
+    style: "地域服饰、节庆色彩、文化识别强，适合区域运营热点",
+    playability: "可做本地节日主题、区域限定壁纸、人物换装玩法",
+    prompt: "提取热点所在地的服饰、纹样、节庆色彩和妆造元素，生成本地化人物/场景壁纸，强调文化识别但避免刻板化"
   },
   {
-    id: "american_comic_hero",
-    name: "美漫英雄人像",
-    category: "人物风格模版",
+    id: "american_comic",
+    name: "美漫英雄化",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/american-comic-portrait.png",
-    style: "强轮廓、鲜明表情、英雄感，适合赛事/电影/游戏热点",
-    ability: "图生图：把用户变成原创英雄角色，强化动作和情绪，不使用版权角色",
-    prompt: "上传人物照，保持脸部识别度，转为原创美漫英雄人像；结合热点提取代表色、动作感和背景符号，画面有冲击力但不出现真实队徽、角色或品牌 Logo"
+    style: "强表情、强动作、冲击感，适合赛事/游戏/电影热点",
+    playability: "可做原创英雄角色、赛事应援、热血主题壁纸",
+    prompt: "把热点转译成原创英雄式人物主视觉：夸张表情、速度线、强对比色和动态构图，不使用已有 IP 或队徽"
   },
   {
-    id: "mecha_persona",
-    name: "机甲角色化",
-    category: "人物风格模版",
+    id: "mecha_upgrade",
+    name: "机甲化升级",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/mecha-character.png",
-    style: "科技感、装备感、未来战士，适合游戏/科技/赛事热点",
-    ability: "图生图：人物身份保持，增加原创机甲服装和未来场景",
-    prompt: "上传人物照，保持人物身份与头脸比例，将服饰升级为原创轻机甲装备；结合热点主题生成科技背景、能量线和地区色彩，生成未来感 9:16 锁屏壁纸"
+    style: "科技、装备、未来感，适合游戏/科技/高能热点",
+    playability: "可做 AI 变身、机甲主题、未来感壁纸套装",
+    prompt: "基于热点视觉符号生成原创轻机甲造型：装备层次、能量光线、科技背景，与热点代表色融合"
   },
   {
-    id: "3d_avatar",
-    name: "Q版3D头像角色",
-    category: "人物风格模版",
+    id: "cute_3d",
+    name: "Q版3D萌化",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/3d-character.png",
-    style: "亲和、可爱、社交传播强，适合泛娱乐/轻运营热点",
-    ability: "图生图：把真人转成可爱的 3D 头像角色，可延展头像/贴纸/壁纸",
-    prompt: "上传自拍，保留核心五官特征，生成 Q 版 3D 头像角色；根据热点提取服装、道具、表情和背景色，输出适合主题商城的可爱人物壁纸"
+    style: "亲和、可爱、社交传播强，适合泛娱乐热点",
+    playability: "可做头像、贴纸、锁屏人物、轻量主题模板",
+    prompt: "把热点转成 Q 版 3D 角色或萌化道具：表情夸张、材质干净、色彩明快，适合做贴纸和壁纸延展"
   },
   {
     id: "game_character",
     name: "游戏角色立绘",
-    category: "人物风格模版",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/game-character.png",
-    style: "角色立绘、装备细节、冒险感，适合游戏/动漫/娱乐热点",
-    ability: "图生图：人物转原创游戏角色，突出服装层次和世界观背景",
-    prompt: "上传人物照，保持身份一致，转成原创游戏角色立绘；融合热点主题中的道具、颜色、场景和情绪，生成高级角色壁纸，不使用已有游戏角色 IP"
+    style: "角色设定、服装细节、世界观强，适合游戏/动漫/娱乐热点",
+    playability: "可做角色卡、冒险主题、游戏化壁纸玩法",
+    prompt: "把热点提炼成原创游戏角色立绘：服装、道具、背景和阵营色统一，突出可收藏的角色设定感"
   },
   {
-    id: "oil_painting_portrait",
-    name: "油画肖像",
-    category: "人物风格模版",
+    id: "art_portrait",
+    name: "艺术肖像化",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/oil-painting-portrait.png",
-    style: "高级、艺术化、适合精品壁纸库沉淀",
-    ability: "图生图：人物转艺术肖像，适合做长期风格模板而非短热点快闪",
-    prompt: "上传人物照，保持人物神态和面部结构，转成细腻油画肖像；结合热点所在地区色彩和情绪做背景氛围，画面干净、可商用、适合精品壁纸库"
+    style: "高级、艺术化、长期可沉淀，适合精品壁纸库",
+    playability: "可做艺术肖像壁纸、高级主题、低版权风险模板",
+    prompt: "把热点情绪转成艺术肖像/艺术场景：笔触、光影和色盘围绕热点氛围展开，适合沉淀为精品模板"
   },
   {
-    id: "local_outfit_indonesia",
-    name: "本地装束·印尼",
-    category: "人物风格模版",
+    id: "indonesia_local",
+    name: "东南亚本地化",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/indonesia-outfit.png",
-    style: "印尼本地服饰、温暖色调、节庆氛围",
-    ability: "图生图：人物身份保持，换成本地装束与场景，用于区域化模板",
-    prompt: "上传人物照，保持五官身份一致，将服装转为印尼本地装束灵感；背景加入当地节庆色彩、城市/自然元素和热点情绪，生成本地化人物锁屏壁纸"
+    style: "温暖、生活化、节庆感，适合印尼/东南亚热点",
+    playability: "可做区域限定、本地活动、节庆人物壁纸",
+    prompt: "结合东南亚本地服饰、城市生活、节庆色彩和自然元素，生成有亲近感的热点壁纸样图"
   },
   {
-    id: "japan_anime_outfit",
-    name: "日系装束动漫化",
-    category: "人物风格模版",
+    id: "anime_clean",
+    name: "清透二次元",
+    category: "视觉可玩性样图",
     preview: "assets/style-templates/japan-outfit.png",
-    style: "轻二次元、清透、适合年轻用户和动漫向热点",
-    ability: "图生图：人物转动漫感角色，保留识别度，换日系服饰与场景",
-    prompt: "上传人物照，保持人物身份一致，转成轻二次元人物风格；结合热点主题生成日系服饰、清透光影和背景氛围，输出 9:16 手机锁屏壁纸"
+    style: "清透、年轻、二次元感强，适合动漫/年轻文化热点",
+    playability: "可做动漫化自拍、轻二次元主题、清新锁屏壁纸",
+    prompt: "把热点视觉符号转成清透二次元人物或场景：柔和天空光、干净线条、轻盈服饰和明确主题色"
   }
 ];
 
-function templatesForHotspot(index) {
-  if (index === 0) return personStyleTemplates.slice(0, 5);
-  if (index === 1) return personStyleTemplates.slice(5, 8);
-  return personStyleTemplates.slice(8, 10);
+function samplesForHotspot(index) {
+  if (index === 0) return visualPlaySamples.slice(0, 5);
+  if (index === 1) return visualPlaySamples.slice(5, 8);
+  return visualPlaySamples.slice(8, 10);
 }
 
-function templatePromptForHotspot(template, hotspot) {
+function samplePromptForHotspot(sample, hotspot) {
   const title = hotspot.originalTitle || hotspot.name;
   const market = hotspot.country || hotspot.region || "重点市场";
   const source = hotspot.source?.join(" + ") || "热点源";
   const visual = visualSignalFromTitle(title);
-  return `基于 ${source} ${market} 热点《${title}》，为设计师生成「${template.name}」人物风格模板参考。\n\n参考能力：${template.ability}。\n\n生成建议：${template.prompt}；结合热点视觉方向「${visual}」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。`;
+  return `基于 ${source} ${market} 实时热点《${title}》，生成「${sample.name}」样图推荐，用于给设计师做主题/壁纸玩法灵感。\n\n视觉可玩性：${sample.playability}。\n\n生成建议：${sample.prompt}；结合热点视觉方向「${visual}」，提取主体、色彩、场景、服饰/道具和情绪符号。输出 9:16 手机锁屏壁纸样图，顶部预留时钟区；画面高级、有趣、可本地化，可延展为主题商城模板；避免直接使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片。`;
 }
 
 function buildTemplateOutputs(hotspots) {
@@ -469,25 +469,23 @@ function buildTemplateOutputs(hotspots) {
     return item.score + positive + negative + sourceBoost + crossSourceBoost;
   };
   const topHotspots = [...hotspots]
-    .filter(item => item.score >= 78)
     .map(item => ({ ...item, templateFitScore: templateFit(item) }))
-    .filter(item => item.templateFitScore >= 72)
-    .sort((a, b) => b.templateFitScore - a.templateFitScore || b.score - a.score || b.trend - a.trend)
+    .sort((a, b) => b.score - a.score || b.trend - a.trend || b.templateFitScore - a.templateFitScore)
     .slice(0, 3);
 
   return topHotspots.flatMap((hotspot, hotspotIndex) =>
-    templatesForHotspot(hotspotIndex).map(template => {
+    samplesForHotspot(hotspotIndex).map(sample => {
       return {
-        id: `tpl-${hotspotIndex}-${template.id}`,
+        id: `tpl-${hotspotIndex}-${sample.id}`,
         hotspotId: hotspot.id,
         hotspotName: hotspot.name,
-        previewTitle: `${hotspot.name}｜${template.name}`,
-        previewMeta: `${template.category} · ${hotspot.region} · Top${hotspotIndex + 1} · 模板潜力 ${hotspot.score} · ${template.style}`,
-        preview: template.preview,
-        prompt: templatePromptForHotspot(template, hotspot),
+        previewTitle: `${hotspot.name}｜${sample.name}`,
+        previewMeta: `${sample.category} · ${hotspot.region} · Top${hotspotIndex + 1} · 模板潜力 ${hotspot.score} · ${sample.style}`,
+        preview: sample.preview,
+        prompt: samplePromptForHotspot(sample, hotspot),
         source: hotspot.source,
         sourceUrl: hotspot.youtube?.url || hotspot.trends?.url || hotspot.local?.url || hotspot.gdelt?.url || hotspot.manual?.url || "",
-        generatedFrom: "daily_top3_person_style_template"
+        generatedFrom: "daily_top3_visual_sample_recommendation"
       };
     })
   );
