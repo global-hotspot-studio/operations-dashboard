@@ -267,7 +267,7 @@ function renderRegions() {
 
 function renderGallery() {
   const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
-  $("#galleryCount").textContent = `${list.length} 个玩法模板`;
+  $("#galleryCount").textContent = `${list.length} 个人物风格模版`;
   $("#visualGallery").innerHTML = list.map(h => `<article class="visual-card">
   <button class="visual-preview" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}"><img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}"></button>
   <div class="visual-info"><b>${escapeHtml(h.previewTitle)}</b><small>${escapeHtml(h.previewMeta)}</small>

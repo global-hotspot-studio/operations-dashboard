@@ -350,175 +350,111 @@ function promptFromManual(title, sourceName) {
   return `基于运营人工录入热点《${title}》提取视觉方向：${visual}。生成 9:16 手机锁屏主题壁纸，强调可转模板的主题符号、色彩和情绪，画面高级、干净、可商业化，避免直接复刻原图或版权元素。`;
 }
 
-const templatePlaybooks = [
+const personStyleTemplates = [
   {
-    id: "selfie_comic",
-    name: "自拍漫画壁纸",
-    category: "AI创作玩法",
-    style: "用户自拍一张，AI 转成热点同款漫画主角",
-    colors: ["#111827", "#38bdf8", "#f472b6"],
-    prompt: "用户上传一张自拍照，保留人物五官气质，把服饰、背景和色彩转译成当前热点氛围，生成原创漫画锁屏壁纸"
+    id: "korean_idol_comic",
+    name: "韩系偶像漫画",
+    category: "人物风格模版",
+    preview: "assets/style-templates/korean-idol-comic.png",
+    style: "年轻、精致、偶像感强，适合音乐/K-pop/明星热点",
+    ability: "图生图：保留人物五官与发型气质，替换成热点同款妆造、服饰和舞台氛围",
+    prompt: "上传人物自拍或半身照，保持人物身份一致，转为精致韩系偶像漫画风；结合热点主题提取妆造、服装色彩、舞台灯光和情绪，生成 9:16 手机锁屏壁纸"
   },
   {
-    id: "screenshot_theme",
-    name: "截图即主题",
-    category: "AI创作玩法",
-    style: "看到喜欢的画面截一下，自动长成一套主题",
-    colors: ["#eff6ff", "#60a5fa", "#a78bfa"],
-    prompt: "用户上传截图或照片，AI 提取主体、色彩、纹理和情绪，生成同风格手机壁纸、锁屏组件和主题色"
+    id: "retro_poster_portrait",
+    name: "复古电影海报人像",
+    category: "人物风格模版",
+    preview: "assets/style-templates/realistic-retro-poster.png",
+    style: "叙事感、胶片颗粒、海报构图，适合影视/预告片热点",
+    ability: "图生图/文生图：人物主体居中，背景做电影级氛围，不复刻真实剧照或明星肖像",
+    prompt: "以用户人物照或虚拟人物为主体，保留面部结构和姿态，转成复古电影海报质感；结合热点关键词生成场景光影、服装轮廓和色彩基调，9:16，顶部留时钟区"
   },
   {
-    id: "local_festival",
-    name: "本地节庆纹样",
-    category: "精品壁纸库",
-    style: "把当地节日、服饰、建筑纹样变成高级装饰壁纸",
-    colors: ["#fff7ed", "#fb923c", "#facc15"],
-    prompt: "提取当地节庆、城市、服饰或民俗纹样，做成可商用的高级装饰壁纸，强调本地文化识别"
+    id: "local_outfit_india",
+    name: "本地装束·印度",
+    category: "人物风格模版",
+    preview: "assets/style-templates/india-outfit.png",
+    style: "地域服饰、节庆色彩、精致妆造，适合印度市场运营",
+    ability: "图生图：人物不变，替换为本地节庆/地域服饰，适配当地热点",
+    prompt: "上传人物照，保持五官身份一致，将服装、饰品、妆造转为印度本地节庆灵感；背景加入柔和灯光、金色纹样和热点主题元素，生成高级人物锁屏壁纸"
   },
   {
-    id: "sports_cheer",
-    name: "赛事应援风",
-    category: "精品壁纸库",
-    style: "国家色、速度线、欢呼粒子，适合比赛和应援",
-    colors: ["#020617", "#22c55e", "#38bdf8"],
-    prompt: "使用国家色、速度线、旗帜感色块、聚光灯和欢呼粒子表达赛事氛围，避免真实队徽和版权 Logo"
+    id: "american_comic_hero",
+    name: "美漫英雄人像",
+    category: "人物风格模版",
+    preview: "assets/style-templates/american-comic-portrait.png",
+    style: "强轮廓、鲜明表情、英雄感，适合赛事/电影/游戏热点",
+    ability: "图生图：把用户变成原创英雄角色，强化动作和情绪，不使用版权角色",
+    prompt: "上传人物照，保持脸部识别度，转为原创美漫英雄人像；结合热点提取代表色、动作感和背景符号，画面有冲击力但不出现真实队徽、角色或品牌 Logo"
   },
   {
-    id: "cinematic_poster",
-    name: "电影海报感",
-    category: "精品壁纸库",
-    style: "大片构图和角色氛围，适合影视/音乐热点",
-    colors: ["#111827", "#ef4444", "#fbbf24"],
-    prompt: "以电影海报构图、逆光、景深和大面积留白表达热点故事感，不使用真实明星肖像、剧照或版权角色"
+    id: "mecha_persona",
+    name: "机甲角色化",
+    category: "人物风格模版",
+    preview: "assets/style-templates/mecha-character.png",
+    style: "科技感、装备感、未来战士，适合游戏/科技/赛事热点",
+    ability: "图生图：人物身份保持，增加原创机甲服装和未来场景",
+    prompt: "上传人物照，保持人物身份与头脸比例，将服饰升级为原创轻机甲装备；结合热点主题生成科技背景、能量线和地区色彩，生成未来感 9:16 锁屏壁纸"
   },
   {
-    id: "sticker_pack",
-    name: "贴纸拼贴壁纸",
-    category: "AI创作玩法",
-    style: "热点元素变贴纸，年轻、有趣、可二创",
-    colors: ["#fff1f2", "#fb7185", "#38bdf8"],
-    prompt: "把热点里的物品、动作、颜色和情绪转译成一组原创贴纸元素，拼成轻松有趣的锁屏壁纸"
+    id: "3d_avatar",
+    name: "Q版3D头像角色",
+    category: "人物风格模版",
+    preview: "assets/style-templates/3d-character.png",
+    style: "亲和、可爱、社交传播强，适合泛娱乐/轻运营热点",
+    ability: "图生图：把真人转成可爱的 3D 头像角色，可延展头像/贴纸/壁纸",
+    prompt: "上传自拍，保留核心五官特征，生成 Q 版 3D 头像角色；根据热点提取服装、道具、表情和背景色，输出适合主题商城的可爱人物壁纸"
   },
   {
-    id: "aod_set",
-    name: "锁屏+AOD套装",
-    category: "精品壁纸库",
-    style: "同一主题适配锁屏、桌面和息屏显示",
-    colors: ["#020617", "#0ea5e9", "#14b8a6"],
-    prompt: "生成一套低功耗深色主题：锁屏主图、桌面延展、AOD 极简线稿，保持同一个视觉符号"
+    id: "game_character",
+    name: "游戏角色立绘",
+    category: "人物风格模版",
+    preview: "assets/style-templates/game-character.png",
+    style: "角色立绘、装备细节、冒险感，适合游戏/动漫/娱乐热点",
+    ability: "图生图：人物转原创游戏角色，突出服装层次和世界观背景",
+    prompt: "上传人物照，保持身份一致，转成原创游戏角色立绘；融合热点主题中的道具、颜色、场景和情绪，生成高级角色壁纸，不使用已有游戏角色 IP"
   },
   {
-    id: "city_color",
-    name: "城市色彩采样",
-    category: "精品壁纸库",
-    style: "从本地街景、建筑、服饰里提取城市色盘",
-    colors: ["#f5f5f4", "#64748b", "#0f172a"],
-    prompt: "从热点所在地提取城市色彩、街头图形、建筑轮廓和生活方式元素，做成高级城市系列壁纸"
+    id: "oil_painting_portrait",
+    name: "油画肖像",
+    category: "人物风格模版",
+    preview: "assets/style-templates/oil-painting-portrait.png",
+    style: "高级、艺术化、适合精品壁纸库沉淀",
+    ability: "图生图：人物转艺术肖像，适合做长期风格模板而非短热点快闪",
+    prompt: "上传人物照，保持人物神态和面部结构，转成细腻油画肖像；结合热点所在地区色彩和情绪做背景氛围，画面干净、可商用、适合精品壁纸库"
   },
   {
-    id: "multi_image_fusion",
-    name: "三图融合玩法",
-    category: "AI创作玩法",
-    style: "人物+服饰+背景三图合成，一次生成个人主题",
-    colors: ["#312e81", "#8b5cf6", "#f0abfc"],
-    prompt: "用户上传人物照、喜欢的服饰图和背景图，AI 融合为同一风格的原创个人主题壁纸"
+    id: "local_outfit_indonesia",
+    name: "本地装束·印尼",
+    category: "人物风格模版",
+    preview: "assets/style-templates/indonesia-outfit.png",
+    style: "印尼本地服饰、温暖色调、节庆氛围",
+    ability: "图生图：人物身份保持，换成本地装束与场景，用于区域化模板",
+    prompt: "上传人物照，保持五官身份一致，将服装转为印尼本地装束灵感；背景加入当地节庆色彩、城市/自然元素和热点情绪，生成本地化人物锁屏壁纸"
   },
   {
-    id: "music_visualizer",
-    name: "音乐律动壁纸",
-    category: "精品壁纸库",
-    style: "声波、舞台光、节奏感，适合音乐和舞蹈热点",
-    colors: ["#0f172a", "#06b6d4", "#f97316"],
-    prompt: "把音乐或舞蹈热点转译成声波线、舞台光、节奏粒子和动态感构图，适合静态/动态壁纸延展"
+    id: "japan_anime_outfit",
+    name: "日系装束动漫化",
+    category: "人物风格模版",
+    preview: "assets/style-templates/japan-outfit.png",
+    style: "轻二次元、清透、适合年轻用户和动漫向热点",
+    ability: "图生图：人物转动漫感角色，保留识别度，换日系服饰与场景",
+    prompt: "上传人物照，保持人物身份一致，转成轻二次元人物风格；结合热点主题生成日系服饰、清透光影和背景氛围，输出 9:16 手机锁屏壁纸"
   }
 ];
 
-function playbooksForHotspot(index) {
-  if (index === 0) {
-    return [
-      templatePlaybooks[0],
-      templatePlaybooks[1],
-      templatePlaybooks[2],
-      templatePlaybooks[5],
-      templatePlaybooks[6]
-    ];
-  }
-  if (index === 1) {
-    return [
-      templatePlaybooks[3],
-      templatePlaybooks[4],
-      templatePlaybooks[7]
-    ];
-  }
-  return [
-    templatePlaybooks[8],
-    templatePlaybooks[9]
-  ];
+function templatesForHotspot(index) {
+  if (index === 0) return personStyleTemplates.slice(0, 5);
+  if (index === 1) return personStyleTemplates.slice(5, 8);
+  return personStyleTemplates.slice(8, 10);
 }
 
-function previewMotif(direction, mid, accent, pattern) {
-  const commonStroke = `stroke="${accent}" stroke-linecap="round" stroke-linejoin="round"`;
-  if (direction.id === "selfie_comic") {
-    return `<circle cx="240" cy="348" r="86" fill="#fff" opacity=".86"/><path d="M176 338 C185 250 292 242 307 336 C328 390 288 444 240 444 C190 444 152 390 176 338Z" fill="${mid}" opacity=".7"/><circle cx="210" cy="352" r="10" fill="#111827" opacity=".72"/><circle cx="270" cy="352" r="10" fill="#111827" opacity=".72"/><path d="M210 398 C230 416 260 416 278 398" ${commonStroke} stroke-width="8" fill="none"/><path d="M112 600 C170 510 310 510 368 600 L392 770 L88 770Z" fill="${accent}" opacity=".52"/>`;
-  }
-  if (direction.id === "screenshot_theme") {
-    return `<rect x="96" y="210" width="288" height="420" rx="42" fill="#fff" opacity=".28"/><rect x="124" y="248" width="232" height="128" rx="24" fill="${accent}" opacity=".35"/><circle cx="168" cy="438" r="44" fill="${mid}" opacity=".55"/><path d="M150 558 C218 490 278 630 344 520" ${commonStroke} stroke-width="18" fill="none" opacity=".8"/><rect x="138" y="658" width="204" height="30" rx="15" fill="#fff" opacity=".46"/>`;
-  }
-  if (direction.id === "local_festival") {
-    return `<circle cx="240" cy="410" r="142" fill="${accent}" opacity=".24"/><path d="M240 230 C300 300 300 380 240 450 C180 380 180 300 240 230Z" fill="#fff" opacity=".38"/><path d="M98 582 C178 518 302 518 382 582" ${commonStroke} stroke-width="16" fill="none"/><path d="M122 650 C194 594 286 594 358 650" stroke="${mid}" stroke-width="10" fill="none" opacity=".58"/><circle cx="114" cy="246" r="30" fill="${mid}" opacity=".42"/><circle cx="366" cy="246" r="30" fill="${mid}" opacity=".42"/>`;
-  }
-  if (direction.id === "sports_cheer") {
-    return `<path d="M74 562 L430 352 L386 740 L104 672Z" fill="${accent}" opacity=".32"/><path d="M80 250 L220 330 L80 410Z" fill="#fff" opacity=".55"/><path d="M110 232 L300 340" ${commonStroke} stroke-width="12"/><path d="M72 700 C180 610 302 610 420 700" stroke="#fff" stroke-width="18" fill="none" opacity=".36"/><circle cx="376" cy="222" r="58" fill="${mid}" opacity=".42"/>`;
-  }
-  if (direction.id === "cinematic_poster") {
-    return `<rect x="96" y="196" width="288" height="460" rx="22" fill="#111827" opacity=".48"/><circle cx="240" cy="322" r="86" fill="${accent}" opacity=".5"/><path d="M120 656 L240 420 L360 656Z" fill="${mid}" opacity=".5"/><path d="M86 742 H394" stroke="#fff" stroke-width="14" opacity=".42"/><path d="M142 704 H338" ${commonStroke} stroke-width="10" opacity=".8"/>`;
-  }
-  if (direction.id === "sticker_pack") {
-    return `<rect x="92" y="230" width="126" height="126" rx="34" fill="#fff" opacity=".72" transform="rotate(-10 155 293)"/><circle cx="326" cy="300" r="72" fill="#fff" opacity=".65"/><path d="M132 520 C190 420 322 420 380 520" ${commonStroke} stroke-width="22" fill="none"/><rect x="144" y="584" width="202" height="86" rx="43" fill="${mid}" opacity=".48" transform="rotate(8 245 627)"/><text x="192" y="640" fill="#fff" font-family="Arial" font-weight="800" font-size="34">WOW</text>`;
-  }
-  if (direction.id === "aod_set") {
-    return `<rect x="106" y="174" width="268" height="500" rx="46" fill="#020617" opacity=".72"/><path d="M170 348 C206 286 276 286 312 348 C328 420 282 488 240 540 C198 488 152 420 170 348Z" stroke="${accent}" stroke-width="10" fill="none"/><circle cx="240" cy="410" r="104" stroke="#fff" stroke-width="2" opacity=".28" fill="none"/><rect x="150" y="716" width="180" height="36" rx="18" fill="${mid}" opacity=".52"/>`;
-  }
-  if (direction.id === "city_color") {
-    return `<path d="M70 690 V390 L138 338 L204 430 L280 300 L394 420 V690Z" fill="${mid}" opacity=".35"/><rect x="100" y="510" width="56" height="180" fill="#fff" opacity=".32"/><rect x="192" y="468" width="68" height="222" fill="#fff" opacity=".22"/><rect x="306" y="540" width="52" height="150" fill="${accent}" opacity=".38"/><path d="M72 718 H410" ${commonStroke} stroke-width="12"/>`;
-  }
-  if (direction.id === "multi_image_fusion") {
-    return `<rect x="64" y="210" width="154" height="230" rx="34" fill="#fff" opacity=".34"/><rect x="262" y="190" width="154" height="230" rx="34" fill="${accent}" opacity=".34"/><rect x="132" y="478" width="216" height="250" rx="42" fill="${mid}" opacity=".48"/><path d="M218 348 C254 430 238 510 192 594" stroke="#fff" stroke-width="14" fill="none" opacity=".62"/><path d="M270 330 C220 450 252 548 322 626" ${commonStroke} stroke-width="14" fill="none" opacity=".8"/>`;
-  }
-  if (direction.id === "music_visualizer") {
-    return `<path d="M78 580 C150 464 236 668 310 516 C352 432 388 460 430 396" ${commonStroke} stroke-width="18" fill="none"/><circle cx="146" cy="326" r="66" fill="${accent}" opacity=".34"/><circle cx="334" cy="300" r="104" fill="${mid}" opacity=".28"/><rect x="94" y="688" width="28" height="88" rx="14" fill="#fff" opacity=".5"/><rect x="152" y="628" width="28" height="148" rx="14" fill="#fff" opacity=".55"/><rect x="210" y="668" width="28" height="108" rx="14" fill="#fff" opacity=".45"/><rect x="268" y="590" width="28" height="186" rx="14" fill="#fff" opacity=".58"/><rect x="326" y="642" width="28" height="134" rx="14" fill="#fff" opacity=".48"/>`;
-  }
-  return pattern === 0
-    ? `<circle cx="245" cy="360" r="150" fill="${accent}" opacity=".2"/><path d="M70 580 C180 420 320 620 470 430" ${commonStroke} stroke-width="20" fill="none" opacity=".65"/>`
-    : `<path d="M0 420 C120 330 170 530 290 450 C390 380 410 220 480 260 L480 854 L0 854 Z" fill="${mid}" opacity=".28"/>`;
-}
-
-function svgPreview({ title, direction, hotspot, index }) {
-  const [bg, mid, accent] = direction.colors;
-  const safeTitle = escapeSvgText(cleanTitle(title).slice(0, 28));
-  const safeRegion = escapeSvgText(`${hotspot.region || "全球"} · ${hotspot.source?.join(" + ") || "热点"}`.slice(0, 34));
-  const safeCategory = escapeSvgText(direction.category);
-  const safeName = escapeSvgText(direction.name);
-  const safeStyle = escapeSvgText(direction.style.slice(0, 34));
-  const pattern = index % 3;
-  const shape = previewMotif(direction, mid, accent, pattern);
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="854" viewBox="0 0 480 854">
-    <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${bg}"/><stop offset=".58" stop-color="${mid}"/><stop offset="1" stop-color="${accent}"/></linearGradient>
-      <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
-    </defs>
-    <rect width="480" height="854" fill="url(#g)"/>
-    <circle cx="70" cy="110" r="150" fill="#fff" opacity=".14" filter="url(#blur)"/>
-    <circle cx="430" cy="770" r="180" fill="#fff" opacity=".12" filter="url(#blur)"/>
-    ${shape}
-    <rect x="34" y="34" width="412" height="786" rx="34" fill="none" stroke="#fff" stroke-opacity=".34"/>
-    <text x="58" y="86" fill="#fff" opacity=".68" font-family="Arial, sans-serif" font-size="13" font-weight="800">${safeCategory}</text>
-    <text x="58" y="118" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="800">${safeName}</text>
-    <text x="58" y="152" fill="#fff" opacity=".62" font-family="Arial, sans-serif" font-size="14">${safeRegion}</text>
-    <text x="58" y="704" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="800">${safeTitle}</text>
-    <text x="58" y="744" fill="#fff" opacity=".78" font-family="Arial, sans-serif" font-size="15">${safeStyle}</text>
-  </svg>`;
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+function templatePromptForHotspot(template, hotspot) {
+  const title = hotspot.originalTitle || hotspot.name;
+  const market = hotspot.country || hotspot.region || "重点市场";
+  const source = hotspot.source?.join(" + ") || "热点源";
+  const visual = visualSignalFromTitle(title);
+  return `基于 ${source} ${market} 热点《${title}》，为设计师生成「${template.name}」人物风格模板参考。\n\n参考能力：${template.ability}。\n\n生成建议：${template.prompt}；结合热点视觉方向「${visual}」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。`;
 }
 
 function buildTemplateOutputs(hotspots) {
@@ -540,19 +476,18 @@ function buildTemplateOutputs(hotspots) {
     .slice(0, 3);
 
   return topHotspots.flatMap((hotspot, hotspotIndex) =>
-    playbooksForHotspot(hotspotIndex).map((direction, directionIndex) => {
-      const title = hotspot.originalTitle || hotspot.name;
+    templatesForHotspot(hotspotIndex).map(template => {
       return {
-        id: `tpl-${hotspotIndex}-${direction.id}`,
+        id: `tpl-${hotspotIndex}-${template.id}`,
         hotspotId: hotspot.id,
         hotspotName: hotspot.name,
-        previewTitle: `${hotspot.name}｜${direction.name}`,
-        previewMeta: `${direction.category} · ${hotspot.region} · 模板潜力 ${hotspot.score} · ${direction.style}`,
-        preview: svgPreview({ title, direction, hotspot, index: hotspotIndex + directionIndex }),
-        prompt: `${hotspot.prompt || ""}\n\n玩法模板：${direction.name}（${direction.category}）。${direction.prompt}。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。`,
+        previewTitle: `${hotspot.name}｜${template.name}`,
+        previewMeta: `${template.category} · ${hotspot.region} · Top${hotspotIndex + 1} · 模板潜力 ${hotspot.score} · ${template.style}`,
+        preview: template.preview,
+        prompt: templatePromptForHotspot(template, hotspot),
         source: hotspot.source,
         sourceUrl: hotspot.youtube?.url || hotspot.trends?.url || hotspot.local?.url || hotspot.gdelt?.url || hotspot.manual?.url || "",
-        generatedFrom: "daily_top3_wallpaper_playbook"
+        generatedFrom: "daily_top3_person_style_template"
       };
     })
   );
