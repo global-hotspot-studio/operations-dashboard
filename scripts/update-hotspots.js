@@ -17,6 +17,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const dataPath = path.join(root, "data", "dashboard.json");
+const playbookDataPath = path.join(root, "data", "dashboard-playbook.json");
 const manualDataPath = path.join(root, "data", "manual-hotspots.json");
 const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
@@ -80,6 +81,7 @@ function readDashboard() {
 
 function writeDashboard(data) {
   fs.writeFileSync(dataPath, `${JSON.stringify(data, null, 2)}\n`);
+  fs.writeFileSync(playbookDataPath, `${JSON.stringify(data, null, 2)}\n`);
 }
 
 function readManualHotspots() {
