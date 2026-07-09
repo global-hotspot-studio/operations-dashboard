@@ -323,7 +323,7 @@ function renderGallery() {
         const nameText = sampleName(h);
         return `<article class="playbook-card image-playbook-card">
           <button class="visual-preview playbook-image" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}">
-            <img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}" loading="lazy">
+            <img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}">
             <span>${escapeHtml(topRankLabel(h))}</span>
             <b>${escapeHtml(nameText)}</b>
           </button>
