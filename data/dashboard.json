@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-08T21:52:17.811Z",
+  "generatedAt": "2026-07-09T09:41:46.415Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -24,8 +24,8 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1356,
-    "effectiveHotspots": 360,
+    "rawTopics": 1314,
+    "effectiveHotspots": 346,
     "highPriorityAlerts": 16,
     "templateCandidates": 16,
     "rawDelta": 42,
@@ -47,32 +47,32 @@
       "22:00"
     ],
     "effective": [
-      43,
-      63,
-      32,
-      71,
-      63,
-      58,
+      50,
+      57,
+      35,
+      72,
+      59,
+      64,
+      96,
+      66,
       103,
-      61,
-      105,
-      105,
-      110,
-      134
+      104,
+      115,
+      127
     ],
     "template": [
-      20,
-      27,
-      18,
-      29,
+      23,
+      24,
+      21,
+      28,
       31,
-      30,
-      46,
-      31,
-      51,
+      33,
+      43,
+      35,
       49,
-      59,
-      73
+      50,
+      60,
+      71
     ]
   },
   "hotspots": [
@@ -85,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "9.4M",
-      "trend": 73,
-      "score": 98,
+      "heat": "13.0M",
+      "trend": 66,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -95,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Tabaahi 🔥| Toxic (Hindi) | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 9.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 14.0M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "h1kihH0l8iQ",
         "channelTitle": "Zee Music Company",
@@ -113,36 +113,36 @@
     },
     {
       "id": 1001,
-      "name": "Joe | Official Trailer",
-      "originalTitle": "Joe | Official Trailer",
+      "name": "Dune: Part Three | Off…",
+      "originalTitle": "Dune: Part Three | Official Trailer",
       "region": "撒哈拉以南非洲",
       "country": "南非",
       "source": [
         "YouTube"
       ],
-      "heat": "6.0M",
-      "trend": 65,
-      "score": 96,
+      "heat": "7.4M",
+      "trend": 76,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 6.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 南非 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 6.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 俄罗斯 热门榜，播放量 6.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 肯尼亚 热门榜，播放量 6.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "Js7PKsarC5Q",
-        "channelTitle": "Druski",
-        "publishedAt": "2026-06-29T01:05:56Z",
-        "thumbnail": "https://i.ytimg.com/vi/Js7PKsarC5Q/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
+        "videoId": "NdvqHc56lE0",
+        "channelTitle": "Warner Bros.",
+        "publishedAt": "2026-07-08T17:59:03Z",
+        "thumbnail": "https://i.ytimg.com/vi/NdvqHc56lE0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=NdvqHc56lE0"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "Joe | Official Trailer",
-          "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
+          "title": "Dune: Part Three | Official Trailer",
+          "url": "https://www.youtube.com/watch?v=NdvqHc56lE0"
         }
       ]
     },
@@ -155,9 +155,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "10.8M",
-      "trend": 73,
-      "score": 98,
+      "heat": "13.2M",
+      "trend": 62,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -165,7 +165,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Ve Junoon | Awarapan 2 | Emraan Hashmi, Disha Patani | Vishesh Bhatt | Mithoon, Sayeed Q., Subodhh》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 10.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 13.9M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "HX1EXb5kWwY",
         "channelTitle": "Sony Music India",
@@ -190,9 +190,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "3.0M",
-      "trend": 59,
-      "score": 95,
+      "heat": "4.1M",
+      "trend": 69,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -200,7 +200,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 加纳 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 加纳 热门榜，播放量 3.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 加纳 热门榜，播放量 4.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7b20GRFZBFE",
         "channelTitle": "Avatar Legends",
@@ -218,119 +218,14 @@
     },
     {
       "id": 1004,
-      "name": "Stray Kids \"THIS & THA…",
-      "originalTitle": "Stray Kids \"THIS & THAT\" Trailer",
-      "region": "南美洲",
-      "country": "阿根廷",
+      "name": "Something Won't Let Yo…",
+      "originalTitle": "Something Won't Let You Leave...",
+      "region": "俄罗斯（东欧）",
+      "country": "俄罗斯",
       "source": [
         "YouTube"
       ],
-      "heat": "1.9M",
-      "trend": 70,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 阿根廷 热门榜，播放量 1.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 秘鲁 热门榜，播放量 1.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "hQUVIT8m-c0",
-        "channelTitle": "JYP Entertainment",
-        "publishedAt": "2026-07-07T15:00:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/hQUVIT8m-c0/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Stray Kids \"THIS & THAT\" Trailer",
-          "url": "https://www.youtube.com/watch?v=hQUVIT8m-c0"
-        }
-      ]
-    },
-    {
-      "id": 1005,
-      "name": "Dune: Part Three | Off…",
-      "originalTitle": "Dune: Part Three | Official Trailer",
-      "region": "南美洲",
-      "country": "哥伦比亚",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "1.7M",
-      "trend": 62,
-      "score": 97,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 哥伦比亚 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 哥伦比亚 热门榜，播放量 1.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 俄罗斯 热门榜，播放量 1.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "NdvqHc56lE0",
-        "channelTitle": "Warner Bros.",
-        "publishedAt": "2026-07-08T17:59:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/NdvqHc56lE0/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=NdvqHc56lE0"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Dune: Part Three | Official Trailer",
-          "url": "https://www.youtube.com/watch?v=NdvqHc56lE0"
-        }
-      ]
-    },
-    {
-      "id": 1006,
-      "name": "Jux Ft Mbosso - Kipepe…",
-      "originalTitle": "Jux Ft Mbosso - Kipepeo",
-      "region": "撒哈拉以南非洲",
-      "country": "肯尼亚",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "863K",
-      "trend": 62,
-      "score": 97,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 肯尼亚 热门内容《Jux Ft Mbosso - Kipepeo (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 881K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "B8UDrYSaGZA",
-        "channelTitle": "JUX",
-        "publishedAt": "2026-07-05T15:00:07Z",
-        "thumbnail": "https://i.ytimg.com/vi/B8UDrYSaGZA/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=B8UDrYSaGZA"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Jux Ft Mbosso - Kipepeo",
-          "url": "https://www.youtube.com/watch?v=B8UDrYSaGZA"
-        }
-      ]
-    },
-    {
-      "id": 1007,
-      "name": "HUGGY WUGGY IS BACK | …",
-      "originalTitle": "HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "2.4M",
+      "heat": "4.7M",
       "trend": 68,
       "score": 98,
       "status": "爆发",
@@ -339,8 +234,78 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
+      "prompt": "基于 YouTube 俄罗斯 热门内容《Something Won't Let You Leave...》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 俄罗斯 热门榜，播放量 4.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "8utcF9Azbxo",
+        "channelTitle": "ThatMob",
+        "publishedAt": "2026-07-08T14:00:06Z",
+        "thumbnail": "https://i.ytimg.com/vi/8utcF9Azbxo/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=8utcF9Azbxo"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Something Won't Let You Leave...",
+          "url": "https://www.youtube.com/watch?v=8utcF9Azbxo"
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "name": "Joe | Official Trailer",
+      "originalTitle": "Joe | Official Trailer",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "6.1M",
+      "trend": 60,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 南非 热门内容《Joe | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 6.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "Js7PKsarC5Q",
+        "channelTitle": "Druski",
+        "publishedAt": "2026-06-29T01:05:56Z",
+        "thumbnail": "https://i.ytimg.com/vi/Js7PKsarC5Q/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Joe | Official Trailer",
+          "url": "https://www.youtube.com/watch?v=Js7PKsarC5Q"
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "HUGGY WUGGY IS BACK | …",
+      "originalTitle": "HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "2.9M",
+      "trend": 71,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5 [PART 1]》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 2.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 2.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "3_NEH4LyaWk",
         "channelTitle": "Techno Gamerz",
@@ -357,54 +322,16 @@
       ]
     },
     {
-      "id": 1008,
-      "name": "delhi weather",
-      "originalTitle": "delhi weather",
-      "region": "印度",
-      "country": "印度",
+      "id": 1007,
+      "name": "Jux Ft Mbosso - Kipepe…",
+      "originalTitle": "Jux Ft Mbosso - Kipepeo",
+      "region": "撒哈拉以南非洲",
+      "country": "肯尼亚",
       "source": [
-        "Google Trends"
+        "YouTube"
       ],
-      "heat": "180K",
-      "trend": 54,
-      "score": 90,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「delhi weather」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：The Hindu / NDTV；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "delhi weather",
-        "traffic": 2000,
-        "publishedAt": "Wed, 8 Jul 2026 14:20:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-XWcswsS8U0I7V4O51X87Y_A1sawlk4Kr3DTmLukJU85DuyiEtGm8Vq0hbdM",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=delhi%20weather",
-        "newsUrl": "https://www.thehindu.com/news/national/india-monsoon-rain-today-live-updates-mumbai-delhi-north-india-imd-forecast-kerala-landslide-gujarat-rain-flight-cancellation/article71196412.ece",
-        "newsTitle": "Delhi, Mumbai grapple with heavy rain havoc | Monsoon highlights",
-        "newsSource": "The Hindu"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "delhi weather",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=delhi%20weather"
-        }
-      ]
-    },
-    {
-      "id": 1009,
-      "name": "chatgpt",
-      "originalTitle": "chatgpt",
-      "region": "南美洲",
-      "country": "秘鲁",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 69,
+      "heat": "930K",
+      "trend": 57,
       "score": 95,
       "status": "爆发",
       "type": "realtime",
@@ -412,32 +339,257 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 秘鲁 搜索趋势「chatgpt」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 10000+。关联新闻源：Reuters / MacRumors；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 YouTube 肯尼亚 热门内容《Jux Ft Mbosso - Kipepeo (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 1.0M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "B8UDrYSaGZA",
+        "channelTitle": "JUX",
+        "publishedAt": "2026-07-05T15:00:07Z",
+        "thumbnail": "https://i.ytimg.com/vi/B8UDrYSaGZA/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=B8UDrYSaGZA"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Jux Ft Mbosso - Kipepeo",
+          "url": "https://www.youtube.com/watch?v=B8UDrYSaGZA"
+        }
+      ]
+    },
+    {
+      "id": 1008,
+      "name": "día de la independenci…",
+      "originalTitle": "día de la independencia de argentina",
+      "region": "南美洲",
+      "country": "阿根廷",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 71,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「día de la independencia de argentina」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 20000+。关联新闻源：Infobae / La Gaceta；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "chatgpt",
-        "traffic": 10000,
-        "publishedAt": "Wed, 8 Jul 2026 12:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyzsZtO8JVAi1d-JdIju0YUIIISa6VipJYPgiTK2P2VvcSAHlV8DQHN0lAPag",
-        "url": "https://trends.google.com/trends/explore?geo=PE&q=chatgpt",
-        "newsUrl": "https://www.reuters.com/business/openai-launches-gpt-live-voice-models-that-listen-speak-simultaneously-2026-07-08/",
-        "newsTitle": "OpenAI launches GPT-Live voice models that listen and speak simultaneously",
-        "newsSource": "Reuters"
+        "topic": "día de la independencia de argentina",
+        "traffic": 20000,
+        "publishedAt": "Wed, 8 Jul 2026 20:00:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEEttIG-NYMpWsofMWeJrgmqayRzILLoCem3EXUuJLpjg6i-W9AHDsF-4lmzw",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=d%C3%ADa%20de%20la%20independencia%20de%20argentina",
+        "newsUrl": "https://www.infobae.com/politica/2026/07/09/javier-milei-encabeza-el-acto-por-el-9-de-julio-en-tucuman-estamos-desendeudando-al-pais/",
+        "newsTitle": "Desde Tucumán, Milei llamó a los gobernadores a “sentar las bases para el futuro de una verdadera libertad”",
+        "newsSource": "Infobae"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "chatgpt",
-          "url": "https://trends.google.com/trends/explore?geo=PE&q=chatgpt"
+          "title": "día de la independencia de argentina",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=d%C3%ADa%20de%20la%20independencia%20de%20argentina"
+        }
+      ]
+    },
+    {
+      "id": 1009,
+      "name": "азовское море",
+      "originalTitle": "азовское море",
+      "region": "俄罗斯（东欧）",
+      "country": "俄罗斯",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 65,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 俄罗斯 搜索趋势「азовское море」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 俄罗斯 搜索趋势，搜索热度约 10000+。关联新闻源：Радио Свобода / Интерфакс；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "азовское море",
+        "traffic": 10000,
+        "publishedAt": "Thu, 9 Jul 2026 02:20:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQpsTctbv7PkOw644Im-GNbbrjweCWayz6HYutr_BRgvmSNa3hdJI2hNimalU",
+        "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BC%D0%BE%D1%80%D0%B5",
+        "newsUrl": "https://www.svoboda.org/a/rossiya-atakovala-ukrainu-raketami-i-169-bespilotnikami/33799225.html",
+        "newsTitle": "Россия атаковала Украину ракетами и 169 беспилотниками",
+        "newsSource": "Радио Свобода"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "азовское море",
+          "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BC%D0%BE%D1%80%D0%B5"
         }
       ]
     },
     {
       "id": 1010,
-      "name": "veículo",
-      "originalTitle": "veículo",
+      "name": "অগ্নিমিত্রা পাল",
+      "originalTitle": "অগ্নিমিত্রা পাল",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 57,
+      "score": 91,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「অগ্নিমিত্রা পাল」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：Anandabazar Patrika / TheWall；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "অগ্নিমিত্রা পাল",
+        "traffic": 500,
+        "publishedAt": "Thu, 9 Jul 2026 02:00:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjfZT3f8iZT28btW7U_4cF091-hH9j104jcuVzGzEkPCkbZUTwPayYnhYdxYk",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BE%20%E0%A6%AA%E0%A6%BE%E0%A6%B2",
+        "newsUrl": "https://www.anandabazar.com/west-bengal/kolkata/west-bengal-minister-%E2%81%A0agnimitra-paul-announced-that-offenders-openly-urinating-or-dumbing-garbage-in-public-will-face-a-%E2%82%B9200-fine-starting-september-1-2026-prnt/cid/1698596",
+        "newsTitle": "কঠোর প্রশাসন, প্রকাশ্যে প্রস্রাবে জরিমানা ২০০ টাকা",
+        "newsSource": "Anandabazar Patrika"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "অগ্নিমিত্রা পাল",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%AE%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BE%20%E0%A6%AA%E0%A6%BE%E0%A6%B2"
+        }
+      ]
+    },
+    {
+      "id": 1011,
+      "name": "pajak kendaraan bermot…",
+      "originalTitle": "pajak kendaraan bermotor",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 64,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「pajak kendaraan bermotor」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：detikoto / TribunStyle.com；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "pajak kendaraan bermotor",
+        "traffic": 200,
+        "publishedAt": "Thu, 9 Jul 2026 01:50:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6WFcY-75Zw28WBYYNLYTuzsK2mhwaAn6eb3mqN0wV_NJzyQuO_QTLcfH5mB8",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=pajak%20kendaraan%20bermotor",
+        "newsUrl": "https://oto.detik.com/berita/d-8566407/pemilik-kendaraan-yang-belum-bayar-pajak-didatangi-petugas-samsat",
+        "newsTitle": "Pemilik Kendaraan yang Belum Bayar Pajak Didatangi Petugas Samsat",
+        "newsSource": "detikoto"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "pajak kendaraan bermotor",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=pajak%20kendaraan%20bermotor"
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "name": "bonnie tyler",
+      "originalTitle": "bonnie tyler",
       "region": "南美洲",
       "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 52,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「bonnie tyler」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 200+。关联新闻源：BBC / Sky News；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "bonnie tyler",
+        "traffic": 200,
+        "publishedAt": "Thu, 9 Jul 2026 02:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBMM46N9rultvP4pGiyY-MDL3rjU76MWuTqoLqnGNtHWtoUczZMwJvkuo3EGw",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=bonnie%20tyler",
+        "newsUrl": "https://www.bbc.com/news/live/c9326rq1509t",
+        "newsTitle": "Bonnie Tyler, singer of Total Eclipse of the Heart, dies aged 75",
+        "newsSource": "BBC"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "bonnie tyler",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=bonnie%20tyler"
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "name": "sorteo quini 6",
+      "originalTitle": "sorteo quini 6",
+      "region": "南美洲",
+      "country": "阿根廷",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 65,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「sorteo quini 6」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100+。关联新闻源：La Voz del Interior / El Litoral；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "sorteo quini 6",
+        "traffic": 100,
+        "publishedAt": "Thu, 9 Jul 2026 01:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5r_GvoP9iwl8IuH5z1avymQbN5C9qtW4nBS_seIrodcqbKM2XbB1U24nKqDg",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=sorteo%20quini%206",
+        "newsUrl": "https://www.lavoz.com.ar/servicios/quini-6-resultados-hoy-numeros-ganadores-sorteo-3389-miercoles-8-julio_0_8dEpmVVBYM.html",
+        "newsTitle": "Lotería. Quini 6 resultados hoy: los números ganadores del sorteo 3.389 del miércoles 8 de julio",
+        "newsSource": "La Voz del Interior"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "sorteo quini 6",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=sorteo%20quini%206"
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "name": "lotería de manizales",
+      "originalTitle": "lotería de manizales",
+      "region": "南美洲",
+      "country": "哥伦比亚",
       "source": [
         "Google Trends"
       ],
@@ -450,37 +602,37 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「veículo」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 2000+。关联新闻源：Gazeta do Povo / O GLOBO；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「lotería de manizales」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 500+。关联新闻源：Blu Radio / ELTIEMPO.COM；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "veículo",
-        "traffic": 2000,
-        "publishedAt": "Wed, 8 Jul 2026 14:10:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3R4yHfeo_-Y0YmgLkXaWdyn6Y9GNMueMEEL2Hy9HIslhU6eMPGeJp5tm_JNU",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=ve%C3%ADculo",
-        "newsUrl": "https://www.gazetadopovo.com.br/republica/camara-dos-deputados-avanca-com-pec-que-limita-ipva-a-1-do-valor-do-carro/",
-        "newsTitle": "Câmara dos Deputados avança com PEC que limita IPVA a 1% do valor do carro",
-        "newsSource": "Gazeta do Povo"
+        "topic": "lotería de manizales",
+        "traffic": 500,
+        "publishedAt": "Thu, 9 Jul 2026 01:50:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrkq0WBDj90yePQ8u79CV4xZNwuOyv16DGeCDRuaSv2jypTjbSqowHJkOukHw",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20de%20manizales",
+        "newsUrl": "https://www.bluradio.com/economia/juegos-de-azar/loteria-de-manizales-resultados-del-ultimo-sorteo-hoy-miercoles-8-de-julio-de-2026-so35",
+        "newsTitle": "Lotería de Manizales, resultados del último sorteo hoy miércoles 8 de julio de 2026",
+        "newsSource": "Blu Radio"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "veículo",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=ve%C3%ADculo"
+          "title": "lotería de manizales",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=loter%C3%ADa%20de%20manizales"
         }
       ]
     },
     {
-      "id": 1011,
-      "name": "jefe de despacho presi…",
-      "originalTitle": "jefe de despacho presidencial",
+      "id": 1015,
+      "name": "clima rancagua",
+      "originalTitle": "clima rancagua",
       "region": "南美洲",
-      "country": "哥伦比亚",
+      "country": "智利",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 61,
+      "trend": 60,
       "score": 92,
       "status": "爆发",
       "type": "realtime",
@@ -488,184 +640,176 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「jefe de despacho presidencial」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 2000+。关联新闻源：El Colombiano / Caracol Radio；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 智利 搜索趋势「clima rancagua」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 500+。关联新闻源：VLN Radio / VLN Radio；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "jefe de despacho presidencial",
-        "traffic": 2000,
-        "publishedAt": "Wed, 8 Jul 2026 13:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfS3B-_Po3R4gigvwG6Z5_3i463_HukAF8xVpJQhBQ4vIBAHxsJ6Yilsm6kzA",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=jefe%20de%20despacho%20presidencial",
-        "newsUrl": "https://www.elcolombiano.com/colombia/de-la-espriella-ley-cuotas-mujeres-gabinete-EM38615274",
-        "newsTitle": "Seis mujeres llegarían al gabinete de De la Espriella para cumplir la Ley de Cuotas, ¿quiénes serían? | El Colombiano",
-        "newsSource": "El Colombiano"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "jefe de despacho presidencial",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=jefe%20de%20despacho%20presidencial"
-        }
-      ]
-    },
-    {
-      "id": 1012,
-      "name": "jadwal salat",
-      "originalTitle": "jadwal salat",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 61,
-      "score": 93,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「jadwal salat」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 1000+。关联新闻源：MetroTVNews.com / MetroTVNews.com；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "jadwal salat",
-        "traffic": 1000,
-        "publishedAt": "Wed, 8 Jul 2026 14:30:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRk39JrrzBI44i5jUlX1_cwRMq8g6E_38s3l1g9S7iaSD-wegkzf3h1ml5AHac",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=jadwal%20salat",
-        "newsUrl": "https://www.metrotvnews.com/read/b2lC6n8m-jadwal-salat-dan-buka-puasa-makassar-9-juli-2026",
-        "newsTitle": "Jadwal Salat dan Buka Puasa Makassar 9 Juli 2026",
-        "newsSource": "MetroTVNews.com"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "jadwal salat",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=jadwal%20salat"
-        }
-      ]
-    },
-    {
-      "id": 1013,
-      "name": "ponte preta",
-      "originalTitle": "ponte preta",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 54,
-      "score": 90,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「ponte preta」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 500+。关联新闻源：GE / ESPN Brasil；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "ponte preta",
+        "topic": "clima rancagua",
         "traffic": 500,
-        "publishedAt": "Wed, 8 Jul 2026 14:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTofB8uPbki6sRqI3YCRWCO8RL89a2D5G94_ZZxtQHe5ADE8HfACvbPMTfyHaM",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=ponte%20preta",
-        "newsUrl": "https://ge.globo.com/sp/campinas-e-regiao/futebol/brasileirao-serie-b/noticia/2026/07/08/ponte-preta-x-criciuma-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "newsTitle": "Ponte Preta x Criciúma: onde assistir ao vivo, horário e escalações",
-        "newsSource": "GE"
+        "publishedAt": "Thu, 9 Jul 2026 01:10:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu_Zit4DwprcvZFc-ZGJEwhdr4C9yoUu5EtjWsK2reTFzuxU2ToHXE7lstq8Y",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=clima%20rancagua",
+        "newsUrl": "https://www.vlnradio.cl/noticias/nacional/region-de-ohiggins/2026/07/08/rancagua-pronostico-del-jueves-9-de-julio-de-2026/",
+        "newsTitle": "Rancagua: pronóstico del jueves 9 de julio de 2026",
+        "newsSource": "VLN Radio"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "ponte preta",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=ponte%20preta"
-        }
-      ]
-    },
-    {
-      "id": 1014,
-      "name": "8 de julio",
-      "originalTitle": "8 de julio",
-      "region": "南美洲",
-      "country": "阿根廷",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 66,
-      "score": 95,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「8 de julio」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 500+。关联新闻源：La Nación / La Nueva Provincia；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "8 de julio",
-        "traffic": 500,
-        "publishedAt": "Wed, 8 Jul 2026 14:10:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiEtykoeTDhACuVoU7xqspoXBxbaQZNkvaaC1OZf1E8bByC77RHezT_qkTLKE",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=8%20de%20julio",
-        "newsUrl": "https://www.lanacion.com.ar/estados-unidos/hora-de-eeuu-de-los-partidos-de-hoy-en-el-mundial-2026-y-quien-juega-este-miercoles-8-de-julio-nid08072026/",
-        "newsTitle": "Hora de EE.UU. de los partidos de hoy en el Mundial 2026 y quién juega este miércoles 8 de julio",
-        "newsSource": "La Nación"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "8 de julio",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=8%20de%20julio"
-        }
-      ]
-    },
-    {
-      "id": 1015,
-      "name": "españa vs belgica",
-      "originalTitle": "españa vs belgica",
-      "region": "南美洲",
-      "country": "哥伦比亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 53,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「españa vs belgica」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100+。关联新闻源：ESPN Colombia / LaRepublica.co；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "españa vs belgica",
-        "traffic": 100,
-        "publishedAt": "Wed, 8 Jul 2026 13:20:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMQRrJWM3hf2fJ1C-cu4TsKa7crteuSyi_cpb_Q0xSzwc2Oeu9TMDQKRMTbO0",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=espa%C3%B1a%20vs%20belgica",
-        "newsUrl": "https://www.espn.com.co/futbol/mundial/nota/_/id/16971587/espana-vs-belgica-cuartos-de-final-4tos-mundial-2026-equipo-fecha-hora-y-tv-en-vivo",
-        "newsTitle": "Cuándo juegan España vs. Bélgica por los cuartos de final del Mundial 2026: equipo, fecha, hora y TV en vivo",
-        "newsSource": "ESPN Colombia"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "españa vs belgica",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=espa%C3%B1a%20vs%20belgica"
+          "title": "clima rancagua",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=clima%20rancagua"
         }
       ]
     },
     {
       "id": 1016,
-      "name": "‘Era-defining’ growth …",
-      "originalTitle": "‘Era-defining’ growth of women’s cricket now outstripping men’s game",
+      "name": "Lord’s Cricket Ground …",
+      "originalTitle": "Lord’s Cricket Ground set for first-ever women’s Test as England host India",
       "region": "印度",
       "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 56,
+      "score": 84,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「Al Jazeera」热点《Lord’s Cricket Ground set for first-ever women’s Test as England host India》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Al Jazeera。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "cricket",
+        "category": "核心话题",
+        "sourceName": "Al Jazeera",
+        "title": "Lord’s Cricket Ground set for first-ever women’s Test as England host India",
+        "publishedAt": "Thu, 09 Jul 2026 06:35:22 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR3Z1QjJoZVFOZTduWFFtVzkwSEdxQ20ydUpyUlVsVU5MQkRFRVlHRnBzYi1ic0hoQWI3SVF6MUZZTXpCTXFtRnlrbGNjY1lBazdfd3NweUtibzBRNFZrMWVMdWtOa0hjUXVTRjVVXzFXMzFURzAtdjhfbWZwZ0RVUHQxMk82VFFBdUtxVHU4SHlnOGsxamlnMF9WU1lQOExIbzltbVZBOV9WRXZoRk42aVdoal9IUdIBuwFBVV95cUxQYldnd2loUkhrQ3F4LVhjdl9uaEp2V2ROemU3M3EyQ05nMUQtVF9iYkZjeXJzdkxkYnI1MEF0czhtY1lNaXd0RzMtU2I3a1gzRDBHMUVUSGloU3RQdkxTUmFraGhVOEc4TTUyemdOSTFOZGlweWZsNDRoZlRDcE9ON3dURWRoQ3o5WHhHVzFEVDdUVlhaVUZYaHdValh6OW9kTGZ2VTRtTnNTbTJLMTJ4OTVnbnRCWEN6dXBF?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Lord’s Cricket Ground set for first-ever women’s Test as England host India",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR3Z1QjJoZVFOZTduWFFtVzkwSEdxQ20ydUpyUlVsVU5MQkRFRVlHRnBzYi1ic0hoQWI3SVF6MUZZTXpCTXFtRnlrbGNjY1lBazdfd3NweUtibzBRNFZrMWVMdWtOa0hjUXVTRjVVXzFXMzFURzAtdjhfbWZwZ0RVUHQxMk82VFFBdUtxVHU4SHlnOGsxamlnMF9WU1lQOExIbzltbVZBOV9WRXZoRk42aVdoal9IUdIBuwFBVV95cUxQYldnd2loUkhrQ3F4LVhjdl9uaEp2V2ROemU3M3EyQ05nMUQtVF9iYkZjeXJzdkxkYnI1MEF0czhtY1lNaXd0RzMtU2I3a1gzRDBHMUVUSGloU3RQdkxTUmFraGhVOEc4TTUyemdOSTFOZGlweWZsNDRoZlRDcE9ON3dURWRoQ3o5WHhHVzFEVDdUVlhaVUZYaHdValh6OW9kTGZ2VTRtTnNTbTJLMTJ4OTVnbnRCWEN6dXBF?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1017,
+      "name": "Dhurandhar, before and…",
+      "originalTitle": "Dhurandhar, before and after: Saif says Bollywood ‘needs to be brave’ after Rs 3100 cr hit",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 47,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「The Indian Express」热点《Dhurandhar, before and after: Saif says Bollywood ‘needs to be brave’ after Rs 3100 cr hit》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Indian Express。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "bollywood",
+        "category": "垂类补充",
+        "sourceName": "The Indian Express",
+        "title": "Dhurandhar, before and after: Saif says Bollywood ‘needs to be brave’ after Rs 3100 cr hit",
+        "publishedAt": "Thu, 09 Jul 2026 08:18:59 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOX1lMZGNRdFdURV9uelpoVnhQWkEyQ1dLZ19UcTRkRlVhR3ZBR2JGRFFPY05CQWJ3UTZFTDI3MjVDdjI2NG9ienBydHZFLVNGWFdxOUUtUW5mUTJIX1FGT3VtZTFOMWVYOGlweE5uSjlCQmZtSTJFd0ZWNUFMMHhLXzlLMzRPcjYtQlZaeFhPazQ3RHpwSXJqc2JWQjhwV1prS1pvNVBDRm5QUE1Iek9YZWQtZDVPYU9UYmZ1NTA2MWM0UGhhUXlKY1BNQmFkTTNpU0RUbERnR2pKeDUzcXfSAeQBQVVfeXFMUEtJYzhucjZuQV9hbi01bmMwM2RHYnVQWHczOWpscWhuZEJBcGJyME55cHQ2OWZhRm1LNUh2eFIxSzY0SzlGeTZ6ZFdOa1RSUE1ZV3RIZTJiQ0kyRExPYmJIdjAwdENVZnZYcWJCd1Z6TzBVazlYcDBnSGZGRWVsUGQ3bUNFQjhiZnlpXzZRNGZfYVhibHU4bW5KZ0hOYmVidkV4ZFhkQkhSV19sZmF6c3ZXaE9INVJCanNHTEJKQlFUdWwzaDl2UUxIOFVfOGEyaEFablduYnN1S3R5YlFOWS1LcDBE?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Dhurandhar, before and after: Saif says Bollywood ‘needs to be brave’ after Rs 3100 cr hit",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOX1lMZGNRdFdURV9uelpoVnhQWkEyQ1dLZ19UcTRkRlVhR3ZBR2JGRFFPY05CQWJ3UTZFTDI3MjVDdjI2NG9ienBydHZFLVNGWFdxOUUtUW5mUTJIX1FGT3VtZTFOMWVYOGlweE5uSjlCQmZtSTJFd0ZWNUFMMHhLXzlLMzRPcjYtQlZaeFhPazQ3RHpwSXJqc2JWQjhwV1prS1pvNVBDRm5QUE1Iek9YZWQtZDVPYU9UYmZ1NTA2MWM0UGhhUXlKY1BNQmFkTTNpU0RUbERnR2pKeDUzcXfSAeQBQVVfeXFMUEtJYzhucjZuQV9hbi01bmMwM2RHYnVQWHczOWpscWhuZEJBcGJyME55cHQ2OWZhRm1LNUh2eFIxSzY0SzlGeTZ6ZFdOa1RSUE1ZV3RIZTJiQ0kyRExPYmJIdjAwdENVZnZYcWJCd1Z6TzBVazlYcDBnSGZGRWVsUGQ3bUNFQjhiZnlpXzZRNGZfYVhibHU4bW5KZ0hOYmVidkV4ZFhkQkhSV19sZmF6c3ZXaE9INVJCanNHTEJKQlFUdWwzaDl2UUxIOFVfOGEyaEFablduYnN1S3R5YlFOWS1LcDBE?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1018,
+      "name": "Meghalaya Celebrates B…",
+      "originalTitle": "Meghalaya Celebrates Behdienkhlam Festival With Traditional Rituals, Community Prayers",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 60,
+      "score": 86,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「Northeast Today」热点《Meghalaya Celebrates Behdienkhlam Festival With Traditional Rituals, Community Prayers》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Northeast Today。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "festival",
+        "category": "垂类补充",
+        "sourceName": "Northeast Today",
+        "title": "Meghalaya Celebrates Behdienkhlam Festival With Traditional Rituals, Community Prayers",
+        "publishedAt": "Thu, 09 Jul 2026 08:26:37 GMT",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTERhRWFkdXA3NlBtdTlnR09WQnVYbnZ5VEkwQzdBWWZwQjlYemtmNVY2cFc5X05rR2piSVRaak93am0tYmpVZmtiZkJQdF9IZFEzRmNHVW1JTFF6VU0wcXppaGl3bUF3OC1fS3JPVW9DbTAyc3RRRTh1STRYUG8wN0NMa1FvT0E2a1FyeG1IU3hpVmVjSVFuLXBoLXF1MEtGLXN2cm8zR3BzNWduNy1WMDhtTGNoRExKNW1VYUtsVQ?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Meghalaya Celebrates Behdienkhlam Festival With Traditional Rituals, Community Prayers",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTERhRWFkdXA3NlBtdTlnR09WQnVYbnZ5VEkwQzdBWWZwQjlYemtmNVY2cFc5X05rR2piSVRaak93am0tYmpVZmtiZkJQdF9IZFEzRmNHVW1JTFF6VU0wcXppaGl3bUF3OC1fS3JPVW9DbTAyc3RRRTh1STRYUG8wN0NMa1FvT0E2a1FyeG1IU3hpVmVjSVFuLXBoLXF1MEtGLXN2cm8zR3BzNWduNy1WMDhtTGNoRExKNW1VYUtsVQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "name": "Kuliner Tempo Dulu hin…",
+      "originalTitle": "Kuliner Tempo Dulu hingga Musik Disabilitas, Pasar Konah Kademangan Jadi Magnet Warga",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 47,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「InfoPublik」热点《Kuliner Tempo Dulu hingga Musik Disabilitas, Pasar Konah Kademangan Jadi Magnet Warga》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：InfoPublik。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musik",
+        "category": "核心话题",
+        "sourceName": "InfoPublik",
+        "title": "Kuliner Tempo Dulu hingga Musik Disabilitas, Pasar Konah Kademangan Jadi Magnet Warga",
+        "publishedAt": "Thu, 09 Jul 2026 06:04:52 GMT",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZWh4RWJ6WUExUkt3SDk3NG1BOXZPOUZrZnBmZEJ4NDc5ekMxQldITk80RGlhM3VncE5paXRUcy1TR2pPZE90clRaYlVjNmg4ajMxN3dMV085WlRldVhDWEFfb2ZOdkVmMGU3ZHQ4WVExSlpxakUwblp2UWdsVHotMi1aQWthNU1UbDNCaUlsSjYySHFUaUloTEpZSDhNeERqMGYtRGxxVVNEQ2FFbVd2ekhJcDNtaFN6NzdoLVdDcDdDOTRfN01vVEpWdlg?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Kuliner Tempo Dulu hingga Musik Disabilitas, Pasar Konah Kademangan Jadi Magnet Warga",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZWh4RWJ6WUExUkt3SDk3NG1BOXZPOUZrZnBmZEJ4NDc5ekMxQldITk80RGlhM3VncE5paXRUcy1TR2pPZE90clRaYlVjNmg4ajMxN3dMV085WlRldVhDWEFfb2ZOdkVmMGU3ZHQ4WVExSlpxakUwblp2UWdsVHotMi1aQWthNU1UbDNCaUlsSjYySHFUaUloTEpZSDhNeERqMGYtRGxxVVNEQ2FFbVd2ekhJcDNtaFN6NzdoLVdDcDdDOTRfN01vVEpWdlg?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "name": "Piala Dunia 2026 dan K…",
+      "originalTitle": "Piala Dunia 2026 dan Kisah Para Peziarah Sepak Bola",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
@@ -678,35 +822,35 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「The Guardian」热点《‘Era-defining’ growth of women’s cricket now outstripping men’s game》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：The Guardian。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Kompas.id」热点《Piala Dunia 2026 dan Kisah Para Peziarah Sepak Bola》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Kompas.id。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "cricket",
-        "category": "核心话题",
-        "sourceName": "The Guardian",
-        "title": "‘Era-defining’ growth of women’s cricket now outstripping men’s game",
-        "publishedAt": "Wed, 08 Jul 2026 20:46:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQnA3b1IyYjBhckY4eVlWMzhDR1hvVjljdXZrczJzOV9zd3pMTDRxVjcyaFZqQzIxYjA1UTRDLVZZdkhCR2V1ZWl0aDBVOHo1UE8xWHdHTkJOQ0Z0RnZqbUtoZTVLZ1Z3aVc2T1JlTDJpWlhvUDM3UlRydEJ3UTNzcW5BYTVESHoyUkN2cXhKNFNTUkZDM0hybmNseXFDTnhD?oc=5"
+        "topic": "sepak bola",
+        "category": "垂类补充",
+        "sourceName": "Kompas.id",
+        "title": "Piala Dunia 2026 dan Kisah Para Peziarah Sepak Bola",
+        "publishedAt": "Thu, 09 Jul 2026 08:59:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPczA2LTRiNzd3YzNTOVBYQWNVVlU1OXR4TkRqYW93RkpUcnRENHhDWW1TN3NTUERvRzRHY0ROcDE2UjFBYWY0UGt2cnRtWVE2OFVNQy1VRU1YTDdXYWlmRzR5ZUI5TlcwcmlIelNOSS1waWpNRU9Dd0NYWnZDN2JYb0JPUXdGVlRf?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "‘Era-defining’ growth of women’s cricket now outstripping men’s game",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQnA3b1IyYjBhckY4eVlWMzhDR1hvVjljdXZrczJzOV9zd3pMTDRxVjcyaFZqQzIxYjA1UTRDLVZZdkhCR2V1ZWl0aDBVOHo1UE8xWHdHTkJOQ0Z0RnZqbUtoZTVLZ1Z3aVc2T1JlTDJpWlhvUDM3UlRydEJ3UTNzcW5BYTVESHoyUkN2cXhKNFNTUkZDM0hybmNseXFDTnhD?oc=5"
+          "title": "Piala Dunia 2026 dan Kisah Para Peziarah Sepak Bola",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPczA2LTRiNzd3YzNTOVBYQWNVVlU1OXR4TkRqYW93RkpUcnRENHhDWW1TN3NTUERvRzRHY0ROcDE2UjFBYWY0UGt2cnRtWVE2OFVNQy1VRU1YTDdXYWlmRzR5ZUI5TlcwcmlIelNOSS1waWpNRU9Dd0NYWnZDN2JYb0JPUXdGVlRf?oc=5"
         }
       ]
     },
     {
-      "id": 1017,
-      "name": "Amitabh Bachchan to Ra…",
-      "originalTitle": "Amitabh Bachchan to Ranbir Kapoor: Why Bollywood A-listers are racing to buy luxury real estate in Ayodhy",
-      "region": "印度",
-      "country": "印度",
+      "id": 1021,
+      "name": "Rekomendasi Film Biosk…",
+      "originalTitle": "Rekomendasi Film Bioskop Terbaru Indonesia Sepanjang Juli 2026",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 52,
+      "trend": 53,
       "score": 83,
       "status": "上升",
       "type": "realtime",
@@ -714,172 +858,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「The Times of India」热点《Amitabh Bachchan to Ranbir Kapoor: Why Bollywood A-listers are racing to buy luxury real estate in Ayodhy》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Times of India。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "bollywood",
-        "category": "垂类补充",
-        "sourceName": "The Times of India",
-        "title": "Amitabh Bachchan to Ranbir Kapoor: Why Bollywood A-listers are racing to buy luxury real estate in Ayodhy",
-        "publishedAt": "Wed, 08 Jul 2026 09:30:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPWUJxbUJVdWMzOWQyejRIWkNuNDBzUXVUV28wMFptNGl0MlJTdUlmR1NsT2dVb3BQekFQdGtwWDMxQ1RtaXFwNV9RTGhvX3BEcElsZm9YUTZ2UnMwNUNPQnU2NlEyaUFpSEJYZUc3QjdfWF9xVXpfQUNwMGlRMlpBRzNKeTQ3T29lUzJHZHh3RTIwNUliSER2YllKU3ZnUV9YaXFYVUIwOG1Maks2aVo0UGt3c294a0pxOXEwRHIzXzNuX1I1UXhnbHhJdzE1ZHlod255MmhhTWVuOG5LYlNtTGRvQVNxUzBLUmVJY1VoWDYzUFhLeFpLbHRUVlhDMWFud21TajhIQ1M2T2I3MmZITmwzLUl5QkdMTWVHcEdEek5DTjVIclZKYzRR0gGvAkFVX3lxTE02TFBsNmRDTzk0aVNRalZHQk1tX0hDMlpEbEczdmgtLVIwYzd1cXo4T1U3MUZiV2hsa1pkRE5UNnJMelhiSnduRlQtcGltYVNSRG9WdDBUMFB2MXFVZXlUTUJySUZSTXdVLW9GdG5rbFFJTXdSbnlybEltN1FIWDRWelJMdWtEdW9yeWszLUUxMmZydW1PRXhmOG50YmZEcGljc0tTN3NoM2NLWXlHY3Z4RzRIQXYyUml3dDN5SFozdmNCalNPNGl1SEtMVVRkU3V6eEp0QkRQRTdFa3JHSGNVaW11UEJ4MVNkUDNtUmNDOUpoQWoydUF3MWxpUGt0akktUENQeFk5eC1UZ1hfZGVwV3NHSjRUSWdWMWNOTGlCWG1XOExSZ3lyTkZHTXBHNA?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Amitabh Bachchan to Ranbir Kapoor: Why Bollywood A-listers are racing to buy luxury real estate in Ayodhy",
-          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPWUJxbUJVdWMzOWQyejRIWkNuNDBzUXVUV28wMFptNGl0MlJTdUlmR1NsT2dVb3BQekFQdGtwWDMxQ1RtaXFwNV9RTGhvX3BEcElsZm9YUTZ2UnMwNUNPQnU2NlEyaUFpSEJYZUc3QjdfWF9xVXpfQUNwMGlRMlpBRzNKeTQ3T29lUzJHZHh3RTIwNUliSER2YllKU3ZnUV9YaXFYVUIwOG1Maks2aVo0UGt3c294a0pxOXEwRHIzXzNuX1I1UXhnbHhJdzE1ZHlod255MmhhTWVuOG5LYlNtTGRvQVNxUzBLUmVJY1VoWDYzUFhLeFpLbHRUVlhDMWFud21TajhIQ1M2T2I3MmZITmwzLUl5QkdMTWVHcEdEek5DTjVIclZKYzRR0gGvAkFVX3lxTE02TFBsNmRDTzk0aVNRalZHQk1tX0hDMlpEbEczdmgtLVIwYzd1cXo4T1U3MUZiV2hsa1pkRE5UNnJMelhiSnduRlQtcGltYVNSRG9WdDBUMFB2MXFVZXlUTUJySUZSTXdVLW9GdG5rbFFJTXdSbnlybEltN1FIWDRWelJMdWtEdW9yeWszLUUxMmZydW1PRXhmOG50YmZEcGljc0tTN3NoM2NLWXlHY3Z4RzRIQXYyUml3dDN5SFozdmNCalNPNGl1SEtMVVRkU3V6eEp0QkRQRTdFa3JHSGNVaW11UEJ4MVNkUDNtUmNDOUpoQWoydUF3MWxpUGt0akktUENQeFk5eC1UZ1hfZGVwV3NHSjRUSWdWMWNOTGlCWG1XOExSZ3lyTkZHTXBHNA?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1018,
-      "name": "Bengaluru Internationa…",
-      "originalTitle": "Bengaluru International Short Film Festival from August 14-16",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 50,
-      "score": 82,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Deccan Herald」热点《Bengaluru International Short Film Festival from August 14-16》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Deccan Herald。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "festival",
-        "category": "垂类补充",
-        "sourceName": "Deccan Herald",
-        "title": "Bengaluru International Short Film Festival from August 14-16",
-        "publishedAt": "Wed, 08 Jul 2026 21:00:06 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZzloY0Z1ZjJDN09BRGhTZWFBSkxFdXVlZW9JRzNIQnQyZVlkcUttbjJlSVlHTGV5THNxTExZUlRqS3Q4aHpEV3h5RkJVbEk5a0h5REFTRElhajVscWs1T0tKOXVsUHg3UHdJekRCekV1alpzLUd1MVFSYlhyM3lvTXJfSW11MExWbjM5MTdhM3V6R0NJRTQ0WGU0U0ItZHBIQ2lSWWdCYVNXZUxEQXVDcy1PZ1VZaXRKck5UalM3aWxtQQ?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Bengaluru International Short Film Festival from August 14-16",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZzloY0Z1ZjJDN09BRGhTZWFBSkxFdXVlZW9JRzNIQnQyZVlkcUttbjJlSVlHTGV5THNxTExZUlRqS3Q4aHpEV3h5RkJVbEk5a0h5REFTRElhajVscWs1T0tKOXVsUHg3UHdJekRCekV1alpzLUd1MVFSYlhyM3lvTXJfSW11MExWbjM5MTdhM3V6R0NJRTQ0WGU0U0ItZHBIQ2lSWWdCYVNXZUxEQXVDcy1PZ1VZaXRKck5UalM3aWxtQQ?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1019,
-      "name": "Bupati Garut Dorong Se…",
-      "originalTitle": "Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 59,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Jabarprov」热点《Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Jabarprov。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "musik",
-        "category": "核心话题",
-        "sourceName": "Jabarprov",
-        "title": "Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah",
-        "publishedAt": "Wed, 08 Jul 2026 07:41:22 GMT",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNXBoWVdSR0RBVng3MUFQcS1ObVBVV2dUWTczOEVBaV8xWkJSbmk5MFowVWxhSGNJMHh2eXhtTEZPbHNROVZWSXF3ME91VG8zeUpZZHNJOENpZ3NoQ0VNcDhaMHNWNHcyMXhfY1N1VEI0VDlpVE45RVJWVWxsYjhaRkozUGVBWnR1dXE0WXgzb1V2ejdMbE15LU1KengwVmlPNF9YQzhyeGdDY3pyMk1xU3VHWVpVVlJLYjZkNWNB?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Bupati Garut Dorong Seni Musik Islami Jadi Media Dakwah dan Penggerak Ekonomi Daerah",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNXBoWVdSR0RBVng3MUFQcS1ObVBVV2dUWTczOEVBaV8xWkJSbmk5MFowVWxhSGNJMHh2eXhtTEZPbHNROVZWSXF3ME91VG8zeUpZZHNJOENpZ3NoQ0VNcDhaMHNWNHcyMXhfY1N1VEI0VDlpVE45RVJWVWxsYjhaRkozUGVBWnR1dXE0WXgzb1V2ejdMbE15LU1KengwVmlPNF9YQzhyeGdDY3pyMk1xU3VHWVpVVlJLYjZkNWNB?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1020,
-      "name": "FBI secara tak terduga…",
-      "originalTitle": "FBI secara tak terduga meluncurkan penyelidikan terhadap Asosiasi Sepak Bola Argentina.",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 46,
-      "score": 80,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Vietnam.vn」热点《FBI secara tak terduga meluncurkan penyelidikan terhadap Asosiasi Sepak Bola Argentina.》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Vietnam.vn。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "sepak bola",
-        "category": "垂类补充",
-        "sourceName": "Vietnam.vn",
-        "title": "FBI secara tak terduga meluncurkan penyelidikan terhadap Asosiasi Sepak Bola Argentina.",
-        "publishedAt": "Wed, 08 Jul 2026 14:11:06 GMT",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3NkNrUGNTX04tWDd4cFZ2UzM1RnptSHBVLWdSU05ySy1wZjlTUlpxb2syZEdZRlhyV3pCc1RvRXdkV0dMeFU4a3d3UUVxZTVXcEJjZUpGS3VLbXNLTk9oZ1kwSVM4di0wRWsxYzNLU1VHTmxpM1FhUURFLXJDTTg?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "FBI secara tak terduga meluncurkan penyelidikan terhadap Asosiasi Sepak Bola Argentina.",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3NkNrUGNTX04tWDd4cFZ2UzM1RnptSHBVLWdSU05ySy1wZjlTUlpxb2syZEdZRlhyV3pCc1RvRXdkV0dMeFU4a3d3UUVxZTVXcEJjZUpGS3VLbXNLTk9oZ1kwSVM4di0wRWsxYzNLU1VHTmxpM1FhUURFLXJDTTg?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1021,
-      "name": "Hadiri Gala Premiere F…",
-      "originalTitle": "Hadiri Gala Premiere Film \"Bonnie\" di Jakarta, Helldy Bangga Wong Cilegon Bisa jadi Produser Film Laga",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 59,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Berita Cilegon」热点《Hadiri Gala Premiere Film \"Bonnie\" di Jakarta, Helldy Bangga Wong Cilegon Bisa jadi Produser Film Laga》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Berita Cilegon。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Beautynesia」热点《Rekomendasi Film Bioskop Terbaru Indonesia Sepanjang Juli 2026》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Beautynesia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "film",
         "category": "垂类补充",
-        "sourceName": "Berita Cilegon",
-        "title": "Hadiri Gala Premiere Film \"Bonnie\" di Jakarta, Helldy Bangga Wong Cilegon Bisa jadi Produser Film Laga",
-        "publishedAt": "Wed, 08 Jul 2026 17:28:40 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNjlSTk9aZHRKRG1uSlNudzh5TmVOQlJ1Rnl5eVlPSDRsRy1McmZhMVFRQTZreGlZYm5POW1yV2NCdUVsOUV0YU0zMmFMV29IOTR3NXNmcFZ0X2RoMmhGclZTYnB3VlA3aW9xX3RYVnEwbzJWajdBNGJKN3A2Njlac3NTempkSzJIeFJIMENDbGhEOXpTWGRnMmVyZGhpcWp3aG5iWW43TWY2TElUNHcxOE9FUFJ3dERNb1FEaEhjZDJvRXNTUTF5Q2hWWHhUTlNiVGVJYWVmY2YwVHhMVG5ENmRpZ1luY21IbkE?oc=5"
+        "sourceName": "Beautynesia",
+        "title": "Rekomendasi Film Bioskop Terbaru Indonesia Sepanjang Juli 2026",
+        "publishedAt": "Thu, 09 Jul 2026 08:15:35 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM3B0MDA4aVVkaEVNb0NUN1J5WUROeDFGV1drTW5hRWZ1bE1VNHVRUlRZUVZmSWFEV2J3dU1CRU55VDN6dW0wNExaRkMxMUJLRm12cUZWbkhqUEdfa2ZGdGRpRjdlTDBPV1ZrOGFhSDVZTFRfa1Z2bUJQYU0wdThGWmc1S0NiZFU5NWl1T3ByancxLWlDVG9ybU5BdVAyalBEY3BWbkNaSDDSAa4BQVVfeXFMTWVYQ2x5VEdPT1Q5QUR1TWxwQ2J6UnRzMHBmSDN0azJvWWlPdjdpRlYxRkdfODNELUE3eHVhc2tjdUE5U015bjRWTUVqQnpJWlNDNzlqY1lTQm15bmRCejd3Y0lxSE0wdGR3WE1TSmFROG4yYWZjVVZfb1dVZ1MyR1p2YWNqMmhZWlcwVU9peHZLcWp2LXdlTFhabzBHa2Vvc0hVS3ZtQWhrZ3QtSGJR?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Hadiri Gala Premiere Film \"Bonnie\" di Jakarta, Helldy Bangga Wong Cilegon Bisa jadi Produser Film Laga",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNjlSTk9aZHRKRG1uSlNudzh5TmVOQlJ1Rnl5eVlPSDRsRy1McmZhMVFRQTZreGlZYm5POW1yV2NCdUVsOUV0YU0zMmFMV29IOTR3NXNmcFZ0X2RoMmhGclZTYnB3VlA3aW9xX3RYVnEwbzJWajdBNGJKN3A2Njlac3NTempkSzJIeFJIMENDbGhEOXpTWGRnMmVyZGhpcWp3aG5iWW43TWY2TElUNHcxOE9FUFJ3dERNb1FEaEhjZDJvRXNTUTF5Q2hWWHhUTlNiVGVJYWVmY2YwVHhMVG5ENmRpZ1luY21IbkE?oc=5"
+          "title": "Rekomendasi Film Bioskop Terbaru Indonesia Sepanjang Juli 2026",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM3B0MDA4aVVkaEVNb0NUN1J5WUROeDFGV1drTW5hRWZ1bE1VNHVRUlRZUVZmSWFEV2J3dU1CRU55VDN6dW0wNExaRkMxMUJLRm12cUZWbkhqUEdfa2ZGdGRpRjdlTDBPV1ZrOGFhSDVZTFRfa1Z2bUJQYU0wdThGWmc1S0NiZFU5NWl1T3ByancxLWlDVG9ybU5BdVAyalBEY3BWbkNaSDDSAa4BQVVfeXFMTWVYQ2x5VEdPT1Q5QUR1TWxwQ2J6UnRzMHBmSDN0azJvWWlPdjdpRlYxRkdfODNELUE3eHVhc2tjdUE5U015bjRWTUVqQnpJWlNDNzlqY1lTQm15bmRCejd3Y0lxSE0wdGR3WE1TSmFROG4yYWZjVVZfb1dVZ1MyR1p2YWNqMmhZWlcwVU9peHZLcWp2LXdlTFhabzBHa2Vvc0hVS3ZtQWhrZ3QtSGJR?oc=5"
         }
       ]
     },
     {
       "id": 1022,
-      "name": "Primeiro dia de seleti…",
-      "originalTitle": "Primeiro dia de seletiva de futebol promovida pela Prefeitura e UEC reúne 100 participantes",
+      "name": "Documentos mostram cap…",
+      "originalTitle": "Documentos mostram capital estrangeiro em empresa de direitos do futebol - 09/07/2026 - Painel",
       "region": "南美洲",
       "country": "巴西",
       "source": [
@@ -894,65 +894,65 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「uberlandia.mg.gov.br」热点《Primeiro dia de seletiva de futebol promovida pela Prefeitura e UEC reúne 100 participantes》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：uberlandia.mg.gov.br。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「Folha de S.Paulo」热点《Documentos mostram capital estrangeiro em empresa de direitos do futebol - 09/07/2026 - Painel》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Folha de S.Paulo。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "futebol",
         "category": "核心话题",
-        "sourceName": "uberlandia.mg.gov.br",
-        "title": "Primeiro dia de seletiva de futebol promovida pela Prefeitura e UEC reúne 100 participantes",
-        "publishedAt": "Wed, 08 Jul 2026 16:43:42 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOa3pJRTBZX3dzd010OHVxeDNLMmtTV1VEd2tWeHpmcWZ0RzVfSExwTW9aUWpNZTdsSmNHbU9sZGoxY2xhQzNVZUlDbmVpb3c1QmZxX0RNTTdRRWpoNE5hNjh4WTFpU2tZVEJYYm5zbUNnNjViOVJFUEViejE3YmtKY19kR0pHMlFtdEVpTXlMbU15czRYT0JBcHBuOUdmTHZvSU1aVjRTQ3RXbWtQTDFMY3MtR3o4QW5UNUwxLVZrWkFYcUFRUEx0VTUwbERzNjZ0OHc?oc=5"
+        "sourceName": "Folha de S.Paulo",
+        "title": "Documentos mostram capital estrangeiro em empresa de direitos do futebol - 09/07/2026 - Painel",
+        "publishedAt": "Thu, 09 Jul 2026 09:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZS1IczVrdHJxMk1hRGp4dTJoa3p0TEt1VXdkQnlRSUxJV0ZLZ29sOEZqRERpQzlpSHpMc0VlMG8tNjNzODFLR094TW5Vb0dxTk0wYzdQTGdRZXk5WVhtR3dzQTR2ZnVnUnNWX3ZKN0U0VklSZ0xOYkZVM1hJLTE3ZUxMMWtKenlpTVVZZW1paFpyQ2VmZTFaWlBTVlBpaGI5NEppZ0tkdEozY3FmUERHVmJoUG15V2F1UFFobnFycjdWck1nLVh5cHF1OA?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Primeiro dia de seletiva de futebol promovida pela Prefeitura e UEC reúne 100 participantes",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOa3pJRTBZX3dzd010OHVxeDNLMmtTV1VEd2tWeHpmcWZ0RzVfSExwTW9aUWpNZTdsSmNHbU9sZGoxY2xhQzNVZUlDbmVpb3c1QmZxX0RNTTdRRWpoNE5hNjh4WTFpU2tZVEJYYm5zbUNnNjViOVJFUEViejE3YmtKY19kR0pHMlFtdEVpTXlMbU15czRYT0JBcHBuOUdmTHZvSU1aVjRTQ3RXbWtQTDFMY3MtR3o4QW5UNUwxLVZrWkFYcUFRUEx0VTUwbERzNjZ0OHc?oc=5"
+          "title": "Documentos mostram capital estrangeiro em empresa de direitos do futebol - 09/07/2026 - Painel",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZS1IczVrdHJxMk1hRGp4dTJoa3p0TEt1VXdkQnlRSUxJV0ZLZ29sOEZqRERpQzlpSHpMc0VlMG8tNjNzODFLR094TW5Vb0dxTk0wYzdQTGdRZXk5WVhtR3dzQTR2ZnVnUnNWX3ZKN0U0VklSZ0xOYkZVM1hJLTE3ZUxMMWtKenlpTVVZZW1paFpyQ2VmZTFaWlBTVlBpaGI5NEppZ0tkdEozY3FmUERHVmJoUG15V2F1UFFobnFycjdWck1nLVh5cHF1OA?oc=5"
         }
       ]
     },
     {
       "id": 1023,
-      "name": "Feriado de 9 de Julho …",
-      "originalTitle": "Feriado de 9 de Julho tem programação cultural com música, dança, exposições e atividades para toda a família",
+      "name": "Cérebros de bebês resp…",
+      "originalTitle": "Cérebros de bebês respondem à música já aos 3 meses de idade",
       "region": "南美洲",
       "country": "巴西",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 53,
-      "score": 83,
+      "trend": 59,
+      "score": 86,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「Prefeitura de Jundiaí」热点《Feriado de 9 de Julho tem programação cultural com música, dança, exposições e atividades para toda a família》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Prefeitura de Jundiaí。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「O GLOBO」热点《Cérebros de bebês respondem à música já aos 3 meses de idade》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：O GLOBO。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musica",
         "category": "垂类补充",
-        "sourceName": "Prefeitura de Jundiaí",
-        "title": "Feriado de 9 de Julho tem programação cultural com música, dança, exposições e atividades para toda a família",
-        "publishedAt": "Wed, 08 Jul 2026 18:11:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNR1ZSSlFUVkNpZW9EZ1ZiS0FfaTRLX1BxMDB5UFlINl9pT0dwQ2hOQkFlYjBPQmZNckxMeU9VaHZtaVBiUnMyVnk5SzVBamg1amZITU5ab3lhcWdKMGdJdE8xWk5BLWIyeFpMNkJDOVZNSE5CVnVoTVpyaWxGX0tnMmo4WUNQME1pNlNKSXMyNkFOLTFrLVV4ZlNzUzYybTdLMjhLNFRfZl9HaEQ1cEs4MVRobHN1RVk1YjVvYk5rV1hEbk1rYkx6SFIzTWtjZURibTQ4ZXFtajlLU2lTSVdBZWRyU3pyVTdQakE?oc=5"
+        "sourceName": "O GLOBO",
+        "title": "Cérebros de bebês respondem à música já aos 3 meses de idade",
+        "publishedAt": "Thu, 09 Jul 2026 07:30:18 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUVB2TUdFSjlEN0tOSlRpdXVxV0x4Mk56akg3NnFYZlBmTTdoX2x0c3kteGc4Z1hXZkhUcFUtQklaSVhvcEpFQUp0NU82cGZLSVg2U29Ba3dEZGl6bk1DSXhjUnNWWGgyazZoMGJnSW5NNFlYS3RXZFl3LWtTU2RxT0NxS194X2dPdU53Z2pTQ2pFSGlKZlFzX2pzUEJyM09BTTUzeDd3cjk1cEI1eTZMdFJ1QlNVbk3SAcYBQVVfeXFMUFZNNEFLZXdRUTRkS01EcU0yMFByNmtrTE00VkhoMmdTMkZ6VWdLMktrOHY5Q09WUXBoaFVjbmhzMHpIcWdXLUd0SEt2Qm1DbUZHWFhOZG0yY0lSckZLdjk3QVl4a2JqaW00anBvQy1ub1I1WHoyQm5VMlBMVE8yU1Q3SzdDNnFGMHN2VXRXVDVyYWNDZHU0SF93bGZlSGtHNjBnOEFqdjdBY1V0a2lsSHNpM2JhWmQ4U2JhOTU4ZFRxd0FId3RR?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Feriado de 9 de Julho tem programação cultural com música, dança, exposições e atividades para toda a família",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNR1ZSSlFUVkNpZW9EZ1ZiS0FfaTRLX1BxMDB5UFlINl9pT0dwQ2hOQkFlYjBPQmZNckxMeU9VaHZtaVBiUnMyVnk5SzVBamg1amZITU5ab3lhcWdKMGdJdE8xWk5BLWIyeFpMNkJDOVZNSE5CVnVoTVpyaWxGX0tnMmo4WUNQME1pNlNKSXMyNkFOLTFrLVV4ZlNzUzYybTdLMjhLNFRfZl9HaEQ1cEs4MVRobHN1RVk1YjVvYk5rV1hEbk1rYkx6SFIzTWtjZURibTQ4ZXFtajlLU2lTSVdBZWRyU3pyVTdQakE?oc=5"
+          "title": "Cérebros de bebês respondem à música já aos 3 meses de idade",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUVB2TUdFSjlEN0tOSlRpdXVxV0x4Mk56akg3NnFYZlBmTTdoX2x0c3kteGc4Z1hXZkhUcFUtQklaSVhvcEpFQUp0NU82cGZLSVg2U29Ba3dEZGl6bk1DSXhjUnNWWGgyazZoMGJnSW5NNFlYS3RXZFl3LWtTU2RxT0NxS194X2dPdU53Z2pTQ2pFSGlKZlFzX2pzUEJyM09BTTUzeDd3cjk1cEI1eTZMdFJ1QlNVbk3SAcYBQVVfeXFMUFZNNEFLZXdRUTRkS01EcU0yMFByNmtrTE00VkhoMmdTMkZ6VWdLMktrOHY5Q09WUXBoaFVjbmhzMHpIcWdXLUd0SEt2Qm1DbUZHWFhOZG0yY0lSckZLdjk3QVl4a2JqaW00anBvQy1ub1I1WHoyQm5VMlBMVE8yU1Q3SzdDNnFGMHN2VXRXVDVyYWNDZHU0SF93bGZlSGtHNjBnOEFqdjdBY1V0a2lsSHNpM2JhWmQ4U2JhOTU4ZFRxd0FId3RR?oc=5"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 92,
-      "growth": 49,
+      "count": 95,
+      "growth": 53,
       "countries": [
         "印度"
       ],
@@ -963,8 +963,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 92,
-      "growth": 20,
+      "count": 95,
+      "growth": 24,
       "countries": [
         "印度尼西亚"
       ],
@@ -975,8 +975,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 34,
-      "growth": 20,
+      "count": 37,
+      "growth": 24,
       "countries": [
         "俄罗斯"
       ],
@@ -987,8 +987,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 68,
-      "growth": 36,
+      "count": 74,
+      "growth": 34,
       "countries": [
         "尼日利亚",
         "南非",
@@ -1002,8 +1002,8 @@
       ]
     },
     "南美洲": {
-      "count": 97,
-      "growth": 55,
+      "count": 103,
+      "growth": 52,
       "countries": [
         "巴西",
         "阿根廷",
@@ -1092,144 +1092,144 @@
   ],
   "templateOutputs": [
     {
-      "id": "tpl-0-selfie_comic",
-      "hotspotId": 1004,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜自拍漫画壁纸",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 98 · 用户自拍一张，AI 转成热点同款漫画主角",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23111827%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f472b6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22240%22%20cy%3D%22348%22%20r%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.86%22%2F%3E%3Cpath%20d%3D%22M176%20338%20C185%20250%20292%20242%20307%20336%20C328%20390%20288%20444%20240%20444%20C190%20444%20152%20390%20176%20338Z%22%20fill%3D%22%2338bdf8%22%20opacity%3D%22.7%22%2F%3E%3Ccircle%20cx%3D%22210%22%20cy%3D%22352%22%20r%3D%2210%22%20fill%3D%22%23111827%22%20opacity%3D%22.72%22%2F%3E%3Ccircle%20cx%3D%22270%22%20cy%3D%22352%22%20r%3D%2210%22%20fill%3D%22%23111827%22%20opacity%3D%22.72%22%2F%3E%3Cpath%20d%3D%22M210%20398%20C230%20416%20260%20416%20278%20398%22%20stroke%3D%22%23f472b6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%228%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M112%20600%20C170%20510%20310%20510%20368%20600%20L392%20770%20L88%20770Z%22%20fill%3D%22%23f472b6%22%20opacity%3D%22.52%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%87%AA%E6%8B%8D%E6%BC%AB%E7%94%BB%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%94%A8%E6%88%B7%E8%87%AA%E6%8B%8D%E4%B8%80%E5%BC%A0%EF%BC%8CAI%20%E8%BD%AC%E6%88%90%E7%83%AD%E7%82%B9%E5%90%8C%E6%AC%BE%E6%BC%AB%E7%94%BB%E4%B8%BB%E8%A7%92%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：自拍漫画壁纸（AI创作玩法）。用户上传一张自拍照，保留人物五官气质，把服饰、背景和色彩转译成当前热点氛围，生成原创漫画锁屏壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-0-screenshot_theme",
-      "hotspotId": 1004,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜截图即主题",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 98 · 看到喜欢的画面截一下，自动长成一套主题",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23eff6ff%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2360a5fa%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23a78bfa%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2296%22%20y%3D%22210%22%20width%3D%22288%22%20height%3D%22420%22%20rx%3D%2242%22%20fill%3D%22%23fff%22%20opacity%3D%22.28%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%22248%22%20width%3D%22232%22%20height%3D%22128%22%20rx%3D%2224%22%20fill%3D%22%23a78bfa%22%20opacity%3D%22.35%22%2F%3E%3Ccircle%20cx%3D%22168%22%20cy%3D%22438%22%20r%3D%2244%22%20fill%3D%22%2360a5fa%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M150%20558%20C218%20490%20278%20630%20344%20520%22%20stroke%3D%22%23a78bfa%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20opacity%3D%22.8%22%2F%3E%3Crect%20x%3D%22138%22%20y%3D%22658%22%20width%3D%22204%22%20height%3D%2230%22%20rx%3D%2215%22%20fill%3D%22%23fff%22%20opacity%3D%22.46%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E6%88%AA%E5%9B%BE%E5%8D%B3%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%9C%8B%E5%88%B0%E5%96%9C%E6%AC%A2%E7%9A%84%E7%94%BB%E9%9D%A2%E6%88%AA%E4%B8%80%E4%B8%8B%EF%BC%8C%E8%87%AA%E5%8A%A8%E9%95%BF%E6%88%90%E4%B8%80%E5%A5%97%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：截图即主题（AI创作玩法）。用户上传截图或照片，AI 提取主体、色彩、纹理和情绪，生成同风格手机壁纸、锁屏组件和主题色。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-0-local_festival",
-      "hotspotId": 1004,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜本地节庆纹样",
-      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 把当地节日、服饰、建筑纹样变成高级装饰壁纸",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff7ed%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23fb923c%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23facc15%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22240%22%20cy%3D%22410%22%20r%3D%22142%22%20fill%3D%22%23facc15%22%20opacity%3D%22.24%22%2F%3E%3Cpath%20d%3D%22M240%20230%20C300%20300%20300%20380%20240%20450%20C180%20380%20180%20300%20240%20230Z%22%20fill%3D%22%23fff%22%20opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M98%20582%20C178%20518%20302%20518%20382%20582%22%20stroke%3D%22%23facc15%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2216%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M122%20650%20C194%20594%20286%20594%20358%20650%22%20stroke%3D%22%23fb923c%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%20opacity%3D%22.58%22%2F%3E%3Ccircle%20cx%3D%22114%22%20cy%3D%22246%22%20r%3D%2230%22%20fill%3D%22%23fb923c%22%20opacity%3D%22.42%22%2F%3E%3Ccircle%20cx%3D%22366%22%20cy%3D%22246%22%20r%3D%2230%22%20fill%3D%22%23fb923c%22%20opacity%3D%22.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E6%9C%AC%E5%9C%B0%E8%8A%82%E5%BA%86%E7%BA%B9%E6%A0%B7%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E6%8A%8A%E5%BD%93%E5%9C%B0%E8%8A%82%E6%97%A5%E3%80%81%E6%9C%8D%E9%A5%B0%E3%80%81%E5%BB%BA%E7%AD%91%E7%BA%B9%E6%A0%B7%E5%8F%98%E6%88%90%E9%AB%98%E7%BA%A7%E8%A3%85%E9%A5%B0%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：本地节庆纹样（精品壁纸库）。提取当地节庆、城市、服饰或民俗纹样，做成可商用的高级装饰壁纸，强调本地文化识别。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-0-sticker_pack",
-      "hotspotId": 1004,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜贴纸拼贴壁纸",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 98 · 热点元素变贴纸，年轻、有趣、可二创",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff1f2%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23fb7185%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2292%22%20y%3D%22230%22%20width%3D%22126%22%20height%3D%22126%22%20rx%3D%2234%22%20fill%3D%22%23fff%22%20opacity%3D%22.72%22%20transform%3D%22rotate(-10%20155%20293)%22%2F%3E%3Ccircle%20cx%3D%22326%22%20cy%3D%22300%22%20r%3D%2272%22%20fill%3D%22%23fff%22%20opacity%3D%22.65%22%2F%3E%3Cpath%20d%3D%22M132%20520%20C190%20420%20322%20420%20380%20520%22%20stroke%3D%22%2338bdf8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2222%22%20fill%3D%22none%22%2F%3E%3Crect%20x%3D%22144%22%20y%3D%22584%22%20width%3D%22202%22%20height%3D%2286%22%20rx%3D%2243%22%20fill%3D%22%23fb7185%22%20opacity%3D%22.48%22%20transform%3D%22rotate(8%20245%20627)%22%2F%3E%3Ctext%20x%3D%22192%22%20y%3D%22640%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-weight%3D%22800%22%20font-size%3D%2234%22%3EWOW%3C%2Ftext%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%B4%B4%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E7%83%AD%E7%82%B9%E5%85%83%E7%B4%A0%E5%8F%98%E8%B4%B4%E7%BA%B8%EF%BC%8C%E5%B9%B4%E8%BD%BB%E3%80%81%E6%9C%89%E8%B6%A3%E3%80%81%E5%8F%AF%E4%BA%8C%E5%88%9B%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：贴纸拼贴壁纸（AI创作玩法）。把热点里的物品、动作、颜色和情绪转译成一组原创贴纸元素，拼成轻松有趣的锁屏壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-0-aod_set",
-      "hotspotId": 1004,
-      "hotspotName": "Stray Kids \"THIS & THA…",
-      "previewTitle": "Stray Kids \"THIS & THA…｜锁屏+AOD套装",
-      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 98 · 同一主题适配锁屏、桌面和息屏显示",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23020617%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%230ea5e9%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2314b8a6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22106%22%20y%3D%22174%22%20width%3D%22268%22%20height%3D%22500%22%20rx%3D%2246%22%20fill%3D%22%23020617%22%20opacity%3D%22.72%22%2F%3E%3Cpath%20d%3D%22M170%20348%20C206%20286%20276%20286%20312%20348%20C328%20420%20282%20488%20240%20540%20C198%20488%20152%20420%20170%20348Z%22%20stroke%3D%22%2314b8a6%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22410%22%20r%3D%22104%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20opacity%3D%22.28%22%20fill%3D%22none%22%2F%3E%3Crect%20x%3D%22150%22%20y%3D%22716%22%20width%3D%22180%22%20height%3D%2236%22%20rx%3D%2218%22%20fill%3D%22%230ea5e9%22%20opacity%3D%22.52%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E9%94%81%E5%B1%8F%2BAOD%E5%A5%97%E8%A3%85%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EStray%20Kids%20%26quot%3BTHIS%20%26amp%3B%20THAT%26quot%3B%20Tra%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%90%8C%E4%B8%80%E4%B8%BB%E9%A2%98%E9%80%82%E9%85%8D%E9%94%81%E5%B1%8F%E3%80%81%E6%A1%8C%E9%9D%A2%E5%92%8C%E6%81%AF%E5%B1%8F%E6%98%BE%E7%A4%BA%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Stray Kids \"THIS & THAT\" Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：锁屏+AOD套装（精品壁纸库）。生成一套低功耗深色主题：锁屏主图、桌面延展、AOD 极简线稿，保持同一个视觉符号。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=hQUVIT8m-c0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-1-sports_cheer",
-      "hotspotId": 1007,
-      "hotspotName": "HUGGY WUGGY IS BACK | …",
-      "previewTitle": "HUGGY WUGGY IS BACK | …｜赛事应援风",
-      "previewMeta": "精品壁纸库 · 印度 · 模板潜力 98 · 国家色、速度线、欢呼粒子，适合比赛和应援",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23020617%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2322c55e%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2338bdf8%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20562%20L430%20352%20L386%20740%20L104%20672Z%22%20fill%3D%22%2338bdf8%22%20opacity%3D%22.32%22%2F%3E%3Cpath%20d%3D%22M80%20250%20L220%20330%20L80%20410Z%22%20fill%3D%22%23fff%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M110%20232%20L300%20340%22%20stroke%3D%22%2338bdf8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2212%22%2F%3E%3Cpath%20d%3D%22M72%20700%20C180%20610%20302%20610%20420%20700%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20opacity%3D%22.36%22%2F%3E%3Ccircle%20cx%3D%22376%22%20cy%3D%22222%22%20r%3D%2258%22%20fill%3D%22%2322c55e%22%20opacity%3D%22.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E8%B5%9B%E4%BA%8B%E5%BA%94%E6%8F%B4%E9%A3%8E%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%B0%E5%BA%A6%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EHUGGY%20WUGGY%20IS%20BACK%20%7C%20POPPY%20%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%9B%BD%E5%AE%B6%E8%89%B2%E3%80%81%E9%80%9F%E5%BA%A6%E7%BA%BF%E3%80%81%E6%AC%A2%E5%91%BC%E7%B2%92%E5%AD%90%EF%BC%8C%E9%80%82%E5%90%88%E6%AF%94%E8%B5%9B%E5%92%8C%E5%BA%94%E6%8F%B4%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 印度 热门内容《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5 [PART 1]》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：赛事应援风（精品壁纸库）。使用国家色、速度线、旗帜感色块、聚光灯和欢呼粒子表达赛事氛围，避免真实队徽和版权 Logo。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=3_NEH4LyaWk",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-1-cinematic_poster",
-      "hotspotId": 1007,
-      "hotspotName": "HUGGY WUGGY IS BACK | …",
-      "previewTitle": "HUGGY WUGGY IS BACK | …｜电影海报感",
-      "previewMeta": "精品壁纸库 · 印度 · 模板潜力 98 · 大片构图和角色氛围，适合影视/音乐热点",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23111827%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%23ef4444%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fbbf24%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2296%22%20y%3D%22196%22%20width%3D%22288%22%20height%3D%22460%22%20rx%3D%2222%22%20fill%3D%22%23111827%22%20opacity%3D%22.48%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22322%22%20r%3D%2286%22%20fill%3D%22%23fbbf24%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M120%20656%20L240%20420%20L360%20656Z%22%20fill%3D%22%23ef4444%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M86%20742%20H394%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2214%22%20opacity%3D%22.42%22%2F%3E%3Cpath%20d%3D%22M142%20704%20H338%22%20stroke%3D%22%23fbbf24%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2210%22%20opacity%3D%22.8%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E7%94%B5%E5%BD%B1%E6%B5%B7%E6%8A%A5%E6%84%9F%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%B0%E5%BA%A6%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EHUGGY%20WUGGY%20IS%20BACK%20%7C%20POPPY%20%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%A4%A7%E7%89%87%E6%9E%84%E5%9B%BE%E5%92%8C%E8%A7%92%E8%89%B2%E6%B0%9B%E5%9B%B4%EF%BC%8C%E9%80%82%E5%90%88%E5%BD%B1%E8%A7%86%2F%E9%9F%B3%E4%B9%90%E7%83%AD%E7%82%B9%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 印度 热门内容《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5 [PART 1]》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：电影海报感（精品壁纸库）。以电影海报构图、逆光、景深和大面积留白表达热点故事感，不使用真实明星肖像、剧照或版权角色。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=3_NEH4LyaWk",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-1-city_color",
-      "hotspotId": 1007,
-      "hotspotName": "HUGGY WUGGY IS BACK | …",
-      "previewTitle": "HUGGY WUGGY IS BACK | …｜城市色彩采样",
-      "previewMeta": "精品壁纸库 · 印度 · 模板潜力 98 · 从本地街景、建筑、服饰里提取城市色盘",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23f5f5f4%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2364748b%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f172a%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20690%20V390%20L138%20338%20L204%20430%20L280%20300%20L394%20420%20V690Z%22%20fill%3D%22%2364748b%22%20opacity%3D%22.35%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22510%22%20width%3D%2256%22%20height%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.32%22%2F%3E%3Crect%20x%3D%22192%22%20y%3D%22468%22%20width%3D%2268%22%20height%3D%22222%22%20fill%3D%22%23fff%22%20opacity%3D%22.22%22%2F%3E%3Crect%20x%3D%22306%22%20y%3D%22540%22%20width%3D%2252%22%20height%3D%22150%22%20fill%3D%22%230f172a%22%20opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M72%20718%20H410%22%20stroke%3D%22%230f172a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2212%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E5%9F%8E%E5%B8%82%E8%89%B2%E5%BD%A9%E9%87%87%E6%A0%B7%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%B0%E5%BA%A6%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EHUGGY%20WUGGY%20IS%20BACK%20%7C%20POPPY%20%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E4%BB%8E%E6%9C%AC%E5%9C%B0%E8%A1%97%E6%99%AF%E3%80%81%E5%BB%BA%E7%AD%91%E3%80%81%E6%9C%8D%E9%A5%B0%E9%87%8C%E6%8F%90%E5%8F%96%E5%9F%8E%E5%B8%82%E8%89%B2%E7%9B%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 印度 热门内容《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5 [PART 1]》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：城市色彩采样（精品壁纸库）。从热点所在地提取城市色彩、街头图形、建筑轮廓和生活方式元素，做成高级城市系列壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=3_NEH4LyaWk",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
-    },
-    {
-      "id": "tpl-2-multi_image_fusion",
-      "hotspotId": 1005,
+      "id": "tpl-0-korean_idol_comic",
+      "hotspotId": 1001,
       "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜三图融合玩法",
-      "previewMeta": "AI创作玩法 · 南美洲 · 模板潜力 97 · 人物+服饰+背景三图合成，一次生成个人主题",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23312e81%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%238b5cf6%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f0abfc%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2264%22%20y%3D%22210%22%20width%3D%22154%22%20height%3D%22230%22%20rx%3D%2234%22%20fill%3D%22%23fff%22%20opacity%3D%22.34%22%2F%3E%3Crect%20x%3D%22262%22%20y%3D%22190%22%20width%3D%22154%22%20height%3D%22230%22%20rx%3D%2234%22%20fill%3D%22%23f0abfc%22%20opacity%3D%22.34%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22478%22%20width%3D%22216%22%20height%3D%22250%22%20rx%3D%2242%22%20fill%3D%22%238b5cf6%22%20opacity%3D%22.48%22%2F%3E%3Cpath%20d%3D%22M218%20348%20C254%20430%20238%20510%20192%20594%22%20stroke%3D%22%23fff%22%20stroke-width%3D%2214%22%20fill%3D%22none%22%20opacity%3D%22.62%22%2F%3E%3Cpath%20d%3D%22M270%20330%20C220%20450%20252%20548%20322%20626%22%20stroke%3D%22%23f0abfc%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2214%22%20fill%3D%22none%22%20opacity%3D%22.8%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3EAI%E5%88%9B%E4%BD%9C%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E4%B8%89%E5%9B%BE%E8%9E%8D%E5%90%88%E7%8E%A9%E6%B3%95%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EDune%3A%20Part%20Three%20%7C%20Official%20%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E4%BA%BA%E7%89%A9%2B%E6%9C%8D%E9%A5%B0%2B%E8%83%8C%E6%99%AF%E4%B8%89%E5%9B%BE%E5%90%88%E6%88%90%EF%BC%8C%E4%B8%80%E6%AC%A1%E7%94%9F%E6%88%90%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A2%98%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 哥伦比亚 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：三图融合玩法（AI创作玩法）。用户上传人物照、喜欢的服饰图和背景图，AI 融合为同一风格的原创个人主题壁纸。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "previewTitle": "Dune: Part Three | Off…｜韩系偶像漫画",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top1 · 模板潜力 98 · 年轻、精致、偶像感强，适合音乐/K-pop/明星热点",
+      "preview": "assets/style-templates/korean-idol-comic.png",
+      "prompt": "基于 YouTube 南非 热点《Dune: Part Three | Official Trailer》，为设计师生成「韩系偶像漫画」人物风格模板参考。\n\n参考能力：图生图：保留人物五官与发型气质，替换成热点同款妆造、服饰和舞台氛围。\n\n生成建议：上传人物自拍或半身照，保持人物身份一致，转为精致韩系偶像漫画风；结合热点主题提取妆造、服装色彩、舞台灯光和情绪，生成 9:16 手机锁屏壁纸；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
       "source": [
         "YouTube"
       ],
       "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
+      "generatedFrom": "daily_top3_person_style_template"
     },
     {
-      "id": "tpl-2-music_visualizer",
-      "hotspotId": 1005,
+      "id": "tpl-0-retro_poster_portrait",
+      "hotspotId": 1001,
       "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜音乐律动壁纸",
-      "previewMeta": "精品壁纸库 · 南美洲 · 模板潜力 97 · 声波、舞台光、节奏感，适合音乐和舞蹈热点",
-      "preview": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22854%22%20viewBox%3D%220%200%20480%20854%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230f172a%22%2F%3E%3Cstop%20offset%3D%22.58%22%20stop-color%3D%22%2306b6d4%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f97316%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2222%22%2F%3E%3C%2Ffilter%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22480%22%20height%3D%22854%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%23fff%22%20opacity%3D%22.14%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22430%22%20cy%3D%22770%22%20r%3D%22180%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22%20filter%3D%22url(%23blur)%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M78%20580%20C150%20464%20236%20668%20310%20516%20C352%20432%20388%20460%20430%20396%22%20stroke%3D%22%23f97316%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22146%22%20cy%3D%22326%22%20r%3D%2266%22%20fill%3D%22%23f97316%22%20opacity%3D%22.34%22%2F%3E%3Ccircle%20cx%3D%22334%22%20cy%3D%22300%22%20r%3D%22104%22%20fill%3D%22%2306b6d4%22%20opacity%3D%22.28%22%2F%3E%3Crect%20x%3D%2294%22%20y%3D%22688%22%20width%3D%2228%22%20height%3D%2288%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.5%22%2F%3E%3Crect%20x%3D%22152%22%20y%3D%22628%22%20width%3D%2228%22%20height%3D%22148%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.55%22%2F%3E%3Crect%20x%3D%22210%22%20y%3D%22668%22%20width%3D%2228%22%20height%3D%22108%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.45%22%2F%3E%3Crect%20x%3D%22268%22%20y%3D%22590%22%20width%3D%2228%22%20height%3D%22186%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.58%22%2F%3E%3Crect%20x%3D%22326%22%20y%3D%22642%22%20width%3D%2228%22%20height%3D%22134%22%20rx%3D%2214%22%20fill%3D%22%23fff%22%20opacity%3D%22.48%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%22412%22%20height%3D%22786%22%20rx%3D%2234%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.34%22%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%2286%22%20fill%3D%22%23fff%22%20opacity%3D%22.68%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22800%22%3E%E7%B2%BE%E5%93%81%E5%A3%81%E7%BA%B8%E5%BA%93%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22118%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%3E%E9%9F%B3%E4%B9%90%E5%BE%8B%E5%8A%A8%E5%A3%81%E7%BA%B8%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22152%22%20fill%3D%22%23fff%22%20opacity%3D%22.62%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2214%22%3E%E5%8D%97%E7%BE%8E%E6%B4%B2%20%C2%B7%20YouTube%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22704%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2228%22%20font-weight%3D%22800%22%3EDune%3A%20Part%20Three%20%7C%20Official%20%3C%2Ftext%3E%0A%20%20%20%20%3Ctext%20x%3D%2258%22%20y%3D%22744%22%20fill%3D%22%23fff%22%20opacity%3D%22.78%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2215%22%3E%E5%A3%B0%E6%B3%A2%E3%80%81%E8%88%9E%E5%8F%B0%E5%85%89%E3%80%81%E8%8A%82%E5%A5%8F%E6%84%9F%EF%BC%8C%E9%80%82%E5%90%88%E9%9F%B3%E4%B9%90%E5%92%8C%E8%88%9E%E8%B9%88%E7%83%AD%E7%82%B9%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
-      "prompt": "基于 YouTube 哥伦比亚 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。\n\n玩法模板：音乐律动壁纸（精品壁纸库）。把音乐或舞蹈热点转译成声波线、舞台光、节奏粒子和动态感构图，适合静态/动态壁纸延展。输出 9:16 手机壁纸精品样图，可延展锁屏、桌面、AOD 或主题商城模板；画面要有趣、有本地文化记忆点、可商业化，避免文字、Logo、真实明星肖像、新闻照片和版权角色。",
+      "previewTitle": "Dune: Part Three | Off…｜复古电影海报人像",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top1 · 模板潜力 98 · 叙事感、胶片颗粒、海报构图，适合影视/预告片热点",
+      "preview": "assets/style-templates/realistic-retro-poster.png",
+      "prompt": "基于 YouTube 南非 热点《Dune: Part Three | Official Trailer》，为设计师生成「复古电影海报人像」人物风格模板参考。\n\n参考能力：图生图/文生图：人物主体居中，背景做电影级氛围，不复刻真实剧照或明星肖像。\n\n生成建议：以用户人物照或虚拟人物为主体，保留面部结构和姿态，转成复古电影海报质感；结合热点关键词生成场景光影、服装轮廓和色彩基调，9:16，顶部留时钟区；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
       "source": [
         "YouTube"
       ],
       "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
-      "generatedFrom": "daily_top3_wallpaper_playbook"
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-0-local_outfit_india",
+      "hotspotId": 1001,
+      "hotspotName": "Dune: Part Three | Off…",
+      "previewTitle": "Dune: Part Three | Off…｜本地装束·印度",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top1 · 模板潜力 98 · 地域服饰、节庆色彩、精致妆造，适合印度市场运营",
+      "preview": "assets/style-templates/india-outfit.png",
+      "prompt": "基于 YouTube 南非 热点《Dune: Part Three | Official Trailer》，为设计师生成「本地装束·印度」人物风格模板参考。\n\n参考能力：图生图：人物不变，替换为本地节庆/地域服饰，适配当地热点。\n\n生成建议：上传人物照，保持五官身份一致，将服装、饰品、妆造转为印度本地节庆灵感；背景加入柔和灯光、金色纹样和热点主题元素，生成高级人物锁屏壁纸；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-0-american_comic_hero",
+      "hotspotId": 1001,
+      "hotspotName": "Dune: Part Three | Off…",
+      "previewTitle": "Dune: Part Three | Off…｜美漫英雄人像",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top1 · 模板潜力 98 · 强轮廓、鲜明表情、英雄感，适合赛事/电影/游戏热点",
+      "preview": "assets/style-templates/american-comic-portrait.png",
+      "prompt": "基于 YouTube 南非 热点《Dune: Part Three | Official Trailer》，为设计师生成「美漫英雄人像」人物风格模板参考。\n\n参考能力：图生图：把用户变成原创英雄角色，强化动作和情绪，不使用版权角色。\n\n生成建议：上传人物照，保持脸部识别度，转为原创美漫英雄人像；结合热点提取代表色、动作感和背景符号，画面有冲击力但不出现真实队徽、角色或品牌 Logo；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-0-mecha_persona",
+      "hotspotId": 1001,
+      "hotspotName": "Dune: Part Three | Off…",
+      "previewTitle": "Dune: Part Three | Off…｜机甲角色化",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top1 · 模板潜力 98 · 科技感、装备感、未来战士，适合游戏/科技/赛事热点",
+      "preview": "assets/style-templates/mecha-character.png",
+      "prompt": "基于 YouTube 南非 热点《Dune: Part Three | Official Trailer》，为设计师生成「机甲角色化」人物风格模板参考。\n\n参考能力：图生图：人物身份保持，增加原创机甲服装和未来场景。\n\n生成建议：上传人物照，保持人物身份与头脸比例，将服饰升级为原创轻机甲装备；结合热点主题生成科技背景、能量线和地区色彩，生成未来感 9:16 锁屏壁纸；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-1-3d_avatar",
+      "hotspotId": 1006,
+      "hotspotName": "HUGGY WUGGY IS BACK | …",
+      "previewTitle": "HUGGY WUGGY IS BACK | …｜Q版3D头像角色",
+      "previewMeta": "人物风格模版 · 印度 · Top2 · 模板潜力 98 · 亲和、可爱、社交传播强，适合泛娱乐/轻运营热点",
+      "preview": "assets/style-templates/3d-character.png",
+      "prompt": "基于 YouTube 印度 热点《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5》，为设计师生成「Q版3D头像角色」人物风格模板参考。\n\n参考能力：图生图：把真人转成可爱的 3D 头像角色，可延展头像/贴纸/壁纸。\n\n生成建议：上传自拍，保留核心五官特征，生成 Q 版 3D 头像角色；根据热点提取服装、道具、表情和背景色，输出适合主题商城的可爱人物壁纸；结合热点视觉方向「人物 / 场景 / 热点符号」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3_NEH4LyaWk",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-1-game_character",
+      "hotspotId": 1006,
+      "hotspotName": "HUGGY WUGGY IS BACK | …",
+      "previewTitle": "HUGGY WUGGY IS BACK | …｜游戏角色立绘",
+      "previewMeta": "人物风格模版 · 印度 · Top2 · 模板潜力 98 · 角色立绘、装备细节、冒险感，适合游戏/动漫/娱乐热点",
+      "preview": "assets/style-templates/game-character.png",
+      "prompt": "基于 YouTube 印度 热点《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5》，为设计师生成「游戏角色立绘」人物风格模板参考。\n\n参考能力：图生图：人物转原创游戏角色，突出服装层次和世界观背景。\n\n生成建议：上传人物照，保持身份一致，转成原创游戏角色立绘；融合热点主题中的道具、颜色、场景和情绪，生成高级角色壁纸，不使用已有游戏角色 IP；结合热点视觉方向「人物 / 场景 / 热点符号」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3_NEH4LyaWk",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-1-oil_painting_portrait",
+      "hotspotId": 1006,
+      "hotspotName": "HUGGY WUGGY IS BACK | …",
+      "previewTitle": "HUGGY WUGGY IS BACK | …｜油画肖像",
+      "previewMeta": "人物风格模版 · 印度 · Top2 · 模板潜力 98 · 高级、艺术化、适合精品壁纸库沉淀",
+      "preview": "assets/style-templates/oil-painting-portrait.png",
+      "prompt": "基于 YouTube 印度 热点《HUGGY WUGGY IS BACK | POPPY PLAYTIME CHAPTER 5》，为设计师生成「油画肖像」人物风格模板参考。\n\n参考能力：图生图：人物转艺术肖像，适合做长期风格模板而非短热点快闪。\n\n生成建议：上传人物照，保持人物神态和面部结构，转成细腻油画肖像；结合热点所在地区色彩和情绪做背景氛围，画面干净、可商用、适合精品壁纸库；结合热点视觉方向「人物 / 场景 / 热点符号」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=3_NEH4LyaWk",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-2-local_outfit_indonesia",
+      "hotspotId": 1003,
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜本地装束·印尼",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top3 · 模板潜力 98 · 印尼本地服饰、温暖色调、节庆氛围",
+      "preview": "assets/style-templates/indonesia-outfit.png",
+      "prompt": "基于 YouTube 加纳 热点《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》，为设计师生成「本地装束·印尼」人物风格模板参考。\n\n参考能力：图生图：人物身份保持，换成本地装束与场景，用于区域化模板。\n\n生成建议：上传人物照，保持五官身份一致，将服装转为印尼本地装束灵感；背景加入当地节庆色彩、城市/自然元素和热点情绪，生成本地化人物锁屏壁纸；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
+      "generatedFrom": "daily_top3_person_style_template"
+    },
+    {
+      "id": "tpl-2-japan_anime_outfit",
+      "hotspotId": 1003,
+      "hotspotName": "Avatar Aang: The Last …",
+      "previewTitle": "Avatar Aang: The Last …｜日系装束动漫化",
+      "previewMeta": "人物风格模版 · 撒哈拉以南非洲 · Top3 · 模板潜力 98 · 轻二次元、清透、适合年轻用户和动漫向热点",
+      "preview": "assets/style-templates/japan-outfit.png",
+      "prompt": "基于 YouTube 加纳 热点《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》，为设计师生成「日系装束动漫化」人物风格模板参考。\n\n参考能力：图生图：人物转动漫感角色，保留识别度，换日系服饰与场景。\n\n生成建议：上传人物照，保持人物身份一致，转成轻二次元人物风格；结合热点主题生成日系服饰、清透光影和背景氛围，输出 9:16 手机锁屏壁纸；结合热点视觉方向「影视 / 角色 / 海报感」，提取地区色彩、服饰/妆造、场景氛围和情绪符号。输出 9:16 手机锁屏壁纸，人物为原创或用户上传人物，不使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片；顶部预留时钟区，可延展为主题商城风格模板。",
+      "source": [
+        "YouTube"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=7b20GRFZBFE",
+      "generatedFrom": "daily_top3_person_style_template"
     }
   ]
 }
