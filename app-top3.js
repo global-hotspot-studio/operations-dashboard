@@ -205,6 +205,42 @@ function previewDownloadName(item) {
   return item.preview?.split("/").pop() || `${item.id || "template-preview"}.png`;
 }
 
+function sampleName(item) {
+  return String(item.previewTitle || "").split("｜").pop() || "玩法方向";
+}
+
+function topRankLabel(item) {
+  const match = String(item.previewMeta || "").match(/Top\d/);
+  return match ? match[0] : "Top";
+}
+
+function visualPalette(index) {
+  const palettes = [
+    ["#101827", "#d8b56d", "#6f4b2a"],
+    ["#141f3d", "#7dd3fc", "#a78bfa"],
+    ["#17221a", "#22c55e", "#facc15"],
+    ["#25131f", "#fb7185", "#f97316"],
+    ["#101827", "#38bdf8", "#64748b"],
+    ["#211338", "#c084fc", "#f9a8d4"],
+    ["#14213d", "#fca311", "#e5e5e5"],
+    ["#102a43", "#2dd4bf", "#fef3c7"],
+    ["#301014", "#f43f5e", "#f59e0b"],
+    ["#0f172a", "#60a5fa", "#34d399"]
+  ];
+  return palettes[index % palettes.length];
+}
+
+function promptTextDownload(item) {
+  const text = [
+    item.previewTitle || "热点样图推荐",
+    "",
+    item.previewMeta || "",
+    "",
+    item.prompt || ""
+  ].join("\n");
+  return `data:text/plain;charset=utf-8,${encodeURIComponent(text)}`;
+}
+
 function renderMetrics() {
   const list = filtered();
   const selected = list.filter(x => x.selected).length;
@@ -268,13 +304,43 @@ function renderRegions() {
 function renderGallery() {
   const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
   $("#galleryCount").textContent = `${list.length} 个样图推荐`;
-  $("#visualGallery").innerHTML = list.map(h => `<article class="visual-card">
-  <button class="visual-preview" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}"><img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}"></button>
-  <div class="visual-info"><b>${escapeHtml(h.previewTitle)}</b><small>${escapeHtml(h.previewMeta)}</small>
-   <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
-   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button><a href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">下载样图</a></div>
-  </div>
- </article>`).join("");
+  const groups = list.reduce((acc, item) => {
+    const key = item.hotspotName || item.name || "热点";
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(item);
+    return acc;
+  }, {});
+  $("#visualGallery").innerHTML = Object.entries(groups).map(([name, items], groupIndex) => `<section class="playbook-group">
+    <div class="playbook-group-head">
+      <span>${escapeHtml(topRankLabel(items[0]))}</span>
+      <div><h3>${escapeHtml(name)}</h3><p>${escapeHtml(items[0]?.source?.join(" / ") || "实时热点")} · ${escapeHtml((items[0]?.previewMeta || "").replace(/^视觉可玩性样图 · /, ""))}</p></div>
+      ${items[0]?.sourceUrl ? `<a href="${escapeAttr(items[0].sourceUrl)}" target="_blank" rel="noopener noreferrer">打开真实来源 ↗</a>` : ""}
+    </div>
+    <div class="playbook-row">
+      ${items.map((h, index) => {
+        const palette = visualPalette(groupIndex * 5 + index);
+        const nameText = sampleName(h);
+        return `<article class="playbook-card" style="--c1:${palette[0]};--c2:${palette[1]};--c3:${palette[2]}">
+          <div class="concept-poster" aria-label="${escapeAttr(h.previewTitle)}">
+            <div class="poster-orbit one"></div><div class="poster-orbit two"></div><div class="poster-line"></div>
+            <span class="poster-rank">${escapeHtml(topRankLabel(h))}</span>
+            <b>${escapeHtml(nameText)}</b>
+            <p>${escapeHtml((h.previewMeta || "").split("·").slice(-1)[0]?.trim() || "主题/壁纸玩法灵感")}</p>
+          </div>
+          <div class="visual-info">
+            <b>${escapeHtml(h.previewTitle)}</b>
+            <small>${escapeHtml(h.previewMeta)}</small>
+            <div class="play-tags"><span>锁屏壁纸</span><span>主题玩法</span><span>设计灵感</span></div>
+            <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
+            <div class="visual-actions">
+              <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>
+              <a href="${escapeAttr(promptTextDownload(h))}" download="${escapeAttr((h.id || "hotspot-playbook") + ".txt")}">下载方案</a>
+            </div>
+          </div>
+        </article>`;
+      }).join("")}
+    </div>
+  </section>`).join("");
 }
 
 function renderFusionGallery() {
