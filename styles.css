@@ -108,7 +108,8 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .visual-card .prompt-block{min-height:118px}
 
 /* Top3 visual playbook: no fake generated images, focus on usable design directions */
-.playbook-group{flex:0 0 min(1080px,92vw);scroll-snap-align:start;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:26px;padding:18px;box-shadow:0 12px 30px rgba(24,38,62,.045)}
+.visual-gallery:has(.playbook-group){display:grid;gap:18px;overflow:visible;scroll-snap-type:none;padding:4px 2px 18px}
+.playbook-group{min-width:0;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:26px;padding:18px;box-shadow:0 12px 30px rgba(24,38,62,.045)}
 .playbook-group-head{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;margin-bottom:16px}
 .playbook-group-head>span{display:grid;place-items:center;width:50px;height:50px;border-radius:16px;background:#eef5ff;color:#0071e3;font-weight:900}
 .playbook-group-head h3{margin:0 0 4px;font-size:20px;letter-spacing:-.02em}
@@ -117,6 +118,12 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .playbook-row{display:flex;gap:14px;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}
 .playbook-card{flex:0 0 248px;border:1px solid #243248;border-radius:24px;background:#101827;padding:7px;overflow:hidden;text-align:left;transition:.2s;box-shadow:0 16px 34px rgba(15,25,42,.13)}
 .playbook-card:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(24,38,62,.18);border-color:#8eadd8}
+.image-playbook-card{flex-basis:278px}
+.playbook-image{position:relative;display:block;width:100%;padding:0;border:0;border-radius:18px;overflow:hidden;background:#0f172a}
+.playbook-image img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
+.playbook-image:after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,transparent,rgba(7,13,24,.78))}
+.playbook-image span{position:absolute;left:13px;top:13px;z-index:1;padding:6px 9px;border-radius:999px;background:rgba(11,18,32,.62);color:#fff;font-size:11px;font-weight:900;backdrop-filter:blur(10px)}
+.playbook-image b{position:absolute;z-index:1;left:16px;right:16px;bottom:16px;color:#fff;font-size:22px;line-height:1.15;text-align:left;letter-spacing:-.04em;text-shadow:0 2px 12px rgba(0,0,0,.28)}
 .concept-poster{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:360px;aspect-ratio:9/16;border-radius:18px;overflow:hidden;padding:18px;color:#fff;background:
   radial-gradient(circle at 78% 12%, color-mix(in srgb,var(--c2) 80%, white 12%) 0 12%, transparent 13%),
   radial-gradient(circle at 20% 78%, color-mix(in srgb,var(--c3) 80%, transparent) 0 22%, transparent 23%),
@@ -133,7 +140,7 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .play-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
 .play-tags span{font-size:10px;color:#9bc5ff;background:#1b2a42;border:1px solid #263b5b;border-radius:999px;padding:4px 7px}
 @media(max-width:720px){
-  .playbook-group{flex-basis:92vw;padding:14px;border-radius:22px}
+  .playbook-group{padding:14px;border-radius:22px}
   .playbook-group-head{grid-template-columns:auto 1fr;align-items:start}
   .playbook-group-head a{grid-column:1/-1;text-align:center}
   .playbook-card{flex-basis:78vw}

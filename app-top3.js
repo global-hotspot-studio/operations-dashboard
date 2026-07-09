@@ -318,15 +318,13 @@ function renderGallery() {
     </div>
     <div class="playbook-row">
       ${items.map((h, index) => {
-        const palette = visualPalette(groupIndex * 5 + index);
         const nameText = sampleName(h);
-        return `<article class="playbook-card" style="--c1:${palette[0]};--c2:${palette[1]};--c3:${palette[2]}">
-          <div class="concept-poster" aria-label="${escapeAttr(h.previewTitle)}">
-            <div class="poster-orbit one"></div><div class="poster-orbit two"></div><div class="poster-line"></div>
-            <span class="poster-rank">${escapeHtml(topRankLabel(h))}</span>
+        return `<article class="playbook-card image-playbook-card">
+          <button class="visual-preview playbook-image" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}">
+            <img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}" loading="lazy">
+            <span>${escapeHtml(topRankLabel(h))}</span>
             <b>${escapeHtml(nameText)}</b>
-            <p>${escapeHtml((h.previewMeta || "").split("·").slice(-1)[0]?.trim() || "主题/壁纸玩法灵感")}</p>
-          </div>
+          </button>
           <div class="visual-info">
             <b>${escapeHtml(h.previewTitle)}</b>
             <small>${escapeHtml(h.previewMeta)}</small>
@@ -334,7 +332,7 @@ function renderGallery() {
             <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
             <div class="visual-actions">
               <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>
-              <a href="${escapeAttr(promptTextDownload(h))}" download="${escapeAttr((h.id || "hotspot-playbook") + ".txt")}">下载方案</a>
+              <a href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">下载样图</a>
             </div>
           </div>
         </article>`;
