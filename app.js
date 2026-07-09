@@ -17,9 +17,9 @@ const $$ = s => [...document.querySelectorAll(s)];
 async function loadDashboardData(force = false) {
   const stamp = Date.now();
   const urls = [
-    `./data/dashboard.json?t=${stamp}${force ? "&force=1" : ""}`,
+    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/dashboard.json?t=${stamp}`,
     `https://cdn.jsdelivr.net/gh/global-hotspot-studio/operations-dashboard@main/data/dashboard.json?t=${stamp}`,
-    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/dashboard.json?t=${stamp}`
+    `./data/dashboard.json?t=${stamp}${force ? "&force=1" : ""}`
   ];
   let data;
   let loadedFrom = "";
