@@ -19,6 +19,7 @@ const root = path.resolve(__dirname, "..");
 const dataPath = path.join(root, "data", "dashboard.json");
 const playbookDataPath = path.join(root, "data", "dashboard-playbook.json");
 const manualDataPath = path.join(root, "data", "manual-hotspots.json");
+const generatedSamplesPath = path.join(root, "data", "generated-samples.json");
 const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaAccessToken = (process.env.META_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
@@ -451,6 +452,16 @@ function samplesForHotspot(index) {
   return visualPlaySamples.slice(8, 10);
 }
 
+function readGeneratedSampleOutputs() {
+  try {
+    const payload = JSON.parse(fs.readFileSync(generatedSamplesPath, "utf8"));
+    if (!Array.isArray(payload.samples) || !payload.samples.length) return [];
+    return payload.samples;
+  } catch (error) {
+    return [];
+  }
+}
+
 function samplePromptForHotspot(sample, hotspot) {
   const title = hotspot.originalTitle || hotspot.name;
   const market = hotspot.country || hotspot.region || "重点市场";
@@ -460,6 +471,11 @@ function samplePromptForHotspot(sample, hotspot) {
 }
 
 function buildTemplateOutputs(hotspots) {
+  // 精品样图由人工触发的图片生成批次维护；定时抓取只更新热点，
+  // 不会用固定素材把已审核的真实样图覆盖掉。
+  const generatedSamples = readGeneratedSampleOutputs();
+  if (generatedSamples.length) return generatedSamples;
+
   const positivePattern = /music|song|mv|dance|concert|festival|football|soccer|cricket|match|cup|final|movie|trailer|film|series|fashion|makeup|beauty|style|art|city|travel|carnaval|futebol|musica|moda|afrobeats|amapiano|bollywood|kpop|idol|celebrity|artist|show|game|sports/i;
   const negativePattern = /weather|tiempo|lottery|loter[ií]a|tax|anses|cte|gasolina|petrol|gold price|stock|bank|government|minister|election|policy|crime|death|accident|war|court|visa|exam|result|salary|pension|fuel|diesel/i;
   const templateFit = item => {

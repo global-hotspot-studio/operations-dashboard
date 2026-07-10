@@ -42,6 +42,26 @@ async function loadDashboardData(force = false) {
   }
   if (!data) throw new Error(`数据读取失败；已尝试 ${urls.length} 个地址。${errors.join(" | ")}`);
 
+  // 精品样图由人工触发的 AI 生图批次单独维护，不能被定时热点刷新覆盖。
+  const sampleUrls = [
+    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`,
+    `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`
+  ];
+  for (const url of sampleUrls) {
+    try {
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) continue;
+      const sampleBatch = await response.json();
+      if (Array.isArray(sampleBatch.samples) && sampleBatch.samples.length) {
+        data.templateOutputs = sampleBatch.samples;
+        data.samplePolicy = sampleBatch.policy || "";
+        break;
+      }
+    } catch (error) {
+      // 样图批次不可用时仍展示热点数据中的兜底内容。
+    }
+  }
+
   dashboardMeta = data;
   dashboardMeta.dataUrl = loadedFrom;
   regions = data.regions || ["全球"];
