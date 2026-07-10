@@ -139,6 +139,19 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .concept-poster p{position:relative;z-index:1;margin:0;color:rgba(255,255,255,.76);font-size:12px;line-height:1.55}
 .play-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
 .play-tags span{font-size:10px;color:#9bc5ff;background:#1b2a42;border:1px solid #263b5b;border-radius:999px;padding:4px 7px}
+
+/* 热点样图采用瀑布流：按热点属性输出 2–3 + 1 + 1，而非横向重复卡片。 */
+.visual-gallery:has(.masonry-gallery){display:block;overflow:visible;scroll-snap-type:none;padding:4px 2px 18px}
+.masonry-gallery{columns:3 272px;column-gap:18px}
+.masonry-gallery .playbook-card{display:inline-block;width:100%;break-inside:avoid;margin:0 0 18px;vertical-align:top}
+.masonry-gallery .sample-context{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;padding:9px 8px 7px;color:#eef5ff}
+.masonry-gallery .sample-context span{display:inline-flex;align-items:center;justify-content:center;padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.12);font-size:10px;font-weight:800;color:#fff}
+.masonry-gallery .sample-context b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+.masonry-gallery .sample-context a{color:#9bc5ff;text-decoration:none;font-size:10px;font-weight:800;white-space:nowrap}
+.gallery-card:has(.masonry-gallery) .gallery-arrow{display:none}
+@media(max-width:900px){.masonry-gallery{columns:2 250px}}
+@media(max-width:620px){.masonry-gallery{columns:1}.masonry-gallery .playbook-card{margin-bottom:14px}}
+
 @media(max-width:720px){
   .playbook-group{padding:14px;border-radius:22px}
   .playbook-group-head{grid-template-columns:auto 1fr;align-items:start}

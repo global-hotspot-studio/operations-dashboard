@@ -1,126 +1,56 @@
 {
-  "generatedAt": "2026-07-10T06:20:00.000Z",
-  "policy": "仅针对实时热点中视觉可玩性最高的 Top3 生成精品样图；Top1 5 张、Top2 3 张、Top3 2 张。无可玩热点时保留上一批已审核样图，不硬更新。",
+  "generatedAt": "2026-07-10T07:00:00.000Z",
+  "policy": "按热点属性选择 OS 主题玩法，而非默认生成人物：人物/角色可提取时做图生图人物模板；音乐、节庆、城市等可转为色彩、涂鸦、插画、异形、材质、场景或图标化主题。仅保留高可玩性样图：Top1 最多 3 张，Top2/Top3 各 1 张；无可玩热点不更新。",
   "samples": [
     {
       "id": "generated-20260710-1000-01",
       "hotspotId": 1000,
       "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
       "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜雨夜电影肖像",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 模板潜力 95 · 雨夜戏剧感、人物情绪、适合锁屏主视觉",
+      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 人物图生图 · 雨夜戏剧感、锁屏主视觉",
       "preview": "assets/daily-samples/2026-07-10-india-rain-cinema.jpg",
-      "prompt": "原创印度音乐电影人物壁纸：雨夜宫廷庭院、深靛蓝丝绸外套与琥珀色纱巾、暖灯与湿地反光；人物位于画面下方，顶部留出锁屏时钟区。避免真人明星、影视剧照、品牌和文字。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
-      "generatedFrom": "curated_ai_image_batch"
+      "prompt": "原创印度音乐电影人物壁纸：雨夜宫廷庭院、深靛蓝丝绸外套与琥珀色纱巾、暖灯与湿地反光；人物位于画面下方，顶部留出锁屏时钟区。适合人物自拍转风格；避免真人明星、影视剧照、品牌和文字。",
+      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ", "generatedFrom": "curated_ai_image_batch"
     },
     {
       "id": "generated-20260710-1000-02",
       "hotspotId": 1000,
       "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
       "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜印度偶像漫画化",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 模板潜力 95 · 可迁移自拍、潮流漫画、音乐热点人物玩法",
+      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 人物图生图 · 潮流漫画、音乐热点人物玩法",
       "preview": "assets/daily-samples/2026-07-10-india-comic-pop.jpg",
       "prompt": "原创印度流行音乐女主角图生图模板：白色刺绣 kurta 叠穿酒红机车夹克、现代城市霓虹与印度建筑线条，高级时尚漫画笔触；9:16，顶部留白。可作为用户自拍转风格参考，不复刻真人。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
-      "generatedFrom": "curated_ai_image_batch"
+      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ", "generatedFrom": "curated_ai_image_batch"
     },
     {
       "id": "generated-20260710-1000-03",
       "hotspotId": 1000,
       "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜季风时装妆造",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 模板潜力 95 · 本地服饰、季风氛围、精品人物模板",
-      "preview": "assets/daily-samples/2026-07-10-india-monsoon-fashion.jpg",
-      "prompt": "原创印度季风高级时装人物：翡翠、钴蓝与金色结构感 sari，雨水石廊、雕花窗影与一把远处红伞；全身人物位于下方，顶部深色留白。适合本地人物妆造和自拍迁移。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1000-04",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜雨夜音乐剪影",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 模板潜力 95 · 音乐情绪、丝巾声波、暗色主题套装",
-      "preview": "assets/daily-samples/2026-07-10-india-rooftop-music.jpg",
-      "prompt": "原创印度雨夜音乐主视觉：屋顶舞台上的人物剪影，半透明橙色纱巾化作声波，暖城市灯光和靛蓝天空；人物在底部，顶部留出大面积锁屏时钟区。无文字、无品牌。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1000-05",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜舞蹈电影定格",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 模板潜力 95 · 双人舞蹈、节庆色彩、动态锁屏玩法",
-      "preview": "assets/daily-samples/2026-07-10-india-dance-film.jpg",
-      "prompt": "原创印度当代节庆舞蹈壁纸：两位原创人物穿现代礼服定格在舞步中，钴蓝、金色、玫红长纱旋转，黑色镜面地台与花瓣光点；9:16，顶部干净留白。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
-      "generatedFrom": "curated_ai_image_batch"
+      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜季风声景主题",
+      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 色彩/材质主题 · 可同步锁屏、图标与小组件",
+      "preview": "assets/daily-samples/2026-07-10-india-monsoon-soundscape.jpg",
+      "prompt": "印度季风音乐 OS 主题：靛蓝雨幕、琥珀色半透明丝带转为声波、金色雨滴和细腻几何砖纹；无人物，视觉集中在下半部，顶部为时钟和小组件留白。可延展锁屏、图标和 AOD。",
+      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ", "generatedFrom": "curated_ai_image_batch"
     },
     {
       "id": "generated-20260710-1001-01",
       "hotspotId": 1001,
       "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜非洲未来沙漠女主",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top2 · 模板潜力 98 · 原创未来角色、人物妆造、科幻壁纸",
-      "preview": "assets/daily-samples/2026-07-10-afro-desert-heroine.jpg",
-      "prompt": "原创非洲未来沙漠女主角：深肤色女性、沙色斗篷、南部非洲珠饰几何细节、蓝调黄昏沙丘；人物位于下方，天空留白。只提取荒漠与未来氛围，不使用任何影视角色或演员。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1001-02",
-      "hotspotId": 1001,
-      "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜沙漠未来旅人",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top2 · 模板潜力 98 · 机能穿搭、科幻人物、主题套装",
-      "preview": "assets/daily-samples/2026-07-10-desert-future-traveler.jpg",
-      "prompt": "原创未来沙漠旅人：深肤色青年、沙金机能服与钴蓝透明护目镜，远处太阳能塔和风蚀沙丘；9:16，人物下方偏右，天空留作锁屏区域。无已有影视世界观。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1001-03",
-      "hotspotId": 1001,
-      "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜月下沙漠艺术肖像",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top2 · 模板潜力 98 · 艺术肖像、人物可迁移、精品壁纸",
-      "preview": "assets/daily-samples/2026-07-10-desert-moon-portrait.jpg",
-      "prompt": "原创非洲未来艺术肖像：短发女性、酒红披风、银色耳饰与珠饰，巨大浅色月亮、精细沙丘；成熟绘本式海报质感，9:16 顶部大面积留白。避免任何现有 IP。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
-      "generatedFrom": "curated_ai_image_batch"
+      "previewTitle": "Dune: Part Three | Off…｜沙漠异形器物",
+      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top2 · 异形/材质主题 · 未来感 OS 视觉套装",
+      "preview": "assets/daily-samples/2026-07-10-afro-desert-artifact.jpg",
+      "prompt": "原创未来沙漠 OS 主题：铜陶与铬金属结合的异形种子器物，南部非洲珠饰几何压纹、细钴蓝光环、风蚀沙丘与暮色天空；无人物，无已有影视元素，顶部留白，适合图标和小组件叠加。",
+      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0", "generatedFrom": "curated_ai_image_batch"
     },
     {
       "id": "generated-20260710-1002-01",
       "hotspotId": 1002,
       "hotspotName": "Jux Ft Mbosso - Kipepe…",
-      "previewTitle": "Jux Ft Mbosso - Kipepe…｜东非 Afro-pop 肖像",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top3 · 模板潜力 96 · 音乐人物、本地化穿搭、舞台锁屏",
-      "preview": "assets/daily-samples/2026-07-10-kenya-afropop-editorial.jpg",
-      "prompt": "原创肯尼亚 Afro-pop 女歌手视觉：蓝色西装搭配 kitenge 纹样上衣、内罗毕落日天际线、柔和灯笼与金色音乐光线；9:16 顶部留白，不使用真实艺人。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=B8UDrYSaGZA",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1002-02",
-      "hotspotId": 1002,
-      "hotspotName": "Jux Ft Mbosso - Kipepe…",
-      "previewTitle": "Jux Ft Mbosso - Kipepe…｜蝴蝶舞台变身",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top3 · 模板潜力 96 · 角色化、音乐舞台、动态主题壁纸",
-      "preview": "assets/daily-samples/2026-07-10-kenya-butterfly-stage.jpg",
-      "prompt": "原创肯尼亚音乐舞台人物：象牙白飞行夹克融入 Maasai 珠饰色，蓝橙蝴蝶般的光带围绕舞步，深蓝舞台和镜面反光；9:16，顶部保留时钟空间。",
-      "source": ["YouTube"],
-      "sourceUrl": "https://www.youtube.com/watch?v=B8UDrYSaGZA",
-      "generatedFrom": "curated_ai_image_batch"
+      "previewTitle": "Jux Ft Mbosso - Kipepe…｜Afro-pop 蝶形涂鸦",
+      "previewMeta": "真实 AI 精品样图 · 肯尼亚 · Top3 · 涂鸦/插画主题 · 音乐节奏与本地化纹样",
+      "preview": "assets/daily-samples/2026-07-10-kenya-afropop-abstract.jpg",
+      "prompt": "原创东非 Afro-pop OS 主题：蓝、橙、翠绿的音乐线条构成蝴蝶般的异形涂鸦，叠加细腻 kitenge 纹样和深靛蓝纸张质感；无人物、无文字，上方留出锁屏时间区。",
+      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=B8UDrYSaGZA", "generatedFrom": "curated_ai_image_batch"
     }
   ]
 }

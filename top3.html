@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI 热点舆情运营看板</title>
-  <link rel="stylesheet" href="./styles.css?v=20260710-character-style-templates">
+  <link rel="stylesheet" href="./styles.css?v=20260710-os-wallpaper-masonry">
 </head>
 <body>
   <div class="app-shell">
@@ -22,7 +22,7 @@
         <button class="nav-item" data-view="trend"><i></i>趋势监测</button>
         <button class="nav-item" data-view="alerts"><i></i>爆发预警</button>
         <button class="nav-item" data-view="candidates"><i></i>运营候选</button>
-        <button class="nav-item" data-view="strategy"><i></i>数据复盘</button>
+        <button class="nav-item" data-view="config"><i></i>配置中心</button>
       </nav>
       <div class="sidebar-note">
         <span class="pulse"></span>
@@ -55,7 +55,7 @@
         <div class="metrics" id="metrics"></div>
 
         <div class="dashboard-grid">
-          <article class="card trend-card">
+          <article id="trendSection" class="card trend-card">
             <div class="card-head">
               <div><h2>热点趋势</h2><p>近 24 小时有效热点热度变化</p></div>
               <div class="legend"><i class="blue"></i>有效热点<i class="orange"></i>可转模板</div>
@@ -63,7 +63,7 @@
             <svg id="trendChart" viewBox="0 0 780 280" role="img" aria-label="热点趋势折线图"></svg>
           </article>
 
-          <article class="card alert-card">
+          <article id="alertSection" class="card alert-card">
             <div class="card-head">
               <div><h2>爆发预警</h2><p>按增速和跨平台共振识别</p></div>
               <span class="badge danger">4 个高优先级</span>
@@ -72,7 +72,7 @@
           </article>
         </div>
 
-        <article class="card table-card">
+        <article id="hotspotPoolSection" class="card table-card">
           <div class="card-head">
             <div><h2>实时热点池</h2><p>按模板潜力排序，点击任意热点查看判断依据</p></div>
             <div class="table-actions">
@@ -91,7 +91,7 @@
 
         <article class="card gallery-card">
           <div class="card-head">
-            <div><p class="eyebrow">HOTSPOT TOP3 SAMPLE</p><h2>热点top3样图推荐</h2><p>基于实时热点排名 Top3 按视觉可玩性生成样图灵感：Top1 给 5 个方向，Top2 给 3 个，Top3 给 2 个，供设计师延展主题和壁纸玩法</p></div>
+            <div><p class="eyebrow">HOTSPOT TOP3 SAMPLE</p><h2>热点top3样图推荐</h2><p>先判断热点属性，再选择人物图生图、色彩材质、涂鸦插画、异形构图、场景、图标化或动态感主题；Top1 最多 3 张，Top2 / Top3 各 1 张，不可玩则不更新。</p></div>
             <div class="gallery-tools">
               <span id="galleryCount" class="gallery-count"></span>
               <button id="galleryPrev" class="gallery-arrow" aria-label="向左查看">←</button>
@@ -114,16 +114,16 @@
         </article>
       </section>
 
-      <section id="poolView" class="view">
+      <section id="configView" class="view">
         <div class="section-intro">
-          <div><p class="eyebrow">REGIONAL POOL</p><h2>核心地区热点池</h2><p>印度 / 印尼 / EE1 / SSA / 南美优先建设区域内容资产</p></div>
+          <div><p class="eyebrow">CONFIGURATION CENTER</p><h2>运营配置中心</h2><p>管理重点市场、平台数据源和热点筛选规则，让运营判断可追溯。</p></div>
         </div>
         <div id="regionCards" class="region-grid"></div>
       </section>
 
       <section id="strategyView" class="view">
         <div class="section-intro">
-          <div><p class="eyebrow">CAPTURE STRATEGY</p><h2>热点抓取策略</h2><p>不追短线热闹，只保留能够进入 AIGC 工作流并沉淀为模板资产的话题</p></div>
+          <div><p class="eyebrow">CAPTURE RULES</p><h2>抓取与筛选规则</h2><p>只将持续热度、强视觉符号且能转为 OS 主题的话题送入样图推荐。</p></div>
         </div>
         <div class="strategy-grid">
           <article class="strategy-card accent"><span>01</span><h3>抓取节奏</h3><strong>预测与实时双轨</strong><p>可预测热点提前 4–6 周准备，提前一周定模板，提前三天上线；实时热点由机器人定时监测。</p></article>
@@ -156,6 +156,6 @@
     <div id="previewCaption"></div>
   </dialog>
   <div id="toast" class="toast">数据已更新</div>
-  <script src="./app-top3.js?v=20260710-ai-sample-batch"></script>
+  <script src="./app-top3.js?v=20260710-os-wallpaper-masonry"></script>
 </body>
 </html>

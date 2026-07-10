@@ -447,9 +447,11 @@ const visualPlaySamples = [
 ];
 
 function samplesForHotspot(index) {
-  if (index === 0) return visualPlaySamples.slice(0, 5);
-  if (index === 1) return visualPlaySamples.slice(5, 8);
-  return visualPlaySamples.slice(8, 10);
+  // 兜底策略也遵守「Top1 最多 3、Top2/Top3 各 1」：
+  // 是否采用角色方向由热点属性决定，不把人物当成默认答案。
+  if (index === 0) return [visualPlaySamples[0], visualPlaySamples[1], visualPlaySamples[4]];
+  if (index === 1) return [visualPlaySamples[0]];
+  return [visualPlaySamples[5]];
 }
 
 function readGeneratedSampleOutputs() {
@@ -467,7 +469,7 @@ function samplePromptForHotspot(sample, hotspot) {
   const market = hotspot.country || hotspot.region || "重点市场";
   const source = hotspot.source?.join(" + ") || "热点源";
   const visual = visualSignalFromTitle(title);
-  return `基于 ${source} ${market} 实时热点《${title}》，生成「${sample.name}」样图推荐，用于给设计师做主题/壁纸玩法灵感。\n\n视觉可玩性：${sample.playability}。\n\n生成建议：${sample.prompt}；结合热点视觉方向「${visual}」，提取主体、色彩、场景、服饰/道具和情绪符号。输出 9:16 手机锁屏壁纸样图，顶部预留时钟区；画面高级、有趣、可本地化，可延展为主题商城模板；避免直接使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片。`;
+  return `基于 ${source} ${market} 实时热点《${title}》，生成「${sample.name}」样图推荐，用于给设计师做主题/壁纸玩法灵感。\n\n先判断热点属性：仅当人物或角色是核心可提取符号时采用人物图生图；音乐、节庆、城市、科技或自然热点优先转译为色彩、材质、涂鸦、插画、异形、场景、图标化或动态感主题。\n\n视觉可玩性：${sample.playability}。\n\n生成建议：${sample.prompt}；结合热点视觉方向「${visual}」，提取主体、色彩、场景、服饰/道具和情绪符号。输出 9:16 手机 OS 锁屏壁纸样图，顶部预留时钟区；画面高级、有趣、可本地化，可延展为主题商城模板；避免直接使用真实明星肖像、影视剧照、版权角色、品牌 Logo 和新闻照片。`;
 }
 
 function buildTemplateOutputs(hotspots) {

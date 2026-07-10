@@ -106,7 +106,7 @@ function filtered() {
   return hotspots.filter(h =>
     (state.region === "全球" || h.region === state.region) &&
     (state.source === "全部平台" || h.source.includes(state.source)) &&
-    (state.table === "all" || h.type === state.table)
+    (state.table === "all" || h.type === state.table || (state.table === "candidates" && h.selected))
   );
 }
 
@@ -265,7 +265,10 @@ function promptTextDownload(item) {
 
 function playTags(item) {
   const meta = String(item.previewMeta || "");
-  if (meta.includes("人物风格模板")) return ["人物风格模板", "图生图", "自拍转风格"];
+  if (meta.includes("人物图生图") || meta.includes("人物风格模板")) return ["人物风格", "图生图", "自拍转主题"];
+  if (meta.includes("色彩/材质")) return ["色彩主题", "锁屏 + AOD", "图标色板"];
+  if (meta.includes("异形/材质")) return ["异形主视觉", "材质主题", "图标延展"];
+  if (meta.includes("涂鸦/插画")) return ["插画涂鸦", "动态感", "本地化纹样"];
   if (meta.includes("海报")) return ["海报主视觉", "锁屏壁纸", "氛围套装"];
   return ["视觉玩法", "主题模板", "设计灵感"];
 }
@@ -333,22 +336,10 @@ function renderRegions() {
 function renderGallery() {
   const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
   $("#galleryCount").textContent = `${list.length} 个样图推荐`;
-  const groups = list.reduce((acc, item) => {
-    const key = item.hotspotName || item.name || "热点";
-    if (!acc[key]) acc[key] = [];
-    acc[key].push(item);
-    return acc;
-  }, {});
-  $("#visualGallery").innerHTML = Object.entries(groups).map(([name, items], groupIndex) => `<section class="playbook-group">
-    <div class="playbook-group-head">
-      <span>${escapeHtml(topRankLabel(items[0]))}</span>
-      <div><h3>${escapeHtml(name)}</h3><p>${escapeHtml(items[0]?.source?.join(" / ") || "实时热点")} · ${escapeHtml((items[0]?.previewMeta || "").replace(/^视觉可玩性样图 · /, ""))}</p></div>
-      ${items[0]?.sourceUrl ? `<a href="${escapeAttr(items[0].sourceUrl)}" target="_blank" rel="noopener noreferrer">打开真实来源 ↗</a>` : ""}
-    </div>
-    <div class="playbook-row">
-      ${items.map((h, index) => {
-        const nameText = sampleName(h);
-        return `<article class="playbook-card image-playbook-card">
+  $("#visualGallery").innerHTML = `<div class="masonry-gallery">${list.map(h => {
+    const nameText = sampleName(h);
+    return `<article class="playbook-card image-playbook-card">
+          <div class="sample-context"><span>${escapeHtml(topRankLabel(h))}</span><b>${escapeHtml(h.hotspotName || "实时热点")}</b>${h.sourceUrl ? `<a href="${escapeAttr(h.sourceUrl)}" target="_blank" rel="noopener noreferrer">真实来源 ↗</a>` : ""}</div>
           <button class="visual-preview playbook-image" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}">
             <img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}">
             <span>${escapeHtml(topRankLabel(h))}</span>
@@ -365,9 +356,7 @@ function renderGallery() {
             </div>
           </div>
         </article>`;
-      }).join("")}
-    </div>
-  </section>`).join("");
+  }).join("")}</div>`;
 }
 
 function renderFusionGallery() {
@@ -429,12 +418,12 @@ function bind() {
     $$(".nav-item").forEach(x => x.classList.remove("active")); b.classList.add("active");
     $$(".view").forEach(v => v.classList.remove("active"));
     const mode = b.dataset.view;
-    if (mode === "pool") { $("#poolView").classList.add("active"); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
-    if (mode === "strategy") { $("#strategyView").classList.add("active"); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     $("#overviewView").classList.add("active");
-    if (mode === "trend") setTimeout(() => $(".trend-card").scrollIntoView({ behavior: "smooth", block: "center" }), 50);
-    else if (mode === "alerts") setTimeout(() => $(".alert-card").scrollIntoView({ behavior: "smooth", block: "center" }), 50);
-    else if (mode === "candidates") { state.table = "all"; renderTable(); setTimeout(() => $(".table-card").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
+    if (mode === "config") { $("#configView").classList.add("active"); $("#strategyView").classList.add("active"); setTimeout(() => $("#configView").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
+    else if (mode === "pool") { state.table = "all"; renderTable(); setTimeout(() => $("#hotspotPoolSection").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
+    else if (mode === "trend") setTimeout(() => $("#trendSection").scrollIntoView({ behavior: "smooth", block: "center" }), 50);
+    else if (mode === "alerts") setTimeout(() => $("#alertSection").scrollIntoView({ behavior: "smooth", block: "center" }), 50);
+    else if (mode === "candidates") { state.table = "candidates"; renderTable(); setTimeout(() => $("#hotspotPoolSection").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
     else window.scrollTo({ top: 0, behavior: "smooth" });
   });
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
@@ -471,7 +460,7 @@ function bind() {
       setTimeout(() => btn.textContent = "↻ 拉取最新", 1300);
     }
   };
-  $("#candidateBtn").onclick = () => { state.table = "all"; $(".nav-item[data-view='overview']").click(); showToast(`当前 ${hotspots.filter(x => x.selected).length} 个运营候选`); };
+  $("#candidateBtn").onclick = () => { $(".nav-item[data-view='candidates']").click(); showToast(`当前 ${hotspots.filter(x => x.selected).length} 个运营候选`); };
   $("#galleryPrev").onclick = () => $("#visualGallery").scrollBy({ left: -260, behavior: "smooth" });
   $("#galleryNext").onclick = () => $("#visualGallery").scrollBy({ left: 260, behavior: "smooth" });
   $("#fusionPrev").onclick = () => $("#fusionGallery").scrollBy({ left: -306, behavior: "smooth" });
