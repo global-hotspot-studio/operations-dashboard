@@ -423,7 +423,7 @@ function bind() {
       pool: "#hotspotPoolSection",
       trend: "#trendSection",
       alerts: "#alertSection",
-      candidates: "#hotspotPoolSection",
+      candidates: "#styleTemplateSection",
       config: "#configView"
     }[mode];
     if (mode === "pool") { state.table = "all"; renderTable(); }
