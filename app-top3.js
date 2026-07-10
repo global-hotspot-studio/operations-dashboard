@@ -44,8 +44,9 @@ async function loadDashboardData(force = false) {
 
   // 精品样图由人工触发的 AI 生图批次单独维护，不能被定时热点刷新覆盖。
   const sampleUrls = [
-    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`,
-    `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`
+    // 优先同一版 Pages 内的样图清单，确保页面代码和样图批次同步发布。
+    `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`,
+    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`
   ];
   for (const url of sampleUrls) {
     try {
