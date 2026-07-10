@@ -243,6 +243,13 @@ function promptTextDownload(item) {
   return `data:text/plain;charset=utf-8,${encodeURIComponent(text)}`;
 }
 
+function playTags(item) {
+  const meta = String(item.previewMeta || "");
+  if (meta.includes("人物风格模板")) return ["人物风格模板", "图生图", "自拍转风格"];
+  if (meta.includes("海报")) return ["海报主视觉", "锁屏壁纸", "氛围套装"];
+  return ["视觉玩法", "主题模板", "设计灵感"];
+}
+
 function renderMetrics() {
   const list = filtered();
   const selected = list.filter(x => x.selected).length;
@@ -330,7 +337,7 @@ function renderGallery() {
           <div class="visual-info">
             <b>${escapeHtml(h.previewTitle)}</b>
             <small>${escapeHtml(h.previewMeta)}</small>
-            <div class="play-tags"><span>锁屏壁纸</span><span>主题玩法</span><span>设计灵感</span></div>
+            <div class="play-tags">${playTags(h).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
             <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
             <div class="visual-actions">
               <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>

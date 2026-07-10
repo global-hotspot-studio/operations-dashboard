@@ -365,26 +365,26 @@ const visualPlaySamples = [
   {
     id: "idol_comic",
     name: "偶像漫画化",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/idol_comic.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/korean-idol-comic.png",
     style: "精致、年轻、人物情绪强，适合音乐/明星/舞台类热点",
     playability: "可做自拍图生图、粉丝应援壁纸、人物主题模板",
     prompt: "将热点情绪转译成精致漫画人物与舞台氛围：妆造、服饰、灯光、色彩都围绕热点主题重组，人物保持原创或用户上传"
   },
   {
     id: "local_outfit",
-    name: "本地装束化",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/local_outfit.png",
-    style: "地域服饰、节庆色彩、文化识别强，适合区域运营热点",
-    playability: "可做本地节日主题、区域限定壁纸、人物换装玩法",
-    prompt: "提取热点所在地的服饰、纹样、节庆色彩和妆造元素，生成本地化人物/场景壁纸，强调文化识别但避免刻板化"
+    name: "本地人物妆造",
+    category: "人物风格模板",
+    preview: "assets/style-templates/india-outfit.png",
+    style: "地域五官、发型、服饰和妆造识别强，适合本地化人物模板",
+    playability: "可做自拍图生图、本地人物妆造、区域限定角色模板",
+    prompt: "提取热点所在地的发型、服饰、纹样、妆容和情绪气质，生成原创本地人物头像/半身像模板，适合用户自拍或人物图生图迁移"
   },
   {
     id: "american_comic",
     name: "美漫英雄化",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/american_comic.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/american-comic-portrait.png",
     style: "强表情、强动作、冲击感，适合赛事/游戏/电影热点",
     playability: "可做原创英雄角色、赛事应援、热血主题壁纸",
     prompt: "把热点转译成原创英雄式人物主视觉：夸张表情、速度线、强对比色和动态构图，不使用已有 IP 或队徽"
@@ -392,8 +392,8 @@ const visualPlaySamples = [
   {
     id: "mecha_upgrade",
     name: "机甲化升级",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/mecha_upgrade.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/mecha-character.png",
     style: "科技、装备、未来感，适合游戏/科技/高能热点",
     playability: "可做 AI 变身、机甲主题、未来感壁纸套装",
     prompt: "基于热点视觉符号生成原创轻机甲造型：装备层次、能量光线、科技背景，与热点代表色融合"
@@ -401,8 +401,8 @@ const visualPlaySamples = [
   {
     id: "cute_3d",
     name: "Q版3D萌化",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/cute_3d.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/3d-character.png",
     style: "亲和、可爱、社交传播强，适合泛娱乐热点",
     playability: "可做头像、贴纸、锁屏人物、轻量主题模板",
     prompt: "把热点转成 Q 版 3D 角色或萌化道具：表情夸张、材质干净、色彩明快，适合做贴纸和壁纸延展"
@@ -410,8 +410,8 @@ const visualPlaySamples = [
   {
     id: "game_character",
     name: "游戏角色立绘",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/game_character.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/game-character.png",
     style: "角色设定、服装细节、世界观强，适合游戏/动漫/娱乐热点",
     playability: "可做角色卡、冒险主题、游戏化壁纸玩法",
     prompt: "把热点提炼成原创游戏角色立绘：服装、道具、背景和阵营色统一，突出可收藏的角色设定感"
@@ -419,17 +419,17 @@ const visualPlaySamples = [
   {
     id: "art_portrait",
     name: "艺术肖像化",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/art_portrait.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/oil-painting-portrait.png",
     style: "高级、艺术化、长期可沉淀，适合精品壁纸库",
     playability: "可做艺术肖像壁纸、高级主题、低版权风险模板",
     prompt: "把热点情绪转成艺术肖像/艺术场景：笔触、光影和色盘围绕热点氛围展开，适合沉淀为精品模板"
   },
   {
     id: "indonesia_local",
-    name: "东南亚本地化",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/indonesia_local.png",
+    name: "东南亚人物本地化",
+    category: "人物风格模板",
+    preview: "assets/style-templates/indonesia-outfit.png",
     style: "温暖、生活化、节庆感，适合印尼/东南亚热点",
     playability: "可做区域限定、本地活动、节庆人物壁纸",
     prompt: "结合东南亚本地服饰、城市生活、节庆色彩和自然元素，生成有亲近感的热点壁纸样图"
@@ -437,8 +437,8 @@ const visualPlaySamples = [
   {
     id: "anime_clean",
     name: "清透二次元",
-    category: "视觉可玩性样图",
-    preview: "assets/hotspot-playbook/anime_clean.png",
+    category: "人物风格模板",
+    preview: "assets/style-templates/japan-outfit.png",
     style: "清透、年轻、二次元感强，适合动漫/年轻文化热点",
     playability: "可做动漫化自拍、轻二次元主题、清新锁屏壁纸",
     prompt: "把热点视觉符号转成清透二次元人物或场景：柔和天空光、干净线条、轻盈服饰和明确主题色"
