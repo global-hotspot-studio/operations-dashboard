@@ -417,15 +417,18 @@ function bind() {
   $("#sourceFilter").onchange = e => { state.source = e.target.value; renderAll(); };
   $$(".nav-item").forEach(b => b.onclick = () => {
     $$(".nav-item").forEach(x => x.classList.remove("active")); b.classList.add("active");
-    $$(".view").forEach(v => v.classList.remove("active"));
     const mode = b.dataset.view;
-    $("#overviewView").classList.add("active");
-    if (mode === "config") { $("#configView").classList.add("active"); $("#strategyView").classList.add("active"); setTimeout(() => $("#configView").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
-    else if (mode === "pool") { state.table = "all"; renderTable(); setTimeout(() => $("#hotspotPoolSection").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
-    else if (mode === "trend") setTimeout(() => $("#trendSection").scrollIntoView({ behavior: "smooth", block: "center" }), 50);
-    else if (mode === "alerts") setTimeout(() => $("#alertSection").scrollIntoView({ behavior: "smooth", block: "center" }), 50);
-    else if (mode === "candidates") { state.table = "candidates"; renderTable(); setTimeout(() => $("#hotspotPoolSection").scrollIntoView({ behavior: "smooth", block: "start" }), 50); }
-    else window.scrollTo({ top: 0, behavior: "smooth" });
+    const anchor = {
+      overview: "#overviewView",
+      pool: "#hotspotPoolSection",
+      trend: "#trendSection",
+      alerts: "#alertSection",
+      candidates: "#hotspotPoolSection",
+      config: "#configView"
+    }[mode];
+    if (mode === "pool") { state.table = "all"; renderTable(); }
+    if (mode === "candidates") { state.table = "candidates"; renderTable(); }
+    if (anchor) setTimeout(() => $(anchor).scrollIntoView({ behavior: "smooth", block: "start" }), 40);
   });
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {

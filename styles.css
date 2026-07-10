@@ -152,6 +152,10 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 @media(max-width:900px){.masonry-gallery{columns:2 250px}}
 @media(max-width:620px){.masonry-gallery{columns:1}.masonry-gallery .playbook-card{margin-bottom:14px}}
 
+/* 看板为单页锚点结构：侧栏每一项都指向右侧的真实板块。 */
+.view{display:block;scroll-margin-top:24px}
+#trendSection,#alertSection,#hotspotPoolSection,#configView{scroll-margin-top:24px}
+
 @media(max-width:720px){
   .playbook-group{padding:14px;border-radius:22px}
   .playbook-group-head{grid-template-columns:auto 1fr;align-items:start}
