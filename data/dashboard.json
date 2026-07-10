@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-10T11:25:13.535Z",
+  "generatedAt": "2026-07-10T18:08:44.871Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1290,
-    "effectiveHotspots": 342,
+    "rawTopics": 1248,
+    "effectiveHotspots": 328,
     "highPriorityAlerts": 16,
     "templateCandidates": 16,
     "rawDelta": 42,
-    "effectiveRate": "26.2%"
+    "effectiveRate": "26.5%"
   },
   "trendSeries": {
     "labels": [
@@ -47,32 +47,32 @@
       "22:00"
     ],
     "effective": [
-      50,
-      53,
-      39,
+      57,
+      47,
+      42,
       67,
-      63,
-      62,
-      94,
-      69,
-      98,
-      110,
-      112,
-      127
+      59,
+      68,
+      87,
+      75,
+      95,
+      109,
+      116,
+      120
     ],
     "template": [
-      23,
-      24,
-      23,
       26,
+      21,
+      26,
+      25,
       35,
-      32,
-      45,
-      37,
-      49,
-      54,
-      58,
-      73
+      34,
+      42,
+      41,
+      47,
+      55,
+      59,
+      71
     ]
   },
   "hotspots": [
@@ -85,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "22.9M",
-      "trend": 82,
-      "score": 98,
+      "heat": "21.5M",
+      "trend": 69,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -95,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Tabaahi 🔥| Toxic (Hindi) | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 21.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 22.9M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "h1kihH0l8iQ",
         "channelTitle": "Zee Music Company",
@@ -120,9 +120,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "11.9M",
-      "trend": 65,
-      "score": 95,
+      "heat": "14.3M",
+      "trend": 78,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -130,7 +130,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 12.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 12.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 肯尼亚 热门榜，播放量 12.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 13.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 13.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 肯尼亚 热门榜，播放量 13.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "NdvqHc56lE0",
         "channelTitle": "Warner Bros.",
@@ -155,9 +155,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.5M",
-      "trend": 69,
-      "score": 98,
+      "heat": "1.6M",
+      "trend": 61,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -165,7 +165,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《Jux Ft Mbosso - Kipepeo (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 1.5M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 1.7M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "B8UDrYSaGZA",
         "channelTitle": "JUX",
@@ -190,8 +190,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "754K",
-      "trend": 64,
+      "heat": "889K",
+      "trend": 67,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -200,7 +200,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《April DA7 - Menyala | Official Music Video》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 754K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 872K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "L6HTApN-DoM",
         "channelTitle": "3D Entertainment",
@@ -218,41 +218,6 @@
     },
     {
       "id": 1004,
-      "name": "Avatar Aang: The Last …",
-      "originalTitle": "Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar",
-      "region": "撒哈拉以南非洲",
-      "country": "南非",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "5.3M",
-      "trend": 60,
-      "score": 96,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 南非 热门内容《Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 5.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "7b20GRFZBFE",
-        "channelTitle": "Avatar Legends",
-        "publishedAt": "2026-07-07T15:00:30Z",
-        "thumbnail": "https://i.ytimg.com/vi/7b20GRFZBFE/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=7b20GRFZBFE"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Avatar Aang: The Last Airbender | Official Movie Trailer | Paramount+ | Avatar",
-          "url": "https://www.youtube.com/watch?v=7b20GRFZBFE"
-        }
-      ]
-    },
-    {
-      "id": 1005,
       "name": "TOXIC – Final Trailer …",
       "originalTitle": "TOXIC – Final Trailer | Yash | A Fairytale for Grown-Ups | Concept 4K",
       "region": "印度",
@@ -260,8 +225,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.5M",
-      "trend": 69,
+      "heat": "1.6M",
+      "trend": 65,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -270,7 +235,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《TOXIC – Final Trailer (2026) | Yash | A Fairytale for Grown-Ups | Concept 4K》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 1.4M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 1.6M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "og-HBHiAw5o",
         "channelTitle": "T TRAILER   •  12M  Views • 5 hours ago \n\n\n\n\n.....",
@@ -287,6 +252,41 @@
       ]
     },
     {
+      "id": 1005,
+      "name": "POPPY PLAYTIME CHAPTER…",
+      "originalTitle": "POPPY PLAYTIME CHAPTER 5",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "1.9M",
+      "trend": 58,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《POPPY PLAYTIME CHAPTER 5 [PART 2]》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 2.0M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "AcqCjKv8GqE",
+        "channelTitle": "Techno Gamerz",
+        "publishedAt": "2026-07-10T03:30:10Z",
+        "thumbnail": "https://i.ytimg.com/vi/AcqCjKv8GqE/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=AcqCjKv8GqE"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "POPPY PLAYTIME CHAPTER 5",
+          "url": "https://www.youtube.com/watch?v=AcqCjKv8GqE"
+        }
+      ]
+    },
+    {
       "id": 1006,
       "name": "ROBLOX MUKBANG GAME!",
       "originalTitle": "ROBLOX MUKBANG GAME!",
@@ -295,9 +295,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "2.0M",
-      "trend": 56,
-      "score": 95,
+      "heat": "2.5M",
+      "trend": 70,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -305,7 +305,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《ROBLOX MUKBANG GAME!》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 2.2M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 2.3M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "P7myjJ_nK1s",
         "channelTitle": "Foltyn",
@@ -323,45 +323,83 @@
     },
     {
       "id": 1007,
-      "name": "Егор Крид - MALO 2.0 (…",
-      "originalTitle": "Егор Крид - MALO 2.0 (ft. OG Buda, Toxi$, Мэйби Бэйби, Baby Cute, Дора, madk1d, тёмный принц) КЛИП",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
+      "name": "Vuka Vuka Ksile!!! (fe…",
+      "originalTitle": "Vuka Vuka Ksile!!!",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
       "source": [
         "YouTube"
       ],
-      "heat": "672K",
-      "trend": 69,
-      "score": 98,
+      "heat": "312K",
+      "trend": 53,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 俄罗斯 热门内容《Егор Крид - MALO 2.0 (ft. OG Buda, Toxi$, Мэйби Бэйби, Baby Cute, Дора, madk1d, тёмный принц) КЛИП》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 俄罗斯 热门榜，播放量 634K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 南非 热门内容《Vuka Vuka Ksile!!! (feat. KaMaphanga) (Remix)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 336K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "tP3h0iP8OY8",
-        "channelTitle": "Егор Крид",
-        "publishedAt": "2026-07-08T07:31:07Z",
-        "thumbnail": "https://i.ytimg.com/vi/tP3h0iP8OY8/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=tP3h0iP8OY8"
+        "videoId": "lo6c3g_MVkA",
+        "channelTitle": "Location PK - Topic",
+        "publishedAt": "2026-07-02T20:33:38Z",
+        "thumbnail": "https://i.ytimg.com/vi/lo6c3g_MVkA/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=lo6c3g_MVkA"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "Егор Крид - MALO 2.0 (ft. OG Buda, Toxi$, Мэйби Бэйби, Baby Cute, Дора, madk1d, тёмный принц) КЛИП",
-          "url": "https://www.youtube.com/watch?v=tP3h0iP8OY8"
+          "title": "Vuka Vuka Ksile!!!",
+          "url": "https://www.youtube.com/watch?v=lo6c3g_MVkA"
         }
       ]
     },
     {
       "id": 1008,
-      "name": "clima",
-      "originalTitle": "clima",
+      "name": "partidos de hoy mundia…",
+      "originalTitle": "partidos de hoy mundial 2026",
       "region": "南美洲",
       "country": "智利",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 76,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 智利 搜索趋势「partidos de hoy mundial 2026」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 50000+。关联新闻源：Emol / CNN en Español；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "partidos de hoy mundial 2026",
+        "traffic": 50000,
+        "publishedAt": "Fri, 10 Jul 2026 10:40:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2bEgvtsjvahxOQ9umSKUSfayObrOWwp3ENsdQtPJfeQK1pK_ffN2gatz2gp8",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=partidos%20de%20hoy%20mundial%202026",
+        "newsUrl": "https://www.emol.com/noticias/Deportes/2026/07/09/1205204/cuartos-semifinales-cuadro-mundial.html",
+        "newsTitle": "Ya hay un semifinalista: Así va el cuadro del Mundial camino a la gran final",
+        "newsSource": "Emol"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "partidos de hoy mundial 2026",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=partidos%20de%20hoy%20mundial%202026"
+        }
+      ]
+    },
+    {
+      "id": 1009,
+      "name": "mbappe",
+      "originalTitle": "mbappe",
+      "region": "南美洲",
+      "country": "阿根廷",
       "source": [
         "Google Trends"
       ],
@@ -374,37 +412,75 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「clima」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 20000+。关联新闻源：VLN Radio / Clarin.com；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「mbappe」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 10000+。关联新闻源：Le Monde.fr / Bleacher Report；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "clima",
-        "traffic": 20000,
-        "publishedAt": "Fri, 10 Jul 2026 03:40:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7v0Odx7zsULFTs5Mhxij46Pr2O_p9uA2XZPEAqhRIiRjxMrBNqyPdDfa-xYQ",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=clima",
-        "newsUrl": "https://www.vlnradio.cl/noticias/nacional/region-de-valparaiso/2026/07/09/papudo-tiempo-hoy-10-de-julio-pronostico-completo/",
-        "newsTitle": "Papudo | tiempo hoy, 10 de julio: pronóstico completo",
-        "newsSource": "VLN Radio"
+        "topic": "mbappe",
+        "traffic": 10000,
+        "publishedAt": "Fri, 10 Jul 2026 10:40:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxVt0r2svlrEjnM55vb5t9GLdghECx8GeyyhnSxLtR87VP0UIlyd855TsXlL4",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=mbappe",
+        "newsUrl": "https://www.lemonde.fr/en/sports/article/2026/07/10/mbappe-fires-france-past-morocco-into-world-cup-semi-finals_6755316_9.html",
+        "newsTitle": "France fires past Morocco into World Cup semi-finals",
+        "newsSource": "Le Monde.fr"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "clima",
-          "url": "https://trends.google.com/trends/explore?geo=CL&q=clima"
+          "title": "mbappe",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=mbappe"
         }
       ]
     },
     {
-      "id": 1009,
-      "name": "hasta donde llego noru…",
-      "originalTitle": "hasta donde llego noruega en el mundial 2026",
-      "region": "南美洲",
-      "country": "秘鲁",
+      "id": 1010,
+      "name": "wimbledon 2026",
+      "originalTitle": "wimbledon 2026",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 66,
+      "trend": 61,
+      "score": 93,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 南非 搜索趋势「wimbledon 2026」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 南非 搜索趋势，搜索热度约 5000+。关联新闻源：Sky Sports / The Guardian；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "wimbledon 2026",
+        "traffic": 5000,
+        "publishedAt": "Fri, 10 Jul 2026 10:40:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn5l4MTKkEaLKjsrRWtcKmshWfrd2Ji_KTSNk0L_ozrW6x3vApPZYeHz4z1Og",
+        "url": "https://trends.google.com/trends/explore?geo=ZA&q=wimbledon%202026",
+        "newsUrl": "https://www.skysports.com/tennis/live-blog/12110/13561964/wimbledon-day-12-live-arthur-fery-takes-on-alexander-zverev-before-novak-djokovic-vs-jannik-sinner-in-mens-singles-semi-finals",
+        "newsTitle": "Wimbledon - Men's semi-finals LIVE!",
+        "newsSource": "Sky Sports"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "wimbledon 2026",
+          "url": "https://trends.google.com/trends/explore?geo=ZA&q=wimbledon%202026"
+        }
+      ]
+    },
+    {
+      "id": 1011,
+      "name": "carlos alcaraz",
+      "originalTitle": "carlos alcaraz",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 64,
       "score": 94,
       "status": "爆发",
       "type": "realtime",
@@ -412,68 +488,106 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 秘鲁 搜索趋势「hasta donde llego noruega en el mundial 2026」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 50000+。关联新闻源：Diario AS / EL PAÍS；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「carlos alcaraz」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：EL PAÍS / Murcia Plaza；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "hasta donde llego noruega en el mundial 2026",
-        "traffic": 50000,
-        "publishedAt": "Thu, 9 Jul 2026 23:30:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU7rhUC9-fVX-nwECTd5lUxr49EOVMGZO9i0RpRb64-PFecI1eHAa-vk0NlOE",
-        "url": "https://trends.google.com/trends/explore?geo=PE&q=hasta%20donde%20llego%20noruega%20en%20el%20mundial%202026",
-        "newsUrl": "https://as.com/futbol/mundial/cuadro-del-mundial-2026-clasificados-cruces-y-quien-se-enfrenta-a-quien-en-cuartos-y-semifinales-de-la-copa-del-mundo-f202607-n/",
-        "newsTitle": "Cuadro del Mundial 2026: clasificados a semifinales, cruces y quién se enfrenta a quién en cuartos de la Copa",
-        "newsSource": "Diario AS"
+        "topic": "carlos alcaraz",
+        "traffic": 500,
+        "publishedAt": "Fri, 10 Jul 2026 10:40:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxBbHG-agyMgoKe2D-k4X4tmltaKufOABS4ec3Ocghz3Mi0-qVZVPyT16fo90",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=carlos%20alcaraz",
+        "newsUrl": "https://elpais.com/deportes/tenis/2026-07-10/zverev-neutraliza-a-fery-y-se-reafirma-de-paris-a-londres-de-final-en-final.html",
+        "newsTitle": "Zverev neutraliza a Fery y se reafirma: de París a Londres, de final en final",
+        "newsSource": "EL PAÍS"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "hasta donde llego noruega en el mundial 2026",
-          "url": "https://trends.google.com/trends/explore?geo=PE&q=hasta%20donde%20llego%20noruega%20en%20el%20mundial%202026"
+          "title": "carlos alcaraz",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=carlos%20alcaraz"
         }
       ]
     },
     {
-      "id": 1010,
-      "name": "запрет",
-      "originalTitle": "запрет",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
+      "id": 1012,
+      "name": "hasil practice moto3 j…",
+      "originalTitle": "hasil practice moto3 jerman",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 71,
-      "score": 96,
+      "trend": 52,
+      "score": 89,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 俄罗斯 搜索趋势「запрет」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 俄罗斯 搜索趋势，搜索热度约 50000+。关联新闻源：Финансы Mail / БИЗНЕС Online — Новости Казани；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「hasil practice moto3 jerman」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 100+。关联新闻源：CNN Indonesia / detikoto；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "запрет",
-        "traffic": 50000,
-        "publishedAt": "Fri, 10 Jul 2026 03:00:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCijEi3S56j8NH1X6r9cvgbM4a1kCWAGp8Lha7H7b6CiXFP36cQw2ir_uxNPc",
-        "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82",
-        "newsUrl": "https://finance.mail.ru/article/novak-nazval-prichinu-deficita-benzina-v-rossii-69217217/",
-        "newsTitle": "Новак признал дефицит топлива в России: причины, ремонт НПЗ, последствия для водителей",
-        "newsSource": "Финансы Mail"
+        "topic": "hasil practice moto3 jerman",
+        "traffic": 100,
+        "publishedAt": "Fri, 10 Jul 2026 10:40:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa2RQmPTFGSTH8FcEHhjnS4FD5xy_ocKUBzw-pjusCfsTX0uNLOfRHpNEAfHU",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=hasil%20practice%20moto3%20jerman",
+        "newsUrl": "https://www.cnnindonesia.com/olahraga/20260710182936-156-1379294/hasil-practice-moto3-jerman-paling-cepat-veda-ega-pratama-nomor-1",
+        "newsTitle": "Hasil Practice Moto3 Jerman: Paling Cepat, Veda Ega Pratama Nomor 1",
+        "newsSource": "CNN Indonesia"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "запрет",
-          "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82"
+          "title": "hasil practice moto3 jerman",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=hasil%20practice%20moto3%20jerman"
         }
       ]
     },
     {
-      "id": 1011,
-      "name": "precio del dólar hoy e…",
-      "originalTitle": "precio del dólar hoy en colombia",
+      "id": 1013,
+      "name": "ryanair",
+      "originalTitle": "ryanair",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 66,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「ryanair」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 500+。关联新闻源：G1 / Folha de S.Paulo；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "ryanair",
+        "traffic": 500,
+        "publishedAt": "Fri, 10 Jul 2026 10:40:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU4FHUdZUCUOAtZbJOeK7V3rewx30eFyM-KtPgwfZ9FUaOmCY-hEqybj19ayk",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=ryanair",
+        "newsUrl": "https://g1.globo.com/mundo/noticia/2026/07/10/por-sorte-estava-de-cinto-relato-testemunha-passageiro-sugado-durante-voo-ryanair.ghtml",
+        "newsTitle": "Passageira diz que homem sugado durante voo ficou cabeça e pescoço para fora e 'por sorte estava de cinto'",
+        "newsSource": "G1"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "ryanair",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=ryanair"
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "name": "josé antonio ocampo",
+      "originalTitle": "josé antonio ocampo",
       "region": "南美洲",
       "country": "哥伦比亚",
       "source": [
@@ -488,218 +602,140 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「precio del dólar hoy en colombia」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：ELTIEMPO.COM / LaRepublica.co；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「josé antonio ocampo」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100+。关联新闻源：La Silla Vacía / ELTIEMPO.com；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "precio del dólar hoy en colombia",
-        "traffic": 5000,
-        "publishedAt": "Fri, 10 Jul 2026 03:40:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_sZPmLnDljOpzm-bIrQZdWrFok5poTVzHrTcCODllhtCl5RaO6xJIavs41hA",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=precio%20del%20d%C3%B3lar%20hoy%20en%20colombia",
-        "newsUrl": "https://www.eltiempo.com/economia/sector-financiero/el-dolar-baja-en-colombia-mas-de-lo-que-deberia-cual-seria-el-precio-justo-y-cuando-volveria-a-ese-nivel-3569487",
-        "newsTitle": "¿El dólar baja en Colombia más de lo que debería?, ¿cuál sería el precio 'justo' y cuándo volvería a ese nivel?",
-        "newsSource": "ELTIEMPO.COM"
+        "topic": "josé antonio ocampo",
+        "traffic": 100,
+        "publishedAt": "Fri, 10 Jul 2026 10:10:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwPI22EZtyWnWTu3eRW8gYBciMnk5Zx164t0QWOCSW75WFCmh8sdebKOZ3Vqo",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=jos%C3%A9%20antonio%20ocampo",
+        "newsUrl": "https://www.lasillavacia.com/en-vivo/petro-y-abelardo-tienen-una-actitud-antidemocratica-manifiesto-de-centro/",
+        "newsTitle": "Petro y Abelardo tienen una “actitud antidemocrática”: Manifiesto de Centro",
+        "newsSource": "La Silla Vacía"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "precio del dólar hoy en colombia",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=precio%20del%20d%C3%B3lar%20hoy%20en%20colombia"
-        }
-      ]
-    },
-    {
-      "id": 1012,
-      "name": "gempa bumi",
-      "originalTitle": "gempa bumi",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 68,
-      "score": 96,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「gempa bumi」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 2000+。关联新闻源：Tribrata News / Databoks Katadata；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "gempa bumi",
-        "traffic": 2000,
-        "publishedAt": "Fri, 10 Jul 2026 03:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7CReOTxpBSXzO4TfKQLc4K01hN-sM3u8GUwYa1yvpbcz_Dj8YqIS5DG0wnYI",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=gempa%20bumi",
-        "newsUrl": "https://tribratanews.polri.go.id/blog/nasional-3/gempa-bumi-bermagnitudo-3-3-guncang-waikabubak-ntt-103525",
-        "newsTitle": "Gempa Bumi Bermagnitudo 3.3 Guncang Waikabubak, NTT",
-        "newsSource": "Tribrata News"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "gempa bumi",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=gempa%20bumi"
-        }
-      ]
-    },
-    {
-      "id": 1013,
-      "name": "tiempo santiago",
-      "originalTitle": "tiempo santiago",
-      "region": "南美洲",
-      "country": "智利",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 56,
-      "score": 91,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「tiempo santiago」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 2000+。关联新闻源：BioBioChile / Meteored Chile；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "tiempo santiago",
-        "traffic": 2000,
-        "publishedAt": "Fri, 10 Jul 2026 03:50:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGO_1RUpvBQzZbUbQROjU3Q5FyntUNMjnin3WEWo_Qc6CCits2Zic-NyvU4Tw",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo%20santiago",
-        "newsUrl": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/07/08/senapred-declara-alerta-temprana-preventiva-en-10-comunas-de-la-rm-hay-riesgo-de-aluviones-por-lluvia.shtml",
-        "newsTitle": "Senapred declara Alerta Temprana Preventiva en 10 comunas de la RM: hay riesgo de aluviones por lluvia",
-        "newsSource": "BioBioChile"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "tiempo santiago",
-          "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo%20santiago"
-        }
-      ]
-    },
-    {
-      "id": 1014,
-      "name": "tiempo",
-      "originalTitle": "tiempo",
-      "region": "南美洲",
-      "country": "智利",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 63,
-      "score": 93,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「tiempo」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 5000+。关联新闻源：VLN Radio / VLN Radio；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "tiempo",
-        "traffic": 5000,
-        "publishedAt": "Fri, 10 Jul 2026 03:20:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-booC9L8NZai72KKC4Gf0gmJgWr7vUJvgS9XeEvMbq16v-2OS_693Pgf4B4",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo",
-        "newsUrl": "https://www.vlnradio.cl/noticias/nacional/region-de-magallanes/2026/07/09/el-tiempo-en-torres-del-paine-este-viernes-10-de-julio-de-2026/",
-        "newsTitle": "El tiempo en Torres del Paine este viernes 10 de julio de 2026",
-        "newsSource": "VLN Radio"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "tiempo",
-          "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo"
+          "title": "josé antonio ocampo",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=jos%C3%A9%20antonio%20ocampo"
         }
       ]
     },
     {
       "id": 1015,
-      "name": "આગાહી",
-      "originalTitle": "આગાહી",
-      "region": "印度",
-      "country": "印度",
+      "name": "incendio sheraton",
+      "originalTitle": "incendio sheraton",
+      "region": "南美洲",
+      "country": "秘鲁",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 93,
+      "trend": 60,
+      "score": 92,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「આગાહી」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 1000+。关联新闻源：Gujarat Samachar / ABP Asmita；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 秘鲁 搜索趋势「incendio sheraton」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 500+。关联新闻源：RPP / La República；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "આગાહી",
-        "traffic": 1000,
-        "publishedAt": "Fri, 10 Jul 2026 04:10:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6WZq4oOonZpRa23Htds39lhVzh6VSkNgfYnTBRQcgTxujskROA9brp8EVfNg",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AA%86%E0%AA%97%E0%AA%BE%E0%AA%B9%E0%AB%80",
-        "newsUrl": "https://www.gujaratsamachar.com/news/gujarat/3-rain-systems-active-simultaneously-in-gujarat-red-alert-in-8-districts-signal-number-3-at-the-port-42376654312",
-        "newsTitle": "ગુજરાતમાં એકસાથે વરસાદની 3 સિસ્ટમ એક્ટિવ, 8 જિલ્લામાં રેડ ઍલર્ટ, પોર્ટ પર 3 નંબરનું સિગ્નલ",
-        "newsSource": "Gujarat Samachar"
+        "topic": "incendio sheraton",
+        "traffic": 500,
+        "publishedAt": "Fri, 10 Jul 2026 10:00:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6u-_-HSg-mEsOVjyRgS1I2l9ryUnWITc-CRaAxhaLQfeMhC0p42YKoa6c8qQ",
+        "url": "https://trends.google.com/trends/explore?geo=PE&q=incendio%20sheraton",
+        "newsUrl": "https://rpp.pe/lima/actualidad/cercado-de-lima-evacuan-a-personal-y-huespedes-del-hotel-sheraton-tras-fuerte-humareda-noticia-1696724",
+        "newsTitle": "Cercado de Lima: evacúan a personal y huéspedes del Hotel Sheraton tras fuerte humareda",
+        "newsSource": "RPP"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "આગાહી",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AA%86%E0%AA%97%E0%AA%BE%E0%AA%B9%E0%AB%80"
+          "title": "incendio sheraton",
+          "url": "https://trends.google.com/trends/explore?geo=PE&q=incendio%20sheraton"
         }
       ]
     },
     {
       "id": 1016,
-      "name": "Namibia Cricket Team m…",
-      "originalTitle": "Namibia Cricket Team matches, scorecards, news and statistics",
+      "name": "Mark Hastings Profile …",
+      "originalTitle": "Mark Hastings Profile - Cricket Player New Zealand | Stats, Records, Video",
       "region": "印度",
       "country": "印度",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 48,
-      "score": 81,
+      "trend": 56,
+      "score": 84,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Cricbuzz」热点《Namibia Cricket Team matches, scorecards, news and statistics》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Cricbuzz。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「Cricinfo」热点《Mark Hastings Profile - Cricket Player New Zealand | Stats, Records, Video》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Cricinfo。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "cricket",
         "category": "核心话题",
-        "sourceName": "Cricbuzz",
-        "title": "Namibia Cricket Team matches, scorecards, news and statistics",
-        "publishedAt": "Fri, 10 Jul 2026 06:43:36 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QMDVYTTVvZnJzX1AzMmRNelpuUXU1Mlg4dEdLM1pOd0NIdHlGYVhKMElWeTZZSlBVN2ZsNkQ2UEU3YUFrQnFRbm1nMWxJcTZ6T1JnajlTN2c4bTN4ZGpWcHdIaE8xb05P?oc=5"
+        "sourceName": "Cricinfo",
+        "title": "Mark Hastings Profile - Cricket Player New Zealand | Stats, Records, Video",
+        "publishedAt": "Fri, 10 Jul 2026 14:10:06 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5DdjZQR19pRV9relFaTnFZcEZ1c1NXeTE4N052QzlzNGNsMHAzRFVwN2pMT3BmVmNtTEI5MFdrV0xNLXZDMkxPVHk1YklkTWktTmJabXltZUlNTm56TUtWWG1VSQ?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Namibia Cricket Team matches, scorecards, news and statistics",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QMDVYTTVvZnJzX1AzMmRNelpuUXU1Mlg4dEdLM1pOd0NIdHlGYVhKMElWeTZZSlBVN2ZsNkQ2UEU3YUFrQnFRbm1nMWxJcTZ6T1JnajlTN2c4bTN4ZGpWcHdIaE8xb05P?oc=5"
+          "title": "Mark Hastings Profile - Cricket Player New Zealand | Stats, Records, Video",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5DdjZQR19pRV9relFaTnFZcEZ1c1NXeTE4N052QzlzNGNsMHAzRFVwN2pMT3BmVmNtTEI5MFdrV0xNLXZDMkxPVHk1YklkTWktTmJabXltZUlNTm56TUtWWG1VSQ?oc=5"
         }
       ]
     },
     {
       "id": 1017,
-      "name": "Nissan Tekton Decoded:…",
-      "originalTitle": "Nissan Tekton Decoded: Bollywood Connection, Future Goals, Current Outlook, And More",
+      "name": "Ghost Trolling: The Ne…",
+      "originalTitle": "Ghost Trolling: The New Menace in Bollywood",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 47,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「Deccan Chronicle」热点《Ghost Trolling: The New Menace in Bollywood》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Deccan Chronicle。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "bollywood",
+        "category": "垂类补充",
+        "sourceName": "Deccan Chronicle",
+        "title": "Ghost Trolling: The New Menace in Bollywood",
+        "publishedAt": "Fri, 10 Jul 2026 14:13:21 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVFlDSWZmeFdQbENXNDBObnFzbTBjQm14MDFjTVQzQWxObnhIZW4zV2hHTFNmWHJuZkZZWXdZbFpjNTVqQ3RUUS05U1RGMS0yUjU1R01ZeUxyM0djb2NTYmFuWXZEU3NMZzd4djNCRHlzRUR4U3RoNzByak9HT0stWXZ6LU9BU01jMkRFMGlSaXFsSzYzUmpBbGYyUm5UQjhhaG1PWHFvZFlpendiZTYtempJM2zSAbQBQVVfeXFMTlRZQ0lmZnhXUGxDVzQwTm5xc20wY0JteDAxY01UM0FsTm54SGVuM1doR0xTZlhybmZGWVl3WWxaYzU1akN0VFEtOVNURjEtMlI1NUdNWXlMcjNHY29jU2Jhbll2RFNzTGc3eHYzQkR5c0VEeFN0aDcwcmpPR09LLVl2ei1PQVNNYzJERTBpUmlxbEs2M1JqQWxmMlJuVEI4YWhtT1hxb2RZaXp3YmU2LXpqSTNs?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Ghost Trolling: The New Menace in Bollywood",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVFlDSWZmeFdQbENXNDBObnFzbTBjQm14MDFjTVQzQWxObnhIZW4zV2hHTFNmWHJuZkZZWXdZbFpjNTVqQ3RUUS05U1RGMS0yUjU1R01ZeUxyM0djb2NTYmFuWXZEU3NMZzd4djNCRHlzRUR4U3RoNzByak9HT0stWXZ6LU9BU01jMkRFMGlSaXFsSzYzUmpBbGYyUm5UQjhhaG1PWHFvZFlpendiZTYtempJM2zSAbQBQVVfeXFMTlRZQ0lmZnhXUGxDVzQwTm5xc20wY0JteDAxY01UM0FsTm54SGVuM1doR0xTZlhybmZGWVl3WWxaYzU1akN0VFEtOVNURjEtMlI1NUdNWXlMcjNHY29jU2Jhbll2RFNzTGc3eHYzQkR5c0VEeFN0aDcwcmpPR09LLVl2ei1PQVNNYzJERTBpUmlxbEs2M1JqQWxmMlJuVEI4YWhtT1hxb2RZaXp3YmU2LXpqSTNs?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1018,
+      "name": "Secunderabad police re…",
+      "originalTitle": "Secunderabad police review arrangements for Ujjaini Mahankali Bonalu festival",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -714,35 +750,35 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「NDTV」热点《Nissan Tekton Decoded: Bollywood Connection, Future Goals, Current Outlook, And More》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NDTV。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「The Hindu」热点《Secunderabad police review arrangements for Ujjaini Mahankali Bonalu festival》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Hindu。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "bollywood",
+        "topic": "festival",
         "category": "垂类补充",
-        "sourceName": "NDTV",
-        "title": "Nissan Tekton Decoded: Bollywood Connection, Future Goals, Current Outlook, And More",
-        "publishedAt": "Fri, 10 Jul 2026 07:11:49 GMT",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTzZHRWJfXzVCLTBDODFqVVRmMEdteVdrQVZKVVNTTTZkMnFqVlpmdUItRlZLR2t2SXJKUVVqUHhmY2x6VGgtbjduZ0tLLUdxVks2TGt6eVoxT1lQOHhWWl9uZEZ5R3RZQnoybVp5TFc3S3pTUFVsWnFWUmFUVFlqSmxfOVpwXzlTUkxDMzdyN1d2OWk5Nm00MkduY2hLeENYN1puWWNzbFlJVnJIMXJTWFNZSEpjQdIBvgFBVV95cUxPQzNERlBtT2NFVWtzLUNrRVdWY1l3RnlpeE92MWJxYTl2ajhhOEZEMkVwTU5DTkUtREgyNGI4THhGLUdRLWtyRnlJU1ViSkpTWWM0V1dyVEVROHVQZzYxN1BaVVFNVWVmcUM3Z0s0OEFNOXMyVEJmdHJTNjMzbC1KendEUVJzMGdkMnZBQVVkcUMtWS1JVXZVWlZzVGRsU25XelNpdDlHdTdDV2FxRU5QQkNpVWczbjJ5ODg5TUJ3?oc=5"
+        "sourceName": "The Hindu",
+        "title": "Secunderabad police review arrangements for Ujjaini Mahankali Bonalu festival",
+        "publishedAt": "Fri, 10 Jul 2026 14:55:38 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV0FremxKUmtSU3hqRGFNYW1GbV93V1dsRE52VGVDQmNYc25kUTZyTjktNFB2SnEtTUl5eWFxaGFjUnZKRlJNWnhIRzhvbEZ6WnFCNklyR05saFNSTkdoRnJPU1lENXhTaWJ5U1R5c0dUbVMyc3p5SGRFbUxkcUF0SlN5X2dvbFpraTJlME01OTE0T2ZhazhVVWtoeWJqZm55cG1nOGhISkdDWHhMbnYzTDY0Qm1xVzBzR2ozdWFvTVFtbGdkZzMzTVJDM3lDX1R0UndJWVo5blBSUkVONFBr0gHmAUFVX3lxTE5GdkI0S2RfUWx6UEdQR0xQakxDWjdRQmt3dzRUTnFBLVM4cmhjME1wVGhZaDVMRzNWZXVSaWdiUlBFSHZxc09fS3NZQU1tRmdNUUM5bURsbXFhRml0ejFXaE9tQjZ4VWFTcEdESkdSRGRsRFZKTmtlTEJleGVxNmYxZHBJQzlWSnlZcjdwWGgzck5kTUdkdGdSbkNBOTY0d2R2VTZLT2QyQjNQZ3BBZHpPZ3dJTlZjcG4wbVNMN3hxLUJEM01UWWpZNm5GY2VVaXowbmpNNTI1Q0lHZDdPUG1seWVUVHp3?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Nissan Tekton Decoded: Bollywood Connection, Future Goals, Current Outlook, And More",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTzZHRWJfXzVCLTBDODFqVVRmMEdteVdrQVZKVVNTTTZkMnFqVlpmdUItRlZLR2t2SXJKUVVqUHhmY2x6VGgtbjduZ0tLLUdxVks2TGt6eVoxT1lQOHhWWl9uZEZ5R3RZQnoybVp5TFc3S3pTUFVsWnFWUmFUVFlqSmxfOVpwXzlTUkxDMzdyN1d2OWk5Nm00MkduY2hLeENYN1puWWNzbFlJVnJIMXJTWFNZSEpjQdIBvgFBVV95cUxPQzNERlBtT2NFVWtzLUNrRVdWY1l3RnlpeE92MWJxYTl2ajhhOEZEMkVwTU5DTkUtREgyNGI4THhGLUdRLWtyRnlJU1ViSkpTWWM0V1dyVEVROHVQZzYxN1BaVVFNVWVmcUM3Z0s0OEFNOXMyVEJmdHJTNjMzbC1KendEUVJzMGdkMnZBQVVkcUMtWS1JVXZVWlZzVGRsU25XelNpdDlHdTdDV2FxRU5QQkNpVWczbjJ5ODg5TUJ3?oc=5"
+          "title": "Secunderabad police review arrangements for Ujjaini Mahankali Bonalu festival",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV0FremxKUmtSU3hqRGFNYW1GbV93V1dsRE52VGVDQmNYc25kUTZyTjktNFB2SnEtTUl5eWFxaGFjUnZKRlJNWnhIRzhvbEZ6WnFCNklyR05saFNSTkdoRnJPU1lENXhTaWJ5U1R5c0dUbVMyc3p5SGRFbUxkcUF0SlN5X2dvbFpraTJlME01OTE0T2ZhazhVVWtoeWJqZm55cG1nOGhISkdDWHhMbnYzTDY0Qm1xVzBzR2ozdWFvTVFtbGdkZzMzTVJDM3lDX1R0UndJWVo5blBSUkVONFBr0gHmAUFVX3lxTE5GdkI0S2RfUWx6UEdQR0xQakxDWjdRQmt3dzRUTnFBLVM4cmhjME1wVGhZaDVMRzNWZXVSaWdiUlBFSHZxc09fS3NZQU1tRmdNUUM5bURsbXFhRml0ejFXaE9tQjZ4VWFTcEdESkdSRGRsRFZKTmtlTEJleGVxNmYxZHBJQzlWSnlZcjdwWGgzck5kTUdkdGdSbkNBOTY0d2R2VTZLT2QyQjNQZ3BBZHpPZ3dJTlZjcG4wbVNMN3hxLUJEM01UWWpZNm5GY2VVaXowbmpNNTI1Q0lHZDdPUG1seWVUVHp3?oc=5"
         }
       ]
     },
     {
-      "id": 1018,
-      "name": "All the F1 teams and d…",
-      "originalTitle": "All the F1 teams and drivers who will be in action at the 2026 Goodwood Festival of Speed",
-      "region": "印度",
-      "country": "印度",
+      "id": 1019,
+      "name": "“Inilah, teman-teman, …",
+      "originalTitle": "“Inilah, teman-teman, Inggris” - Sammy Virji dan MUNDIAL memadukan musik dan sepak bola dalam kolaborasi kaos terbaru",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 46,
+      "trend": 47,
       "score": 80,
       "status": "上升",
       "type": "realtime",
@@ -750,35 +786,35 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Formula 1」热点《All the F1 teams and drivers who will be in action at the 2026 Goodwood Festival of Speed》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Formula 1。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Goal.com」热点《“Inilah, teman-teman, Inggris” - Sammy Virji dan MUNDIAL memadukan musik dan sepak bola dalam kolaborasi kaos terbaru》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Goal.com。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "festival",
-        "category": "垂类补充",
-        "sourceName": "Formula 1",
-        "title": "All the F1 teams and drivers who will be in action at the 2026 Goodwood Festival of Speed",
-        "publishedAt": "Fri, 10 Jul 2026 08:21:52 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOYjJwZjhGbUlpZVo2b3VmdHZBSXNTVWxlUkdLcjh2aEF6dndPTnYwSDVSTlNkNDNvVUd5ekZUcmNPUjcwdVAwdzdSLUVVdFRvdUNSSTdwakYwZ3JFbEVnMDFwa3h4RVNRTkh1VmdYcURMRHF5RFZSNTNzbVB3S3d6SFpIVkozOGE1cEo5SEU0b2dGMEdUTHNIc0RHaGJHZ0dJcTNHNERtQ09COEl5YThVNTJJQm00YVVDNThVSEM5bW9scDk3YlExcVVQdURGV0NSb0dtUW5FUl9SNWlZOVBCOHFpQ3pwZ0JwLVR3?oc=5"
+        "topic": "musik",
+        "category": "核心话题",
+        "sourceName": "Goal.com",
+        "title": "“Inilah, teman-teman, Inggris” - Sammy Virji dan MUNDIAL memadukan musik dan sepak bola dalam kolaborasi kaos terbaru",
+        "publishedAt": "Fri, 10 Jul 2026 18:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPT3dXQzVCVURWMFgtLUZkWlI3cmVvbUpYSkcweGpFekpqQXFYVURmam9QZzV3SXRjTnpwQlNoa1EzMUg5NkxwZXpSbUtLX1BHMkpTTTdGanZra3NLMmFWRWFEV0NMc1dTaGNZNDBOLTBXR3M5ZEV1allLVm1GTUpFOVBTTGliaG93RW13RUlINzh1UEZKRjQ4LUdiSjRuMXBfR1BLVl9NSUpVVHN3Z0lNU3IyS1F6X3BzbWFZbWhvZ1VNaHhwMUQ0VVI4Yl9FMG9LSndwRDJ3Wjdma1VObktyUDlzQThRZDg3MFNJNkFWbnRubGhH?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "All the F1 teams and drivers who will be in action at the 2026 Goodwood Festival of Speed",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOYjJwZjhGbUlpZVo2b3VmdHZBSXNTVWxlUkdLcjh2aEF6dndPTnYwSDVSTlNkNDNvVUd5ekZUcmNPUjcwdVAwdzdSLUVVdFRvdUNSSTdwakYwZ3JFbEVnMDFwa3h4RVNRTkh1VmdYcURMRHF5RFZSNTNzbVB3S3d6SFpIVkozOGE1cEo5SEU0b2dGMEdUTHNIc0RHaGJHZ0dJcTNHNERtQ09COEl5YThVNTJJQm00YVVDNThVSEM5bW9scDk3YlExcVVQdURGV0NSb0dtUW5FUl9SNWlZOVBCOHFpQ3pwZ0JwLVR3?oc=5"
+          "title": "“Inilah, teman-teman, Inggris” - Sammy Virji dan MUNDIAL memadukan musik dan sepak bola dalam kolaborasi kaos terbaru",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPT3dXQzVCVURWMFgtLUZkWlI3cmVvbUpYSkcweGpFekpqQXFYVURmam9QZzV3SXRjTnpwQlNoa1EzMUg5NkxwZXpSbUtLX1BHMkpTTTdGanZra3NLMmFWRWFEV0NMc1dTaGNZNDBOLTBXR3M5ZEV1allLVm1GTUpFOVBTTGliaG93RW13RUlINzh1UEZKRjQ4LUdiSjRuMXBfR1BLVl9NSUpVVHN3Z0lNU3IyS1F6X3BzbWFZbWhvZ1VNaHhwMUQ0VVI4Yl9FMG9LSndwRDJ3Wjdma1VObktyUDlzQThRZDg3MFNJNkFWbnRubGhH?oc=5"
         }
       ]
     },
     {
-      "id": 1019,
-      "name": "GHO$$ Visualisasikan P…",
-      "originalTitle": "GHO$$ Visualisasikan Pergulatan Batin Lewat Video Musik 666",
+      "id": 1020,
+      "name": "Argentina Vs Swiss, Pa…",
+      "originalTitle": "Argentina Vs Swiss, Palagan Memadamkan Keraguan",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 58,
+      "trend": 57,
       "score": 85,
       "status": "上升",
       "type": "realtime",
@@ -786,35 +822,35 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Pophariini」热点《GHO$$ Visualisasikan Pergulatan Batin Lewat Video Musik 666》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Pophariini。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Kompas.id」热点《Argentina Vs Swiss, Palagan Memadamkan Keraguan》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Kompas.id。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "musik",
-        "category": "核心话题",
-        "sourceName": "Pophariini",
-        "title": "GHO$$ Visualisasikan Pergulatan Batin Lewat Video Musik 666",
-        "publishedAt": "Fri, 10 Jul 2026 07:30:20 GMT",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNemdieU54U0VfRVNlVmdrY1pOLXFCQUN6Ymw0MUdHaGVWVmZRN2hrLThLemlBZ0RNQ1IxZ2ZsOU43QjVjQngxMGNnQTVwMmJ4dF9wLUdtVHhxekRBbUVsaXRXQmxIUVRzeFVsWjlSVGlkUzQ4LWE0bTVscG9QeXNHNzBpallqekhJNXFtWGtlbVhZaXV6eUNjcXRyak41dw?oc=5"
+        "topic": "sepak bola",
+        "category": "垂类补充",
+        "sourceName": "Kompas.id",
+        "title": "Argentina Vs Swiss, Palagan Memadamkan Keraguan",
+        "publishedAt": "Fri, 10 Jul 2026 11:25:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS1Y3eXBVX25hOUpqeWVvOHVWMTlwejVJT2dEQnVPemUxSTFPak9QQVZCcUxMV1J5MTBXZi1oYXNpclZiREhsVVlGaEJHOENrNUNVTjdNRDZZV3k4UmdUa204OUt5Qkh2ZUE5Y2NMa3NvcmxtY1NvTzRGUVdfQTdRN0J3?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "GHO$$ Visualisasikan Pergulatan Batin Lewat Video Musik 666",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNemdieU54U0VfRVNlVmdrY1pOLXFCQUN6Ymw0MUdHaGVWVmZRN2hrLThLemlBZ0RNQ1IxZ2ZsOU43QjVjQngxMGNnQTVwMmJ4dF9wLUdtVHhxekRBbUVsaXRXQmxIUVRzeFVsWjlSVGlkUzQ4LWE0bTVscG9QeXNHNzBpallqekhJNXFtWGtlbVhZaXV6eUNjcXRyak41dw?oc=5"
+          "title": "Argentina Vs Swiss, Palagan Memadamkan Keraguan",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS1Y3eXBVX25hOUpqeWVvOHVWMTlwejVJT2dEQnVPemUxSTFPak9QQVZCcUxMV1J5MTBXZi1oYXNpclZiREhsVVlGaEJHOENrNUNVTjdNRDZZV3k4UmdUa204OUt5Qkh2ZUE5Y2NMa3NvcmxtY1NvTzRGUVdfQTdRN0J3?oc=5"
         }
       ]
     },
     {
-      "id": 1020,
-      "name": "FBI Selidiki Federasi …",
-      "originalTitle": "FBI Selidiki Federasi Sepak Bola Argentina saat Piala Dunia, Ada Apa?",
+      "id": 1021,
+      "name": "Sinopsis Film Survive …",
+      "originalTitle": "Sinopsis Film Survive The Night, Perjuangan Menyelamatkan Keluarga",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 52,
+      "trend": 53,
       "score": 83,
       "status": "上升",
       "type": "realtime",
@@ -822,35 +858,35 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「CNN Indonesia」热点《FBI Selidiki Federasi Sepak Bola Argentina saat Piala Dunia, Ada Apa?》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：CNN Indonesia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「detikcom」热点《Sinopsis Film Survive The Night, Perjuangan Menyelamatkan Keluarga》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：detikcom。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "sepak bola",
+        "topic": "film",
         "category": "垂类补充",
-        "sourceName": "CNN Indonesia",
-        "title": "FBI Selidiki Federasi Sepak Bola Argentina saat Piala Dunia, Ada Apa?",
-        "publishedAt": "Fri, 10 Jul 2026 08:00:25 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPR29jYllFaTIzcFlmT2lTZnRBMjVkaXo4N1ZaTTYtOEMwc0dwQ0ZhTTBCclRBZkdiN1ltM2gxdmpUaW5ad3pxTk1mSEtMYXlFY05QS3l4bWxJR0Zpb1NkaHBDdmx4SkNCRHBWaUxMSmdZeV9BcUJjcHdRMDkwU1BoNzVlSlRQYkxSczdrNVBidnczUXE3VG1IX2NBTHVtTjJ5Ulk1N201X0pjbURtS0ZZOWVvQl9jczZTbm5BNGxwTjZKRVNRSlgtUG9XQldseVdPRmJJ0gHYAUFVX3lxTE5iNkN3bTRHcFpNcEZXVVNvcW52ZWFlWHBzZ1BiMDU1RnpfaTF3WkN4djhTYW11MDVPcjljYndCOWNlX1Q3YVRfVVMwNHBlX0hlM0pjZklZY3R5eFliaUJZQ1lkLU5yT2pDcmREdF8tZUk1VHFjZ0xNdVhYV2s0aGJkMjN3NzRpd0pMd3pYblgwNzVRdnhDRjJJQm93YVlSam9ITTh3TjRNWHVuRGxUaDJHTS1jVnAtMmtrQ196bmo5Um52SFpPSjQ0ZTB5LUdQamhwaXdudEZQZw?oc=5"
+        "sourceName": "detikcom",
+        "title": "Sinopsis Film Survive The Night, Perjuangan Menyelamatkan Keluarga",
+        "publishedAt": "Fri, 10 Jul 2026 14:00:22 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQS3k2TllmcVZENzU2X3A4MVlZTnQwTGl2VXU2c2l0UzU0U1JFUE9MUGdlVXhSckJBdml6aG1SV2prdkZqMllsbWtOemRDNWZaSWktOU1sbGFucmdPbDhnTE5sSDdtTTBBYXB4TDJKMFJHeXliRmNpTGZwb1Jjakx1ZGlYaVZDOVVhemFsMGpyMkVpR3FKOGYxVDJVMm40QzBjazc0RHVGdHM0a3oxal9uZjJxb3h1RzhL0gG-AUFVX3lxTE1QanVONlNkM1hZWWpXMnNQQmV1SXJMeWJCdXhYZU1Vd2ZNNUtsek9WXzU5WUhidjF1OVk5X2lCSkNxRUNXSjl5Q3hUTDdPR2kwZ3paN2xwVkVpdE5ocnI0dGF2Mm9qV0NZeVNTRmp4d2tUcUhnQzZBVWc0dGdDdVpSTHN0bGhyQTdJa24tWVZkejdqMkZrQm9pOFg3VkFZZUJMYjFCOWt5MzAxZnZvMk9yTXVxOE4wSDZod1k2MWc?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "FBI Selidiki Federasi Sepak Bola Argentina saat Piala Dunia, Ada Apa?",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPR29jYllFaTIzcFlmT2lTZnRBMjVkaXo4N1ZaTTYtOEMwc0dwQ0ZhTTBCclRBZkdiN1ltM2gxdmpUaW5ad3pxTk1mSEtMYXlFY05QS3l4bWxJR0Zpb1NkaHBDdmx4SkNCRHBWaUxMSmdZeV9BcUJjcHdRMDkwU1BoNzVlSlRQYkxSczdrNVBidnczUXE3VG1IX2NBTHVtTjJ5Ulk1N201X0pjbURtS0ZZOWVvQl9jczZTbm5BNGxwTjZKRVNRSlgtUG9XQldseVdPRmJJ0gHYAUFVX3lxTE5iNkN3bTRHcFpNcEZXVVNvcW52ZWFlWHBzZ1BiMDU1RnpfaTF3WkN4djhTYW11MDVPcjljYndCOWNlX1Q3YVRfVVMwNHBlX0hlM0pjZklZY3R5eFliaUJZQ1lkLU5yT2pDcmREdF8tZUk1VHFjZ0xNdVhYV2s0aGJkMjN3NzRpd0pMd3pYblgwNzVRdnhDRjJJQm93YVlSam9ITTh3TjRNWHVuRGxUaDJHTS1jVnAtMmtrQ196bmo5Um52SFpPSjQ0ZTB5LUdQamhwaXdudEZQZw?oc=5"
+          "title": "Sinopsis Film Survive The Night, Perjuangan Menyelamatkan Keluarga",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQS3k2TllmcVZENzU2X3A4MVlZTnQwTGl2VXU2c2l0UzU0U1JFUE9MUGdlVXhSckJBdml6aG1SV2prdkZqMllsbWtOemRDNWZaSWktOU1sbGFucmdPbDhnTE5sSDdtTTBBYXB4TDJKMFJHeXliRmNpTGZwb1Jjakx1ZGlYaVZDOVVhemFsMGpyMkVpR3FKOGYxVDJVMm40QzBjazc0RHVGdHM0a3oxal9uZjJxb3h1RzhL0gG-AUFVX3lxTE1QanVONlNkM1hZWWpXMnNQQmV1SXJMeWJCdXhYZU1Vd2ZNNUtsek9WXzU5WUhidjF1OVk5X2lCSkNxRUNXSjl5Q3hUTDdPR2kwZ3paN2xwVkVpdE5ocnI0dGF2Mm9qV0NZeVNTRmp4d2tUcUhnQzZBVWc0dGdDdVpSTHN0bGhyQTdJa24tWVZkejdqMkZrQm9pOFg3VkFZZUJMYjFCOWt5MzAxZnZvMk9yTXVxOE4wSDZod1k2MWc?oc=5"
         }
       ]
     },
     {
-      "id": 1021,
-      "name": "Menteri Ekraf Dukung J…",
-      "originalTitle": "Menteri Ekraf Dukung JWC Jadi Motor Pertumbuhan Industri Film Nasional _Go_ Global",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
+      "id": 1022,
+      "name": "Campeonatos de futebol…",
+      "originalTitle": "Campeonatos de futebol amador movimentam bairros e zona rural neste final de semana - Prefeitura Municipal de Vitória da Conquista",
+      "region": "南美洲",
+      "country": "巴西",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 51,
+      "trend": 50,
       "score": 82,
       "status": "上升",
       "type": "realtime",
@@ -858,100 +894,64 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Kementerian Ekonomi Kreatif/Badan Ekonomi Kreatif Republik Indonesia」热点《Menteri Ekraf Dukung JWC Jadi Motor Pertumbuhan Industri Film Nasional _Go_ Global》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Kementerian Ekonomi Kreatif/Badan Ekonomi Kreatif Republik Indonesia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "film",
-        "category": "垂类补充",
-        "sourceName": "Kementerian Ekonomi Kreatif/Badan Ekonomi Kreatif Republik Indonesia",
-        "title": "Menteri Ekraf Dukung JWC Jadi Motor Pertumbuhan Industri Film Nasional _Go_ Global",
-        "publishedAt": "Fri, 10 Jul 2026 07:09:50 GMT",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbmJvUk9QT2tVcFlUX1BwSjBGb2VJejdUMlowYkFrQmoyN1RNSDhoZGFFTnNqNUhSRllFaE5TbG1mWkNsb3NVd0ROcHExeXB6Zm1oWmctdDBfTW1jSUJkeVA5NWxncFo4TkNucEdwdnBnemVPeTRBeDB0M0tsdzRvUkVXTm9xWkZRVk1aM2hoUE9kNGFkeU10T3B3NA?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Menteri Ekraf Dukung JWC Jadi Motor Pertumbuhan Industri Film Nasional _Go_ Global",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbmJvUk9QT2tVcFlUX1BwSjBGb2VJejdUMlowYkFrQmoyN1RNSDhoZGFFTnNqNUhSRllFaE5TbG1mWkNsb3NVd0ROcHExeXB6Zm1oWmctdDBfTW1jSUJkeVA5NWxncFo4TkNucEdwdnBnemVPeTRBeDB0M0tsdzRvUkVXTm9xWkZRVk1aM2hoUE9kNGFkeU10T3B3NA?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1022,
-      "name": "Marrocos: a missão do …",
-      "originalTitle": "Marrocos: a missão do país africano para se tornar uma potência no futebol",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 58,
-      "score": 85,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「BBC」热点《Marrocos: a missão do país africano para se tornar uma potência no futebol》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：BBC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「Prefeitura Municipal de Vitória da Conquista - PMVC」热点《Campeonatos de futebol amador movimentam bairros e zona rural neste final de semana - Prefeitura Municipal de Vitória da Conquista》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Prefeitura Municipal de Vitória da Conquista - PMVC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "futebol",
         "category": "核心话题",
-        "sourceName": "BBC",
-        "title": "Marrocos: a missão do país africano para se tornar uma potência no futebol",
-        "publishedAt": "Thu, 09 Jul 2026 21:18:21 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43MzdfRGJZRjhCX1NMNUI5eWVmX211bWNWS2NvT01XNU5iQXlfSWZ6NVZPMC0xV0xJNFZnaHZDdGlrU196b0xWS2RsSHUtOHpkQ0pVS3VEV2lIR3c1UzNxWThR0gFnQVVfeXFMUG1kZ2lvNV82WEloWDI5WndpS2M5VFhXSHBuZXUzNm1aRmF2VEFWMjJzTTNGUkw5dnJjTWdDcjhpbVN2M3kyd21KSnNhSVVTeVdHYWNJbVI5UlNHU0g3eVdBb1JJbE1IUQ?oc=5"
+        "sourceName": "Prefeitura Municipal de Vitória da Conquista - PMVC",
+        "title": "Campeonatos de futebol amador movimentam bairros e zona rural neste final de semana - Prefeitura Municipal de Vitória da Conquista",
+        "publishedAt": "Fri, 10 Jul 2026 15:11:25 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNXliS3Y2UHJtcE1TU3FuNG5jWnU1bmNhdnk3Z1dRYXFJX0daWnpvZE9zMFdwTGpEQmdDbHBvQmgta29ZTTgyRFVnd3ZpNXA1MHdRM0NjcHM3NnJ4S2RrQjM0aHI2c1R1RHhXZzk5SmNsQ05yOVNnWlF3aU1uRGwxTFl1dVVPZ0VKOVZ1SlBTMjBpSW1NVElabEwxdUg4b1FsZDZKM1dzZFkxMXo1SnRXSA?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Marrocos: a missão do país africano para se tornar uma potência no futebol",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43MzdfRGJZRjhCX1NMNUI5eWVmX211bWNWS2NvT01XNU5iQXlfSWZ6NVZPMC0xV0xJNFZnaHZDdGlrU196b0xWS2RsSHUtOHpkQ0pVS3VEV2lIR3c1UzNxWThR0gFnQVVfeXFMUG1kZ2lvNV82WEloWDI5WndpS2M5VFhXSHBuZXUzNm1aRmF2VEFWMjJzTTNGUkw5dnJjTWdDcjhpbVN2M3kyd21KSnNhSVVTeVdHYWNJbVI5UlNHU0g3eVdBb1JJbE1IUQ?oc=5"
+          "title": "Campeonatos de futebol amador movimentam bairros e zona rural neste final de semana - Prefeitura Municipal de Vitória da Conquista",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNXliS3Y2UHJtcE1TU3FuNG5jWnU1bmNhdnk3Z1dRYXFJX0daWnpvZE9zMFdwTGpEQmdDbHBvQmgta29ZTTgyRFVnd3ZpNXA1MHdRM0NjcHM3NnJ4S2RrQjM0aHI2c1R1RHhXZzk5SmNsQ05yOVNnWlF3aU1uRGwxTFl1dVVPZ0VKOVZ1SlBTMjBpSW1NVElabEwxdUg4b1FsZDZKM1dzZFkxMXo1SnRXSA?oc=5"
         }
       ]
     },
     {
       "id": 1023,
-      "name": "Festival Internacional…",
-      "originalTitle": "Festival Internacional de Música de Campina Grande começa nesta sexta",
+      "name": "Noites Analógicas reún…",
+      "originalTitle": "Noites Analógicas reúne música autoral, vinis e sonoridade analógica com shows no Centro do Recife",
       "region": "南美洲",
       "country": "巴西",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 46,
-      "score": 80,
+      "trend": 59,
+      "score": 86,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「G1」热点《Festival Internacional de Música de Campina Grande começa nesta sexta (10)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：G1。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「Brasil de Fato」热点《Noites Analógicas reúne música autoral, vinis e sonoridade analógica com shows no Centro do Recife》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Brasil de Fato。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musica",
         "category": "垂类补充",
-        "sourceName": "G1",
-        "title": "Festival Internacional de Música de Campina Grande começa nesta sexta (10)",
-        "publishedAt": "Fri, 10 Jul 2026 10:30:52 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMXh4bFZzakh2SjBwTFRLRFE2cUJDN0JlUG1JSDhjUUFjTVo1RmI1X1ZaUENPQnI1M0REWTRVM2pjTlpPWEZxMjN1UjRLT1NyY3FUMWJ1OTVJbzRCV2U4TXhXZ2dsTi1BR3paZWRqQ3Q3bDVkNlFCMHpROUptaWx3T282WTBBZDhwOFFHOTA5TnAwMDhsT1pVWnE2OWh0Z21KMUZieGs2ZTFtU2d0WkVYb0Z6TjRhY0UtYzc3UEpYdGwzcTR0VGs2etIB1wFBVV95cUxPNC0wRlc1R3N4blFIV2M1UWFmVnJUd2Y5ZnljYzBqQXczVEJKcGFCeFhaZXBqVmFXcVFfSW5zejRnRHJCbEFVNzN0U0N6ZHpwLXhhdE5JN292UndlSUhlcGQ2ckEzT2QzYmdnNUFDUXdxZHExX3JrRFBiLV92MWVGLWlaVGJzNC04Z2F5cUUzVVR6dEx0WU9WaEE0SHRHckNKczFuVW80RFozTWZDTjVjR2xWal9CVERRSktzaEJLQnNtV3owcnQtMl8xNTFmYXR4VmtsZ2QyZw?oc=5"
+        "sourceName": "Brasil de Fato",
+        "title": "Noites Analógicas reúne música autoral, vinis e sonoridade analógica com shows no Centro do Recife",
+        "publishedAt": "Fri, 10 Jul 2026 17:57:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYlVCSnlXUUgtOUlCQW5qZnB4Y1NTaDZzbHhxMVBFaGxrSnliVEFjZTloUVBCVW5feUFUU19pVnZraXpYMU0tUW8wdGc0Y1hPVGNFTnpyRlNSRnp2dDNxV3AxRWFWQ25ZaU1MNmNaa1UxYnhWN2xtTnYyRU13LVJTSFFxckpGaHNjWlo4SDBiQ2k2V3RYd19KckxscXgyUFJVbHFYNE5wWGI3QlEzUE9fNGQwMktpNGN4Vkt2ZW1ZOWxsNzkzRGZxNEVEVVVhYkZLU2s0X3V4LUM?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Festival Internacional de Música de Campina Grande começa nesta sexta",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMXh4bFZzakh2SjBwTFRLRFE2cUJDN0JlUG1JSDhjUUFjTVo1RmI1X1ZaUENPQnI1M0REWTRVM2pjTlpPWEZxMjN1UjRLT1NyY3FUMWJ1OTVJbzRCV2U4TXhXZ2dsTi1BR3paZWRqQ3Q3bDVkNlFCMHpROUptaWx3T282WTBBZDhwOFFHOTA5TnAwMDhsT1pVWnE2OWh0Z21KMUZieGs2ZTFtU2d0WkVYb0Z6TjRhY0UtYzc3UEpYdGwzcTR0VGs2etIB1wFBVV95cUxPNC0wRlc1R3N4blFIV2M1UWFmVnJUd2Y5ZnljYzBqQXczVEJKcGFCeFhaZXBqVmFXcVFfSW5zejRnRHJCbEFVNzN0U0N6ZHpwLXhhdE5JN292UndlSUhlcGQ2ckEzT2QzYmdnNUFDUXdxZHExX3JrRFBiLV92MWVGLWlaVGJzNC04Z2F5cUUzVVR6dEx0WU9WaEE0SHRHckNKczFuVW80RFozTWZDTjVjR2xWal9CVERRSktzaEJLQnNtV3owcnQtMl8xNTFmYXR4VmtsZ2QyZw?oc=5"
+          "title": "Noites Analógicas reúne música autoral, vinis e sonoridade analógica com shows no Centro do Recife",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYlVCSnlXUUgtOUlCQW5qZnB4Y1NTaDZzbHhxMVBFaGxrSnliVEFjZTloUVBCVW5feUFUU19pVnZraXpYMU0tUW8wdGc0Y1hPVGNFTnpyRlNSRnp2dDNxV3AxRWFWQ25ZaU1MNmNaa1UxYnhWN2xtTnYyRU13LVJTSFFxckpGaHNjWlo4SDBiQ2k2V3RYd19KckxscXgyUFJVbHFYNE5wWGI3QlEzUE9fNGQwMktpNGN4Vkt2ZW1ZOWxsNzkzRGZxNEVEVVVhYkZLU2s0X3V4LUM?oc=5"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 108,
+      "count": 101,
       "growth": 52,
       "countries": [
         "印度"
@@ -963,7 +963,7 @@
       ]
     },
     "印度尼西亚": {
-      "count": 108,
+      "count": 101,
       "growth": 23,
       "countries": [
         "印度尼西亚"
@@ -975,7 +975,7 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 50,
+      "count": 43,
       "growth": 23,
       "countries": [
         "俄罗斯"
@@ -987,8 +987,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 59,
-      "growth": 39,
+      "count": 62,
+      "growth": 42,
       "countries": [
         "尼日利亚",
         "南非",
@@ -1002,7 +1002,7 @@
       ]
     },
     "南美洲": {
-      "count": 88,
+      "count": 91,
       "growth": 52,
       "countries": [
         "巴西",
