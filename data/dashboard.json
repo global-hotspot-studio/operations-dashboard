@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-12T15:39:50.110Z",
+  "generatedAt": "2026-07-12T20:30:09.475Z",
   "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
   "regions": [
     "全球",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1380,
-    "effectiveHotspots": 380,
-    "highPriorityAlerts": 15,
-    "templateCandidates": 15,
+    "rawTopics": 1416,
+    "effectiveHotspots": 392,
+    "highPriorityAlerts": 17,
+    "templateCandidates": 17,
     "rawDelta": 42,
-    "effectiveRate": "27.2%"
+    "effectiveRate": "27.5%"
   },
   "trendSeries": {
     "labels": [
@@ -47,72 +47,37 @@
       "22:00"
     ],
     "effective": [
-      28,
-      66,
-      39,
-      56,
-      83,
-      39,
-      113,
-      59,
+      21,
+      71,
+      38,
+      53,
+      89,
+      32,
+      119,
+      55,
       97,
-      124,
-      90,
-      149
+      127,
+      84,
+      156
     ],
     "template": [
-      13,
-      36,
-      20,
+      10,
+      39,
+      18,
       27,
-      45,
-      23,
-      58,
-      30,
-      53,
+      47,
+      20,
+      62,
+      27,
+      55,
       57,
-      51,
-      86
+      49,
+      89
     ]
   },
   "hotspots": [
     {
       "id": 1000,
-      "name": "Tabaahi 🔥| Toxic (Hin…",
-      "originalTitle": "Tabaahi 🔥| Toxic | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "32.5M",
-      "trend": 82,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《Tabaahi 🔥| Toxic (Hindi) | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 30.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "h1kihH0l8iQ",
-        "channelTitle": "Zee Music Company",
-        "publishedAt": "2026-07-08T06:03:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/h1kihH0l8iQ/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=h1kihH0l8iQ"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Tabaahi 🔥| Toxic  | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar",
-          "url": "https://www.youtube.com/watch?v=h1kihH0l8iQ"
-        }
-      ]
-    },
-    {
-      "id": 1001,
       "name": "Dune: Part Three | Off…",
       "originalTitle": "Dune: Part Three | Official Trailer",
       "region": "撒哈拉以南非洲",
@@ -120,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "16.9M",
-      "trend": 69,
-      "score": 97,
+      "heat": "19.0M",
+      "trend": 79,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -130,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 17.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 17.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 17.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 17.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "NdvqHc56lE0",
         "channelTitle": "Warner Bros.",
@@ -147,6 +112,41 @@
       ]
     },
     {
+      "id": 1001,
+      "name": "Tabaahi 🔥| Toxic (Hin…",
+      "originalTitle": "Tabaahi 🔥| Toxic | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "29.4M",
+      "trend": 64,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《Tabaahi 🔥| Toxic (Hindi) | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 31.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "h1kihH0l8iQ",
+        "channelTitle": "Zee Music Company",
+        "publishedAt": "2026-07-08T06:03:03Z",
+        "thumbnail": "https://i.ytimg.com/vi/h1kihH0l8iQ/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=h1kihH0l8iQ"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Tabaahi 🔥| Toxic  | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar",
+          "url": "https://www.youtube.com/watch?v=h1kihH0l8iQ"
+        }
+      ]
+    },
+    {
       "id": 1002,
       "name": "Jux Ft Mbosso - Kipepe…",
       "originalTitle": "Jux Ft Mbosso - Kipepeo",
@@ -155,8 +155,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "2.2M",
-      "trend": 66,
+      "heat": "2.4M",
+      "trend": 71,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -165,7 +165,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《Jux Ft Mbosso - Kipepeo (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 2.2M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 2.3M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "B8UDrYSaGZA",
         "channelTitle": "JUX",
@@ -183,15 +183,15 @@
     },
     {
       "id": 1003,
-      "name": "I ESCAPED GRANNY'S HOT…",
-      "originalTitle": "I ESCAPED GRANNY'S HOTEL | GRANNY 5",
+      "name": "| बर्बादी होई |…",
+      "originalTitle": "| बर्बादी होई | िल्पी राज का सुपरहिट वायरल भोजपुरी गाना | Barbaadi Hoi | Bhojpuri Song 2026",
       "region": "印度",
       "country": "印度",
       "source": [
         "YouTube"
       ],
-      "heat": "2.8M",
-      "trend": 69,
+      "heat": "1.6M",
+      "trend": 66,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -199,20 +199,20 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《I ESCAPED GRANNY'S HOTEL | GRANNY 5》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 2.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《#Video | बर्बादी होई | #शिल्पी राज का सुपरहिट वायरल भोजपुरी गाना | Barbaadi Hoi | Bhojpuri Song 2026》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 1.6M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "px9AwXq2_lA",
-        "channelTitle": "Techno Gamerz",
-        "publishedAt": "2026-07-12T03:30:23Z",
-        "thumbnail": "https://i.ytimg.com/vi/px9AwXq2_lA/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=px9AwXq2_lA"
+        "videoId": "u9BdaJTWeiw",
+        "channelTitle": "Shilpi Raj Hits",
+        "publishedAt": "2026-07-10T01:00:03Z",
+        "thumbnail": "https://i.ytimg.com/vi/u9BdaJTWeiw/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=u9BdaJTWeiw"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "I ESCAPED GRANNY'S HOTEL | GRANNY 5",
-          "url": "https://www.youtube.com/watch?v=px9AwXq2_lA"
+          "title": "| बर्बादी होई | िल्पी राज का सुपरहिट वायरल भोजपुरी गाना | Barbaadi Hoi | Bhojpuri Song 2026",
+          "url": "https://www.youtube.com/watch?v=u9BdaJTWeiw"
         }
       ]
     },
@@ -225,9 +225,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "511K",
-      "trend": 55,
-      "score": 95,
+      "heat": "558K",
+      "trend": 58,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -235,7 +235,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《TULUS - Teh Hijau (Official Music Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 549K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 581K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "zyLmavBAY7k",
         "channelTitle": "Tulus",
@@ -260,8 +260,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "609K",
-      "trend": 69,
+      "heat": "661K",
+      "trend": 68,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -270,7 +270,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 尼日利亚 热门内容《Asake - MCBH (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 569K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 624K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "TIRkQPe77J0",
         "channelTitle": "AsakeVEVO",
@@ -288,36 +288,36 @@
     },
     {
       "id": 1006,
-      "name": "ESSE VÍDEO VAI TE PROV…",
-      "originalTitle": "ESSE VÍDEO VAI TE PROVAR QUE O MINECRAFT PODE SER MUITO ASSUSTADOR!",
-      "region": "南美洲",
-      "country": "巴西",
+      "name": "Train - Official Tease…",
+      "originalTitle": "Train - Official Teaser | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "YouTube"
       ],
-      "heat": "950K",
-      "trend": 55,
-      "score": 96,
+      "heat": "618K",
+      "trend": 54,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 巴西 热门内容《ESSE VÍDEO VAI TE PROVAR QUE O MINECRAFT PODE SER MUITO ASSUSTADOR!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 巴西 热门榜，播放量 1.0M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《Train - Official Teaser | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 664K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "aTxiDneROps",
-        "channelTitle": "Jazzghost",
-        "publishedAt": "2026-07-11T15:00:07Z",
-        "thumbnail": "https://i.ytimg.com/vi/aTxiDneROps/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=aTxiDneROps"
+        "videoId": "Lx9vuPJs9Ww",
+        "channelTitle": "Saregama Tamil",
+        "publishedAt": "2026-07-12T13:00:28Z",
+        "thumbnail": "https://i.ytimg.com/vi/Lx9vuPJs9Ww/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Lx9vuPJs9Ww"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "ESSE VÍDEO VAI TE PROVAR QUE O MINECRAFT PODE SER MUITO ASSUSTADOR!",
-          "url": "https://www.youtube.com/watch?v=aTxiDneROps"
+          "title": "Train - Official Teaser | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu",
+          "url": "https://www.youtube.com/watch?v=Lx9vuPJs9Ww"
         }
       ]
     },
@@ -330,8 +330,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "295K",
-      "trend": 62,
+      "heat": "350K",
+      "trend": 66,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -340,7 +340,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 阿根廷 热门内容《CUMBIERIZANDO a \"CAMILO\" / UN POCO DE RUIDO !》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 阿根廷 热门榜，播放量 289K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 阿根廷 热门榜，播放量 330K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "FjFuvo3wZvE",
         "channelTitle": "Un Poco De Ruido",
@@ -358,88 +358,15 @@
     },
     {
       "id": 1008,
-      "name": "Ramayana Trailer is co…",
-      "originalTitle": "Ramayana Trailer is coming with SURPRISE 🤯| 255 | Yogi Bolta Hai",
-      "region": "印度",
-      "country": "印度",
+      "name": "Ama hem hem",
+      "originalTitle": "Ama hem hem",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
       "source": [
         "YouTube"
       ],
-      "heat": "369K",
-      "trend": 61,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《Ramayana Trailer is coming with SURPRISE  🤯| #Yogipedia 255 | Yogi Bolta Hai》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 362K。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "z1RtSYF6moQ",
-        "channelTitle": "YOGI BOLTA HAI",
-        "publishedAt": "2026-07-12T04:15:18Z",
-        "thumbnail": "https://i.ytimg.com/vi/z1RtSYF6moQ/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=z1RtSYF6moQ"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Ramayana Trailer is coming with SURPRISE 🤯|  255 | Yogi Bolta Hai",
-          "url": "https://www.youtube.com/watch?v=z1RtSYF6moQ"
-        }
-      ]
-    },
-    {
-      "id": 1009,
-      "name": "wimbledon 2026",
-      "originalTitle": "wimbledon 2026",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 60,
-      "score": 92,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「wimbledon 2026」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 10000+。关联新闻源：BBC / Wimbledon；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 智利 搜索趋势，搜索热度约 2000+。关联新闻源：BBC / The Guardian；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "wimbledon 2026",
-        "traffic": 10000,
-        "publishedAt": "Sun, 12 Jul 2026 08:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhZi1ovgnMEe9uo_ZSQm8jDWaLR4573VqISkFBTPElwnrNThVCEV370pLQMTk",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=wimbledon%202026",
-        "newsUrl": "https://www.bbc.com/sport/tennis/live/c747z03p2zpt",
-        "newsTitle": "Watch Wimbledon: Sinner plays Zverev in men's singles final",
-        "newsSource": "BBC"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "wimbledon 2026",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=wimbledon%202026"
-        }
-      ]
-    },
-    {
-      "id": 1010,
-      "name": "klasemen motogp",
-      "originalTitle": "klasemen motogp",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 71,
+      "heat": "279K",
+      "trend": 57,
       "score": 97,
       "status": "爆发",
       "type": "realtime",
@@ -447,108 +374,67 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「klasemen motogp」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 10000+。关联新闻源：detiksport / CNN Indonesia；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "klasemen motogp",
-        "traffic": 10000,
-        "publishedAt": "Sun, 12 Jul 2026 06:30:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRdXeN5hD6v-SwgkxNYUX1DSIHYrC6EoY87di2i3iSCRsdSkmEZYaC1MZJl1U",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=klasemen%20motogp",
-        "newsUrl": "https://sport.detik.com/moto-gp/d-8571009/klasemen-motogp-2026-jorge-martin-terus-dipepet-ogura-dan-marquez",
-        "newsTitle": "Klasemen MotoGP 2026: Jorge Martin Terus Dipepet Ogura dan Marquez",
-        "newsSource": "detiksport"
+      "prompt": "基于 YouTube 南非 热门内容《Ama hem hem》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 288K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "rPmZucO77sg",
+        "channelTitle": "Thatohatsi - Topic",
+        "publishedAt": "2026-07-09T10:03:58Z",
+        "thumbnail": "https://i.ytimg.com/vi/rPmZucO77sg/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=rPmZucO77sg"
       },
       "signals": [
         {
-          "source": "Google Trends",
-          "title": "klasemen motogp",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=klasemen%20motogp"
+          "source": "YouTube",
+          "title": "Ama hem hem",
+          "url": "https://www.youtube.com/watch?v=rPmZucO77sg"
         }
       ]
     },
     {
-      "id": 1011,
-      "name": "wimbledon",
-      "originalTitle": "wimbledon",
+      "id": 1009,
+      "name": "hoy hay partidos del m…",
+      "originalTitle": "hoy hay partidos del mundial",
       "region": "南美洲",
-      "country": "巴西",
+      "country": "哥伦比亚",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 57,
-      "score": 91,
+      "trend": 65,
+      "score": 93,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「wimbledon」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 5000+。关联新闻源：GE / CNN Brasil；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 智利 搜索趋势，搜索热度约 2000+。关联新闻源：BBC / Tennisuptodate.com；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「hoy hay partidos del mundial」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100000+。关联新闻源：CNN en Español / Revista Semana；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "wimbledon",
-        "traffic": 5000,
-        "publishedAt": "Sun, 12 Jul 2026 08:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm0uWxC6691NY-BiZW2nEY58skFq7YBOID3U6Ie7hYM5T8IOlS-URkLCq5O7s",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=wimbledon",
-        "newsUrl": "https://ge.globo.com/tenis/noticia/2026/07/12/luisa-stefani-ao-lado-de-canadense-perde-final-e-fica-com-o-vice-em-wimbledon.ghtml",
-        "newsTitle": "Luisa Stefani perde final de duplas e fica com o vice em Wimbledon",
-        "newsSource": "GE"
+        "topic": "hoy hay partidos del mundial",
+        "traffic": 100000,
+        "publishedAt": "Sun, 12 Jul 2026 10:00:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxnK-BBll-0aZxpWk9mMozE5YHwSZylUUbMdOgPsPUE4neDO0B-hpw-Wxbj3I",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=hoy%20hay%20partidos%20del%20mundial",
+        "newsUrl": "https://cnnespanol.cnn.com/2026/07/12/deportes/semifinales-mundial-2026-fechas-partidos-horarios-orix",
+        "newsTitle": "Semifinales del Mundial 2026: fechas, partidos y horarios",
+        "newsSource": "CNN en Español"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "wimbledon",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=wimbledon"
+          "title": "hoy hay partidos del mundial",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=hoy%20hay%20partidos%20del%20mundial"
         }
       ]
     },
     {
-      "id": 1012,
-      "name": "alexander zverev",
-      "originalTitle": "alexander zverev",
-      "region": "撒哈拉以南非洲",
-      "country": "南非",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 68,
-      "score": 96,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 南非 搜索趋势「alexander zverev」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 南非 搜索趋势，搜索热度约 10000+。关联新闻源：BBC / SuperSport；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "alexander zverev",
-        "traffic": 10000,
-        "publishedAt": "Sun, 12 Jul 2026 08:00:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhZi1ovgnMEe9uo_ZSQm8jDWaLR4573VqISkFBTPElwnrNThVCEV370pLQMTk",
-        "url": "https://trends.google.com/trends/explore?geo=ZA&q=alexander%20zverev",
-        "newsUrl": "https://www.bbc.com/sport/tennis/live/c747z03p2zpt",
-        "newsTitle": "Watch Wimbledon: Sinner plays Zverev in men's singles final",
-        "newsSource": "BBC"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "alexander zverev",
-          "url": "https://trends.google.com/trends/explore?geo=ZA&q=alexander%20zverev"
-        }
-      ]
-    },
-    {
-      "id": 1013,
-      "name": "зенит – црвена звезда",
-      "originalTitle": "зенит – црвена звезда",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
+      "id": 1010,
+      "name": "jeff bezos",
+      "originalTitle": "jeff bezos",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
@@ -561,37 +447,189 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 俄罗斯 搜索趋势「зенит – црвена звезда」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 俄罗斯 搜索趋势，搜索热度约 5000+。关联新闻源：fc-zenit.ru / Ведомости；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「jeff bezos」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 100+。关联新闻源：The Times of India / Fortune；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "зенит – црвена звезда",
-        "traffic": 5000,
-        "publishedAt": "Sun, 12 Jul 2026 08:10:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKaQZ5hzx4dR8Ak-nfDLZyYfq8YMPaWXIsaeJNocA7XBIinPQPX31ysVKtk9U",
-        "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B7%D0%B5%D0%BD%D0%B8%D1%82%20%E2%80%93%20%D1%86%D1%80%D0%B2%D0%B5%D0%BD%D0%B0%20%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0",
-        "newsUrl": "https://fc-zenit.ru/news/2026-07-12-zenit-tsrvena-zvezda-adamov-i-sobolev-poyavyatsya-s-pervykh-minut.htm",
-        "newsTitle": "«Зенит» — «Црвена Звезда»: Адамов и Соболев появятся с первых минут",
-        "newsSource": "fc-zenit.ru"
+        "topic": "jeff bezos",
+        "traffic": 100,
+        "publishedAt": "Sun, 12 Jul 2026 13:10:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VHLaWZT9HWQWOm-Vd6DICZtSeYexCg1-504lWKKzSEEjo7feh98yRols9Os",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=jeff%20bezos",
+        "newsUrl": "https://timesofindia.indiatimes.com/technology/tech-news/jeff-bezos-ex-wife-mackenzie-scott-who-sold-half-of-her-amazon-stake-makes-latest-donation-to-a-us-non-profit-mobilising-youth-and-young-adults-to-change-culture-around-/articleshow/132342327.cms",
+        "newsTitle": "Jeff Bezos' ex-wife MacKenzie Scott who sold half of her Amazon stake makes latest donation to a US non-p",
+        "newsSource": "The Times of India"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "зенит – црвена звезда",
-          "url": "https://trends.google.com/trends/explore?geo=RU&q=%D0%B7%D0%B5%D0%BD%D0%B8%D1%82%20%E2%80%93%20%D1%86%D1%80%D0%B2%D0%B5%D0%BD%D0%B0%20%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0"
+          "title": "jeff bezos",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=jeff%20bezos"
+        }
+      ]
+    },
+    {
+      "id": 1011,
+      "name": "dana kaget",
+      "originalTitle": "dana kaget",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 53,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「dana kaget」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：Epaper Media Indonesia / https://www.publika.id/；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "dana kaget",
+        "traffic": 200,
+        "publishedAt": "Sun, 12 Jul 2026 12:00:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCneuxbn0A4g2l-ibYRQwo6HTilKg023VC4cxkD6ucW4sZqMoXSA8kXX6JGI",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=dana%20kaget",
+        "newsUrl": "https://epaper.mediaindonesia.com/detail/dubai-dan-abu-dhabi-jadi-contoh",
+        "newsTitle": "Dubai dan Abu Dhabi Jadi Contoh",
+        "newsSource": "Epaper Media Indonesia"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "dana kaget",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=dana%20kaget"
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "name": "biometria",
+      "originalTitle": "biometria",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 66,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「biometria」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 200+。关联新闻源：Diário do Comércio / Mobile Time；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "biometria",
+        "traffic": 200,
+        "publishedAt": "Sun, 12 Jul 2026 13:10:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9ZliKqB6rAECDkUMvx1pOTaJWrhb7iiabFJg8NopVkKYhpIENCYNduOzGOak",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=biometria",
+        "newsUrl": "https://diariodocomercio.com.br/mix/clientes-com-contas-bancarias-ativas-devem-realizar-reconhecimento-facial-e-prova-de-vida-em-julho-neste-pais/",
+        "newsTitle": "Clientes com contas bancárias ativas devem realizar reconhecimento facial e Prova de Vida em julho neste país",
+        "newsSource": "Diário do Comércio"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "biometria",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=biometria"
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "name": "joaquín sabina",
+      "originalTitle": "joaquín sabina",
+      "region": "南美洲",
+      "country": "阿根廷",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 54,
+      "score": 90,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「joaquín sabina」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100+。关联新闻源：TN / Elonce.com；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "joaquín sabina",
+        "traffic": 100,
+        "publishedAt": "Sun, 12 Jul 2026 12:50:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9kVDDXVdpja2MWcc7xsOU_C3CBgPfghRNSXUqiwq23t8_pMGNABDwSljRiQ",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=joaqu%C3%ADn%20sabina",
+        "newsUrl": "https://tn.com.ar/show/famosos/2026/07/11/graciela-alfano-recordo-su-romance-con-diego-maradona-y-revelo-un-secreto-de-la-intimidad-sabes-lo-que-hice-con-su-zurda/",
+        "newsTitle": "Graciela Alfano recordó su romance con Diego Maradona y reveló un secreto de la intimidad",
+        "newsSource": "TN"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "joaquín sabina",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=joaqu%C3%ADn%20sabina"
         }
       ]
     },
     {
       "id": 1014,
-      "name": "jannik sinner",
-      "originalTitle": "jannik sinner",
-      "region": "印度",
-      "country": "印度",
+      "name": "paisita dia",
+      "originalTitle": "paisita dia",
+      "region": "南美洲",
+      "country": "哥伦比亚",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 58,
+      "trend": 61,
+      "score": 93,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「paisita dia」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100+。关联新闻源：Blu Radio / Vanguardia；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "paisita dia",
+        "traffic": 100,
+        "publishedAt": "Sun, 12 Jul 2026 12:50:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnQZ6Cy9UeRUBURiuA-Qb1_jjQ1T4a5ui0J1mlcaBeoyvmaZstx4lVtYbA_ik",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=paisita%20dia",
+        "newsUrl": "https://www.bluradio.com/economia/juegos-de-azar/paisita-dia-resultado-del-ultimo-sorteo-hoy-domingo-12-de-julio-de-2026-so35",
+        "newsTitle": "Paisita Día resultado del último sorteo hoy domingo 12 de julio de 2026",
+        "newsSource": "Blu Radio"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "paisita dia",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=paisita%20dia"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "colo colo femenino",
+      "originalTitle": "colo colo femenino",
+      "region": "南美洲",
+      "country": "智利",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 60,
       "score": 92,
       "status": "爆发",
       "type": "realtime",
@@ -599,319 +637,69 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「jannik sinner」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：Il Fatto Quotidiano / Sportmediaset；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 智利 搜索趋势「colo colo femenino」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 200+。关联新闻源：Dale Albo / Mega.cl；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "jannik sinner",
-        "traffic": 2000,
-        "publishedAt": "Sun, 12 Jul 2026 08:20:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwsz6inedQHHdKaMuIJsUmguaGn0uqClCS4TS5qmL65EhL1qDHYp2OMLM_e8",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=jannik%20sinner",
-        "newsUrl": "https://www.ilfattoquotidiano.it/sport-miliardi/live-post/2026/07/12/wimbledon-finale-sinner-zverev-diretta-risultato-commento/8446709/",
-        "newsTitle": "Wimbledon, Sinner-Zverev: commento e risultato | Il racconto del match in diretta",
-        "newsSource": "Il Fatto Quotidiano"
+        "topic": "colo colo femenino",
+        "traffic": 200,
+        "publishedAt": "Sun, 12 Jul 2026 13:00:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_AFbw0MCO7zOiR50pA0n66HyK85XEYYyCtP2gO0nABM64cOX7BzYA60xm8K8",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=colo%20colo%20femenino",
+        "newsUrl": "https://dalealbo.cl/colo-colo-femenino/con-importantes-bajas-la-lista-de-citadas-de-colo-colo-femenino-para-recibir-a-palestino",
+        "newsTitle": "Con importantes bajas: La lista de citadas de Colo Colo Femenino para recibir a Palestino",
+        "newsSource": "Dale Albo"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "jannik sinner",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=jannik%20sinner"
-        }
-      ]
-    },
-    {
-      "id": 1015,
-      "name": "India squad for Zimbab…",
-      "originalTitle": "India squad for Zimbabwe T20 series 2026 - full cricket team",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 59,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「olympics.com」热点《India squad for Zimbabwe T20 series 2026 - full cricket team》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：olympics.com。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "cricket",
-        "category": "核心话题",
-        "sourceName": "olympics.com",
-        "title": "India squad for Zimbabwe T20 series 2026 - full cricket team",
-        "publishedAt": "Sun, 12 Jul 2026 09:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2M2M3hlREJFdUpINFh3bW5TdzhyNWUxTWZJd3o2YzFidFg2aU5La3hURDhpekpaNXlmVllWVEFQYjZDVDBiQkszczUwVHdreFc3S0huZG1CUy1BZndFRkstN3FtSE93SEg5dlotTGpZLUNiNnNTWkJ3QVdLd0ZTMGpETQ?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "India squad for Zimbabwe T20 series 2026 - full cricket team",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2M2M3hlREJFdUpINFh3bW5TdzhyNWUxTWZJd3o2YzFidFg2aU5La3hURDhpekpaNXlmVllWVEFQYjZDVDBiQkszczUwVHdreFc3S0huZG1CUy1BZndFRkstN3FtSE93SEg5dlotTGpZLUNiNnNTWkJ3QVdLd0ZTMGpETQ?oc=5"
+          "title": "colo colo femenino",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=colo%20colo%20femenino"
         }
       ]
     },
     {
       "id": 1016,
-      "name": "Why Is Bollywood Reluc…",
-      "originalTitle": "Why Is Bollywood Reluctant to Make Corporate Biopics? Exploring India’s Missed Entrepreneurial Stories",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 46,
-      "score": 80,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Open Magazine」热点《Why Is Bollywood Reluctant to Make Corporate Biopics? Exploring India’s Missed Entrepreneurial Stories》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Open Magazine。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "bollywood",
-        "category": "垂类补充",
-        "sourceName": "Open Magazine",
-        "title": "Why Is Bollywood Reluctant to Make Corporate Biopics? Exploring India’s Missed Entrepreneurial Stories",
-        "publishedAt": "Sun, 12 Jul 2026 12:01:36 GMT",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbUVFblBQYmtWZTFfZzMzU1VwbXRTbnZiSTgwVEt2LXZiNnp0WjY4OEszeGNVeFpzeGlMOVM2TU5oWGk0eHNHY2I5cHFySEtvTTBrV1ducVN4QnRYbHBiQmZLcVZIR0JaNjJKXzUyTmxPdnZoZ2RWRThiYU90M1JpbjBoMlJHSXF1Z0lsb21hZ0s3UQ?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Why Is Bollywood Reluctant to Make Corporate Biopics? Exploring India’s Missed Entrepreneurial Stories",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbUVFblBQYmtWZTFfZzMzU1VwbXRTbnZiSTgwVEt2LXZiNnp0WjY4OEszeGNVeFpzeGlMOVM2TU5oWGk0eHNHY2I5cHFySEtvTTBrV1ducVN4QnRYbHBiQmZLcVZIR0JaNjJKXzUyTmxPdnZoZ2RWRThiYU90M1JpbjBoMlJHSXF1Z0lsb21hZ0s3UQ?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1017,
-      "name": "Biel Festival: Rapid -…",
-      "originalTitle": "Biel Festival: Rapid - Live!",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 59,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Chess News | ChessBase」热点《Biel Festival: Rapid - Live!》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Chess News | ChessBase。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "festival",
-        "category": "垂类补充",
-        "sourceName": "Chess News | ChessBase",
-        "title": "Biel Festival: Rapid - Live!",
-        "publishedAt": "Sun, 12 Jul 2026 12:01:45 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1CbVV0ZkZfN2tyc29KMFQ0QWdrTzZnQTlTZHNGZDVmV1ljRHJxcTFRX2NvVGRKU1Z5azg5NV9vYlJRcHNtQXdnc1RmdmxXOEJCR3Fpb1NmWEdDcFlCdnMzdUw5WQ?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Biel Festival: Rapid - Live!",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1CbVV0ZkZfN2tyc29KMFQ0QWdrTzZnQTlTZHNGZDVmV1ljRHJxcTFRX2NvVGRKU1Z5azg5NV9vYlJRcHNtQXdnc1RmdmxXOEJCR3Fpb1NmWEdDcFlCdnMzdUw5WQ?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1018,
-      "name": "Video Nostalgia Winamp…",
-      "originalTitle": "Video Nostalgia Winamp, Pemutar Musik Sejuta Umat!",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 49,
-      "score": 81,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「20detik」热点《Video Nostalgia Winamp, Pemutar Musik Sejuta Umat!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：20detik。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "musik",
-        "category": "核心话题",
-        "sourceName": "20detik",
-        "title": "Video Nostalgia Winamp, Pemutar Musik Sejuta Umat!",
-        "publishedAt": "Sun, 12 Jul 2026 13:05:49 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUnhXY194dTBxMktZVmczSHhDOE9jLThzQzNvMTJDNHZwU2IwMVQ2T2lrcElfQTFuOE9JX2pHUUdQSnVZeXM4NEJyQUhXb0xQcnRZQjNldUZHWHhUZUQ2a2V5UWZBR0FaQ3QyVDNSd1Z4dDFUVnEzRUg3bnpLeFE4b0k5MXEzQWJNZ1Q1RnB6Y05COVh6dW1rdGhmSmRoZVFKR0E?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Video Nostalgia Winamp, Pemutar Musik Sejuta Umat!",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUnhXY194dTBxMktZVmczSHhDOE9jLThzQzNvMTJDNHZwU2IwMVQ2T2lrcElfQTFuOE9JX2pHUUdQSnVZeXM4NEJyQUhXb0xQcnRZQjNldUZHWHhUZUQ2a2V5UWZBR0FaQ3QyVDNSd1Z4dDFUVnEzRUg3bnpLeFE4b0k5MXEzQWJNZ1Q1RnB6Y05COVh6dW1rdGhmSmRoZVFKR0E?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1019,
-      "name": "Pemprov Kepri Gelar No…",
-      "originalTitle": "Pemprov Kepri Gelar Nobar Bola Gembira Piala Dunia 2026 Bersama Masyarakat, Perkuat Kebersamaan dan Gerakkan Ekonomi Lokal",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 53,
-      "score": 83,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「kepriprov.go.id」热点《Pemprov Kepri Gelar Nobar Bola Gembira Piala Dunia 2026 Bersama Masyarakat, Perkuat Kebersamaan dan Gerakkan Ekonomi Lokal》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：kepriprov.go.id。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "sepak bola",
-        "category": "垂类补充",
-        "sourceName": "kepriprov.go.id",
-        "title": "Pemprov Kepri Gelar Nobar Bola Gembira Piala Dunia 2026 Bersama Masyarakat, Perkuat Kebersamaan dan Gerakkan Ekonomi Lokal",
-        "publishedAt": "Sun, 12 Jul 2026 11:39:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPRmFTeFdEMGVoT3lnUG5hVDBVUm42VjRENjRCbWwtQWpDalp1THc1RlltT24zMjBVUzFzT25tQ254U0t1Xzl2QThSNjRQaENtQl85YjZUSThWT1dEU2N2Yzg3YS1ZMnlCRW43c2JERHlYY2Rpekhuc0FYRE84Y25teDZhUVR2ZkpQTHllcEo1Vk03a0toN29qTnRMQzhuaUlOVVg4SGlUT09wR3dqbUYzSUYyNG9tbHh3aHpiQXBfN3Ata215V1Q5RTlxMFpqelF0SDU0UHd1VWFZN0dMdzEzc0lDNHFoXzV5el9mSGw3blJ0UnM?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Pemprov Kepri Gelar Nobar Bola Gembira Piala Dunia 2026 Bersama Masyarakat, Perkuat Kebersamaan dan Gerakkan Ekonomi Lokal",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPRmFTeFdEMGVoT3lnUG5hVDBVUm42VjRENjRCbWwtQWpDalp1THc1RlltT24zMjBVUzFzT25tQ254U0t1Xzl2QThSNjRQaENtQl85YjZUSThWT1dEU2N2Yzg3YS1ZMnlCRW43c2JERHlYY2Rpekhuc0FYRE84Y25teDZhUVR2ZkpQTHllcEo1Vk03a0toN29qTnRMQzhuaUlOVVg4SGlUT09wR3dqbUYzSUYyNG9tbHh3aHpiQXBfN3Ata215V1Q5RTlxMFpqelF0SDU0UHd1VWFZN0dMdzEzc0lDNHFoXzV5el9mSGw3blJ0UnM?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1020,
-      "name": "Sinopsis Film Die Anot…",
-      "originalTitle": "Sinopsis Film Die Another Day, James Bond Hadapi Musuh Berteknologi Futuristis",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 56,
-      "score": 84,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「detikcom」热点《Sinopsis Film Die Another Day, James Bond Hadapi Musuh Berteknologi Futuristis》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：detikcom。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "film",
-        "category": "垂类补充",
-        "sourceName": "detikcom",
-        "title": "Sinopsis Film Die Another Day, James Bond Hadapi Musuh Berteknologi Futuristis",
-        "publishedAt": "Sun, 12 Jul 2026 11:34:11 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdmtBbUU5RmJtX1RkRFpzOHBMQ0pQcHhsNDJTRzBPLWVpOVhWUG5jbjdnYjAtcGJLWC1ESFIycmk1S1RuYWpTSlYzQTNJeFJZR2Z5ckJNZEc3WXhGcEV4aWowTkhQVTNneldmRjJPbEp1RGtITDllOWdEWGk5bTB2TzBQOFlLcnZwZXB4emRKcDI0TDZTRkphUkFWY0VMQUZ4OG5KRDY0WkY0ZmdxUTBPbGVXcmtwaGpsaFFPV2JrbHdGQlJDRkE5NNIBzgFBVV95cUxPNGFIWVk0eUxQbnZTbV8wWGpOTXZIeUtfQmJTb0NJZUdnOG4wMzBFc0piX3RnSGsyY19SN3hXWnh3VnpCeFh2dUk3RTNLLVhVNFNUck00Zl9OY2xHVFd2Y1RZOTROdXlDNC1EMk5KcmdOcUZ6OEgzR0pyMFItam1tWWs4a2EzVkM5MlF0TW1QUHNidUcyX3RpVV9qN05Ocnc1Tkx4OHRHd2V6ckpkNXg5UGgtZWMyTUotOG9PNEFpajJqakZXQ3NuTUZDZ0FhQQ?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Sinopsis Film Die Another Day, James Bond Hadapi Musuh Berteknologi Futuristis",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdmtBbUU5RmJtX1RkRFpzOHBMQ0pQcHhsNDJTRzBPLWVpOVhWUG5jbjdnYjAtcGJLWC1ESFIycmk1S1RuYWpTSlYzQTNJeFJZR2Z5ckJNZEc3WXhGcEV4aWowTkhQVTNneldmRjJPbEp1RGtITDllOWdEWGk5bTB2TzBQOFlLcnZwZXB4emRKcDI0TDZTRkphUkFWY0VMQUZ4OG5KRDY0WkY0ZmdxUTBPbGVXcmtwaGpsaFFPV2JrbHdGQlJDRkE5NNIBzgFBVV95cUxPNGFIWVk0eUxQbnZTbV8wWGpOTXZIeUtfQmJTb0NJZUdnOG4wMzBFc0piX3RnSGsyY19SN3hXWnh3VnpCeFh2dUk3RTNLLVhVNFNUck00Zl9OY2xHVFd2Y1RZOTROdXlDNC1EMk5KcmdOcUZ6OEgzR0pyMFItam1tWWs4a2EzVkM5MlF0TW1QUHNidUcyX3RpVV9qN05Ocnc1Tkx4OHRHd2V6ckpkNXg5UGgtZWMyTUotOG9PNEFpajJqakZXQ3NuTUZDZ0FhQQ?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1021,
-      "name": "Edital apoia projetos …",
-      "originalTitle": "Edital apoia projetos voltados ao futebol feminino em todo o Brasil",
+      "name": "moquegua vs",
+      "originalTitle": "moquegua vs",
       "region": "南美洲",
-      "country": "巴西",
+      "country": "秘鲁",
       "source": [
-        "本地平台"
+        "Google Trends"
       ],
       "heat": "180K",
-      "trend": 47,
-      "score": 80,
-      "status": "上升",
+      "trend": 54,
+      "score": 90,
+      "status": "爆发",
       "type": "realtime",
-      "selected": false,
+      "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「Alma Preta Jornalismo」热点《Edital apoia projetos voltados ao futebol feminino em todo o Brasil》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Alma Preta Jornalismo。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "futebol",
-        "category": "核心话题",
-        "sourceName": "Alma Preta Jornalismo",
-        "title": "Edital apoia projetos voltados ao futebol feminino em todo o Brasil",
-        "publishedAt": "Sun, 12 Jul 2026 13:01:51 GMT",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa1AwS1F0TGV6aE1maG5LU2otclpEQUZfcnphZng0eHV6aXNLQjBnLWM4aENUeGhUSk92VWhRNVB0WHYxbXlqZ0laUXc1MDRyZFFSSXY4Z1N6S3FCZm10LWdRcWk2LXVJY0IxSFV5ajVkWUF6dHBxNGlWN29PWjVjb0Vjc2RkeWJvM1FYZnl3?oc=5"
+      "prompt": "基于 Google Trends 秘鲁 搜索趋势「moquegua vs」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 100+。关联新闻源：ovacion.pe / 365Scores；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "moquegua vs",
+        "traffic": 100,
+        "publishedAt": "Sun, 12 Jul 2026 13:00:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6otklIOL8G46jgmD5dqEYUZQXa7zyNsxdhcyeXyig0Esa_qfB7MHQO0NcH0M",
+        "url": "https://trends.google.com/trends/explore?geo=PE&q=moquegua%20vs",
+        "newsUrl": "https://ovacion.pe/noticias/copa-caliente-liga/envivo-cd-moquegua-iguala-0-0-d-garcilaso-25-noviembre",
+        "newsTitle": "🔴#ENVIVO | CD Moquegua iguala 0-0 con D. Garcilaso en el 25 de Noviembre",
+        "newsSource": "ovacion.pe"
       },
       "signals": [
         {
-          "source": "本地平台",
-          "title": "Edital apoia projetos voltados ao futebol feminino em todo o Brasil",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa1AwS1F0TGV6aE1maG5LU2otclpEQUZfcnphZng0eHV6aXNLQjBnLWM4aENUeGhUSk92VWhRNVB0WHYxbXlqZ0laUXc1MDRyZFFSSXY4Z1N6S3FCZm10LWdRcWk2LXVJY0IxSFV5ajVkWUF6dHBxNGlWN29PWjVjb0Vjc2RkeWJvM1FYZnl3?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1022,
-      "name": "Qual é a música? Sem o…",
-      "originalTitle": "Qual é a música? Sem o 'hino da seleção' em 2026, nomes de destaque do Mundial contam quais canções marcaram a Copa",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 60,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「O GLOBO」热点《Qual é a música? Sem o 'hino da seleção' em 2026, nomes de destaque do Mundial contam quais canções marcaram a Copa》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：O GLOBO。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "musica",
-        "category": "垂类补充",
-        "sourceName": "O GLOBO",
-        "title": "Qual é a música? Sem o 'hino da seleção' em 2026, nomes de destaque do Mundial contam quais canções marcaram a Copa",
-        "publishedAt": "Sun, 12 Jul 2026 06:30:10 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNZE5WeWdYOFQ2RFBTRDNkbjVieHJfc1RSZ2xoeTFDZ0lyNE5QWENGbHI5ZjZtZ3Nwa3RKNVRBOFF6cjdydW9KelVUb3RtbVpQTzVBLVlsRHJqTmpiRUU4dkp5ZUJTQnIzOVF5UmxlNkc0dlpRQmZKNUhBdUZIaDlmNHFtZ2ZPOV8xRFVkeERnVWN1dDNFdU1HdHFrTlJaajRTRDJPTUoyWU5fR2ZFZm5CRy03NWhRWVJITkN0MDh2SjNPODFLTU0yTEk3NHRVaGF0WDNDYUo1VVl1dFc0MmsyWDZ5ckhOMEYzZEZRWkduXzNSbkdBbExycERlM2JJNVpHS2d0TFZ5ckZoZ9IBmAJBVV95cUxPa1ZLNEsxak43ZXlfVFVRaHhudC1BWUtiVDA4Q2hQSk9LWkRmOVJJa05RRmR4UDBDRWVHZU02MDd5Nk1qNFlLMDR5Wmo2eVBJNTFCSTJMLWRIUS03dE9JSGt6Yi1LQXdITlk0NnRka3h1T2xoM0QzRll2dXpfVEtGbDNnZm9VMS1RM01hQk81ekROUjNtRTJSZmM2SjJMYVRBZkdxUlJPUnhrdmMwYjcwSFVSY254cVRPSFFOUDRXM3Fvc1puMkhUeWxHSHZIOWhEZXdGamxmN0JjRlBJeHNRTzhwZVZGLU1vVXdEdGtqZHFNaXMwN2R6RWZwSHQ5cTVTb3pfaENiaUZ6YmtUT0EyUFdhMzV3SVJ1?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Qual é a música? Sem o 'hino da seleção' em 2026, nomes de destaque do Mundial contam quais canções marcaram a Copa",
-          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNZE5WeWdYOFQ2RFBTRDNkbjVieHJfc1RSZ2xoeTFDZ0lyNE5QWENGbHI5ZjZtZ3Nwa3RKNVRBOFF6cjdydW9KelVUb3RtbVpQTzVBLVlsRHJqTmpiRUU4dkp5ZUJTQnIzOVF5UmxlNkc0dlpRQmZKNUhBdUZIaDlmNHFtZ2ZPOV8xRFVkeERnVWN1dDNFdU1HdHFrTlJaajRTRDJPTUoyWU5fR2ZFZm5CRy03NWhRWVJITkN0MDh2SjNPODFLTU0yTEk3NHRVaGF0WDNDYUo1VVl1dFc0MmsyWDZ5ckhOMEYzZEZRWkduXzNSbkdBbExycERlM2JJNVpHS2d0TFZ5ckZoZ9IBmAJBVV95cUxPa1ZLNEsxak43ZXlfVFVRaHhudC1BWUtiVDA4Q2hQSk9LWkRmOVJJa05RRmR4UDBDRWVHZU02MDd5Nk1qNFlLMDR5Wmo2eVBJNTFCSTJMLWRIUS03dE9JSGt6Yi1LQXdITlk0NnRka3h1T2xoM0QzRll2dXpfVEtGbDNnZm9VMS1RM01hQk81ekROUjNtRTJSZmM2SjJMYVRBZkdxUlJPUnhrdmMwYjcwSFVSY254cVRPSFFOUDRXM3Fvc1puMkhUeWxHSHZIOWhEZXdGamxmN0JjRlBJeHNRTzhwZVZGLU1vVXdEdGtqZHFNaXMwN2R6RWZwSHQ5cTVTb3pfaENiaUZ6YmtUT0EyUFdhMzV3SVJ1?oc=5"
+          "source": "Google Trends",
+          "title": "moquegua vs",
+          "url": "https://trends.google.com/trends/explore?geo=PE&q=moquegua%20vs"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 101,
-      "growth": 51,
+      "count": 108,
+      "growth": 50,
       "countries": [
         "印度"
       ],
@@ -922,8 +710,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 101,
-      "growth": 22,
+      "count": 108,
+      "growth": 21,
       "countries": [
         "印度尼西亚"
       ],
@@ -934,8 +722,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 43,
-      "growth": 22,
+      "count": 50,
+      "growth": 21,
       "countries": [
         "俄罗斯"
       ],
@@ -947,7 +735,7 @@
     },
     "撒哈拉以南非洲": {
       "count": 69,
-      "growth": 44,
+      "growth": 41,
       "countries": [
         "尼日利亚",
         "南非",
@@ -962,7 +750,7 @@
     },
     "南美洲": {
       "count": 98,
-      "growth": 51,
+      "growth": 50,
       "countries": [
         "巴西",
         "阿根廷",
