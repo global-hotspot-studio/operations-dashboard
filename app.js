@@ -11,6 +11,12 @@ let funnel = [];
 let dashboardMeta = {};
 let state = { region: "全球", source: "全部平台", table: "all" };
 
+const themePrompts = {
+  worldcup: "Create a premium 9:16 Android OS theme inspired by a generic international football championship night: midnight navy wallpaper, abstract glowing football orbit, cyan and restrained gold confetti, a rounded lock-screen clock, and a cohesive icon set derived from the same visual language. No official tournament logos, flags, team crests, player likenesses, brands, text or watermarks.",
+  ganesh: "Create a premium 9:16 Android OS theme inspired by Ganesh festival with a respectful symbolic, non-literal approach: elephant-inspired decorative silhouette, marigold, lamp, leaf and rangoli geometry. Generate matching lock screen, wallpaper, 3D app icons and dock from one visual language. No religious text, brands, watermark or literal deity face/statue.",
+  diwali: "Create a premium 9:16 Android OS theme for Diwali / Festival of Lights: glowing diya lamps, elegant rangoli geometry, flowers and gentle fireworks on an indigo-to-plum night background. Generate matching lock screen, wallpaper, 3D app icons and dock from one visual language. No brands, religious text, watermark or official logos."
+};
+
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
@@ -451,6 +457,7 @@ function bind() {
     const row = e.target.closest("tr[data-id],.alert[data-id]");
     const preview = e.target.closest("[data-preview]");
     const copy = e.target.closest("[data-copy-id]");
+    const themeCopy = e.target.closest("[data-theme-copy]");
     if (row && !e.target.dataset.action) openDrawer(row.dataset.id);
     if (preview) { $("#previewImage").src = preview.dataset.preview; $("#previewCaption").textContent = preview.dataset.caption; $("#previewModal").showModal(); }
     if (copy) {
@@ -459,6 +466,14 @@ function bind() {
         const area = document.createElement("textarea"); area.value = h.prompt; document.body.appendChild(area); area.select(); document.execCommand("copy"); area.remove();
       }
       copy.textContent = "已复制"; showToast("提示词已复制，可直接粘贴使用"); setTimeout(() => copy.textContent = "复制提示词", 1300);
+    }
+    if (themeCopy) {
+      const prompt = themePrompts[themeCopy.dataset.themeCopy];
+      if (!prompt) return;
+      try { await navigator.clipboard.writeText(prompt); } catch {
+        const area = document.createElement("textarea"); area.value = prompt; document.body.appendChild(area); area.select(); document.execCommand("copy"); area.remove();
+      }
+      themeCopy.textContent = "已复制"; showToast("主题提示词已复制，可直接粘贴使用"); setTimeout(() => themeCopy.textContent = "复制提示词", 1300);
     }
     if (e.target.dataset.action) { e.stopPropagation(); toggleCandidate(e.target.dataset.action); }
   });
