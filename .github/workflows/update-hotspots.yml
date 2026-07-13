@@ -2,7 +2,8 @@ name: Update hotspot dashboard data
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    # GitHub Actions 使用 UTC；01:00 UTC = 北京时间每天早上 09:00。
+    - cron: "0 1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -34,4 +35,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto update hotspot dashboard data"
-          file_pattern: data/dashboard.json
+          file_pattern: data/dashboard.json data/dashboard-playbook.json

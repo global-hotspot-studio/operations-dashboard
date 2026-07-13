@@ -4,7 +4,7 @@
  * 长期运营数据更新器 v1
  *
  * 当前版本做两件事：
- * 1. 按固定节奏刷新热点趋势、热度、状态和汇总指标，保证线上看板是“活数据结构”。
+ * 1. 每日北京时间早上 09:00 刷新热点趋势、热度、状态和汇总指标，保证线上看板是“活数据结构”。
  * 2. 已支持 YouTube Data API。配置 YOUTUBE_API_KEY 后，会按重点国家抓取 YouTube 热门视频，
  *    并映射成看板里的热点信号。
  * 3. 已支持 Google Trends RSS。无需密钥，按重点国家抓取搜索趋势和相关新闻源。
@@ -1134,8 +1134,8 @@ async function update() {
   data.generatedAt = now.toISOString();
   data.mode = externalSignals.length ? "真实数据更新" : "定时更新";
   data.cadence = externalSignals.length
-    ? "已接入外部热点源；GitHub Actions 每 6 小时自动更新。"
-    : "GitHub Actions 每 6 小时自动更新；当前为可替换真实接口的数据底座。";
+    ? "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。"
+    : "每日北京时间早上 09:00 自动更新；当前为可替换真实接口的数据底座。大型节假日可提前 4–6 周加入观察。";
 
   if (externalSignals.length) {
     const merged = cleanAndDeduplicateSignals(externalSignals)

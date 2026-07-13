@@ -18,15 +18,15 @@
 - `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT 新闻源，并预留 X / Instagram / Facebook / TikTok 官方接口连接器。
 - `data/manual-hotspots.json`：人工热点入口，运营/设计师可手动补充 TikTok、Instagram、X 等暂未授权平台上观察到的热点。
 
-### 每日样图方向生成
+### 每日更新与样图策略
 
-更新脚本会每天随热点数据自动生成 `templateOutputs`：
+`.github/workflows/update-hotspots.yml` 会在**每天北京时间早上 09:00**自动抓取数据（也支持手动触发）。
 
-- 从实时热点池中选择模板潜力最高的 Top 3
-- 每个热点生成 6 个方向：情绪主视觉、抽象色彩主题、节日纹样套装、赛事应援风、电影海报感、时尚杂志风
-- 每个方向包含程序化视觉预览图、可复制 AI 出图提示词、来源热点和模板转化说明
-- 当前为“方向样图卡”，用于运营/设计快速判断视觉方向；后续如接入图片生成 API，可把 SVG 方向卡替换为真实 AI 出图资产
-- `.github/workflows/update-hotspots.yml`：GitHub Actions 自动任务，每 6 小时更新一次数据，也支持手动触发。
+- 日常只保留有持续热度、强视觉符号且适合转成 OS 主题/壁纸玩法的热点；小热点不进入样图推荐。
+- 大热点以连续观察为主，通常可持续一周以上；确认仍在升温或有新视觉角度时，才更新对应样图。
+- 大型节假日、赛事或文化节点可由运营在 `data/manual-hotspots.json` 提前 4–6 周加入观察，提前准备模板。
+- 样图不是按数量硬性生成：人物、涂鸦、插画、异形构图、材质、场景、图标化或动态感主题，均由热点属性决定；没有合适热点时，保留已审核样图，不强行更新。
+- 真实图片样图由图片生成流程产出后写入 `data/generated-samples.json`；抓取任务只刷新热点数据，不会用低质量占位图覆盖已审核样图。
 
 ### YouTube 真实热点接入
 
