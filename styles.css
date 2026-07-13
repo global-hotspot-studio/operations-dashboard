@@ -140,17 +140,17 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .play-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
 .play-tags span{font-size:10px;color:#9bc5ff;background:#1b2a42;border:1px solid #263b5b;border-radius:999px;padding:4px 7px}
 
-/* 热点样图采用瀑布流：按热点属性输出 2–3 + 1 + 1，而非横向重复卡片。 */
+/* 热点样图按行并排：所有桌面端保持顺序一致，避免瀑布流在窄窗口中突兀换行。 */
 .visual-gallery:has(.masonry-gallery){display:block;overflow:visible;scroll-snap-type:none;padding:4px 2px 18px}
-.masonry-gallery{columns:3 272px;column-gap:18px}
-.masonry-gallery .playbook-card{display:inline-block;width:100%;break-inside:avoid;margin:0 0 18px;vertical-align:top}
+.masonry-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.masonry-gallery .playbook-card{display:block;width:100%;min-width:0;margin:0;vertical-align:top}
 .masonry-gallery .sample-context{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;padding:9px 8px 7px;color:#eef5ff}
 .masonry-gallery .sample-context span{display:inline-flex;align-items:center;justify-content:center;padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.12);font-size:10px;font-weight:800;color:#fff}
 .masonry-gallery .sample-context b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
 .masonry-gallery .sample-context a{color:#9bc5ff;text-decoration:none;font-size:10px;font-weight:800;white-space:nowrap}
 .gallery-card:has(.masonry-gallery) .gallery-arrow{display:none}
-@media(max-width:900px){.masonry-gallery{columns:2 250px}}
-@media(max-width:620px){.masonry-gallery{columns:1}.masonry-gallery .playbook-card{margin-bottom:14px}}
+@media(max-width:760px){.masonry-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(max-width:520px){.masonry-gallery{grid-template-columns:1fr}.masonry-gallery .playbook-card{margin-bottom:14px}}
 
 /* 看板为单页锚点结构：侧栏每一项都指向右侧的真实板块。 */
 .view{display:block;scroll-margin-top:24px}
