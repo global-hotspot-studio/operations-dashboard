@@ -320,7 +320,7 @@ function renderAlerts() {
           <span>${h.source.join(" + ")}</span>
         </div>
       </div>
-      <span class="score">${h.score}</span>
+      <span class="alert-playability"><small>主题可玩性</small><b>${h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低"}</b></span>
     </div>`)
     .join("");
 }
