@@ -1,56 +1,42 @@
 {
-  "generatedAt": "2026-07-10T07:00:00.000Z",
-  "policy": "按热点属性选择 OS 主题玩法，而非默认生成人物：人物/角色可提取时做图生图人物模板；音乐、节庆、城市等可转为色彩、涂鸦、插画、异形、材质、场景或图标化主题。仅保留高可玩性样图：Top1 最多 3 张，Top2/Top3 各 1 张；无可玩热点不更新。",
+  "generatedAt": "2026-07-13T04:55:00.000Z",
+  "policy": "样图根据实时热点属性决定是否更新。世界杯半决赛属于高可玩赛事专题：本批只保留 3 张原创人物风格模板，使用国家配色与庆祝情绪，不使用真实球员、国旗、队徽、球衣、赛事 Logo、奖杯或任何可识别版权元素。",
   "samples": [
     {
-      "id": "generated-20260710-1000-01",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜雨夜电影肖像",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 人物图生图 · 雨夜戏剧感、锁屏主视觉",
-      "preview": "assets/daily-samples/2026-07-10-india-rain-cinema.jpg",
-      "prompt": "原创印度音乐电影人物壁纸：雨夜宫廷庭院、深靛蓝丝绸外套与琥珀色纱巾、暖灯与湿地反光；人物位于画面下方，顶部留出锁屏时钟区。适合人物自拍转风格；避免真人明星、影视剧照、品牌和文字。",
-      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ", "generatedFrom": "curated_ai_image_batch"
+      "id": "generated-20260713-worldcup-france",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜冠军候选人物玩法",
+      "previewTitle": "冠军之夜｜法式蓝焰",
+      "previewMeta": "世界杯半决赛专题 · 人物风格模板 · 原创庆祝肖像、深蓝与暖红色彩、锁屏主视觉",
+      "preview": "assets/daily-samples/2026-07-13-worldcup-france-blue-flame.png",
+      "prompt": "原创冠军之夜人物风格壁纸：虚构年轻人物在抽象夜场光带下庆祝，深海蓝、象牙白与少量暖红色彩流动为丝带，精致电影感、下半部人物、顶部大面积留白供锁屏时钟使用；不使用任何真实球员、国旗、队徽、球衣、赛事 Logo、奖杯、足球、文字或水印。",
+      "source": ["赛事专题"],
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "generatedFrom": "curated_ai_image_batch"
     },
     {
-      "id": "generated-20260710-1000-02",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜印度偶像漫画化",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 人物图生图 · 潮流漫画、音乐热点人物玩法",
-      "preview": "assets/daily-samples/2026-07-10-india-comic-pop.jpg",
-      "prompt": "原创印度流行音乐女主角图生图模板：白色刺绣 kurta 叠穿酒红机车夹克、现代城市霓虹与印度建筑线条，高级时尚漫画笔触；9:16，顶部留白。可作为用户自拍转风格参考，不复刻真人。",
-      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ", "generatedFrom": "curated_ai_image_batch"
+      "id": "generated-20260713-worldcup-spain",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜冠军候选人物玩法",
+      "previewTitle": "日落斗牛红｜庆祝姿态",
+      "previewMeta": "世界杯半决赛专题 · 人物风格模板 · 自拍转主题、赤红与暖金材质、插画化人物",
+      "preview": "assets/daily-samples/2026-07-13-worldcup-spain-sunset.png",
+      "prompt": "原创庆祝姿态人物风格模板：虚构年轻女性，赤红和暖金色柔软织物环绕，陶土广场的几何光影、精致 editorial 插画、人物位于下部中央、顶部 28% 留白供锁屏时钟使用；不使用国旗、国徽、队徽、球衣、赛事标识、奖杯、足球、真实人物、文字或水印。",
+      "source": ["赛事专题"],
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "generatedFrom": "curated_ai_image_batch"
     },
     {
-      "id": "generated-20260710-1000-03",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜季风声景主题",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 色彩/材质主题 · 可同步锁屏、图标与小组件",
-      "preview": "assets/daily-samples/2026-07-10-india-monsoon-soundscape.jpg",
-      "prompt": "印度季风音乐 OS 主题：靛蓝雨幕、琥珀色半透明丝带转为声波、金色雨滴和细腻几何砖纹；无人物，视觉集中在下半部，顶部为时钟和小组件留白。可延展锁屏、图标和 AOD。",
-      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ", "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1001-01",
-      "hotspotId": 1001,
-      "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜沙漠异形器物",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top2 · 异形/材质主题 · 未来感 OS 视觉套装",
-      "preview": "assets/daily-samples/2026-07-10-afro-desert-artifact.jpg",
-      "prompt": "原创未来沙漠 OS 主题：铜陶与铬金属结合的异形种子器物，南部非洲珠饰几何压纹、细钴蓝光环、风蚀沙丘与暮色天空；无人物，无已有影视元素，顶部留白，适合图标和小组件叠加。",
-      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0", "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1002-01",
-      "hotspotId": 1002,
-      "hotspotName": "Jux Ft Mbosso - Kipepe…",
-      "previewTitle": "Jux Ft Mbosso - Kipepe…｜Afro-pop 蝶形涂鸦",
-      "previewMeta": "真实 AI 精品样图 · 肯尼亚 · Top3 · 涂鸦/插画主题 · 音乐节奏与本地化纹样",
-      "preview": "assets/daily-samples/2026-07-10-kenya-afropop-abstract.jpg",
-      "prompt": "原创东非 Afro-pop OS 主题：蓝、橙、翠绿的音乐线条构成蝴蝶般的异形涂鸦，叠加细腻 kitenge 纹样和深靛蓝纸张质感；无人物、无文字，上方留出锁屏时间区。",
-      "source": ["YouTube"], "sourceUrl": "https://www.youtube.com/watch?v=B8UDrYSaGZA", "generatedFrom": "curated_ai_image_batch"
+      "id": "generated-20260713-worldcup-argentina",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜冠军候选人物玩法",
+      "previewTitle": "天蓝纸屑｜仰望未来",
+      "previewMeta": "世界杯半决赛专题 · 人物风格模板 · 图生图、天蓝纸屑与玻璃轨道、轻盈动态感",
+      "preview": "assets/daily-samples/2026-07-13-worldcup-argentina-sky-confetti.png",
+      "prompt": "原创天蓝纸屑人物风格壁纸：虚构拉丁青年穿无标识白色飞行夹克，仰望星光与蓝白纸屑，透明玻璃轨道形成动态感，干净高级的 OS 主题视觉，人物在下半部、顶部留出时间区域；不使用任何真实球员、国旗、国徽、队服、号码、赛事 Logo、奖杯、足球、文字或水印。",
+      "source": ["赛事专题"],
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "generatedFrom": "curated_ai_image_batch"
     }
   ]
 }

@@ -234,7 +234,8 @@ function sampleName(item) {
 
 function topRankLabel(item) {
   const match = String(item.previewMeta || "").match(/Top\d/);
-  return match ? match[0] : "Top";
+  if (match) return match[0];
+  return String(item.previewMeta || "").includes("专题") ? "专题" : "Top";
 }
 
 function visualPalette(index) {
