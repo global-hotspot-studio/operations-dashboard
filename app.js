@@ -327,7 +327,32 @@ function renderAlerts() {
 
 function renderTable() {
   const list = filtered();
-  $("#hotspotRows").innerHTML = list.map((h, i) => `<tr data-id="${h.id}"><td class="rank">${String(i + 1).padStart(2, "0")}</td><td class="event-name">${hotspotTitle(h)}</td><td><b>${h.region}</b><small class="country-line">${h.country || h.region}</small></td><td class="source-tags">${sourceTags(h)}</td><td>${h.heat}</td><td class="trend-up">↑ ${h.trend}%</td><td><div class="potential"><div class="potential-bar"><i style="width:${h.score}%"></i></div><b>${h.score}</b></div></td><td><span class="status ${h.status === "爆发" ? "burst" : h.status === "上升" ? "rising" : "watch"}">${h.status}</span></td><td><button class="action-btn ${h.selected ? "selected" : ""}" data-action="${h.id}">${h.selected ? "已入选" : "加入候选"}</button></td></tr>`).join("") || `<tr><td colspan="9" style="text-align:center;color:#8b97a8;padding:40px">当前筛选条件下暂无热点</td></tr>`;
+  $("#hotspotRows").innerHTML = list.map((h, i) => `<tr data-id="${h.id}"><td class="rank">${String(i + 1).padStart(2, "0")}</td><td class="event-name">${hotspotTitle(h)}</td><td><b>${h.region}</b><small class="country-line">${h.country || h.region}</small></td><td class="source-tags">${sourceTags(h)}</td><td>${platformMetric(h)}</td><td>${momentumMetric(h)}</td><td>${playabilityMetric(h)}</td><td><span class="status ${h.status === "爆发" ? "burst" : h.status === "上升" ? "rising" : "watch"}">${h.status}</span></td><td><button class="action-btn ${h.selected ? "selected" : ""}" data-action="${h.id}">${h.selected ? "已入选" : "加入候选"}</button></td></tr>`).join("") || `<tr><td colspan="9" style="text-align:center;color:#8b97a8;padding:40px">当前筛选条件下暂无热点</td></tr>`;
+}
+
+function platformMetric(h) {
+  if (h.source.includes("YouTube")) return `<div class="data-metric"><b>播放量 ${h.heat}</b><small>YouTube 公开数据</small></div>`;
+  if (h.source.includes("Google Trends")) {
+    const traffic = h.trends?.traffic ? `${Number(h.trends.traffic).toLocaleString()}+` : "上升";
+    return `<div class="data-metric"><b>搜索热度 ${traffic}</b><small>Google Trends 相对信号</small></div>`;
+  }
+  return `<div class="data-metric"><b>${h.heat || "待接入"}</b><small>${h.source[0] || "平台数据"}</small></div>`;
+}
+
+function momentumMetric(h) {
+  const level = h.trend >= 60 ? "高" : h.trend >= 35 ? "中" : "低";
+  const note = h.trend >= 60 ? "正在升温" : h.trend >= 35 ? "持续关注" : "建议观察";
+  return `<div class="signal-metric"><b class="level-${level}">${level}</b><small>${note}</small></div>`;
+}
+
+function visualSignal(h) {
+  const match = String(h.reason || "").match(/视觉判断：([^。；]+)/);
+  return match ? match[1].replaceAll(" / ", "、") : "色彩 / 构图";
+}
+
+function playabilityMetric(h) {
+  const level = h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低";
+  return `<div class="signal-metric"><b class="level-${level}">${level}</b><small>${escapeHtml(visualSignal(h))}</small></div>`;
 }
 
 function renderRegions() {
@@ -389,7 +414,7 @@ function openDrawer(id) {
     : `<div class="drawer-source-card disabled">
         <div><small>真实来源</small><b>${primary.source} 待接入真实链接</b><span>该平台还未完成 API/来源链接接入，暂不伪造跳转。</span></div>
       </div>`;
-  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>综合评分</small><b>${h.score}</b></div><div><small>24h 增速</small><b class="up">+${h.trend}%</b></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p>${signalList(h)}<h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
+  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>主题可玩性</small><b>${h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低"}</b><span>内部辅助判断 · ${h.score}/100</span></div><div><small>热点动能</small><b class="up">${h.trend >= 60 ? "高" : h.trend >= 35 ? "中" : "低"}</b><span>${h.trend >= 60 ? "正在升温" : h.trend >= 35 ? "持续关注" : "建议观察"}</span></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p>${signalList(h)}<h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
   $("#detailDrawer").classList.add("open"); $("#drawerBackdrop").classList.add("open");
 }
 
@@ -419,7 +444,7 @@ function bind() {
     $$(".nav-item").forEach(x => x.classList.remove("active")); b.classList.add("active");
     const mode = b.dataset.view;
     const anchor = {
-      overview: "#overviewView",
+      overview: "#overviewTop",
       pool: "#hotspotPoolSection",
       trend: "#trendSection",
       alerts: "#alertSection",

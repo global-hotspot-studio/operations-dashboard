@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI 热点舆情运营看板</title>
-  <link rel="stylesheet" href="./styles.css?v=20260710-candidate-template-anchor">
+  <link rel="stylesheet" href="./styles.css?v=20260713-readable-metrics">
 </head>
 <body>
   <div class="app-shell">
@@ -28,7 +28,7 @@
     </aside>
 
     <main>
-      <header>
+      <header id="overviewTop">
         <div>
           <p class="eyebrow">AI CREATION · TREND OPERATIONS</p>
           <h1>全球热点机会中心</h1>
@@ -54,7 +54,7 @@
         <div class="dashboard-grid">
           <article id="trendSection" class="card trend-card">
             <div class="card-head">
-              <div><h2>热点趋势</h2><p>近 24 小时有效热点热度变化</p></div>
+              <div><h2>热点趋势</h2><p>近 24 小时有效热点数量变化</p></div>
               <div class="legend"><i class="blue"></i>有效热点<i class="orange"></i>可转模板</div>
             </div>
             <svg id="trendChart" viewBox="0 0 780 280" role="img" aria-label="热点趋势折线图"></svg>
@@ -71,7 +71,7 @@
 
         <article id="hotspotPoolSection" class="card table-card">
           <div class="card-head">
-            <div><h2>实时热点池</h2><p>按模板潜力排序，点击任意热点查看判断依据</p></div>
+            <div><h2>实时热点池</h2><p>按主题可玩性排序；平台数据、热点动能与可玩性均有明确口径</p></div>
             <div class="table-actions">
               <button class="chip active" data-table="all">全部</button>
               <button class="chip" data-table="predictable">可预测</button>
@@ -80,7 +80,7 @@
           </div>
           <div class="table-wrap">
             <table>
-              <thead><tr><th>排名</th><th>热点事件</th><th>地区</th><th>主要来源</th><th>热度</th><th>24h 趋势</th><th>模板潜力</th><th>状态</th><th>运营动作</th></tr></thead>
+              <thead><tr><th>排名</th><th>热点事件</th><th>地区</th><th>主要来源</th><th>平台数据</th><th>热点动能</th><th>主题可玩性</th><th>状态</th><th>运营动作</th></tr></thead>
               <tbody id="hotspotRows"></tbody>
             </table>
           </div>
@@ -153,6 +153,6 @@
     <div id="previewCaption"></div>
   </dialog>
   <div id="toast" class="toast">数据已更新</div>
-  <script src="./app.js?v=20260710-candidate-template-anchor"></script>
+  <script src="./app.js?v=20260713-readable-metrics"></script>
 </body>
 </html>
