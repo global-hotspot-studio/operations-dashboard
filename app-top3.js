@@ -386,20 +386,10 @@ function renderGallery() {
   }).join("")}</div>`;
 }
 
-function renderFusionGallery() {
-  $("#fusionGallery").innerHTML = fusionStyles.map(h => `<article class="visual-card">
-  <button class="visual-preview" data-preview="${escapeAttr(h.preview)}" data-caption="${escapeAttr(h.previewTitle)}" aria-label="预览${escapeAttr(h.previewTitle)}"><img src="${escapeAttr(h.preview)}" alt="${escapeAttr(h.previewTitle)}"></button>
-  <div class="visual-info"><b>${escapeHtml(h.previewTitle)}</b><small>${escapeHtml(h.previewMeta)}</small>
-   <div class="prompt-block"><span>多图融合提示词</span><p>${escapeHtml(h.prompt)}</p></div>
-   <div class="visual-actions"><button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button><a href="${escapeAttr(h.preview)}" download="${escapeAttr(h.preview.split("/").pop())}">下载原图</a></div>
-  </div>
- </article>`).join("");
-}
-
 function renderStrategy() {
   const cards = strategyCards.length ? strategyCards : [];
   const grid = $(".strategy-grid");
-  grid.innerHTML = cards.map((card, i) => `<article class="strategy-card ${i === 0 ? "accent" : ""}"><span>${card.index}</span><h3>${card.title}</h3><strong>${card.subtitle}</strong><p>${card.body}</p></article>`).join("");
+  grid.innerHTML = cards.map(card => `<article class="strategy-card"><span>${card.index}</span><h3>${card.title}</h3><strong>${card.subtitle}</strong><p>${card.body}</p></article>`).join("");
   $(".funnel").innerHTML = funnel.map((item, i) => `${i ? "<i>→</i>" : ""}<div class="${item.selected ? "selected" : ""}"><b>${item.value}</b><span>${item.label}</span></div>`).join("");
 }
 
@@ -434,7 +424,6 @@ function renderAll() {
   renderTable();
   renderRegions();
   renderGallery();
-  renderFusionGallery();
   renderStrategy();
 }
 
@@ -493,8 +482,6 @@ function bind() {
   $("#candidateBtn").onclick = () => { $(".nav-item[data-view='candidates']").click(); showToast(`当前 ${hotspots.filter(x => x.selected).length} 个运营候选`); };
   $("#galleryPrev").onclick = () => $("#visualGallery").scrollBy({ left: -260, behavior: "smooth" });
   $("#galleryNext").onclick = () => $("#visualGallery").scrollBy({ left: 260, behavior: "smooth" });
-  $("#fusionPrev").onclick = () => $("#fusionGallery").scrollBy({ left: -306, behavior: "smooth" });
-  $("#fusionNext").onclick = () => $("#fusionGallery").scrollBy({ left: 306, behavior: "smooth" });
   $("#closePreview").onclick = () => $("#previewModal").close();
 }
 
