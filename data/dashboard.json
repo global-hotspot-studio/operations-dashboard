@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-12T20:30:09.475Z",
-  "cadence": "已接入外部热点源；GitHub Actions 每 6 小时自动更新。",
+  "generatedAt": "2026-07-13T07:01:04.103Z",
+  "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
     "印度",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1416,
-    "effectiveHotspots": 392,
-    "highPriorityAlerts": 17,
-    "templateCandidates": 17,
+    "rawTopics": 1458,
+    "effectiveHotspots": 406,
+    "highPriorityAlerts": 15,
+    "templateCandidates": 15,
     "rawDelta": 42,
-    "effectiveRate": "27.5%"
+    "effectiveRate": "27.7%"
   },
   "trendSeries": {
     "labels": [
@@ -47,32 +47,32 @@
       "22:00"
     ],
     "effective": [
-      21,
-      71,
-      38,
-      53,
-      89,
-      32,
-      119,
+      20,
+      78,
+      33,
       55,
-      97,
-      127,
-      84,
-      156
+      91,
+      27,
+      126,
+      48,
+      102,
+      126,
+      81,
+      160
     ],
     "template": [
-      10,
-      39,
-      18,
-      27,
+      8,
+      43,
+      15,
+      30,
       47,
-      20,
-      62,
-      27,
+      19,
+      65,
+      24,
+      58,
       55,
-      57,
       49,
-      89
+      90
     ]
   },
   "hotspots": [
@@ -85,8 +85,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "19.0M",
-      "trend": 79,
+      "heat": "19.8M",
+      "trend": 77,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -95,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 17.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 17.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 18.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 18.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "NdvqHc56lE0",
         "channelTitle": "Warner Bros.",
@@ -113,41 +113,6 @@
     },
     {
       "id": 1001,
-      "name": "Tabaahi 🔥| Toxic (Hin…",
-      "originalTitle": "Tabaahi 🔥| Toxic | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "29.4M",
-      "trend": 64,
-      "score": 95,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《Tabaahi 🔥| Toxic (Hindi) | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 31.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "h1kihH0l8iQ",
-        "channelTitle": "Zee Music Company",
-        "publishedAt": "2026-07-08T06:03:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/h1kihH0l8iQ/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=h1kihH0l8iQ"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Tabaahi 🔥| Toxic  | Rocking Star Yash, Kiara Advani, Tara Sutaria| Vishal Mishra, Raj Shekhar",
-          "url": "https://www.youtube.com/watch?v=h1kihH0l8iQ"
-        }
-      ]
-    },
-    {
-      "id": 1002,
       "name": "Jux Ft Mbosso - Kipepe…",
       "originalTitle": "Jux Ft Mbosso - Kipepeo",
       "region": "撒哈拉以南非洲",
@@ -155,9 +120,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "2.4M",
-      "trend": 71,
-      "score": 98,
+      "heat": "2.1M",
+      "trend": 60,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -182,7 +147,7 @@
       ]
     },
     {
-      "id": 1003,
+      "id": 1002,
       "name": "| बर्बादी होई |…",
       "originalTitle": "| बर्बादी होई | िल्पी राज का सुपरहिट वायरल भोजपुरी गाना | Barbaadi Hoi | Bhojpuri Song 2026",
       "region": "印度",
@@ -190,8 +155,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.6M",
-      "trend": 66,
+      "heat": "2.0M",
+      "trend": 73,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -200,7 +165,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《#Video | बर्बादी होई | #शिल्पी राज का सुपरहिट वायरल भोजपुरी गाना | Barbaadi Hoi | Bhojpuri Song 2026》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 1.6M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 1.9M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "u9BdaJTWeiw",
         "channelTitle": "Shilpi Raj Hits",
@@ -217,6 +182,41 @@
       ]
     },
     {
+      "id": 1003,
+      "name": "HACKER OR WHAT | JONAT…",
+      "originalTitle": "HACKER OR WHAT | JONATHAN IS BACK!! | BGMI!",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "2.3M",
+      "trend": 59,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《HACKER OR WHAT | JONATHAN IS BACK!! | BGMI!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 2.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "wO6eCvz5ygc",
+        "channelTitle": "JONATHAN GAMING",
+        "publishedAt": "2026-07-12T22:04:59Z",
+        "thumbnail": "https://i.ytimg.com/vi/wO6eCvz5ygc/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=wO6eCvz5ygc"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "HACKER OR WHAT | JONATHAN IS BACK!! | BGMI!",
+          "url": "https://www.youtube.com/watch?v=wO6eCvz5ygc"
+        }
+      ]
+    },
+    {
       "id": 1004,
       "name": "TULUS - Teh Hijau (Off…",
       "originalTitle": "TULUS - Teh Hijau",
@@ -225,9 +225,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "558K",
-      "trend": 58,
-      "score": 96,
+      "heat": "673K",
+      "trend": 64,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -235,7 +235,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《TULUS - Teh Hijau (Official Music Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 581K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 666K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "zyLmavBAY7k",
         "channelTitle": "Tulus",
@@ -260,8 +260,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "661K",
-      "trend": 68,
+      "heat": "712K",
+      "trend": 66,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -270,7 +270,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 尼日利亚 热门内容《Asake - MCBH (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 624K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 691K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "TIRkQPe77J0",
         "channelTitle": "AsakeVEVO",
@@ -295,8 +295,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "618K",
-      "trend": 54,
+      "heat": "940K",
+      "trend": 56,
       "score": 95,
       "status": "爆发",
       "type": "realtime",
@@ -305,7 +305,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Train - Official Teaser | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 664K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 1.0M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "Lx9vuPJs9Ww",
         "channelTitle": "Saregama Tamil",
@@ -330,8 +330,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "350K",
-      "trend": 66,
+      "heat": "421K",
+      "trend": 68,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -340,7 +340,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 阿根廷 热门内容《CUMBIERIZANDO a \"CAMILO\" / UN POCO DE RUIDO !》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 阿根廷 热门榜，播放量 330K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 阿根廷 热门榜，播放量 393K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "FjFuvo3wZvE",
         "channelTitle": "Un Poco De Ruido",
@@ -358,159 +358,45 @@
     },
     {
       "id": 1008,
-      "name": "Ama hem hem",
-      "originalTitle": "Ama hem hem",
-      "region": "撒哈拉以南非洲",
-      "country": "南非",
+      "name": "SPIDER-MAN: BRAND NEW …",
+      "originalTitle": "SPIDER-MAN: BRAND NEW DAY TRAILER | Tom Holland | Marvel Comics | Concept",
+      "region": "南美洲",
+      "country": "阿根廷",
       "source": [
         "YouTube"
       ],
-      "heat": "279K",
-      "trend": 57,
-      "score": 97,
+      "heat": "728K",
+      "trend": 55,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 南非 热门内容《Ama hem hem》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 288K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 阿根廷 热门内容《SPIDER-MAN: BRAND NEW DAY (2026) TRAILER | Tom Holland | Marvel Comics | Concept》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 阿根廷 热门榜，播放量 774K。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "rPmZucO77sg",
-        "channelTitle": "Thatohatsi - Topic",
-        "publishedAt": "2026-07-09T10:03:58Z",
-        "thumbnail": "https://i.ytimg.com/vi/rPmZucO77sg/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=rPmZucO77sg"
+        "videoId": "MqE5ZIU3Ao0",
+        "channelTitle": "TeaserCon",
+        "publishedAt": "2026-07-12T13:08:49Z",
+        "thumbnail": "https://i.ytimg.com/vi/MqE5ZIU3Ao0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=MqE5ZIU3Ao0"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "Ama hem hem",
-          "url": "https://www.youtube.com/watch?v=rPmZucO77sg"
+          "title": "SPIDER-MAN: BRAND NEW DAY  TRAILER | Tom Holland | Marvel Comics | Concept",
+          "url": "https://www.youtube.com/watch?v=MqE5ZIU3Ao0"
         }
       ]
     },
     {
       "id": 1009,
-      "name": "hoy hay partidos del m…",
-      "originalTitle": "hoy hay partidos del mundial",
-      "region": "南美洲",
-      "country": "哥伦比亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 65,
-      "score": 93,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「hoy hay partidos del mundial」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100000+。关联新闻源：CNN en Español / Revista Semana；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "hoy hay partidos del mundial",
-        "traffic": 100000,
-        "publishedAt": "Sun, 12 Jul 2026 10:00:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxnK-BBll-0aZxpWk9mMozE5YHwSZylUUbMdOgPsPUE4neDO0B-hpw-Wxbj3I",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=hoy%20hay%20partidos%20del%20mundial",
-        "newsUrl": "https://cnnespanol.cnn.com/2026/07/12/deportes/semifinales-mundial-2026-fechas-partidos-horarios-orix",
-        "newsTitle": "Semifinales del Mundial 2026: fechas, partidos y horarios",
-        "newsSource": "CNN en Español"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "hoy hay partidos del mundial",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=hoy%20hay%20partidos%20del%20mundial"
-        }
-      ]
-    },
-    {
-      "id": 1010,
-      "name": "jeff bezos",
-      "originalTitle": "jeff bezos",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 63,
-      "score": 94,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「jeff bezos」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 100+。关联新闻源：The Times of India / Fortune；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "jeff bezos",
-        "traffic": 100,
-        "publishedAt": "Sun, 12 Jul 2026 13:10:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VHLaWZT9HWQWOm-Vd6DICZtSeYexCg1-504lWKKzSEEjo7feh98yRols9Os",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=jeff%20bezos",
-        "newsUrl": "https://timesofindia.indiatimes.com/technology/tech-news/jeff-bezos-ex-wife-mackenzie-scott-who-sold-half-of-her-amazon-stake-makes-latest-donation-to-a-us-non-profit-mobilising-youth-and-young-adults-to-change-culture-around-/articleshow/132342327.cms",
-        "newsTitle": "Jeff Bezos' ex-wife MacKenzie Scott who sold half of her Amazon stake makes latest donation to a US non-p",
-        "newsSource": "The Times of India"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "jeff bezos",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=jeff%20bezos"
-        }
-      ]
-    },
-    {
-      "id": 1011,
-      "name": "dana kaget",
-      "originalTitle": "dana kaget",
+      "name": "pesawat udara",
+      "originalTitle": "pesawat udara",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 53,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「dana kaget」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：Epaper Media Indonesia / https://www.publika.id/；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "dana kaget",
-        "traffic": 200,
-        "publishedAt": "Sun, 12 Jul 2026 12:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCneuxbn0A4g2l-ibYRQwo6HTilKg023VC4cxkD6ucW4sZqMoXSA8kXX6JGI",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=dana%20kaget",
-        "newsUrl": "https://epaper.mediaindonesia.com/detail/dubai-dan-abu-dhabi-jadi-contoh",
-        "newsTitle": "Dubai dan Abu Dhabi Jadi Contoh",
-        "newsSource": "Epaper Media Indonesia"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "dana kaget",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=dana%20kaget"
-        }
-      ]
-    },
-    {
-      "id": 1012,
-      "name": "biometria",
-      "originalTitle": "biometria",
-      "region": "南美洲",
-      "country": "巴西",
       "source": [
         "Google Trends"
       ],
@@ -523,113 +409,37 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「biometria」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 200+。关联新闻源：Diário do Comércio / Mobile Time；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「pesawat udara」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 5000+。关联新闻源：detikHealth / Kompas.com；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "biometria",
-        "traffic": 200,
-        "publishedAt": "Sun, 12 Jul 2026 13:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9ZliKqB6rAECDkUMvx1pOTaJWrhb7iiabFJg8NopVkKYhpIENCYNduOzGOak",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=biometria",
-        "newsUrl": "https://diariodocomercio.com.br/mix/clientes-com-contas-bancarias-ativas-devem-realizar-reconhecimento-facial-e-prova-de-vida-em-julho-neste-pais/",
-        "newsTitle": "Clientes com contas bancárias ativas devem realizar reconhecimento facial e Prova de Vida em julho neste país",
-        "newsSource": "Diário do Comércio"
+        "topic": "pesawat udara",
+        "traffic": 5000,
+        "publishedAt": "Sun, 12 Jul 2026 22:00:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHQyH9qzcfQqTJNiJ80KeOKE4rIjgF35-HXdoO3q_ZVFpML5r_u_kyxKp0LD4",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=pesawat%20udara",
+        "newsUrl": "https://health.detik.com/berita-detikhealth/d-8570879/jendela-pesawat-ryanair-pecah-kenapa-penumpang-bisa-sampai-tersedot-keluar",
+        "newsTitle": "Jendela Pesawat Ryanair Pecah, Kenapa Penumpang Bisa Sampai 'Tersedot' Keluar?",
+        "newsSource": "detikHealth"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "biometria",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=biometria"
+          "title": "pesawat udara",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=pesawat%20udara"
         }
       ]
     },
     {
-      "id": 1013,
-      "name": "joaquín sabina",
-      "originalTitle": "joaquín sabina",
-      "region": "南美洲",
-      "country": "阿根廷",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 54,
-      "score": 90,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「joaquín sabina」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100+。关联新闻源：TN / Elonce.com；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "joaquín sabina",
-        "traffic": 100,
-        "publishedAt": "Sun, 12 Jul 2026 12:50:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9kVDDXVdpja2MWcc7xsOU_C3CBgPfghRNSXUqiwq23t8_pMGNABDwSljRiQ",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=joaqu%C3%ADn%20sabina",
-        "newsUrl": "https://tn.com.ar/show/famosos/2026/07/11/graciela-alfano-recordo-su-romance-con-diego-maradona-y-revelo-un-secreto-de-la-intimidad-sabes-lo-que-hice-con-su-zurda/",
-        "newsTitle": "Graciela Alfano recordó su romance con Diego Maradona y reveló un secreto de la intimidad",
-        "newsSource": "TN"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "joaquín sabina",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=joaqu%C3%ADn%20sabina"
-        }
-      ]
-    },
-    {
-      "id": 1014,
-      "name": "paisita dia",
-      "originalTitle": "paisita dia",
-      "region": "南美洲",
-      "country": "哥伦比亚",
+      "id": 1010,
+      "name": "sars efiling",
+      "originalTitle": "sars efiling",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
       "trend": 61,
-      "score": 93,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「paisita dia」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100+。关联新闻源：Blu Radio / Vanguardia；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "paisita dia",
-        "traffic": 100,
-        "publishedAt": "Sun, 12 Jul 2026 12:50:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnQZ6Cy9UeRUBURiuA-Qb1_jjQ1T4a5ui0J1mlcaBeoyvmaZstx4lVtYbA_ik",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=paisita%20dia",
-        "newsUrl": "https://www.bluradio.com/economia/juegos-de-azar/paisita-dia-resultado-del-ultimo-sorteo-hoy-domingo-12-de-julio-de-2026-so35",
-        "newsTitle": "Paisita Día resultado del último sorteo hoy domingo 12 de julio de 2026",
-        "newsSource": "Blu Radio"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "paisita dia",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=paisita%20dia"
-        }
-      ]
-    },
-    {
-      "id": 1015,
-      "name": "colo colo femenino",
-      "originalTitle": "colo colo femenino",
-      "region": "南美洲",
-      "country": "智利",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 60,
       "score": 92,
       "status": "爆发",
       "type": "realtime",
@@ -637,37 +447,37 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「colo colo femenino」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 200+。关联新闻源：Dale Albo / Mega.cl；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 南非 搜索趋势「sars efiling」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 南非 搜索趋势，搜索热度约 5000+。关联新闻源：Daily Investor / sundayindependent.co.za；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "colo colo femenino",
-        "traffic": 200,
-        "publishedAt": "Sun, 12 Jul 2026 13:00:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_AFbw0MCO7zOiR50pA0n66HyK85XEYYyCtP2gO0nABM64cOX7BzYA60xm8K8",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=colo%20colo%20femenino",
-        "newsUrl": "https://dalealbo.cl/colo-colo-femenino/con-importantes-bajas-la-lista-de-citadas-de-colo-colo-femenino-para-recibir-a-palestino",
-        "newsTitle": "Con importantes bajas: La lista de citadas de Colo Colo Femenino para recibir a Palestino",
-        "newsSource": "Dale Albo"
+        "topic": "sars efiling",
+        "traffic": 5000,
+        "publishedAt": "Sun, 12 Jul 2026 22:40:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LTzlm1vWD6KPhKlwPkpabM43t6tu-aZo9I8yIfzTdMA1Uhew2MKSMUZ4EIg",
+        "url": "https://trends.google.com/trends/explore?geo=ZA&q=sars%20efiling",
+        "newsUrl": "https://dailyinvestor.com/world/139784/south-africans-with-businesses-overseas-face-an-uphill-battle-with-sars/",
+        "newsTitle": "South Africans with businesses overseas face an uphill battle with SARS",
+        "newsSource": "Daily Investor"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "colo colo femenino",
-          "url": "https://trends.google.com/trends/explore?geo=CL&q=colo%20colo%20femenino"
+          "title": "sars efiling",
+          "url": "https://trends.google.com/trends/explore?geo=ZA&q=sars%20efiling"
         }
       ]
     },
     {
-      "id": 1016,
-      "name": "moquegua vs",
-      "originalTitle": "moquegua vs",
+      "id": 1011,
+      "name": "guerra irã eua",
+      "originalTitle": "guerra irã eua",
       "region": "南美洲",
-      "country": "秘鲁",
+      "country": "巴西",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 54,
+      "trend": 56,
       "score": 90,
       "status": "爆发",
       "type": "realtime",
@@ -675,31 +485,433 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 秘鲁 搜索趋势「moquegua vs」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 100+。关联新闻源：ovacion.pe / 365Scores；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「guerra irã eua」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 2000+。关联新闻源：UOL Notícias / Valor Econômico；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "moquegua vs",
-        "traffic": 100,
-        "publishedAt": "Sun, 12 Jul 2026 13:00:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6otklIOL8G46jgmD5dqEYUZQXa7zyNsxdhcyeXyig0Esa_qfB7MHQO0NcH0M",
-        "url": "https://trends.google.com/trends/explore?geo=PE&q=moquegua%20vs",
-        "newsUrl": "https://ovacion.pe/noticias/copa-caliente-liga/envivo-cd-moquegua-iguala-0-0-d-garcilaso-25-noviembre",
-        "newsTitle": "🔴#ENVIVO | CD Moquegua iguala 0-0 con D. Garcilaso en el 25 de Noviembre",
-        "newsSource": "ovacion.pe"
+        "topic": "guerra irã eua",
+        "traffic": 2000,
+        "publishedAt": "Sun, 12 Jul 2026 21:20:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPNhVqjssAa71Jt5UmQCnFtqRwF86vUEQKgkZr-JLfg71S7FWJ-Oe-OEMXFA",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=guerra%20ir%C3%A3%20eua",
+        "newsUrl": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/07/12/ataques-eua-ira-explosoes-costa-iraniana.ghtm",
+        "newsTitle": "EUA lançam nova onda de ataques contra o Irã após escalada do conflito",
+        "newsSource": "UOL Notícias"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "moquegua vs",
-          "url": "https://trends.google.com/trends/explore?geo=PE&q=moquegua%20vs"
+          "title": "guerra irã eua",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=guerra%20ir%C3%A3%20eua"
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "name": "sars",
+      "originalTitle": "sars",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 66,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 南非 搜索趋势「sars」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 南非 搜索趋势，搜索热度约 2000+。关联新闻源：Moneyweb / Daily Investor；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "sars",
+        "traffic": 2000,
+        "publishedAt": "Sun, 12 Jul 2026 23:20:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2kKpCbarlxxWh5edpZai2XWKBh4IHmBg1hUlBjgnDrcyJacdnvwuWZwm0JbE",
+        "url": "https://trends.google.com/trends/explore?geo=ZA&q=sars",
+        "newsUrl": "https://www.moneyweb.co.za/mymoney/moneyweb-tax/industry-push-forces-sars-to-scrap-premature-trust-penalties/",
+        "newsTitle": "Industry push forces Sars to scrap premature trust penalties",
+        "newsSource": "Moneyweb"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "sars",
+          "url": "https://trends.google.com/trends/explore?geo=ZA&q=sars"
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "name": "stephen fleming",
+      "originalTitle": "stephen fleming",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 52,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「stephen fleming」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：The Times of India / Rediff；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "stephen fleming",
+        "traffic": 500,
+        "publishedAt": "Sun, 12 Jul 2026 23:40:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfBkTPBbO8LIXi6FdrOLhamU4EVP8CoXHzm_66L4h3rD2AY08Qvye0lwyY720",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=stephen%20fleming",
+        "newsUrl": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/csk-part-ways-with-stephen-fleming-hemang-badani-in-fray-to-join-set-up/articleshow/132358140.cms",
+        "newsTitle": "CSK part ways with Stephen Fleming; Hemang Badani in fray to join set-up",
+        "newsSource": "The Times of India"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "stephen fleming",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=stephen%20fleming"
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "name": "sam neill",
+      "originalTitle": "sam neill",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 65,
+      "score": 95,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「sam neill」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：BBC / The Guardian；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 巴西 搜索趋势，搜索热度约 1000+。关联新闻源：BBC / Stuff；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 阿根廷 搜索趋势，搜索热度约 500+。关联新闻源：Stuff / IMDb；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "sam neill",
+        "traffic": 200,
+        "publishedAt": "Sun, 12 Jul 2026 23:30:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJfJhO_xT82cG1iSp6-z9Q8jMUrQweMVDY5HH56A7Hi2KmSC6WqAJN4esJleY",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=sam%20neill",
+        "newsUrl": "https://www.bbc.com/news/live/crl1gk55rzet",
+        "newsTitle": "Sam Neill, Jurassic Park actor, dies aged 78",
+        "newsSource": "BBC"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "sam neill",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=sam%20neill"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "IPL 2026 Videos | High…",
+      "originalTitle": "IPL 2026 Videos | Highlights, Magic Moments & More",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 50,
+      "score": 82,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「IPL」热点《IPL 2026 Videos | Highlights, Magic Moments & More》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：IPL。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "cricket",
+        "category": "核心话题",
+        "sourceName": "IPL",
+        "title": "IPL 2026 Videos | Highlights, Magic Moments & More",
+        "publishedAt": "Mon, 13 Jul 2026 05:39:02 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE12bk9RYk5pTWd5eVBBSE96MF9jNmRpemQyNHR2ZW5UUzY4dk9JZE9TeGRoSE1qR2JEb201SlVtNUZfRnc?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "IPL 2026 Videos | Highlights, Magic Moments & More",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE12bk9RYk5pTWd5eVBBSE96MF9jNmRpemQyNHR2ZW5UUzY4dk9JZE9TeGRoSE1qR2JEb201SlVtNUZfRnc?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "name": "Bollywood actors Dimpl…",
+      "originalTitle": "Bollywood actors Dimple Kapadia and Boman Irani attend the premiere of Christopher Nolan film The Odyssey, in Mumbai, Maharashtra, on Saturday.",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 52,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「The Shillong Times」热点《Bollywood actors Dimple Kapadia and Boman Irani attend the premiere of Christopher Nolan film The Odyssey, in Mumbai, Maharashtra, on Saturday. (PTI)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Shillong Times。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "bollywood",
+        "category": "垂类补充",
+        "sourceName": "The Shillong Times",
+        "title": "Bollywood actors Dimple Kapadia and Boman Irani attend the premiere of Christopher Nolan film The Odyssey, in Mumbai, Maharashtra, on Saturday. (PTI)",
+        "publishedAt": "Mon, 13 Jul 2026 02:27:04 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWG95dDNPb1BzRi0tWEkxR2pySWQyay1sVm91Mk50MFFlc1Zyd0c3a19oaEQxYnB1Nlo1MVB5MWMtSTNlU291c242ZXFwT1ZDOXN4UHk3MUV1QWM3bF9jQmk0aUVZOERoMUZSbllPam5Vd0tLNVJCUElWTk41d0FaeDkzTE1RN2lXN3I5Y25SOHpwSC1VSDJFQ0NuWnRveU56MmJZb3lDYUZMNEdpekJtVFNtdF9GeDc2SW1zeEFfcDNKNTI1MGZtQkxjX1BNbVNZd19NVTRCcWZjclppQ3h6ZGVHWXdSZUVNczVKcWtGbmFHa2VnYkFNVEY5M1h1blNONUFzYjlBXzdKNXZzeElUeHFR?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bollywood actors Dimple Kapadia and Boman Irani attend the premiere of Christopher Nolan film The Odyssey, in Mumbai, Maharashtra, on Saturday.",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWG95dDNPb1BzRi0tWEkxR2pySWQyay1sVm91Mk50MFFlc1Zyd0c3a19oaEQxYnB1Nlo1MVB5MWMtSTNlU291c242ZXFwT1ZDOXN4UHk3MUV1QWM3bF9jQmk0aUVZOERoMUZSbllPam5Vd0tLNVJCUElWTk41d0FaeDkzTE1RN2lXN3I5Y25SOHpwSC1VSDJFQ0NuWnRveU56MmJZb3lDYUZMNEdpekJtVFNtdF9GeDc2SW1zeEFfcDNKNTI1MGZtQkxjX1BNbVNZd19NVTRCcWZjclppQ3h6ZGVHWXdSZUVNczVKcWtGbmFHa2VnYkFNVEY5M1h1blNONUFzYjlBXzdKNXZzeElUeHFR?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1017,
+      "name": "Bengaluru Poetry Festi…",
+      "originalTitle": "Bengaluru Poetry Festival: Attend A Celebration Of Language, Rhythm, & Storytelling",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 57,
+      "score": 85,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度 本地媒体「homegrown.co.in」热点《Bengaluru Poetry Festival: Attend A Celebration Of Language, Rhythm, & Storytelling》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：homegrown.co.in。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "festival",
+        "category": "垂类补充",
+        "sourceName": "homegrown.co.in",
+        "title": "Bengaluru Poetry Festival: Attend A Celebration Of Language, Rhythm, & Storytelling",
+        "publishedAt": "Mon, 13 Jul 2026 05:15:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdWJ3dkRHbEpISVA4M1hrZXBnUE5FMXFlUG5SU0t4RDVXVkZWeXV2TGdYMC1sRFJ3SFZ1RjFHeW11R2M4US1TOG80bUp1R3NoUXVLUUlLdEpBVHJWdjh1djlkYS1MaXhuc0lEQUlfa1IxYm1MWkc2alRYVW9ENWtfM3FEZzlZOU1CRHBHZ0Z3a3VUSHd3WFptamJSbE1vOGd4QW1QLVRYZHNMV2lNb0EydVJzX3lGWHBIZTBCS9IBygFBVV95cUxPaE8wb080VlduWU40a0RaaGtfaXlzZFlyanJUUlJkcC05cTFrSUlybkVNUWQtVThFNTJYdzcwTkpnY3cwTFFSWmRlRU5TTjlkWnJ6NEc4WmpOcDk1NjUxN0xOd1RwV1dWeEpzX3Z6MFZXZF84U0xjd2VWS2NzZVNKcmhTR3pLbHRLQjZmdWJJQ1VfRlJVbnkzdzJvRUJZRkE2aXB6Q1ZYTFpWeWZ0QlpkLURXQUVNc0ZTei1DZWR5SDc1WTNsUGV5bi1B?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bengaluru Poetry Festival: Attend A Celebration Of Language, Rhythm, & Storytelling",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdWJ3dkRHbEpISVA4M1hrZXBnUE5FMXFlUG5SU0t4RDVXVkZWeXV2TGdYMC1sRFJ3SFZ1RjFHeW11R2M4US1TOG80bUp1R3NoUXVLUUlLdEpBVHJWdjh1djlkYS1MaXhuc0lEQUlfa1IxYm1MWkc2alRYVW9ENWtfM3FEZzlZOU1CRHBHZ0Z3a3VUSHd3WFptamJSbE1vOGd4QW1QLVRYZHNMV2lNb0EydVJzX3lGWHBIZTBCS9IBygFBVV95cUxPaE8wb080VlduWU40a0RaaGtfaXlzZFlyanJUUlJkcC05cTFrSUlybkVNUWQtVThFNTJYdzcwTkpnY3cwTFFSWmRlRU5TTjlkWnJ6NEc4WmpOcDk1NjUxN0xOd1RwV1dWeEpzX3Z6MFZXZF84U0xjd2VWS2NzZVNKcmhTR3pLbHRLQjZmdWJJQ1VfRlJVbnkzdzJvRUJZRkE2aXB6Q1ZYTFpWeWZ0QlpkLURXQUVNc0ZTei1DZWR5SDc1WTNsUGV5bi1B?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1018,
+      "name": "Bamega Band Jadi Wadah…",
+      "originalTitle": "Bamega Band Jadi Wadah Pembinaan Seni Musik Warga Binaan Lapas Kotabaru",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 47,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Direktorat Jenderal Pemasyarakatan」热点《Bamega Band Jadi Wadah Pembinaan Seni Musik Warga Binaan Lapas Kotabaru》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Direktorat Jenderal Pemasyarakatan。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musik",
+        "category": "核心话题",
+        "sourceName": "Direktorat Jenderal Pemasyarakatan",
+        "title": "Bamega Band Jadi Wadah Pembinaan Seni Musik Warga Binaan Lapas Kotabaru",
+        "publishedAt": "Mon, 13 Jul 2026 02:07:19 GMT",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWVVVa0JleDJ5ajRrWnZzZUprMnVpREFwaE9qWHZaMXhBSTZ4TmRTZUFvVEN2SkpvR1NtWXcyUUNoTWNtR0xaT1RYbF96enpFczhvb0FHOFdVQ3RlVjJoclY3NU1RcVBTNk1JWFMwN0lJMlNFMkExTUVMeVFXZjMwdkZKWjRBQkd6Tk1qMzRodUZfekkxT1FYUk9ta2Y1VmJL?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Bamega Band Jadi Wadah Pembinaan Seni Musik Warga Binaan Lapas Kotabaru",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWVVVa0JleDJ5ajRrWnZzZUprMnVpREFwaE9qWHZaMXhBSTZ4TmRTZUFvVEN2SkpvR1NtWXcyUUNoTWNtR0xaT1RYbF96enpFczhvb0FHOFdVQ3RlVjJoclY3NU1RcVBTNk1JWFMwN0lJMlNFMkExTUVMeVFXZjMwdkZKWjRBQkd6Tk1qMzRodUZfekkxT1FYUk9ta2Y1VmJL?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "name": "Jadwal Semifinal Piala…",
+      "originalTitle": "Jadwal Semifinal Piala Dunia 2026: Perbandingan Tim dan Analisis Prediksi",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 60,
+      "score": 86,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Kompaspedia」热点《Jadwal Semifinal Piala Dunia 2026: Perbandingan Tim dan Analisis Prediksi》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Kompaspedia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "sepak bola",
+        "category": "垂类补充",
+        "sourceName": "Kompaspedia",
+        "title": "Jadwal Semifinal Piala Dunia 2026: Perbandingan Tim dan Analisis Prediksi",
+        "publishedAt": "Mon, 13 Jul 2026 03:44:25 GMT",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVWlaQTQwZHR2M05jQTNUbHdTSkJ2TnJsNVpCUTVsdk83RFhvQ0xCaEFVNUpXbWxaYmNqSDZ4dE1fUk1GZldqSWtHdGRwUmdlVVpWZmxhUHFhV2NsaDhVbEpTUkVySnczUTZxY0tqbGNCRnI4TU8xSDhieV8td0x6LXNOYkhYN3JXYnplNVN2aw?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Jadwal Semifinal Piala Dunia 2026: Perbandingan Tim dan Analisis Prediksi",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVWlaQTQwZHR2M05jQTNUbHdTSkJ2TnJsNVpCUTVsdk83RFhvQ0xCaEFVNUpXbWxaYmNqSDZ4dE1fUk1GZldqSWtHdGRwUmdlVVpWZmxhUHFhV2NsaDhVbEpTUkVySnczUTZxY0tqbGNCRnI4TU8xSDhieV8td0x6LXNOYkhYN3JXYnplNVN2aw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "name": "Film \"Rejoto Nyambung …",
+      "originalTitle": "Film \"Rejoto Nyambung Tresno\" Segera Tayang Di Cgv, Ning Ita Ajak Masyarakat Dukung Perfilman Lokal",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 48,
+      "score": 81,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Pemerintah Kota Mojokerto」热点《Film \"Rejoto Nyambung Tresno\" Segera Tayang Di Cgv, Ning Ita Ajak Masyarakat Dukung Perfilman Lokal》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Pemerintah Kota Mojokerto。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "film",
+        "category": "垂类补充",
+        "sourceName": "Pemerintah Kota Mojokerto",
+        "title": "Film \"Rejoto Nyambung Tresno\" Segera Tayang Di Cgv, Ning Ita Ajak Masyarakat Dukung Perfilman Lokal",
+        "publishedAt": "Mon, 13 Jul 2026 04:43:54 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSVNzMzFhelFfSk1MZjItbDF5elNvME1DenIyeld3TVJkRkRPOTlYbEljOGxlc3gxWDZaUnB4NWhsdFpJQkRkZEt1WnNHVzRlcEd0T09xSXNsYkdIVlNiSm1uNnJqeUZXRHNQRmpGS084ZW5Fa19sbTdHUTRmQVNjTVZBMnFmaV9adklnSTJRaUJxLXE5Tm1SZHgtdEVvNkJRSU1rUWdwbGNiYzY5SkpGajI4UmNzc0V1a3FHWU9hOENFTl9PZVNTb3ZnTDhkVmQxbV93VWFEXy1VeVNlaGtR?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Film \"Rejoto Nyambung Tresno\" Segera Tayang Di Cgv, Ning Ita Ajak Masyarakat Dukung Perfilman Lokal",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSVNzMzFhelFfSk1MZjItbDF5elNvME1DenIyeld3TVJkRkRPOTlYbEljOGxlc3gxWDZaUnB4NWhsdFpJQkRkZEt1WnNHVzRlcEd0T09xSXNsYkdIVlNiSm1uNnJqeUZXRHNQRmpGS084ZW5Fa19sbTdHUTRmQVNjTVZBMnFmaV9adklnSTJRaUJxLXE5Tm1SZHgtdEVvNkJRSU1rUWdwbGNiYzY5SkpGajI4UmNzc0V1a3FHWU9hOENFTl9PZVNTb3ZnTDhkVmQxbV93VWFEXy1VeVNlaGtR?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "name": "Paulistão F",
+      "originalTitle": "Paulistão F",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 55,
+      "score": 84,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 巴西 本地媒体「Federação Paulista de Futebol」热点《Paulistão F》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Federação Paulista de Futebol。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "futebol",
+        "category": "核心话题",
+        "sourceName": "Federação Paulista de Futebol",
+        "title": "Paulistão F",
+        "publishedAt": "Sun, 12 Jul 2026 23:42:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DaG5DZ1VCX3VvWWlEdGhMUWtFY2JQMGZLVURYeEJUelg2dGxPYVNCR1NXRHRXUWZUclNaWFQ0YlNWXzVnRUtJUWhsbnd0Mjl2UjlLanBwVzFLYmhUYXJIeE1ZS0JzNVpFdG81U1FjNkdBeTYx?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Paulistão F",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DaG5DZ1VCX3VvWWlEdGhMUWtFY2JQMGZLVURYeEJUelg2dGxPYVNCR1NXRHRXUWZUclNaWFQ0YlNWXzVnRUtJUWhsbnd0Mjl2UjlLanBwVzFLYmhUYXJIeE1ZS0JzNVpFdG81U1FjNkdBeTYx?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1022,
+      "name": "Casagrande: Ler um bom…",
+      "originalTitle": "Casagrande: Ler um bom livro e ouvir uma boa música preenche esse domingo vazio de Copa",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 54,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 巴西 本地媒体「UOL」热点《Casagrande: Ler um bom livro e ouvir uma boa música preenche esse domingo vazio de Copa》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：UOL。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musica",
+        "category": "垂类补充",
+        "sourceName": "UOL",
+        "title": "Casagrande: Ler um bom livro e ouvir uma boa música preenche esse domingo vazio de Copa",
+        "publishedAt": "Mon, 13 Jul 2026 00:38:46 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOREE4QTN2MkxwZ215OUN2MC1Zd1ZCbGp0d1VDcklHZFFGSktKY3pFeng3eVpRb0VoYllZLXlrNGk1aDN0Q1VqeFllQm9ENG5HQWw3cC1RNnFyQ1JqMWotbTdQSDlaZkZqT0ZvYjlfb2RMZDBpYVRaSEpXVFRmSGdiak9tSlRmaW1sU0piMVJ1OUZLd3l3dXc3ZWQyNHBYQVVKTkQ5UE9PeTBmUlktZEMzSEJZVmxIVFpuWVJyVmctb2U1VzV3di1vUWI1ZzBUeWtHMXJLRjZ1alVXWlUwdktxR0Vn?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Casagrande: Ler um bom livro e ouvir uma boa música preenche esse domingo vazio de Copa",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOREE4QTN2MkxwZ215OUN2MC1Zd1ZCbGp0d1VDcklHZFFGSktKY3pFeng3eVpRb0VoYllZLXlrNGk1aDN0Q1VqeFllQm9ENG5HQWw3cC1RNnFyQ1JqMWotbTdQSDlaZkZqT0ZvYjlfb2RMZDBpYVRaSEpXVFRmSGdiak9tSlRmaW1sU0piMVJ1OUZLd3l3dXc3ZWQyNHBYQVVKTkQ5UE9PeTBmUlktZEMzSEJZVmxIVFpuWVJyVmctb2U1VzV3di1vUWI1ZzBUeWtHMXJLRjZ1alVXWlUwdktxR0Vn?oc=5"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 108,
-      "growth": 50,
+      "count": 115,
+      "growth": 54,
       "countries": [
         "印度"
       ],
@@ -710,8 +922,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 108,
-      "growth": 21,
+      "count": 115,
+      "growth": 25,
       "countries": [
         "印度尼西亚"
       ],
@@ -722,8 +934,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 50,
-      "growth": 21,
+      "count": 57,
+      "growth": 25,
       "countries": [
         "俄罗斯"
       ],
@@ -734,7 +946,7 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 69,
+      "count": 74,
       "growth": 41,
       "countries": [
         "尼日利亚",
@@ -749,8 +961,8 @@
       ]
     },
     "南美洲": {
-      "count": 98,
-      "growth": 50,
+      "count": 103,
+      "growth": 54,
       "countries": [
         "巴西",
         "阿根廷",
@@ -839,73 +1051,45 @@
   ],
   "templateOutputs": [
     {
-      "id": "generated-20260710-1000-01",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜雨夜电影肖像",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 人物图生图 · 雨夜戏剧感、锁屏主视觉",
-      "preview": "assets/daily-samples/2026-07-10-india-rain-cinema.jpg",
-      "prompt": "原创印度音乐电影人物壁纸：雨夜宫廷庭院、深靛蓝丝绸外套与琥珀色纱巾、暖灯与湿地反光；人物位于画面下方，顶部留出锁屏时钟区。适合人物自拍转风格；避免真人明星、影视剧照、品牌和文字。",
+      "id": "generated-20260713-worldcup-france",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜冠军候选人物玩法",
+      "previewTitle": "冠军之夜｜法式蓝焰",
+      "previewMeta": "世界杯半决赛专题 · 人物风格模板 · 原创庆祝肖像、深蓝与暖红色彩、锁屏主视觉",
+      "preview": "assets/daily-samples/2026-07-13-worldcup-france-blue-flame.png",
+      "prompt": "原创冠军之夜人物风格壁纸：虚构年轻人物在抽象夜场光带下庆祝，深海蓝、象牙白与少量暖红色彩流动为丝带，精致电影感、下半部人物、顶部大面积留白供锁屏时钟使用；不使用任何真实球员、国旗、队徽、球衣、赛事 Logo、奖杯、足球、文字或水印。",
       "source": [
-        "YouTube"
+        "赛事专题"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
       "generatedFrom": "curated_ai_image_batch"
     },
     {
-      "id": "generated-20260710-1000-02",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜印度偶像漫画化",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 人物图生图 · 潮流漫画、音乐热点人物玩法",
-      "preview": "assets/daily-samples/2026-07-10-india-comic-pop.jpg",
-      "prompt": "原创印度流行音乐女主角图生图模板：白色刺绣 kurta 叠穿酒红机车夹克、现代城市霓虹与印度建筑线条，高级时尚漫画笔触；9:16，顶部留白。可作为用户自拍转风格参考，不复刻真人。",
+      "id": "generated-20260713-worldcup-spain",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜冠军候选人物玩法",
+      "previewTitle": "日落斗牛红｜庆祝姿态",
+      "previewMeta": "世界杯半决赛专题 · 人物风格模板 · 自拍转主题、赤红与暖金材质、插画化人物",
+      "preview": "assets/daily-samples/2026-07-13-worldcup-spain-sunset.png",
+      "prompt": "原创庆祝姿态人物风格模板：虚构年轻女性，赤红和暖金色柔软织物环绕，陶土广场的几何光影、精致 editorial 插画、人物位于下部中央、顶部 28% 留白供锁屏时钟使用；不使用国旗、国徽、队徽、球衣、赛事标识、奖杯、足球、真实人物、文字或水印。",
       "source": [
-        "YouTube"
+        "赛事专题"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
       "generatedFrom": "curated_ai_image_batch"
     },
     {
-      "id": "generated-20260710-1000-03",
-      "hotspotId": 1000,
-      "hotspotName": "Tabaahi 🔥| Toxic (Hin…",
-      "previewTitle": "Tabaahi 🔥| Toxic (Hin…)｜季风声景主题",
-      "previewMeta": "真实 AI 精品样图 · 印度 · Top1 · 色彩/材质主题 · 可同步锁屏、图标与小组件",
-      "preview": "assets/daily-samples/2026-07-10-india-monsoon-soundscape.jpg",
-      "prompt": "印度季风音乐 OS 主题：靛蓝雨幕、琥珀色半透明丝带转为声波、金色雨滴和细腻几何砖纹；无人物，视觉集中在下半部，顶部为时钟和小组件留白。可延展锁屏、图标和 AOD。",
+      "id": "generated-20260713-worldcup-argentina",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜冠军候选人物玩法",
+      "previewTitle": "天蓝纸屑｜仰望未来",
+      "previewMeta": "世界杯半决赛专题 · 人物风格模板 · 图生图、天蓝纸屑与玻璃轨道、轻盈动态感",
+      "preview": "assets/daily-samples/2026-07-13-worldcup-argentina-sky-confetti.png",
+      "prompt": "原创天蓝纸屑人物风格壁纸：虚构拉丁青年穿无标识白色飞行夹克，仰望星光与蓝白纸屑，透明玻璃轨道形成动态感，干净高级的 OS 主题视觉，人物在下半部、顶部留出时间区域；不使用任何真实球员、国旗、国徽、队服、号码、赛事 Logo、奖杯、足球、文字或水印。",
       "source": [
-        "YouTube"
+        "赛事专题"
       ],
-      "sourceUrl": "https://www.youtube.com/watch?v=h1kihH0l8iQ",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1001-01",
-      "hotspotId": 1001,
-      "hotspotName": "Dune: Part Three | Off…",
-      "previewTitle": "Dune: Part Three | Off…｜沙漠异形器物",
-      "previewMeta": "真实 AI 精品样图 · 撒哈拉以南非洲 · Top2 · 异形/材质主题 · 未来感 OS 视觉套装",
-      "preview": "assets/daily-samples/2026-07-10-afro-desert-artifact.jpg",
-      "prompt": "原创未来沙漠 OS 主题：铜陶与铬金属结合的异形种子器物，南部非洲珠饰几何压纹、细钴蓝光环、风蚀沙丘与暮色天空；无人物，无已有影视元素，顶部留白，适合图标和小组件叠加。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=NdvqHc56lE0",
-      "generatedFrom": "curated_ai_image_batch"
-    },
-    {
-      "id": "generated-20260710-1002-01",
-      "hotspotId": 1002,
-      "hotspotName": "Jux Ft Mbosso - Kipepe…",
-      "previewTitle": "Jux Ft Mbosso - Kipepe…｜Afro-pop 蝶形涂鸦",
-      "previewMeta": "真实 AI 精品样图 · 肯尼亚 · Top3 · 涂鸦/插画主题 · 音乐节奏与本地化纹样",
-      "preview": "assets/daily-samples/2026-07-10-kenya-afropop-abstract.jpg",
-      "prompt": "原创东非 Afro-pop OS 主题：蓝、橙、翠绿的音乐线条构成蝴蝶般的异形涂鸦，叠加细腻 kitenge 纹样和深靛蓝纸张质感；无人物、无文字，上方留出锁屏时间区。",
-      "source": [
-        "YouTube"
-      ],
-      "sourceUrl": "https://www.youtube.com/watch?v=B8UDrYSaGZA",
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
       "generatedFrom": "curated_ai_image_batch"
     }
   ]
