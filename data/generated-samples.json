@@ -1,7 +1,46 @@
 {
-  "generatedAt": "2026-07-13T04:55:00.000Z",
-  "policy": "样图根据实时热点属性决定是否更新。世界杯半决赛属于高可玩赛事专题：本批只保留 3 张原创人物风格模板，使用国家配色与庆祝情绪，不使用真实球员、国旗、队徽、球衣、赛事 Logo、奖杯或任何可识别版权元素。",
+  "generatedAt": "2026-07-14T06:20:00.000Z",
+  "policy": "样图根据实时热点属性决定是否更新。世界杯半决赛属于高可玩赛事专题：本批包含 3 张原创人物风格模板与 3 张可直接下载的 OS 壁纸；均使用抽象赛场光感和庆祝动能，不使用真实球员、国旗、队徽、球衣、赛事 Logo、奖杯或任何可识别版权元素。",
   "samples": [
+    {
+      "id": "generated-20260714-worldcup-stadium-wallpaper",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜OS 壁纸方向",
+      "previewTitle": "赛场光环｜沉浸锁屏壁纸",
+      "previewMeta": "世界杯半决赛专题 · 直接可用 OS 壁纸 · 深蓝赛场光环、金色纸屑、顶部时钟留白",
+      "preview": "assets/daily-samples/2026-07-14-worldcup-stadium-orbit-wallpaper.png",
+      "prompt": "原创 OS 锁屏壁纸：抽象俯视深蓝夜场光环，冷青赛场灯带和少量暖金纸屑，顶部大面积干净留白供锁屏时间使用，精致沉浸、无人物、无赛事标识；不使用国旗、队徽、球衣、真实球员、奖杯、足球、文字或水印。",
+      "source": ["赛事专题"],
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "generatedFrom": "curated_ai_wallpaper_batch",
+      "assetType": "direct-wallpaper"
+    },
+    {
+      "id": "generated-20260714-worldcup-glass-wallpaper",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜OS 壁纸方向",
+      "previewTitle": "冰蓝光带｜玻璃动态壁纸",
+      "previewMeta": "世界杯半决赛专题 · 直接可用 OS 壁纸 · 冰蓝玻璃、珍珠白光带、顶部时钟留白",
+      "preview": "assets/daily-samples/2026-07-14-worldcup-glass-ribbon-wallpaper.png",
+      "prompt": "原创 OS 壁纸：深墨背景上叠加冰蓝与珍珠白半透明玻璃光带，点缀极少暖金庆祝碎片，顶部留出干净时间区域，具有速度和胜利动能；无人物、无赛事 Logo、无国旗、无球队元素、无文字或水印。",
+      "source": ["赛事专题"],
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "generatedFrom": "curated_ai_wallpaper_batch",
+      "assetType": "direct-wallpaper"
+    },
+    {
+      "id": "generated-20260714-worldcup-metal-wallpaper",
+      "hotspotId": "worldcup-semifinal-2026",
+      "hotspotName": "世界杯半决赛｜OS 壁纸方向",
+      "previewTitle": "金属胜场｜材质构图壁纸",
+      "previewMeta": "世界杯半决赛专题 · 直接可用 OS 壁纸 · 金蓝金属飘带、场地光环、极简锁屏留白",
+      "preview": "assets/daily-samples/2026-07-14-worldcup-metal-field-wallpaper.png",
+      "prompt": "原创 OS 壁纸：哑光炭黑底上，以深钴蓝与拉丝金金属飘带交错向上，中心隐约发光的椭圆场地线，顶部极简留白，克制高级；无人物、无足球、无奖杯、无国旗、无队徽、无文字或水印。",
+      "source": ["赛事专题"],
+      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "generatedFrom": "curated_ai_wallpaper_batch",
+      "assetType": "direct-wallpaper"
+    },
     {
       "id": "generated-20260713-worldcup-france",
       "hotspotId": "worldcup-semifinal-2026",

@@ -276,6 +276,7 @@ function promptTextDownload(item) {
 
 function playTags(item) {
   const meta = String(item.previewMeta || "");
+  if (item.assetType === "direct-wallpaper") return ["直接可用壁纸", "锁屏时间留白", "可下载"];
   if (meta.includes("人物图生图") || meta.includes("人物风格模板")) return ["人物风格", "图生图", "自拍转主题"];
   if (meta.includes("色彩/材质")) return ["色彩主题", "锁屏 + AOD", "图标色板"];
   if (meta.includes("异形/材质")) return ["异形主视觉", "材质主题", "图标延展"];
@@ -388,7 +389,7 @@ function renderGallery() {
             <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
             <div class="visual-actions">
               <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>
-              <a href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">下载样图</a>
+              <a href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">${h.assetType === "direct-wallpaper" ? "下载壁纸" : "下载样图"}</a>
             </div>
           </div>
         </article>`;
