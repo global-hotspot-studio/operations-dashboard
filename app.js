@@ -439,21 +439,46 @@ function renderAll() {
 function bind() {
   $("#regionFilter").onchange = e => { state.region = e.target.value; renderAll(); };
   $("#sourceFilter").onchange = e => { state.source = e.target.value; renderAll(); };
+  const viewAnchors = {
+    overview: "#overviewTop",
+    pool: "#hotspotPoolSection",
+    trend: "#trendSection",
+    alerts: "#alertSection",
+    // 运营候选的第一落点是给设计师浏览的主题样图，而非下方的提示词样图列表。
+    candidates: "#themePreviewSection",
+    config: "#configView"
+  };
   $$(".nav-item").forEach(b => b.onclick = () => {
     $$(".nav-item").forEach(x => x.classList.remove("active")); b.classList.add("active");
     const mode = b.dataset.view;
-    const anchor = {
-      overview: "#overviewTop",
-      pool: "#hotspotPoolSection",
-      trend: "#trendSection",
-      alerts: "#alertSection",
-      candidates: "#styleTemplateSection",
-      config: "#configView"
-    }[mode];
+    const anchor = viewAnchors[mode];
     if (mode === "pool") { state.table = "all"; renderTable(); }
     if (mode === "candidates") { state.table = "candidates"; renderTable(); }
     if (anchor) setTimeout(() => $(anchor).scrollIntoView({ behavior: "smooth", block: "start" }), 40);
   });
+
+  // Single-page scroll spy: navigating the content also updates the matching sidebar item.
+  const scrollSections = [
+    ["overview", "#overviewTop"],
+    ["pool", "#hotspotPoolSection"],
+    ["trend", "#trendSection"],
+    ["alerts", "#alertSection"],
+    ["candidates", "#themePreviewSection"],
+    // 提示词样图仍属于运营候选，继续保持左侧同一高亮。
+    ["candidates", "#styleTemplateSection"],
+    ["config", "#configView"]
+  ].map(([view, selector]) => ({ view, node: $(selector) })).filter(x => x.node);
+  const activateView = view => {
+    $$(".nav-item").forEach(item => item.classList.toggle("active", item.dataset.view === view));
+  };
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(entry => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    const item = scrollSections.find(section => section.node === visible.target);
+    if (item) activateView(item.view);
+  }, { rootMargin: "-18% 0px -58% 0px", threshold: [0.08, 0.2, 0.45] });
+  scrollSections.forEach(section => observer.observe(section.node));
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {
     if (e.target.closest("a")) return;
