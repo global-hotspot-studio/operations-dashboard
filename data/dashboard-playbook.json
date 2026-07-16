@@ -1092,47 +1092,47 @@
   ],
   "templateOutputs": [
     {
-      "id": "generated-20260714-worldcup-stadium-wallpaper",
-      "hotspotId": "worldcup-semifinal-2026",
-      "hotspotName": "世界杯半决赛｜OS 壁纸方向",
-      "previewTitle": "赛场光环｜沉浸锁屏壁纸",
-      "previewMeta": "世界杯半决赛专题 · 直接可用 OS 壁纸 · 深蓝赛场光环、金色纸屑、顶部时钟留白",
-      "preview": "assets/daily-samples/2026-07-14-worldcup-stadium-orbit-wallpaper.png",
-      "prompt": "原创 OS 锁屏壁纸：抽象俯视深蓝夜场光环，冷青赛场灯带和少量暖金纸屑，顶部大面积干净留白供锁屏时间使用，精致沉浸、无人物、无赛事标识；不使用国旗、队徽、球衣、真实球员、奖杯、足球、文字或水印。",
+      "id": "generated-20260716-worldcup-final-orbit-wallpaper",
+      "hotspotId": "worldcup-final-2026",
+      "hotspotName": "世界杯决赛｜OS 壁纸方向",
+      "previewTitle": "终局光环｜双轨交汇壁纸",
+      "previewMeta": "世界杯决赛前夜 · 直接可用 OS 壁纸 · 深钴蓝与珍珠金双轨、顶部时钟留白",
+      "preview": "assets/daily-samples/2026-07-16-worldcup-final-orbit-wallpaper.png",
+      "prompt": "原创抽象 OS 锁屏壁纸：两道独立的发光轨迹在画面下部交汇，午夜海军蓝、深钴蓝、珍珠白与克制香槟金粒子，具有玻璃折射与深度；顶部 28% 保持干净留白。不要人物、足球、场地、国旗、国别符号、球队徽章、赛事标识、文字或水印。",
       "source": [
         "赛事专题"
       ],
-      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "sourceUrl": "https://apnews.com/article/afa13ed9fa933f8b75bd56eb16546031",
       "generatedFrom": "curated_ai_wallpaper_batch",
       "assetType": "direct-wallpaper"
     },
     {
-      "id": "generated-20260714-worldcup-glass-wallpaper",
-      "hotspotId": "worldcup-semifinal-2026",
-      "hotspotName": "世界杯半决赛｜OS 壁纸方向",
-      "previewTitle": "冰蓝光带｜玻璃动态壁纸",
-      "previewMeta": "世界杯半决赛专题 · 直接可用 OS 壁纸 · 冰蓝玻璃、珍珠白光带、顶部时钟留白",
-      "preview": "assets/daily-samples/2026-07-14-worldcup-glass-ribbon-wallpaper.png",
-      "prompt": "原创 OS 壁纸：深墨背景上叠加冰蓝与珍珠白半透明玻璃光带，点缀极少暖金庆祝碎片，顶部留出干净时间区域，具有速度和胜利动能；无人物、无赛事 Logo、无国旗、无球队元素、无文字或水印。",
+      "id": "generated-20260716-worldcup-final-pulse-wallpaper",
+      "hotspotId": "worldcup-final-2026",
+      "hotspotName": "世界杯决赛｜OS 壁纸方向",
+      "previewTitle": "决赛脉冲｜玻璃动态壁纸",
+      "previewMeta": "世界杯决赛前夜 · 直接可用 OS 壁纸 · 冰青玻璃飘带、银白脉冲、顶部时钟留白",
+      "preview": "assets/daily-samples/2026-07-16-worldcup-final-pulse-wallpaper.png",
+      "prompt": "原创抽象 OS 壁纸：单条半透明冰青与银白玻璃飘带，自底部柔和径向光场向上延展；深海蓝背景、珍珠高光、安静而有张力，顶部 30% 保持干净留白。不要人物、足球、场地、国旗、国别符号、球队徽章、赛事标识、文字或水印。",
       "source": [
         "赛事专题"
       ],
-      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "sourceUrl": "https://apnews.com/article/afa13ed9fa933f8b75bd56eb16546031",
       "generatedFrom": "curated_ai_wallpaper_batch",
       "assetType": "direct-wallpaper"
     },
     {
-      "id": "generated-20260714-worldcup-metal-wallpaper",
-      "hotspotId": "worldcup-semifinal-2026",
-      "hotspotName": "世界杯半决赛｜OS 壁纸方向",
-      "previewTitle": "金属胜场｜材质构图壁纸",
-      "previewMeta": "世界杯半决赛专题 · 直接可用 OS 壁纸 · 金蓝金属飘带、场地光环、极简锁屏留白",
-      "preview": "assets/daily-samples/2026-07-14-worldcup-metal-field-wallpaper.png",
-      "prompt": "原创 OS 壁纸：哑光炭黑底上，以深钴蓝与拉丝金金属飘带交错向上，中心隐约发光的椭圆场地线，顶部极简留白，克制高级；无人物、无足球、无奖杯、无国旗、无队徽、无文字或水印。",
+      "id": "generated-20260716-worldcup-final-dawn-wallpaper",
+      "hotspotId": "worldcup-final-2026",
+      "hotspotName": "世界杯决赛｜OS 壁纸方向",
+      "previewTitle": "终局黎明｜材质构图壁纸",
+      "previewMeta": "世界杯决赛前夜 · 直接可用 OS 壁纸 · 靛蓝至曙光渐变、纸金属弧面、极简时钟留白",
+      "preview": "assets/daily-samples/2026-07-16-worldcup-final-dawn-wallpaper.png",
+      "prompt": "原创抽象 OS 壁纸：深靛蓝向珍珠晨光渐变，三层纸张与拉丝金属质感的弧面在下半部交叠，薄雾与极少金色微光，具有安静的终局期待感；顶部留出干净时间区域。不要人物、足球、场地、国旗、国别符号、球队徽章、赛事标识、文字或水印。",
       "source": [
         "赛事专题"
       ],
-      "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
+      "sourceUrl": "https://apnews.com/article/afa13ed9fa933f8b75bd56eb16546031",
       "generatedFrom": "curated_ai_wallpaper_batch",
       "assetType": "direct-wallpaper"
     },
