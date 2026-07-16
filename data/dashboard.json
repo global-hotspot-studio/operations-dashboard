@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-15T09:19:39.395Z",
+  "generatedAt": "2026-07-16T09:32:09.674Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1458,
-    "effectiveHotspots": 406,
+    "rawTopics": 1416,
+    "effectiveHotspots": 392,
     "highPriorityAlerts": 16,
     "templateCandidates": 16,
     "rawDelta": 42,
-    "effectiveRate": "28%"
+    "effectiveRate": "27.8%"
   },
   "trendSeries": {
     "labels": [
@@ -47,32 +47,32 @@
       "22:00"
     ],
     "effective": [
-      27,
-      79,
-      31,
-      58,
-      89,
-      28,
-      126,
-      46,
-      105,
-      124,
-      83,
-      153
+      34,
+      73,
+      34,
+      59,
+      85,
+      34,
+      119,
+      51,
+      103,
+      123,
+      88,
+      146
     ],
     "template": [
-      9,
-      44,
-      15,
-      32,
+      12,
+      41,
+      18,
+      31,
       47,
-      21,
-      65,
-      25,
-      59,
-      54,
-      50,
-      88
+      24,
+      62,
+      29,
+      57,
+      55,
+      51,
+      86
     ]
   },
   "hotspots": [
@@ -85,7 +85,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "20.8M",
+      "heat": "21.1M",
       "trend": 62,
       "score": 95,
       "status": "爆发",
@@ -95,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Dune: Part Three | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 22.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 22.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "NdvqHc56lE0",
         "channelTitle": "Warner Bros.",
@@ -120,7 +120,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "3.0M",
+      "heat": "3.1M",
       "trend": 75,
       "score": 98,
       "status": "爆发",
@@ -130,7 +130,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《Jux Ft Mbosso - Kipepeo (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 2.8M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 肯尼亚 热门榜，播放量 2.9M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "B8UDrYSaGZA",
         "channelTitle": "JUX",
@@ -148,15 +148,15 @@
     },
     {
       "id": 1002,
-      "name": "Asake - MCBH (Official…",
-      "originalTitle": "Asake - MCBH",
-      "region": "撒哈拉以南非洲",
-      "country": "尼日利亚",
+      "name": "I Play Rocky | Officia…",
+      "originalTitle": "I Play Rocky | Official Trailer",
+      "region": "南美洲",
+      "country": "智利",
       "source": [
         "YouTube"
       ],
-      "heat": "1.1M",
-      "trend": 60,
+      "heat": "4.1M",
+      "trend": 62,
       "score": 96,
       "status": "爆发",
       "type": "realtime",
@@ -164,8 +164,43 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
+      "prompt": "基于 YouTube 智利 热门内容《I Play Rocky | Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 智利 热门榜，播放量 4.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 秘鲁 热门榜，播放量 4.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "V_g_Ut0jO-0",
+        "channelTitle": "Amazon MGM Studios",
+        "publishedAt": "2026-07-15T13:00:51Z",
+        "thumbnail": "https://i.ytimg.com/vi/V_g_Ut0jO-0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=V_g_Ut0jO-0"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "I Play Rocky | Official Trailer",
+          "url": "https://www.youtube.com/watch?v=V_g_Ut0jO-0"
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "name": "Asake - MCBH (Official…",
+      "originalTitle": "Asake - MCBH",
+      "region": "撒哈拉以南非洲",
+      "country": "尼日利亚",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "1.4M",
+      "trend": 67,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
       "prompt": "基于 YouTube 尼日利亚 热门内容《Asake - MCBH (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 1.2M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 1.4M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "TIRkQPe77J0",
         "channelTitle": "AsakeVEVO",
@@ -182,7 +217,7 @@
       ]
     },
     {
-      "id": 1003,
+      "id": 1004,
       "name": "Class Of 2026 | Offici…",
       "originalTitle": "Class Of 2026 | Official Trailer",
       "region": "撒哈拉以南非洲",
@@ -190,8 +225,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.8M",
-      "trend": 66,
+      "heat": "2.3M",
+      "trend": 67,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -200,7 +235,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Class Of 2026 | Official Trailer [Streamer University]》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 1.8M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 2.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "iN1D7BrFN2c",
         "channelTitle": "Kai Cenat Live",
@@ -217,51 +252,16 @@
       ]
     },
     {
-      "id": 1004,
-      "name": "Korean Kanakaraju Teas…",
-      "originalTitle": "Korean Kanakaraju Teaser | Varun Tej | Merlapaka Gandhi | Thaman S | Satya | Ritika Nayak",
+      "id": 1005,
+      "name": "Khesari Lal Yadav New …",
+      "originalTitle": "Khesari Lal Yadav New Song | Suit Lalka | Ft Akanksha Puri | Goldi Yadav | New Bhojpuri Song 2026",
       "region": "印度",
       "country": "印度",
       "source": [
         "YouTube"
       ],
-      "heat": "1.4M",
-      "trend": 65,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《Korean Kanakaraju Teaser | Varun Tej | Merlapaka Gandhi | Thaman S | Satya | Ritika Nayak》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 1.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "8JntxQgaAw4",
-        "channelTitle": "UV Creations",
-        "publishedAt": "2026-07-13T10:35:02Z",
-        "thumbnail": "https://i.ytimg.com/vi/8JntxQgaAw4/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=8JntxQgaAw4"
-      },
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Korean Kanakaraju Teaser | Varun Tej | Merlapaka Gandhi | Thaman S | Satya | Ritika Nayak",
-          "url": "https://www.youtube.com/watch?v=8JntxQgaAw4"
-        }
-      ]
-    },
-    {
-      "id": 1005,
-      "name": "Ama hem hem",
-      "originalTitle": "Ama hem hem",
-      "region": "撒哈拉以南非洲",
-      "country": "南非",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "477K",
-      "trend": 57,
+      "heat": "791K",
+      "trend": 59,
       "score": 96,
       "status": "爆发",
       "type": "realtime",
@@ -269,34 +269,34 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 南非 热门内容《Ama hem hem》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 南非 热门榜，播放量 502K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《Khesari Lal Yadav New Song | Suit Lalka | Ft Akanksha Puri | Goldi Yadav | New Bhojpuri Song 2026》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 833K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "rPmZucO77sg",
-        "channelTitle": "Thatohatsi - Topic",
-        "publishedAt": "2026-07-09T10:03:58Z",
-        "thumbnail": "https://i.ytimg.com/vi/rPmZucO77sg/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=rPmZucO77sg"
+        "videoId": "ex55eyU2Y1s",
+        "channelTitle": "IVY Bhojpuri Dhamaka",
+        "publishedAt": "2026-07-15T01:30:22Z",
+        "thumbnail": "https://i.ytimg.com/vi/ex55eyU2Y1s/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=ex55eyU2Y1s"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "Ama hem hem",
-          "url": "https://www.youtube.com/watch?v=rPmZucO77sg"
+          "title": "Khesari Lal Yadav New Song | Suit Lalka | Ft Akanksha Puri | Goldi Yadav | New Bhojpuri Song 2026",
+          "url": "https://www.youtube.com/watch?v=ex55eyU2Y1s"
         }
       ]
     },
     {
       "id": 1006,
-      "name": "EU VIREI UM JUIZ DE FU…",
-      "originalTitle": "EU VIREI UM JUIZ DE FUTEBOL LADRÃO E VOU ROUBAR PRO BRASIL SER CAMPEÃO DA COPA DO MUNDO!",
-      "region": "南美洲",
-      "country": "巴西",
+      "name": "🔴 EWC26 GROUP…",
+      "originalTitle": "🔴 EWC26 GROUP STAGE DAY 1 | INDIA AT EWC26",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "YouTube"
       ],
-      "heat": "1.5M",
-      "trend": 68,
+      "heat": "3.4M",
+      "trend": 71,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -304,34 +304,34 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 巴西 热门内容《EU VIREI UM JUIZ DE FUTEBOL LADRÃO E VOU ROUBAR PRO BRASIL SER CAMPEÃO DA COPA DO MUNDO!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 巴西 热门榜，播放量 1.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《🔴 [HINDI] EWC26 GROUP STAGE DAY 1 (GROUP A & B) | INDIA AT EWC26》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 3.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "EVn2gL9C1O8",
-        "channelTitle": "Jazzghost",
-        "publishedAt": "2026-07-14T15:35:03Z",
-        "thumbnail": "https://i.ytimg.com/vi/EVn2gL9C1O8/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=EVn2gL9C1O8"
+        "videoId": "4a8elY0imOw",
+        "channelTitle": "Free Fire MAX Esports India Official",
+        "publishedAt": "2026-07-15T18:01:37Z",
+        "thumbnail": "https://i.ytimg.com/vi/4a8elY0imOw/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=4a8elY0imOw"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "EU VIREI UM JUIZ DE FUTEBOL LADRÃO E VOU ROUBAR PRO BRASIL SER CAMPEÃO DA COPA DO MUNDO!",
-          "url": "https://www.youtube.com/watch?v=EVn2gL9C1O8"
+          "title": "🔴  EWC26 GROUP STAGE DAY 1  | INDIA AT EWC26",
+          "url": "https://www.youtube.com/watch?v=4a8elY0imOw"
         }
       ]
     },
     {
       "id": 1007,
-      "name": "EL CASTIGO de ANTI VER…",
-      "originalTitle": "EL CASTIGO de ANTI VERITY y FALSITY a VERITY...",
+      "name": "KATSEYE: WILD HEARTS O…",
+      "originalTitle": "KATSEYE: WILD HEARTS Official Trailer",
       "region": "南美洲",
       "country": "阿根廷",
       "source": [
         "YouTube"
       ],
       "heat": "1.1M",
-      "trend": 54,
+      "trend": 56,
       "score": 95,
       "status": "爆发",
       "type": "realtime",
@@ -339,34 +339,72 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 阿根廷 热门内容《EL CASTIGO de ANTI VERITY y FALSITY a VERITY...》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 阿根廷 热门榜，播放量 1.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 智利 热门榜，播放量 1.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 秘鲁 热门榜，播放量 1.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 阿根廷 热门内容《KATSEYE: WILD HEARTS Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 阿根廷 热门榜，播放量 1.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 哥伦比亚 热门榜，播放量 1.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "G7gyN9Ep9do",
-        "channelTitle": "soyHerios",
-        "publishedAt": "2026-07-14T19:18:45Z",
-        "thumbnail": "https://i.ytimg.com/vi/G7gyN9Ep9do/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=G7gyN9Ep9do"
+        "videoId": "md5rZb2nEaM",
+        "channelTitle": "KATSEYE",
+        "publishedAt": "2026-07-15T13:00:08Z",
+        "thumbnail": "https://i.ytimg.com/vi/md5rZb2nEaM/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=md5rZb2nEaM"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "EL CASTIGO de ANTI VERITY y FALSITY a VERITY...",
-          "url": "https://www.youtube.com/watch?v=G7gyN9Ep9do"
+          "title": "KATSEYE: WILD HEARTS Official Trailer",
+          "url": "https://www.youtube.com/watch?v=md5rZb2nEaM"
         }
       ]
     },
     {
       "id": 1008,
-      "name": "hang seng index",
-      "originalTitle": "hang seng index",
+      "name": "alerta por vientos",
+      "originalTitle": "alerta por vientos",
+      "region": "南美洲",
+      "country": "智利",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 70,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 智利 搜索趋势「alerta por vientos」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 10000+。关联新闻源：Emol / Gobierno de Santiago；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "alerta por vientos",
+        "traffic": 10000,
+        "publishedAt": "Thu, 16 Jul 2026 00:40:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9S7iHplI9QCQTyaecxO7FNhl72zsuZXRr_PkNu3Pi8Z8JpBoiWyknExkKuWY",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=alerta%20por%20vientos",
+        "newsUrl": "https://www.emol.com/noticias/Nacional/2026/07/15/1205769/gobernador-orrego-sistema-frontal-rm.html",
+        "newsTitle": "\"Puede llover en cuatro días lo que llueve en un año\": Orrego alerta por remociones de masa y desbordes de ríos en la RM",
+        "newsSource": "Emol"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "alerta por vientos",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=alerta%20por%20vientos"
+        }
+      ]
+    },
+    {
+      "id": 1009,
+      "name": "ഇറാന്",
+      "originalTitle": "ഇറാന്",
       "region": "印度",
       "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 67,
+      "trend": 63,
       "score": 94,
       "status": "爆发",
       "type": "realtime",
@@ -374,32 +412,32 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「hang seng index」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 10000+。关联新闻源：Xinhua / chinadailyhk；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「ഇറാന്」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 5000+。关联新闻源：Manorama Online / Mathrubhumi；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "hang seng index",
-        "traffic": 10000,
-        "publishedAt": "Wed, 15 Jul 2026 01:40:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9XS4zLr7Ppuxfqor_hKKf3OykTJa798OJo67gITvyKaCWUiv17b4urmcoyiM",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=hang%20seng%20index",
-        "newsUrl": "https://english.news.cn/20260713/ec596e20fddf46b4bfd4c829305dd700/c.html",
-        "newsTitle": "Hong Kong stocks end mixed",
-        "newsSource": "Xinhua"
+        "topic": "ഇറാന്",
+        "traffic": 5000,
+        "publishedAt": "Thu, 16 Jul 2026 02:10:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqmwFROXbHrLfD1W27ENVuGXYXz3JKMfZpEV5CsnSKhqSuqOEtK36pS_eHhzs",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%87%E0%B4%B1%E0%B4%BE%E0%B4%A8%E0%B5%8D",
+        "newsUrl": "https://www.manoramaonline.com/global-malayali/gulf/2026/07/16/iran-continues-attacks-on-us-bases-in-middle-east.html",
+        "newsTitle": "നാട്ടിലേക്കുള്ള യാത്ര മുടങ്ങുമെന്ന ആശങ്കയിൽ പ്രവാസികൾ; കുവൈത്തിലും ബഹ്റൈനിലും ആക്രമണം തുടർന്ന് ഇറാൻ",
+        "newsSource": "Manorama Online"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "hang seng index",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=hang%20seng%20index"
+          "title": "ഇറാന്",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%87%E0%B4%B1%E0%B4%BE%E0%B4%A8%E0%B5%8D"
         }
       ]
     },
     {
-      "id": 1009,
-      "name": "chatgpt",
-      "originalTitle": "chatgpt",
-      "region": "南美洲",
-      "country": "阿根廷",
+      "id": 1010,
+      "name": "दिल्ली",
+      "originalTitle": "दिल्ली",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
@@ -412,106 +450,68 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「chatgpt」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 5000+。关联新闻源：Bloomberg.com / Inc.com；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「दिल्ली」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 5000+。关联新闻源：AajTak / Hindustan；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "chatgpt",
+        "topic": "दिल्ली",
         "traffic": 5000,
-        "publishedAt": "Tue, 14 Jul 2026 17:00:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiOwaoEFrPDI6aBkbD2owpFJJQiDfuev-R8ZrQpAD_WCdbLzfjWv019oK5VDs",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=chatgpt",
-        "newsUrl": "https://www.bloomberg.com/news/articles/2026-07-14/openai-s-first-device-will-be-moveable-screenless-speaker-built-as-ai-companion",
-        "newsTitle": "OpenAI’s First Device Will Be Movable, Screenless Speaker Built as AI Companion",
-        "newsSource": "Bloomberg.com"
+        "publishedAt": "Thu, 16 Jul 2026 02:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVp9oYzrSAfz25m0hoRC1JoJ9lXQ9ndjGbNcFa_-Hmul9wPTIp09gJOS3WsHc",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80",
+        "newsUrl": "https://www.aajtak.in/india/news/story/sonam-wangchuk-hunger-strike-delhi-high-court-health-check-centre-jantar-mantar-ntc-agkp-rpti-2602399-2026-07-16",
+        "newsTitle": "'जिंदगी अनमोल', सोनम वांगचुक की भूख हड़ताल पर दिल्ली हाईकोर्ट ने जताई चिंता",
+        "newsSource": "AajTak"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "chatgpt",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=chatgpt"
-        }
-      ]
-    },
-    {
-      "id": 1010,
-      "name": "தங்கம்",
-      "originalTitle": "தங்கம்",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 58,
-      "score": 91,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「தங்கம்」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：Polimer News / Thanthi TV；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "தங்கம்",
-        "traffic": 2000,
-        "publishedAt": "Wed, 15 Jul 2026 01:40:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwf41kE2q3LY2usczArTPEXJb42vUSumFNe3AM-3NKi2qcuDZjV41yDrumx4c",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AE%A4%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D",
-        "newsUrl": "https://www.polimernews.com/tamilnadunews/chennai-gold-price-drops-by-rs-800-per-sovereign-today-12159520",
-        "newsTitle": "சென்னையில் தங்கம் விலை அதிரடி சரிவு... சவரனுக்கு ரூ.800 குறைவு; நகை வாங்குவோருக்கு மகிழ்ச்சி!",
-        "newsSource": "Polimer News"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "தங்கம்",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AE%A4%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D"
+          "title": "दिल्ली",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80"
         }
       ]
     },
     {
       "id": 1011,
-      "name": "अपराध",
-      "originalTitle": "अपराध",
-      "region": "印度",
-      "country": "印度",
+      "name": "posiciones de barcelon…",
+      "originalTitle": "posiciones de barcelona sc contra guayaquil city",
+      "region": "南美洲",
+      "country": "秘鲁",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 64,
-      "score": 94,
+      "trend": 67,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「अपराध」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 1000+。关联新闻源：Amar Ujala / Hindustan；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 秘鲁 搜索趋势「posiciones de barcelona sc contra guayaquil city」和相关新闻视觉线索，提取可转模板方向：城市 / 生活方式。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 5000+。关联新闻源：ESPN Deportes / SportyTrader；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "अपराध",
-        "traffic": 1000,
-        "publishedAt": "Wed, 15 Jul 2026 01:50:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStHBcetlw45uKfqmcVdgmcn8y-iZh-GdoZjlndm9q1DGA3HpMvzpVeofRR5QI",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%85%E0%A4%AA%E0%A4%B0%E0%A4%BE%E0%A4%A7",
-        "newsUrl": "https://www.amarujala.com/uttar-pradesh/muzaffarnagar/crime-news-muzaffarnagar-news-c-29-1-smrt1037-175822-2026-07-15",
-        "newsTitle": "Muzaffarnagar News: अपराध करने के इरादे से घूम रहा बदमाश मुठभेड़ में घायल",
-        "newsSource": "Amar Ujala"
+        "topic": "posiciones de barcelona sc contra guayaquil city",
+        "traffic": 5000,
+        "publishedAt": "Wed, 15 Jul 2026 20:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZPosqzMyHTBxx_iYreC6U0e53PyBiJCzUo43MUgLFr3KwLaHx7WOEmHlH-po",
+        "url": "https://trends.google.com/trends/explore?geo=PE&q=posiciones%20de%20barcelona%20sc%20contra%20guayaquil%20city",
+        "newsUrl": "https://www.espn.com.ar/futbol/ecuador/nota/_/id/17008681/barcelona-no-brillo-y-rescato-un-punto-ante-guayaquil-city-en-la-liga-ecuabet",
+        "newsTitle": "Barcelona no brilló y rescató un punto ante Guayaquil City en la Liga Ecuabet",
+        "newsSource": "ESPN Deportes"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "अपराध",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%85%E0%A4%AA%E0%A4%B0%E0%A4%BE%E0%A4%A7"
+          "title": "posiciones de barcelona sc contra guayaquil city",
+          "url": "https://trends.google.com/trends/explore?geo=PE&q=posiciones%20de%20barcelona%20sc%20contra%20guayaquil%20city"
         }
       ]
     },
     {
       "id": 1012,
-      "name": "peringkat",
-      "originalTitle": "peringkat",
+      "name": "zinédine zidane",
+      "originalTitle": "zinédine zidane",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -526,30 +526,30 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「peringkat」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 500+。关联新闻源：BERNAS.id / detiksport；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「zinédine zidane」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：detiksport / Kompas.com；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "peringkat",
-        "traffic": 500,
-        "publishedAt": "Wed, 15 Jul 2026 01:40:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVrZNVfUNpQCS_HpdbQwoMFkhgajcojk95lWn6dTMFaebwpEqMW6JTFSarv_I",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=peringkat",
-        "newsUrl": "https://bernas.id/nasional/news/peringkat-fifa-indonesia-turun-ke-171-prabowo-ajak-benahi-sepakbola-nasional-2026-07-14",
-        "newsTitle": "Peringkat FIFA Indonesia Turun ke 171: Prabowo Ajak Benahi Sepakbola Nasional",
-        "newsSource": "BERNAS.id"
+        "topic": "zinédine zidane",
+        "traffic": 200,
+        "publishedAt": "Thu, 16 Jul 2026 02:10:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2R4Vcs4yhe6rZE_Py54D-qUqT5zJh_yoThKMjDqAVSkyMLJwECDYOMsUlB4",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=zin%C3%A9dine%20zidane",
+        "newsUrl": "https://sport.detik.com/juara-bola-dunia-2026/bola-dunia/d-8576859/deschamps-kecewa-sama-wasit-pierluigi-collina-balas-singkat-padat-jelas",
+        "newsTitle": "Deschamps Kecewa sama Wasit, Pierluigi Collina Balas Singkat, Padat, Jelas",
+        "newsSource": "detiksport"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "peringkat",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=peringkat"
+          "title": "zinédine zidane",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=zin%C3%A9dine%20zidane"
         }
       ]
     },
     {
       "id": 1013,
-      "name": "vnl masculino 2026",
-      "originalTitle": "vnl masculino 2026",
+      "name": "acidente",
+      "originalTitle": "acidente",
       "region": "南美洲",
       "country": "巴西",
       "source": [
@@ -564,32 +564,32 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「vnl masculino 2026」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 500+。关联新闻源：GE / LANCE!；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「acidente」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 100+。关联新闻源：UOL Notícias / G1；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "vnl masculino 2026",
-        "traffic": 500,
-        "publishedAt": "Wed, 15 Jul 2026 02:00:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoxXkX43ZSkIo0o2urxJ7R6_xn2BK0QaY5crjZdEMXUeLoxX3LI1NNkXRUm54",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=vnl%20masculino%202026",
-        "newsUrl": "https://ge.globo.com/volei/noticia/2026/07/15/brasil-x-franca-na-liga-das-nacoes-masculina-de-volei-onde-assistir-e-horario.ghtml",
-        "newsTitle": "Brasil x França na Liga das Nações Masculina de vôlei: onde assistir e horário",
-        "newsSource": "GE"
+        "topic": "acidente",
+        "traffic": 100,
+        "publishedAt": "Thu, 16 Jul 2026 02:00:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfoxB7VJst6ae7-VYUSIZmAKZjqFHhKhUURgoyJCd93DhoZ6THg--iu9LcRgg",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=acidente",
+        "newsUrl": "https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/15/irma-pede-despedida-honrosa-para-jovem-que-morreu-em-acidente-com-porshe.ghtm",
+        "newsTitle": "Irmã pede 'despedida honrosa' para jovem que morreu em acidente com Porsche",
+        "newsSource": "UOL Notícias"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "vnl masculino 2026",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=vnl%20masculino%202026"
+          "title": "acidente",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=acidente"
         }
       ]
     },
     {
       "id": 1014,
-      "name": "bet 365",
-      "originalTitle": "bet 365",
+      "name": "resultado astro luna",
+      "originalTitle": "resultado astro luna",
       "region": "南美洲",
-      "country": "阿根廷",
+      "country": "哥伦比亚",
       "source": [
         "Google Trends"
       ],
@@ -602,32 +602,32 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「bet 365」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 1000+。关联新闻源：www.the-independent.com / Mile High Sports；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「resultado astro luna」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 500+。关联新闻源：Revista Semana / Blu Radio；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "bet 365",
-        "traffic": 1000,
-        "publishedAt": "Wed, 15 Jul 2026 01:50:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTTmkH9y41ng3BLN_UbrmywkRiz-Ib23f8GKozyiIJV9ypQgGwxmdeI6RhNfU",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=bet%20365",
-        "newsUrl": "https://www.the-independent.com/sport/fanduel-france-vs-spain-world-cup-promo-b3014707.html",
-        "newsTitle": "FanDuel France vs Spain World Cup promo: Claim up to $1000 in bonus bets resets",
-        "newsSource": "www.the-independent.com"
+        "topic": "resultado astro luna",
+        "traffic": 500,
+        "publishedAt": "Thu, 16 Jul 2026 02:20:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKx6TLNfF1CfGqN44eGwCtu0VjpSOTuLxB_cRWP6duSqFDnsAgIywppk7I8yU",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=resultado%20astro%20luna",
+        "newsUrl": "https://www.semana.com/loterias/articulo/super-astro-sol-estos-son-los-numeros-ganadores-del-miercoles-15-de-julio-de-2026/202633/",
+        "newsTitle": "Super Astro Sol: estos son los números ganadores del miércoles 15 de julio de 2026",
+        "newsSource": "Revista Semana"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "bet 365",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=bet%20365"
+          "title": "resultado astro luna",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=resultado%20astro%20luna"
         }
       ]
     },
     {
       "id": 1015,
-      "name": "loteria cruz roja",
-      "originalTitle": "loteria cruz roja",
+      "name": "tiempo en viña",
+      "originalTitle": "tiempo en viña",
       "region": "南美洲",
-      "country": "哥伦比亚",
+      "country": "智利",
       "source": [
         "Google Trends"
       ],
@@ -640,30 +640,30 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「loteria cruz roja」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 500+。关联新闻源：El Tiempo / Noticias Caracol；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 智利 搜索趋势「tiempo en viña」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 500+。关联新闻源：Clarin.com / VLN Radio；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "loteria cruz roja",
+        "topic": "tiempo en viña",
         "traffic": 500,
-        "publishedAt": "Wed, 15 Jul 2026 01:50:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlqQkVkreiPSPsahUGiuo4FO5iT-e-6OMhCtFusaUos6URwX2r3Xsl4G55MHk",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=loteria%20cruz%20roja",
-        "newsUrl": "https://www.eltiempo.com/economia/finanzas-personales/loteria-de-la-cruz-roja-conozca-los-numeros-ganadores-del-martes-14-de-julio-de-3571255",
-        "newsTitle": "Lotería de la Cruz Roja: conozca los números ganadores del martes 14 de julio de 2026",
-        "newsSource": "El Tiempo"
+        "publishedAt": "Thu, 16 Jul 2026 02:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL6caj4cI3Ale3Pvjc6bUh_J0mStZxiRUUB0gbrtX1L5wsCn7RBRqeu9Yc6Z0",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo%20en%20vi%C3%B1a",
+        "newsUrl": "https://www.clarin.com/informacion-general/clima-hoy-vina-mar-chile-pronostico-tiempo-miercoles-15-julio-2026_0_3tjSVNMhIB.html",
+        "newsTitle": "Clima hoy en Viña del Mar, Chile: el pronóstico del tiempo para este miércoles 15 julio de 2026",
+        "newsSource": "Clarin.com"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "loteria cruz roja",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=loteria%20cruz%20roja"
+          "title": "tiempo en viña",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo%20en%20vi%C3%B1a"
         }
       ]
     },
     {
       "id": 1016,
-      "name": "Watching Australian sp…",
-      "originalTitle": "Watching Australian sport embrace Modi broke my heart – and showed inclusion is still just a strategy | Rana Hussain",
+      "name": "Cricket World Cup in f…",
+      "originalTitle": "Cricket World Cup in fresh shake-up with India v Pakistan double on cards",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -678,28 +678,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「The Guardian」热点《Watching Australian sport embrace Modi broke my heart – and showed inclusion is still just a strategy | Rana Hussain》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "prompt": "基于 印度 本地媒体「The Guardian」热点《Cricket World Cup in fresh shake-up with India v Pakistan double on cards》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
       "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：The Guardian。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "cricket",
         "category": "核心话题",
         "sourceName": "The Guardian",
-        "title": "Watching Australian sport embrace Modi broke my heart – and showed inclusion is still just a strategy | Rana Hussain",
-        "publishedAt": "Wed, 15 Jul 2026 07:34:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObFVybE0wbkZobE8wdERjYU5mZXEtcWRMSmlpdHIzeDJtOVpVekdGUzhIZU9BbFJZTWVFOHBkRFcxOEtqcUlZRmRuY2RxMGx1Vl9tQ1ZIbUFrbk9MSVVZTkFhWm9fZDZPeXRQNWtndldsUzZERk95Nk1KbzFrNk1WYlpuWDRJdGd5Q2oycllVRlFmT0VRY0dUak9WQmI0VUFNT2xGa2s2N0U2RXA2V2FWX19B?oc=5"
+        "title": "Cricket World Cup in fresh shake-up with India v Pakistan double on cards",
+        "publishedAt": "Wed, 15 Jul 2026 20:09:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOLW9EZXYybUxrQmpzWlJ6QTdJdjhsUTcyeHQ0aUZtenJOLU9NQ0ZOTFN3aGxUak9NeWQxYTJTUnplbzhwNU5lLXk4OWRXQWhSSlR3OWllNDhpLUVudlV6MnJ6TzI0ZTg0VnYyeFJ1ejlnLTY3b2o2cG1Jd0xBNjR1RmI2Z2pURWM4MVNmTHFqeExVd1U?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Watching Australian sport embrace Modi broke my heart – and showed inclusion is still just a strategy | Rana Hussain",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObFVybE0wbkZobE8wdERjYU5mZXEtcWRMSmlpdHIzeDJtOVpVekdGUzhIZU9BbFJZTWVFOHBkRFcxOEtqcUlZRmRuY2RxMGx1Vl9tQ1ZIbUFrbk9MSVVZTkFhWm9fZDZPeXRQNWtndldsUzZERk95Nk1KbzFrNk1WYlpuWDRJdGd5Q2oycllVRlFmT0VRY0dUak9WQmI0VUFNT2xGa2s2N0U2RXA2V2FWX19B?oc=5"
+          "title": "Cricket World Cup in fresh shake-up with India v Pakistan double on cards",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOLW9EZXYybUxrQmpzWlJ6QTdJdjhsUTcyeHQ0aUZtenJOLU9NQ0ZOTFN3aGxUak9NeWQxYTJTUnplbzhwNU5lLXk4OWRXQWhSSlR3OWllNDhpLUVudlV6MnJ6TzI0ZTg0VnYyeFJ1ejlnLTY3b2o2cG1Jd0xBNjR1RmI2Z2pURWM4MVNmTHFqeExVd1U?oc=5"
         }
       ]
     },
     {
       "id": 1017,
-      "name": "6 forgotten heritage s…",
-      "originalTitle": "6 forgotten heritage sites in India from iconic Bollywood movies",
+      "name": "Katrina Kaif’s net wor…",
+      "originalTitle": "Katrina Kaif’s net worth: From Bollywood stardom to entrepreneurial success- A look at her luxurious empire",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -714,28 +714,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Architectural Digest India」热点《6 forgotten heritage sites in India from iconic Bollywood movies》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Architectural Digest India。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「WION」热点《Katrina Kaif’s net worth: From Bollywood stardom to entrepreneurial success- A look at her luxurious empire》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：WION。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "bollywood",
         "category": "垂类补充",
-        "sourceName": "Architectural Digest India",
-        "title": "6 forgotten heritage sites in India from iconic Bollywood movies",
-        "publishedAt": "Wed, 15 Jul 2026 04:30:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUFBLM0xqS0xWVkc0Y29PWW40dHVuVkIxSHBCVmF4UWM2X0U1QTJVUS1FQjZXNGpISGtRYk1KUkRLekkzNDNmNFdyT2R1dTRJV2RqaU96dnFEcDFjbVN5eDZmZDNrdlpqOFU4R1NqUG9MS0IwQ0VYSFFXanlWeWxDYV9oNllSMUFsNDktcWZQSVlxZWIyNDRVZmFhazRQVHJKMVBLUl9Tczl1Zw?oc=5"
+        "sourceName": "WION",
+        "title": "Katrina Kaif’s net worth: From Bollywood stardom to entrepreneurial success- A look at her luxurious empire",
+        "publishedAt": "Thu, 16 Jul 2026 08:25:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbkJBZGc2azhONkZ3b0lVWHhMenlBa2VtZXRKVzU0d09DdTh5Sy1FajRzbzFzdWI2d3YwVEhYVWFNTWRzQ0xMZ180dEV3NGR3emE2UmdPZVlWc0xVXzVXSzRxQy1uZUR6RlphNVFYMWxrTHRWQ0lVOTFCRktDQTZhMnZZQlB0XzN3aTh3VUxmNW5WRE9qbjEwRUFqeWxEbE81THpMNWZBRG1wXzhGT1VtbUEzVTVXcVMwR2J2U0VNVFEyVGZMY3RQV2dEY2ExWlFHMGhleXVCS2gwUjM2MFE2TQ?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "6 forgotten heritage sites in India from iconic Bollywood movies",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUFBLM0xqS0xWVkc0Y29PWW40dHVuVkIxSHBCVmF4UWM2X0U1QTJVUS1FQjZXNGpISGtRYk1KUkRLekkzNDNmNFdyT2R1dTRJV2RqaU96dnFEcDFjbVN5eDZmZDNrdlpqOFU4R1NqUG9MS0IwQ0VYSFFXanlWeWxDYV9oNllSMUFsNDktcWZQSVlxZWIyNDRVZmFhazRQVHJKMVBLUl9Tczl1Zw?oc=5"
+          "title": "Katrina Kaif’s net worth: From Bollywood stardom to entrepreneurial success- A look at her luxurious empire",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbkJBZGc2azhONkZ3b0lVWHhMenlBa2VtZXRKVzU0d09DdTh5Sy1FajRzbzFzdWI2d3YwVEhYVWFNTWRzQ0xMZ180dEV3NGR3emE2UmdPZVlWc0xVXzVXSzRxQy1uZUR6RlphNVFYMWxrTHRWQ0lVOTFCRktDQTZhMnZZQlB0XzN3aTh3VUxmNW5WRE9qbjEwRUFqeWxEbE81THpMNWZBRG1wXzhGT1VtbUEzVTVXcVMwR2J2U0VNVFEyVGZMY3RQV2dEY2ExWlFHMGhleXVCS2gwUjM2MFE2TQ?oc=5"
         }
       ]
     },
     {
       "id": 1018,
-      "name": "Dr Amit Wanchoo, Chief…",
-      "originalTitle": "Dr Amit Wanchoo, Chief Convener, Chinar Book Festival Calls on LG Sinha",
+      "name": "National Theatre Festi…",
+      "originalTitle": "National Theatre Festival 2026 - Kargil celebrates 150 years of Vande Mataram with theatrical tribute by Ranthag Theatre. | The Administration of Union Territory of Ladakh | India",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -750,28 +750,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Rising Kashmir」热点《Dr Amit Wanchoo, Chief Convener, Chinar Book Festival Calls on LG Sinha》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Rising Kashmir。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「Administration of Union Territory of Ladakh」热点《National Theatre Festival 2026 - Kargil celebrates 150 years of Vande Mataram with theatrical tribute by Ranthag Theatre. | The Administration of Union Territory of Ladakh | India》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Administration of Union Territory of Ladakh。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "festival",
         "category": "垂类补充",
-        "sourceName": "Rising Kashmir",
-        "title": "Dr Amit Wanchoo, Chief Convener, Chinar Book Festival Calls on LG Sinha",
-        "publishedAt": "Wed, 15 Jul 2026 05:41:25 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR1hXdnRTTnp6SC1RcDBNdjliVE9PYUhhUnh1dkdZSXBPdGQ2MWJkZ0ZxUWFUN3R3Y3J4clRhSFF0ZkEyZkF5WDVubkx0OW9iNEVieGlZSHMxV0xIQ3cwWDM2RktiM3RhNWdpeG1ieTlGelRCLWFjQTVfY0RoVWdZT2g2OW5ZZnpoa1E2QkVPSERnZDRVb2JEV3pBWHRZTU5MUURnTHRQYXBCQTBmT291QklLSUtRY2locG5hcV9ycE5EbDNiV2hIeG5R?oc=5"
+        "sourceName": "Administration of Union Territory of Ladakh",
+        "title": "National Theatre Festival 2026 - Kargil celebrates 150 years of Vande Mataram with theatrical tribute by Ranthag Theatre. | The Administration of Union Territory of Ladakh | India",
+        "publishedAt": "Thu, 16 Jul 2026 07:16:47 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPd0V5Qi1iYnBIYkd4bFBreXozd1dMYlBUN3lDbjFxRHV3WTJ2X3FvTVoxMHpJV0h0dmRVbnZWNkRGU0NTQkZSM2FHdW9zdGdwOXFzTFdqTm9meVAtdjZKVlgya2pSa09OMHlvS3ZGYnE5SFR6MEgwTzNVME9namlMX0VBZUxXNVNZZHpiUVJVVjhRNXFVR294RDQ5Zm1YdldjQjNPSDVnRVcwWFdRNkZmNzhxRmpZdnJOQ1BYNC1KTU9nekhGRmVxVkRLcE41dGpabnZnUWxDdlI?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Dr Amit Wanchoo, Chief Convener, Chinar Book Festival Calls on LG Sinha",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR1hXdnRTTnp6SC1RcDBNdjliVE9PYUhhUnh1dkdZSXBPdGQ2MWJkZ0ZxUWFUN3R3Y3J4clRhSFF0ZkEyZkF5WDVubkx0OW9iNEVieGlZSHMxV0xIQ3cwWDM2RktiM3RhNWdpeG1ieTlGelRCLWFjQTVfY0RoVWdZT2g2OW5ZZnpoa1E2QkVPSERnZDRVb2JEV3pBWHRZTU5MUURnTHRQYXBCQTBmT291QklLSUtRY2locG5hcV9ycE5EbDNiV2hIeG5R?oc=5"
+          "title": "National Theatre Festival 2026 - Kargil celebrates 150 years of Vande Mataram with theatrical tribute by Ranthag Theatre. | The Administration of Union Territory of Ladakh | India",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPd0V5Qi1iYnBIYkd4bFBreXozd1dMYlBUN3lDbjFxRHV3WTJ2X3FvTVoxMHpJV0h0dmRVbnZWNkRGU0NTQkZSM2FHdW9zdGdwOXFzTFdqTm9meVAtdjZKVlgya2pSa09OMHlvS3ZGYnE5SFR6MEgwTzNVME9namlMX0VBZUxXNVNZZHpiUVJVVjhRNXFVR294RDQ5Zm1YdldjQjNPSDVnRVcwWFdRNkZmNzhxRmpZdnJOQ1BYNC1KTU9nekhGRmVxVkRLcE41dGpabnZnUWxDdlI?oc=5"
         }
       ]
     },
     {
       "id": 1019,
-      "name": "Musik Soya-soya jadi e…",
-      "originalTitle": "Musik Soya-soya jadi ekspresi budaya tradisional dilindungi negara",
+      "name": "Selain Keroncong dan S…",
+      "originalTitle": "Selain Keroncong dan String Bass, Warga Binaan Lapas Tahuna Juga Mahir Buat Alat Musik Kolintang",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -786,28 +786,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「ANTARA News」热点《Musik Soya-soya jadi ekspresi budaya tradisional dilindungi negara》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ANTARA News。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Direktorat Jenderal Pemasyarakatan」热点《Selain Keroncong dan String Bass, Warga Binaan Lapas Tahuna Juga Mahir Buat Alat Musik Kolintang》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Direktorat Jenderal Pemasyarakatan。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musik",
         "category": "核心话题",
-        "sourceName": "ANTARA News",
-        "title": "Musik Soya-soya jadi ekspresi budaya tradisional dilindungi negara",
-        "publishedAt": "Wed, 15 Jul 2026 03:44:22 GMT",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX0hweHFISXIxZEdVNkNQOHg0OVlEbGlKX1cxOURQcnVud29HWVJ3MnA0RTZ3TXlqZ3plU2tvUUk5OS1tb0oyd1h3dTV0eDd5NGpiRkdCOVJmYWc2bHV0XzFuYnYzM1pybVJaOWhMNTVRQ3AxQlF3NWM2N0RvU1AyaURVN1Yya052REJGQXE4VjMxNjhSbmtuOEFmcnVFYzRFYVlhai0zekFoTWFvcFHSAbMBQVVfeXFMUHBpT2V1NFlNc1I4OHpQMkJuZXFhZTFKX0RPMW9kbE1xbTRjMDItVE1Ua1pOSW9WMUpZa3ZMSDNBYU1pMlJnVUMwazY3RVFZU18zcS1tcEt3RWp0R2EtNGVrX3Y0MnhZWmhPZjdCakY0NG1ZaFctYllTdnRGaE1ITGxTaFVVNy0zNHUzeUMwd1Z0c2NaU3Z0WkRiMHhfaGwyZFhVTjBCNERPYUh6Zjhudms4ZGc?oc=5"
+        "sourceName": "Direktorat Jenderal Pemasyarakatan",
+        "title": "Selain Keroncong dan String Bass, Warga Binaan Lapas Tahuna Juga Mahir Buat Alat Musik Kolintang",
+        "publishedAt": "Thu, 16 Jul 2026 08:14:04 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVHpZeUpmNnhpRkRPUTlDNmtvZ2NtRXN6dW5abE5fUklUNjFMTHcyTW1sbklFTmRka2tqZXJvRHZrM1ZSZExPV3VDa3p3RTVYaERjNWJnM056a1pBZ1hxN2M0QTBvS1lrVmlwU3JFWThnaG1CTk1zbmNiVmpKcDJ1UHdaWU9ZckRidDBqZ2lrRTlESkVnY0ttMTRldGZuWEt2aEJhdGFWSWoyZWJDMEVZbGw3S0x6SWU0UFpBdmVzaXM?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Musik Soya-soya jadi ekspresi budaya tradisional dilindungi negara",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX0hweHFISXIxZEdVNkNQOHg0OVlEbGlKX1cxOURQcnVud29HWVJ3MnA0RTZ3TXlqZ3plU2tvUUk5OS1tb0oyd1h3dTV0eDd5NGpiRkdCOVJmYWc2bHV0XzFuYnYzM1pybVJaOWhMNTVRQ3AxQlF3NWM2N0RvU1AyaURVN1Yya052REJGQXE4VjMxNjhSbmtuOEFmcnVFYzRFYVlhai0zekFoTWFvcFHSAbMBQVVfeXFMUHBpT2V1NFlNc1I4OHpQMkJuZXFhZTFKX0RPMW9kbE1xbTRjMDItVE1Ua1pOSW9WMUpZa3ZMSDNBYU1pMlJnVUMwazY3RVFZU18zcS1tcEt3RWp0R2EtNGVrX3Y0MnhZWmhPZjdCakY0NG1ZaFctYllTdnRGaE1ITGxTaFVVNy0zNHUzeUMwd1Z0c2NaU3Z0WkRiMHhfaGwyZFhVTjBCNERPYUh6Zjhudms4ZGc?oc=5"
+          "title": "Selain Keroncong dan String Bass, Warga Binaan Lapas Tahuna Juga Mahir Buat Alat Musik Kolintang",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVHpZeUpmNnhpRkRPUTlDNmtvZ2NtRXN6dW5abE5fUklUNjFMTHcyTW1sbklFTmRka2tqZXJvRHZrM1ZSZExPV3VDa3p3RTVYaERjNWJnM056a1pBZ1hxN2M0QTBvS1lrVmlwU3JFWThnaG1CTk1zbmNiVmpKcDJ1UHdaWU9ZckRidDBqZ2lrRTlESkVnY0ttMTRldGZuWEt2aEJhdGFWSWoyZWJDMEVZbGw3S0x6SWU0UFpBdmVzaXM?oc=5"
         }
       ]
     },
     {
       "id": 1020,
-      "name": "Festival Sepak Bola Ra…",
-      "originalTitle": "Festival Sepak Bola Rakyat Ditutup di Manado, Garuda Gemah Nusantara dan Coca-Cola Indonesia Perkuat Semangat Sepak Bola dari Timur Indonesia - Coca-Cola",
+      "name": "Bukan Inggris! Hitung-…",
+      "originalTitle": "Bukan Inggris! Hitung-hitungan Ini Bongkar Rumah Baru Sepak Bola Dunia",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -822,28 +822,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Coca-Cola」热点《Festival Sepak Bola Rakyat Ditutup di Manado, Garuda Gemah Nusantara dan Coca-Cola Indonesia Perkuat Semangat Sepak Bola dari Timur Indonesia - Coca-Cola》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Coca-Cola。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「CNBC Indonesia」热点《Bukan Inggris! Hitung-hitungan Ini Bongkar Rumah Baru Sepak Bola Dunia》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：CNBC Indonesia。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "sepak bola",
         "category": "垂类补充",
-        "sourceName": "Coca-Cola",
-        "title": "Festival Sepak Bola Rakyat Ditutup di Manado, Garuda Gemah Nusantara dan Coca-Cola Indonesia Perkuat Semangat Sepak Bola dari Timur Indonesia - Coca-Cola",
-        "publishedAt": "Wed, 15 Jul 2026 07:39:12 GMT",
-        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQb2RRdHhmREFqcU1PQzJOei0wYUVpVkU4WldxZFpWVGtQMFRzR2ZzMkpEam9qSFYwbmFtSmlWdC02RnRkd3MyYndtdkh1MkowZHFPU0d6NjhtUjM0UHNFd0l5MTJCdE1VSjR0VDcteDRyQVB1NUFGempxOV8tNGVCQnExYXFMak4zcWFGNV9HNE1DaTNRalNSSVo1d3dfZjB3U0RCU0hUbXRneUNYNmRWUUVrcV83bzU2SmY3RnI4VG1tTG9LMk4yZTFiV0dKRDBQajJDTzVmRy1wc1VIOGh4cXhhYUk4b21OWGFvMlJXQzBOQTdzSDdZLUloMlY0aEJra08xM0ZsM0lxY2wxN0VudXgyOA?oc=5"
+        "sourceName": "CNBC Indonesia",
+        "title": "Bukan Inggris! Hitung-hitungan Ini Bongkar Rumah Baru Sepak Bola Dunia",
+        "publishedAt": "Thu, 16 Jul 2026 05:45:12 GMT",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUG1DNG0zWVRRWG4ySEZ0UTFyRUp3OGgtM3VMazlDYzR3VWl0aVFhOXl2QjZaY2lpMXZfdFRoNFFCajU3SkxzTzN3NGJBZWQ4NEN6cWNUSTluSGpKQ0M2Ymc2dE9XTzM5U0g1S0l6amxiYnZPLVBuM2tvRzY1MjN5ZF9TcTI0M2FZMHY5RGJTT1dacDBiVnR3UWk5TjE0VGhNRzdJWjlBWEExUEcxak1wSnhaaWRRUU82MnR0R3Y4dVEwUG9BazR2a2ZQaFRjRVE?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Festival Sepak Bola Rakyat Ditutup di Manado, Garuda Gemah Nusantara dan Coca-Cola Indonesia Perkuat Semangat Sepak Bola dari Timur Indonesia - Coca-Cola",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQb2RRdHhmREFqcU1PQzJOei0wYUVpVkU4WldxZFpWVGtQMFRzR2ZzMkpEam9qSFYwbmFtSmlWdC02RnRkd3MyYndtdkh1MkowZHFPU0d6NjhtUjM0UHNFd0l5MTJCdE1VSjR0VDcteDRyQVB1NUFGempxOV8tNGVCQnExYXFMak4zcWFGNV9HNE1DaTNRalNSSVo1d3dfZjB3U0RCU0hUbXRneUNYNmRWUUVrcV83bzU2SmY3RnI4VG1tTG9LMk4yZTFiV0dKRDBQajJDTzVmRy1wc1VIOGh4cXhhYUk4b21OWGFvMlJXQzBOQTdzSDdZLUloMlY0aEJra08xM0ZsM0lxY2wxN0VudXgyOA?oc=5"
+          "title": "Bukan Inggris! Hitung-hitungan Ini Bongkar Rumah Baru Sepak Bola Dunia",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUG1DNG0zWVRRWG4ySEZ0UTFyRUp3OGgtM3VMazlDYzR3VWl0aVFhOXl2QjZaY2lpMXZfdFRoNFFCajU3SkxzTzN3NGJBZWQ4NEN6cWNUSTluSGpKQ0M2Ymc2dE9XTzM5U0g1S0l6amxiYnZPLVBuM2tvRzY1MjN5ZF9TcTI0M2FZMHY5RGJTT1dacDBiVnR3UWk5TjE0VGhNRzdJWjlBWEExUEcxak1wSnhaaWRRUU82MnR0R3Y4dVEwUG9BazR2a2ZQaFRjRVE?oc=5"
         }
       ]
     },
     {
       "id": 1021,
-      "name": "Film horor paket sante…",
-      "originalTitle": "Film horor paket santet rilis trailer dan poster, tayang mulai 27 Agustus",
+      "name": "Formulasi film pelarut…",
+      "originalTitle": "Formulasi film pelarut mukoadhesif yang mengandung sinamaldehida dan kitosan yang menggabungkan enzim papain untuk menghambat kandidiasis oral: studi in vitro",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -858,28 +858,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「ANTARA News Megapolitan」热点《Film horor paket santet rilis trailer dan poster, tayang mulai 27 Agustus》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：ANTARA News Megapolitan。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Universitas Airlangga Official Website」热点《Formulasi film pelarut mukoadhesif yang mengandung sinamaldehida dan kitosan yang menggabungkan enzim papain untuk menghambat kandidiasis oral: studi in vitro》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Universitas Airlangga Official Website。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "film",
         "category": "垂类补充",
-        "sourceName": "ANTARA News Megapolitan",
-        "title": "Film horor paket santet rilis trailer dan poster, tayang mulai 27 Agustus",
-        "publishedAt": "Wed, 15 Jul 2026 06:25:26 GMT",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSGNiQkh3X21MR0doVGZvNlJnVEcwOGhOZE1jLV9PS04zOGhpYWVvaFFyYnA3NjlGSmtCSXlHUUJuenhJT0tVMWdaN3pQVldTdXhsVFY5a0wtUV95RHNSOGVkLVF0QlRKenl5Z2lab1h1UHRDY1pzb1BHVk9OQzR6ZGJWQklQdW1NcTRLMk14dGFGRU1QRkY1ZlYweVhoT0F6bmt5UzJFbFBSQVhnVW80UF82OWxoRmNwWFVaMkdB0gHDAUFVX3lxTE1kT1pfeGcyWlRzdk1pYUEwaG54OFo1R3gwMlZCXzB0QTYxUHdTaHp2T0VoOExWYXZuWHNtaFd3LWplNUh2dTdPS1B6NnJqQmVZdzJSZ3AwV2U5SkczRDVZUzZJNDgyZFBKWUxmQUJpXzZxdVFrYmRQS0xGRVZXbDFyVXBIdWxTUVhPSUpPNkktSnVDOGRMbkpHT3pnV1pocHpJT2Iza2RoTUJqV3VCTUZ2SG1zc3lWUVFJcVBiNW5Sd05rcw?oc=5"
+        "sourceName": "Universitas Airlangga Official Website",
+        "title": "Formulasi film pelarut mukoadhesif yang mengandung sinamaldehida dan kitosan yang menggabungkan enzim papain untuk menghambat kandidiasis oral: studi in vitro",
+        "publishedAt": "Thu, 16 Jul 2026 04:14:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcUUxMnF0QTlMc1h2NHJKbnloNkhXck42ZnBJT2dBTjBiMUxtcERBRGxxbkpaTWhWMWtHVUx0Ry1rWWlzUjlwVmNfVFZ1SWdrM1VTTlhtVkZZSkttS09OenJPd0xveGVQcFdzeVVNNjFSUWRFVkcwRUtSUHp0Skl6VnFRZGktLTNKN0RWUVpfLWZGdFFfQktWWTVVWmw3ZTNqVTExVVFYUmRDbktuNGloZEl5d1JuNlYwb1laNDhBeDFtdmVOZEpsM0FXd21UZjVoQkF1ZUFkVlM1N2VEY2YxOFoyS1UtbVljMHBvZ3hJdXFWeFhFU21DYTJ4YjZreDhVU002Q2M5bmk1Zw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Film horor paket santet rilis trailer dan poster, tayang mulai 27 Agustus",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSGNiQkh3X21MR0doVGZvNlJnVEcwOGhOZE1jLV9PS04zOGhpYWVvaFFyYnA3NjlGSmtCSXlHUUJuenhJT0tVMWdaN3pQVldTdXhsVFY5a0wtUV95RHNSOGVkLVF0QlRKenl5Z2lab1h1UHRDY1pzb1BHVk9OQzR6ZGJWQklQdW1NcTRLMk14dGFGRU1QRkY1ZlYweVhoT0F6bmt5UzJFbFBSQVhnVW80UF82OWxoRmNwWFVaMkdB0gHDAUFVX3lxTE1kT1pfeGcyWlRzdk1pYUEwaG54OFo1R3gwMlZCXzB0QTYxUHdTaHp2T0VoOExWYXZuWHNtaFd3LWplNUh2dTdPS1B6NnJqQmVZdzJSZ3AwV2U5SkczRDVZUzZJNDgyZFBKWUxmQUJpXzZxdVFrYmRQS0xGRVZXbDFyVXBIdWxTUVhPSUpPNkktSnVDOGRMbkpHT3pnV1pocHpJT2Iza2RoTUJqV3VCTUZ2SG1zc3lWUVFJcVBiNW5Sd05rcw?oc=5"
+          "title": "Formulasi film pelarut mukoadhesif yang mengandung sinamaldehida dan kitosan yang menggabungkan enzim papain untuk menghambat kandidiasis oral: studi in vitro",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcUUxMnF0QTlMc1h2NHJKbnloNkhXck42ZnBJT2dBTjBiMUxtcERBRGxxbkpaTWhWMWtHVUx0Ry1rWWlzUjlwVmNfVFZ1SWdrM1VTTlhtVkZZSkttS09OenJPd0xveGVQcFdzeVVNNjFSUWRFVkcwRUtSUHp0Skl6VnFRZGktLTNKN0RWUVpfLWZGdFFfQktWWTVVWmw3ZTNqVTExVVFYUmRDbktuNGloZEl5d1JuNlYwb1laNDhBeDFtdmVOZEpsM0FXd21UZjVoQkF1ZUFkVlM1N2VEY2YxOFoyS1UtbVljMHBvZ3hJdXFWeFhFU21DYTJ4YjZreDhVU002Q2M5bmk1Zw?oc=5"
         }
       ]
     },
     {
       "id": 1022,
-      "name": "Por uma Secretaria Esp…",
-      "originalTitle": "Por uma Secretaria Especial do Futebol vinculada à Presidência da República",
+      "name": "Por que Brasil não é o…",
+      "originalTitle": "Por que Brasil não é o maior rival da Argentina no futebol",
       "region": "南美洲",
       "country": "巴西",
       "source": [
@@ -894,28 +894,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「JOTA Info」热点《Por uma Secretaria Especial do Futebol vinculada à Presidência da República》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：JOTA Info。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「BBC」热点《Por que Brasil não é o maior rival da Argentina no futebol》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：BBC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "futebol",
         "category": "核心话题",
-        "sourceName": "JOTA Info",
-        "title": "Por uma Secretaria Especial do Futebol vinculada à Presidência da República",
-        "publishedAt": "Wed, 15 Jul 2026 08:30:11 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZy1sb0h2TGhfdTFZQVlCcEJBSWVWVzkyYWxwZDNmeUFzUXR4MEtab1dXemhHSWVycHpDSF9kSFlDakdiMzhyZHB4NUw1cWVLQ1gtX0Q2ay1HQnJ6Wm1OY1BGMFdjVTJQZzBzM2lYaUtxbWRiZ2JXOEtpNGt2VXJMUG5zRFhUeGlYUkNMM2dSMnBOMU9vQzdLTkJHQTZ1elFPS21Ubk9Ub2ZlSUI0OHNDUHlhdVh5bE9zT1NKTkZpZkc?oc=5"
+        "sourceName": "BBC",
+        "title": "Por que Brasil não é o maior rival da Argentina no futebol",
+        "publishedAt": "Wed, 15 Jul 2026 19:44:52 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xVmE0cEp2Y0U2OE5KOEl0clZkMGkwYTk4X0h5QXpLS19OY1BRaDlVcFFUSXVaZWJfOHczQUkwMG5MbmZZZHEwU3JjREU2V2tUU0ZfbGl3OVpJRzBsT3cxWFBn0gFnQVVfeXFMTkp0bF9PbDFWYUNLN1c0UTFSbDJQZHFucWFLQncybXV3QmYzWFo2NEJRbmZLTDlCWjVEMm1lLU5sQ0VsUXpINzlvcFFieUxxR3k4T2pFbkd2UTVDbmJNS1hkbmJKZU5Zdw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Por uma Secretaria Especial do Futebol vinculada à Presidência da República",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZy1sb0h2TGhfdTFZQVlCcEJBSWVWVzkyYWxwZDNmeUFzUXR4MEtab1dXemhHSWVycHpDSF9kSFlDakdiMzhyZHB4NUw1cWVLQ1gtX0Q2ay1HQnJ6Wm1OY1BGMFdjVTJQZzBzM2lYaUtxbWRiZ2JXOEtpNGt2VXJMUG5zRFhUeGlYUkNMM2dSMnBOMU9vQzdLTkJHQTZ1elFPS21Ubk9Ub2ZlSUI0OHNDUHlhdVh5bE9zT1NKTkZpZkc?oc=5"
+          "title": "Por que Brasil não é o maior rival da Argentina no futebol",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xVmE0cEp2Y0U2OE5KOEl0clZkMGkwYTk4X0h5QXpLS19OY1BRaDlVcFFUSXVaZWJfOHczQUkwMG5MbmZZZHEwU3JjREU2V2tUU0ZfbGl3OVpJRzBsT3cxWFBn0gFnQVVfeXFMTkp0bF9PbDFWYUNLN1c0UTFSbDJQZHFucWFLQncybXV3QmYzWFo2NEJRbmZLTDlCWjVEMm1lLU5sQ0VsUXpINzlvcFFieUxxR3k4T2pFbkd2UTVDbmJNS1hkbmJKZU5Zdw?oc=5"
         }
       ]
     },
     {
       "id": 1023,
-      "name": "'Gol do Século' de Mar…",
-      "originalTitle": "'Gol do Século' de Maradona na Copa de 1986 vira música em ilustração de artista argentino",
+      "name": "Copa do Mundo: as músi…",
+      "originalTitle": "Copa do Mundo: as músicas que cada seleção elegeu na hora do gol",
       "region": "南美洲",
       "country": "巴西",
       "source": [
@@ -930,28 +930,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「O GLOBO」热点《'Gol do Século' de Maradona na Copa de 1986 vira música em ilustração de artista argentino》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：O GLOBO。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「noize.com.br」热点《Copa do Mundo: as músicas que cada seleção elegeu na hora do gol》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：noize.com.br。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musica",
         "category": "垂类补充",
-        "sourceName": "O GLOBO",
-        "title": "'Gol do Século' de Maradona na Copa de 1986 vira música em ilustração de artista argentino",
-        "publishedAt": "Wed, 15 Jul 2026 07:01:57 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTEpueHNKVkYtMGxod0pLWEFRX25mNTRhLU9sNmxIQmo0QW1rQXRhWko0WFFjb1AyUktMaW5MZENNdno1M0VVcmZ2MlUwSWlCck5lQVNDa3Y1MzNwRVowSUhrNXVCVldjTVdtZDlDaVI4ZjF1ZWNUMVpLRzB0UWxfUVJWQTdPS2hpbzRBcm9GWnY1REVxaTVjQnZqRU5yZFJFbExkUGtXTW1Zc0xINjNzLW03Z0RBdjI1NVVqT3U5ekxZV1IyaExOZWpnS0FIZ3JZSnByeFp5M09CaVcxTlVkZnFXd2l3QnB10gH3AUFVX3lxTE5FUE5obXZ1VEJILVFoaGRJYXl6VVYyM2RaRTdRVjdaSWNObnpvSzd1QTdrcURsaVhoQVl4UF96YUdBZGRLcTdzMEp1TUJxVWlWdDdQZTV3MXRaM1QzRFQ0Zlk1c2psS1pWMldOOGJ0NFYzaUMtaTlITjgzTHhYWVlDT0FQcHR3LVc5VFFEbzNvbnB0OXJEMC1lckdYYzZuS0YtSVFqQ0E5Wi1LTTZaLU55aGhFWExXUVJtT1ZvdHRlVGdhQWdNNkN2aFpRbV9fbkUybXNKeFJIMExrd2pUdDI2d09KQ3d3eVNuOElncHJZbkJvSUNCQ1k?oc=5"
+        "sourceName": "noize.com.br",
+        "title": "Copa do Mundo: as músicas que cada seleção elegeu na hora do gol",
+        "publishedAt": "Wed, 15 Jul 2026 17:44:05 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaHdHX09tQ0lYdkRyemdXbzJNa2VxclNhb1dmaUNFWXFLNDN4a0NnQkY3TE1ZZ0tWdm1aV0ExRC1RWDcyUDA0U3kzSTh1Wl84akRiRzZIU0NSaEJhekdLbWlyNHBUcjNtd0Rwb2JlTHhCZ0xKbUtVTWdrNmdvd0dTbGJtdXpDOVhHUUlKOFc2NzI?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "'Gol do Século' de Maradona na Copa de 1986 vira música em ilustração de artista argentino",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTEpueHNKVkYtMGxod0pLWEFRX25mNTRhLU9sNmxIQmo0QW1rQXRhWko0WFFjb1AyUktMaW5MZENNdno1M0VVcmZ2MlUwSWlCck5lQVNDa3Y1MzNwRVowSUhrNXVCVldjTVdtZDlDaVI4ZjF1ZWNUMVpLRzB0UWxfUVJWQTdPS2hpbzRBcm9GWnY1REVxaTVjQnZqRU5yZFJFbExkUGtXTW1Zc0xINjNzLW03Z0RBdjI1NVVqT3U5ekxZV1IyaExOZWpnS0FIZ3JZSnByeFp5M09CaVcxTlVkZnFXd2l3QnB10gH3AUFVX3lxTE5FUE5obXZ1VEJILVFoaGRJYXl6VVYyM2RaRTdRVjdaSWNObnpvSzd1QTdrcURsaVhoQVl4UF96YUdBZGRLcTdzMEp1TUJxVWlWdDdQZTV3MXRaM1QzRFQ0Zlk1c2psS1pWMldOOGJ0NFYzaUMtaTlITjgzTHhYWVlDT0FQcHR3LVc5VFFEbzNvbnB0OXJEMC1lckdYYzZuS0YtSVFqQ0E5Wi1LTTZaLU55aGhFWExXUVJtT1ZvdHRlVGdhQWdNNkN2aFpRbV9fbkUybXNKeFJIMExrd2pUdDI2d09KQ3d3eVNuOElncHJZbkJvSUNCQ1k?oc=5"
+          "title": "Copa do Mundo: as músicas que cada seleção elegeu na hora do gol",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaHdHX09tQ0lYdkRyemdXbzJNa2VxclNhb1dmaUNFWXFLNDN4a0NnQkY3TE1ZZ0tWdm1aV0ExRC1RWDcyUDA0U3kzSTh1Wl84akRiRzZIU0NSaEJhekdLbWlyNHBUcjNtd0Rwb2JlTHhCZ0xKbUtVTWdrNmdvd0dTbGJtdXpDOVhHUUlKOFc2NzI?oc=5"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 114,
+      "count": 120,
       "growth": 52,
       "countries": [
         "印度"
@@ -963,7 +963,7 @@
       ]
     },
     "印度尼西亚": {
-      "count": 114,
+      "count": 120,
       "growth": 23,
       "countries": [
         "印度尼西亚"
@@ -975,7 +975,7 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 66,
+      "count": 72,
       "growth": 23,
       "countries": [
         "俄罗斯"
@@ -987,7 +987,7 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 84,
+      "count": 77,
       "growth": 41,
       "countries": [
         "尼日利亚",
@@ -1002,7 +1002,7 @@
       ]
     },
     "南美洲": {
-      "count": 113,
+      "count": 106,
       "growth": 52,
       "countries": [
         "巴西",
