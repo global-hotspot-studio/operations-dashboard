@@ -156,6 +156,10 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 .theme-preview-info .visual-actions button,.theme-preview-info .visual-actions a{display:grid;place-items:center;min-width:0;min-height:34px;padding:7px 8px;border-radius:10px;font-size:11px;font-weight:800;text-decoration:none}
 .theme-preview-info .visual-actions button{border:1px solid #2d74cf;background:#eff6ff;color:#1765bd;cursor:pointer}.theme-preview-info .visual-actions a{border:1px solid #d9dde5;background:#fff;color:#283445}
 
+/* 下载按钮是明确的下载动作，不触发大图预览。 */
+.visual-actions .download-sample{background:#fff;color:#172235;border:1px solid #fff;cursor:pointer}
+.theme-preview-info .visual-actions .download-sample{border:1px solid #d9dde5;background:#fff;color:#283445}
+
 /* 热点样图按行并排：所有桌面端保持顺序一致，避免瀑布流在窄窗口中突兀换行。 */
 .visual-gallery:has(.masonry-gallery){display:block;overflow:visible;scroll-snap-type:none;padding:4px 2px 18px}
 .masonry-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}

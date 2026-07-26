@@ -351,6 +351,12 @@ function visualSignal(h) {
   return match ? match[1].replaceAll(" / ", "、") : "色彩 / 构图";
 }
 
+function drawerReason(h) {
+  const raw = String(h.reason || "").replace(/；\s*来自\s+/g, "。来自 ");
+  const first = raw.split(/。\s*来自 YouTube|；\s*来自 YouTube/)[0].trim();
+  return first || raw;
+}
+
 function playabilityMetric(h) {
   const level = h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低";
   return `<div class="signal-metric"><b class="level-${level}">${level}</b><small>${escapeHtml(visualSignal(h))}</small></div>`;
@@ -379,7 +385,7 @@ function renderGallery() {
             <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
             <div class="visual-actions">
               <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>
-              <a href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">下载样图</a>
+              <button class="download-sample" type="button" data-download-url="${escapeAttr(h.preview)}" data-download-name="${escapeAttr(previewDownloadName(h))}">下载样图</button>
             </div>
           </div>
         </article>`;
@@ -405,7 +411,7 @@ function openDrawer(id) {
     : `<div class="drawer-source-card disabled">
         <div><small>真实来源</small><b>${primary.source} 待接入真实链接</b><span>该平台还未完成 API/来源链接接入，暂不伪造跳转。</span></div>
       </div>`;
-  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>主题可玩性</small><b>${h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低"}</b><span>内部辅助判断 · ${h.score}/100</span></div><div><small>热点动能</small><b class="up">${h.trend >= 60 ? "高" : h.trend >= 35 ? "中" : "低"}</b><span>${h.trend >= 60 ? "正在升温" : h.trend >= 35 ? "持续关注" : "建议观察"}</span></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${h.reason}</p>${signalList(h)}<h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
+  $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>主题可玩性</small><b>${h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低"}</b><span>内部辅助判断 · ${h.score}/100</span></div><div><small>热点动能</small><b class="up">${h.trend >= 60 ? "高" : h.trend >= 35 ? "中" : "低"}</b><span>${h.trend >= 60 ? "正在升温" : h.trend >= 35 ? "持续关注" : "建议观察"}</span></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${drawerReason(h)}</p>${signalList(h)}<h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
   $("#detailDrawer").classList.add("open"); $("#drawerBackdrop").classList.add("open");
 }
 
@@ -416,6 +422,30 @@ function toggleCandidate(id) {
 }
 
 function showToast(text) { const t = $("#toast"); t.textContent = text; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1500); }
+
+async function downloadSample(url, filename = "theme-sample.png") {
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error("下载失败");
+    const blob = await response.blob();
+    const objectUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = objectUrl;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+    showToast("样图已开始下载");
+  } catch {
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+}
 
 function renderAll() {
   renderMetrics();
@@ -448,9 +478,16 @@ function bind() {
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {
     if (e.target.closest("a")) return;
+    const download = e.target.closest("[data-download-url]");
     const row = e.target.closest("tr[data-id],.alert[data-id]");
     const preview = e.target.closest("[data-preview]");
     const copy = e.target.closest("[data-copy-id]");
+    if (download) {
+      e.preventDefault();
+      e.stopPropagation();
+      downloadSample(download.dataset.downloadUrl, download.dataset.downloadName);
+      return;
+    }
     if (row && !e.target.dataset.action) openDrawer(row.dataset.id);
     if (preview) { $("#previewImage").src = preview.dataset.preview; $("#previewCaption").textContent = preview.dataset.caption; $("#previewModal").showModal(); }
     if (copy) {
