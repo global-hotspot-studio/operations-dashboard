@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-25T08:33:28.989Z",
+  "generatedAt": "2026-07-26T09:27:39.384Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -24,12 +24,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1314,
-    "effectiveHotspots": 364,
-    "highPriorityAlerts": 12,
-    "templateCandidates": 15,
+    "rawTopics": 1272,
+    "effectiveHotspots": 350,
+    "highPriorityAlerts": 14,
+    "templateCandidates": 14,
     "rawDelta": 42,
-    "effectiveRate": "27.8%"
+    "effectiveRate": "27.7%"
   },
   "trendSeries": {
     "labels": [
@@ -47,32 +47,32 @@
       "22:00"
     ],
     "effective": [
-      45,
-      54,
       52,
-      47,
-      90,
-      38,
-      105,
-      67,
-      87,
-      137,
-      88,
-      138
+      48,
+      55,
+      48,
+      86,
+      44,
+      98,
+      72,
+      85,
+      136,
+      93,
+      131
     ],
     "template": [
-      15,
-      36,
-      30,
-      25,
+      18,
+      33,
+      33,
+      24,
       58,
-      26,
-      62,
-      41,
-      49,
-      66,
+      29,
+      59,
+      45,
       47,
-      85
+      67,
+      48,
+      83
     ]
   },
   "hotspots": [
@@ -85,9 +85,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "46.6M",
-      "trend": 72,
-      "score": 96,
+      "heat": "46.5M",
+      "trend": 69,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -95,7 +95,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 尼日利亚 热门内容《Avengers: Doomsday | Official Trailer | In Theaters December 18》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 48.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 南非 热门榜，播放量 48.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 肯尼亚 热门榜，播放量 48.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 48.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 印度 热门榜，播放量 48.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 尼日利亚 热门榜，播放量 50.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 南非 热门榜，播放量 50.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 肯尼亚 热门榜，播放量 50.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 加纳 热门榜，播放量 50.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "irVNGjRFZGk",
         "channelTitle": "Marvel Entertainment",
@@ -120,8 +120,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "6.4M",
-      "trend": 71,
+      "heat": "9.0M",
+      "trend": 79,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -130,7 +130,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度尼西亚 热门内容《JENNIE - Less than a Lover (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 6.4M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 印度尼西亚 热门榜，播放量 8.4M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "_IT83Y_HcAw",
         "channelTitle": "JennieRubyJaneVEVO",
@@ -148,15 +148,50 @@
     },
     {
       "id": 1002,
-      "name": "EA SPORTS FC 27 | Offi…",
-      "originalTitle": "EA SPORTS FC 27 | Official Reveal Trailer",
-      "region": "南美洲",
-      "country": "阿根廷",
+      "name": "Starting Over Using ON…",
+      "originalTitle": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
       "source": [
         "YouTube"
       ],
-      "heat": "4.1M",
-      "trend": 71,
+      "heat": "3.5M",
+      "trend": 60,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 南非 热门内容《Starting Over Using ONLY ROBUX In Keyboard Escape..》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 南非 热门榜，播放量 3.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 肯尼亚 热门榜，播放量 3.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "AYJkq-UlkYM",
+        "channelTitle": "Foltyn",
+        "publishedAt": "2026-07-24T05:20:47Z",
+        "thumbnail": "https://i.ytimg.com/vi/AYJkq-UlkYM/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=AYJkq-UlkYM"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
+          "url": "https://www.youtube.com/watch?v=AYJkq-UlkYM"
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "name": "తొలి ఏకాదశి స్పెషల్ వి…",
+      "originalTitle": "తొలి ఏకాదశి స్పెషల్ విష్ణు సహస్రనామం | Vishnu Sahasranama Stotram Telugu | Tholi Ekadasi Special",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "890K",
+      "trend": 66,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -164,69 +199,104 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 阿根廷 热门内容《EA SPORTS FC 27 | Official Reveal Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 阿根廷 热门榜，播放量 3.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 哥伦比亚 热门榜，播放量 3.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。；来自 YouTube 智利 热门榜，播放量 3.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《తొలి ఏకాదశి స్పెషల్ విష్ణు సహస్రనామం | Vishnu Sahasranama Stotram Telugu | Tholi Ekadasi Special》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 印度 热门榜，播放量 873K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "MOclJJ7IpSY",
-        "channelTitle": "EA SPORTS FC",
-        "publishedAt": "2026-07-23T15:57:07Z",
-        "thumbnail": "https://i.ytimg.com/vi/MOclJJ7IpSY/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=MOclJJ7IpSY"
+        "videoId": "Rkp5mf9vNb0",
+        "channelTitle": "Telugu Bhakti 24x7",
+        "publishedAt": "2026-07-24T22:30:26Z",
+        "thumbnail": "https://i.ytimg.com/vi/Rkp5mf9vNb0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=Rkp5mf9vNb0"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "EA SPORTS FC 27 | Official Reveal Trailer",
-          "url": "https://www.youtube.com/watch?v=MOclJJ7IpSY"
+          "title": "తొలి ఏకాదశి స్పెషల్ విష్ణు సహస్రనామం | Vishnu Sahasranama Stotram Telugu | Tholi Ekadasi Special",
+          "url": "https://www.youtube.com/watch?v=Rkp5mf9vNb0"
         }
       ]
     },
     {
-      "id": 1003,
-      "name": "I BECAME AN AGENT | FI…",
-      "originalTitle": "I BECAME AN AGENT | FIRST LIGHT 007",
-      "region": "印度",
-      "country": "印度",
+      "id": 1004,
+      "name": "Yeison Jiménez l Mala…",
+      "originalTitle": "Yeison Jiménez l Mala de Profesión",
+      "region": "南美洲",
+      "country": "哥伦比亚",
       "source": [
         "YouTube"
       ],
-      "heat": "2.3M",
-      "trend": 57,
-      "score": 95,
+      "heat": "960K",
+      "trend": 66,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《I BECAME AN AGENT | FIRST LIGHT 007 #1》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 印度 热门榜，播放量 2.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 哥伦比亚 热门内容《Yeison Jiménez l Mala de Profesión (Video Oficial)》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 哥伦比亚 热门榜，播放量 941K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "YG14X4QDpGo",
-        "channelTitle": "Techno Gamerz",
-        "publishedAt": "2026-07-24T09:52:07Z",
-        "thumbnail": "https://i.ytimg.com/vi/YG14X4QDpGo/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=YG14X4QDpGo"
+        "videoId": "8S4v4561FYc",
+        "channelTitle": "Yeison Jimenez",
+        "publishedAt": "2026-07-24T00:30:06Z",
+        "thumbnail": "https://i.ytimg.com/vi/8S4v4561FYc/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=8S4v4561FYc"
       },
       "signals": [
         {
           "source": "YouTube",
-          "title": "I BECAME AN AGENT | FIRST LIGHT 007",
-          "url": "https://www.youtube.com/watch?v=YG14X4QDpGo"
+          "title": "Yeison Jiménez l Mala de Profesión",
+          "url": "https://www.youtube.com/watch?v=8S4v4561FYc"
         }
       ]
     },
     {
-      "id": 1004,
-      "name": "universitario - cusco",
-      "originalTitle": "universitario - cusco",
+      "id": 1005,
+      "name": "MATADORA",
+      "originalTitle": "MATADORA",
       "region": "南美洲",
-      "country": "秘鲁",
+      "country": "智利",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "825K",
+      "trend": 59,
+      "score": 96,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 智利 热门内容《MATADORA》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 智利 热门榜，播放量 868K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "OTImlQYTCag",
+        "channelTitle": "KAROL G - Topic",
+        "publishedAt": "2026-07-25T03:00:01Z",
+        "thumbnail": "https://i.ytimg.com/vi/OTImlQYTCag/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=OTImlQYTCag"
+      },
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "MATADORA",
+          "url": "https://www.youtube.com/watch?v=OTImlQYTCag"
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "अभिषेक शर्मा",
+      "originalTitle": "अभिषेक शर्मा",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "214K",
-      "trend": 75,
+      "trend": 76,
       "score": 97,
       "status": "爆发",
       "type": "realtime",
@@ -234,146 +304,32 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 秘鲁 搜索趋势「universitario - cusco」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 200000+。关联新闻源：El Comercio Perú / Depor；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「अभिषेक शर्मा」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 200000+。关联新闻源：AajTak / Hindustan；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "universitario - cusco",
+        "topic": "अभिषेक शर्मा",
         "traffic": 200000,
-        "publishedAt": "Fri, 24 Jul 2026 18:20:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJT35zTpHF1_U2xwoOWUUZ_FUapWjGbAx0LwE0H-0-CQdy1OV2HCC1DIb8Og8",
-        "url": "https://trends.google.com/trends/explore?geo=PE&q=universitario%20-%20cusco",
-        "newsUrl": "https://elcomercio.pe/deporte-total/futbol-peruano/universitario-vs-cusco-fc-en-vivo-gratis-hoy-por-fecha-2-del-torneo-clausura-liga-1-online-lbposting-noticia/",
-        "newsTitle": "Universitario, con agónico gol de Lapadula, venció 2-1 a Cusco FC por la fecha 2 del Torneo Clausura",
-        "newsSource": "El Comercio Perú"
+        "publishedAt": "Sun, 26 Jul 2026 01:20:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLdnOaq-EWes0k0adcM6RKxti8DPpG4fnPS9zXCMsom0aiSLZu81TwvlfPApk",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%B7%E0%A5%87%E0%A4%95%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%BE",
+        "newsUrl": "https://www.aajtak.in/sports/cricket/story/abhishek-sharma-creates-history-best-bowling-by-indian-opener-in-t20i-ind-vs-zim-tspoa-dskc-2609239-2026-07-26",
+        "newsTitle": "IND vs ZIM: अभिषेक शर्मा ने रचा इतिहास, बल्ले से नहीं चला जादू तो गेंद से बना दिया 'महारिकॉर्ड'",
+        "newsSource": "AajTak"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "universitario - cusco",
-          "url": "https://trends.google.com/trends/explore?geo=PE&q=universitario%20-%20cusco"
-        }
-      ]
-    },
-    {
-      "id": 1005,
-      "name": "vnl",
-      "originalTitle": "vnl",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 55,
-      "score": 90,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「vnl」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 2000+。关联新闻源：ge / CNN Brasil；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "vnl",
-        "traffic": 2000,
-        "publishedAt": "Sat, 25 Jul 2026 01:10:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnIkwCQl4sx9S_1FizZnyZfBJy1wf2lXtVIAvLog77eipcBKxpYXJ511sXoNg",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=vnl",
-        "newsUrl": "https://ge.globo.com/volei/ao-vivo/liga-das-nacoes-feminina-de-volei-assista-ao-vivo-a-brasil-x-italia-pela-semifinal.ghtml",
-        "newsTitle": "Liga das Nações feminina de vôlei: assista ao vivo a Brasil x Itália pela semifinal",
-        "newsSource": "ge"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "vnl",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=vnl"
-        }
-      ]
-    },
-    {
-      "id": 1006,
-      "name": "രോഹിത് ശര്മ",
-      "originalTitle": "രോഹിത് ശര്മ",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 62,
-      "score": 93,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「രോഹിത് ശര്മ」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 200+。关联新闻源：Mathrubhumi / Manorama Online；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "രോഹിത് ശര്മ",
-        "traffic": 200,
-        "publishedAt": "Sat, 25 Jul 2026 01:20:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8cpmFD_gAfCF9jjmnjj9pVvk3hYLALy8c6rfGYU1vz0PtxPNElvElGB-6qI",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%B0%E0%B5%8B%E0%B4%B9%E0%B4%BF%E0%B4%A4%E0%B5%8D%20%E0%B4%B6%E0%B4%B0%E0%B5%8D%E0%B4%AE",
-        "newsUrl": "https://www.mathrubhumi.com/sports/cricket/sanju-samson-rohit-sharma-t20-world-cup-2026-comeback-ko1jn40m",
-        "newsTitle": "'രോഹിത് ശർമയുടെ വാക്കുകൾ ഞാൻ ആദ്യം വിശ്വസിച്ചിരുന്നില്ല, സോറി'-സഞ്ജു സാംസൺ",
-        "newsSource": "Mathrubhumi"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "രോഹിത് ശര്മ",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%B0%E0%B5%8B%E0%B4%B9%E0%B4%BF%E0%B4%A4%E0%B5%8D%20%E0%B4%B6%E0%B4%B0%E0%B5%8D%E0%B4%AE"
+          "title": "अभिषेक शर्मा",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%B7%E0%A5%87%E0%A4%95%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%BE"
         }
       ]
     },
     {
       "id": 1007,
-      "name": "dpmm fc",
-      "originalTitle": "dpmm fc",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 60,
-      "score": 92,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「dpmm fc」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 100+。关联新闻源：Kompas.com / ANTARA News；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "dpmm fc",
-        "traffic": 100,
-        "publishedAt": "Sat, 25 Jul 2026 01:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjfqF-Wl9ceF9hEz6EgewYnRjODTxh3W6AaAXzdle49gH8iQKZt6OypgmsaPM",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=dpmm%20fc",
-        "newsUrl": "https://bola.kompas.com/read/2026/07/25/12333728/dpmm-fc-vs-tampines-rovers-di-piala-presiden-2026-eks-arema-fc-dan-persita-unjuk",
-        "newsTitle": "DPMM FC Vs Tampines Rovers di Piala Presiden 2026, Eks Arema FC dan Persita Unjuk Gigi Sore Ini",
-        "newsSource": "Kompas.com"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "dpmm fc",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=dpmm%20fc"
-        }
-      ]
-    },
-    {
-      "id": 1008,
-      "name": "liga mx",
-      "originalTitle": "liga mx",
-      "region": "南美洲",
-      "country": "阿根廷",
+      "name": "national lottery lotto…",
+      "originalTitle": "national lottery lotto results",
+      "region": "撒哈拉以南非洲",
+      "country": "南非",
       "source": [
         "Google Trends"
       ],
@@ -386,32 +342,32 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「liga mx」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100+。关联新闻源：ESPN Argentina / Infobae；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 南非 搜索趋势「national lottery lotto results」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 南非 搜索趋势，搜索热度约 5000+。关联新闻源：The Citizen / News24；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "liga mx",
-        "traffic": 100,
-        "publishedAt": "Fri, 24 Jul 2026 22:00:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoVimWz-RyF66ow31_Z3xrT-7XSlgYh0Bs5yDMTwDn-62s4ydU5fyKNlUY3es",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=liga%20mx",
-        "newsUrl": "https://www.espn.com.ar/futbol/mexico/nota/_/id/17043414/liga-mx-apertura-2026-xolos-vs-leon-gilberto-mora-gol-debut",
-        "newsTitle": "Liga MX: Gilberto Mora impulsa victoria de Tijuana ante León",
-        "newsSource": "ESPN Argentina"
+        "topic": "national lottery lotto results",
+        "traffic": 5000,
+        "publishedAt": "Sun, 26 Jul 2026 01:20:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_nbkvoGXt6872n7akxEvkjqV2LMz-uZ0-1GBWQqu_8GAoE6srTzX8XT-cz2M",
+        "url": "https://trends.google.com/trends/explore?geo=ZA&q=national%20lottery%20lotto%20results",
+        "newsUrl": "https://www.citizen.co.za/lotto/lotto-lotto-plus-results-saturday-25-july-2026/",
+        "newsTitle": "Lotto and Lotto Plus results: Saturday, 25 July 2026",
+        "newsSource": "The Citizen"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "liga mx",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=liga%20mx"
+          "title": "national lottery lotto results",
+          "url": "https://trends.google.com/trends/explore?geo=ZA&q=national%20lottery%20lotto%20results"
         }
       ]
     },
     {
-      "id": 1009,
-      "name": "loteria santander",
-      "originalTitle": "loteria santander",
-      "region": "南美洲",
-      "country": "哥伦比亚",
+      "id": 1008,
+      "name": "ജനതാ പാര്ട്ടി",
+      "originalTitle": "ജനതാ പാര്ട്ടി",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
@@ -424,70 +380,108 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「loteria santander」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 500+。关联新闻源：El Tiempo / Noticias Caracol；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「ജനതാ പാര്ട്ടി」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：Manorama Online / Asianet News Malayalam；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "loteria santander",
-        "traffic": 500,
-        "publishedAt": "Fri, 24 Jul 2026 21:30:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT051ossv6iFyubRGmKIctkAhlhicYQZYwswdSfiKD1Ye8mI7rS3JUW3VPUc6o",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=loteria%20santander",
-        "newsUrl": "https://www.eltiempo.com/economia/finanzas-personales/loteria-de-medellin-del-viernes-24-de-julio-de-2026-resultado-numero-ganador-y-premios-del-sorteo-3573760",
-        "newsTitle": "Lotería de Medellín del viernes 24 de julio de 2026: resultado, número ganador y premios del sorteo",
-        "newsSource": "El Tiempo"
+        "topic": "ജനതാ പാര്ട്ടി",
+        "traffic": 2000,
+        "publishedAt": "Sun, 26 Jul 2026 02:10:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbUUwZlXz-5GxO2umk4jbUVIPFDDApJcAPEoWGk-6Fk3FaLMNpq6VhR1R_Ymg",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%9C%E0%B4%A8%E0%B4%A4%E0%B4%BE%20%E0%B4%AA%E0%B4%BE%E0%B4%B0%E0%B5%8D%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%BF",
+        "newsUrl": "https://www.manoramaonline.com/news/latest-news/2026/07/25/central-government-agrees-to-student-demands-cjp-ends-protest.html",
+        "newsTitle": "‘ആവശ്യങ്ങളെല്ലാം നേടി, പ്രവർത്തകർ പിരിഞ്ഞു പോകണം’: സമരം അവസാനിപ്പിച്ച് കോക്രോച്ച് ജനതാ പാർട്ടി",
+        "newsSource": "Manorama Online"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "loteria santander",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=loteria%20santander"
+          "title": "ജനതാ പാര്ട്ടി",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B4%9C%E0%B4%A8%E0%B4%A4%E0%B4%BE%20%E0%B4%AA%E0%B4%BE%E0%B4%B0%E0%B5%8D%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%BF"
         }
       ]
     },
     {
-      "id": 1010,
-      "name": "francisca valenzuela",
-      "originalTitle": "francisca valenzuela",
-      "region": "南美洲",
-      "country": "智利",
+      "id": 1009,
+      "name": "taspen",
+      "originalTitle": "taspen",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 52,
-      "score": 89,
+      "trend": 58,
+      "score": 92,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 智利 搜索趋势「francisca valenzuela」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 100+。关联新闻源：La Tercera / BioBioChile；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「taspen」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：ANTARA News / totabuan.news；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "francisca valenzuela",
-        "traffic": 100,
-        "publishedAt": "Fri, 24 Jul 2026 22:20:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6s8Whs33-ViarEtxQxZjtJAc1Cce7X5YSad17ZoYYW5fs0dJF9Cbqg7ajLF0",
-        "url": "https://trends.google.com/trends/explore?geo=CL&q=francisca%20valenzuela",
-        "newsUrl": "https://www.latercera.com/culto/noticia/francisca-valenzuela-y-su-historia-en-el-confesionario-de-rosalia-lo-veo-revolcandose-con-otra-chica/",
-        "newsTitle": "Francisca Valenzuela y su historia en el confesionario de Rosalía: “Lo veo revolcándose con otra chica”",
-        "newsSource": "La Tercera"
+        "topic": "taspen",
+        "traffic": 200,
+        "publishedAt": "Sun, 26 Jul 2026 02:10:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgKbqNFW5Xr8YMNtR1gjh8xlCzSn39iboFy_8D--YqpTiJcGd19m1206aHPLY",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=taspen",
+        "newsUrl": "https://kalsel.antaranews.com/berita/527541/taspen-sediakan-kanal-layanan-semakin-lengkap",
+        "newsTitle": "TASPEN sediakan kanal layanan semakin lengkap",
+        "newsSource": "ANTARA News"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "francisca valenzuela",
-          "url": "https://trends.google.com/trends/explore?geo=CL&q=francisca%20valenzuela"
+          "title": "taspen",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=taspen"
+        }
+      ]
+    },
+    {
+      "id": 1010,
+      "name": "ucrânia",
+      "originalTitle": "ucrânia",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 57,
+      "score": 91,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「ucrânia」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 100+。关联新闻源：O GLOBO / UOL Notícias；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "ucrânia",
+        "traffic": 100,
+        "publishedAt": "Sun, 26 Jul 2026 01:40:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5TqcJ9yZaJvgUeqlraIp7uevocp5wA7MXaZ3KyIbcBoR2qOKLsotI61Co9OU",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=ucr%C3%A2nia",
+        "newsUrl": "https://oglobo.globo.com/mundo/noticia/2026/07/25/zelensky-denuncia-vinculos-da-russia-com-ira-e-coreia-do-norte-e-diz-ter-atacado-navio-russo-no-mar-caspio.ghtml",
+        "newsTitle": "Zelensky denuncia vínculos da Rússia com Irã e Coreia do Norte e diz ter atacado navio russo no Mar Cáspio",
+        "newsSource": "O GLOBO"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "ucrânia",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=ucr%C3%A2nia"
         }
       ]
     },
     {
       "id": 1011,
-      "name": "ester exposito",
-      "originalTitle": "ester exposito",
+      "name": "el otro padre",
+      "originalTitle": "el otro padre",
       "region": "南美洲",
-      "country": "秘鲁",
+      "country": "阿根廷",
       "source": [
         "Google Trends"
       ],
@@ -500,212 +494,113 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 秘鲁 搜索趋势「ester exposito」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 秘鲁 搜索趋势，搜索热度约 100+。关联新闻源：La Vanguardia / Diario AS；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「el otro padre」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100+。关联新闻源：La Capital / Chic Magazine；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "ester exposito",
+        "topic": "el otro padre",
         "traffic": 100,
-        "publishedAt": "Fri, 24 Jul 2026 21:50:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-W9IHLiUbq3U9zNBC4EmJT0GAA7elJdpA3_EOACPptuuEzimQOfWp22a7I50",
-        "url": "https://trends.google.com/trends/explore?geo=PE&q=ester%20exposito",
-        "newsUrl": "https://www.lavanguardia.com/gente/20260723/11599457/ester-exposito-kylian-mbappe-esconden-apasionados-besos-miami.html",
-        "newsTitle": "Ester Expósito y Kylian Mbappé ya no se esconden: sus apasionados besos en Miami",
-        "newsSource": "La Vanguardia"
+        "publishedAt": "Sat, 25 Jul 2026 20:00:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUolg8ZfRDD3RR2teKbI6zJ_nzQi2biqPuNAMp-LM-Hevbn_eNRL4UwoEQN54",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=el%20otro%20padre",
+        "newsUrl": "https://www.lacapital.com.ar/zoom/netflix-una-miniserie-dramatica-y-emotiva-maratonear-el-fin-semana-n10271376.html",
+        "newsTitle": "Netflix: una miniserie dramática y emotiva para maratonear el fin de semana",
+        "newsSource": "La Capital"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "ester exposito",
-          "url": "https://trends.google.com/trends/explore?geo=PE&q=ester%20exposito"
+          "title": "el otro padre",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=el%20otro%20padre"
         }
       ]
     },
     {
       "id": 1012,
-      "name": "Вперед за новыми впеча…",
-      "originalTitle": "Вперед за новыми впечатлениями ! Куда сходить в выходные в Минске и других городах Беларуси 25 и 26 июля",
-      "region": "全球",
-      "country": "全球",
+      "name": "noticias del mundo",
+      "originalTitle": "noticias del mundo",
+      "region": "南美洲",
+      "country": "哥伦比亚",
       "source": [
-        "GDELT"
+        "Google Trends"
       ],
       "heat": "180K",
-      "trend": 55,
-      "score": 85,
-      "status": "上升",
+      "trend": 52,
+      "score": 89,
+      "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 GDELT 全球新闻源中 全球 热点《Вперед за новыми впечатлениями ! Куда сходить в выходные в Минске и других городах Беларуси 25 и 26 июля》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
-      "reason": "来自 GDELT 全球新闻数据库，媒体域名：sb.by。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
-      "gdelt": {
-        "domain": "sb.by",
-        "language": "Russian",
-        "publishedAt": "20260724T121500Z",
-        "picture": "https://io.sb.by/storage01/iblock/6c9/6c96609dc98b3d5e6cb19a349c95e4dd/e0460dc2416c8834da50785d4d2efede.jpg",
-        "url": "https://www.sb.by/articles/vpered-za-novymi-vpechatleniyami-kuda-skhodit-v-vykhodnye-v-minske-i-drugikh-gorodakh-belarusi-25-i-.html"
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「noticias del mundo」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100+。关联新闻源：CNN en Español / Infobae；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "noticias del mundo",
+        "traffic": 100,
+        "publishedAt": "Sun, 26 Jul 2026 02:10:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJssXYTPj3nJt6T8AUqEfeAYDdQ_ALh6tSht9J10YxpbXC7kpupvrviC61u2Y",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=noticias%20del%20mundo",
+        "newsUrl": "https://cnnespanol.cnn.com/2026/07/25/mundo/live-news/guerra-ee-uu-israel-iran-vivo-trax",
+        "newsTitle": "Guerra de EE.UU. e Israel con Irán, en vivo: ataques, noticias sobre el estrecho de Ormuz y más",
+        "newsSource": "CNN en Español"
       },
       "signals": [
         {
-          "source": "GDELT",
-          "title": "Вперед за новыми впечатлениями ! Куда сходить в выходные в Минске и других городах Беларуси 25 и 26 июля",
-          "url": "https://www.sb.by/articles/vpered-za-novymi-vpechatleniyami-kuda-skhodit-v-vykhodnye-v-minske-i-drugikh-gorodakh-belarusi-25-i-.html"
+          "source": "Google Trends",
+          "title": "noticias del mundo",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=noticias%20del%20mundo"
         }
       ]
     },
     {
       "id": 1013,
-      "name": "Чарли и музыкальная фа…",
-      "originalTitle": "Чарли и музыкальная фабрика",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
+      "name": "copero juego carrera",
+      "originalTitle": "copero juego carrera",
+      "region": "南美洲",
+      "country": "智利",
       "source": [
-        "GDELT"
+        "Google Trends"
       ],
       "heat": "180K",
-      "trend": 55,
-      "score": 84,
-      "status": "上升",
+      "trend": 65,
+      "score": 95,
+      "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 GDELT 全球新闻源中 俄罗斯 热点《Чарли и музыкальная фабрика》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
-      "reason": "来自 GDELT 全球新闻数据库，媒体域名：kommersant.ru。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
-      "gdelt": {
-        "domain": "kommersant.ru",
-        "language": "Russian",
-        "publishedAt": "20260724T163000Z",
-        "picture": "https://im2.kommersant.ru/SocialPics/8844073_49_3167612_1741197607",
-        "url": "https://www.kommersant.ru/doc/8844073"
+      "prompt": "基于 Google Trends 智利 搜索趋势「copero juego carrera」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 100+。关联新闻源：Mediotiempo / Milenio；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "copero juego carrera",
+        "traffic": 100,
+        "publishedAt": "Sat, 25 Jul 2026 22:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHJLHDhsNDv2n89FaxkElzlG_pxV6ylv4Sa6yYYCoaAO2V64ZkXihy4UdMKq4",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=copero%20juego%20carrera",
+        "newsUrl": "https://www.mediotiempo.com/actualidad/virales/copero-viral-juego-modo-carrera-expres-tendencia-redes-asi-puedes-jugar",
+        "newsTitle": "Copero, el viral juego del modo carrera exprés que es tendencia en redes; así puedes jugarlo",
+        "newsSource": "Mediotiempo"
       },
       "signals": [
         {
-          "source": "GDELT",
-          "title": "Чарли и музыкальная фабрика",
-          "url": "https://www.kommersant.ru/doc/8844073"
+          "source": "Google Trends",
+          "title": "copero juego carrera",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=copero%20juego%20carrera"
         }
       ]
     },
     {
       "id": 1014,
-      "name": "Life imitates art imit…",
-      "originalTitle": "Life imitates art imitates death in Charli xcx Music , Fashion , Film",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "GDELT"
-      ],
-      "heat": "180K",
-      "trend": 61,
-      "score": 87,
-      "status": "上升",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 GDELT 全球新闻源中 全球 热点《Life imitates art imitates death in Charli xcx  Music , Fashion , Film  》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
-      "reason": "来自 GDELT 全球新闻数据库，媒体域名：pastemagazine.com。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
-      "gdelt": {
-        "domain": "pastemagazine.com",
-        "language": "English",
-        "publishedAt": "20260724T173000Z",
-        "picture": "https://img.pastemagazine.com/wp-content/uploads/2026/07/24111711/C78120AE-39C7-4A55-BFC6-46D170A7F793-scaled.jpeg",
-        "url": "https://www.pastemagazine.com/music/charli-xcx/charli-xcx-music-fashion-film-review"
-      },
-      "signals": [
-        {
-          "source": "GDELT",
-          "title": "Life imitates art imitates death in Charli xcx Music , Fashion , Film",
-          "url": "https://www.pastemagazine.com/music/charli-xcx/charli-xcx-music-fashion-film-review"
-        }
-      ]
-    },
-    {
-      "id": 1015,
-      "name": "Charli XCX Taps David …",
-      "originalTitle": "Charli XCX Taps David Cronenberg For a Collab That Explains Music , Fashion , Film",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "GDELT"
-      ],
-      "heat": "180K",
-      "trend": 48,
-      "score": 81,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 GDELT 全球新闻源中 全球 热点《Charli XCX Taps David Cronenberg For a Collab That Explains  Music , Fashion , Film  》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
-      "reason": "来自 GDELT 全球新闻数据库，媒体域名：gq.com。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
-      "gdelt": {
-        "domain": "gq.com",
-        "language": "English",
-        "publishedAt": "20260724T211500Z",
-        "picture": "https://media.gq.com/photos/6a63b9546e99aa420bd7a8ac/16:9/w_1280,c_limit/GettyImages-502238189.jpg",
-        "url": "https://www.gq.com/story/charli-xcx-david-cronenberg-collab"
-      },
-      "signals": [
-        {
-          "source": "GDELT",
-          "title": "Charli XCX Taps David Cronenberg For a Collab That Explains Music , Fashion , Film",
-          "url": "https://www.gq.com/story/charli-xcx-david-cronenberg-collab"
-        }
-      ]
-    },
-    {
-      "id": 1016,
-      "name": "「 羽火共舞 」 琴藝加科技 走進王羽佳音…",
-      "originalTitle": "「 羽火共舞 」 琴藝加科技 走進王羽佳音樂宇宙 | 文化",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "GDELT"
-      ],
-      "heat": "180K",
-      "trend": 61,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 GDELT 全球新闻源中 全球 热点《 「 羽火共舞 」 琴藝加科技 走進王羽佳音樂宇宙 | 文化》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号、地区色彩和情绪氛围表达热点，不直接使用新闻照片、人物肖像、版权角色或品牌标识。",
-      "reason": "来自 GDELT 全球新闻数据库，媒体域名：cna.com.tw。适合补充跨语言新闻传播热度，判断是否形成可运营的地区话题。",
-      "gdelt": {
-        "domain": "cna.com.tw",
-        "language": "Chinese",
-        "publishedAt": "20260725T034500Z",
-        "picture": "https://i.ytimg.com/vi/GhlukCL5-64/hqdefault.jpg?t=2607251131",
-        "url": "https://www.cna.com.tw:443/news/acul/202607250037.aspx"
-      },
-      "signals": [
-        {
-          "source": "GDELT",
-          "title": "「 羽火共舞 」 琴藝加科技 走進王羽佳音樂宇宙 | 文化",
-          "url": "https://www.cna.com.tw:443/news/acul/202607250037.aspx"
-        }
-      ]
-    },
-    {
-      "id": 1017,
-      "name": "Dennis Silk Profile - …",
-      "originalTitle": "Dennis Silk Profile - Cricket Player England | Stats, Records, Video",
+      "name": "Vibhooti Bhaskar Profi…",
+      "originalTitle": "Vibhooti Bhaskar Profile",
       "region": "印度",
       "country": "印度",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 48,
+      "trend": 49,
       "score": 81,
       "status": "上升",
       "type": "realtime",
@@ -713,28 +608,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Cricinfo」热点《Dennis Silk Profile - Cricket Player England | Stats, Records, Video》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "prompt": "基于 印度 本地媒体「Cricinfo」热点《Vibhooti Bhaskar Profile》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
       "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Cricinfo。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "cricket",
         "category": "核心话题",
         "sourceName": "Cricinfo",
-        "title": "Dennis Silk Profile - Cricket Player England | Stats, Records, Video",
-        "publishedAt": "Sat, 25 Jul 2026 05:54:50 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE00X2VoM3RBbXoxZ0I2NUh1NEJLWTFvTlFTb1V4VDM0YzQ5MllqVEJfdkNPaGNQUWcxai1TYWZ5QnplRWtPemFjTVRyV3kwdmpyamF5ZEVBd1VpV2F6SkR6N0NEcw?oc=5"
+        "title": "Vibhooti Bhaskar Profile",
+        "publishedAt": "Sun, 26 Jul 2026 05:18:05 GMT",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5USHdhdFlUcTZrWE5tX0x5WHFtWnJIaDhTY0I5amlMYzY1cUg3X0t3UFdsMEc0Q1FhNFpEdUl1UVFzbGo3Y3V5X3VTN1pzVF9jekw1V2pzaHVVSTlWclRxMFh6NnBMWFozOE9EXw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Dennis Silk Profile - Cricket Player England | Stats, Records, Video",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE00X2VoM3RBbXoxZ0I2NUh1NEJLWTFvTlFTb1V4VDM0YzQ5MllqVEJfdkNPaGNQUWcxai1TYWZ5QnplRWtPemFjTVRyV3kwdmpyamF5ZEVBd1VpV2F6SkR6N0NEcw?oc=5"
+          "title": "Vibhooti Bhaskar Profile",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5USHdhdFlUcTZrWE5tX0x5WHFtWnJIaDhTY0I5amlMYzY1cUg3X0t3UFdsMEc0Q1FhNFpEdUl1UVFzbGo3Y3V5X3VTN1pzVF9jekw1V2pzaHVVSTlWclRxMFh6NnBMWFozOE9EXw?oc=5"
         }
       ]
     },
     {
-      "id": 1018,
-      "name": "Abhishek-Aishwarya's N…",
-      "originalTitle": "Abhishek-Aishwarya's New York selfie goes viral. Fan calls them Bollywood royalty",
+      "id": 1015,
+      "name": "Dharmendra Pradhan's r…",
+      "originalTitle": "Dharmendra Pradhan's resignation: Priyanka Chopra Jonas, Alia Bhatt, Vicky Kaushal and others celebrate t",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -749,35 +644,35 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「India Today」热点《Abhishek-Aishwarya's New York selfie goes viral. Fan calls them Bollywood royalty》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：India Today。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「The Times of India」热点《Dharmendra Pradhan's resignation: Priyanka Chopra Jonas, Alia Bhatt, Vicky Kaushal and others celebrate t》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Times of India。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "bollywood",
         "category": "垂类补充",
-        "sourceName": "India Today",
-        "title": "Abhishek-Aishwarya's New York selfie goes viral. Fan calls them Bollywood royalty",
-        "publishedAt": "Sat, 25 Jul 2026 08:20:10 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbnhaZzJ1RXFUSWJ0NlFYRmJEWVpLaGxUdUQtdjJaQkZVcjM3TU95U2I1bi1pSTY2WEdPTl9tMm1zV0YzMUpVMjR4V0Fvd0ZUY3NmWHlDWDg0S1A1dGVlaXNhTWtkZG13bDViZkRJVGstRmRaX3ZhaDJnTmMtci1KMGl6cERmWHREejhrU1ZmRHJWUmc5WmlOemN6Vjg0ZkNaY0NjS1ByUVE0akV0SHBEc2xfTkE0YXNlTDQ2cC1zbERfQlVkQjJmd1NjTDNTa2NpX0hTT0VVR2I0MW5nYXk00gHkAUFVX3lxTE9OTjlnMVFsUEVOcktGRXJMZzY1c1VqYldvek41R0xPZ1VwdncwNFNCb2dpS1ByM0xsNU9GUXAwWlZBbVJtcTVNMXVlMTNBNFlaLUJZYnRRY09leHpYMTBWTWluNjFUMlI3RzFXVmZhVEtqcWxWNGQtMmdGa0l4LUFNRmI0RnFQYW92WHNqeTJCVDlCdDc4Q2VDVTZxLTNVUnl5Z0Rmd0E1ZlpuTjN6bnBHeHFqQnBtMU40dzU2UFBsVjNyOVpJZmpTT1V6eWFSVC15Vy0xQkg1ak9fY1RiZUJfdFAtag?oc=5"
+        "sourceName": "The Times of India",
+        "title": "Dharmendra Pradhan's resignation: Priyanka Chopra Jonas, Alia Bhatt, Vicky Kaushal and others celebrate t",
+        "publishedAt": "Sun, 26 Jul 2026 08:01:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPTmpOcmpFT1RQUVVtUW1OOHhmeUJ0dnlzMTlUck9ab1Ffb2l4bXpycWd4cXlzTmtTU3MwSWVzVFBEcWZOWTc4NTYyMVhvQmN0ZDFPbTkwRVNKR1lrYXBwN09MU1FpdUdNb2xWMTJQTDdtdm45WF9XRTd3NkN3YWY0QXNTVUFnaXBsZVN3Tlcxc08tZUN0dndsNGUwN3p5UVQ0TjFQNXRLbjJuSl9JYzVRT2JSRnNUSEhtcFJjMTljM2o3TGdfUE1XZTd4eTVXN2RXSmJHWWZCaTJNblZwbmlrSUtNX1lSdGZTMm9seGtHbFJmdFBqXzhQX1M2emFJb3ZEVDc0UmRlZkxZVEljV1pTd3NXX1o5S1VBNndlNEp5bFdmbmpWdWVKT1AwcDVROXgwZWfSAbcCQVVfeXFMTzlUaF9YODZHcUtjMlBfbUNkY0FnZFB4NGNuR3Zwd1Q1R3pMNjhJNGotMV9ibTlYeUlXUDd6ampjN1dEYjRwNW5OdnFMdG5FazVMR05LbGI1R2ZBaVRFYnRtUmtEUWtIemUzMFhNa3ZHQWNmcGs0N0R1d1R1T01vWDhTMHNsQzJPMjJIZUtMVVF3Ny1IdGNQd0I5Wk83RnJWUDVpRjFEZGpzV2RhWTNLZ25HUW5HcGpZNzVwWUVvNmtfQm12NldxOUVoSnNDWDlQUjk1SmRLZGxvbTc2bWYwVzFvRGxuYndLQUIwb2w0SF8zSTVFN2VwRUh4WHA0QjNTVTRFN1pmdUFqOFdUQzItX1E1Y3ZYMno4dWE5ZTVQSVZwLTJTN1ItSHY4VWdxaS1QdkpFS2ZuNG8?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Abhishek-Aishwarya's New York selfie goes viral. Fan calls them Bollywood royalty",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbnhaZzJ1RXFUSWJ0NlFYRmJEWVpLaGxUdUQtdjJaQkZVcjM3TU95U2I1bi1pSTY2WEdPTl9tMm1zV0YzMUpVMjR4V0Fvd0ZUY3NmWHlDWDg0S1A1dGVlaXNhTWtkZG13bDViZkRJVGstRmRaX3ZhaDJnTmMtci1KMGl6cERmWHREejhrU1ZmRHJWUmc5WmlOemN6Vjg0ZkNaY0NjS1ByUVE0akV0SHBEc2xfTkE0YXNlTDQ2cC1zbERfQlVkQjJmd1NjTDNTa2NpX0hTT0VVR2I0MW5nYXk00gHkAUFVX3lxTE9OTjlnMVFsUEVOcktGRXJMZzY1c1VqYldvek41R0xPZ1VwdncwNFNCb2dpS1ByM0xsNU9GUXAwWlZBbVJtcTVNMXVlMTNBNFlaLUJZYnRRY09leHpYMTBWTWluNjFUMlI3RzFXVmZhVEtqcWxWNGQtMmdGa0l4LUFNRmI0RnFQYW92WHNqeTJCVDlCdDc4Q2VDVTZxLTNVUnl5Z0Rmd0E1ZlpuTjN6bnBHeHFqQnBtMU40dzU2UFBsVjNyOVpJZmpTT1V6eWFSVC15Vy0xQkg1ak9fY1RiZUJfdFAtag?oc=5"
+          "title": "Dharmendra Pradhan's resignation: Priyanka Chopra Jonas, Alia Bhatt, Vicky Kaushal and others celebrate t",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPTmpOcmpFT1RQUVVtUW1OOHhmeUJ0dnlzMTlUck9ab1Ffb2l4bXpycWd4cXlzTmtTU3MwSWVzVFBEcWZOWTc4NTYyMVhvQmN0ZDFPbTkwRVNKR1lrYXBwN09MU1FpdUdNb2xWMTJQTDdtdm45WF9XRTd3NkN3YWY0QXNTVUFnaXBsZVN3Tlcxc08tZUN0dndsNGUwN3p5UVQ0TjFQNXRLbjJuSl9JYzVRT2JSRnNUSEhtcFJjMTljM2o3TGdfUE1XZTd4eTVXN2RXSmJHWWZCaTJNblZwbmlrSUtNX1lSdGZTMm9seGtHbFJmdFBqXzhQX1M2emFJb3ZEVDc0UmRlZkxZVEljV1pTd3NXX1o5S1VBNndlNEp5bFdmbmpWdWVKT1AwcDVROXgwZWfSAbcCQVVfeXFMTzlUaF9YODZHcUtjMlBfbUNkY0FnZFB4NGNuR3Zwd1Q1R3pMNjhJNGotMV9ibTlYeUlXUDd6ampjN1dEYjRwNW5OdnFMdG5FazVMR05LbGI1R2ZBaVRFYnRtUmtEUWtIemUzMFhNa3ZHQWNmcGs0N0R1d1R1T01vWDhTMHNsQzJPMjJIZUtMVVF3Ny1IdGNQd0I5Wk83RnJWUDVpRjFEZGpzV2RhWTNLZ25HUW5HcGpZNzVwWUVvNmtfQm12NldxOUVoSnNDWDlQUjk1SmRLZGxvbTc2bWYwVzFvRGxuYndLQUIwb2w0SF8zSTVFN2VwRUh4WHA0QjNTVTRFN1pmdUFqOFdUQzItX1E1Y3ZYMno4dWE5ZTVQSVZwLTJTN1ItSHY4VWdxaS1QdkpFS2ZuNG8?oc=5"
         }
       ]
     },
     {
-      "id": 1019,
-      "name": "LG Manoj Sinha launche…",
-      "originalTitle": "LG Manoj Sinha launches reading marathon at Chinar Book Festival in J&K",
+      "id": 1016,
+      "name": "1 Killed, 17 Injured A…",
+      "originalTitle": "1 Killed, 17 Injured As Vehicle Rams Crowd At Berlin Pride Festival",
       "region": "印度",
       "country": "印度",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 55,
+      "trend": 56,
       "score": 84,
       "status": "上升",
       "type": "realtime",
@@ -785,100 +680,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「The News Mill」热点《LG Manoj Sinha launches reading marathon at Chinar Book Festival in J&K》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The News Mill。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「NDTV」热点《1 Killed, 17 Injured As Vehicle Rams Crowd At Berlin Pride Festival》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NDTV。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "festival",
         "category": "垂类补充",
-        "sourceName": "The News Mill",
-        "title": "LG Manoj Sinha launches reading marathon at Chinar Book Festival in J&K",
-        "publishedAt": "Sat, 25 Jul 2026 07:07:59 GMT",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ0hxZ05MTE51T2pKVHlYM2s5T0tIdnBGcFNLaGpoXzRoUV9yRnU2OXk4STNIaGxxOUJlTGszckVWdGZFYVRfcEpWazZ3ZGwyZzZpbzhpZFRvbDNoWnFUd19EUUl2azU0WkVEblcxdVBHSlduTUw2ZWxmZ3FSMGNibXQyUkhGUGFmNkpoMDhLdzNVQm9qRmJpeGozY0ZvalZueFMxUFBB?oc=5"
+        "sourceName": "NDTV",
+        "title": "1 Killed, 17 Injured As Vehicle Rams Crowd At Berlin Pride Festival",
+        "publishedAt": "Sun, 26 Jul 2026 01:39:09 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaS1tSXBtM05ER2FWc1JCZkNOQjJFVHg4bVBBSWk4WjZtUlhVUEkydEpKdUVmUmEwQmdMckF1ODFVRTAwMUsya3UtdlhibXVrQl9BYVBTbEx1ajEzTURKd1ZnQ3BXX2U5aEJSNVR6UVhPUm1mVUdwNHB4RW1uM25ZcjRYa3Y3T1Y0cGo4YUo0ZVBFcUM2NmhWakMyOEpaV1ZCT3c5T3JORE1XLVZtMzJXaFhReHdHdGRra0RQeWUxSGRCZHlIVmZj0gHPAUFVX3lxTFBXVVZuTzgyeFFxMlQ3cks3cVVJS0pCZXZSbk5sM204dnQwVVlld1FkaExSQTVaMlZtYUN4UzlQS1RRQUV2LU4xY204anpMOWhLLWRLdFBMSWgweHRHUDE3Qi1KQUtnR3B6VDZpenMtRlhTLUlhQmdKaWtFVEZjVXpFMnZTeFlPM0d4QlJ0T3lsZVBsRUZQSnlOLUZGUWpxUkVuTFBOTU1fWTdRWUJqNEFRN01KanR5c2NiOE91ekY5WWc0RmcwbUpCMS04cDlrSQ?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "LG Manoj Sinha launches reading marathon at Chinar Book Festival in J&K",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ0hxZ05MTE51T2pKVHlYM2s5T0tIdnBGcFNLaGpoXzRoUV9yRnU2OXk4STNIaGxxOUJlTGszckVWdGZFYVRfcEpWazZ3ZGwyZzZpbzhpZFRvbDNoWnFUd19EUUl2azU0WkVEblcxdVBHSlduTUw2ZWxmZ3FSMGNibXQyUkhGUGFmNkpoMDhLdzNVQm9qRmJpeGozY0ZvalZueFMxUFBB?oc=5"
+          "title": "1 Killed, 17 Injured As Vehicle Rams Crowd At Berlin Pride Festival",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaS1tSXBtM05ER2FWc1JCZkNOQjJFVHg4bVBBSWk4WjZtUlhVUEkydEpKdUVmUmEwQmdMckF1ODFVRTAwMUsya3UtdlhibXVrQl9BYVBTbEx1ajEzTURKd1ZnQ3BXX2U5aEJSNVR6UVhPUm1mVUdwNHB4RW1uM25ZcjRYa3Y3T1Y0cGo4YUo0ZVBFcUM2NmhWakMyOEpaV1ZCT3c5T3JORE1XLVZtMzJXaFhReHdHdGRra0RQeWUxSGRCZHlIVmZj0gHPAUFVX3lxTFBXVVZuTzgyeFFxMlQ3cks3cVVJS0pCZXZSbk5sM204dnQwVVlld1FkaExSQTVaMlZtYUN4UzlQS1RRQUV2LU4xY204anpMOWhLLWRLdFBMSWgweHRHUDE3Qi1KQUtnR3B6VDZpenMtRlhTLUlhQmdKaWtFVEZjVXpFMnZTeFlPM0d4QlJ0T3lsZVBsRUZQSnlOLUZGUWpxUkVuTFBOTU1fWTdRWUJqNEFRN01KanR5c2NiOE91ekY5WWc0RmcwbUpCMS04cDlrSQ?oc=5"
         }
       ]
     },
     {
-      "id": 1020,
-      "name": "Inovasi Diseminasi Has…",
-      "originalTitle": "Inovasi Diseminasi Hasil Riset melalui Pertunjukan Teater dan Musik - BRIN",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 48,
-      "score": 81,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「BRIN - Badan Riset dan Inovasi Nasional」热点《Inovasi Diseminasi Hasil Riset melalui Pertunjukan Teater dan Musik - BRIN》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：BRIN - Badan Riset dan Inovasi Nasional。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "musik",
-        "category": "核心话题",
-        "sourceName": "BRIN - Badan Riset dan Inovasi Nasional",
-        "title": "Inovasi Diseminasi Hasil Riset melalui Pertunjukan Teater dan Musik - BRIN",
-        "publishedAt": "Sat, 25 Jul 2026 05:26:06 GMT",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcDJPVjdiUzdNUDhSck5oNWdDMXBNa1ZkWFpOWWFkTWhkT1FBUGZ3d29oOVJlYlJTN3NfZDNlNVh3MlFYczQ3UmZ3bk1FZTNna3dHUmtXdUJldmJCWVhIZlZFQzVlTjBNMUZmTGdDSS03OWtLY1BiaThRYjZWXzZES3NIMkNoeEhrdHlwSmwycHJjUzVDQUVRMUVpaW1yYURnOXpPYw?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Inovasi Diseminasi Hasil Riset melalui Pertunjukan Teater dan Musik - BRIN",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcDJPVjdiUzdNUDhSck5oNWdDMXBNa1ZkWFpOWWFkTWhkT1FBUGZ3d29oOVJlYlJTN3NfZDNlNVh3MlFYczQ3UmZ3bk1FZTNna3dHUmtXdUJldmJCWVhIZlZFQzVlTjBNMUZmTGdDSS03OWtLY1BiaThRYjZWXzZES3NIMkNoeEhrdHlwSmwycHJjUzVDQUVRMUVpaW1yYURnOXpPYw?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1021,
-      "name": "Di Balik Kemenangan Sp…",
-      "originalTitle": "Di Balik Kemenangan Spanyol",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 60,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Kompas.id」热点《Di Balik Kemenangan Spanyol》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Kompas.id。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "sepak bola",
-        "category": "垂类补充",
-        "sourceName": "Kompas.id",
-        "title": "Di Balik Kemenangan Spanyol",
-        "publishedAt": "Sat, 25 Jul 2026 05:19:53 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9GOVVRcC1ibFRBZ1htSVhoZ3Vvd0g2bkFvVG9aWVFmRjY4YXBoLXhqeGktSEdDRFI2czNlamViTFlUM3dPVHY0YjZ1dHBBZjVyckhNNkZHUUtNTEVTcUdzZkpWbHhMT3Vw?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Di Balik Kemenangan Spanyol",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9GOVVRcC1ibFRBZ1htSVhoZ3Vvd0g2bkFvVG9aWVFmRjY4YXBoLXhqeGktSEdDRFI2czNlamViTFlUM3dPVHY0YjZ1dHBBZjVyckhNNkZHUUtNTEVTcUdzZkpWbHhMT3Vw?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1022,
-      "name": "Film Istimewa: Sinopsi…",
-      "originalTitle": "Film Istimewa: Sinopsis, Daftar Pemain, Jadwal Tayang, dan Fakta Menarik - Halaman Utama",
+      "id": 1017,
+      "name": "Musisi muda Maluku tam…",
+      "originalTitle": "Musisi muda Maluku tampil di program inkubasi musik Manajemen Talenta Nasional Lab",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -893,28 +716,100 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Halaman Utama - ITERA」热点《Film Istimewa: Sinopsis, Daftar Pemain, Jadwal Tayang, dan Fakta Menarik - Halaman Utama》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Halaman Utama - ITERA。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「ANTARA News」热点《Musisi muda Maluku tampil di program inkubasi musik Manajemen Talenta Nasional Lab》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ANTARA News。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
-        "topic": "film",
-        "category": "垂类补充",
-        "sourceName": "Halaman Utama - ITERA",
-        "title": "Film Istimewa: Sinopsis, Daftar Pemain, Jadwal Tayang, dan Fakta Menarik - Halaman Utama",
-        "publishedAt": "Fri, 24 Jul 2026 14:31:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeUhFWEs1LXloNXpGcEVDOEhYbnhJS3JiZkttdU9nVkdoR2ZxN0hNUEd0cGZ5dFJialJZVFlDcnQtM0hmRFVjazVHcVV3YWxQZjRSRlRSVVkySFEwWDd2Y0dtSHJZOWZPTDZrUzN2MmR0U1MxVnFtYnBkWXpCR2tra0ZMWDZXbjY5c1BMb2NrVnFNejNxLU44V1p1ZmJrX2M?oc=5"
+        "topic": "musik",
+        "category": "核心话题",
+        "sourceName": "ANTARA News",
+        "title": "Musisi muda Maluku tampil di program inkubasi musik Manajemen Talenta Nasional Lab",
+        "publishedAt": "Sun, 26 Jul 2026 06:13:52 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZkIwb1k4NXVER0Uxdm1PUXRwaHFGa1ktdUR2ZDEzWkFMT1dCZEZVZW9oeWhPSGJkQXVFMUgyek80VC1YbGlhc0tvODVEUmNUaUVqVG5uSlA0TGZTSnMtQ3N1M0MyMlowYXM4T3k5ZG5faUxRenpKSWY2RXFndDBNYXNqQmhyQUxHUGJ3cnhMX0FXbjBWTWdmdkdvN0xLaFgwVkpmc1pIWUdmbE5tckFFeXllQXhIbC10TGhuaC1Qa1pDdzTSAcgBQVVfeXFMUGR0TmFBS2ZtTHA5OHdncFp0UWxENUhVR3BWVTJXZUQyV3puN1gwX1JYUWQxUFVJSEVzVVNSN2tCYjgxR3BWX1VsdEtnX0hUWXJBLVBSSUtGaTczRHBtMEZodVFodm15dy1NYTRXdkppX1JVVFRSSU9yeGk0NmZ0b29IUk0wNTJVLTJnZmNCRHFwMGVlTWVta3BIdnlaajRRc3JxbGYtamJxWTQxczdST0tlYWRKTnhCd1EwRDFldFhjWDlJSlQ1djc?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Film Istimewa: Sinopsis, Daftar Pemain, Jadwal Tayang, dan Fakta Menarik - Halaman Utama",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeUhFWEs1LXloNXpGcEVDOEhYbnhJS3JiZkttdU9nVkdoR2ZxN0hNUEd0cGZ5dFJialJZVFlDcnQtM0hmRFVjazVHcVV3YWxQZjRSRlRSVVkySFEwWDd2Y0dtSHJZOWZPTDZrUzN2MmR0U1MxVnFtYnBkWXpCR2tra0ZMWDZXbjY5c1BMb2NrVnFNejNxLU44V1p1ZmJrX2M?oc=5"
+          "title": "Musisi muda Maluku tampil di program inkubasi musik Manajemen Talenta Nasional Lab",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZkIwb1k4NXVER0Uxdm1PUXRwaHFGa1ktdUR2ZDEzWkFMT1dCZEZVZW9oeWhPSGJkQXVFMUgyek80VC1YbGlhc0tvODVEUmNUaUVqVG5uSlA0TGZTSnMtQ3N1M0MyMlowYXM4T3k5ZG5faUxRenpKSWY2RXFndDBNYXNqQmhyQUxHUGJ3cnhMX0FXbjBWTWdmdkdvN0xLaFgwVkpmc1pIWUdmbE5tckFFeXllQXhIbC10TGhuaC1Qa1pDdzTSAcgBQVVfeXFMUGR0TmFBS2ZtTHA5OHdncFp0UWxENUhVR3BWVTJXZUQyV3puN1gwX1JYUWQxUFVJSEVzVVNSN2tCYjgxR3BWX1VsdEtnX0hUWXJBLVBSSUtGaTczRHBtMEZodVFodm15dy1NYTRXdkppX1JVVFRSSU9yeGk0NmZ0b29IUk0wNTJVLTJnZmNCRHFwMGVlTWVta3BIdnlaajRRc3JxbGYtamJxWTQxczdST0tlYWRKTnhCd1EwRDFldFhjWDlJSlQ1djc?oc=5"
         }
       ]
     },
     {
-      "id": 1023,
-      "name": "A menos de um ano da C…",
-      "originalTitle": "A menos de um ano da Copa, fica a pergunta: o futebol feminino pode ser tão grande como o masculino?",
+      "id": 1018,
+      "name": "Khidmah Jam’iyyah di N…",
+      "originalTitle": "Khidmah Jam’iyyah di NU, Ketua PCNU Pringsewu: Seperti Tim Sepak Bola",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 60,
+      "score": 86,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「NU Online Lampung」热点《Khidmah Jam’iyyah di NU, Ketua PCNU Pringsewu: Seperti Tim Sepak Bola》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NU Online Lampung。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "sepak bola",
+        "category": "垂类补充",
+        "sourceName": "NU Online Lampung",
+        "title": "Khidmah Jam’iyyah di NU, Ketua PCNU Pringsewu: Seperti Tim Sepak Bola",
+        "publishedAt": "Sun, 26 Jul 2026 04:51:12 GMT",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQV0RyaFJVSng2QkZRcjNvLWFZUjJWMHBLdjdPYnNBRlpLR3M2eXhaaFVSeFNmMjB6VTZHbVBab0E4ZklPem1WUjJhZlJaUnNFRlA2RHZ3RkVNU2c1c2hpREExVlBfeHZCN2I1N0t0NHBCNGdqQkFQcDJSVlpTekhBdnVucFAxQXQySmJEYU1wQ1FmcHBIbGpUVzh4a01uRlV6cmhwZlhYa9IBrAFBVV95cUxNOHduTjdnbE56WG9weU9hbFRQVnRkZnBWZzZYQ2RHYzBXZXhBaGZiVWdMSUhOeDZjbzlfTjdoRU5USVpMRkp6MFlFTVl4ZmJ1R0tBVmtQQmc3OHhGOEg5cEVzbmtBRDhlYjQ0Zjd1dHNBd0kxNnBkc2tIZjFyYVBJTEk5S3FTS3ZvbW1xdkU0dDRJdGpmMmRwQmNKYUpmZ3YwcWhYN2xWeWpzTWtL?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Khidmah Jam’iyyah di NU, Ketua PCNU Pringsewu: Seperti Tim Sepak Bola",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQV0RyaFJVSng2QkZRcjNvLWFZUjJWMHBLdjdPYnNBRlpLR3M2eXhaaFVSeFNmMjB6VTZHbVBab0E4ZklPem1WUjJhZlJaUnNFRlA2RHZ3RkVNU2c1c2hpREExVlBfeHZCN2I1N0t0NHBCNGdqQkFQcDJSVlpTekhBdnVucFAxQXQySmJEYU1wQ1FmcHBIbGpUVzh4a01uRlV6cmhwZlhYa9IBrAFBVV95cUxNOHduTjdnbE56WG9weU9hbFRQVnRkZnBWZzZYQ2RHYzBXZXhBaGZiVWdMSUhOeDZjbzlfTjdoRU5USVpMRkp6MFlFTVl4ZmJ1R0tBVmtQQmc3OHhGOEg5cEVzbmtBRDhlYjQ0Zjd1dHNBd0kxNnBkc2tIZjFyYVBJTEk5S3FTS3ZvbW1xdkU0dDRJdGpmMmRwQmNKYUpmZ3YwcWhYN2xWeWpzTWtL?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "name": "Sinopsis Film Mechanic…",
+      "originalTitle": "Sinopsis Film Mechanic: Resurrection Bioskop Trans TV Malam Ini",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 47,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「detikcom」热点《Sinopsis Film Mechanic: Resurrection Bioskop Trans TV Malam Ini》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：detikcom。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "film",
+        "category": "垂类补充",
+        "sourceName": "detikcom",
+        "title": "Sinopsis Film Mechanic: Resurrection Bioskop Trans TV Malam Ini",
+        "publishedAt": "Sun, 26 Jul 2026 07:30:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORThEVzMtS1lFdW54OE9uOFFOYWV4WllyTXpqQkVHN2V0b0pJNUFmNUJpUV8wTktyeTNPUDNOV1BNNHZsYU8yRkRGcFB4Y3pJVUl2Y3JpTEhoaW1aVzBmWVJnbGdmVmJadW5EZW5IT0R1YnVEdTBBQjU3S2tLS0duTUlpUVAyaHVtRUgza1ZQRkNxYW1vSnY5Q3E0YThSbXhQNjhnN3Q2Q0NGYXdZaVFiRdIBtgFBVV95cUxQQllRZGZZbjhBcDRnU1JIc2xFWEVTOExfcnJoemNhQ2MxSk1uSWlFQVZlZlVzYWlYSFRjWlYwdUItd3p3ZWNSd1Nna25QcV9GUm1qWlA0a3UyZGRpTWEySTJ4VGZxLUpDUXRRLWdOTkNncTc2Ui1hWjN2ajVpZnFkX1BIZ2ZCS04wLVhTYTdEXzN4Yi1fZVE5RUZnQkk2WlZ3cEJkTVRVR242anVha3RaemdHTXp0Zw?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Sinopsis Film Mechanic: Resurrection Bioskop Trans TV Malam Ini",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORThEVzMtS1lFdW54OE9uOFFOYWV4WllyTXpqQkVHN2V0b0pJNUFmNUJpUV8wTktyeTNPUDNOV1BNNHZsYU8yRkRGcFB4Y3pJVUl2Y3JpTEhoaW1aVzBmWVJnbGdmVmJadW5EZW5IT0R1YnVEdTBBQjU3S2tLS0duTUlpUVAyaHVtRUgza1ZQRkNxYW1vSnY5Q3E0YThSbXhQNjhnN3Q2Q0NGYXdZaVFiRdIBtgFBVV95cUxQQllRZGZZbjhBcDRnU1JIc2xFWEVTOExfcnJoemNhQ2MxSk1uSWlFQVZlZlVzYWlYSFRjWlYwdUItd3p3ZWNSd1Nna25QcV9GUm1qWlA0a3UyZGRpTWEySTJ4VGZxLUpDUXRRLWdOTkNncTc2Ui1hWjN2ajVpZnFkX1BIZ2ZCS04wLVhTYTdEXzN4Yi1fZVE5RUZnQkk2WlZ3cEJkTVRVR242anVha3RaemdHTXp0Zw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "name": "Umuarama conquista tít…",
+      "originalTitle": "Umuarama conquista título de campeão da 7ª Copa Futel de Futebol de Campo Master",
       "region": "南美洲",
       "country": "巴西",
       "source": [
@@ -929,29 +824,65 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 巴西 本地媒体「O GLOBO」热点《A menos de um ano da Copa, fica a pergunta: o futebol feminino pode ser tão grande como o masculino?》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：O GLOBO。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 巴西 本地媒体「uberlandia.mg.gov.br」热点《Umuarama conquista título de campeão da 7ª Copa Futel de Futebol de Campo Master》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：uberlandia.mg.gov.br。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "futebol",
         "category": "核心话题",
-        "sourceName": "O GLOBO",
-        "title": "A menos de um ano da Copa, fica a pergunta: o futebol feminino pode ser tão grande como o masculino?",
-        "publishedAt": "Sat, 25 Jul 2026 07:00:30 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQlJOdDdvNERiMnUyU180MFl4ZFlvWHZIdURhTHBobnFUSUN6Y2dxNDZUMWppbEJTX0lkR1RvRno0cXo4WjJ0RXBmWVFDMEd3YjNXVXhidDFDV0RITzFpQUEta1hQeHdFYWVtVG5EVFRVc2ZJZ09oeU5YaDVJQTFmVW9Fd0t3ZW5CQWpWQVo3WmI1UjZpMmVlQUU4SGMwMERhSHJ0VndhV0V3Z2UxNWZXTXBXQmwxTjZHejY0RWE4UVlrclRRcENCWTJ2RFpKZ191YXZKX0lPVWhuNjVJMHdLTnNEbWE1Q1Q3V2FTWGNGSVJmQdIBgAJBVV95cUxNOE5hcm1zVm9falFaYXB1N2tWV3c1VVk5STNXYWtrVU93R3pLU1dyZGFKb0RMZl9xLWlEWV8yem5EQWxhQ184VzYwam1mcEh3NGJlWXdFNDNoQVMxQkg2c1UwOWxzdEVjeHlyR3hrVUxtUEFxRDRfbEtFcUV6SGVhOGN1M2xXaE41Y1Bjd0hwSUtrQlptNWVSa3FFYWM3V3h6VHVoYVM3amUzV0FjdE5yYzNHT2UzY2x0MHFIQ1hZSHFidTF6VktwOFdFUjhZbjQtdXc5ZmREMjlEVDFxYVEwMnZJNHJjakh2NjJ0S3FDcHExNEc2VE5XaXpiQjRRZC05?oc=5"
+        "sourceName": "uberlandia.mg.gov.br",
+        "title": "Umuarama conquista título de campeão da 7ª Copa Futel de Futebol de Campo Master",
+        "publishedAt": "Sat, 25 Jul 2026 22:37:09 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSUVjLWNXZ1c2enNXUFNNaVJZaE02Y0Q0cktYRGdkd25LOHBkMWNweDk3RVpwZGNsdC04TE0yY1J5V0FJYTE0Ui1xU0l2dVE1V1Ftd0Y2Qm0tYWlKcHIxRDJ3OTUxaFdVcXJSOGZNSHBZZnpmYTBZbkZ2TXFKY1U5VF9VTHpTVmYyNnpaZVMtbXJQS2Q1MGNXV2I1aldybGo1YzhBcUp6eWw5ekZ3SDBjLVZHWExNOWhmSFJzcTdZbjJYeXc?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "A menos de um ano da Copa, fica a pergunta: o futebol feminino pode ser tão grande como o masculino?",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQlJOdDdvNERiMnUyU180MFl4ZFlvWHZIdURhTHBobnFUSUN6Y2dxNDZUMWppbEJTX0lkR1RvRno0cXo4WjJ0RXBmWVFDMEd3YjNXVXhidDFDV0RITzFpQUEta1hQeHdFYWVtVG5EVFRVc2ZJZ09oeU5YaDVJQTFmVW9Fd0t3ZW5CQWpWQVo3WmI1UjZpMmVlQUU4SGMwMERhSHJ0VndhV0V3Z2UxNWZXTXBXQmwxTjZHejY0RWE4UVlrclRRcENCWTJ2RFpKZ191YXZKX0lPVWhuNjVJMHdLTnNEbWE1Q1Q3V2FTWGNGSVJmQdIBgAJBVV95cUxNOE5hcm1zVm9falFaYXB1N2tWV3c1VVk5STNXYWtrVU93R3pLU1dyZGFKb0RMZl9xLWlEWV8yem5EQWxhQ184VzYwam1mcEh3NGJlWXdFNDNoQVMxQkg2c1UwOWxzdEVjeHlyR3hrVUxtUEFxRDRfbEtFcUV6SGVhOGN1M2xXaE41Y1Bjd0hwSUtrQlptNWVSa3FFYWM3V3h6VHVoYVM3amUzV0FjdE5yYzNHT2UzY2x0MHFIQ1hZSHFidTF6VktwOFdFUjhZbjQtdXc5ZmREMjlEVDFxYVEwMnZJNHJjakh2NjJ0S3FDcHExNEc2VE5XaXpiQjRRZC05?oc=5"
+          "title": "Umuarama conquista título de campeão da 7ª Copa Futel de Futebol de Campo Master",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSUVjLWNXZ1c2enNXUFNNaVJZaE02Y0Q0cktYRGdkd25LOHBkMWNweDk3RVpwZGNsdC04TE0yY1J5V0FJYTE0Ui1xU0l2dVE1V1Ftd0Y2Qm0tYWlKcHIxRDJ3OTUxaFdVcXJSOGZNSHBZZnpmYTBZbkZ2TXFKY1U5VF9VTHpTVmYyNnpaZVMtbXJQS2Q1MGNXV2I1aldybGo1YzhBcUp6eWw5ekZ3SDBjLVZHWExNOWhmSFJzcTdZbjJYeXc?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "name": "Geraldo Ramos: empresá…",
+      "originalTitle": "Geraldo Ramos: empresário uniu música e tecnologia na criação do app Moises AI, que tem mais de 75 milhões de usuários",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 53,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 巴西 本地媒体「O GLOBO」热点《Geraldo Ramos: empresário uniu música e tecnologia na criação do app Moises AI, que tem mais de 75 milhões de usuários》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：O GLOBO。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musica",
+        "category": "垂类补充",
+        "sourceName": "O GLOBO",
+        "title": "Geraldo Ramos: empresário uniu música e tecnologia na criação do app Moises AI, que tem mais de 75 milhões de usuários",
+        "publishedAt": "Sun, 26 Jul 2026 03:12:36 GMT",
+        "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNUFVlSXVmN1Axd3hBNjRqTkpvZ013REg5QWo0eV80Nk44YzlfUTRLYVZYOWlJOFBWVkhxZ2E5OXVDcV9EZWloVWZUYlZhdnBjc0lHWVdnUTJEaEd5VkJIa1lSRF9XdUxHTmw0OU83WVUzUHNjeDJObU1zM2pFX05wYjhKTzJJWEtTQWdUUmhqRjZKRy12NlJULUEyWDdzRmU3V0NIbzBvTWxfQ2tIMlczVlZMdy1PSnVpdGRZQTlaWFBtRlZ2UFpWeXEzNFlQczNWSGFNOFY0YzBRczV1Y3J6cHg4dkItM1Q1QTlCUkRlT1FfRENsM3hLOGlqSVdldXZxRkRZLXZnbjlrdWxteXBF0gGeAkFVX3lxTE5CS1o1ZUYxckp4alRSUl9tbUhfMVdEd19jcEpLZ3kzNFpVbTFYWHVQbDZiS01iV3dxdklqWGdZYkIwNlAyd0VRNVFvWVAwYTg4QnRUY1k4Y0RzR1k1NEFqOUZhNVFuVEpNLUpXMDRKSnVqWWJvdUh5d2Fpb0NJQ2tzbUhUM3JUY0szT3h3SUhPay1lVEc0WVNXenFmdzBNeFN5VW5DMV90MzZiUlpySUZUR1h0RlNTNDIzMFh0R0tVUEpYaXVoWWZETDNrR3lvTmFLbVFFZzVqWi1fOFpGbUVXc0dremV4X1Nqd1lIb25YZThaZ1hFQUFtWEI1S01CckJQNnYzTlZkbjBpb1phYVJfLVkxcC1UbXBISzZZLUE?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Geraldo Ramos: empresário uniu música e tecnologia na criação do app Moises AI, que tem mais de 75 milhões de usuários",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNUFVlSXVmN1Axd3hBNjRqTkpvZ013REg5QWo0eV80Nk44YzlfUTRLYVZYOWlJOFBWVkhxZ2E5OXVDcV9EZWloVWZUYlZhdnBjc0lHWVdnUTJEaEd5VkJIa1lSRF9XdUxHTmw0OU83WVUzUHNjeDJObU1zM2pFX05wYjhKTzJJWEtTQWdUUmhqRjZKRy12NlJULUEyWDdzRmU3V0NIbzBvTWxfQ2tIMlczVlZMdy1PSnVpdGRZQTlaWFBtRlZ2UFpWeXEzNFlQczNWSGFNOFY0YzBRczV1Y3J6cHg4dkItM1Q1QTlCUkRlT1FfRENsM3hLOGlqSVdldXZxRkRZLXZnbjlrdWxteXBF0gGeAkFVX3lxTE5CS1o1ZUYxckp4alRSUl9tbUhfMVdEd19jcEpLZ3kzNFpVbTFYWHVQbDZiS01iV3dxdklqWGdZYkIwNlAyd0VRNVFvWVAwYTg4QnRUY1k4Y0RzR1k1NEFqOUZhNVFuVEpNLUpXMDRKSnVqWWJvdUh5d2Fpb0NJQ2tzbUhUM3JUY0szT3h3SUhPay1lVEc0WVNXenFmdzBNeFN5VW5DMV90MzZiUlpySUZUR1h0RlNTNDIzMFh0R0tVUEpYaXVoWWZETDNrR3lvTmFLbVFFZzVqWi1fOFpGbUVXc0dremV4X1Nqd1lIb25YZThaZ1hFQUFtWEI1S01CckJQNnYzTlZkbjBpb1phYVJfLVkxcC1UbXBISzZZLUE?oc=5"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 104,
-      "growth": 55,
+      "count": 106,
+      "growth": 52,
       "countries": [
         "印度"
       ],
@@ -962,8 +893,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 104,
-      "growth": 33,
+      "count": 106,
+      "growth": 30,
       "countries": [
         "印度尼西亚"
       ],
@@ -974,8 +905,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 69,
-      "growth": 33,
+      "count": 67,
+      "growth": 30,
       "countries": [
         "俄罗斯"
       ],
@@ -986,8 +917,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 75,
-      "growth": 51,
+      "count": 77,
+      "growth": 53,
       "countries": [
         "尼日利亚",
         "南非",
@@ -1001,8 +932,8 @@
       ]
     },
     "南美洲": {
-      "count": 104,
-      "growth": 55,
+      "count": 106,
+      "growth": 52,
       "countries": [
         "巴西",
         "阿根廷",
