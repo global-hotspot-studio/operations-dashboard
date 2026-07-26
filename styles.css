@@ -173,7 +173,7 @@ th{background:#f8f8fa;color:#86868b}tbody tr:hover{background:#fbfbfd}
 @media(max-width:520px){.masonry-gallery{grid-template-columns:1fr}.masonry-gallery .playbook-card{margin-bottom:14px}}
 @media(max-width:1180px){.theme-preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.theme-preview-card{grid-template-columns:150px minmax(0,1fr)}}
 @media(max-width:760px){.theme-preview-grid{grid-template-columns:1fr}.theme-preview-card{grid-template-columns:170px minmax(0,1fr)}}
-@media(max-width:560px){.theme-preview-card{grid-template-columns:120px minmax(0,1fr);gap:10px;border-radius:18px}.theme-preview-info h3{font-size:18px}.theme-preview-info p{font-size:11px;line-height:1.45}.theme-preview-info .play-tags{display:none}.theme-preview-info .visual-actions{grid-template-columns:1fr}.theme-preview-info .visual-actions a{display:none}}
+@media(max-width:560px){.theme-preview-card{grid-template-columns:120px minmax(0,1fr);gap:10px;border-radius:18px}.theme-preview-info h3{font-size:18px}.theme-preview-info p{font-size:11px;line-height:1.45}.theme-preview-info .play-tags{display:none}.theme-preview-info .visual-actions{grid-template-columns:1fr}}
 
 /* 看板为单页锚点结构：侧栏每一项都指向右侧的真实板块。 */
 .view{display:block;scroll-margin-top:24px}

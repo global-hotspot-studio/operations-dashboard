@@ -404,7 +404,7 @@ function renderGallery() {
             <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
             <div class="visual-actions">
               <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>
-              <button class="download-sample" type="button" data-download-url="${escapeAttr(h.preview)}" data-download-name="${escapeAttr(previewDownloadName(h))}">${h.assetType === "direct-wallpaper" ? "下载壁纸" : "下载样图"}</button>
+              <a class="download-sample" href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">${h.assetType === "direct-wallpaper" ? "下载壁纸" : "下载样图"}</a>
             </div>
           </div>
         </article>`;
