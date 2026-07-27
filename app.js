@@ -203,6 +203,7 @@ function applyLanguage(root = document.body) {
   document.documentElement.lang = languageState.current === "en" ? "en" : "zh-CN";
   document.title = languageState.current === "en" ? "TrendOS · Local Trend Opportunity Center" : "AI 热点舆情运营看板";
   $$(".language-option").forEach(button => {
+    button.textContent = button.dataset.language === "zh" ? "中文" : "EN";
     const active = button.dataset.language === languageState.current;
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
