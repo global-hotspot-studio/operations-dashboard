@@ -10,6 +10,210 @@ let strategyCards = [];
 let funnel = [];
 let dashboardMeta = {};
 let state = { region: "全球", source: "全部平台", table: "all" };
+const languageState = {
+  current: localStorage.getItem("trendos-language") === "en" ? "en" : "zh"
+};
+const originalTextByNode = new WeakMap();
+const originalAttrsByNode = new WeakMap();
+const EN_TEXT = {
+  "语言切换": "Language switch",
+  "AI 热点舆情运营看板": "AI Trend Operations Dashboard",
+  "总览": "Overview", "实时热点池": "Live Hotspots", "趋势监测": "Trend Monitor",
+  "爆发预警": "Surge Alerts", "运营候选": "Creative Candidates", "配置中心": "Configuration",
+  "机器人监测中": "Monitoring active", "12 个数据源 · 15 分钟更新": "12 sources · updates every 15 minutes",
+  "本地热点机会中心": "Local Trend Opportunity Center",
+  "从海量信号中识别可模板化机会，驱动内容生产、分发与复盘": "Turn local signals into reusable creative opportunities for production, distribution and review",
+  "定时更新": "Scheduled updates", "读取数据中…": "Loading data…", "↻ 拉取最新": "↻ Refresh",
+  "查看运营候选": "View candidates", "地区": "Region", "全球": "Global", "时间": "Time",
+  "近 24 小时": "Last 24 hours", "近 7 天": "Last 7 days", "近 30 天": "Last 30 days",
+  "平台": "Platform", "全部平台": "All platforms",
+  "筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化": "Filter logic: sustained interest × visual cues × positive sentiment × personalization",
+  "热点趋势": "Trend Momentum", "近 24 小时有效热点数量变化": "Valid hotspot volume over the last 24 hours",
+  "有效热点": "Valid hotspots", "可转模板": "Template-ready",
+  "按增速和跨平台共振识别": "Detected by growth and cross-platform resonance",
+  "实时热点池": "Live Hotspot Pool", "按主题可玩性排序；平台数据、热点动能与可玩性均有明确口径": "Ranked by creative playability, with clear definitions for reach, momentum and theme potential",
+  "全部": "All", "可预测": "Predictable", "实时": "Live", "排名": "Rank", "热点事件": "Hotspot",
+  "主要来源": "Primary source", "平台数据": "Platform reach", "热点动能": "Momentum",
+  "主题可玩性": "Theme potential", "状态": "Status", "运营动作": "Action",
+  "主题样图": "Theme Previews",
+  "沉淀节假日与长线热点的整套主题方向：从壁纸提取色彩与符号，同步生成锁屏、图标与 Dock，便于设计师直接延展为主题资产。": "Curated theme systems for cultural moments and long-running trends, extending wallpaper colors and symbols into lock screens, icons and the Dock.",
+  "复制提示词": "Copy prompt", "下载样图": "Download sample", "下载壁纸": "Download wallpaper",
+  "已复制": "Copied", "节日主题": "Cultural theme", "图标同源生成": "Matching icon system",
+  "尊重表达": "Respectful expression", "纸艺质感": "Paper craft", "低饱和节庆": "Soft festive palette",
+  "提前 4–6 周": "Plan 4–6 weeks ahead", "壁纸 + Dock": "Wallpaper + Dock", "暖金紫调": "Warm gold & plum",
+  "明亮节庆": "Bright celebration", "锁屏 + 图标": "Lock screen + icons", "红金庆典": "Red-gold celebration",
+  "拱券金属": "Arched metalwork", "红黄胜利色": "Victory red & saffron", "暖阳拱廊": "Sunlit arcades",
+  "瓷釉留白": "Porcelain minimalism", "钴蓝笔触": "Cobalt brushwork", "清冷光影": "Cool light",
+  "珍珠母贝": "Mother of pearl", "沙海留白": "Desert minimalism", "低饱和奢感": "Quiet luxury",
+  "皂石材质": "Soapstone texture", "地形曲线": "Topographic curves", "自然手作": "Natural craft",
+  "靛蓝织物": "Indigo textile", "单线构成": "Single-line geometry", "都会质感": "Urban refinement",
+  "陶土材质": "Terracotta texture", "现代曲线": "Modern curves", "手作节奏": "Craft rhythm",
+  "夜庭光影": "Moonlit courtyard", "矿物石灰": "Mineral limestone", "克制黄铜": "Restrained brass",
+  "热点top3样图推荐": "Top 3 Hotspot Inspirations",
+  "先判断热点属性，再选择人物图生图或可直接下载的 OS 壁纸；壁纸可延展为色彩材质、涂鸦插画、异形构图、场景、图标化或动态感主题，不可玩则不更新。": "Assess each hotspot first, then recommend character treatments or downloadable OS wallpapers across materials, illustration, composition, scenes, iconography and motion. No update when the idea is not visually playable.",
+  "运营配置中心": "Operations Configuration",
+  "管理重点市场、平台数据源和热点筛选规则，让运营判断可追溯。": "Manage priority markets, platform sources and screening rules with a traceable operating logic.",
+  "抓取与筛选规则": "Capture & Screening Rules",
+  "只将持续热度、强视觉符号且能转为 OS 主题的话题送入样图推荐。": "Only sustained, visually distinctive topics that can become OS themes enter sample recommendations.",
+  "抓取节奏": "Capture cadence", "预测与实时双轨": "Predictable + real-time",
+  "可预测热点提前 4–6 周准备，提前一周定模板，提前三天上线；实时热点由机器人定时监测。": "Prepare predictable moments 4–6 weeks ahead, lock templates one week ahead and launch three days ahead; bots monitor real-time trends.",
+  "核心地区": "Priority regions", "区域热点池优先": "Local baselines first",
+  "印度、印尼、EE1、SSA、南美建立独立热度基线，避免全球热度掩盖本地机会。": "Maintain independent baselines for India, Indonesia, EE1, SSA and South America so global volume does not hide local opportunities.",
+  "平台来源": "Platform sources", "跨平台交叉验证": "Cross-platform validation",
+  "筛选标准": "Screening criteria", "只留可模板化机会": "Keep template-ready opportunities",
+  "具备持续热度、强视觉符号、正向情绪、可个性化四项特征，才进入运营候选池。": "Candidates must show sustained interest, strong visual cues, positive sentiment and personalization potential.",
+  "进入 AIGC 的决策漏斗": "AIGC Decision Funnel", "每个环节都有明确的淘汰理由": "Every stage has an explicit rejection reason",
+  "原始话题": "Raw topics", "持续热点": "Sustained trends", "视觉符号明确": "Clear visual cues",
+  "可个性化": "Personalizable", "进入模板生产": "Enter template production",
+  "数据已更新": "Data updated", "可预测热点": "Predictable hotspot", "实时热点": "Real-time hotspot",
+  "真实来源": "Verified source", "为什么值得转模板？": "Why is it template-worthy?", "多源信号": "Multi-source signals",
+  "持续性热度": "Sustained interest", "强视觉符号": "Strong visual cues", "正向情绪": "Positive sentiment",
+  "通过": "Pass", "加入候选并转模板": "Add candidate & create template", "已加入运营候选": "Added to candidates",
+  "内部辅助判断": "Internal aid", "正在升温": "Heating up", "持续关注": "Keep watching", "建议观察": "Monitor",
+  "高": "High", "中": "Medium", "低": "Low", "爆发": "Surging", "上升": "Rising", "观察": "Monitor",
+  "已入选": "Selected", "加入候选": "Add candidate", "提示词已复制，可直接粘贴使用": "Prompt copied and ready to paste",
+  "主题提示词已复制，可直接粘贴使用": "Theme prompt copied and ready to paste",
+  "样图已开始下载": "Sample download started", "数据读取失败": "Data load failed",
+  "数据读取失败，请稍后再试": "Data load failed. Please try again.", "✓ 已拉取": "✓ Updated",
+  "读取中…": "Loading…", "已读取线上最新数据": "Latest online data loaded",
+  "印度": "India", "印度尼西亚": "Indonesia", "俄罗斯（东欧）": "Russia (EE1)",
+  "撒哈拉以南非洲": "Sub-Saharan Africa", "南美洲": "South America", "南美": "South America",
+  "肯尼亚": "Kenya", "尼日利亚": "Nigeria", "巴西": "Brazil", "阿根廷": "Argentina",
+  "加拿大": "Canada", "南非": "South Africa", "本地平台": "Local platform",
+  "长线热点 · 世界杯冠军": "Long-running · World Cup champion",
+  "冠军之夜": "Champions’ Night",
+  "以深酒红、鎏金拱券与暖琥珀光粒构建高定庆典氛围；壁纸、图标与 Dock 统一为红漆、金属浮雕和拱形结构。": "A couture celebration in deep wine red, gilded arches and warm amber light, unifying wallpaper, icons and Dock through lacquer, embossed metal and arched forms.",
+  "长线热点 · 西班牙夺冠": "Long-running · Spain victory",
+  "伊比利亚胜光": "Iberian Victory Glow",
+  "以番红、暖红与金色丝缎营造胜利日出的高光；抽象拱廊、飘彩与同源图标共同形成更明亮、更具西班牙气质的主题资产。": "Saffron, warm red and golden silk evoke a victorious sunrise, with abstract arcades, festive color and matching icons creating a brighter Iberian character.",
+  "固定节日 · 印度": "Cultural moment · India",
+  "万寿金辉": "Marigold Radiance",
+  "以象形轮廓、万寿菊、灯盏和兰戈里纹样做非具象节日表达，壁纸与图标共用藏青、金色与藏红色体系。": "A respectful, non-literal celebration using elephant-inspired contours, marigolds, lamps and rangoli, shared across wallpaper and icons in indigo, gold and crimson.",
+  "固定节日 · 南亚": "Cultural moment · South Asia",
+  "花叶晨光": "Petals at Dawn",
+  "以 diya 灯盏、手工纸、浅杏、苔绿与柔和兰戈里纹样形成轻盈的排灯节晨间版本，适合年轻化与低饱和主题资产。": "A light morning Festival of Lights direction using diya lamps, handmade paper, pale apricot, moss green and soft rangoli for a youthful low-saturation theme.",
+  "灯火绽放": "Lights in Bloom",
+  "以灯火、花朵、焰火与夜色渐变形成温暖的节庆主题；同一套纹样可扩展至动态壁纸、锁屏与高频图标。": "Lamps, flowers, fireworks and a night gradient create a warm festive system that can extend into live wallpaper, lock screen and high-frequency icons.",
+  "花灯晴空": "Lantern Daylight",
+  "珊瑚、蜜桃与淡紫纸艺花朵搭配灯笼和灯盏，做出更明亮、亲和的白天节庆主题版本。": "Coral, peach and lilac paper flowers pair with lanterns and lamps for a brighter, friendlier daytime celebration.",
+  "本地文化 · EE1 / 俄罗斯": "Local culture · EE1 / Russia",
+  "瓷白静境": "Porcelain Quiet",
+  "以瓷白、钴蓝笔触与冬日桦影构成清冷留白；釉面、半透明玻璃与银灰细节形成克制、安静的现代质感。": "Porcelain white, cobalt brushwork and winter birch shadows create cool negative space, with glaze, translucent glass and silver-grey detail adding quiet modern refinement.",
+  "本地文化 · 中东 / 海湾": "Local culture · Middle East / Gulf",
+  "沙海珍珠": "Desert Pearl",
+  "以矿物沙色、珍珠母贝和一抹海湾青塑造安静奢感；柔和沙丘曲线与细腻反光，让主题轻盈而有高级感。": "Mineral sand, mother-of-pearl and a touch of Gulf turquoise create quiet luxury through soft dune curves and delicate reflections.",
+  "本地文化 · SSA / 肯尼亚": "Local culture · SSA / Kenya",
+  "裂谷皂石": "Rift Soapstone",
+  "以皂石米白、茶园绿与铜色等高线表达东非地形；手工雕刻触感结合现代留白，避免常见动物符号化表达。": "Soapstone ivory, tea green and copper contours express East African terrain through hand-carved texture and modern negative space, without wildlife clichés.",
+  "本地文化 · SSA / 尼日利亚": "Local culture · SSA / Nigeria",
+  "靛蓝一线": "Indigo Line",
+  "以近黑靛蓝织物、粉笔白和低调黄铜构建都会节奏；单线图形与细密织纹兼顾识别度和简约高级感。": "Near-black indigo textile, chalk white and restrained brass create an urban rhythm, balancing a single-line graphic with fine woven texture.",
+  "本地文化 · 南美": "Local culture · South America",
+  "陶土曲线": "Terracotta Curves",
+  "以陶土、奶油白与现代主义弧面形成温暖秩序；保留手塑质感和少量钴蓝织色，让本地感自然融入极简构图。": "Terracotta, cream and modernist arcs create warm order, with hand-shaped texture and a small cobalt woven accent grounding the minimal composition locally.",
+  "海湾夜庭": "Gulf Night Courtyard",
+  "以深靛蓝、月光石灰岩和少量黄铜塑造安静夜庭；几何光影与珍珠微光克制点缀，呈现建筑感与当代奢华。": "Deep indigo, moonlit limestone and restrained brass shape a quiet courtyard, where geometric light and pearl-like highlights suggest contemporary architectural luxury.",
+  "更新时间未知": "Update time unavailable",
+  "点击跳转到平台原页面": "Open the original platform page",
+  "真实来源 ↗": "Verified source ↗",
+  "抓取热点": "Captured hotspots", "高优先级需响应": "High-priority response",
+  "模板候选": "Theme candidates", "可进入 AIGC 工作流": "Ready for the AIGC workflow",
+  "当前筛选条件下暂无热点": "No hotspots match the current filters",
+  "已加入本地候选": "Added to local candidates", "已移出本地候选": "Removed from local candidates",
+  "直接可用壁纸": "Ready-to-use wallpaper", "锁屏时间留白": "Lock-screen time clearance",
+  "可下载": "Downloadable", "人物图生图": "Character image-to-image",
+  "人物风格模板": "Character style template", "人物风格": "Character style",
+  "图生图": "Image-to-image", "自拍转主题": "Selfie-to-theme",
+  "色彩/材质": "Color / material", "色彩主题": "Color theme",
+  "锁屏 + AOD": "Lock screen + AOD", "图标色板": "Icon palette",
+  "异形/材质": "Shape / material", "异形主视觉": "Distinctive composition",
+  "材质主题": "Material theme", "图标延展": "Icon extension",
+  "涂鸦/插画": "Doodle / illustration", "插画涂鸦": "Illustrated doodle",
+  "动态感": "Motion-inspired", "本地化纹样": "Localized pattern",
+  "海报": "Poster", "海报主视觉": "Poster key visual",
+  "锁屏壁纸": "Lock-screen wallpaper", "氛围套装": "Atmosphere system",
+  "视觉玩法": "Visual concept", "主题模板": "Theme template", "设计灵感": "Design inspiration",
+  "搜索趋势": "Search trend", "Google Trends 搜索趋势": "Google Trends search interest",
+  "Instagram 视觉趋势": "Instagram visual trend", "Facebook 公开内容": "Facebook public content",
+  "TikTok 短视频趋势": "TikTok short-video trend", "X 实时讨论": "Live discussion on X",
+  "本地媒体": "Local media", "本地媒体 / 新闻源": "Local media / news",
+  "GDELT 全球新闻": "GDELT global news", "GDELT 全球新闻数据库": "GDELT global news database",
+  "人工录入": "Manual entry", "运营人工录入": "Operations manual entry",
+  "暂未接入真实跳转": "Verified link not yet connected",
+  "玩法方向": "Creative direction", "专题": "Collection", "热点样图推荐": "Hotspot inspiration",
+  "YouTube 公开数据": "YouTube public data", "Google Trends 相对信号": "Google Trends relative signal",
+  "待接入": "Pending connection", "色彩 / 构图": "Color / composition",
+  "有效热点 / 近 24 小时": "Valid hotspots / last 24 hours"
+};
+
+function toEnglishText(value = "") {
+  const text = String(value).trim();
+  if (!text) return text;
+  if (EN_TEXT[text]) return EN_TEXT[text];
+  const rules = [
+    [/^更新于 (.+)$/, "Updated $1"],
+    [/^当前 (\d+) 个运营候选$/, "$1 current candidates"],
+    [/^(\d+) 个运营候选$/, "$1 candidates"],
+    [/^(\d+) 套主题$/, "$1 themes"],
+    [/^(\d+) 个样图推荐$/, "$1 sample recommendations"],
+    [/^(\d+) 个高优先级$/, "$1 high priority"],
+    [/^播放量 (.+)$/, "Views $1"],
+    [/^搜索热度 (.+)$/, "Search interest $1"],
+    [/^内部辅助判断 · (\d+)\/100$/, "Internal aid · $1/100"],
+    [/^有效率 (.+)$/, "Valid rate $1"],
+    [/^较上轮 \+(\d+)%$/, "+$1% vs previous run"],
+    [/^打开 (.+) 原始内容$/, "Open original on $1"]
+  ];
+  for (const [pattern, replacement] of rules) if (pattern.test(text)) return text.replace(pattern, replacement);
+  return text;
+}
+
+function localized(value) {
+  return languageState.current === "en" ? toEnglishText(value) : value;
+}
+
+function applyLanguage(root = document.body) {
+  if (!root) return;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = walker.nextNode())) {
+    if (!node.nodeValue.trim() || ["SCRIPT", "STYLE"].includes(node.parentElement?.tagName)) continue;
+    if (!originalTextByNode.has(node)) originalTextByNode.set(node, node.nodeValue);
+    const original = originalTextByNode.get(node);
+    if (languageState.current === "zh") node.nodeValue = original;
+    else {
+      const leading = original.match(/^\s*/)?.[0] || "";
+      const trailing = original.match(/\s*$/)?.[0] || "";
+      node.nodeValue = `${leading}${toEnglishText(original)}${trailing}`;
+    }
+  }
+  root.querySelectorAll?.("[aria-label],[title],[placeholder]").forEach(element => {
+    if (!originalAttrsByNode.has(element)) {
+      const values = {};
+      ["aria-label", "title", "placeholder"].forEach(name => {
+        if (element.hasAttribute(name)) values[name] = element.getAttribute(name);
+      });
+      originalAttrsByNode.set(element, values);
+    }
+    const values = originalAttrsByNode.get(element);
+    Object.entries(values).forEach(([name, value]) => {
+      element.setAttribute(name, languageState.current === "en" ? toEnglishText(value) : value);
+    });
+  });
+  document.documentElement.lang = languageState.current === "en" ? "en" : "zh-CN";
+  document.title = languageState.current === "en" ? "TrendOS · Local Trend Opportunity Center" : "AI 热点舆情运营看板";
+  $$(".language-option").forEach(button => {
+    const active = button.dataset.language === languageState.current;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+function setLanguage(language) {
+  languageState.current = language === "en" ? "en" : "zh";
+  localStorage.setItem("trendos-language", languageState.current);
+  applyLanguage();
+}
 
 const themePrompts = {
   worldcupChampionAfterglow: "Premium Spain-victory inspired OS theme artwork: deep wine red, amber gold, warm night-plaza arches, subtle red-and-gold confetti and celebratory light. Reskin wallpaper and icon family in one coherent scarlet lacquer, soft ceramic and gold-metal language; rich, warm and refined. Avoid literal national symbols. No flags, coats of arms, footballs, trophies, team crests, official tournament marks, brands, text or watermarks.",
@@ -116,8 +320,10 @@ function updateDataStatus() {
 }
 
 function initSelects() {
-  $("#regionFilter").innerHTML = regions.map(x => `<option>${x}</option>`).join("");
-  $("#sourceFilter").innerHTML = sources.map(x => `<option>${x}</option>`).join("");
+  $("#regionFilter").innerHTML = regions.map(x => `<option value="${escapeAttr(x)}">${x}</option>`).join("");
+  $("#sourceFilter").innerHTML = sources.map(x => `<option value="${escapeAttr(x)}">${x}</option>`).join("");
+  $("#regionFilter").value = state.region;
+  $("#sourceFilter").value = state.source;
 }
 
 function filtered() {
@@ -432,6 +638,7 @@ function openDrawer(id) {
       </div>`;
   $("#drawerContent").innerHTML = `<p class="eyebrow">HOTSPOT DETAIL</p><h2>${h.name}</h2><p class="meta">${h.region} · ${h.source.join(" / ")} · ${h.type === "predictable" ? "可预测热点" : "实时热点"}</p>${sourceCard}<div class="drawer-score"><div><small>主题可玩性</small><b>${h.score >= 90 ? "高" : h.score >= 75 ? "中" : "低"}</b><span>内部辅助判断 · ${h.score}/100</span></div><div><small>热点动能</small><b class="up">${h.trend >= 60 ? "高" : h.trend >= 35 ? "中" : "低"}</b><span>${h.trend >= 60 ? "正在升温" : h.trend >= 35 ? "持续关注" : "建议观察"}</span></div></div><h3>为什么值得转模板？</h3><p class="meta" style="line-height:1.7">${drawerReason(h)}</p>${signalList(h)}<h3>筛选标准</h3><div class="criteria"><div><span>持续性热度</span><span class="pass">通过</span></div><div><span>强视觉符号</span><span class="pass">通过</span></div><div><span>正向情绪</span><span class="pass">通过</span></div><div><span>可个性化</span><span class="pass">通过</span></div></div><button class="primary drawer-action" data-action="${h.id}">${h.selected ? "已加入运营候选" : "加入候选并转模板"}</button>`;
   $("#detailDrawer").classList.add("open"); $("#drawerBackdrop").classList.add("open");
+  applyLanguage($("#detailDrawer"));
 }
 
 function closeDrawer() { $("#detailDrawer").classList.remove("open"); $("#drawerBackdrop").classList.remove("open"); }
@@ -440,7 +647,7 @@ function toggleCandidate(id) {
   const h = hotspots.find(x => x.id === Number(id)); h.selected = !h.selected; renderAll(); openDrawer(id); showToast(h.selected ? "已加入本地候选" : "已移出本地候选");
 }
 
-function showToast(text) { const t = $("#toast"); t.textContent = text; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1500); }
+function showToast(text) { const t = $("#toast"); t.textContent = localized(text); t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1500); }
 
 async function downloadSample(url, filename = "theme-sample.png") {
   try {
@@ -474,9 +681,13 @@ function renderAll() {
   renderRegions();
   renderGallery();
   renderStrategy();
+  applyLanguage();
 }
 
 function bind() {
+  $$(".language-option").forEach(button => {
+    button.onclick = () => setLanguage(button.dataset.language);
+  });
   $("#regionFilter").onchange = e => { state.region = e.target.value; renderAll(); };
   $("#sourceFilter").onchange = e => { state.source = e.target.value; renderAll(); };
   const viewAnchors = {
@@ -540,7 +751,7 @@ function bind() {
       try { await navigator.clipboard.writeText(h.prompt); } catch {
         const area = document.createElement("textarea"); area.value = h.prompt; document.body.appendChild(area); area.select(); document.execCommand("copy"); area.remove();
       }
-      copy.textContent = "已复制"; showToast("提示词已复制，可直接粘贴使用"); setTimeout(() => copy.textContent = "复制提示词", 1300);
+      copy.textContent = localized("已复制"); showToast("提示词已复制，可直接粘贴使用"); setTimeout(() => copy.textContent = localized("复制提示词"), 1300);
     }
     if (themeCopy) {
       const prompt = themePrompts[themeCopy.dataset.themeCopy];
@@ -548,25 +759,25 @@ function bind() {
       try { await navigator.clipboard.writeText(prompt); } catch {
         const area = document.createElement("textarea"); area.value = prompt; document.body.appendChild(area); area.select(); document.execCommand("copy"); area.remove();
       }
-      themeCopy.textContent = "已复制"; showToast("主题提示词已复制，可直接粘贴使用"); setTimeout(() => themeCopy.textContent = "复制提示词", 1300);
+      themeCopy.textContent = localized("已复制"); showToast("主题提示词已复制，可直接粘贴使用"); setTimeout(() => themeCopy.textContent = localized("复制提示词"), 1300);
     }
     if (e.target.dataset.action) { e.stopPropagation(); toggleCandidate(e.target.dataset.action); }
   });
   $("#closeDrawer").onclick = closeDrawer; $("#drawerBackdrop").onclick = closeDrawer;
   $("#refreshBtn").onclick = async () => {
     const btn = $("#refreshBtn");
-    btn.textContent = "读取中…";
+    btn.textContent = localized("读取中…");
     try {
       await loadDashboardData(true);
       initSelects();
       renderAll();
-      btn.textContent = "✓ 已拉取";
+      btn.textContent = localized("✓ 已拉取");
       showToast("已读取线上最新数据");
     } catch (error) {
-      btn.textContent = "读取失败";
+      btn.textContent = localized("数据读取失败");
       showToast("数据读取失败，请稍后再试");
     } finally {
-      setTimeout(() => btn.textContent = "↻ 拉取最新", 1300);
+      setTimeout(() => btn.textContent = localized("↻ 拉取最新"), 1300);
     }
   };
   $("#candidateBtn").onclick = () => { $(".nav-item[data-view='candidates']").click(); showToast(`当前 ${hotspots.filter(x => x.selected).length} 个运营候选`); };
@@ -581,6 +792,7 @@ async function bootstrap() {
     initSelects();
     bind();
     renderAll();
+    setLanguage(languageState.current);
   } catch (error) {
     $("#lastUpdated").textContent = "数据读取失败";
     $("#liveStatus").textContent = `页面初始化失败：${error.message || error}`;
