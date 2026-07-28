@@ -9,7 +9,8 @@
  *    并映射成看板里的热点信号。
  * 3. 已支持 Google Trends RSS。无需密钥，按重点国家抓取搜索趋势和相关新闻源。
  * 4. 已支持 Google News RSS 和 GDELT 新闻源，补充本地媒体与全球新闻热度。
- * 5. 已预留 X / Instagram / Facebook / TikTok 官方接口连接器；配置对应 Secret 后自动启用。
+ * 5. 已预留 X / Instagram / Facebook 官方接口连接器；配置对应 Secret 后自动启用。
+ *    TikTok Research API 不用于当前商业运营链路，TikTok 线索仅保留人工录入或合规供应商接入。
  */
 
 const fs = require("fs");
@@ -23,6 +24,7 @@ const generatedSamplesPath = path.join(root, "data", "generated-samples.json");
 const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaAccessToken = (process.env.META_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
+const metaGraphVersion = (process.env.META_GRAPH_VERSION || "v24.0").trim();
 const instagramBusinessAccountId = (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const facebookPageIds = (process.env.FACEBOOK_PAGE_IDS || "").split(",").map(item => item.trim()).filter(Boolean);
 const tiktokAccessToken = (process.env.TIKTOK_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
@@ -575,7 +577,28 @@ async function fetchYoutubeSignals() {
     }
   }
 
-  return batches
+  // 同一支视频会同时进入多个国家/地区的热门榜。合并为一条热点，避免在详情中
+  // 把相同判断按地区重复拼接。
+  const grouped = new Map();
+  for (const item of batches) {
+    const key = item.youtube?.videoId || item.originalTitle;
+    const existing = grouped.get(key);
+    if (!existing) {
+      grouped.set(key, { ...item, markets: [item.country] });
+      continue;
+    }
+    existing.markets = [...new Set([...existing.markets, item.country])];
+    if (parseHeat(item.heat) > parseHeat(existing.heat)) {
+      const markets = existing.markets;
+      grouped.set(key, { ...item, markets });
+    }
+  }
+  return [...grouped.values()]
+    .map(item => ({
+      ...item,
+      country: item.markets.join(" / "),
+      reason: `来自 YouTube 热门榜（${item.markets.join("、")}），播放量 ${item.heat}。视觉判断：${visualSignalFromTitle(item.originalTitle)}；适合先进入候选池，由设计师二次判断是否转主题模板。`
+    }))
     .sort((a, b) => b.score - a.score || b.trend - a.trend)
     .slice(0, 16);
 }
@@ -846,7 +869,7 @@ async function fetchXSignals() {
   for (const market of youtubeMarkets.slice(0, 6)) {
     const topics = marketTopics[market.code] || ["music", "football", "fashion"];
     const query = `(${topics.slice(0, 3).map(t => `"${t}"`).join(" OR ")}) lang:${market.code === "BR" ? "pt" : market.code === "RU" ? "ru" : market.code === "ID" ? "id" : market.code === "IN" ? "en" : "es"} -is:retweet`;
-    const url = new URL("https://api.twitter.com/2/tweets/search/recent");
+    const url = new URL("https://api.x.com/2/tweets/search/recent");
     url.searchParams.set("query", query);
     url.searchParams.set("max_results", "10");
     url.searchParams.set("tweet.fields", "created_at,public_metrics,lang,text");
@@ -906,7 +929,7 @@ async function fetchInstagramSignals() {
   const batches = [];
   for (const tag of tags) {
     try {
-      const search = new URL("https://graph.facebook.com/v19.0/ig_hashtag_search");
+      const search = new URL(`https://graph.facebook.com/${metaGraphVersion}/ig_hashtag_search`);
       search.searchParams.set("user_id", instagramBusinessAccountId);
       search.searchParams.set("q", tag);
       search.searchParams.set("access_token", metaAccessToken);
@@ -914,7 +937,7 @@ async function fetchInstagramSignals() {
       if (!searchResponse.ok) throw new Error(`Instagram hashtag ${tag} 查询失败：${searchResponse.status} ${(await searchResponse.text()).slice(0, 160)}`);
       const hashtagId = (await searchResponse.json()).data?.[0]?.id;
       if (!hashtagId) continue;
-      const media = new URL(`https://graph.facebook.com/v19.0/${hashtagId}/recent_media`);
+      const media = new URL(`https://graph.facebook.com/${metaGraphVersion}/${hashtagId}/recent_media`);
       media.searchParams.set("user_id", instagramBusinessAccountId);
       media.searchParams.set("fields", "id,caption,media_type,media_url,permalink,timestamp,like_count,comments_count");
       media.searchParams.set("access_token", metaAccessToken);
@@ -967,7 +990,7 @@ async function fetchFacebookSignals() {
   const batches = [];
   for (const pageId of facebookPageIds) {
     try {
-      const url = new URL(`https://graph.facebook.com/v19.0/${pageId}/posts`);
+      const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/${pageId}/posts`);
       url.searchParams.set("fields", "id,message,created_time,permalink_url,shares,reactions.summary(true),comments.summary(true),attachments{media,url,title}");
       url.searchParams.set("limit", "8");
       url.searchParams.set("access_token", metaAccessToken);
@@ -1100,7 +1123,8 @@ async function fetchExternalSignals() {
    * 可接入来源建议：
    * - YouTube Data API：已接入，配置 YOUTUBE_API_KEY 即可启用。
    * - Google Trends RSS：已接入，无需密钥，适合趋势和搜索热度
-   * - X / Instagram / Facebook / TikTok：已预留官方接口连接器，配置 Secret 后启用
+   * - X / Instagram / Facebook：已预留官方接口连接器，配置 Secret 后启用
+   * - TikTok：商业运营链路暂用人工观察或合规数据供应商，不启用 Research API
    * - 公司内部飞书表格 / CMS：适合运营手动入选与复盘
    */
   const youtubeSignals = await fetchYoutubeSignals();

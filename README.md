@@ -15,7 +15,7 @@
 当前版本已经从“静态展示页”升级为“定时更新工具底座”：
 
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
-- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT 新闻源，并预留 X / Instagram / Facebook / TikTok 官方接口连接器。
+- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT 新闻源，并预留 X / Instagram / Facebook 官方接口连接器。
 - `data/manual-hotspots.json`：人工热点入口，运营/设计师可手动补充 TikTok、Instagram、X 等暂未授权平台上观察到的热点。
 
 ### 每日更新与样图策略
@@ -99,27 +99,37 @@ GDELT 用于补充跨语言、跨国家的新闻热度信号，不需要额外 S
 
 ### 其他社媒平台真实接入
 
-X / Instagram / Facebook / TikTok 都需要官方开发者权限和 token。代码连接器已经写好，拿到权限后在 GitHub 仓库 Secrets 里补齐即可启用：
+当前真实接入状态：
+
+| 平台 | 当前状态 | 数据范围 |
+| --- | --- | --- |
+| X | 代码已完成，等待 Bearer Token | 最近 7 天公开讨论的 Recent Search |
+| Instagram | 代码已完成，等待 Meta 权限与专业账号 | 指定 Hashtag 的近期媒体，不是全网热榜 |
+| Facebook | 代码已完成，等待 Meta 权限与主页 ID | 指定 Facebook Page 的帖子，不是全网热榜 |
+| TikTok | 不直接启用 Research API | 商业运营账号不满足 Research API 资格；先用人工观察或合规数据供应商 |
+
+X / Instagram / Facebook 拿到官方权限后，在 GitHub 仓库 Secrets 里补齐：
 
 ```text
 X_BEARER_TOKEN
 META_ACCESS_TOKEN
 INSTAGRAM_BUSINESS_ACCOUNT_ID
 FACEBOOK_PAGE_IDS
-TIKTOK_ACCESS_TOKEN
 ```
 
 启用逻辑：
 
-- X：调用 X API recent search，获取实时讨论与互动数据。
-- Instagram：调用 Instagram Graph API 的 hashtag search / recent media，获取视觉内容线索。
-- Facebook：调用 Facebook Graph API 的 Page posts，获取公开页面传播数据。
-- TikTok：调用 TikTok Research API，获取短视频播放、互动、标签数据。
+- X：在 X Developer Console 创建 App，生成 Bearer Token；脚本调用 X API Recent Search 获取公开讨论与互动数据。
+- Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
+- Facebook：配置需要监控的 Page ID；脚本调用 Facebook Graph API 的 Page Posts 获取指定主页传播数据。
+- TikTok：Research API 面向符合条件的非营利研究人员，Token 也不适合当前长期定时任务；当前不把它冒充为已开通的商业实时源。
 
 如果 Secret 未配置，脚本会明确跳过该平台，不会生成假数据。
+
+配置完成后，可在 GitHub Actions 手动运行 `Check social platform access`。它只检查权限是否可用，不会显示或保存 Token。
 
 后续接入更多热点源时，只需要扩展 `scripts/update-hotspots.js` 里的 `fetchExternalSignals()`：
 
 - 飞书表格 / 内部 CMS：用于运营手动入选、备注、复盘和样图资产管理。
 
-> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、人工热点入口已接入或可用；TikTok / Instagram / X / Facebook 已完成接口框架，等待官方权限和 token。
+> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、人工热点入口已接入或可用；X / Instagram / Facebook 已完成正式接口框架，等待官方权限和 token。TikTok 保留人工观察或合规供应商接入，不使用不符合商业运营资格的 Research API。

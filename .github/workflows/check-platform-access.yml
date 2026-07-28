@@ -1,16 +1,13 @@
-name: Update hotspot dashboard data
+name: Check social platform access
 
 on:
-  schedule:
-    # GitHub Actions 使用 UTC；01:00 UTC = 北京时间每天早上 09:00。
-    - cron: "0 1 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  update-data:
+  check-access:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -21,18 +18,11 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Refresh hotspot data
-        run: node scripts/update-hotspots.js
+      - name: Verify configured platform credentials
+        run: node scripts/check-platform-access.js
         env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           META_GRAPH_VERSION: v24.0
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
           FACEBOOK_PAGE_IDS: ${{ secrets.FACEBOOK_PAGE_IDS }}
-
-      - name: Commit updated data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: auto update hotspot dashboard data"
-          file_pattern: data/dashboard.json data/dashboard-playbook.json
