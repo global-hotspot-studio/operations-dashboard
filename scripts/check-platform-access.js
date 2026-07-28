@@ -53,6 +53,11 @@ async function checkX() {
     const json = await getJson(url, { authorization: `Bearer ${xBearerToken}` });
     passed("X", `Recent Search 可用，本次返回 ${json.data?.length || 0} 条。`);
   } catch (error) {
+    if (error.message.includes("HTTP 402") && error.message.includes("credits depleted")) {
+      configuredFailures += 1;
+      console.error("△ X：Bearer Token 有效，但账户 API credits 已用尽。请在 X Developer Console 的 Billing → Credits 充值后重试。");
+      return;
+    }
     failed("X", error);
   }
 }
