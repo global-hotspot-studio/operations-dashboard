@@ -700,13 +700,21 @@ function renderGallery() {
 
 function filterLibraryItems(items, mode) {
   const now = Date.now();
-  return items.filter(item => {
-    const generatedAt = Date.parse(item.generatedAt || "");
-    const ageDays = Number.isFinite(generatedAt) ? (now - generatedAt) / 86400000 : 0;
-    if (mode === "archive") return ageDays > 30;
-    if (mode === "all") return true;
-    return ageDays <= 30;
-  });
+  return items
+    .filter(item => {
+      const generatedAt = Date.parse(item.generatedAt || "");
+      const ageDays = Number.isFinite(generatedAt) ? (now - generatedAt) / 86400000 : 0;
+      if (mode === "archive") return ageDays > 30;
+      if (mode === "all") return true;
+      return ageDays <= 30;
+    })
+    .sort((a, b) => {
+      const aGeneratedAt = Date.parse(a.generatedAt || "");
+      const bGeneratedAt = Date.parse(b.generatedAt || "");
+      const aTime = Number.isFinite(aGeneratedAt) ? aGeneratedAt : 0;
+      const bTime = Number.isFinite(bGeneratedAt) ? bGeneratedAt : 0;
+      return bTime - aTime;
+    });
 }
 
 function renderThemeGallery() {
