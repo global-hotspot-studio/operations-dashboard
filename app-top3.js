@@ -10,6 +10,7 @@ let strategyCards = [];
 let funnel = [];
 let dashboardMeta = {};
 let state = { region: "全球", source: "全部平台", table: "all" };
+let libraryFilters = { wallpaper: "recent" };
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -42,25 +43,43 @@ async function loadDashboardData(force = false) {
   }
   if (!data) throw new Error(`数据读取失败；已尝试 ${urls.length} 个地址。${errors.join(" | ")}`);
 
-  // 精品样图由人工触发的 AI 生图批次单独维护，不能被定时热点刷新覆盖。
-  const sampleUrls = [
-    // 优先同一版 Pages 内的样图清单，确保页面代码和样图批次同步发布。
-    `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`,
-    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`
+  // 壁纸模板库由按可玩性触发的 AI 生图批次单独维护，不能被每日热点刷新覆盖。
+  const sampleManifestGroups = [
+    [
+      `./data/generated-wallpapers.json?t=${stamp}${force ? "&force=1" : ""}`,
+      `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-wallpapers.json?t=${stamp}`
+    ],
+    [
+      `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`,
+      `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`
+    ]
   ];
-  for (const url of sampleUrls) {
-    try {
-      const response = await fetch(url, { cache: "no-store" });
-      if (!response.ok) continue;
-      const sampleBatch = await response.json();
-      if (Array.isArray(sampleBatch.samples) && sampleBatch.samples.length) {
-        data.templateOutputs = sampleBatch.samples;
-        data.samplePolicy = sampleBatch.policy || "";
+  const wallpaperSamples = [];
+  for (const urls of sampleManifestGroups) {
+    for (const url of urls) {
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) continue;
+        const sampleBatch = await response.json();
+        if (!Array.isArray(sampleBatch.samples) || !sampleBatch.samples.length) continue;
+        wallpaperSamples.push(...sampleBatch.samples.map(sample => ({
+          ...sample,
+          libraryType: "wallpaper",
+          generatedAt: sample.generatedAt || sampleBatch.generatedAt || ""
+        })));
+        if (!data.wallpaperBatchGeneratedAt || Date.parse(sampleBatch.generatedAt || "") > Date.parse(data.wallpaperBatchGeneratedAt || "")) {
+          data.samplePolicy = sampleBatch.policy || "";
+          data.wallpaperBatchGeneratedAt = sampleBatch.generatedAt || "";
+          data.wallpaperBatchCadence = sampleBatch.cadence || "";
+        }
         break;
+      } catch (error) {
+        // 当前地址不可用时继续尝试同一清单的线上备份。
       }
-    } catch (error) {
-      // 样图批次不可用时仍展示热点数据中的兜底内容。
     }
+  }
+  if (wallpaperSamples.length) {
+    data.templateOutputs = [...new Map(wallpaperSamples.map(sample => [sample.id, sample])).values()];
   }
 
   dashboardMeta = data;
@@ -367,8 +386,16 @@ function renderRegions() {
 }
 
 function renderGallery() {
-  const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
-  $("#galleryCount").textContent = `${list.length} 个样图推荐`;
+  const allItems = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
+  const list = filterLibraryItems(allItems, libraryFilters.wallpaper);
+  const batchDate = dashboardMeta.wallpaperBatchGeneratedAt
+    ? formatUpdateTime(dashboardMeta.wallpaperBatchGeneratedAt).split(" ")[0]
+    : "";
+  $("#galleryCount").textContent = `${list.length}/${allItems.length} 个壁纸样图${batchDate ? ` · ${batchDate} 批次` : ""}`;
+  if (!list.length) {
+    $("#visualGallery").innerHTML = `<div class="library-empty">当前筛选范围暂无样图；历史资产仍会保留，不会被删除。</div>`;
+    return;
+  }
   $("#visualGallery").innerHTML = `<div class="masonry-gallery">${list.map(h => {
     const nameText = sampleName(h);
     return `<article class="playbook-card image-playbook-card">
@@ -390,6 +417,17 @@ function renderGallery() {
           </div>
         </article>`;
   }).join("")}</div>`;
+}
+
+function filterLibraryItems(items, mode) {
+  const now = Date.now();
+  return items.filter(item => {
+    const generatedAt = Date.parse(item.generatedAt || "");
+    const ageDays = Number.isFinite(generatedAt) ? (now - generatedAt) / 86400000 : 0;
+    if (mode === "archive") return ageDays > 30;
+    if (mode === "all") return true;
+    return ageDays <= 30;
+  });
 }
 
 function renderStrategy() {
@@ -460,6 +498,7 @@ function renderAll() {
 function bind() {
   $("#regionFilter").onchange = e => { state.region = e.target.value; renderAll(); };
   $("#sourceFilter").onchange = e => { state.source = e.target.value; renderAll(); };
+  $("#wallpaperTimeFilter").onchange = e => { libraryFilters.wallpaper = e.target.value; renderGallery(); };
   $$(".nav-item").forEach(b => b.onclick = () => {
     $$(".nav-item").forEach(x => x.classList.remove("active")); b.classList.add("active");
     const mode = b.dataset.view;

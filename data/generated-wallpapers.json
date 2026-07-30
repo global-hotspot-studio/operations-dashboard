@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "libraryType": "wallpaper",
+  "batchId": "wallpaper-2026-07-30-playability",
+  "generatedAt": "2026-07-30T09:05:00.000Z",
+  "releaseStatus": "watch",
+  "cadence": "预测与实时双轨：固定节假日提前 4–6 周准备；实时热点至少 7 天复核一次，但不是每日更新。",
+  "policy": "壁纸库只由长期热点或临近固定节假日触发；可玩性用于决定优先级、表现方式与更新数量。跨平台信号用于提升证据可信度，但不是生图前提。新增样图保留 30 天，之后自动归档但不删除。",
+  "trigger": {
+    "reason": "本批实时信号尚未形成持续性；保留为观察池，待连续观测后再决定是否发布壁纸样图。",
+    "minimumIntervalDays": 7,
+    "maximumAgeDays": 21
+  },
+  "hotspots": [
+    {
+      "id": 1018,
+      "name": "Intents Festival 2026 closing ceremony.",
+      "source": "Instagram",
+      "sourceUrl": "https://www.instagram.com/reel/DbaQHwlsEXj/",
+      "playabilityScore": 92,
+      "direction": "音乐节闭幕的光场、玻璃飘带与仪式感"
+    },
+    {
+      "id": 1019,
+      "name": "蜘蛛与蛛网艺术符号",
+      "source": "Instagram",
+      "sourceUrl": "https://www.instagram.com/reel/DbaNgjyT-IJ/",
+      "playabilityScore": 90,
+      "direction": "韧性、创造力与自我路径的抽象艺术符号"
+    },
+    {
+      "id": 1008,
+      "name": "Willy Paul - Kangaroo/Komasava",
+      "source": "YouTube",
+      "sourceUrl": "https://www.youtube.com/watch?v=dDc--2EaSvA",
+      "playabilityScore": 88,
+      "direction": "肯尼亚音乐节奏、织物曲线与暖色动势"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": 1018,
+      "name": "Intents Festival 2026 closing ceremony.",
+      "source": ["Instagram"],
+      "blocker": "单平台且非核心地区信号，需要与 TikTok、YouTube、Google Trends 或本地媒体交叉验证。"
+    },
+    {
+      "id": 1019,
+      "name": "蜘蛛与蛛网艺术符号",
+      "source": ["Instagram"],
+      "blocker": "单平台且非核心地区信号，需要跨平台验证后再评估人群可个性化程度。"
+    },
+    {
+      "id": 1008,
+      "name": "Willy Paul - Kangaroo/Komasava",
+      "source": ["YouTube"],
+      "blocker": "核心地区音乐信号，但尚未完成第二平台验证。"
+    }
+  ],
+  "samples": []
+}

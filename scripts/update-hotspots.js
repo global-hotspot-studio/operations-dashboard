@@ -9,7 +9,7 @@
  *    并映射成看板里的热点信号。
  * 3. 已支持 Google Trends RSS。无需密钥，按重点国家抓取搜索趋势和相关新闻源。
  * 4. 已支持 Google News RSS 和 GDELT 新闻源，补充本地媒体与全球新闻热度。
- * 5. 已预留 X / Instagram / Facebook 官方接口连接器；配置对应 Secret 后自动启用。
+ * 5. 已接入 X / Instagram / Facebook 官方接口连接器；配置对应 Secret 后自动启用。
  *    TikTok Research API 不用于当前商业运营链路，TikTok 线索仅保留人工录入或合规供应商接入。
  */
 
@@ -21,6 +21,10 @@ const dataPath = path.join(root, "data", "dashboard.json");
 const playbookDataPath = path.join(root, "data", "dashboard-playbook.json");
 const manualDataPath = path.join(root, "data", "manual-hotspots.json");
 const generatedSamplesPath = path.join(root, "data", "generated-samples.json");
+const generatedWallpapersPath = path.join(root, "data", "generated-wallpapers.json");
+const generatedThemesPath = path.join(root, "data", "generated-themes.json");
+const holidayCalendarPath = path.join(root, "data", "holiday-calendar.json");
+const hotspotLifecyclePath = path.join(root, "data", "hotspot-lifecycle.json");
 const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaAccessToken = (process.env.META_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
@@ -42,7 +46,9 @@ const youtubeMarkets = [
   { code: "ZA", country: "南非", region: "撒哈拉以南非洲" },
   { code: "KE", country: "肯尼亚", region: "撒哈拉以南非洲" },
   { code: "GH", country: "加纳", region: "撒哈拉以南非洲" },
-  { code: "RU", country: "俄罗斯", region: "俄罗斯（东欧）" }
+  { code: "RU", country: "俄罗斯", region: "俄罗斯（东欧）" },
+  { code: "SA", country: "沙特阿拉伯", region: "中东" },
+  { code: "AE", country: "阿联酋", region: "中东" }
 ];
 
 const googleTrendsMarkets = youtubeMarkets;
@@ -61,7 +67,9 @@ const marketTopics = {
   ZA: ["amapiano", "football", "fashion", "music", "south africa"],
   KE: ["music", "football", "fashion", "nairobi", "festival"],
   GH: ["music", "football", "fashion", "afrobeats", "ghana"],
-  RU: ["музыка", "футбол", "кино", "мода", "сериал"]
+  RU: ["музыка", "футбол", "кино", "мода", "сериал"],
+  SA: ["music", "football", "fashion", "ramadan", "saudi"],
+  AE: ["music", "football", "fashion", "ramadan", "dubai"]
 };
 
 const googleNewsLocales = {
@@ -76,7 +84,9 @@ const googleNewsLocales = {
   ZA: { hl: "en-ZA", ceid: "ZA:en" },
   KE: { hl: "en-KE", ceid: "KE:en" },
   GH: { hl: "en-GH", ceid: "GH:en" },
-  RU: { hl: "ru-RU", ceid: "RU:ru" }
+  RU: { hl: "ru-RU", ceid: "RU:ru" },
+  SA: { hl: "ar-SA", ceid: "SA:ar" },
+  AE: { hl: "ar-AE", ceid: "AE:ar" }
 };
 
 function readDashboard() {
@@ -457,14 +467,31 @@ function samplesForHotspot(index) {
   return [visualPlaySamples[5]];
 }
 
-function readGeneratedSampleOutputs() {
+function readJsonFile(filePath, fallback = {}) {
   try {
-    const payload = JSON.parse(fs.readFileSync(generatedSamplesPath, "utf8"));
-    if (!Array.isArray(payload.samples) || !payload.samples.length) return [];
-    return payload.samples;
+    return JSON.parse(fs.readFileSync(filePath, "utf8"));
   } catch (error) {
-    return [];
+    return fallback;
   }
+}
+
+function readWallpaperBatch() {
+  const current = readJsonFile(generatedWallpapersPath);
+  if (Array.isArray(current.samples) && current.samples.length) return current;
+  return readJsonFile(generatedSamplesPath);
+}
+
+function readThemeBatch() {
+  return readJsonFile(generatedThemesPath);
+}
+
+function readHolidayCalendar() {
+  return readJsonFile(holidayCalendarPath, { planningWindowDays: 75, events: [] });
+}
+
+function readGeneratedSampleOutputs() {
+  const payload = readWallpaperBatch();
+  return Array.isArray(payload.samples) ? payload.samples : [];
 }
 
 function samplePromptForHotspot(sample, hotspot) {
@@ -476,8 +503,8 @@ function samplePromptForHotspot(sample, hotspot) {
 }
 
 function buildTemplateOutputs(hotspots) {
-  // 精品样图由人工触发的图片生成批次维护；定时抓取只更新热点，
-  // 不会用固定素材把已审核的真实样图覆盖掉。
+  // 壁纸模板库只由长期热点或临近固定节日触发；每日抓取只更新热点，
+  // 不会覆盖已审核的真实壁纸。主题模板库使用独立清单和更慢的更新节奏。
   const generatedSamples = readGeneratedSampleOutputs();
   if (generatedSamples.length) return generatedSamples;
 
@@ -507,11 +534,250 @@ function buildTemplateOutputs(hotspots) {
         preview: sample.preview,
         prompt: samplePromptForHotspot(sample, hotspot),
         source: hotspot.source,
-        sourceUrl: hotspot.youtube?.url || hotspot.trends?.url || hotspot.local?.url || hotspot.gdelt?.url || hotspot.manual?.url || "",
+        sourceUrl: sourceUrlForHotspot(hotspot),
         generatedFrom: "daily_top3_visual_sample_recommendation"
       };
     })
   );
+}
+
+function sourceUrlForHotspot(item) {
+  return item.instagram?.url
+    || item.facebook?.url
+    || item.youtube?.url
+    || item.trends?.url
+    || item.local?.url
+    || item.gdelt?.url
+    || item.manual?.url
+    || item.signals?.[0]?.url
+    || "";
+}
+
+function stableHotspotKey(item) {
+  const source = (item.source || []).join("+").toLowerCase();
+  const title = String(item.originalTitle || item.name || "")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .slice(0, 96);
+  return `${source}:${title}`;
+}
+
+function readHotspotLifecycle() {
+  return readJsonFile(hotspotLifecyclePath, { schemaVersion: 1, records: {} });
+}
+
+function updateHotspotLifecycle(hotspots, now) {
+  const lifecycle = readHotspotLifecycle();
+  const records = lifecycle.records || {};
+  const observedAt = now.toISOString();
+  const observedDate = observedAt.slice(0, 10);
+  for (const item of hotspots) {
+    const key = stableHotspotKey(item);
+    const previous = records[key] || {};
+    const observedDates = [...new Set([...(previous.observedDates || []), observedDate])].slice(-45);
+    records[key] = {
+      key,
+      name: item.originalTitle || item.name,
+      firstSeenAt: previous.firstSeenAt || observedAt,
+      lastSeenAt: observedAt,
+      observedDates,
+      observationCount: observedDates.length,
+      sources: [...new Set([...(previous.sources || []), ...(item.source || [])])],
+      markets: [...new Set([...(previous.markets || []), ...(item.markets || []), item.country].filter(Boolean))]
+    };
+  }
+  const keepAfter = now.getTime() - 45 * 86400000;
+  lifecycle.records = Object.fromEntries(Object.entries(records).filter(([, record]) =>
+    Date.parse(record.lastSeenAt || "") >= keepAfter
+  ));
+  lifecycle.updatedAt = observedAt;
+  fs.writeFileSync(hotspotLifecyclePath, `${JSON.stringify(lifecycle, null, 2)}\n`);
+  return lifecycle.records;
+}
+
+function scoreTemplatePlayability(item, libraryType = "wallpaper") {
+  const text = `${item.originalTitle || item.name || ""} ${item.reason || ""} ${item.prompt || ""}`.toLowerCase();
+  const visualPattern = /music|song|dance|concert|festival|football|soccer|cricket|fashion|makeup|beauty|art|tattoo|city|travel|carnaval|futebol|musica|moda|afrobeats|amapiano|bollywood|kpop|idol|celebration|ceremony|design|culture|craft|textile|architecture/i;
+  const longRunningPattern = /festival|holiday|diwali|ramadan|christmas|new year|world cup|carnaval|carnival|culture|craft|textile|architecture|season|championship/i;
+  const lowPlayPattern = /weather|lottery|tax|gasolina|petrol|gold price|stock|bank|government|minister|election|policy|crime|death|accident|war|court|visa|exam|result|salary|pension|fuel|diesel/i;
+  const copyrightPattern = /official trailer|avengers|jumanji|marvel|disney|netflix|fortnite|robux|movie trailer|game trailer/i;
+  const sourceBoost = item.source?.includes("Instagram") ? 10
+    : item.source?.includes("YouTube") ? 7
+      : item.source?.includes("本地平台") ? 6
+        : item.source?.includes("Google Trends") ? 4 : 2;
+  const visualBoost = visualPattern.test(text) ? 14 : 0;
+  const lowPlayPenalty = lowPlayPattern.test(text) ? 38 : 0;
+  const copyrightPenalty = copyrightPattern.test(text) ? 32 : 0;
+  const lifecycleBoost = libraryType === "theme"
+    ? (longRunningPattern.test(text) || item.type === "predictable" ? 18 : -22)
+    : 0;
+  const score = Math.round(
+    item.score * 0.58
+    + item.trend * 0.32
+    + sourceBoost
+    + visualBoost
+    + lifecycleBoost
+    - lowPlayPenalty
+    - copyrightPenalty
+  );
+  return clamp(score, 0, 100);
+}
+
+function evaluateRealtimeProductionReadiness(item, libraryType = "wallpaper", lifecycleRecords = {}) {
+  const text = `${item.originalTitle || item.name || ""} ${item.reason || ""} ${item.prompt || ""}`.toLowerCase();
+  const sources = [...new Set((item.source || []).filter(Boolean))];
+  const coreRegionPattern = /印度|印度尼西亚|印尼|俄罗斯|东欧|中东|海湾|沙特|阿联酋|撒哈拉以南非洲|南美洲|南美|india|indonesia|russia|middle east|gulf|saudi|uae|ssa|africa|brazil|argentina|colombia|chile|peru/i;
+  const visualPattern = /music|song|dance|concert|festival|football|soccer|cricket|fashion|makeup|beauty|art|tattoo|city|travel|carnaval|futebol|musica|moda|afrobeats|amapiano|bollywood|kpop|idol|celebration|ceremony|design|culture|craft|textile|architecture|色彩|服装|舞蹈|音乐|节庆|艺术|时尚/i;
+  const personalizablePattern = /music|song|dance|festival|football|soccer|cricket|fashion|makeup|beauty|art|tattoo|portrait|selfie|outfit|style|celebration|culture|craft|textile|舞蹈|音乐|节庆|艺术|时尚|穿搭|自拍|人像/i;
+  const riskPattern = /death|killed|crime|war|accident|court|election|government|minister|politic|disaster|attack|宗教冲突|政治|战争|死亡|事故|犯罪/i;
+  const copyrightPattern = /official trailer|avengers|jumanji|marvel|disney|netflix|fortnite|robux|movie trailer|game trailer/i;
+  const record = lifecycleRecords[stableHotspotKey(item)] || {};
+  const firstSeen = Date.parse(record.firstSeenAt || "");
+  const persistenceDays = Number.isFinite(firstSeen) ? Math.floor((Date.now() - firstSeen) / 86400000) : 0;
+  const screening = {
+    crossPlatformVerified: sources.length >= 2,
+    coreRegionPriority: coreRegionPattern.test(`${item.region || ""} ${item.country || ""}`),
+    sustainedHeat: Number(item.score || 0) >= 84 && Number(item.trend || 0) >= 45,
+    observationCount: Number(record.observationCount || 0),
+    persistenceDays,
+    longRunning: item.type === "predictable"
+      || Number(record.observationCount || 0) >= 2
+      || persistenceDays >= 2,
+    strongVisualSymbol: visualPattern.test(text),
+    positiveEmotion: !riskPattern.test(text),
+    personalizable: personalizablePattern.test(text),
+    copyrightControllable: !copyrightPattern.test(text),
+    lifecycleFit: libraryType === "theme" ? item.type === "predictable" || Number(record.observationCount || 0) >= 2 || persistenceDays >= 2 : true
+  };
+  const productionReady = screening.longRunning
+    && screening.positiveEmotion
+    && screening.copyrightControllable;
+  return {
+    ...screening,
+    productionReady,
+    status: productionReady ? "production-ready" : "watch"
+  };
+}
+
+function daysSince(iso, now) {
+  const timestamp = Date.parse(iso || "");
+  if (!Number.isFinite(timestamp)) return 999;
+  return Math.max(0, Math.floor((now.getTime() - timestamp) / 86400000));
+}
+
+function buildTemplateLibraryStatus(hotspots, now, lifecycleRecords = {}) {
+  const wallpaperBatch = readWallpaperBatch();
+  const themeBatch = readThemeBatch();
+  const holidayCalendar = readHolidayCalendar();
+  const screenedHotspots = libraryType => hotspots
+    .map(item => ({
+      id: item.id,
+      key: stableHotspotKey(item),
+      name: item.originalTitle || item.name,
+      source: item.source || [],
+      sourceUrl: sourceUrlForHotspot(item),
+      region: item.region,
+      playabilityScore: scoreTemplatePlayability(item, libraryType),
+      reason: item.reason,
+      screening: evaluateRealtimeProductionReadiness(item, libraryType, lifecycleRecords),
+      triggerType: "realtime"
+    }))
+    .sort((a, b) =>
+      Number(b.screening.coreRegionPriority) - Number(a.screening.coreRegionPriority)
+      || b.playabilityScore - a.playabilityScore
+    );
+  const rankCandidates = libraryType => screenedHotspots(libraryType)
+    .filter(item => item.screening.productionReady)
+    .slice(0, 5);
+  const rankWatchlist = libraryType => screenedHotspots(libraryType)
+    .filter(item => !item.screening.productionReady)
+    .filter(item => item.playabilityScore >= 72)
+    .slice(0, 5);
+
+  const wallpaperCandidates = rankCandidates("wallpaper");
+  const hotspotThemeCandidates = rankCandidates("theme");
+  const wallpaperWatchlist = rankWatchlist("wallpaper");
+  const themeWatchlist = rankWatchlist("theme");
+  const planningWindowDays = Number(holidayCalendar.planningWindowDays || 75);
+  const holidayCandidates = (holidayCalendar.events || [])
+    .map(event => {
+      const eventDate = Date.parse(`${event.date}T00:00:00+08:00`);
+      const daysUntil = Number.isFinite(eventDate)
+        ? Math.ceil((eventDate - now.getTime()) / 86400000)
+        : 999;
+      return {
+        id: event.id,
+        key: `holiday:${event.id}`,
+        name: event.name,
+        source: ["节假日日历"],
+        sourceUrl: "",
+        region: event.region,
+        market: event.market,
+        date: event.date,
+        daysUntil,
+        playabilityScore: Number(event.themePotential || 0),
+        reason: event.visualDirection,
+        triggerType: "holiday"
+      };
+    })
+    .filter(item => item.daysUntil >= 0 && item.daysUntil <= planningWindowDays);
+  const themeCandidates = [...holidayCandidates, ...hotspotThemeCandidates]
+    .sort((a, b) => b.playabilityScore - a.playabilityScore)
+    .slice(0, 5);
+  const currentWallpaperKeys = new Set(
+    (wallpaperBatch.hotspots || []).map(item => item.id ? `id:${item.id}` : item.key).filter(Boolean)
+  );
+  const newWallpaperCount = wallpaperCandidates.filter(item =>
+    !currentWallpaperKeys.has(`id:${item.id}`) && !currentWallpaperKeys.has(item.key)
+  ).length;
+  const wallpaperAgeDays = daysSince(wallpaperBatch.generatedAt, now);
+  const themeAgeDays = daysSince(themeBatch.generatedAt, now);
+  const coveredThemeKeys = new Set(
+    (themeBatch.themes || []).flatMap(theme => [theme.triggerKey, theme.holidayId && `holiday:${theme.holidayId}`]).filter(Boolean)
+  );
+  const newThemeCandidates = themeCandidates.filter(item => !coveredThemeKeys.has(item.key));
+  const wallpaperRecommended = wallpaperAgeDays >= 7
+    && (newWallpaperCount >= 2 || wallpaperAgeDays >= 21)
+    && wallpaperCandidates.length > 0;
+  const urgentHoliday = newThemeCandidates.find(item => item.triggerType === "holiday" && item.daysUntil <= 45);
+  const themeRecommended = Boolean(urgentHoliday)
+    || (themeAgeDays >= 21
+      && newThemeCandidates.length >= 1);
+
+  return {
+    wallpaper: {
+      libraryType: "wallpaper",
+      generatedAt: wallpaperBatch.generatedAt || "",
+      ageDays: wallpaperAgeDays,
+      minimumIntervalDays: 7,
+      maximumAgeDays: 21,
+      activeWindowDays: 30,
+      recommended: wallpaperRecommended,
+      reason: wallpaperRecommended
+        ? `${newWallpaperCount} 个新的长期热点进入头部，建议人工触发新壁纸批次。`
+        : wallpaperCandidates.length
+          ? "沿用当前壁纸批次；生产级候选尚未达到换批间隔或头部变化不足。"
+          : "沿用当前壁纸批次；实时信号尚未形成持续性，固定节日则按预告窗口单独进入生产。",
+      candidates: wallpaperCandidates.slice(0, 3),
+      watchlist: wallpaperWatchlist.slice(0, 3)
+    },
+    theme: {
+      libraryType: "theme",
+      generatedAt: themeBatch.generatedAt || "",
+      ageDays: themeAgeDays,
+      minimumIntervalDays: 21,
+      activeWindowDays: 30,
+      recommended: themeRecommended,
+      reason: themeRecommended
+        ? urgentHoliday
+          ? `${urgentHoliday.name} 距今 ${urgentHoliday.daysUntil} 天且尚未覆盖，建议追加主题模板。`
+          : "出现具备持续周期和整套 OS 延展能力的新机会，建议追加主题模板。"
+        : "沿用当前主题库；实时爆发热点不会单独触发主题换批。",
+      candidates: themeCandidates.slice(0, 3),
+      watchlist: themeWatchlist.slice(0, 3)
+    }
+  };
 }
 
 async function fetchYoutubeMostPopularForMarket(market) {
@@ -1268,6 +1534,7 @@ async function update() {
     "X",
     "Facebook"
   ];
+  data.regions = ["全球", "印度", "印度尼西亚", "俄罗斯（东欧）", "中东", "撒哈拉以南非洲", "南美洲"];
 
   data.hotspots = data.hotspots.map((item, index) => {
     const delta = deterministicDelta(item.id || index + 1, hour);
@@ -1284,6 +1551,8 @@ async function update() {
   });
 
   data.templateOutputs = buildTemplateOutputs(data.hotspots);
+  const lifecycleRecords = updateHotspotLifecycle(data.hotspots, now);
+  data.templateLibraries = buildTemplateLibraryStatus(data.hotspots, now, lifecycleRecords);
 
   const selectedCount = data.hotspots.filter(item => item.selected).length;
   const highPriorityCount = data.hotspots.filter(item => item.status === "爆发").length;
@@ -1312,6 +1581,8 @@ async function update() {
   }
 
   writeDashboard(data);
+  console.log(`壁纸模板库：${data.templateLibraries.wallpaper.reason}`);
+  console.log(`主题模板库：${data.templateLibraries.theme.reason}`);
   console.log(`Updated dashboard data at ${data.generatedAt}`);
 }
 

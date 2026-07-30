@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "planningWindowDays": 75,
+  "policy": "固定节假日进入主题库候选池；默认提前 4–6 周评估，生成时避免直接复制国旗、国徽、官方标识和宗教敏感符号。可移动节日需由运营确认日期后再加入。",
+  "events": [
+    {
+      "id": "india-independence-day-2026",
+      "date": "2026-08-15",
+      "market": "印度",
+      "region": "印度",
+      "name": "印度独立日",
+      "visualDirection": "手织棉纹、晨光、城市与自然曲线；以藏红、象牙白、深绿作克制色彩转译，不直接使用国旗或国徽",
+      "themePotential": 95
+    },
+    {
+      "id": "indonesia-independence-day-2026",
+      "date": "2026-08-17",
+      "market": "印度尼西亚",
+      "region": "印度尼西亚",
+      "name": "印度尼西亚独立日",
+      "visualDirection": "珊瑚红、暖白、火山岩与海岛晨光的现代主题系统，不复制国旗、地图或官方标识",
+      "themePotential": 94
+    },
+    {
+      "id": "brazil-independence-day-2026",
+      "date": "2026-09-07",
+      "market": "巴西",
+      "region": "南美洲",
+      "name": "巴西独立日",
+      "visualDirection": "热带晨光、现代建筑曲线与手工纸材质，避免国旗、国徽、足球队元素和官方标识",
+      "themePotential": 90
+    },
+    {
+      "id": "chile-independence-day-2026",
+      "date": "2026-09-18",
+      "market": "智利",
+      "region": "南美洲",
+      "name": "智利独立日",
+      "visualDirection": "安第斯山脊、太平洋冷光与现代织物的抽象主题，避免国旗、地图和官方标识",
+      "themePotential": 88
+    },
+    {
+      "id": "south-africa-heritage-day-2026",
+      "date": "2026-09-24",
+      "market": "南非",
+      "region": "撒哈拉以南非洲",
+      "name": "南非传统文化日",
+      "visualDirection": "当代城市色彩、矿物材质与多层织物节奏，避免把单一族群纹样代表整个国家",
+      "themePotential": 92
+    },
+    {
+      "id": "nigeria-independence-day-2026",
+      "date": "2026-10-01",
+      "market": "尼日利亚",
+      "region": "撒哈拉以南非洲",
+      "name": "尼日利亚独立日",
+      "visualDirection": "阿迪雷靛蓝、现代都市光影与克制黄铜，可延展壁纸、图标和 Dock；避免国旗和国徽",
+      "themePotential": 93
+    },
+    {
+      "id": "russia-unity-day-2026",
+      "date": "2026-11-04",
+      "market": "俄罗斯",
+      "region": "俄罗斯（东欧）",
+      "name": "俄罗斯民族团结日",
+      "visualDirection": "瓷白、钴蓝、桦影和冬季玻璃材质的现代主题，不使用政治人物、国旗或官方标识",
+      "themePotential": 86
+    },
+    {
+      "id": "kenya-jamhuri-day-2026",
+      "date": "2026-12-12",
+      "market": "肯尼亚",
+      "region": "撒哈拉以南非洲",
+      "name": "肯尼亚共和国日",
+      "visualDirection": "基西皂石、茶园绿与现代手工雕刻质感，避免国旗、野生动物和旅游刻板印象",
+      "themePotential": 91
+    }
+  ]
+}

@@ -4,12 +4,14 @@ let hotspots = [];
 let regionStats = {};
 let fusionStyles = [];
 let templateOutputs = [];
+let themeOutputs = [];
 let trendSeries = { labels: [], effective: [], template: [] };
 let summary = {};
 let strategyCards = [];
 let funnel = [];
 let dashboardMeta = {};
 let state = { region: "全球", source: "全部平台", table: "all" };
+let libraryFilters = { theme: "recent", wallpaper: "recent" };
 const languageState = {
   current: localStorage.getItem("trendos-language") === "en" ? "en" : "zh"
 };
@@ -61,7 +63,7 @@ const EN_TEXT = {
   "抓取节奏": "Capture cadence", "预测与实时双轨": "Predictable + real-time",
   "可预测热点提前 4–6 周准备，提前一周定模板，提前三天上线；实时热点由机器人定时监测。": "Prepare predictable moments 4–6 weeks ahead, lock templates one week ahead and launch three days ahead; bots monitor real-time trends.",
   "核心地区": "Priority regions", "区域热点池优先": "Local baselines first",
-  "印度、印尼、EE1、SSA、南美建立独立热度基线，避免全球热度掩盖本地机会。": "Maintain independent baselines for India, Indonesia, EE1, SSA and South America so global volume does not hide local opportunities.",
+  "两印、EE1（俄罗斯）、中东、SSA、拉美建立独立热度基线，避免全球热度掩盖本地机会。": "Maintain independent baselines for India, Indonesia, EE1 (Russia), the Middle East, SSA and Latin America so global volume does not hide local opportunities.",
   "平台来源": "Platform sources", "跨平台交叉验证": "Cross-platform validation",
   "筛选标准": "Screening criteria", "只留可模板化机会": "Keep template-ready opportunities",
   "具备持续热度、强视觉符号、正向情绪、可个性化四项特征，才进入运营候选池。": "Candidates must show sustained interest, strong visual cues, positive sentiment and personalization potential.",
@@ -233,7 +235,9 @@ const themePrompts = {
   kenyaKisiiSoapstone: "Minimal premium Kenya artwork inspired specifically by Kisii and Tabaka soapstone carving from western Kenya. Use carved soapstone ivory, tea-leaf green and warm earth tones with tactile hand-cut surfaces, rounded sculptural forms and generous negative space. Keep the local craft reference specific and contemporary; no Rift Valley claim, wildlife clichés, flags, brands, text or watermarks.",
   nigeriaAdireIndigo: "Minimal premium Nigeria artwork inspired specifically by Yoruba Adire resist-dyed cloth from southwestern Nigeria. Use deep indigo, chalk white and restrained brass with subtle resist-dyed geometric blocks, hand-marked rhythm and a contemporary urban composition. No flags, literal national emblems, brands, text or watermarks.",
   southAmericaModernClay: "Minimal contemporary artwork inspired by South American modern design rather than presented as a traditional regional culture. Use terracotta, cream plaster, muted cobalt and sun-warmed modernist curves with hand-shaped clay texture, architectural arcs and spacious composition. No culture-specific claims, landmarks, flags, brands, text or watermarks.",
-  gulfNightCourtyard: "Minimal premium Gulf night courtyard artwork using deep indigo, moonlit limestone, smoky olive and restrained brushed brass. Create quiet plaster planes, a narrow pool of cool light, soft geometric shadows and subtle pearl-like highlights; serene, architectural and luxurious. No landmarks, flags, religious symbols, brands, text or watermarks."
+  gulfNightCourtyard: "Minimal premium Gulf night courtyard artwork using deep indigo, moonlit limestone, smoky olive and restrained brushed brass. Create quiet plaster planes, a narrow pool of cool light, soft geometric shadows and subtle pearl-like highlights; serene, architectural and luxurious. No landmarks, flags, religious symbols, brands, text or watermarks.",
+  indiaIndependenceKhadi: "Complete premium Android OS home-screen theme for India Independence season: preserve a full desktop UI with status bar, clock widget, AI Suggestions widget, labeled icons, Dock and search bar. Use handwoven khadi-like texture, warm ivory, restrained saffron, deep green and indigo, abstract dawn curves and architectural arches; every wallpaper, widget, icon and Dock element must use one coherent material system. Avoid literal flags, national emblems, political figures, religious imagery, brands, extra text and watermark.",
+  indonesiaIndependenceArchipelago: "Complete premium Android OS home-screen theme for Indonesia Independence season: preserve a full desktop UI with status bar, clock widget, AI Suggestions widget, labeled icons, Dock and search bar. Use coral red, warm ivory, volcanic charcoal, ocean teal, woven fiber and brushed brass, with archipelago dawn and sea-flow curves; every wallpaper, widget, icon and Dock element must use one coherent material system. Avoid literal flags, Garuda, maps, official emblems, copied batik patterns, religious imagery, brands, extra text and watermark."
 };
 
 const $ = s => document.querySelector(s);
@@ -241,13 +245,17 @@ const $$ = s => [...document.querySelectorAll(s)];
 
 async function loadDashboardData(force = false) {
   const stamp = Date.now();
-  const urls = [
+  const remoteUrls = [
     `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/dashboard-playbook.json?t=${stamp}`,
     `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/dashboard.json?t=${stamp}`,
-    `https://cdn.jsdelivr.net/gh/global-hotspot-studio/operations-dashboard@main/data/dashboard.json?t=${stamp}`,
+    `https://cdn.jsdelivr.net/gh/global-hotspot-studio/operations-dashboard@main/data/dashboard.json?t=${stamp}`
+  ];
+  const localUrls = [
     `./data/dashboard-playbook.json?t=${stamp}${force ? "&force=1" : ""}`,
     `./data/dashboard.json?t=${stamp}${force ? "&force=1" : ""}`
   ];
+  const localPreview = ["localhost", "127.0.0.1"].includes(location.hostname);
+  const urls = localPreview ? [...localUrls, ...remoteUrls] : [...remoteUrls, ...localUrls];
   let data;
   let loadedFrom = "";
   const errors = [];
@@ -267,24 +275,69 @@ async function loadDashboardData(force = false) {
   }
   if (!data) throw new Error(`数据读取失败；已尝试 ${urls.length} 个地址。${errors.join(" | ")}`);
 
-  // 精品样图由人工触发的 AI 生图批次单独维护，不能被定时热点刷新覆盖。
-  const sampleUrls = [
-    // 优先同一版 Pages 内的样图清单，确保页面代码和样图批次同步发布。
-    `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`,
-    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`
+  // 壁纸模板库由按可玩性触发的 AI 生图批次单独维护，不能被每日热点刷新覆盖。
+  const sampleManifestGroups = [
+    [
+      `./data/generated-wallpapers.json?t=${stamp}${force ? "&force=1" : ""}`,
+      `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-wallpapers.json?t=${stamp}`
+    ],
+    [
+      `./data/generated-samples.json?t=${stamp}${force ? "&force=1" : ""}`,
+      `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-samples.json?t=${stamp}`
+    ]
   ];
-  for (const url of sampleUrls) {
+  const wallpaperSamples = [];
+  for (const urls of sampleManifestGroups) {
+    for (const url of urls) {
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) continue;
+        const sampleBatch = await response.json();
+        if (sampleBatch.releaseStatus && sampleBatch.releaseStatus !== "ready") continue;
+        if (!Array.isArray(sampleBatch.samples) || !sampleBatch.samples.length) continue;
+        wallpaperSamples.push(...sampleBatch.samples.map(sample => ({
+          ...sample,
+          libraryType: "wallpaper",
+          generatedAt: sample.generatedAt || sampleBatch.generatedAt || ""
+        })));
+        if (!data.wallpaperBatchGeneratedAt || Date.parse(sampleBatch.generatedAt || "") > Date.parse(data.wallpaperBatchGeneratedAt || "")) {
+          data.samplePolicy = sampleBatch.policy || "";
+          data.wallpaperBatchGeneratedAt = sampleBatch.generatedAt || "";
+          data.wallpaperBatchCadence = sampleBatch.cadence || "";
+        }
+        break;
+      } catch (error) {
+        // 当前地址不可用时继续尝试同一清单的线上备份。
+      }
+    }
+  }
+  if (wallpaperSamples.length) {
+    data.templateOutputs = [...new Map(wallpaperSamples.map(sample => [sample.id, sample])).values()];
+  }
+
+  // 主题模板库独立于壁纸模板库，更新节奏更慢。
+  const themeUrls = [
+    `./data/generated-themes.json?t=${stamp}${force ? "&force=1" : ""}`,
+    `https://raw.githubusercontent.com/global-hotspot-studio/operations-dashboard/main/data/generated-themes.json?t=${stamp}`
+  ];
+  for (const url of themeUrls) {
     try {
       const response = await fetch(url, { cache: "no-store" });
       if (!response.ok) continue;
-      const sampleBatch = await response.json();
-      if (Array.isArray(sampleBatch.samples) && sampleBatch.samples.length) {
-        data.templateOutputs = sampleBatch.samples;
-        data.samplePolicy = sampleBatch.policy || "";
+      const themeBatch = await response.json();
+      if (Array.isArray(themeBatch.themes) && themeBatch.themes.length) {
+        data.themeOutputs = themeBatch.themes.map(theme => ({
+          ...theme,
+          libraryType: "theme",
+          generatedAt: theme.generatedAt || themeBatch.generatedAt || ""
+        }));
+        data.themePolicy = themeBatch.policy || "";
+        data.themeBatchGeneratedAt = themeBatch.latestGeneratedAt || themeBatch.generatedAt || "";
+        data.themeBatchCadence = themeBatch.cadence || "";
         break;
       }
     } catch (error) {
-      // 样图批次不可用时仍展示热点数据中的兜底内容。
+      // 主题库不可用时保留页面结构，不影响实时热点和壁纸库。
     }
   }
 
@@ -294,6 +347,7 @@ async function loadDashboardData(force = false) {
   sources = data.sources || ["全部平台"];
   hotspots = data.hotspots || [];
   templateOutputs = data.templateOutputs || [];
+  themeOutputs = data.themeOutputs || [];
   regionStats = data.regionStats || {};
   fusionStyles = data.fusionStyles || [];
   trendSeries = data.trendSeries || trendSeries;
@@ -596,8 +650,16 @@ function renderRegions() {
 }
 
 function renderGallery() {
-  const list = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
-  $("#galleryCount").textContent = `${list.length} 个样图推荐`;
+  const allItems = templateOutputs.length ? templateOutputs : hotspots.filter(h => h.selected && h.preview);
+  const list = filterLibraryItems(allItems, libraryFilters.wallpaper);
+  const batchDate = dashboardMeta.wallpaperBatchGeneratedAt
+    ? formatUpdateTime(dashboardMeta.wallpaperBatchGeneratedAt).split(" ")[0]
+    : "";
+  $("#galleryCount").textContent = `${list.length}/${allItems.length} 个壁纸样图${batchDate ? ` · ${batchDate} 批次` : ""}`;
+  if (!list.length) {
+    $("#visualGallery").innerHTML = `<div class="library-empty">当前筛选范围暂无样图；历史资产仍会保留，不会被删除。</div>`;
+    return;
+  }
   $("#visualGallery").innerHTML = `<div class="masonry-gallery">${list.map(h => {
     const nameText = sampleName(h);
     return `<article class="playbook-card image-playbook-card">
@@ -619,6 +681,51 @@ function renderGallery() {
           </div>
         </article>`;
   }).join("")}</div>`;
+}
+
+function filterLibraryItems(items, mode) {
+  const now = Date.now();
+  return items.filter(item => {
+    const generatedAt = Date.parse(item.generatedAt || "");
+    const ageDays = Number.isFinite(generatedAt) ? (now - generatedAt) / 86400000 : 0;
+    if (mode === "archive") return ageDays > 30;
+    if (mode === "all") return true;
+    return ageDays <= 30;
+  });
+}
+
+function renderThemeGallery() {
+  const grid = $("#themePreviewGrid");
+  if (!grid || !themeOutputs.length) return;
+  const list = filterLibraryItems(themeOutputs, libraryFilters.theme);
+  const batchDate = dashboardMeta.themeBatchGeneratedAt
+    ? formatUpdateTime(dashboardMeta.themeBatchGeneratedAt).split(" ")[0]
+    : "";
+  const count = $("#themeGalleryCount");
+  if (count) count.textContent = `${list.length}/${themeOutputs.length} 套主题${batchDate ? ` · ${batchDate} 批次` : ""}`;
+  if (!list.length) {
+    grid.innerHTML = `<div class="library-empty">当前筛选范围暂无主题；超过 30 天的主题会自动进入历史存档。</div>`;
+    return;
+  }
+  grid.innerHTML = list.map(theme => `
+    <article class="theme-preview-card">
+      <button class="theme-preview-image visual-preview" data-preview="${escapeAttr(theme.preview)}" data-caption="${escapeAttr(theme.caption || `${theme.name} · 主题模板`)}" aria-label="预览${escapeAttr(theme.name)}主题样图">
+        <img src="${escapeAttr(theme.preview)}" alt="${escapeAttr(theme.name)}主题预览">
+      </button>
+      <div class="theme-preview-info">
+        <div>
+          <span class="theme-kicker">${escapeHtml(theme.kicker || "主题模板库")}</span>
+          <h3>${escapeHtml(theme.name)}</h3>
+          <p>${escapeHtml(theme.description || "")}</p>
+        </div>
+        <div class="play-tags">${(theme.tags || []).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+        <div class="visual-actions">
+          <button class="theme-copy" data-theme-copy="${escapeAttr(theme.promptKey || "")}">复制提示词</button>
+          <a class="download-sample" href="${escapeAttr(theme.preview)}" download="${escapeAttr(theme.downloadName || `${theme.id}.png`)}">下载样图</a>
+        </div>
+      </div>
+    </article>
+  `).join("");
 }
 
 function renderStrategy() {
@@ -683,6 +790,7 @@ function renderAll() {
   renderAlerts();
   renderTable();
   renderRegions();
+  renderThemeGallery();
   renderGallery();
   renderStrategy();
   applyLanguage();
@@ -694,6 +802,8 @@ function bind() {
   });
   $("#regionFilter").onchange = e => { state.region = e.target.value; renderAll(); };
   $("#sourceFilter").onchange = e => { state.source = e.target.value; renderAll(); };
+  $("#themeTimeFilter").onchange = e => { libraryFilters.theme = e.target.value; renderThemeGallery(); applyLanguage(); };
+  $("#wallpaperTimeFilter").onchange = e => { libraryFilters.wallpaper = e.target.value; renderGallery(); applyLanguage(); };
   const viewAnchors = {
     overview: "#overviewTop",
     pool: "#hotspotPoolSection",

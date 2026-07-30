@@ -92,10 +92,17 @@
 
         <article id="themePreviewSection" class="card gallery-card theme-preview-section">
           <div class="card-head">
-            <div><p class="eyebrow">THEME PREVIEW · LONG-RUNNING OPPORTUNITIES</p><h2>主题样图</h2><p>沉淀节假日与长线热点的整套主题方向：从壁纸提取色彩与符号，同步生成锁屏、图标与 Dock，便于设计师直接延展为主题资产。</p></div>
-            <span class="gallery-count">12 套主题</span>
+            <div><p class="eyebrow">THEME TEMPLATE LIBRARY · PREDICTABLE + REAL-TIME</p><h2>主题模板库</h2><p>临近固定节假日与已形成持续性的长线热点，才进入完整 OS 主题生产；可玩性用于排序与表现分流，跨平台信号用于增强判断可信度。</p></div>
+            <div class="gallery-tools">
+              <select id="themeTimeFilter" class="library-time-filter" aria-label="主题模板时间范围">
+                <option value="recent">近 30 天</option>
+                <option value="archive">历史存档</option>
+                <option value="all">全部时间</option>
+              </select>
+              <span id="themeGalleryCount" class="gallery-count">12 套主题</span>
+            </div>
           </div>
-          <div class="theme-preview-grid">
+          <div id="themePreviewGrid" class="theme-preview-grid">
             <article class="theme-preview-card">
               <button class="theme-preview-image visual-preview" data-preview="./assets/theme-preview/world-cup-champion-afterglow-theme-v2.png?v=20260720-champion-night-exact" data-caption="冠军之夜 · 世界杯冠军主题" aria-label="预览冠军之夜主题样图"><img src="./assets/theme-preview/world-cup-champion-afterglow-theme-v2.png?v=20260720-champion-night-exact" alt="冠军之夜世界杯冠军主题预览"></button>
               <div class="theme-preview-info"><div><span class="theme-kicker">长线热点 · 世界杯冠军</span><h3>冠军之夜</h3><p>以深酒红、鎏金拱券与暖琥珀光粒构建高定庆典氛围；壁纸、图标与 Dock 统一为红漆、金属浮雕和拱形结构。</p></div><div class="play-tags"><span>锁屏 + 图标</span><span>红金庆典</span><span>拱券金属</span></div><div class="visual-actions"><button class="theme-copy" data-theme-copy="worldcupChampionAfterglow">复制提示词</button><a class="download-sample" href="./assets/theme-preview/world-cup-champion-afterglow-theme-v2.png" download="champion-night-theme-preview.png">下载样图</a></div></div>
@@ -149,8 +156,13 @@
 
         <article id="styleTemplateSection" class="card gallery-card">
           <div class="card-head">
-            <div><p class="eyebrow">HOTSPOT TOP3 SAMPLE</p><h2>热点top3样图推荐</h2><p>先判断热点属性，再选择人物图生图或可直接下载的 OS 壁纸；壁纸可延展为色彩材质、涂鸦插画、异形构图、场景、图标化或动态感主题，不可玩则不更新。</p></div>
+            <div><p class="eyebrow">WALLPAPER TEMPLATE LIBRARY · HOTSPOT PLAYABILITY</p><h2>壁纸模板库</h2><p>临近固定节假日与已形成持续性的热点，才会按可玩性定期换批，生成可直接下载的 9:16 OS 壁纸；短期信号先留在观察池。</p></div>
             <div class="gallery-tools">
+              <select id="wallpaperTimeFilter" class="library-time-filter" aria-label="壁纸模板时间范围">
+                <option value="recent">近 30 天</option>
+                <option value="archive">历史存档</option>
+                <option value="all">全部时间</option>
+              </select>
               <span id="galleryCount" class="gallery-count"></span>
               <button id="galleryPrev" class="gallery-arrow" aria-label="向左查看">←</button>
               <button id="galleryNext" class="gallery-arrow" aria-label="向右查看">→</button>
@@ -174,7 +186,7 @@
         </div>
         <div class="strategy-grid">
           <article class="strategy-card"><span>01</span><h3>抓取节奏</h3><strong>预测与实时双轨</strong><p>可预测热点提前 4–6 周准备，提前一周定模板，提前三天上线；实时热点由机器人定时监测。</p></article>
-          <article class="strategy-card"><span>02</span><h3>核心地区</h3><strong>区域热点池优先</strong><p>印度、印尼、EE1、SSA、南美建立独立热度基线，避免全球热度掩盖本地机会。</p></article>
+          <article class="strategy-card"><span>02</span><h3>核心地区</h3><strong>区域热点池优先</strong><p>两印、EE1（俄罗斯）、中东、SSA、拉美建立独立热度基线，避免全球热度掩盖本地机会。</p></article>
           <article class="strategy-card"><span>03</span><h3>平台来源</h3><strong>跨平台交叉验证</strong><p>X、TikTok、YouTube、Google Trends、Instagram、Facebook、本地平台、媒体与音乐榜。</p></article>
           <article class="strategy-card"><span>04</span><h3>筛选标准</h3><strong>只留可模板化机会</strong><p>具备持续热度、强视觉符号、正向情绪、可个性化四项特征，才进入运营候选池。</p></article>
         </div>

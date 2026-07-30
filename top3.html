@@ -91,8 +91,13 @@
 
         <article id="styleTemplateSection" class="card gallery-card">
           <div class="card-head">
-            <div><p class="eyebrow">HOTSPOT TOP3 SAMPLE</p><h2>热点top3样图推荐</h2><p>先判断热点属性，再选择人物图生图、色彩材质、涂鸦插画、异形构图、场景、图标化或动态感主题；Top1 最多 3 张，Top2 / Top3 各 1 张，不可玩则不更新。</p></div>
+            <div><p class="eyebrow">WALLPAPER TEMPLATE LIBRARY · HOTSPOT PLAYABILITY</p><h2>壁纸模板库</h2><p>根据实时热点可玩性定期换批；Top1 最多 3 张，Top2 / Top3 各 1 张，至少间隔 7 天检查，不可玩则不更新。</p></div>
             <div class="gallery-tools">
+              <select id="wallpaperTimeFilter" class="library-time-filter" aria-label="壁纸模板时间范围">
+                <option value="recent">近 30 天</option>
+                <option value="archive">历史存档</option>
+                <option value="all">全部时间</option>
+              </select>
               <span id="galleryCount" class="gallery-count"></span>
               <button id="galleryPrev" class="gallery-arrow" aria-label="向左查看">←</button>
               <button id="galleryNext" class="gallery-arrow" aria-label="向右查看">→</button>
