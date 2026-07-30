@@ -25,8 +25,9 @@ const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaAccessToken = (process.env.META_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaGraphVersion = (process.env.META_GRAPH_VERSION || "v24.0").trim();
-const instagramBusinessAccountId = (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
+let instagramBusinessAccountId = (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const facebookPageIds = (process.env.FACEBOOK_PAGE_IDS || "").split(",").map(item => item.trim()).filter(Boolean);
+const metaPageAccessTokens = new Map();
 const tiktokAccessToken = (process.env.TIKTOK_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 
 const youtubeMarkets = [
@@ -920,6 +921,36 @@ async function fetchXSignals() {
   return batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
 }
 
+async function discoverMetaAccounts() {
+  if (!metaAccessToken) return;
+  try {
+    const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/me/accounts`);
+    url.searchParams.set("fields", "id,name,access_token,instagram_business_account");
+    url.searchParams.set("limit", "100");
+    url.searchParams.set("access_token", metaAccessToken);
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Meta 账号发现失败：${response.status} ${(await response.text()).slice(0, 160)}`);
+    }
+    const pages = (await response.json()).data || [];
+    for (const page of pages) {
+      if (!page?.id) continue;
+      if (page.access_token) metaPageAccessTokens.set(String(page.id), page.access_token);
+    }
+    if (!facebookPageIds.length) {
+      facebookPageIds.push(...pages.map(page => String(page.id || "")).filter(Boolean));
+    }
+    if (!instagramBusinessAccountId) {
+      instagramBusinessAccountId = String(
+        pages.find(page => page.instagram_business_account?.id)?.instagram_business_account?.id || ""
+      );
+    }
+    console.log(`Meta 已识别 ${facebookPageIds.length} 个 Facebook Page${instagramBusinessAccountId ? "及 1 个 Instagram 专业账号" : ""}。`);
+  } catch (error) {
+    console.warn(error.message);
+  }
+}
+
 async function fetchInstagramSignals() {
   if (!metaAccessToken || !instagramBusinessAccountId) {
     console.log("META_ACCESS_TOKEN 或 INSTAGRAM_BUSINESS_ACCOUNT_ID 未配置，跳过 Instagram 真实热点抓取。");
@@ -993,7 +1024,7 @@ async function fetchFacebookSignals() {
       const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/${pageId}/posts`);
       url.searchParams.set("fields", "id,message,created_time,permalink_url,shares,reactions.summary(true),comments.summary(true),attachments{media,url,title}");
       url.searchParams.set("limit", "8");
-      url.searchParams.set("access_token", metaAccessToken);
+      url.searchParams.set("access_token", metaPageAccessTokens.get(String(pageId)) || metaAccessToken);
       const response = await fetch(url);
       if (!response.ok) throw new Error(`Facebook page ${pageId} 请求失败：${response.status} ${(await response.text()).slice(0, 160)}`);
       const json = await response.json();
@@ -1133,6 +1164,7 @@ async function fetchExternalSignals() {
   const gdeltSignals = await fetchGdeltSignals();
   const manualSignals = await fetchManualSignals();
   const xSignals = await fetchXSignals();
+  await discoverMetaAccounts();
   const instagramSignals = await fetchInstagramSignals();
   const facebookSignals = await fetchFacebookSignals();
   const tiktokSignals = await fetchTikTokSignals();

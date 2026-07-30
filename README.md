@@ -113,15 +113,15 @@ X / Instagram / Facebook 拿到官方权限后，在 GitHub 仓库 Secrets 里�
 ```text
 X_BEARER_TOKEN
 META_ACCESS_TOKEN
-INSTAGRAM_BUSINESS_ACCOUNT_ID
-FACEBOOK_PAGE_IDS
 ```
+
+`INSTAGRAM_BUSINESS_ACCOUNT_ID` 与 `FACEBOOK_PAGE_IDS` 现在是可选项。未配置时，脚本会使用 `META_ACCESS_TOKEN` 调用 `/me/accounts`，自动识别当前账号可管理的 Facebook Page，以及与 Page 关联的 Instagram 专业账号。需要限制监控范围时，再手动配置 `FACEBOOK_PAGE_IDS`（多个 ID 用英文逗号分隔）。
 
 启用逻辑：
 
 - X：在 X Developer Console 创建 App，生成 Bearer Token；脚本调用 X API Recent Search 获取公开讨论与互动数据。
-- Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
-- Facebook：配置需要监控的 Page ID；脚本调用 Facebook Graph API 的 Page Posts 获取指定主页传播数据。
+- Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；令牌至少需要 `instagram_basic`、`pages_show_list`、`pages_read_engagement`，脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
+- Facebook：同一令牌会自动发现当前账号可管理的 Page；脚本调用 Facebook Graph API 的 Page Posts 获取指定主页传播数据。
 - TikTok：Research API 面向符合条件的非营利研究人员，Token 也不适合当前长期定时任务；当前不把它冒充为已开通的商业实时源。
 
 如果 Secret 未配置，脚本会明确跳过该平台，不会生成假数据。
