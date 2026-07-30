@@ -86,6 +86,21 @@ async function discoverMetaAccounts() {
   const json = await getJson(url);
   const pages = json.data || [];
   if (!pages.length) {
+    const subjectUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me`);
+    subjectUrl.searchParams.set("fields", "id,instagram_business_account");
+    subjectUrl.searchParams.set("metadata", "1");
+    subjectUrl.searchParams.set("access_token", metaAccessToken);
+    const subject = await getJson(subjectUrl);
+    if (String(subject.metadata?.type || "").toLowerCase() === "page" && subject.id) {
+      pages.push({
+        id: String(subject.id),
+        access_token: metaAccessToken,
+        instagram_business_account: subject.instagram_business_account
+      });
+      console.log("○ Meta：检测到 Page Access Token，已切换为单 Page 接入模式。");
+    }
+  }
+  if (!pages.length) {
     throw new Error("Token 权限已授予，但当前 Facebook 账号没有返回可管理的 Page；请检查 Page 管理权限及 Instagram 专业账号关联关系");
   }
   for (const page of pages) {
