@@ -933,6 +933,9 @@ async function discoverMetaAccounts() {
       throw new Error(`Meta 账号发现失败：${response.status} ${(await response.text()).slice(0, 160)}`);
     }
     const pages = (await response.json()).data || [];
+    if (!pages.length) {
+      throw new Error("Meta 未返回可管理的 Facebook Page，请检查 pages_show_list 权限和 Page 管理关系。");
+    }
     for (const page of pages) {
       if (!page?.id) continue;
       if (page.access_token) metaPageAccessTokens.set(String(page.id), page.access_token);

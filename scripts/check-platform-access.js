@@ -65,12 +65,29 @@ async function checkX() {
 
 async function discoverMetaAccounts() {
   if (!metaAccessToken) return;
+  const permissionsUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me/permissions`);
+  permissionsUrl.searchParams.set("access_token", metaAccessToken);
+  const permissionsJson = await getJson(permissionsUrl);
+  const grantedPermissions = new Set(
+    (permissionsJson.data || [])
+      .filter(permission => permission.status === "granted")
+      .map(permission => permission.permission)
+  );
+  const requiredPermissions = ["instagram_basic", "pages_show_list", "pages_read_engagement"];
+  const missingPermissions = requiredPermissions.filter(permission => !grantedPermissions.has(permission));
+  if (missingPermissions.length) {
+    throw new Error(`Token 缺少权限：${missingPermissions.join(", ")}`);
+  }
+
   const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/me/accounts`);
   url.searchParams.set("fields", "id,name,access_token,instagram_business_account");
   url.searchParams.set("limit", "100");
   url.searchParams.set("access_token", metaAccessToken);
   const json = await getJson(url);
   const pages = json.data || [];
+  if (!pages.length) {
+    throw new Error("Token 权限已授予，但当前 Facebook 账号没有返回可管理的 Page；请检查 Page 管理权限及 Instagram 专业账号关联关系");
+  }
   for (const page of pages) {
     if (!page?.id) continue;
     if (page.access_token) metaPageAccessTokens.set(String(page.id), page.access_token);
