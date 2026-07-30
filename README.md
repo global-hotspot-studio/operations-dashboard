@@ -120,7 +120,7 @@ META_ACCESS_TOKEN
 启用逻辑：
 
 - X：在 X Developer Console 创建 App，生成 Bearer Token；脚本调用 X API Recent Search 获取公开讨论与互动数据。
-- Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；令牌至少需要 `instagram_basic`、`pages_show_list`、`pages_read_engagement`，脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
+- Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；令牌至少需要 `instagram_basic`、`pages_show_list`、`pages_read_engagement`。如果 Page 归属于 Business Portfolio，还需要 `business_management`。脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
 - Facebook：同一令牌会自动发现当前账号可管理的 Page；脚本调用 Facebook Graph API 的 Page Posts 获取指定主页传播数据。
 - TikTok：Research API 面向符合条件的非营利研究人员，Token 也不适合当前长期定时任务；当前不把它冒充为已开通的商业实时源。
 

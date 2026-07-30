@@ -934,6 +934,32 @@ async function discoverMetaAccounts() {
     }
     const pages = (await response.json()).data || [];
     if (!pages.length) {
+      const businessesUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me/businesses`);
+      businessesUrl.searchParams.set("fields", "id");
+      businessesUrl.searchParams.set("limit", "100");
+      businessesUrl.searchParams.set("access_token", metaAccessToken);
+      const businessesResponse = await fetch(businessesUrl);
+      if (businessesResponse.ok) {
+        const businesses = (await businessesResponse.json()).data || [];
+        for (const business of businesses) {
+          if (!business?.id) continue;
+          const ownedPagesUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/${business.id}/owned_pages`);
+          ownedPagesUrl.searchParams.set("fields", "id,name,access_token,instagram_business_account");
+          ownedPagesUrl.searchParams.set("limit", "100");
+          ownedPagesUrl.searchParams.set("access_token", metaAccessToken);
+          const ownedPagesResponse = await fetch(ownedPagesUrl);
+          if (!ownedPagesResponse.ok) {
+            console.warn(`Meta Business ${business.id} Page 发现失败：${ownedPagesResponse.status}`);
+            continue;
+          }
+          pages.push(...((await ownedPagesResponse.json()).data || []));
+        }
+        if (pages.length) {
+          console.log(`Meta 已通过 Business Portfolio 识别 ${pages.length} 个 Page。`);
+        }
+      }
+    }
+    if (!pages.length) {
       const subjectUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me`);
       subjectUrl.searchParams.set("fields", "id");
       subjectUrl.searchParams.set("metadata", "1");

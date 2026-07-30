@@ -85,6 +85,24 @@ async function discoverMetaAccounts() {
   url.searchParams.set("access_token", metaAccessToken);
   const json = await getJson(url);
   const pages = json.data || [];
+  if (!pages.length && grantedPermissions.has("business_management")) {
+    const businessesUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me/businesses`);
+    businessesUrl.searchParams.set("fields", "id");
+    businessesUrl.searchParams.set("limit", "100");
+    businessesUrl.searchParams.set("access_token", metaAccessToken);
+    const businesses = (await getJson(businessesUrl)).data || [];
+    for (const business of businesses) {
+      if (!business?.id) continue;
+      const ownedPagesUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/${business.id}/owned_pages`);
+      ownedPagesUrl.searchParams.set("fields", "id,name,access_token,instagram_business_account");
+      ownedPagesUrl.searchParams.set("limit", "100");
+      ownedPagesUrl.searchParams.set("access_token", metaAccessToken);
+      pages.push(...((await getJson(ownedPagesUrl)).data || []));
+    }
+    if (pages.length) {
+      console.log(`○ Meta：已通过 Business Portfolio 识别 ${pages.length} 个 Page。`);
+    }
+  }
   if (!pages.length) {
     const subjectUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me`);
     subjectUrl.searchParams.set("fields", "id");
@@ -105,6 +123,9 @@ async function discoverMetaAccounts() {
     }
   }
   if (!pages.length) {
+    if (!grantedPermissions.has("business_management")) {
+      throw new Error("当前 Page 归属 Business Portfolio，请重新生成 Token 并增加 business_management 权限");
+    }
     throw new Error("Token 权限已授予，但当前 Facebook 账号没有返回可管理的 Page；请检查 Page 管理权限及 Instagram 专业账号关联关系");
   }
   for (const page of pages) {
