@@ -33,6 +33,11 @@ let instagramBusinessAccountId = (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || "
 const facebookPageIds = (process.env.FACEBOOK_PAGE_IDS || "").split(",").map(item => item.trim()).filter(Boolean);
 const metaPageAccessTokens = new Map();
 const tiktokAccessToken = (process.env.TIKTOK_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
+const metaSourceStatus = {
+  meta: { source: "Meta", status: metaAccessToken ? "configured" : "missing", connected: false, fetchedCount: 0, detail: "" },
+  instagram: { source: "Instagram", status: "pending", connected: false, fetchedCount: 0, detail: "" },
+  facebook: { source: "Facebook", status: "pending", connected: false, fetchedCount: 0, detail: "" }
+};
 
 const youtubeMarkets = [
   { code: "IN", country: "印度", region: "印度" },
@@ -1188,7 +1193,10 @@ async function fetchXSignals() {
 }
 
 async function discoverMetaAccounts() {
-  if (!metaAccessToken) return;
+  if (!metaAccessToken) {
+    metaSourceStatus.meta = { ...metaSourceStatus.meta, status: "missing", detail: "未配置 META_ACCESS_TOKEN" };
+    return;
+  }
   try {
     const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/me/accounts`);
     url.searchParams.set("fields", "id,name,access_token,instagram_business_account");
@@ -1267,19 +1275,36 @@ async function discoverMetaAccounts() {
         pages.find(page => page.instagram_business_account?.id)?.instagram_business_account?.id || ""
       );
     }
+    metaSourceStatus.meta = {
+      source: "Meta",
+      status: "connected",
+      connected: true,
+      fetchedCount: facebookPageIds.length,
+      detail: `已识别 ${facebookPageIds.length} 个 Facebook Page${instagramBusinessAccountId ? "及 1 个 Instagram 专业账号" : ""}`
+    };
     console.log(`Meta 已识别 ${facebookPageIds.length} 个 Facebook Page${instagramBusinessAccountId ? "及 1 个 Instagram 专业账号" : ""}。`);
   } catch (error) {
+    metaSourceStatus.meta = { ...metaSourceStatus.meta, status: "error", connected: false, detail: error.message };
     console.warn(error.message);
   }
 }
 
 async function fetchInstagramSignals() {
   if (!metaAccessToken || !instagramBusinessAccountId) {
+    metaSourceStatus.instagram = {
+      source: "Instagram",
+      status: "missing",
+      connected: false,
+      fetchedCount: 0,
+      detail: "缺少有效 Meta Token 或关联的 Instagram 专业账号"
+    };
     console.log("META_ACCESS_TOKEN 或 INSTAGRAM_BUSINESS_ACCOUNT_ID 未配置，跳过 Instagram 真实热点抓取。");
     return [];
   }
   const tags = ["football", "music", "fashion", "festival", "art"];
   const batches = [];
+  let successfulQueries = 0;
+  let failedQueries = 0;
   for (const tag of tags) {
     try {
       const search = new URL(`https://graph.facebook.com/${metaGraphVersion}/ig_hashtag_search`);
@@ -1297,6 +1322,7 @@ async function fetchInstagramSignals() {
       const mediaResponse = await fetch(media);
       if (!mediaResponse.ok) throw new Error(`Instagram media ${tag} 查询失败：${mediaResponse.status} ${(await mediaResponse.text()).slice(0, 160)}`);
       const json = await mediaResponse.json();
+      successfulQueries += 1;
       batches.push(...(json.data || []).slice(0, 4).map((post, rank) => {
         const volume = Number(post.like_count || 0) + Number(post.comments_count || 0) * 3;
         const title = post.caption ? textSnippet(post.caption.replace(/\s+/g, " "), 30) : `#${tag}`;
@@ -1329,18 +1355,36 @@ async function fetchInstagramSignals() {
         };
       }));
     } catch (error) {
+      failedQueries += 1;
       console.warn(error.message);
     }
   }
-  return batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
+  const output = batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
+  metaSourceStatus.instagram = {
+    source: "Instagram",
+    status: successfulQueries ? (output.length ? "connected" : "empty") : "error",
+    connected: successfulQueries > 0,
+    fetchedCount: output.length,
+    detail: `Hashtag Search 成功 ${successfulQueries}/${tags.length} 组${failedQueries ? `，${failedQueries} 组需重试` : ""}`
+  };
+  return output;
 }
 
 async function fetchFacebookSignals() {
   if (!metaAccessToken || !facebookPageIds.length) {
+    metaSourceStatus.facebook = {
+      source: "Facebook",
+      status: "missing",
+      connected: false,
+      fetchedCount: 0,
+      detail: "缺少有效 Meta Token 或可管理的 Facebook Page"
+    };
     console.log("META_ACCESS_TOKEN 或 FACEBOOK_PAGE_IDS 未配置，跳过 Facebook 真实热点抓取。");
     return [];
   }
   const batches = [];
+  let successfulPages = 0;
+  let failedPages = 0;
   for (const pageId of facebookPageIds) {
     try {
       const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/${pageId}/posts`);
@@ -1350,6 +1394,7 @@ async function fetchFacebookSignals() {
       const response = await fetch(url);
       if (!response.ok) throw new Error(`Facebook page ${pageId} 请求失败：${response.status} ${(await response.text()).slice(0, 160)}`);
       const json = await response.json();
+      successfulPages += 1;
       batches.push(...(json.data || []).map((post, rank) => {
         const volume = Number(post.shares?.count || 0) * 3 + Number(post.reactions?.summary?.total_count || 0) + Number(post.comments?.summary?.total_count || 0) * 3;
         const title = textSnippet((post.message || post.attachments?.data?.[0]?.title || "Facebook 热点内容").replace(/\s+/g, " "), 32);
@@ -1382,10 +1427,19 @@ async function fetchFacebookSignals() {
         };
       }));
     } catch (error) {
+      failedPages += 1;
       console.warn(error.message);
     }
   }
-  return batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
+  const output = batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
+  metaSourceStatus.facebook = {
+    source: "Facebook",
+    status: successfulPages ? (output.length ? "connected" : "empty") : "error",
+    connected: successfulPages > 0,
+    fetchedCount: output.length,
+    detail: `Page Posts 成功 ${successfulPages}/${facebookPageIds.length} 个 Page${failedPages ? `，${failedPages} 个需重试` : ""}`
+  };
+  return output;
 }
 
 async function fetchTikTokSignals() {
@@ -1549,6 +1603,17 @@ async function update() {
       status: statusFromTrend(trend, score)
     };
   });
+  data.sourceStatus = [
+    metaSourceStatus.meta,
+    {
+      ...metaSourceStatus.instagram,
+      visibleCount: data.hotspots.filter(item => item.source?.includes("Instagram")).length
+    },
+    {
+      ...metaSourceStatus.facebook,
+      visibleCount: data.hotspots.filter(item => item.source?.includes("Facebook")).length
+    }
+  ];
 
   data.templateOutputs = buildTemplateOutputs(data.hotspots);
   const lifecycleRecords = updateHotspotLifecycle(data.hotspots, now);

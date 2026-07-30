@@ -237,7 +237,8 @@ const themePrompts = {
   southAmericaModernClay: "Minimal contemporary artwork inspired by South American modern design rather than presented as a traditional regional culture. Use terracotta, cream plaster, muted cobalt and sun-warmed modernist curves with hand-shaped clay texture, architectural arcs and spacious composition. No culture-specific claims, landmarks, flags, brands, text or watermarks.",
   gulfNightCourtyard: "Minimal premium Gulf night courtyard artwork using deep indigo, moonlit limestone, smoky olive and restrained brushed brass. Create quiet plaster planes, a narrow pool of cool light, soft geometric shadows and subtle pearl-like highlights; serene, architectural and luxurious. No landmarks, flags, religious symbols, brands, text or watermarks.",
   indiaIndependenceKhadi: "Complete premium Android OS home-screen theme for India Independence season: preserve a full desktop UI with status bar, clock widget, AI Suggestions widget, labeled icons, Dock and search bar. Use handwoven khadi-like texture, warm ivory, restrained saffron, deep green and indigo, abstract dawn curves and architectural arches; every wallpaper, widget, icon and Dock element must use one coherent material system. Avoid literal flags, national emblems, political figures, religious imagery, brands, extra text and watermark.",
-  indonesiaIndependenceArchipelago: "Complete premium Android OS home-screen theme for Indonesia Independence season: preserve a full desktop UI with status bar, clock widget, AI Suggestions widget, labeled icons, Dock and search bar. Use coral red, warm ivory, volcanic charcoal, ocean teal, woven fiber and brushed brass, with archipelago dawn and sea-flow curves; every wallpaper, widget, icon and Dock element must use one coherent material system. Avoid literal flags, Garuda, maps, official emblems, copied batik patterns, religious imagery, brands, extra text and watermark."
+  indonesiaIndependenceArchipelago: "Complete premium Android OS home-screen theme for Indonesia Independence season: preserve a full desktop UI with status bar, clock widget, AI Suggestions widget, labeled icons, Dock and search bar. Use coral red, warm ivory, volcanic charcoal, ocean teal, woven fiber and brushed brass, with archipelago dawn and sea-flow curves; every wallpaper, widget, icon and Dock element must use one coherent material system. Avoid literal flags, Garuda, maps, official emblems, copied batik patterns, religious imagery, brands, extra text and watermark.",
+  brazilIndependenceCerrado: "Complete premium Android OS home-screen theme for Brazil Independence season: preserve a full desktop UI with status bar, clock widget, AI Suggestions widget, labeled icons, Dock and search bar. Use Brazilian modernist curves, cerrado dawn, Atlantic teal, mineral forest green, golden ochre, limestone cream and a small jacaranda violet accent; unify wallpaper, widgets, icons and Dock in one tactile stone, ceramic, fiber and brushed-metal system. Avoid literal flags, coat of arms, maps, political figures, football-team branding, carnival clichés, sacred patterns, brands, extra text and watermark."
 };
 
 const $ = s => document.querySelector(s);
@@ -374,7 +375,21 @@ function formatUpdateTime(iso) {
 function updateDataStatus() {
   $("#lastUpdated").textContent = `更新于 ${formatUpdateTime(dashboardMeta.generatedAt)}`;
   $("#dataMode").textContent = dashboardMeta.mode || "定时更新";
-  $("#liveStatus").textContent = dashboardMeta.cadence || "筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化";
+  const sourceStatuses = (dashboardMeta.sourceStatus || [])
+    .filter(item => item.source === "Instagram" || item.source === "Facebook");
+  const statusLabels = {
+    connected: "已写入",
+    empty: "接口正常 · 本轮 0 条",
+    error: "连接异常",
+    missing: "待配置",
+    pending: "待验证"
+  };
+  const healthBadges = sourceStatuses.map(item => {
+    const cssStatus = item.status === "connected" ? "ok" : item.status === "empty" ? "empty" : "error";
+    const countText = item.status === "connected" ? ` · ${item.visibleCount ?? item.fetchedCount ?? 0} 条` : "";
+    return `<span class="source-health-badge ${cssStatus}" title="${escapeAttr(item.detail || "")}">${escapeHtml(item.source)}：${statusLabels[item.status] || item.status}${countText}</span>`;
+  }).join("");
+  $("#liveStatus").innerHTML = `<span>${escapeHtml(dashboardMeta.cadence || "筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化")}</span>${healthBadges ? `<span class="source-health-badges">${healthBadges}</span>` : ""}`;
 }
 
 function initSelects() {

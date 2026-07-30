@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "libraryType": "theme",
   "generatedAt": "2026-07-27T12:00:00.000Z",
-  "latestGeneratedAt": "2026-07-30T09:32:00.000Z",
+  "latestGeneratedAt": "2026-07-30T10:20:00.000Z",
   "cadence": "预测与实时双轨：固定节假日提前 4–6 周准备、提前一周定稿；实时热点在形成持续性后触发，可玩性仅用于排序与表现判断。",
   "policy": "主题库只由核心地区优先的临近固定节假日或持续性热点触发。可玩性用于排序与表现判断；跨平台信号用于增强证据可信度，不是生产前提。新增主题保留 30 天，之后自动归档但不删除。",
   "themes": [
@@ -191,6 +191,21 @@
       "downloadName": "indonesia-independence-archipelago-dawn-theme.png",
       "promptKey": "indonesiaIndependenceArchipelago",
       "tags": ["节日前瞻", "完整 OS 主题", "海岛晨光"]
+    },
+    {
+      "generatedAt": "2026-07-30T10:20:00.000Z",
+      "batchId": "theme-predictable-2026-09",
+      "id": "theme-brazil-independence-cerrado-dawn",
+      "holidayId": "brazil-independence-day-2026",
+      "triggerKey": "holiday:brazil-independence-day-2026",
+      "kicker": "可预测节日 · 巴西独立日 / 09月07日",
+      "name": "塞拉多晨光",
+      "description": "以巴西现代主义曲线、塞拉多晨光、森林绿、金赭、石灰岩与大西洋青构建完整桌面主题；壁纸、组件、图标和 Dock 统一为现代石材、陶瓷与纤维语言。",
+      "preview": "assets/theme-preview/2026-09-brazil-independence-cerrado-dawn-theme.png",
+      "caption": "塞拉多晨光 · 巴西独立日主题",
+      "downloadName": "brazil-independence-cerrado-dawn-theme.png",
+      "promptKey": "brazilIndependenceCerrado",
+      "tags": ["节日前瞻", "完整 OS 主题", "巴西现代主义"]
     }
   ]
 }

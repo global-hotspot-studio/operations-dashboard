@@ -35,4 +35,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto update hotspot dashboard data"
-          file_pattern: data/dashboard.json data/dashboard-playbook.json
+          file_pattern: data/dashboard.json data/dashboard-playbook.json data/hotspot-lifecycle.json
