@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-30T10:19:25.459Z",
+  "generatedAt": "2026-07-30T10:26:31.950Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -25,12 +25,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1254,
-    "effectiveHotspots": 346,
-    "highPriorityAlerts": 19,
-    "templateCandidates": 21,
+    "rawTopics": 1236,
+    "effectiveHotspots": 342,
+    "highPriorityAlerts": 18,
+    "templateCandidates": 20,
     "rawDelta": 42,
-    "effectiveRate": "27.5%"
+    "effectiveRate": "27.6%"
   },
   "trendSeries": {
     "labels": [
@@ -48,32 +48,32 @@
       "22:00"
     ],
     "effective": [
-      52,
-      42,
-      63,
-      40,
-      92,
-      41,
-      96,
-      78,
-      77,
-      145,
-      89,
-      132
+      53,
+      37,
+      70,
+      33,
+      97,
+      39,
+      94,
+      83,
+      70,
+      152,
+      85,
+      133
     ],
     "template": [
-      17,
-      32,
-      38,
-      22,
-      65,
-      27,
-      62,
-      49,
-      44,
-      73,
-      46,
-      85
+      16,
+      31,
+      41,
+      19,
+      69,
+      25,
+      63,
+      51,
+      41,
+      77,
+      43,
+      87
     ]
   },
   "hotspots": [
@@ -86,7 +86,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "12.5M",
+      "heat": "12.7M",
       "trend": 74,
       "score": 98,
       "status": "爆发",
@@ -96,7 +96,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Alaakaa Loova Lyrical (Tamil) | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度、阿联酋），播放量 12.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（印度、阿联酋），播放量 12.6M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7VsejGzcJmM",
         "channelTitle": "Divo Music",
@@ -125,7 +125,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "13.6M",
+      "heat": "13.7M",
       "trend": 73,
       "score": 98,
       "status": "爆发",
@@ -135,7 +135,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Namit Malhotra’s Ramayana- Hindi Trailer | Nitesh Tiwari | Ranbir, Yash, Hans Zimmer, A.R.Rahman》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 13.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 13.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "lNaSdnz2I8g",
         "channelTitle": "World Of Ramayana",
@@ -283,7 +283,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "603K",
+      "heat": "612K",
       "trend": 66,
       "score": 98,
       "status": "爆发",
@@ -293,7 +293,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 巴西 热门内容《NO BATIDÃO》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（巴西、秘鲁、俄罗斯），播放量 580K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（巴西、秘鲁、俄罗斯），播放量 588K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "g16sDYTn8j0",
         "channelTitle": "slxughter - Topic",
@@ -430,14 +430,14 @@
     },
     {
       "id": 1009,
-      "name": "FALSITY, la ÚLTIMA ESP…",
-      "originalTitle": "FALSITY, la ÚLTIMA ESPERANZA…",
-      "region": "南美洲",
-      "country": "哥伦比亚 / 秘鲁",
+      "name": "I CAN Make WEAPONS fro…",
+      "originalTitle": "I CAN Make WEAPONS from ANY BLOCK in Minecraft!",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "YouTube"
       ],
-      "heat": "930K",
+      "heat": "802K",
       "trend": 53,
       "score": 95,
       "status": "爆发",
@@ -446,67 +446,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 哥伦比亚 热门内容《FALSITY, la ÚLTIMA ESPERANZA…》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（哥伦比亚、秘鲁），播放量 1.0M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《I CAN Make WEAPONS from ANY BLOCK in Minecraft!》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 热门榜（印度），播放量 862K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "Rq6CWs1kzL4",
-        "channelTitle": "soyHerios",
-        "publishedAt": "2026-07-29T19:00:07Z",
-        "thumbnail": "https://i.ytimg.com/vi/Rq6CWs1kzL4/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=Rq6CWs1kzL4"
+        "videoId": "WrnfSIjDFpI",
+        "channelTitle": "Carry Depie",
+        "publishedAt": "2026-07-29T09:18:02Z",
+        "thumbnail": "https://i.ytimg.com/vi/WrnfSIjDFpI/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=WrnfSIjDFpI"
       },
       "markets": [
-        "哥伦比亚",
-        "秘鲁"
+        "印度"
       ],
       "signals": [
         {
           "source": "YouTube",
-          "title": "FALSITY, la ÚLTIMA ESPERANZA…",
-          "url": "https://www.youtube.com/watch?v=Rq6CWs1kzL4"
+          "title": "I CAN Make WEAPONS from ANY BLOCK in Minecraft!",
+          "url": "https://www.youtube.com/watch?v=WrnfSIjDFpI"
         }
       ]
     },
     {
       "id": 1010,
-      "name": "real cartagena - améri…",
-      "originalTitle": "real cartagena - américa",
-      "region": "南美洲",
-      "country": "哥伦比亚",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 72,
-      "score": 97,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「real cartagena - américa」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "real cartagena - américa",
-        "traffic": 50000,
-        "publishedAt": "Wed, 29 Jul 2026 20:00:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi5RwqsM3coaiWjgybSnlfXp8hI3fa-e4dNP8lQd2iuuTo_HbYl8PAOH4EpsU",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
-        "newsUrl": "https://www.winsports.co/futbol-colombiano/noticias/en-vivo-real-cartagena-vs-america-de-cali-minuto-a-minuto-y-goles-copa-betplay-450069",
-        "newsTitle": "América empató en Cartagena y clasificó a octavos de Copa BetPlay",
-        "newsSource": "Win Sports"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "real cartagena - américa",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica"
-        }
-      ]
-    },
-    {
-      "id": 1011,
       "name": "zona central de chile",
       "originalTitle": "zona central de chile",
       "region": "南美洲",
@@ -515,8 +476,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 93,
+      "trend": 69,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -544,7 +505,7 @@
       ]
     },
     {
-      "id": 1012,
+      "id": 1011,
       "name": "liverpool vs wrexham",
       "originalTitle": "liverpool vs wrexham",
       "region": "撒哈拉以南非洲",
@@ -553,8 +514,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 64,
-      "score": 93,
+      "trend": 61,
+      "score": 92,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -562,7 +523,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 肯尼亚 搜索趋势「liverpool vs wrexham」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 肯尼亚 搜索趋势，搜索热度约 20000+。关联新闻源：Liverpool FC / Sky Sports；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 肯尼亚 搜索趋势，搜索热度约 20000+。关联新闻源：Liverpool FC / BBC；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "liverpool vs wrexham",
         "traffic": 20000,
@@ -578,6 +539,44 @@
           "source": "Google Trends",
           "title": "liverpool vs wrexham",
           "url": "https://trends.google.com/trends/explore?geo=KE&q=liverpool%20vs%20wrexham"
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "name": "real cartagena - améri…",
+      "originalTitle": "real cartagena - américa",
+      "region": "南美洲",
+      "country": "哥伦比亚",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 64,
+      "score": 92,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「real cartagena - américa」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "real cartagena - américa",
+        "traffic": 50000,
+        "publishedAt": "Wed, 29 Jul 2026 20:00:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSi5RwqsM3coaiWjgybSnlfXp8hI3fa-e4dNP8lQd2iuuTo_HbYl8PAOH4EpsU",
+        "url": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
+        "newsUrl": "https://www.winsports.co/futbol-colombiano/noticias/en-vivo-real-cartagena-vs-america-de-cali-minuto-a-minuto-y-goles-copa-betplay-450069",
+        "newsTitle": "América empató en Cartagena y clasificó a octavos de Copa BetPlay",
+        "newsSource": "Win Sports"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "real cartagena - américa",
+          "url": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica"
         }
       ]
     },
@@ -621,8 +620,8 @@
     },
     {
       "id": 1014,
-      "name": "बांग्लादेश",
-      "originalTitle": "बांग्लादेश",
+      "name": "एकनाथ शिंदे",
+      "originalTitle": "एकनाथ शिंदे",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -637,23 +636,23 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「बांग्लादेश」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：Navbharat Times / Hindustan；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「एकनाथ शिंदे」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 200+。关联新闻源：Google Trends；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "बांग्लादेश",
-        "traffic": 500,
-        "publishedAt": "Thu, 30 Jul 2026 03:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6ByLJVvPOL4M87rzInjvCSe_QBeTCfnaJH4TdNhD-t5mlZN-IcBNQqgxslg",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B6",
-        "newsUrl": "https://navbharattimes.indiatimes.com/world/asian-countries/narendra-modi-invites-tarique-rahman-for-brics-summit-bangladesh-govt-yet-to-decide/articleshow/132712646.cms",
-        "newsTitle": "पीएम मोदी के न्योते को 'ठुकराने' का जोखिम लेंगे तारिक रहमान? ब्रिक्स समिट में आने पर ढाका में क्यों है असमंजस",
-        "newsSource": "Navbharat Times"
+        "topic": "एकनाथ शिंदे",
+        "traffic": 200,
+        "publishedAt": "Thu, 30 Jul 2026 03:10:00 -0700",
+        "picture": "",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%8F%E0%A4%95%E0%A4%A8%E0%A4%BE%E0%A4%A5%20%E0%A4%B6%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%87",
+        "newsUrl": "",
+        "newsTitle": "",
+        "newsSource": ""
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "बांग्लादेश",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B6"
+          "title": "एकनाथ शिंदे",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%8F%E0%A4%95%E0%A4%A8%E0%A4%BE%E0%A4%A5%20%E0%A4%B6%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%87"
         }
       ]
     },
@@ -681,10 +680,10 @@
         "topic": "jon bernthal",
         "traffic": 100,
         "publishedAt": "Thu, 30 Jul 2026 03:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0f7c-cfpsaP4BAEPW69dttN-WPGhVC_wwdNnt3Fd_iiXzG86o3yp4r93FYY",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQitSG2hpdqRMR4-mgnprdsM_DywDjaJu9mIftU8RnbhG_JcHd5JpTEr-fb_1Q",
         "url": "https://trends.google.com/trends/explore?geo=ID&q=jon%20bernthal",
-        "newsUrl": "https://achmadnurhidayat.id/jon-bernthal-bawa-punisher-spider-man",
-        "newsTitle": "Jon Bernthal Bawa Karakter Punisher Masuk Ke Film Spider-Man",
+        "newsUrl": "https://achmadnurhidayat.id/jon-bernthal-bawa-karakter-punisher-ke-film-spider-man-brand-new-day",
+        "newsTitle": "Jon Bernthal Bawa Karakter Punisher ke Film Spider Man Brand New Day",
         "newsSource": "Achmad Nur Hidayat"
       },
       "signals": [
@@ -714,10 +713,10 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 巴西 搜索趋势「mansão」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 200+。关联新闻源：Notícias da TV / O GLOBO；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 500+。关联新闻源：Notícias da TV / O GLOBO；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "mansão",
-        "traffic": 200,
+        "traffic": 500,
         "publishedAt": "Thu, 30 Jul 2026 03:00:00 -0700",
         "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGvgD5hytPwnIjLL2V6PeAkr7_swRfc0XFBKz-lzI0Yi94vfes4NAVv58TV1U",
         "url": "https://trends.google.com/trends/explore?geo=BR&q=mans%C3%A3o",
@@ -773,8 +772,8 @@
     },
     {
       "id": 1018,
-      "name": "a miss that changed ev…",
-      "originalTitle": "a miss that changed everything 😮",
+      "name": "ok bye …",
+      "originalTitle": "ok bye",
       "region": "全球",
       "country": "全球",
       "source": [
@@ -789,26 +788,26 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「a miss that changed everything 😮 #football #worldcup #history #didyouknow」提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #football 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+      "prompt": "基于 Instagram 全球 热点内容「ok bye #grwm #trend #fyp #fashion #ootd」提取视觉方向：穿搭 / 妆造 / 人像。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "reason": "来自 Instagram Hashtag #fashion 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
-        "hashtag": "football",
-        "mediaUrl": "https://scontent-ord5-1.cdninstagram.com/o1/v/t2/f2/m86/AQNxFaD8CfA_py5PsDHm8dhrytoRqmGN_SYJpYE7E5kdknrRCWe6-LEUKQf_bpKmKIgE72uRRAQO5Z02MxGkw6e2ciG2fDatt6o_IaM.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_ohc=QXXvjhJlsRMQ7kNvwHVdg9j&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTgxMTM5OTYyNzU4NjQ2MjQsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=5979f45084f8aaf7&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84NjQ0N0M0Nzg0NkFGMUI4QzdEOTAxQzM0Mzg2MzJCN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzk0NEYzOURDQUFFRDFENkEzQTdCMTc1MjZFNERCRjgwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbg0OKXraWtQBUCKAJDMywXQDt3S8an754YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SBv5lsIwglh8HsRfrncQgA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQEFtK73TlQp9ya-chTPpX4gKg1IWhtEj9ScKqq3-1Fbiw&oe=6A6CF732",
-        "publishedAt": "2026-07-30T10:19:56+0000",
-        "url": "https://www.instagram.com/reel/DbadSKnDRen/"
+        "hashtag": "fashion",
+        "mediaUrl": "https://scontent-dfw6-1.cdninstagram.com/o1/v/t2/f2/m86/AQO3tikvGBD5gy4qv_1xRpjwFffwzsnAfraH3loXFY4H-f8N4GAJVMV9ovx4Vh_0FpSCXUHxnVoH6_qaphcykFiO1-tG2Y8sJtLUPQA.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_ohc=Q-OdX4j8_kkQ7kNvwFP59Ih&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjI0MDk0MDI4NjY2MjkzNiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=aa2bc7e98636d073&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODQ5NTA3RUVEMkZBMjM5OTE4RTBBMkMxOUYwOTY5QV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzVCNENBNDRBNEQ5Njg3QThBREZFN0I2OEM1M0E1MzgyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaw5P6b8of7BxUCKAJDMywXQB5LxqfvnbIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=kcIhOKg9_UYkxDy9Yok91g&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQEgVm886bF3mWleNll2n02Vp11wziCmtOU4Ds7EgK7jzg&oe=6A6CFC87",
+        "publishedAt": "2026-07-30T10:27:20+0000",
+        "url": "https://www.instagram.com/reel/DbadcEdonDl/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "a miss that changed everything 😮",
-          "url": "https://www.instagram.com/reel/DbadSKnDRen/"
+          "title": "ok bye",
+          "url": "https://www.instagram.com/reel/DbadcEdonDl/"
         }
       ]
     },
     {
       "id": 1019,
-      "name": "Beautiful Girl 😘 …",
-      "originalTitle": "Beautiful Girl 😘",
+      "name": "🛍️ Představujeme ConC…",
+      "originalTitle": "🛍️ Představujeme ConCrunch Market! 🛍️ Chcete si mezi programem na chvíli odpočinout, něco dobrého ochutnat nebo objevit něco nového? Pak určitě zamiřte do ConCrunch Marketu – naší nové venkovní zóny. Co tu najdete? 🎬 Letní kino – posaďte se a užijte si promítání pod širým nebem. 🧜 Fotokoutek Merweeku – přijďte se vyfotit s mořskými pannami. 🎨 Tematickou Artist Alley – fantasy tvorbu, ručně vyráběné doplňky, dekorace a další originální výrobky. 🔮 Výklad tarotu – nechte si vyložit karty. 🍗 Historický stánek s občerstvením – zastavte se na něco dobrého. A tím rozhodně nekončíme. Další novinky z ConCrunch Marketu vám představíme už brzy. 👀 🇬🇧 EN 🇬🇧 🛍️ Introducing ConCrunch Market! 🛍️ Looking for a place to take a break, grab a bite, or discover something new between events? Be sure to visit ConCrunch Market, our brand-new outdoor area. Here’s what you’ll find: 🎬 Open-air cinema – enjoy a movie under the open sky. 🧜 Merweek Photo Booth – take a photo with the mermaids. 🎨 Themed Artist Alley – fantasy-themed creations, handmade accessories, decorations, and other unique handcrafted items. 🔮 Tarot readings – let the cards reveal your fortune. 🍗 Historical food stand – stop by for some period-inspired food. And we’re not done yet. More ConCrunch Market announcements are coming soon. 👀",
       "region": "全球",
       "country": "全球",
       "source": [
@@ -823,58 +822,24 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「Beautiful Girl 😘 #viral #explore #shorts #fashion #style」提取视觉方向：穿搭 / 妆造 / 人像。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #fashion 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+      "prompt": "基于 Instagram 全球 热点内容「🛍️ Představujeme ConCrunch Market! 🛍️\n\nChcete si mezi programem na chvíli odpočinout, něco dobrého ochutnat nebo objevit něco nového? Pak určitě zamiřte do ConCrunch Marketu – naší nové venkovní zóny.\n\nCo tu najdete?\n\n🎬 Letní kino – posaďte se a užijte si promítání pod širým nebem.\n🧜 Fotokoutek Merweeku – přijďte se vyfotit s mořskými pannami.\n🎨 Tematickou Artist Alley – fantasy tvorbu, ručně vyráběné doplňky, dekorace a další originální výrobky.\n🔮 Výklad tarotu – nechte si vyložit karty.\n🍗 Historický stánek s občerstvením – zastavte se na něco dobrého.\n\nA tím rozhodně nekončíme. Další novinky z ConCrunch Marketu vám představíme už brzy. 👀\n\n🇬🇧 EN 🇬🇧\n\n🛍️ Introducing ConCrunch Market! 🛍️\n\nLooking for a place to take a break, grab a bite, or discover something new between events? Be sure to visit ConCrunch Market, our brand-new outdoor area.\n\nHere’s what you’ll find:\n\n🎬 Open-air cinema – enjoy a movie under the open sky.\n🧜 Merweek Photo Booth – take a photo with the mermaids.\n🎨 Themed Artist Alley – fantasy-themed creations, handmade accessories, decorations, and other unique handcrafted items.\n🔮 Tarot readings – let the cards reveal your fortune.\n🍗 Historical food stand – stop by for some period-inspired food.\n\nAnd we’re not done yet. More ConCrunch Market announcements are coming soon. 👀\n\n#ConCrunch #ConCrunch2026 #GabrielLoci #ArtistAlley #Festival」提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
-        "hashtag": "fashion",
-        "mediaUrl": "https://scontent-ord5-1.cdninstagram.com/o1/v/t2/f2/m86/AQM4LOUNWbAH4PGERQalWWtT-6YEZ7gt3svh1wP4EwfLiScyIex2OGRqstmFXGiQPRN56Y1PNKJsXlJ3bITnphgZ3hz1XtbVZ3CwAX8.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_ohc=ZzF3e4aWVLQQ7kNvwG5FDPN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc2MTk2ODU5ODQ5MjAxMiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=32fcd052edaa45ba&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DNTRBOEU1NjdEMUM4MTQ3ODQ4QTAyMEE4NENDODA4NV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzdFNDkzRENBRUVGMjJGMEUxMUM0MDMzMzA4OUE3NzlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjdmGiaChBhUCKAJDMywXQCBU_fO2RaIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=Ua33IHLlYt2PYF5RZ79OeA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQG0HLXwGyMHbtG4_gdKSciDkRDdweylECGmAlUga4-YqQ&oe=6A6CE7A8",
-        "publishedAt": "2026-07-30T10:20:14+0000",
-        "url": "https://www.instagram.com/reel/Dbadcd9IE2A/"
+        "hashtag": "festival",
+        "mediaUrl": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-15/760604461_18030734186829214_2564126861030117043_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YDfd4KKMb5sQ7kNvwEHAMD5&_nc_oc=AdpgRBzCp2LFKX1N_KTx_TK5PsBN_raR6BVWZ061GbBidre2mLd6ee1ZLovOIHH-vPc&_nc_zt=23&_nc_ht=scontent-dfw5-2.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=K5gNWfjrHojpXu22ofg0bg&oh=00_AQGBguQyjUMWsycT0DsV76Cn7lc8mX9OjsI3bpRlAOa38g&oe=6A70E48F",
+        "publishedAt": "2026-07-30T10:27:17+0000",
+        "url": "https://www.instagram.com/p/Dbad5MdtroN/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "Beautiful Girl 😘",
-          "url": "https://www.instagram.com/reel/Dbadcd9IE2A/"
+          "title": "🛍️ Představujeme ConCrunch Market! 🛍️ Chcete si mezi programem na chvíli odpočinout, něco dobrého ochutnat nebo objevit něco nového? Pak určitě zamiřte do ConCrunch Marketu – naší nové venkovní zóny. Co tu najdete? 🎬 Letní kino – posaďte se a užijte si promítání pod širým nebem. 🧜 Fotokoutek Merweeku – přijďte se vyfotit s mořskými pannami. 🎨 Tematickou Artist Alley – fantasy tvorbu, ručně vyráběné doplňky, dekorace a další originální výrobky. 🔮 Výklad tarotu – nechte si vyložit karty. 🍗 Historický stánek s občerstvením – zastavte se na něco dobrého. A tím rozhodně nekončíme. Další novinky z ConCrunch Marketu vám představíme už brzy. 👀 🇬🇧 EN 🇬🇧 🛍️ Introducing ConCrunch Market! 🛍️ Looking for a place to take a break, grab a bite, or discover something new between events? Be sure to visit ConCrunch Market, our brand-new outdoor area. Here’s what you’ll find: 🎬 Open-air cinema – enjoy a movie under the open sky. 🧜 Merweek Photo Booth – take a photo with the mermaids. 🎨 Themed Artist Alley – fantasy-themed creations, handmade accessories, decorations, and other unique handcrafted items. 🔮 Tarot readings – let the cards reveal your fortune. 🍗 Historical food stand – stop by for some period-inspired food. And we’re not done yet. More ConCrunch Market announcements are coming soon. 👀",
+          "url": "https://www.instagram.com/p/Dbad5MdtroN/"
         }
       ]
     },
     {
       "id": 1020,
-      "name": "🎤 Jeudi 20 Août 22h, …",
-      "originalTitle": "🎤 Jeudi 20 Août 22h, découvrez Saule 🌹 🎵 Chanson et Musique d’expression francophone Saule mêle chanson française et pop sensible avec une voix singulière et des textes sincères. Avec son nouvel album La Source, il revient à un univers épuré, porté par une émotion brute et une énergie scénique captivante. 🎟️ Préventes et infos sur le site du festival : LesSentiersDeSartRisbart.be",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "Instagram"
-      ],
-      "heat": "180K",
-      "trend": 59,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「🎤 Jeudi 20 Août 22h, (re)découvrez Saule 🌹\n🎵 Chanson et Musique d’expression francophone\n\nSaule mêle chanson française et pop sensible avec une voix singulière et des textes sincères. Avec son nouvel album La Source, il revient à un univers épuré, porté par une émotion brute et une énergie scénique captivante.\n\n🎟️ Préventes et infos sur le site du festival : LesSentiersDeSartRisbart.be\n\n#lessentiersdesartrisbart  #musique #festival #music #concertlive #belgique #saule  #concert #Festival2026」提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
-      "instagram": {
-        "hashtag": "festival",
-        "mediaUrl": "https://scontent-ord5-1.cdninstagram.com/v/t39.30808-6/759034229_1659279856200236_2755027288652820532_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qJClAFRkwAkQ7kNvwG8ZE4z&_nc_oc=AdqHKxT9sHNplMnz8-R6QZ5q05inmLdgueY7NGZKu9J6mEDQu-_FBsi3UZzQyV_QXUQ&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=v5YHXdKBKVrtyt1zs5gpbA&oh=00_AQF3yuUJjU9HBl-a8yVc9Fi1Ojj7VrWW-Ph2D0RJ14hx1A&oe=6A70DC46",
-        "publishedAt": "2026-07-30T10:20:05+0000",
-        "url": "https://www.instagram.com/p/DbaddylDx58/"
-      },
-      "signals": [
-        {
-          "source": "Instagram",
-          "title": "🎤 Jeudi 20 Août 22h, découvrez Saule 🌹 🎵 Chanson et Musique d’expression francophone Saule mêle chanson française et pop sensible avec une voix singulière et des textes sincères. Avec son nouvel album La Source, il revient à un univers épuré, porté par une émotion brute et une énergie scénique captivante. 🎟️ Préventes et infos sur le site du festival : LesSentiersDeSartRisbart.be",
-          "url": "https://www.instagram.com/p/DbaddylDx58/"
-        }
-      ]
-    },
-    {
-      "id": 1021,
       "name": "Ajinkya Rahane retires…",
       "originalTitle": "Ajinkya Rahane retires from international cricket",
       "region": "印度",
@@ -883,8 +848,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 46,
-      "score": 80,
+      "trend": 60,
+      "score": 86,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -910,7 +875,7 @@
       ]
     },
     {
-      "id": 1022,
+      "id": 1021,
       "name": "When Steve McCurry Sho…",
       "originalTitle": "When Steve McCurry Shot Bollywood: Rare Photos of Amitabh Bachchan, Sridevi, Anil Kapoor and Dev Anand",
       "region": "印度",
@@ -919,8 +884,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 58,
-      "score": 85,
+      "trend": 46,
+      "score": 80,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -946,7 +911,7 @@
       ]
     },
     {
-      "id": 1023,
+      "id": 1022,
       "name": "A rain festival with n…",
       "originalTitle": "A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late",
       "region": "印度",
@@ -955,8 +920,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 51,
-      "score": 82,
+      "trend": 58,
+      "score": 85,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -980,11 +945,47 @@
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaldGaUFVRVJZRFd2M1JEaU50YU1lRHhCMUd2bGJidDRHWHBkQktVTXlPbnY5Z2lsbGZDYnRyOUYwczJuOV9DR3A5dzZ1M0tFYmtacDR1bUNkcW1odGZod0pXMi1SdUZZQ2IxaDNTTEEtSDZFcmxXd0tHcktSMURlc2RvbnczSUlRdHJHV1phUUFrY1pkN3NERDZoOGVfc1p1UTNvZ19IVjJqeHo2bGx1Um5sRQ?oc=5"
         }
       ]
+    },
+    {
+      "id": 1023,
+      "name": "Video BTS: Kami Harap …",
+      "originalTitle": "Video BTS: Kami Harap Musik Dicintai Tanpa Dikategorikan dari Wilayah-Bahasa",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 51,
+      "score": 82,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「20detik」热点《Video BTS: Kami Harap Musik Dicintai Tanpa Dikategorikan dari Wilayah-Bahasa》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：20detik。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "musik",
+        "category": "核心话题",
+        "sourceName": "20detik",
+        "title": "Video BTS: Kami Harap Musik Dicintai Tanpa Dikategorikan dari Wilayah-Bahasa",
+        "publishedAt": "Thu, 30 Jul 2026 07:32:29 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQTJoX3IxRnVMOE91Y05hR3ZTUHoxWWY2dHdGNGxXQ1VKaVQxTnRLY1p5ZTl4UnZoSVRUS0h2T2l3VVlUMUlkOC1EQTBveUFBTmFTeUJ0RUZJR3ZwNlBIY2traW82cEVUTUEydEpURFIyX1RLM2ZBcU9Vc3BvRU9BTm1QU2lWZEVzTENXU0VtVUFLNElaeHIyN2pZcFpxSkZYelRSakVldzdjMmp2ZC1KT2o1cjRxMG5OTnpfcnB5WUVLZU4xOGc?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Video BTS: Kami Harap Musik Dicintai Tanpa Dikategorikan dari Wilayah-Bahasa",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQTJoX3IxRnVMOE91Y05hR3ZTUHoxWWY2dHdGNGxXQ1VKaVQxTnRLY1p5ZTl4UnZoSVRUS0h2T2l3VVlUMUlkOC1EQTBveUFBTmFTeUJ0RUZJR3ZwNlBIY2traW82cEVUTUEydEpURFIyX1RLM2ZBcU9Vc3BvRU9BTm1QU2lWZEVzTENXU0VtVUFLNElaeHIyN2pZcFpxSkZYelRSakVldzdjMmp2ZC1KT2o1cjRxMG5OTnpfcnB5WUVLZU4xOGc?oc=5"
+        }
+      ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 117,
+      "count": 112,
       "growth": 55,
       "countries": [
         "印度"
@@ -996,8 +997,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 117,
-      "growth": 33,
+      "count": 112,
+      "growth": 31,
       "countries": [
         "印度尼西亚"
       ],
@@ -1008,8 +1009,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 70,
-      "growth": 33,
+      "count": 77,
+      "growth": 31,
       "countries": [
         "俄罗斯"
       ],
@@ -1020,8 +1021,8 @@
       ]
     },
     "中东": {
-      "count": 70,
-      "growth": 31,
+      "count": 77,
+      "growth": 32,
       "countries": [
         "沙特阿拉伯",
         "阿联酋"
@@ -1033,8 +1034,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 88,
-      "growth": 53,
+      "count": 83,
+      "growth": 56,
       "countries": [
         "尼日利亚",
         "南非",
@@ -1048,7 +1049,7 @@
       ]
     },
     "南美洲": {
-      "count": 117,
+      "count": 112,
       "growth": 55,
       "countries": [
         "巴西",
@@ -1266,16 +1267,16 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1010,
-          "key": "google trends:real cartagena américa",
-          "name": "real cartagena - américa",
+          "id": 1009,
+          "key": "youtube:i can make weapons from any block in minecraft",
+          "name": "I CAN Make WEAPONS from ANY BLOCK in Minecraft!",
           "source": [
-            "Google Trends"
+            "YouTube"
           ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
-          "region": "南美洲",
-          "playabilityScore": 97,
-          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
+          "sourceUrl": "https://www.youtube.com/watch?v=WrnfSIjDFpI",
+          "region": "印度",
+          "playabilityScore": 93,
+          "reason": "来自 YouTube 热门榜（印度），播放量 862K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1294,16 +1295,16 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1017,
-          "key": "google trends:lisandro martínez",
-          "name": "lisandro martínez",
+          "id": 1012,
+          "key": "google trends:real cartagena américa",
+          "name": "real cartagena - américa",
           "source": [
             "Google Trends"
           ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=AR&q=lisandro%20mart%C3%ADnez",
+          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
           "region": "南美洲",
           "playabilityScore": 92,
-          "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 200+。关联新闻源：Infobae / eldoce；适合判断地区搜索兴趣和热点持续性。",
+          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1329,8 +1330,8 @@
       "ageDays": 2,
       "minimumIntervalDays": 21,
       "activeWindowDays": 30,
-      "recommended": true,
-      "reason": "巴西独立日 距今 39 天且尚未覆盖，建议追加主题模板。",
+      "recommended": false,
+      "reason": "沿用当前主题库；实时爆发热点不会单独触发主题换批。",
       "candidates": [
         {
           "id": "india-independence-day-2026",
@@ -1383,7 +1384,35 @@
       ],
       "watchlist": [
         {
-          "id": 1023,
+          "id": 1009,
+          "key": "youtube:i can make weapons from any block in minecraft",
+          "name": "I CAN Make WEAPONS from ANY BLOCK in Minecraft!",
+          "source": [
+            "YouTube"
+          ],
+          "sourceUrl": "https://www.youtube.com/watch?v=WrnfSIjDFpI",
+          "region": "印度",
+          "playabilityScore": 100,
+          "reason": "来自 YouTube 热门榜（印度），播放量 862K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": false,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1022,
           "key": "本地平台:a rain festival with no rain the indian farmers bracing for a super el niño as monsoon arrives l",
           "name": "A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late",
           "source": [
@@ -1396,7 +1425,7 @@
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
-            "sustainedHeat": false,
+            "sustainedHeat": true,
             "observationCount": 1,
             "persistenceDays": 0,
             "longRunning": false,
@@ -1437,36 +1466,33 @@
             "status": "watch"
           },
           "triggerType": "realtime"
-        },
-        {
-          "id": 1010,
-          "key": "google trends:real cartagena américa",
-          "name": "real cartagena - américa",
-          "source": [
-            "Google Trends"
-          ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
-          "region": "南美洲",
-          "playabilityScore": 75,
-          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
-          "screening": {
-            "crossPlatformVerified": false,
-            "coreRegionPriority": true,
-            "sustainedHeat": true,
-            "observationCount": 1,
-            "persistenceDays": 0,
-            "longRunning": false,
-            "strongVisualSymbol": true,
-            "positiveEmotion": true,
-            "personalizable": true,
-            "copyrightControllable": true,
-            "lifecycleFit": false,
-            "productionReady": false,
-            "status": "watch"
-          },
-          "triggerType": "realtime"
         }
       ]
     }
-  }
+  },
+  "sourceStatus": [
+    {
+      "source": "Meta",
+      "status": "connected",
+      "connected": true,
+      "fetchedCount": 1,
+      "detail": "已识别 1 个 Facebook Page及 1 个 Instagram 专业账号"
+    },
+    {
+      "source": "Instagram",
+      "status": "connected",
+      "connected": true,
+      "fetchedCount": 8,
+      "detail": "Hashtag Search 成功 5/5 组",
+      "visibleCount": 2
+    },
+    {
+      "source": "Facebook",
+      "status": "empty",
+      "connected": true,
+      "fetchedCount": 0,
+      "detail": "Page Posts 成功 1/1 个 Page",
+      "visibleCount": 0
+    }
+  ]
 }
