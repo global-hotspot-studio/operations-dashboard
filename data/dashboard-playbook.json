@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-30T08:30:37.898Z",
+  "generatedAt": "2026-07-30T10:03:30.543Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -25,12 +25,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1290,
-    "effectiveHotspots": 354,
+    "rawTopics": 1272,
+    "effectiveHotspots": 350,
     "highPriorityAlerts": 17,
-    "templateCandidates": 20,
+    "templateCandidates": 17,
     "rawDelta": 42,
-    "effectiveRate": "27.6%"
+    "effectiveRate": "27.4%"
   },
   "trendSeries": {
     "labels": [
@@ -48,32 +48,32 @@
       "22:00"
     ],
     "effective": [
-      50,
-      52,
-      49,
-      54,
-      82,
-      45,
-      100,
-      68,
-      91,
-      131,
-      97,
-      130
+      51,
+      47,
+      56,
+      47,
+      87,
+      43,
+      98,
+      73,
+      84,
+      138,
+      93,
+      131
     ],
     "template": [
-      19,
-      34,
-      32,
-      28,
-      57,
-      31,
-      60,
-      45,
-      50,
-      65,
-      52,
-      81
+      18,
+      33,
+      35,
+      25,
+      61,
+      29,
+      61,
+      47,
+      47,
+      69,
+      49,
+      83
     ]
   },
   "hotspots": [
@@ -82,13 +82,13 @@
       "name": "Alaakaa Loova Lyrical …",
       "originalTitle": "Alaakaa Loova Lyrical | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai",
       "region": "印度",
-      "country": "印度",
+      "country": "印度 / 阿联酋",
       "source": [
         "YouTube"
       ],
-      "heat": "10.9M",
-      "trend": 68,
-      "score": 96,
+      "heat": "12.3M",
+      "trend": 74,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -96,7 +96,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Alaakaa Loova Lyrical (Tamil) | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度），播放量 11.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（印度、阿联酋），播放量 12.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7VsejGzcJmM",
         "channelTitle": "Divo Music",
@@ -105,7 +105,8 @@
         "url": "https://www.youtube.com/watch?v=7VsejGzcJmM"
       },
       "markets": [
-        "印度"
+        "印度",
+        "阿联酋"
       ],
       "signals": [
         {
@@ -120,12 +121,12 @@
       "name": "Namit Malhotra’s Ramay…",
       "originalTitle": "Namit Malhotra’s Ramayana- Hindi Trailer | Nitesh Tiwari | Ranbir, Yash, Hans Zimmer, A.R.Rahman",
       "region": "印度",
-      "country": "印度",
+      "country": "印度 / 沙特阿拉伯 / 阿联酋",
       "source": [
         "YouTube"
       ],
-      "heat": "10.9M",
-      "trend": 71,
+      "heat": "13.5M",
+      "trend": 73,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -134,7 +135,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Namit Malhotra’s Ramayana- Hindi Trailer | Nitesh Tiwari | Ranbir, Yash, Hans Zimmer, A.R.Rahman》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度），播放量 10.9M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 13.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "lNaSdnz2I8g",
         "channelTitle": "World Of Ramayana",
@@ -143,7 +144,9 @@
         "url": "https://www.youtube.com/watch?v=lNaSdnz2I8g"
       },
       "markets": [
-        "印度"
+        "印度",
+        "沙特阿拉伯",
+        "阿联酋"
       ],
       "signals": [
         {
@@ -162,9 +165,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "55.8M",
-      "trend": 74,
-      "score": 98,
+      "heat": "51.0M",
+      "trend": 65,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -203,9 +206,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "2.5M",
-      "trend": 62,
-      "score": 95,
+      "heat": "2.9M",
+      "trend": 75,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -241,9 +244,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "7.8M",
-      "trend": 74,
-      "score": 98,
+      "heat": "6.9M",
+      "trend": 61,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -273,44 +276,6 @@
     },
     {
       "id": 1005,
-      "name": "JUMANJI: OPEN WORLD - …",
-      "originalTitle": "JUMANJI: OPEN WORLD - Official Trailer",
-      "region": "撒哈拉以南非洲",
-      "country": "肯尼亚",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "5.2M",
-      "trend": 56,
-      "score": 95,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 肯尼亚 热门内容《JUMANJI: OPEN WORLD - Official Trailer (4K)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（肯尼亚），播放量 5.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "zhApeaHMvfs",
-        "channelTitle": "Sony Pictures Entertainment",
-        "publishedAt": "2026-07-29T00:59:43Z",
-        "thumbnail": "https://i.ytimg.com/vi/zhApeaHMvfs/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
-      },
-      "markets": [
-        "肯尼亚"
-      ],
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "JUMANJI: OPEN WORLD - Official Trailer",
-          "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
-        }
-      ]
-    },
-    {
-      "id": 1006,
       "name": "NO BATIDÃO",
       "originalTitle": "NO BATIDÃO",
       "region": "南美洲",
@@ -318,8 +283,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "461K",
-      "trend": 64,
+      "heat": "591K",
+      "trend": 66,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -328,7 +293,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 巴西 热门内容《NO BATIDÃO》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（巴西、秘鲁、俄罗斯），播放量 448K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（巴西、秘鲁、俄罗斯），播放量 568K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "g16sDYTn8j0",
         "channelTitle": "slxughter - Topic",
@@ -350,6 +315,44 @@
       ]
     },
     {
+      "id": 1006,
+      "name": "JUMANJI: OPEN WORLD - …",
+      "originalTitle": "JUMANJI: OPEN WORLD - Official Trailer",
+      "region": "撒哈拉以南非洲",
+      "country": "肯尼亚",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "5.5M",
+      "trend": 61,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 肯尼亚 热门内容《JUMANJI: OPEN WORLD - Official Trailer (4K)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 热门榜（肯尼亚），播放量 5.6M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "zhApeaHMvfs",
+        "channelTitle": "Sony Pictures Entertainment",
+        "publishedAt": "2026-07-29T00:59:43Z",
+        "thumbnail": "https://i.ytimg.com/vi/zhApeaHMvfs/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
+      },
+      "markets": [
+        "肯尼亚"
+      ],
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "JUMANJI: OPEN WORLD - Official Trailer",
+          "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
+        }
+      ]
+    },
+    {
       "id": 1007,
       "name": "O PLANETA TERRA FOI DE…",
       "originalTitle": "O PLANETA TERRA FOI DESTRUÍDO 7 VEZES NESSE VÍDEO!",
@@ -359,8 +362,8 @@
         "YouTube"
       ],
       "heat": "1.3M",
-      "trend": 62,
-      "score": 98,
+      "trend": 58,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -396,9 +399,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "372K",
-      "trend": 57,
-      "score": 96,
+      "heat": "417K",
+      "trend": 67,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -406,7 +409,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 肯尼亚 热门内容《Willy Paul - Kangaroo/Komasava (Official Music Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（肯尼亚），播放量 387K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（肯尼亚），播放量 393K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "dDc--2EaSvA",
         "channelTitle": "Willy Paul Thee Pozze",
@@ -434,9 +437,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "1.1M",
-      "trend": 67,
-      "score": 98,
+      "heat": "930K",
+      "trend": 53,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -474,8 +477,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 60,
-      "score": 91,
+      "trend": 72,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -504,44 +507,6 @@
     },
     {
       "id": 1011,
-      "name": "tabela do campeonato b…",
-      "originalTitle": "tabela do campeonato brasileiro",
-      "region": "南美洲",
-      "country": "巴西",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 71,
-      "score": 96,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 巴西 搜索趋势「tabela do campeonato brasileiro」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 10000+。关联新闻源：VEJA / GZH；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "tabela do campeonato brasileiro",
-        "traffic": 10000,
-        "publishedAt": "Thu, 30 Jul 2026 01:10:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-MS3VNO4wOBzAtVXzOaBAFsHDXZ4PUwYSnltgB0dTGCjrOoG6x3EONgdcRq4",
-        "url": "https://trends.google.com/trends/explore?geo=BR&q=tabela%20do%20campeonato%20brasileiro",
-        "newsUrl": "https://veja.abril.com.br/esporte/jogos-de-hoje-quarta-29-de-julho-onde-assistir-futebol-ao-vivo-e-horarios/",
-        "newsTitle": "Jogos de hoje, quarta, 29 de julho: onde assistir futebol ao vivo e horários",
-        "newsSource": "VEJA"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "tabela do campeonato brasileiro",
-          "url": "https://trends.google.com/trends/explore?geo=BR&q=tabela%20do%20campeonato%20brasileiro"
-        }
-      ]
-    },
-    {
-      "id": 1012,
       "name": "liverpool vs wrexham",
       "originalTitle": "liverpool vs wrexham",
       "region": "撒哈拉以南非洲",
@@ -559,16 +524,16 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 肯尼亚 搜索趋势「liverpool vs wrexham」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 肯尼亚 搜索趋势，搜索热度约 10000+。关联新闻源：BBC / Sky Sports；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 加纳 搜索趋势，搜索热度约 5000+。关联新闻源：BBC / Sky Sports；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 肯尼亚 搜索趋势，搜索热度约 20000+。关联新闻源：Liverpool FC / BBC；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 加纳 搜索趋势，搜索热度约 10000+。关联新闻源：Liverpool FC / BBC；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "liverpool vs wrexham",
-        "traffic": 10000,
+        "traffic": 20000,
         "publishedAt": "Wed, 29 Jul 2026 14:10:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVkRY2jJUX5tvlFDZoxDjvTpX11V_XX4nvzwzzRowq3lUIts0oSZybbTVsaU",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAwuf8gEWr8iLcOA3Cc9BA4giQzrevXC0TzzLvwEROuijmS-QNEOLrS05gPNI",
         "url": "https://trends.google.com/trends/explore?geo=KE&q=liverpool%20vs%20wrexham",
-        "newsUrl": "https://www.bbc.com/sport/football/live/clyq56xqr32t",
-        "newsTitle": "Liverpool 1-0 Wrexham: Ngumoha gives Iraola another Liverpool win as Barcola chase heats up",
-        "newsSource": "BBC"
+        "newsUrl": "https://www.liverpoolfc.com/news/andoni-iraola-win-over-wrexham-pre-season-progress-trey-nyoni-and-more",
+        "newsTitle": "Andoni Iraola on win over Wrexham, pre-season progress, Trey Nyoni and more",
+        "newsSource": "Liverpool FC"
       },
       "signals": [
         {
@@ -579,45 +544,45 @@
       ]
     },
     {
-      "id": 1013,
-      "name": "синоптика",
-      "originalTitle": "синоптика",
-      "region": "俄罗斯（东欧）",
-      "country": "俄罗斯",
+      "id": 1012,
+      "name": "tabela do brasileirão",
+      "originalTitle": "tabela do brasileirão",
+      "region": "南美洲",
+      "country": "巴西",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 60,
-      "score": 92,
+      "trend": 63,
+      "score": 93,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 俄罗斯 搜索趋势「синоптика」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 俄罗斯 搜索趋势，搜索热度约 5000+。关联新闻源：Твой Иркутск / Тайшет24；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「tabela do brasileirão」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 10000+。关联新闻源：VEJA / GZH；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "синоптика",
-        "traffic": 5000,
-        "publishedAt": "Thu, 30 Jul 2026 00:40:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwS1y2-re3cAxQ6X7BDTS2x7ZTwPXafBJrD03F29vPzLmYWt0c6NOB1wzZ-UE",
-        "url": "https://trends.google.com/trends/explore?geo=RU&q=%D1%81%D0%B8%D0%BD%D0%BE%D0%BF%D1%82%D0%B8%D0%BA%D0%B0",
-        "newsUrl": "https://www.irk.ru/news/20260729/weather/",
-        "newsTitle": "Ливни, грозы и град прогнозируют в Иркутской области 30 июля",
-        "newsSource": "Твой Иркутск"
+        "topic": "tabela do brasileirão",
+        "traffic": 10000,
+        "publishedAt": "Thu, 30 Jul 2026 02:30:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-MS3VNO4wOBzAtVXzOaBAFsHDXZ4PUwYSnltgB0dTGCjrOoG6x3EONgdcRq4",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=tabela%20do%20brasileir%C3%A3o",
+        "newsUrl": "https://veja.abril.com.br/esporte/jogos-de-hoje-quarta-29-de-julho-onde-assistir-futebol-ao-vivo-e-horarios/",
+        "newsTitle": "Jogos de hoje, quarta, 29 de julho: onde assistir futebol ao vivo e horários",
+        "newsSource": "VEJA"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "синоптика",
-          "url": "https://trends.google.com/trends/explore?geo=RU&q=%D1%81%D0%B8%D0%BD%D0%BE%D0%BF%D1%82%D0%B8%D0%BA%D0%B0"
+          "title": "tabela do brasileirão",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=tabela%20do%20brasileir%C3%A3o"
         }
       ]
     },
     {
-      "id": 1014,
+      "id": 1013,
       "name": "bece result checker",
       "originalTitle": "bece result checker",
       "region": "撒哈拉以南非洲",
@@ -635,16 +600,16 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 加纳 搜索趋势「bece result checker」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 加纳 搜索趋势，搜索热度约 10000+。关联新闻源：GhanaWeb / 3News；适合判断地区搜索兴趣和热点持续性。",
+      "reason": "来自 Google Trends 加纳 搜索趋势，搜索热度约 20000+。关联新闻源：Graphic Online / 3News；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
         "topic": "bece result checker",
-        "traffic": 10000,
+        "traffic": 20000,
         "publishedAt": "Wed, 29 Jul 2026 14:40:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa7PRgrkTb2Y-qTcoypVCvIhoCNwnizwjAcAqOm9N1i0v1IIDpJvJ9yQUhLNk",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2xVG9k2bxqNYlDHSeT2VskHvz1xR7wxWnqlz3ZIJ1AilqC5x-KkxMRfBpqRk",
         "url": "https://trends.google.com/trends/explore?geo=GH&q=bece%20result%20checker",
-        "newsUrl": "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/2026-BECE-Here-is-how-to-check-your-results-2045534",
-        "newsTitle": "2026 BECE: Here is how to check your results",
-        "newsSource": "GhanaWeb"
+        "newsUrl": "https://www.graphic.com.gh/news/education/waec-releases-2026-bece-results.html",
+        "newsTitle": "WAEC releases 2026 BECE results; See breakdown of results cancellation for malpractice",
+        "newsSource": "Graphic Online"
       },
       "signals": [
         {
@@ -655,16 +620,16 @@
       ]
     },
     {
-      "id": 1015,
-      "name": "বেতন",
-      "originalTitle": "বেতন",
+      "id": 1014,
+      "name": "कर्ज माफी",
+      "originalTitle": "कर्ज माफी",
       "region": "印度",
       "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 52,
+      "trend": 53,
       "score": 89,
       "status": "爆发",
       "type": "realtime",
@@ -672,30 +637,30 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「বেতন」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 200+。关联新闻源：ABP Ananda / Asianet News Bangla；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「कर्ज माफी」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 1000+。关联新闻源：ABP News / Tractor Junction；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "বেতন",
-        "traffic": 200,
-        "publishedAt": "Thu, 30 Jul 2026 01:10:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2H9r63pSmpjenXw5PSCqMyzyVi3xSQ7gDanjyI_AUzVBy7cPwnFbLGW3RY40",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A6%AC%E0%A7%87%E0%A6%A4%E0%A6%A8",
-        "newsUrl": "https://bengali.abplive.com/banking-and-service/8th-pay-commission-will-submit-its-report-by-this-date-govt-says-in-parliament-1187302",
-        "newsTitle": "8th Pay Commission : সরকারি কর্মীদের কবে থেকে বাড়বে বেতন ? সংসদে এই জানাল সরকার ?",
-        "newsSource": "ABP Ananda"
+        "topic": "कर्ज माफी",
+        "traffic": 1000,
+        "publishedAt": "Thu, 30 Jul 2026 02:50:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW-EPKTEJuxcrUml3N6Rg8p0RHnZOmMDSDWqYJ04Os3cRvV2n6eBJmjBHoQdo",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%95%E0%A4%B0%E0%A5%8D%E0%A4%9C%20%E0%A4%AE%E0%A4%BE%E0%A4%AB%E0%A5%80",
+        "newsUrl": "https://www.abplive.com/agriculture/punyashlok-ahilyadevi-holkar-shetkari-karjmukti-yojana-2026-2-lakh-loan-waiver-for-farmers-3167475",
+        "newsTitle": "Maharashtra Farm Loan Waiver Scheme 2026: सरकार का बड़ा ऐलान! इस राज्य के किसानों का 2 लाख रुपये तक का लोन",
+        "newsSource": "ABP News"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "বেতন",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A6%AC%E0%A7%87%E0%A6%A4%E0%A6%A8"
+          "title": "कर्ज माफी",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%95%E0%A4%B0%E0%A5%8D%E0%A4%9C%20%E0%A4%AE%E0%A4%BE%E0%A4%AB%E0%A5%80"
         }
       ]
     },
     {
-      "id": 1016,
-      "name": "lpdp",
-      "originalTitle": "lpdp",
+      "id": 1015,
+      "name": "deddy sitorus",
+      "originalTitle": "deddy sitorus",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -710,130 +675,66 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「lpdp」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：BRIN - Badan Riset dan Inovasi Nasional / Kompas.com；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「deddy sitorus」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 200+。关联新闻源：detikNews / Tirto.id；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "lpdp",
+        "topic": "deddy sitorus",
         "traffic": 200,
-        "publishedAt": "Thu, 30 Jul 2026 01:10:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5XPwvLBLe4QjSbGEBimg5q6ZjwjpQEomhmj8_yeOjiAIAc3YHjMwFyFsjSM",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=lpdp",
-        "newsUrl": "https://www.brin.go.id/news/129589/brin-dan-lpdp-buka-beasiswa-doktor-talenta-riset-dan-inovasi-nasional",
-        "newsTitle": "BRIN dan LPDP Buka Beasiswa Doktor Talenta Riset dan Inovasi Nasional",
-        "newsSource": "BRIN - Badan Riset dan Inovasi Nasional"
+        "publishedAt": "Thu, 30 Jul 2026 02:40:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROcpFdk3j3DzKGfLo09b-5_A0THPfkRlOoNrom8M2lwI35bJPRtU8kl44GmMw",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=deddy%20sitorus",
+        "newsUrl": "https://news.detik.com/berita/d-8596819/wartawan-dpr-akan-laporkan-deddy-pdip-ke-mkd-jika-tak-minta-maaf-1x24-jam",
+        "newsTitle": "Wartawan DPR Akan Laporkan Deddy PDIP ke MKD Jika Tak Minta Maaf 1x24 Jam",
+        "newsSource": "detikNews"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "lpdp",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=lpdp"
+          "title": "deddy sitorus",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=deddy%20sitorus"
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "name": "pesquisa lula flávio b…",
+      "originalTitle": "pesquisa lula flávio bolsonaro",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 53,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「pesquisa lula flávio bolsonaro」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 1000+。关联新闻源：VEJA / Valor Econômico；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "pesquisa lula flávio bolsonaro",
+        "traffic": 1000,
+        "publishedAt": "Thu, 30 Jul 2026 02:40:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0c7DCaiUSQk3WNPG8PIxK11ZjpP-AHsxdRxHQfP8Il31VBG3eZpm5Nzw4FqQ",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=pesquisa%20lula%20fl%C3%A1vio%20bolsonaro",
+        "newsUrl": "https://veja.abril.com.br/politica/pesquisa-a-disputa-lula-x-flavio-nos-estados-que-somam-mais-de-50-do-eleitorado-do-brasil/",
+        "newsTitle": "Pesquisa: a disputa Lula x Flávio nos estados que somam mais de 50% do eleitorado do Brasil",
+        "newsSource": "VEJA"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "pesquisa lula flávio bolsonaro",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=pesquisa%20lula%20fl%C3%A1vio%20bolsonaro"
         }
       ]
     },
     {
       "id": 1017,
-      "name": "Für zalando auf Fußbal…",
-      "originalTitle": "Für zalando auf Fußballmission. ⚽ Manchester City oder Manchester United? Für Anaya und ihren Bruder Ariger war die Antwort ganz einfach: Gemeinsam vor der Kamera für zalando. Vielen Dank an alle Beteiligten für die tolle Zusammenarbeit. Produktion: zalando Photographer / Director: Daniel Roche Stylist: Monika Jauneikaite",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "Instagram"
-      ],
-      "heat": "180K",
-      "trend": 47,
-      "score": 84,
-      "status": "上升",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「Für zalando auf Fußballmission. ⚽\n\nManchester City oder Manchester United? Für Anaya und ihren Bruder Ariger war die Antwort ganz einfach: Gemeinsam vor der Kamera für zalando.\n\nVielen Dank an alle Beteiligten für die tolle Zusammenarbeit.\n\nProduktion: zalando\nPhotographer / Director: Daniel Roche\nStylist: Monika Jauneikaite\n\n#talentcenter #zalando #kindermodel #kindermodelagentur #fußball #football #kidsfashion #geschwister #berlin #casting #modelagency #werbekampagne」提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #football 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
-      "instagram": {
-        "hashtag": "football",
-        "mediaUrl": "https://scontent-ord5-1.cdninstagram.com/v/t51.82787-15/761124820_18192674851376257_8636915905572017545_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nUPcrmrFqhcQ7kNvwHWPh5M&_nc_oc=AdoWyW01fJY-0KHgHE880Neiwi1qGDt9jRvxHiST_bUkRWwaW4KZQmnXvziVAcXCuik&_nc_zt=23&_nc_ht=scontent-ord5-1.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=tpHUJLT4UYy8Tj_Z-fMqIQ&oh=00_AQHheI5-TqgRGWOH7cZHarkbznm7sP7As_zWeNRQCNBkxA&oe=6A70CA4C",
-        "publishedAt": "2026-07-30T08:31:10+0000",
-        "url": "https://www.instagram.com/p/DbaQ_wlmN9u/"
-      },
-      "signals": [
-        {
-          "source": "Instagram",
-          "title": "Für zalando auf Fußballmission. ⚽ Manchester City oder Manchester United? Für Anaya und ihren Bruder Ariger war die Antwort ganz einfach: Gemeinsam vor der Kamera für zalando. Vielen Dank an alle Beteiligten für die tolle Zusammenarbeit. Produktion: zalando Photographer / Director: Daniel Roche Stylist: Monika Jauneikaite",
-          "url": "https://www.instagram.com/p/DbaQ_wlmN9u/"
-        }
-      ]
-    },
-    {
-      "id": 1018,
-      "name": "Intents Festival 2026 …",
-      "originalTitle": "Intents Festival 2026 closing ceremony.",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "Instagram"
-      ],
-      "heat": "180K",
-      "trend": 53,
-      "score": 86,
-      "status": "上升",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「Intents Festival 2026 closing ceremony. #festival #intentsfestival #ceremony #music #classicmusic」提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
-      "instagram": {
-        "hashtag": "festival",
-        "mediaUrl": "https://scontent-ord5-1.cdninstagram.com/o1/v/t2/f2/m86/AQMNFjHZqsF0z0G6R-ErdM91b-HbkPghbYw7q-sUldxy-UQfG5CLcdyNhd00XNaH9eO9ezbCtkDTyzSqpxeFzgWDsSGDkzvFfAKCgns.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_ohc=VkILt40GSt8Q7kNvwGeFs_5&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM2MjE5OTQ4MjAxMjA5OCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo2MCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c16caaaf9c5c5f1b&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EMTRFNzlFRThDMkFDRTRFRTk4MUU1Njg3MDU5REZBN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzJBNDhCOEE5QUU3QUMzNzBFMTY2MDk3QkExRDI2NDk1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaEx-iDubrrBBUCKAJDMywXQE4AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=mLJQO5MYH74ayc_pNj9-bA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQGkGBd0U7Wsc_eZzoxfKnbOlKhPCW0sHIGwkTBbHTL7Nw&oe=6A6D038C",
-        "publishedAt": "2026-07-30T08:31:20+0000",
-        "url": "https://www.instagram.com/reel/DbaQHwlsEXj/"
-      },
-      "signals": [
-        {
-          "source": "Instagram",
-          "title": "Intents Festival 2026 closing ceremony.",
-          "url": "https://www.instagram.com/reel/DbaQHwlsEXj/"
-        }
-      ]
-    },
-    {
-      "id": 1019,
-      "name": "🕷🕸نماد تتو عنکبوت و …",
-      "originalTitle": "🕷🕸نماد تتو عنکبوت و تار اون به‌طور کلی نمادی از قدرت، استقامت، خلاقیت ، پشتکار و نشون دهنده توانایی فرد در مقابله با چالش‌های زندگی، مدیریت سرنوشت خودش و ساختن مسیر شخصیشه🕷🕸 parva_tattoo",
-      "region": "全球",
-      "country": "全球",
-      "source": [
-        "Instagram"
-      ],
-      "heat": "180K",
-      "trend": 54,
-      "score": 87,
-      "status": "上升",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「🕷🕸نماد تتو عنکبوت و تار اون به‌طور کلی نمادی از قدرت، استقامت، خلاقیت ، پشتکار  و نشون دهنده توانایی فرد در مقابله با چالش‌های زندگی، مدیریت سرنوشت خودش و ساختن مسیر شخصیشه🕷🕸\n\nparva_tattoo \n\n#عنکبوت #تتو #art #tattoo #tattooidea #تاتو_بدن」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #art 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
-      "instagram": {
-        "hashtag": "art",
-        "mediaUrl": "https://scontent-ord5-3.cdninstagram.com/o1/v/t2/f2/m86/AQNIVfvrM0k2si6mSCoeJEOYLDdsKBfXHfIM-dmaWIJlWlwRf0iNKeEjnGDGRlkPAtSAw7Z5lxKNJDVZ5tFLaRD9mGtCreBjaT-XaHo.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_ohc=5qbptisrF5IQ7kNvwEbLFm0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA2NzkxNDE0NTgwMjU2NiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=1d0b9a9848a1fb74&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81QTQ0MTREODUzQzYwMkM4MkRGMzA4RDBGQjQzNUM4M192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc3NDRFQUU3OUUxMUU1OUNFQjEyODNERTUzNTAwRkJFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaMpf205NDlAxUCKAJDMywXQDUqfvnbItEYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=BrCwm7LN1bmnmp3Nq6TFDw&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQFBOJZqxvx00pRPxofZp6QjhONe_DO-VEZ6_lzt_S9HAw&oe=6A6CF4CE",
-        "publishedAt": "2026-07-30T08:31:36+0000",
-        "url": "https://www.instagram.com/reel/DbaNgjyT-IJ/"
-      },
-      "signals": [
-        {
-          "source": "Instagram",
-          "title": "🕷🕸نماد تتو عنکبوت و تار اون به‌طور کلی نمادی از قدرت، استقامت، خلاقیت ، پشتکار و نشون دهنده توانایی فرد در مقابله با چالش‌های زندگی، مدیریت سرنوشت خودش و ساختن مسیر شخصیشه🕷🕸 parva_tattoo",
-          "url": "https://www.instagram.com/reel/DbaNgjyT-IJ/"
-        }
-      ]
-    },
-    {
-      "id": 1020,
       "name": "Ajinkya Rahane retires…",
       "originalTitle": "Ajinkya Rahane retires from international cricket",
       "region": "印度",
@@ -842,8 +743,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 48,
-      "score": 81,
+      "trend": 56,
+      "score": 84,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -857,7 +758,7 @@
         "category": "核心话题",
         "sourceName": "The Hindu",
         "title": "Ajinkya Rahane retires from international cricket",
-        "publishedAt": "Thu, 30 Jul 2026 05:04:49 GMT",
+        "publishedAt": "Thu, 30 Jul 2026 08:19:24 GMT",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTjNDX2FJd2ZJaE0wVUhPWXYwXzAxTHFyNURIckZpMWFRXzJsYW0tTk82S3dnZkZZRU5lQlR4VnNHdnZUdUdKUWI5dnhWSm56SW1JUEZOWTk0ZDIwT0tZVlFNdEhoLV9EazdaVTFqcFhqdldua2ZDV3lIUEFJdmItQnh6V1NMWi1kQXp3aEp1ampWNzNKeVowQU9nQVEyNnkwVmNhZUttWVViWnFlbHd6YzRMX05yMHNMb1VERUln0gHEAUFVX3lxTFBfRnB0QUc0RVpEdDBqTThxMkoyY0hIVnZlVGdTckdzV3RUak52RlJKNnpMTUVpSE9YVjRhLVNsU21kbDM0NXpkeWRocjJnT19vdlV1MjVXaFA3TE1vbmJJSF9CS0gtUTE0WmJXS0EwNDQwSlJWV3BkNHh3OUlqUEVaVmZBM0lkbUhQYUlONGlTdUdaejVyc0h6dXFQbEE1VW1Xd1l3WjZCVWVUdmZLN3hha0NlWkJvOXg1UEY2MmdJV3E4R2g?oc=5"
       },
       "signals": [
@@ -869,7 +770,7 @@
       ]
     },
     {
-      "id": 1021,
+      "id": 1018,
       "name": "When Steve McCurry Sho…",
       "originalTitle": "When Steve McCurry Shot Bollywood: Rare Photos of Amitabh Bachchan, Sridevi, Anil Kapoor and Dev Anand",
       "region": "印度",
@@ -878,8 +779,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 60,
-      "score": 86,
+      "trend": 54,
+      "score": 83,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -905,7 +806,7 @@
       ]
     },
     {
-      "id": 1022,
+      "id": 1019,
       "name": "A rain festival with n…",
       "originalTitle": "A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late",
       "region": "印度",
@@ -914,20 +815,20 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 47,
-      "score": 80,
+      "trend": 49,
+      "score": 81,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「The Guardian」热点《A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Guardian。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「theguardian.com」热点《A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：theguardian.com。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "festival",
         "category": "垂类补充",
-        "sourceName": "The Guardian",
+        "sourceName": "theguardian.com",
         "title": "A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late",
         "publishedAt": "Thu, 30 Jul 2026 04:03:00 GMT",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaldGaUFVRVJZRFd2M1JEaU50YU1lRHhCMUd2bGJidDRHWHBkQktVTXlPbnY5Z2lsbGZDYnRyOUYwczJuOV9DR3A5dzZ1M0tFYmtacDR1bUNkcW1odGZod0pXMi1SdUZZQ2IxaDNTTEEtSDZFcmxXd0tHcktSMURlc2RvbnczSUlRdHJHV1phUUFrY1pkN3NERDZoOGVfc1p1UTNvZ19IVjJqeHo2bGx1Um5sRQ?oc=5"
@@ -941,7 +842,7 @@
       ]
     },
     {
-      "id": 1023,
+      "id": 1020,
       "name": "Video BTS: Kami Harap …",
       "originalTitle": "Video BTS: Kami Harap Musik Dicintai Tanpa Dikategorikan dari Wilayah-Bahasa",
       "region": "印度尼西亚",
@@ -950,8 +851,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 57,
-      "score": 85,
+      "trend": 60,
+      "score": 86,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -975,11 +876,119 @@
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQTJoX3IxRnVMOE91Y05hR3ZTUHoxWWY2dHdGNGxXQ1VKaVQxTnRLY1p5ZTl4UnZoSVRUS0h2T2l3VVlUMUlkOC1EQTBveUFBTmFTeUJ0RUZJR3ZwNlBIY2traW82cEVUTUEydEpURFIyX1RLM2ZBcU9Vc3BvRU9BTm1QU2lWZEVzTENXU0VtVUFLNElaeHIyN2pZcFpxSkZYelRSakVldzdjMmp2ZC1KT2o1cjRxMG5OTnpfcnB5WUVLZU4xOGc?oc=5"
         }
       ]
+    },
+    {
+      "id": 1021,
+      "name": "Piala Gubernur 2026 Di…",
+      "originalTitle": "Piala Gubernur 2026 Dimulai, Gubernur Dorong Kebangkitan Sepak Bola Kalteng",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 46,
+      "score": 80,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Pemerintah Provinsi Kalimantan Tengah」热点《Piala Gubernur 2026 Dimulai, Gubernur Dorong Kebangkitan Sepak Bola Kalteng》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Pemerintah Provinsi Kalimantan Tengah。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "sepak bola",
+        "category": "垂类补充",
+        "sourceName": "Pemerintah Provinsi Kalimantan Tengah",
+        "title": "Piala Gubernur 2026 Dimulai, Gubernur Dorong Kebangkitan Sepak Bola Kalteng",
+        "publishedAt": "Thu, 30 Jul 2026 08:02:48 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbHNVSEpZTFptX01CWmRMZ1dfZW13VUVwX2lxT3pmRTNZeU1jeGpLYWVjaHBlVjRWUXlXQmYxV2xpUnFQUVA3UEg5eE5jTFVlYkRuMVJZNHo4bjJ3LVZyVUpnVXEtWC1vX3BUVmFyQllpLVQyZ0hfS2kxdno2SlB1VS05RFpuZmdELXVkUFpNeHktT0ZGemdENUdmd3dLMzZEeFByNFJfSEpCQ2xYWi0xdkVkZWo?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Piala Gubernur 2026 Dimulai, Gubernur Dorong Kebangkitan Sepak Bola Kalteng",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbHNVSEpZTFptX01CWmRMZ1dfZW13VUVwX2lxT3pmRTNZeU1jeGpLYWVjaHBlVjRWUXlXQmYxV2xpUnFQUVA3UEg5eE5jTFVlYkRuMVJZNHo4bjJ3LVZyVUpnVXEtWC1vX3BUVmFyQllpLVQyZ0hfS2kxdno2SlB1VS05RFpuZmdELXVkUFpNeHktT0ZGemdENUdmd3dLMzZEeFByNFJfSEpCQ2xYWi0xdkVkZWo?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1022,
+      "name": "Daftar Film Baru Agust…",
+      "originalTitle": "Daftar Film Baru Agustus 2026 di Bioskop Indonesia, Catat Jadwal Tayangnya!",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 58,
+      "score": 85,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「detikcom」热点《Daftar Film Baru Agustus 2026 di Bioskop Indonesia, Catat Jadwal Tayangnya!》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：detikcom。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "film",
+        "category": "垂类补充",
+        "sourceName": "detikcom",
+        "title": "Daftar Film Baru Agustus 2026 di Bioskop Indonesia, Catat Jadwal Tayangnya!",
+        "publishedAt": "Thu, 30 Jul 2026 07:05:29 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbmRVMmJTaEpGUlBpZTU3Tm41UlRydlc1eFl5WHRqLVdWQjFXbTlHZWNtTHZGdkxIUnpPYmF4aHBZUFhUY1czSWVQb1BiUzA2RzRSM0ljQlRqLVpCdHg3Qm4tcGFRTi1OQ292NkMwQXhHb0R4WWUtazRMaTBFMEYtU0RrUnY4ZTA2MWd2cmdZUUZ5TzlvNE1pU2Q3dXA0V0ZwUjNGLVFVT2hYN2gxTURMRmpzRkx4MVJYQ2fSAb8BQVVfeXFMUFo4M29zajQ0VE95b0Uya2NrTHpTYUhPcUVTeHVvZ2pyNVVXWUZoRlJ0RzZpdzlUdVluZUVITjh0Rkdqc29ManR0cG42Mk8zUGU4Qm9Xc2xxaUtfUjhoY1VxbzBlcmZPWW5DcS01aDJVYW9haWRMbENIRkY3MTB4aUJRTlU2WmlYX3VXTUY3VEMySGtJQzFfRF8xaXZBTF91VTZ5TkxxQWwyVGV2ejk1NVhMZDBZczlEX2Q0UURpOGs?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Daftar Film Baru Agustus 2026 di Bioskop Indonesia, Catat Jadwal Tayangnya!",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbmRVMmJTaEpGUlBpZTU3Tm41UlRydlc1eFl5WHRqLVdWQjFXbTlHZWNtTHZGdkxIUnpPYmF4aHBZUFhUY1czSWVQb1BiUzA2RzRSM0ljQlRqLVpCdHg3Qm4tcGFRTi1OQ292NkMwQXhHb0R4WWUtazRMaTBFMEYtU0RrUnY4ZTA2MWd2cmdZUUZ5TzlvNE1pU2Q3dXA0V0ZwUjNGLVFVT2hYN2gxTURMRmpzRkx4MVJYQ2fSAb8BQVVfeXFMUFo4M29zajQ0VE95b0Uya2NrTHpTYUhPcUVTeHVvZ2pyNVVXWUZoRlJ0RzZpdzlUdVluZUVITjh0Rkdqc29ManR0cG42Mk8zUGU4Qm9Xc2xxaUtfUjhoY1VxbzBlcmZPWW5DcS01aDJVYW9haWRMbENIRkY3MTB4aUJRTlU2WmlYX3VXTUY3VEMySGtJQzFfRF8xaXZBTF91VTZ5TkxxQWwyVGV2ejk1NVhMZDBZczlEX2Q0UURpOGs?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1023,
+      "name": "TRANSFERÊNCIA CONCLUÍD…",
+      "originalTitle": "TRANSFERÊNCIA CONCLUÍDA",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 51,
+      "score": 82,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 巴西 本地媒体「Botafogo.com.br」热点《TRANSFERÊNCIA CONCLUÍDA》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 巴西 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Botafogo.com.br。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "futebol",
+        "category": "核心话题",
+        "sourceName": "Botafogo.com.br",
+        "title": "TRANSFERÊNCIA CONCLUÍDA",
+        "publishedAt": "Wed, 29 Jul 2026 15:04:32 GMT",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mcEZCTjJSMFVDaDJqRTNLS0tsWlpBLUwwOXlYR08tUXhNUHZPMkFfWnhLemFqLU5iMmFSVnVQam1FcHllaWVrTjdELVl0Mi1iazJWZlpkNEFtbUpmSTg3UG1jRlhlRWJnVVJPWQ?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "TRANSFERÊNCIA CONCLUÍDA",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mcEZCTjJSMFVDaDJqRTNLS0tsWlpBLUwwOXlYR08tUXhNUHZPMkFfWnhLemFqLU5iMmFSVnVQam1FcHllaWVrTjdELVl0Mi1iazJWZlpkNEFtbUpmSTg3UG1jRlhlRWJnVVJPWQ?oc=5"
+        }
+      ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 104,
+      "count": 111,
       "growth": 55,
       "countries": [
         "印度"
@@ -991,8 +1000,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 104,
-      "growth": 35,
+      "count": 111,
+      "growth": 32,
       "countries": [
         "印度尼西亚"
       ],
@@ -1003,8 +1012,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 67,
-      "growth": 35,
+      "count": 65,
+      "growth": 32,
       "countries": [
         "俄罗斯"
       ],
@@ -1015,8 +1024,8 @@
       ]
     },
     "中东": {
-      "count": 58,
-      "growth": 29,
+      "count": 65,
+      "growth": 33,
       "countries": [
         "沙特阿拉伯",
         "阿联酋"
@@ -1028,8 +1037,8 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 75,
-      "growth": 57,
+      "count": 82,
+      "growth": 54,
       "countries": [
         "尼日利亚",
         "南非",
@@ -1043,7 +1052,7 @@
       ]
     },
     "南美洲": {
-      "count": 104,
+      "count": 111,
       "growth": 55,
       "countries": [
         "巴西",
@@ -1219,5 +1228,249 @@
       "sourceUrl": "https://apnews.com/article/d47ccb4ac5b3af67eca1f82228155174",
       "generatedFrom": "curated_ai_image_batch"
     }
-  ]
+  ],
+  "templateLibraries": {
+    "wallpaper": {
+      "libraryType": "wallpaper",
+      "generatedAt": "2026-07-16T12:45:00.000Z",
+      "ageDays": 13,
+      "minimumIntervalDays": 7,
+      "maximumAgeDays": 21,
+      "activeWindowDays": 30,
+      "recommended": false,
+      "reason": "沿用当前壁纸批次；实时信号尚未形成持续性，固定节日则按预告窗口单独进入生产。",
+      "candidates": [],
+      "watchlist": [
+        {
+          "id": 1008,
+          "key": "youtube:willy paul kangaroo komasava",
+          "name": "Willy Paul - Kangaroo/Komasava",
+          "source": [
+            "YouTube"
+          ],
+          "sourceUrl": "https://www.youtube.com/watch?v=dDc--2EaSvA",
+          "region": "撒哈拉以南非洲",
+          "playabilityScore": 99,
+          "reason": "来自 YouTube 热门榜（肯尼亚），播放量 393K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": true,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1010,
+          "key": "google trends:real cartagena américa",
+          "name": "real cartagena - américa",
+          "source": [
+            "Google Trends"
+          ],
+          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
+          "region": "南美洲",
+          "playabilityScore": 97,
+          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": true,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1000,
+          "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
+          "name": "Alaakaa Loova Lyrical | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai",
+          "source": [
+            "YouTube"
+          ],
+          "sourceUrl": "https://www.youtube.com/watch?v=7VsejGzcJmM",
+          "region": "印度",
+          "playabilityScore": 88,
+          "reason": "来自 YouTube 热门榜（印度、阿联酋），播放量 12.2M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": false,
+            "copyrightControllable": true,
+            "lifecycleFit": true,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        }
+      ]
+    },
+    "theme": {
+      "libraryType": "theme",
+      "generatedAt": "2026-07-27T12:00:00.000Z",
+      "ageDays": 2,
+      "minimumIntervalDays": 21,
+      "activeWindowDays": 30,
+      "recommended": true,
+      "reason": "巴西独立日 距今 39 天且尚未覆盖，建议追加主题模板。",
+      "candidates": [
+        {
+          "id": "india-independence-day-2026",
+          "key": "holiday:india-independence-day-2026",
+          "name": "印度独立日",
+          "source": [
+            "节假日日历"
+          ],
+          "sourceUrl": "",
+          "region": "印度",
+          "market": "印度",
+          "date": "2026-08-15",
+          "daysUntil": 16,
+          "playabilityScore": 95,
+          "reason": "手织棉纹、晨光、城市与自然曲线；以藏红、象牙白、深绿作克制色彩转译，不直接使用国旗或国徽",
+          "triggerType": "holiday"
+        },
+        {
+          "id": "indonesia-independence-day-2026",
+          "key": "holiday:indonesia-independence-day-2026",
+          "name": "印度尼西亚独立日",
+          "source": [
+            "节假日日历"
+          ],
+          "sourceUrl": "",
+          "region": "印度尼西亚",
+          "market": "印度尼西亚",
+          "date": "2026-08-17",
+          "daysUntil": 18,
+          "playabilityScore": 94,
+          "reason": "珊瑚红、暖白、火山岩与海岛晨光的现代主题系统，不复制国旗、地图或官方标识",
+          "triggerType": "holiday"
+        },
+        {
+          "id": "nigeria-independence-day-2026",
+          "key": "holiday:nigeria-independence-day-2026",
+          "name": "尼日利亚独立日",
+          "source": [
+            "节假日日历"
+          ],
+          "sourceUrl": "",
+          "region": "撒哈拉以南非洲",
+          "market": "尼日利亚",
+          "date": "2026-10-01",
+          "daysUntil": 63,
+          "playabilityScore": 93,
+          "reason": "阿迪雷靛蓝、现代都市光影与克制黄铜，可延展壁纸、图标和 Dock；避免国旗和国徽",
+          "triggerType": "holiday"
+        }
+      ],
+      "watchlist": [
+        {
+          "id": 1019,
+          "key": "本地平台:a rain festival with no rain the indian farmers bracing for a super el niño as monsoon arrives l",
+          "name": "A rain festival with no rain: the Indian farmers bracing for a ‘super’ El Niño as monsoon arrives late",
+          "source": [
+            "本地平台"
+          ],
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaldGaUFVRVJZRFd2M1JEaU50YU1lRHhCMUd2bGJidDRHWHBkQktVTXlPbnY5Z2lsbGZDYnRyOUYwczJuOV9DR3A5dzZ1M0tFYmtacDR1bUNkcW1odGZod0pXMi1SdUZZQ2IxaDNTTEEtSDZFcmxXd0tHcktSMURlc2RvbnczSUlRdHJHV1phUUFrY1pkN3NERDZoOGVfc1p1UTNvZ19IVjJqeHo2bGx1Um5sRQ?oc=5",
+          "region": "印度",
+          "playabilityScore": 100,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：theguardian.com。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": false,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": false,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1008,
+          "key": "youtube:willy paul kangaroo komasava",
+          "name": "Willy Paul - Kangaroo/Komasava",
+          "source": [
+            "YouTube"
+          ],
+          "sourceUrl": "https://www.youtube.com/watch?v=dDc--2EaSvA",
+          "region": "撒哈拉以南非洲",
+          "playabilityScore": 77,
+          "reason": "来自 YouTube 热门榜（肯尼亚），播放量 393K。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": false,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1010,
+          "key": "google trends:real cartagena américa",
+          "name": "real cartagena - américa",
+          "source": [
+            "Google Trends"
+          ],
+          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=real%20cartagena%20-%20am%C3%A9rica",
+          "region": "南美洲",
+          "playabilityScore": 75,
+          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 50000+。关联新闻源：Win Sports / Dimayor；适合判断地区搜索兴趣和热点持续性。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": false,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        }
+      ]
+    }
+  }
 }
