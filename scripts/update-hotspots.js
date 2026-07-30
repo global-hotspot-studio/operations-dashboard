@@ -935,7 +935,7 @@ async function discoverMetaAccounts() {
     const pages = (await response.json()).data || [];
     if (!pages.length) {
       const subjectUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/me`);
-      subjectUrl.searchParams.set("fields", "id,instagram_business_account");
+      subjectUrl.searchParams.set("fields", "id");
       subjectUrl.searchParams.set("metadata", "1");
       subjectUrl.searchParams.set("access_token", metaAccessToken);
       const subjectResponse = await fetch(subjectUrl);
@@ -944,10 +944,18 @@ async function discoverMetaAccounts() {
       }
       const subject = await subjectResponse.json();
       if (String(subject.metadata?.type || "").toLowerCase() === "page" && subject.id) {
+        const pageUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/${subject.id}`);
+        pageUrl.searchParams.set("fields", "instagram_business_account");
+        pageUrl.searchParams.set("access_token", metaAccessToken);
+        const pageResponse = await fetch(pageUrl);
+        if (!pageResponse.ok) {
+          throw new Error(`Meta Page 关联账号识别失败：${pageResponse.status} ${(await pageResponse.text()).slice(0, 160)}`);
+        }
+        const page = await pageResponse.json();
         pages.push({
           id: String(subject.id),
           access_token: metaAccessToken,
-          instagram_business_account: subject.instagram_business_account
+          instagram_business_account: page.instagram_business_account
         });
         console.log("Meta 检测到 Page Access Token，已切换为单 Page 接入模式。");
       }
