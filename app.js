@@ -478,6 +478,58 @@ function marketSampleItems(region) {
     .sort((a, b) => Date.parse(b.generatedAt || "") - Date.parse(a.generatedAt || ""));
 }
 
+function marketSampleColumnCount() {
+  if (window.innerWidth <= 720) return 1;
+  if (window.innerWidth <= 1180) return 2;
+  return 3;
+}
+
+function marketSampleTile(item) {
+  const isTheme = item.marketSampleType === "theme";
+  const name = isTheme ? item.name : (item.previewTitle || item.hotspotName || "壁纸样图");
+  const kicker = isTheme ? (item.kicker || "主题样图") : (item.hotspotName || "壁纸样图");
+  const description = isTheme ? (item.description || "") : (item.previewMeta || "");
+  const tags = isTheme ? (item.tags || []) : playTags(item);
+  const copyAction = isTheme
+    ? `<button class="theme-copy" data-theme-copy="${escapeAttr(item.promptKey || "")}">复制提示词</button>`
+    : `<button class="copy-prompt" data-copy-id="${escapeAttr(item.id)}">复制提示词</button>`;
+  return `
+    <article class="market-sample-tile">
+      <button class="market-sample-image visual-preview" type="button" data-preview="${escapeAttr(item.preview)}" data-caption="${escapeAttr(item.caption || name)}" aria-label="预览${escapeAttr(name)}">
+        <img src="${escapeAttr(item.preview)}" alt="${escapeAttr(name)}" loading="lazy">
+        <span>${isTheme ? "主题样图" : "壁纸样图"}</span>
+      </button>
+      <div class="market-sample-info">
+        <small>${escapeHtml(kicker)}</small>
+        <h3>${escapeHtml(name)}</h3>
+        ${description ? `<p>${escapeHtml(description)}</p>` : ""}
+        <div class="play-tags">${tags.slice(0, 3).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+        <div class="visual-actions">
+          ${copyAction}
+          <a class="download-sample" href="${escapeAttr(item.preview)}" download="${escapeAttr(item.downloadName || previewDownloadName(item))}">下载样图</a>
+        </div>
+      </div>
+    </article>`;
+}
+
+function renderMarketSampleMasonry(items) {
+  const masonry = $("#marketSampleMasonry");
+  if (!masonry) return;
+  if (!items.length) {
+    masonry.style.setProperty("--market-sample-columns", "1");
+    masonry.innerHTML = `<div class="market-sample-empty">当前市场暂无可视化样图</div>`;
+    return;
+  }
+
+  const columnCount = marketSampleColumnCount();
+  const columns = Array.from({ length: columnCount }, () => []);
+  items.forEach((item, index) => columns[index % columnCount].push(marketSampleTile(item)));
+  masonry.style.setProperty("--market-sample-columns", String(columnCount));
+  masonry.innerHTML = columns
+    .map((tiles, index) => `<div class="market-sample-column" data-column="${index + 1}">${tiles.join("")}</div>`)
+    .join("");
+}
+
 function renderTargetMarkets() {
   const grid = $("#targetMarketGrid");
   if (!grid) return;
@@ -545,34 +597,7 @@ function toggleMarketSamples(region) {
   const items = marketSampleItems(region);
   const themeCount = items.filter(item => item.marketSampleType === "theme").length;
   const wallpaperCount = items.filter(item => item.marketSampleType === "wallpaper").length;
-  const masonry = $("#marketSampleMasonry");
-  masonry.innerHTML = items.length ? items.map(item => {
-    const isTheme = item.marketSampleType === "theme";
-    const name = isTheme ? item.name : (item.previewTitle || item.hotspotName || "壁纸样图");
-    const kicker = isTheme ? (item.kicker || "主题样图") : (item.hotspotName || "壁纸样图");
-    const description = isTheme ? (item.description || "") : (item.previewMeta || "");
-    const tags = isTheme ? (item.tags || []) : playTags(item);
-    const copyAction = isTheme
-      ? `<button class="theme-copy" data-theme-copy="${escapeAttr(item.promptKey || "")}">复制提示词</button>`
-      : `<button class="copy-prompt" data-copy-id="${escapeAttr(item.id)}">复制提示词</button>`;
-    return `
-      <article class="market-sample-tile">
-        <button class="market-sample-image visual-preview" type="button" data-preview="${escapeAttr(item.preview)}" data-caption="${escapeAttr(item.caption || name)}" aria-label="预览${escapeAttr(name)}">
-          <img src="${escapeAttr(item.preview)}" alt="${escapeAttr(name)}" loading="lazy">
-          <span>${isTheme ? "主题样图" : "壁纸样图"}</span>
-        </button>
-        <div class="market-sample-info">
-          <small>${escapeHtml(kicker)}</small>
-          <h3>${escapeHtml(name)}</h3>
-          ${description ? `<p>${escapeHtml(description)}</p>` : ""}
-          <div class="play-tags">${tags.slice(0, 3).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-          <div class="visual-actions">
-            ${copyAction}
-            <a class="download-sample" href="${escapeAttr(item.preview)}" download="${escapeAttr(item.downloadName || previewDownloadName(item))}">下载样图</a>
-          </div>
-        </div>
-      </article>`;
-  }).join("") : `<div class="market-sample-empty">当前市场暂无可视化样图</div>`;
+  renderMarketSampleMasonry(items);
 
   panel.dataset.region = region;
   panel.classList.add("open");
@@ -1176,6 +1201,16 @@ function bind() {
   });
   $("#closeMarketSamples").onclick = closeMarketSamples;
   $("#marketSampleBackdrop").onclick = closeMarketSamples;
+  let marketSampleResizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(marketSampleResizeTimer);
+    marketSampleResizeTimer = setTimeout(() => {
+      const panel = $("#marketSamplePanel");
+      if (!panel?.classList.contains("open") || !panel.dataset.region) return;
+      renderMarketSampleMasonry(marketSampleItems(panel.dataset.region));
+      applyLanguage(panel);
+    }, 120);
+  });
   $("#closeDrawer").onclick = closeDrawer; $("#drawerBackdrop").onclick = closeDrawer;
   $("#refreshBtn").onclick = async () => {
     const btn = $("#refreshBtn");
