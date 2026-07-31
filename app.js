@@ -495,7 +495,6 @@ function renderTargetMarkets() {
         <div class="market-card-action">${active ? "已选中 · 查看下方样图" : "查看该市场样图"} <span>↓</span></div>
       </article>`;
   }).join("");
-  $("#showAllMarkets")?.classList.toggle("active", state.region === "全球");
 }
 
 function updateMarketScopeLabels() {
@@ -1070,7 +1069,6 @@ function bind() {
     e.preventDefault();
     selectTargetMarket(marketCard.dataset.marketRegion, false);
   });
-  $("#showAllMarkets").onclick = () => selectTargetMarket("全球", false);
   $("#closeDrawer").onclick = closeDrawer; $("#drawerBackdrop").onclick = closeDrawer;
   $("#refreshBtn").onclick = async () => {
     const btn = $("#refreshBtn");
