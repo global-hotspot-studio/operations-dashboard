@@ -19,7 +19,7 @@ const originalTextByNode = new WeakMap();
 const originalAttrsByNode = new WeakMap();
 const EN_TEXT = {
   "语言切换": "Language switch",
-  "AI 热点舆情运营看板": "AI Trend Operations Dashboard",
+  "本地热点机会中心": "Local Hotspot Opportunity Center",
   "总览": "Overview", "实时热点池": "Live Hotspots", "趋势监测": "Trend Monitor",
   "爆发预警": "Surge Alerts", "运营候选": "Creative Candidates", "配置中心": "Configuration",
   "机器人监测中": "Monitoring active", "12 个数据源 · 15 分钟更新": "12 sources · updates every 15 minutes",
@@ -205,7 +205,7 @@ function applyLanguage(root = document.body) {
     });
   });
   document.documentElement.lang = languageState.current === "en" ? "en" : "zh-CN";
-  document.title = languageState.current === "en" ? "TrendOS · Local Trend Opportunity Center" : "AI 热点舆情运营看板";
+  document.title = languageState.current === "en" ? "Local Hotspot Opportunity Center" : "本地热点机会中心";
   $$(".language-option").forEach(button => {
     button.textContent = button.dataset.language === "zh" ? "中文" : "EN";
     const active = button.dataset.language === languageState.current;
