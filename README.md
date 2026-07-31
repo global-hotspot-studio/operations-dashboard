@@ -15,7 +15,7 @@
 当前版本已经从“静态展示页”升级为“定时更新工具底座”：
 
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
-- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT 新闻源，并预留 X / Instagram / Facebook 官方接口连接器。
+- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT、Instagram、Facebook 管理主页和 Bluesky 公开搜索，并预留其他官方接口连接器。
 - `data/manual-hotspots.json`：人工热点入口，运营/设计师可手动补充 TikTok、Instagram、X 等暂未授权平台上观察到的热点。
 
 ### 每日更新与样图策略
@@ -104,8 +104,9 @@ GDELT 用于补充跨语言、跨国家的新闻热度信号，不需要额外 S
 | 平台 | 当前状态 | 数据范围 |
 | --- | --- | --- |
 | X | 代码已完成，等待 Bearer Token | 最近 7 天公开讨论的 Recent Search |
-| Instagram | 代码已完成，等待 Meta 权限与专业账号 | 指定 Hashtag 的近期媒体，不是全网热榜 |
+| Instagram | 已接通真实数据 | 指定 Hashtag 的近期媒体，不是全网热榜 |
 | Facebook | 已支持管理主页；公共主页池代码已完成，等待 Meta 审核 | 管理主页帖子 + 重点市场公共主页搜索与帖子 |
+| Bluesky | 已接入公开 API，无需 Secret | 重点市场关键词的公开帖子与互动量 |
 | TikTok | 不直接启用 Research API | 商业运营账号不满足 Research API 资格；先用人工观察或合规数据供应商 |
 
 X / Instagram / Facebook 拿到官方权限后，在 GitHub 仓库 Secrets 里补齐：
@@ -131,6 +132,7 @@ Meta 不提供“全 Facebook 任意关键词帖子搜索”。本项目采用�
 - X：在 X Developer Console 创建 App，生成 Bearer Token；脚本调用 X API Recent Search 获取公开讨论与互动数据。
 - Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；令牌至少需要 `instagram_basic`、`pages_show_list`、`pages_read_engagement`。如果 Page 归属于 Business Portfolio，还需要 `business_management`。脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
 - Facebook：同一令牌会自动发现当前账号可管理的 Page；审核前读取管理主页，审核通过后自动启用公共主页搜索和非自有主页 Feed。
+- Bluesky：通过官方公开 AppView 搜索重点市场的公开帖子，无需登录或 Secret；作为社区讨论信号，必须与搜索趋势、视频榜或本地媒体交叉验证。
 - TikTok：Research API 面向符合条件的非营利研究人员，Token 也不适合当前长期定时任务；当前不把它冒充为已开通的商业实时源。
 
 如果 Secret 未配置，脚本会明确跳过该平台，不会生成假数据。
@@ -141,4 +143,4 @@ Meta 不提供“全 Facebook 任意关键词帖子搜索”。本项目采用�
 
 - 飞书表格 / 内部 CMS：用于运营手动入选、备注、复盘和样图资产管理。
 
-> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、人工热点入口已接入或可用；X / Instagram / Facebook 已完成正式接口框架，等待官方权限和 token。TikTok 保留人工观察或合规供应商接入，不使用不符合商业运营资格的 Research API。
+> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、Instagram、Facebook 管理主页、Bluesky 和人工热点入口已接入或可用。Facebook 公共主页池等待 Meta 审核；X 因 API 额度限制暂不可写入；TikTok 保留人工观察或合规供应商接入。

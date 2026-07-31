@@ -42,6 +42,9 @@ const metaSourceStatus = {
   instagram: { source: "Instagram", status: "pending", connected: false, fetchedCount: 0, detail: "" },
   facebook: { source: "Facebook", status: "pending", connected: false, fetchedCount: 0, detail: "" }
 };
+const openSourceStatus = {
+  bluesky: { source: "Bluesky", status: "pending", connected: false, fetchedCount: 0, detail: "" }
+};
 
 const youtubeMarkets = [
   { code: "IN", country: "印度", region: "印度" },
@@ -80,6 +83,16 @@ const marketTopics = {
   SA: ["music", "football", "fashion", "ramadan", "saudi"],
   AE: ["music", "football", "fashion", "ramadan", "dubai"]
 };
+
+const blueskyQueries = [
+  { query: "Bollywood", market: youtubeMarkets.find(item => item.code === "IN") },
+  { query: "\"sepak bola\"", market: youtubeMarkets.find(item => item.code === "ID") },
+  { query: "futebol", market: youtubeMarkets.find(item => item.code === "BR") },
+  { query: "afrobeats", market: youtubeMarkets.find(item => item.code === "NG") },
+  { query: "amapiano", market: youtubeMarkets.find(item => item.code === "ZA") },
+  { query: "музыка", market: youtubeMarkets.find(item => item.code === "RU") },
+  { query: "Dubai", market: youtubeMarkets.find(item => item.code === "AE") }
+].filter(item => item.market);
 
 const googleNewsLocales = {
   IN: { hl: "en-IN", ceid: "IN:en" },
@@ -141,6 +154,23 @@ function appendMetaAuth(url, accessToken = metaAccessToken, includeProof = false
   const proof = includeProof ? metaAppSecretProof() : "";
   if (proof) url.searchParams.set("appsecret_proof", proof);
   return url;
+}
+
+async function fetchJsonWithTimeout(url, options = {}, timeoutMs = 12000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, { ...options, signal: controller.signal });
+    const body = await response.text();
+    return {
+      ok: response.ok,
+      status: response.status,
+      json: body ? JSON.parse(body) : {},
+      body
+    };
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 function isPublicContentReviewError(message = "") {
@@ -258,7 +288,7 @@ function mergeSources(left = [], right = []) {
 }
 
 function mergeLinks(target, incoming) {
-  for (const key of ["youtube", "trends", "local", "gdelt", "manual", "x", "instagram", "facebook", "tiktok"]) {
+  for (const key of ["youtube", "trends", "local", "gdelt", "manual", "x", "instagram", "facebook", "tiktok", "bluesky"]) {
     if (!target[key] && incoming[key]) target[key] = incoming[key];
   }
 }
@@ -267,7 +297,7 @@ function cleanSignal(item) {
   const originalTitle = cleanTitle(item.originalTitle || item.name);
   const name = cleanTitle(item.name || originalTitle);
   const source = Array.isArray(item.source) ? item.source : [item.source || "未知来源"];
-  const url = item.youtube?.url || item.trends?.url || item.local?.url || item.gdelt?.url || item.manual?.url || item.x?.url || item.instagram?.url || item.facebook?.url || item.tiktok?.url || "";
+  const url = item.youtube?.url || item.trends?.url || item.local?.url || item.gdelt?.url || item.manual?.url || item.x?.url || item.instagram?.url || item.facebook?.url || item.tiktok?.url || item.bluesky?.url || "";
   return {
     ...item,
     name: textSnippet(name || originalTitle || "未命名热点"),
@@ -296,8 +326,8 @@ function mergeSignals(target, incoming) {
   target.selected = Boolean(target.selected || incoming.selected || score >= 88);
   target.reason = [...new Set(reasonParts)].slice(0, 2).join("；");
   target.signals = [
-    ...(target.signals || [{ source: target.source[0], title: target.originalTitle, url: target.youtube?.url || target.trends?.url || target.local?.url || target.gdelt?.url || target.manual?.url || target.x?.url || target.instagram?.url || target.facebook?.url || target.tiktok?.url || "" }]),
-    { source: incoming.source.join(" + "), title: incoming.originalTitle, url: incoming.youtube?.url || incoming.trends?.url || incoming.local?.url || incoming.gdelt?.url || incoming.manual?.url || incoming.x?.url || incoming.instagram?.url || incoming.facebook?.url || incoming.tiktok?.url || "" }
+    ...(target.signals || [{ source: target.source[0], title: target.originalTitle, url: target.youtube?.url || target.trends?.url || target.local?.url || target.gdelt?.url || target.manual?.url || target.x?.url || target.instagram?.url || target.facebook?.url || target.tiktok?.url || target.bluesky?.url || "" }]),
+    { source: incoming.source.join(" + "), title: incoming.originalTitle, url: incoming.youtube?.url || incoming.trends?.url || incoming.local?.url || incoming.gdelt?.url || incoming.manual?.url || incoming.x?.url || incoming.instagram?.url || incoming.facebook?.url || incoming.tiktok?.url || incoming.bluesky?.url || "" }
   ].filter((signal, index, array) => array.findIndex(item => item.source === signal.source && item.title === signal.title) === index);
   mergeLinks(target, incoming);
   return target;
@@ -582,6 +612,7 @@ function buildTemplateOutputs(hotspots) {
 function sourceUrlForHotspot(item) {
   return item.instagram?.url
     || item.facebook?.url
+    || item.bluesky?.url
     || item.youtube?.url
     || item.trends?.url
     || item.local?.url
@@ -1225,6 +1256,100 @@ async function fetchXSignals() {
   return batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
 }
 
+function blueskyPostUrl(post) {
+  const handle = post.author?.handle || "";
+  const recordKey = String(post.uri || "").split("/").pop();
+  return handle && recordKey ? `https://bsky.app/profile/${handle}/post/${recordKey}` : "https://bsky.app/";
+}
+
+function blueskyPostImage(post) {
+  const embed = post.embed || {};
+  return embed.images?.[0]?.thumb
+    || embed.media?.images?.[0]?.thumb
+    || embed.external?.thumb
+    || "";
+}
+
+async function fetchBlueskySignals() {
+  const since = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString();
+  const batches = [];
+  let successfulQueries = 0;
+
+  const results = await Promise.all(blueskyQueries.map(async ({ query, market }) => {
+    const url = new URL("https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts");
+    url.searchParams.set("q", query);
+    url.searchParams.set("limit", "10");
+    url.searchParams.set("sort", "top");
+    url.searchParams.set("since", since);
+    try {
+      const result = await fetchJsonWithTimeout(url, {
+        headers: { "user-agent": "LocalHotspotOpportunityCenter/1.0" }
+      }, 10000);
+      if (!result.ok) {
+        throw new Error(`Bluesky ${market.code} 请求失败：${result.status} ${result.body.slice(0, 160)}`);
+      }
+      successfulQueries += 1;
+      return (result.json.posts || []).map((post, rank) => {
+        const text = String(post.record?.text || "").replace(/\s+/g, " ").trim();
+        const volume = Number(post.likeCount || 0)
+          + Number(post.repostCount || 0) * 2
+          + Number(post.replyCount || 0) * 3
+          + Number(post.quoteCount || 0) * 2;
+        const score = sourceScore(61, rank, volume + 1000);
+        const trend = sourceTrend(25, rank, volume + 1000);
+        return {
+          id: `bluesky-${String(post.uri || `${market.code}-${rank}`).split("/").pop()}`,
+          name: textSnippet(text || query, 36),
+          originalTitle: text || query,
+          region: market.region,
+          country: market.country,
+          source: ["Bluesky"],
+          heat: formatHeat(Math.max(volume * 100, 1000)),
+          trend,
+          score,
+          status: statusFromTrend(trend, score),
+          type: "realtime",
+          selected: score >= 86,
+          preview: blueskyPostImage(post),
+          previewTitle: "",
+          previewMeta: "",
+          prompt: promptFromSocial("Bluesky", text || query, market),
+          reason: `来自 Bluesky 公开搜索「${query}」，互动量约 ${volume}。适合补充公开社区讨论和新兴视觉风格信号，需与 YouTube、Google Trends 或本地媒体交叉验证。`,
+          bluesky: {
+            uri: post.uri || "",
+            handle: post.author?.handle || "",
+            displayName: post.author?.displayName || "",
+            publishedAt: post.record?.createdAt || post.indexedAt || "",
+            query,
+            image: blueskyPostImage(post),
+            url: blueskyPostUrl(post)
+          }
+        };
+      });
+    } catch (error) {
+      console.warn(error.name === "AbortError" ? `Bluesky ${market.code} 请求超时` : error.message);
+      return [];
+    }
+  }));
+
+  batches.push(...results.flat());
+  const signals = batches
+    .filter(item => item.originalTitle)
+    .sort((a, b) => b.score - a.score || b.trend - a.trend)
+    .slice(0, 8);
+
+  openSourceStatus.bluesky = {
+    source: "Bluesky",
+    status: successfulQueries ? (signals.length ? "connected" : "empty") : "error",
+    connected: successfulQueries > 0,
+    fetchedCount: batches.length,
+    detail: successfulQueries
+      ? `公开搜索成功 ${successfulQueries}/${blueskyQueries.length} 组`
+      : "公开 API 暂时无法连接"
+  };
+  return signals;
+}
+
 async function discoverMetaAccounts() {
   if (!metaAccessToken) {
     metaSourceStatus.meta = { ...metaSourceStatus.meta, status: "missing", detail: "未配置 META_ACCESS_TOKEN" };
@@ -1672,6 +1797,7 @@ function composeSignals(groups) {
     ...takeBySource(groups.gdelt, "GDELT", 6),
     ...takeBySource(groups.manual, "人工录入", 6),
     ...takeBySource(groups.x, "X", 4),
+    ...takeBySource(groups.bluesky, "Bluesky", 4),
     ...takeBySource(groups.instagram, "Instagram", 4),
     ...takeBySource(groups.facebook, "Facebook", 4),
     ...takeBySource(groups.tiktok, "TikTok", 4)
@@ -1690,6 +1816,7 @@ async function fetchExternalSignals() {
    * - YouTube Data API：已接入，配置 YOUTUBE_API_KEY 即可启用。
    * - Google Trends RSS：已接入，无需密钥，适合趋势和搜索热度
    * - X / Instagram / Facebook：已预留官方接口连接器，配置 Secret 后启用
+   * - Bluesky：已接入公开搜索 API，无需密钥
    * - TikTok：商业运营链路暂用人工观察或合规数据供应商，不启用 Research API
    * - 公司内部飞书表格 / CMS：适合运营手动入选与复盘
    */
@@ -1699,6 +1826,7 @@ async function fetchExternalSignals() {
   const gdeltSignals = await fetchGdeltSignals();
   const manualSignals = await fetchManualSignals();
   const xSignals = await fetchXSignals();
+  const blueskySignals = await fetchBlueskySignals();
   await discoverMetaAccounts();
   const instagramSignals = await fetchInstagramSignals();
   const facebookSignals = await fetchFacebookSignals();
@@ -1710,6 +1838,7 @@ async function fetchExternalSignals() {
     gdelt: gdeltSignals,
     manual: manualSignals,
     x: xSignals,
+    bluesky: blueskySignals,
     instagram: instagramSignals,
     facebook: facebookSignals,
     tiktok: tiktokSignals
@@ -1742,6 +1871,7 @@ async function update() {
     "本地平台",
     "GDELT",
     "人工录入",
+    "Bluesky",
     "TikTok",
     "Instagram",
     "X",
@@ -1763,6 +1893,10 @@ async function update() {
     };
   });
   data.sourceStatus = [
+    {
+      ...openSourceStatus.bluesky,
+      visibleCount: data.hotspots.filter(item => item.source?.includes("Bluesky")).length
+    },
     metaSourceStatus.meta,
     {
       ...metaSourceStatus.instagram,

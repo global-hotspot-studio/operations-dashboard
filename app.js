@@ -140,6 +140,7 @@ const EN_TEXT = {
   "视觉玩法": "Visual concept", "主题模板": "Theme template", "设计灵感": "Design inspiration",
   "搜索趋势": "Search trend", "Google Trends 搜索趋势": "Google Trends search interest",
   "Instagram 视觉趋势": "Instagram visual trend", "Facebook 公开内容": "Facebook public content",
+  "Bluesky 公开讨论": "Bluesky public discussion",
   "TikTok 短视频趋势": "TikTok short-video trend", "X 实时讨论": "Live discussion on X",
   "本地媒体": "Local media", "本地媒体 / 新闻源": "Local media / news",
   "GDELT 全球新闻": "GDELT global news", "GDELT 全球新闻数据库": "GDELT global news database",
@@ -413,6 +414,7 @@ function getPlatformUrl(h, source) {
   if (source === "Google Trends" && h.trends?.url) return h.trends.url;
   if (source === "X" && h.x?.url) return h.x.url;
   if (source === "Facebook" && h.facebook?.url) return h.facebook.url;
+  if (source === "Bluesky" && h.bluesky?.url) return h.bluesky.url;
   if (source === "本地平台" && h.local?.url) return h.local.url;
   if (source === "GDELT" && h.gdelt?.url) return h.gdelt.url;
   if (source === "人工录入" && h.manual?.url) return h.manual.url;
@@ -447,6 +449,12 @@ function getSourceVisual(h, source) {
     return {
       image: h.facebook?.picture || "",
       label: h.facebook?.pageId ? `${h.facebook.pageId} · Facebook` : "Facebook 公开内容"
+    };
+  }
+  if (source === "Bluesky") {
+    return {
+      image: h.bluesky?.image || "",
+      label: h.bluesky?.handle ? `@${h.bluesky.handle} · Bluesky` : "Bluesky 公开讨论"
     };
   }
   if (source === "TikTok") {
@@ -787,7 +795,7 @@ function showRefreshToast() {
     ? { connected: "Written", empty: "API healthy · 0 this run", error: "Connection error", missing: "Not configured", pending: "Pending verification", review_required: "Awaiting Meta review" }
     : { connected: "已写入", empty: "接口正常 · 本轮 0 条", error: "连接异常", missing: "待配置", pending: "待验证", review_required: "等待 Meta 审核" };
   const sourceStatuses = (dashboardMeta.sourceStatus || [])
-    .filter(item => item.source === "Instagram" || item.source === "Facebook");
+    .filter(item => ["Instagram", "Facebook", "Bluesky", "Wikimedia"].includes(item.source));
   const healthBadges = sourceStatuses.map(item => {
     const cssStatus = item.status === "connected" ? "ok" : item.status === "empty" ? "empty" : item.status === "review_required" ? "pending" : "error";
     const countText = item.status === "connected"
