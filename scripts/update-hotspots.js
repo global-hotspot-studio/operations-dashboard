@@ -15,6 +15,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const root = path.resolve(__dirname, "..");
 const dataPath = path.join(root, "data", "dashboard.json");
@@ -25,12 +26,15 @@ const generatedWallpapersPath = path.join(root, "data", "generated-wallpapers.js
 const generatedThemesPath = path.join(root, "data", "generated-themes.json");
 const holidayCalendarPath = path.join(root, "data", "holiday-calendar.json");
 const hotspotLifecyclePath = path.join(root, "data", "hotspot-lifecycle.json");
+const facebookPublicPagesPath = path.join(root, "data", "facebook-public-pages.json");
 const youtubeApiKey = (process.env.YOUTUBE_API_KEY || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const xBearerToken = (process.env.X_BEARER_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaAccessToken = (process.env.META_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
+const metaAppSecret = (process.env.META_APP_SECRET || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaGraphVersion = (process.env.META_GRAPH_VERSION || "v24.0").trim();
 let instagramBusinessAccountId = (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const facebookPageIds = (process.env.FACEBOOK_PAGE_IDS || "").split(",").map(item => item.trim()).filter(Boolean);
+const facebookPublicPageLimit = Math.max(1, Number.parseInt(process.env.FACEBOOK_PUBLIC_PAGE_LIMIT || "12", 10) || 12);
 const metaPageAccessTokens = new Map();
 const tiktokAccessToken = (process.env.TIKTOK_ACCESS_TOKEN || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 const metaSourceStatus = {
@@ -112,6 +116,35 @@ function readManualHotspots() {
     console.warn(`人工热点读取失败：${error.message}`);
     return [];
   }
+}
+
+function readFacebookPublicPageQueries() {
+  if (!fs.existsSync(facebookPublicPagesPath)) return [];
+  try {
+    const rows = JSON.parse(fs.readFileSync(facebookPublicPagesPath, "utf8"));
+    return Array.isArray(rows)
+      ? rows.filter(row => row?.enabled !== false && row?.query && row?.region && row?.country)
+      : [];
+  } catch (error) {
+    console.warn(`Facebook 公共主页池读取失败：${error.message}`);
+    return [];
+  }
+}
+
+function metaAppSecretProof() {
+  if (!metaAccessToken || !metaAppSecret) return "";
+  return crypto.createHmac("sha256", metaAppSecret).update(metaAccessToken).digest("hex");
+}
+
+function appendMetaAuth(url, accessToken = metaAccessToken, includeProof = false) {
+  url.searchParams.set("access_token", accessToken);
+  const proof = includeProof ? metaAppSecretProof() : "";
+  if (proof) url.searchParams.set("appsecret_proof", proof);
+  return url;
+}
+
+function isPublicContentReviewError(message = "") {
+  return /Page Public Content Access|Page Public Metadata Access|pages\/search|Application does not have permission|\(#10\)|"code"\s*:\s*10|权限不足/i.test(message);
 }
 
 function clamp(value, min, max) {
@@ -1370,42 +1403,138 @@ async function fetchInstagramSignals() {
   return output;
 }
 
+async function discoverPublicFacebookPages() {
+  const queries = readFacebookPublicPageQueries();
+  if (!queries.length) {
+    return {
+      pages: [],
+      successfulSearches: 0,
+      failedSearches: 0,
+      reviewRequired: false,
+      detail: "未配置 Facebook 公共主页候选池"
+    };
+  }
+  if (!metaAppSecret) {
+    return {
+      pages: [],
+      successfulSearches: 0,
+      failedSearches: 0,
+      reviewRequired: false,
+      detail: "缺少 META_APP_SECRET，公共主页搜索尚未启用"
+    };
+  }
+
+  const pages = [];
+  const seenPageIds = new Set(facebookPageIds.map(String));
+  let successfulSearches = 0;
+  let failedSearches = 0;
+  let reviewRequired = false;
+  let lastError = "";
+
+  for (const query of queries) {
+    if (pages.length >= facebookPublicPageLimit) break;
+    try {
+      const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/pages/search`);
+      url.searchParams.set("q", query.query);
+      url.searchParams.set("fields", "id,name,location,link,verification_status");
+      url.searchParams.set("limit", "3");
+      appendMetaAuth(url, metaAccessToken, true);
+      const response = await fetch(url);
+      const body = await response.text();
+      if (!response.ok) {
+        throw new Error(`Facebook 公共主页搜索 ${query.query} 失败：${response.status} ${body.slice(0, 220)}`);
+      }
+      successfulSearches += 1;
+      const candidates = body ? (JSON.parse(body).data || []) : [];
+      const page = candidates.find(item => item.verification_status === "blue_verified") || candidates[0];
+      if (!page?.id || seenPageIds.has(String(page.id))) continue;
+      seenPageIds.add(String(page.id));
+      pages.push({
+        id: String(page.id),
+        name: page.name || query.query,
+        link: page.link || "",
+        verificationStatus: page.verification_status || "",
+        location: page.location || {},
+        query: query.query,
+        region: query.region,
+        country: query.country,
+        category: query.category || "公共主页"
+      });
+    } catch (error) {
+      failedSearches += 1;
+      lastError = error.message;
+      console.warn(error.message);
+      if (isPublicContentReviewError(error.message)) {
+        reviewRequired = true;
+        break;
+      }
+    }
+  }
+
+  return {
+    pages,
+    successfulSearches,
+    failedSearches,
+    reviewRequired,
+    detail: reviewRequired
+      ? "Page Public Content Access 尚未通过公司验证与 App Review"
+      : pages.length
+        ? `公共主页搜索命中 ${pages.length} 个候选主页`
+        : lastError || "公共主页搜索未返回候选主页"
+  };
+}
+
 async function fetchFacebookSignals() {
-  if (!metaAccessToken || !facebookPageIds.length) {
+  if (!metaAccessToken) {
     metaSourceStatus.facebook = {
       source: "Facebook",
       status: "missing",
       connected: false,
       fetchedCount: 0,
-      detail: "缺少有效 Meta Token 或可管理的 Facebook Page"
+      detail: "缺少有效 META_ACCESS_TOKEN"
     };
-    console.log("META_ACCESS_TOKEN 或 FACEBOOK_PAGE_IDS 未配置，跳过 Facebook 真实热点抓取。");
+    console.log("META_ACCESS_TOKEN 未配置，跳过 Facebook 真实热点抓取。");
     return [];
   }
+
+  const publicDiscovery = await discoverPublicFacebookPages();
   const batches = [];
-  let successfulPages = 0;
-  let failedPages = 0;
-  for (const pageId of facebookPageIds) {
+  let successfulManagedPages = 0;
+  let failedManagedPages = 0;
+  let successfulPublicPages = 0;
+  let failedPublicPages = 0;
+
+  async function fetchPagePosts(page, isPublicPage) {
+    const pageId = String(page.id);
     try {
-      const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/${pageId}/posts`);
+      const endpoint = isPublicPage ? "feed" : "posts";
+      const url = new URL(`https://graph.facebook.com/${metaGraphVersion}/${pageId}/${endpoint}`);
       url.searchParams.set("fields", "id,message,created_time,permalink_url,shares,reactions.summary(true),comments.summary(true),attachments{media,url,title}");
       url.searchParams.set("limit", "8");
-      url.searchParams.set("access_token", metaPageAccessTokens.get(String(pageId)) || metaAccessToken);
+      appendMetaAuth(
+        url,
+        isPublicPage ? metaAccessToken : (metaPageAccessTokens.get(pageId) || metaAccessToken),
+        isPublicPage
+      );
       const response = await fetch(url);
-      if (!response.ok) throw new Error(`Facebook page ${pageId} 请求失败：${response.status} ${(await response.text()).slice(0, 160)}`);
-      const json = await response.json();
-      successfulPages += 1;
+      const body = await response.text();
+      if (!response.ok) {
+        throw new Error(`Facebook ${isPublicPage ? "公共" : "管理"}主页 ${pageId} 请求失败：${response.status} ${body.slice(0, 220)}`);
+      }
+      const json = body ? JSON.parse(body) : {};
+      if (isPublicPage) successfulPublicPages += 1;
+      else successfulManagedPages += 1;
       batches.push(...(json.data || []).map((post, rank) => {
         const volume = Number(post.shares?.count || 0) * 3 + Number(post.reactions?.summary?.total_count || 0) + Number(post.comments?.summary?.total_count || 0) * 3;
         const title = textSnippet((post.message || post.attachments?.data?.[0]?.title || "Facebook 热点内容").replace(/\s+/g, " "), 32);
-        const score = sourceScore(61, rank, volume + 1000);
-        const trend = sourceTrend(23, rank, volume + 1000);
+        const score = sourceScore(isPublicPage ? 66 : 61, rank, volume + 1000);
+        const trend = sourceTrend(isPublicPage ? 27 : 23, rank, volume + 1000);
         return {
           id: `fb-${post.id}`,
           name: title,
           originalTitle: post.message || title,
-          region: "全球",
-          country: "全球",
+          region: page.region || "全球",
+          country: page.country || "全球",
           source: ["Facebook"],
           heat: formatHeat(Math.max(volume * 120, 1000)),
           trend,
@@ -1416,10 +1545,15 @@ async function fetchFacebookSignals() {
           preview: "",
           previewTitle: "",
           previewMeta: "",
-          prompt: promptFromSocial("Facebook", post.message || title, { country: "全球" }),
-          reason: `来自 Facebook Page 公开帖子，适合补充社区传播和本地媒体扩散判断。`,
+          prompt: promptFromSocial("Facebook", post.message || title, { country: page.country || "全球" }),
+          reason: `来自 Facebook ${isPublicPage ? "公共主页池" : "已管理主页"}「${page.name || pageId}」的公开帖子，适合补充社区传播和本地媒体扩散判断。`,
           facebook: {
             pageId,
+            pageName: page.name || "",
+            pageLink: page.link || "",
+            pageScope: isPublicPage ? "public-search" : "managed",
+            query: page.query || "",
+            category: page.category || "",
             publishedAt: post.created_time,
             url: post.permalink_url || "",
             picture: post.attachments?.data?.[0]?.media?.image?.src || ""
@@ -1427,17 +1561,42 @@ async function fetchFacebookSignals() {
         };
       }));
     } catch (error) {
-      failedPages += 1;
+      if (isPublicPage) failedPublicPages += 1;
+      else failedManagedPages += 1;
       console.warn(error.message);
     }
   }
+
+  for (const pageId of facebookPageIds) {
+    await fetchPagePosts({ id: pageId, name: "已管理主页", region: "全球", country: "全球" }, false);
+  }
+  for (const page of publicDiscovery.pages) {
+    await fetchPagePosts(page, true);
+  }
+
   const output = batches.sort((a, b) => b.score - a.score || b.trend - a.trend).slice(0, 8);
+  const successfulPages = successfulManagedPages + successfulPublicPages;
+  const failedPages = failedManagedPages + failedPublicPages;
+  const managedDetail = `管理主页 ${successfulManagedPages}/${facebookPageIds.length}`;
+  const publicDetail = publicDiscovery.reviewRequired
+    ? "公共主页权限待公司验证与 App Review"
+    : publicDiscovery.pages.length
+      ? `公共主页 ${successfulPublicPages}/${publicDiscovery.pages.length}`
+      : publicDiscovery.detail;
   metaSourceStatus.facebook = {
     source: "Facebook",
-    status: successfulPages ? (output.length ? "connected" : "empty") : "error",
+    status: output.length
+      ? "connected"
+      : successfulPages
+        ? "empty"
+        : publicDiscovery.reviewRequired
+          ? "review_required"
+          : "error",
     connected: successfulPages > 0,
     fetchedCount: output.length,
-    detail: `Page Posts 成功 ${successfulPages}/${facebookPageIds.length} 个 Page${failedPages ? `，${failedPages} 个需重试` : ""}`
+    scope: successfulPublicPages ? "public-pages" : "managed-pages",
+    publicPageCount: publicDiscovery.pages.length,
+    detail: `${managedDetail}；${publicDetail}${failedPages ? `；${failedPages} 个主页需重试` : ""}`
   };
   return output;
 }

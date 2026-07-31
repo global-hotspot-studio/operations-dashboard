@@ -105,7 +105,7 @@ GDELT 用于补充跨语言、跨国家的新闻热度信号，不需要额外 S
 | --- | --- | --- |
 | X | 代码已完成，等待 Bearer Token | 最近 7 天公开讨论的 Recent Search |
 | Instagram | 代码已完成，等待 Meta 权限与专业账号 | 指定 Hashtag 的近期媒体，不是全网热榜 |
-| Facebook | 代码已完成，等待 Meta 权限与主页 ID | 指定 Facebook Page 的帖子，不是全网热榜 |
+| Facebook | 已支持管理主页；公共主页池代码已完成，等待 Meta 审核 | 管理主页帖子 + 重点市场公共主页搜索与帖子 |
 | TikTok | 不直接启用 Research API | 商业运营账号不满足 Research API 资格；先用人工观察或合规数据供应商 |
 
 X / Instagram / Facebook 拿到官方权限后，在 GitHub 仓库 Secrets 里补齐：
@@ -113,15 +113,24 @@ X / Instagram / Facebook 拿到官方权限后，在 GitHub 仓库 Secrets 里�
 ```text
 X_BEARER_TOKEN
 META_ACCESS_TOKEN
+META_APP_SECRET
 ```
 
 `INSTAGRAM_BUSINESS_ACCOUNT_ID` 与 `FACEBOOK_PAGE_IDS` 现在是可选项。未配置时，脚本会使用 `META_ACCESS_TOKEN` 调用 `/me/accounts`，自动识别当前账号可管理的 Facebook Page，以及与 Page 关联的 Instagram 专业账号。需要限制监控范围时，再手动配置 `FACEBOOK_PAGE_IDS`（多个 ID 用英文逗号分隔）。
+
+Facebook 非自有公共主页由 `data/facebook-public-pages.json` 维护候选池。脚本会先调用 `/pages/search` 定位重点市场主页，再调用 `/{page-id}/feed` 读取公开帖子。该链路需要：
+
+- GitHub Secret `META_APP_SECRET`，用于生成 `appsecret_proof`，不会写入仓库或日志；
+- Meta 公司验证；
+- `Page Public Content Access` 通过 App Review。
+
+Meta 不提供“全 Facebook 任意关键词帖子搜索”。本项目采用“重点市场公共主页候选池 + 公开帖子”的合规方案，并在看板来源状态中区分“已管理主页”和“公共主页池”。
 
 启用逻辑：
 
 - X：在 X Developer Console 创建 App，生成 Bearer Token；脚本调用 X API Recent Search 获取公开讨论与互动数据。
 - Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；令牌至少需要 `instagram_basic`、`pages_show_list`、`pages_read_engagement`。如果 Page 归属于 Business Portfolio，还需要 `business_management`。脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
-- Facebook：同一令牌会自动发现当前账号可管理的 Page；脚本调用 Facebook Graph API 的 Page Posts 获取指定主页传播数据。
+- Facebook：同一令牌会自动发现当前账号可管理的 Page；审核前读取管理主页，审核通过后自动启用公共主页搜索和非自有主页 Feed。
 - TikTok：Research API 面向符合条件的非营利研究人员，Token 也不适合当前长期定时任务；当前不把它冒充为已开通的商业实时源。
 
 如果 Secret 未配置，脚本会明确跳过该平台，不会生成假数据。

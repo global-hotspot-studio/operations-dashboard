@@ -784,12 +784,12 @@ function showRefreshToast() {
   clearTimeout(toastTimer);
   const isEnglish = languageState.current === "en";
   const statusLabels = isEnglish
-    ? { connected: "Written", empty: "API healthy · 0 this run", error: "Connection error", missing: "Not configured", pending: "Pending verification" }
-    : { connected: "已写入", empty: "接口正常 · 本轮 0 条", error: "连接异常", missing: "待配置", pending: "待验证" };
+    ? { connected: "Written", empty: "API healthy · 0 this run", error: "Connection error", missing: "Not configured", pending: "Pending verification", review_required: "Awaiting Meta review" }
+    : { connected: "已写入", empty: "接口正常 · 本轮 0 条", error: "连接异常", missing: "待配置", pending: "待验证", review_required: "等待 Meta 审核" };
   const sourceStatuses = (dashboardMeta.sourceStatus || [])
     .filter(item => item.source === "Instagram" || item.source === "Facebook");
   const healthBadges = sourceStatuses.map(item => {
-    const cssStatus = item.status === "connected" ? "ok" : item.status === "empty" ? "empty" : "error";
+    const cssStatus = item.status === "connected" ? "ok" : item.status === "empty" ? "empty" : item.status === "review_required" ? "pending" : "error";
     const countText = item.status === "connected"
       ? ` · ${item.visibleCount ?? item.fetchedCount ?? 0} ${isEnglish ? "items" : "条"}`
       : "";

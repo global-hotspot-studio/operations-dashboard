@@ -6,10 +6,15 @@
  * 只验证连接是否成功，不输出任何 Token，也不写入数据文件。
  */
 
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+
 const cleanSecret = value => (value || "").trim().replace(/^([\"\'])(.*)\1$/, "$2");
 
 const xBearerToken = cleanSecret(process.env.X_BEARER_TOKEN);
 const metaAccessToken = cleanSecret(process.env.META_ACCESS_TOKEN);
+const metaAppSecret = cleanSecret(process.env.META_APP_SECRET);
 let instagramBusinessAccountId = cleanSecret(process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID);
 const facebookPageIds = (process.env.FACEBOOK_PAGE_IDS || "")
   .split(",")
@@ -17,6 +22,7 @@ const facebookPageIds = (process.env.FACEBOOK_PAGE_IDS || "")
   .filter(Boolean);
 const metaGraphVersion = (process.env.META_GRAPH_VERSION || "v24.0").trim();
 const metaPageAccessTokens = new Map();
+const facebookPublicPagesPath = path.resolve(__dirname, "..", "data", "facebook-public-pages.json");
 
 let configuredFailures = 0;
 
@@ -40,6 +46,25 @@ async function getJson(url, headers = {}) {
     throw new Error(`HTTP ${response.status} ${body.slice(0, 220)}`);
   }
   return body ? JSON.parse(body) : {};
+}
+
+function readFacebookPublicPageQueries() {
+  try {
+    const rows = JSON.parse(fs.readFileSync(facebookPublicPagesPath, "utf8"));
+    return Array.isArray(rows) ? rows.filter(row => row?.enabled !== false && row?.query) : [];
+  } catch (error) {
+    console.warn(`△ Facebook 公共主页池读取失败：${error.message}`);
+    return [];
+  }
+}
+
+function appendMetaAuth(url, includeProof = false) {
+  url.searchParams.set("access_token", metaAccessToken);
+  if (includeProof && metaAppSecret) {
+    const proof = crypto.createHmac("sha256", metaAppSecret).update(metaAccessToken).digest("hex");
+    url.searchParams.set("appsecret_proof", proof);
+  }
+  return url;
 }
 
 async function checkX() {
@@ -184,6 +209,40 @@ async function checkFacebook() {
   }
 }
 
+async function checkFacebookPublicContent() {
+  const query = readFacebookPublicPageQueries()[0];
+  if (!metaAccessToken || !query) {
+    pending("Facebook 公共主页", "需要 META_ACCESS_TOKEN 与公共主页候选池");
+    return;
+  }
+  if (!metaAppSecret) {
+    pending("Facebook 公共主页", "需要 GitHub Secret：META_APP_SECRET");
+    return;
+  }
+  try {
+    const searchUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/pages/search`);
+    searchUrl.searchParams.set("q", query.query);
+    searchUrl.searchParams.set("fields", "id,name,link,verification_status");
+    searchUrl.searchParams.set("limit", "1");
+    appendMetaAuth(searchUrl, true);
+    const page = (await getJson(searchUrl)).data?.[0];
+    if (!page?.id) throw new Error("公共主页搜索未返回候选主页");
+
+    const feedUrl = new URL(`https://graph.facebook.com/${metaGraphVersion}/${page.id}/feed`);
+    feedUrl.searchParams.set("fields", "id,created_time,permalink_url");
+    feedUrl.searchParams.set("limit", "1");
+    appendMetaAuth(feedUrl, true);
+    const feed = await getJson(feedUrl);
+    passed("Facebook 公共主页", `Page Search 与非自有主页 Feed 可用，本次返回 ${feed.data?.length || 0} 条。`);
+  } catch (error) {
+    if (/Page Public Content Access|Page Public Metadata Access|pages\/search|Application does not have permission|\(#10\)|"code"\s*:\s*10|权限不足/i.test(error.message)) {
+      console.warn("△ Facebook 公共主页：代码与候选池已就绪；Page Public Content Access 尚待公司验证与 Meta App Review。");
+      return;
+    }
+    failed("Facebook 公共主页", error);
+  }
+}
+
 async function run() {
   console.log("社媒平台凭证自检（不会显示或保存 Token）");
   await checkX();
@@ -198,6 +257,7 @@ async function run() {
   }
   await checkInstagram();
   await checkFacebook();
+  await checkFacebookPublicContent();
   console.log("○ TikTok：未作为商业运营数据源启用。Research API 需要研究资质，且短时 Token 不适合当前每日定时链路。");
   process.exitCode = configuredFailures ? 1 : 0;
 }

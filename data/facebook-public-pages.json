@@ -1,0 +1,128 @@
+[
+  {
+    "enabled": true,
+    "query": "NDTV",
+    "region": "印度",
+    "country": "印度",
+    "category": "综合媒体"
+  },
+  {
+    "enabled": true,
+    "query": "Bollywood Hungama",
+    "region": "印度",
+    "country": "印度",
+    "category": "影视娱乐"
+  },
+  {
+    "enabled": true,
+    "query": "Vogue India",
+    "region": "印度",
+    "country": "印度",
+    "category": "时尚文化"
+  },
+  {
+    "enabled": true,
+    "query": "Kompas.com",
+    "region": "印度尼西亚",
+    "country": "印度尼西亚",
+    "category": "综合媒体"
+  },
+  {
+    "enabled": true,
+    "query": "detikcom",
+    "region": "印度尼西亚",
+    "country": "印度尼西亚",
+    "category": "综合媒体"
+  },
+  {
+    "enabled": true,
+    "query": "USS Feed",
+    "region": "印度尼西亚",
+    "country": "印度尼西亚",
+    "category": "青年文化"
+  },
+  {
+    "enabled": true,
+    "query": "КиноПоиск",
+    "region": "俄罗斯（东欧）",
+    "country": "俄罗斯",
+    "category": "影视娱乐"
+  },
+  {
+    "enabled": true,
+    "query": "МУЗ-ТВ",
+    "region": "俄罗斯（东欧）",
+    "country": "俄罗斯",
+    "category": "音乐娱乐"
+  },
+  {
+    "enabled": true,
+    "query": "Афиша",
+    "region": "俄罗斯（东欧）",
+    "country": "俄罗斯",
+    "category": "城市文化"
+  },
+  {
+    "enabled": true,
+    "query": "MBC Group",
+    "region": "中东",
+    "country": "沙特阿拉伯",
+    "category": "影视娱乐"
+  },
+  {
+    "enabled": true,
+    "query": "Al Arabiya",
+    "region": "中东",
+    "country": "阿联酋",
+    "category": "综合媒体"
+  },
+  {
+    "enabled": true,
+    "query": "Arab Fashion Council",
+    "region": "中东",
+    "country": "阿联酋",
+    "category": "时尚文化"
+  },
+  {
+    "enabled": true,
+    "query": "Pulse Nigeria",
+    "region": "撒哈拉以南非洲",
+    "country": "尼日利亚",
+    "category": "青年文化"
+  },
+  {
+    "enabled": true,
+    "query": "OkayAfrica",
+    "region": "撒哈拉以南非洲",
+    "country": "尼日利亚",
+    "category": "音乐文化"
+  },
+  {
+    "enabled": true,
+    "query": "Nairobi News",
+    "region": "撒哈拉以南非洲",
+    "country": "肯尼亚",
+    "category": "城市文化"
+  },
+  {
+    "enabled": true,
+    "query": "Billboard Latin",
+    "region": "南美洲",
+    "country": "拉美",
+    "category": "音乐娱乐"
+  },
+  {
+    "enabled": true,
+    "query": "Gshow",
+    "region": "南美洲",
+    "country": "巴西",
+    "category": "影视娱乐"
+  },
+  {
+    "enabled": true,
+    "query": "Televisa",
+    "region": "南美洲",
+    "country": "墨西哥",
+    "category": "影视娱乐"
+  }
+]
