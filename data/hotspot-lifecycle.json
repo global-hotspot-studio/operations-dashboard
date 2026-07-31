@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T10:51:39.528Z",
+  "updatedAt": "2026-07-31T05:35:57.339Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
       "name": "Alaakaa Loova Lyrical | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -44,11 +45,12 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -57,18 +59,20 @@
         "南非",
         "肯尼亚",
         "加纳",
-        "尼日利亚 / 南非 / 肯尼亚 / 加纳"
+        "尼日利亚 / 南非 / 肯尼亚 / 加纳",
+        "南非 / 肯尼亚 / 加纳"
       ]
     },
     "youtube:rudeboy and sarkodie blessed alive": {
       "key": "youtube:rudeboy and sarkodie blessed alive",
       "name": "Rudeboy and Sarkodie - Blessed & Alive",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -80,11 +84,12 @@
       "key": "youtube:starting over using only robux in keyboard escape",
       "name": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -98,11 +103,12 @@
       "key": "youtube:no batidão",
       "name": "NO BATIDÃO",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -117,11 +123,12 @@
       "key": "youtube:jumanji open world official trailer",
       "name": "JUMANJI: OPEN WORLD - Official Trailer",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -421,16 +428,20 @@
       "key": "youtube:ramayana official trailer",
       "name": "RAMAYANA - Official Trailer",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
       "markets": [
-        "阿联酋"
+        "阿联酋",
+        "印度",
+        "沙特阿拉伯",
+        "印度 / 沙特阿拉伯 / 阿联酋"
       ]
     },
     "google trends:south africa vehicle licence discs": {
@@ -575,6 +586,283 @@
       ],
       "markets": [
         "印度"
+      ]
+    },
+    "youtube:live msc at ewc 2026 knockout stage aurora gaming vs onic bahasa indonesia": {
+      "key": "youtube:live msc at ewc 2026 knockout stage aurora gaming vs onic bahasa indonesia",
+      "name": "🔴 LIVE | MSC at EWC 2026 | Knockout Stage | Aurora Gaming vs ONIC | Bahasa Indonesia",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "youtube:i m game trailer dulquer salmaan nahas hidhayath wayfarer films": {
+      "key": "youtube:i m game trailer dulquer salmaan nahas hidhayath wayfarer films",
+      "name": "I'M GAME TRAILER | Dulquer Salmaan | Nahas Hidhayath | Wayfarer Films",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "沙特阿拉伯",
+        "阿联酋",
+        "沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:todo de ti": {
+      "key": "youtube:todo de ti",
+      "name": "Todo De Ti",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "阿根廷",
+        "智利",
+        "秘鲁",
+        "阿根廷 / 智利 / 秘鲁"
+      ]
+    },
+    "google trends:weather surat": {
+      "key": "google trends:weather surat",
+      "name": "weather surat",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:pakistan vs sri lanka": {
+      "key": "google trends:pakistan vs sri lanka",
+      "name": "pakistan vs sri lanka",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "阿联酋"
+      ]
+    },
+    "google trends:leopold aschenbrenner": {
+      "key": "google trends:leopold aschenbrenner",
+      "name": "leopold aschenbrenner",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "google trends:tom holland": {
+      "key": "google trends:tom holland",
+      "name": "tom holland",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "阿根廷"
+      ]
+    },
+    "instagram:spartha praha vs zln 31 7 que opinas local empate o visita todo apunta a spartha win déjanos tu ": {
+      "key": "instagram:spartha praha vs zln 31 7 que opinas local empate o visita todo apunta a spartha win déjanos tu ",
+      "name": "SPARTHA PRAHA VS ZLN 31/7 QUE OPINAS ¿LOCAL, EMPATE O VISITA?💣🗯 Todo apunta a Spartha win! Déjanos tu comentario💬💯",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:mahadev": {
+      "key": "instagram:mahadev",
+      "name": "Mahadev🥹🙏🏻",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:i cyk do pamiętniczka": {
+      "key": "instagram:i cyk do pamiętniczka",
+      "name": "I cyk, do pamiętniczka ✍️⚽",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:my head on the cloud": {
+      "key": "instagram:my head on the cloud",
+      "name": "My head on the cloud",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "本地平台:men s cricket world cup 2027 venues and brand revealed": {
+      "key": "本地平台:men s cricket world cup 2027 venues and brand revealed",
+      "name": "Men’s Cricket World Cup 2027 venues and brand revealed",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:had made peace with leaving yami gautam was ready to quit bollywood before uri": {
+      "key": "本地平台:had made peace with leaving yami gautam was ready to quit bollywood before uri",
+      "name": "Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:tanishq launches latest festival of diamonds campaign starring ananya panday": {
+      "key": "本地平台:tanishq launches latest festival of diamonds campaign starring ananya panday",
+      "name": "Tanishq Launches Latest Festival of Diamonds Campaign Starring Ananya Panday",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:mulai 1 agustus 2026 pencatatan hak cipta lagu dan musik gratisss": {
+      "key": "本地平台:mulai 1 agustus 2026 pencatatan hak cipta lagu dan musik gratisss",
+      "name": "Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "本地平台:supian hk dukung penuh turnamen sepakbola gubernur cup sebagai wadah pembinaan atlet banua": {
+      "key": "本地平台:supian hk dukung penuh turnamen sepakbola gubernur cup sebagai wadah pembinaan atlet banua",
+      "name": "Supian HK Dukung Penuh Turnamen Sepakbola Gubernur CUP Sebagai Wadah Pembinaan Atlet Banua",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "本地平台:jadwal film di 7 bioskop termurah surabaya spiderman trending": {
+      "key": "本地平台:jadwal film di 7 bioskop termurah surabaya spiderman trending",
+      "name": "Jadwal Film di 7 Bioskop Termurah Surabaya, Spiderman Trending!",
+      "firstSeenAt": "2026-07-31T05:35:57.339Z",
+      "lastSeenAt": "2026-07-31T05:35:57.339Z",
+      "observedDates": [
+        "2026-07-31"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
       ]
     }
   }
