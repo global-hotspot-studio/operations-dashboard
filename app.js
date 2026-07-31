@@ -1056,23 +1056,15 @@ function showRefreshToast() {
   toastTimer = setTimeout(() => t.classList.remove("show"), 5200);
 }
 
-async function downloadSample(url, filename = "theme-sample.png") {
-  try {
-    const response = await fetch(url, { cache: "no-store" });
-    if (!response.ok) throw new Error("下载失败");
-    const blob = await response.blob();
-    const objectUrl = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = objectUrl;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
-    showToast("样图已开始下载");
-  } catch {
-    showToast("样图下载失败，请稍后再试");
-  }
+function downloadSample(url, filename = "theme-sample.png") {
+  const link = document.createElement("a");
+  link.href = new URL(url, document.baseURI).href;
+  link.download = filename;
+  link.hidden = true;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  showToast("样图已开始下载");
 }
 
 function renderAll() {
