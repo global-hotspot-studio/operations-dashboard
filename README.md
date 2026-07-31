@@ -15,7 +15,7 @@
 当前版本已经从“静态展示页”升级为“定时更新工具底座”：
 
 - `data/dashboard.json`：页面读取的唯一数据源，包含热点池、地区池、趋势曲线、样图和提示词。
-- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT、Instagram、Facebook 管理主页和 Bluesky 公开搜索，并预留其他官方接口连接器。
+- `scripts/update-hotspots.js`：热点数据更新器，负责刷新热度、趋势、状态和汇总指标；已支持 YouTube Data API、Google Trends RSS、Google News RSS、本地媒体 RSS、GDELT、Instagram、Facebook 管理主页和 Wikimedia，并预留其他官方接口连接器。
 - `data/manual-hotspots.json`：人工热点入口，运营/设计师可手动补充 TikTok、Instagram、X 等暂未授权平台上观察到的热点。
 
 ### 每日更新与样图策略
@@ -106,7 +106,7 @@ GDELT 用于补充跨语言、跨国家的新闻热度信号，不需要额外 S
 | X | 代码已完成，等待 Bearer Token | 最近 7 天公开讨论的 Recent Search |
 | Instagram | 已接通真实数据 | 指定 Hashtag 的近期媒体，不是全网热榜 |
 | Facebook | 已支持管理主页；公共主页池代码已完成，等待 Meta 审核 | 管理主页帖子 + 重点市场公共主页搜索与帖子 |
-| Bluesky | 已接入公开 API，无需 Secret | 重点市场关键词的公开帖子与互动量 |
+| Bluesky | 连接器已完成，当前 GitHub 出口被官方 CDN 拦截 | 端点恢复可用后读取重点市场关键词的公开帖子与互动量 |
 | Wikimedia | 已接入公开 API，无需 Secret | 重点语言项目前一日高访问条目；作为语言市场兴趣信号 |
 | TikTok | 不直接启用 Research API | 商业运营账号不满足 Research API 资格；先用人工观察或合规数据供应商 |
 
@@ -145,4 +145,4 @@ Meta 不提供“全 Facebook 任意关键词帖子搜索”。本项目采用�
 
 - 飞书表格 / 内部 CMS：用于运营手动入选、备注、复盘和样图资产管理。
 
-> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、Instagram、Facebook 管理主页、Bluesky 和人工热点入口已接入或可用。Facebook 公共主页池等待 Meta 审核；X 因 API 额度限制暂不可写入；TikTok 保留人工观察或合规供应商接入。
+> 当前 YouTube、Google Trends、本地平台/本地媒体、GDELT、Instagram、Facebook 管理主页、Wikimedia 和人工热点入口已接入或可用。Facebook 公共主页池等待 Meta 审核；Bluesky 当前被官方 CDN 拦截；X 因 API 额度限制暂不可写入；TikTok 保留人工观察或合规供应商接入。

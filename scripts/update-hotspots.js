@@ -1381,8 +1381,9 @@ function previousUtcDateParts() {
 function isUsefulWikimediaArticle(article = "") {
   const title = String(article).replaceAll("_", " ").trim();
   if (!title || title.includes(":")) return false;
-  if (/^(main page|página principal|página inicial|заглавная страница|الصفحة الرئيسية)$/iu.test(title)) return false;
+  if (/^(main page|página principal|página inicial|заглавная страница|الصفحة الرئيسي[ةه]|الصفحة الرئيسة|मुखपृष्ठ|halaman utama|babban shafi|mwanzo)$/iu.test(title)) return false;
   if (/^(wikipedia|wikimedia|search|buscar|بحث|поиск)$/iu.test(title)) return false;
+  if (/\b(xnxx|xhamster|porn|porno|mia khalifa)\b/iu.test(title)) return false;
   if (/^\d{1,4}$/.test(title) || /^\d{1,2}[_\s-]\p{L}+/u.test(title)) return false;
   if (/\b(list of|lists of|disambiguation)\b/i.test(title)) return false;
   return true;
@@ -1913,17 +1914,17 @@ function takeBySource(list, source, limit) {
 
 function composeSignals(groups) {
   const mixed = [
-    ...takeBySource(groups.youtube, "YouTube", 10),
-    ...takeBySource(groups.googleTrends, "Google Trends", 8),
-    ...takeBySource(groups.localMedia, "本地平台", 8),
-    ...takeBySource(groups.gdelt, "GDELT", 6),
-    ...takeBySource(groups.manual, "人工录入", 6),
-    ...takeBySource(groups.x, "X", 4),
-    ...takeBySource(groups.bluesky, "Bluesky", 4),
-    ...takeBySource(groups.wikimedia, "Wikimedia", 6),
+    ...takeBySource(groups.youtube, "YouTube", 7),
+    ...takeBySource(groups.googleTrends, "Google Trends", 5),
+    ...takeBySource(groups.localMedia, "本地平台", 4),
+    ...takeBySource(groups.gdelt, "GDELT", 2),
+    ...takeBySource(groups.manual, "人工录入", 2),
+    ...takeBySource(groups.x, "X", 2),
+    ...takeBySource(groups.bluesky, "Bluesky", 2),
+    ...takeBySource(groups.wikimedia, "Wikimedia", 4),
     ...takeBySource(groups.instagram, "Instagram", 4),
-    ...takeBySource(groups.facebook, "Facebook", 4),
-    ...takeBySource(groups.tiktok, "TikTok", 4)
+    ...takeBySource(groups.facebook, "Facebook", 2),
+    ...takeBySource(groups.tiktok, "TikTok", 2)
   ];
   return cleanAndDeduplicateSignals(mixed).slice(0, 30);
 }
@@ -1985,7 +1986,7 @@ async function update() {
 
   if (externalSignals.length) {
     const merged = cleanAndDeduplicateSignals(externalSignals)
-      .slice(0, 24)
+      .slice(0, 30)
       .map((item, index) => ({ ...item, id: typeof item.id === "number" ? item.id : 1000 + index }));
     data.hotspots = merged;
   }
