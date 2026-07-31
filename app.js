@@ -96,7 +96,7 @@ const EN_TEXT = {
   "高": "High", "中": "Medium", "低": "Low", "爆发": "Surging", "上升": "Rising", "观察": "Monitor",
   "已入选": "Selected", "加入候选": "Add candidate", "提示词已复制，可直接粘贴使用": "Prompt copied and ready to paste",
   "主题提示词已复制，可直接粘贴使用": "Theme prompt copied and ready to paste",
-  "样图已开始下载": "Sample download started", "数据读取失败": "Data load failed",
+  "样图已开始下载": "Sample download started", "样图下载失败，请稍后再试": "Sample download failed. Please try again.", "数据读取失败": "Data load failed",
   "数据读取失败，请稍后再试": "Data load failed. Please try again.", "✓ 已拉取": "✓ Updated",
   "读取中…": "Loading…", "已读取线上最新数据": "Latest online data loaded",
   "印度": "India", "印度尼西亚": "Indonesia", "俄罗斯（东欧）": "Russia (EE1)", "俄罗斯（EE1）": "Russia (EE1)",
@@ -110,6 +110,9 @@ const EN_TEXT = {
   "伊比利亚胜光": "Iberian Victory Glow",
   "以番红、暖红与金色丝缎营造胜利日出的高光；抽象拱廊、飘彩与同源图标共同形成更明亮、更具西班牙气质的主题资产。": "Saffron, warm red and golden silk evoke a victorious sunrise, with abstract arcades, festive color and matching icons creating a brighter Iberian character.",
   "固定节日 · 印度": "Cultural moment · India",
+  "固定节日 · 印度独立日 / 08月15日": "Fixed holiday · India Independence Day / Aug 15",
+  "固定节日 · 印度尼西亚独立日 / 08月17日": "Fixed holiday · Indonesia Independence Day / Aug 17",
+  "固定节日 · 巴西独立日 / 09月07日": "Fixed holiday · Brazil Independence Day / Sep 7",
   "万寿金辉": "Marigold Radiance",
   "以万寿菊、diya 灯盏与兰戈里纹样形成深色排灯节主题；壁纸与图标共用藏青、金色与藏红色体系，避免误用象神节名称。": "Marigolds, diya lamps and rangoli create a dark Diwali system in indigo, gold and crimson across wallpaper and icons.",
   "花叶晨光": "Petals at Dawn",
@@ -1068,12 +1071,7 @@ async function downloadSample(url, filename = "theme-sample.png") {
     setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
     showToast("样图已开始下载");
   } catch {
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    showToast("样图下载失败，请稍后再试");
   }
 }
 
@@ -1138,6 +1136,15 @@ function bind() {
   scrollSections.forEach(section => observer.observe(section.node));
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {
+    const directDownload = e.target.closest(".download-sample");
+    if (directDownload) {
+      e.preventDefault();
+      e.stopPropagation();
+      const url = directDownload.dataset.downloadUrl || directDownload.getAttribute("href");
+      const filename = directDownload.dataset.downloadName || directDownload.getAttribute("download") || "theme-sample.png";
+      if (url) downloadSample(url, filename);
+      return;
+    }
     if (e.target.closest("a")) return;
     const marketSamples = e.target.closest("[data-market-samples]");
     const marketHotspot = e.target.closest("[data-market-hotspot]");
@@ -1159,17 +1166,10 @@ function bind() {
       selectTargetMarket(marketCard.dataset.marketRegion, false);
       return;
     }
-    const download = e.target.closest("[data-download-url]");
     const row = e.target.closest("tr[data-id],.alert[data-id]");
     const preview = e.target.closest("[data-preview]");
     const copy = e.target.closest("[data-copy-id]");
     const themeCopy = e.target.closest("[data-theme-copy]");
-    if (download) {
-      e.preventDefault();
-      e.stopPropagation();
-      downloadSample(download.dataset.downloadUrl, download.dataset.downloadName);
-      return;
-    }
     if (row && !e.target.dataset.action) openDrawer(row.dataset.id);
     if (preview) { $("#previewImage").src = preview.dataset.preview; $("#previewCaption").textContent = preview.dataset.caption; $("#previewModal").showModal(); }
     if (copy) {
