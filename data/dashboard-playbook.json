@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-31T05:41:50.906Z",
+  "generatedAt": "2026-07-31T05:45:27.995Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -27,10 +27,10 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1134,
-    "effectiveHotspots": 314,
-    "highPriorityAlerts": 18,
-    "templateCandidates": 15,
+    "rawTopics": 1092,
+    "effectiveHotspots": 302,
+    "highPriorityAlerts": 13,
+    "templateCandidates": 11,
     "rawDelta": 42,
     "effectiveRate": "27.7%"
   },
@@ -50,31 +50,31 @@
       "22:00"
     ],
     "effective": [
-      66,
+      72,
       20,
-      89,
+      95,
       20,
       102,
-      43,
-      80,
-      102,
-      51,
+      46,
+      74,
+      109,
+      45,
       160,
       81,
-      126
+      122
     ],
     "template": [
-      19,
-      24,
-      52,
-      10,
-      77,
+      21,
+      21,
+      56,
+      7,
+      79,
       23,
-      60,
-      59,
-      32,
-      87,
-      38,
+      58,
+      62,
+      29,
+      90,
+      37,
       89
     ]
   },
@@ -353,161 +353,6 @@
     },
     {
       "id": 1007,
-      "name": "I'M GAME TRAILER (Mala…",
-      "originalTitle": "I'M GAME TRAILER | Dulquer Salmaan | Nahas Hidhayath | Wayfarer Films",
-      "region": "中东",
-      "country": "沙特阿拉伯 / 阿联酋",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "1.5M",
-      "trend": 58,
-      "score": 95,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 沙特阿拉伯 热门内容《I'M GAME TRAILER (Malayalam) | Dulquer Salmaan  | Nahas Hidhayath | Wayfarer Films》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（沙特阿拉伯、阿联酋），播放量 1.6M。视觉判断：赛事 / 应援 / 国家色；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "2E4ihxaCDL4",
-        "channelTitle": "Wayfarer Films Music",
-        "publishedAt": "2026-07-30T12:30:06Z",
-        "thumbnail": "https://i.ytimg.com/vi/2E4ihxaCDL4/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4"
-      },
-      "markets": [
-        "沙特阿拉伯",
-        "阿联酋"
-      ],
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "I'M GAME TRAILER  | Dulquer Salmaan | Nahas Hidhayath | Wayfarer Films",
-          "url": "https://www.youtube.com/watch?v=2E4ihxaCDL4"
-        }
-      ]
-    },
-    {
-      "id": 1008,
-      "name": "Todo De Ti",
-      "originalTitle": "Todo De Ti",
-      "region": "南美洲",
-      "country": "阿根廷 / 智利 / 秘鲁",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "698K",
-      "trend": 70,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 阿根廷 热门内容《Todo De Ti》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（阿根廷、智利、秘鲁），播放量 652K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "hDVgQ-ScvUM",
-        "channelTitle": "Rauw Alejandro - Topic",
-        "publishedAt": "2026-07-30T00:00:05Z",
-        "thumbnail": "https://i.ytimg.com/vi/hDVgQ-ScvUM/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=hDVgQ-ScvUM"
-      },
-      "markets": [
-        "阿根廷",
-        "智利",
-        "秘鲁"
-      ],
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "Todo De Ti",
-          "url": "https://www.youtube.com/watch?v=hDVgQ-ScvUM"
-        }
-      ]
-    },
-    {
-      "id": 1009,
-      "name": "JUMANJI: OPEN WORLD - …",
-      "originalTitle": "JUMANJI: OPEN WORLD - Official Trailer",
-      "region": "撒哈拉以南非洲",
-      "country": "肯尼亚",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "6.4M",
-      "trend": 58,
-      "score": 96,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 肯尼亚 热门内容《JUMANJI: OPEN WORLD - Official Trailer (4K)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（肯尼亚），播放量 6.7M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "zhApeaHMvfs",
-        "channelTitle": "Sony Pictures Entertainment",
-        "publishedAt": "2026-07-29T00:59:43Z",
-        "thumbnail": "https://i.ytimg.com/vi/zhApeaHMvfs/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
-      },
-      "markets": [
-        "肯尼亚"
-      ],
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "JUMANJI: OPEN WORLD - Official Trailer",
-          "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
-        }
-      ]
-    },
-    {
-      "id": 1010,
-      "name": "weather surat",
-      "originalTitle": "weather surat",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 69,
-      "score": 95,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「weather surat」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 20000+。关联新闻源：News On AIR / The Economic Times；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "weather surat",
-        "traffic": 20000,
-        "publishedAt": "Thu, 30 Jul 2026 22:00:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwPJHG3cbO_ZtM4xi0Qv640nI3TpRKUBGie-KcjNyFXpm-vMdciyaQXbmTwe0",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=weather%20surat",
-        "newsUrl": "https://newsonair.gov.in/gujarat-imd-issues-red-alert-for-very-heavy-rainfall-in-13-districts/",
-        "newsTitle": "Gujarat: IMD issues red alert for very heavy rainfall in 13 districts",
-        "newsSource": "News On AIR"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "weather surat",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=weather%20surat"
-        }
-      ]
-    },
-    {
-      "id": 1011,
       "name": "jadwal ewc",
       "originalTitle": "jadwal ewc",
       "region": "印度尼西亚",
@@ -516,8 +361,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 65,
-      "score": 94,
+      "trend": 58,
+      "score": 91,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -545,7 +390,7 @@
       ]
     },
     {
-      "id": 1012,
+      "id": 1008,
       "name": "pakistan vs sri lanka",
       "originalTitle": "pakistan vs sri lanka",
       "region": "中东",
@@ -554,8 +399,8 @@
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 59,
-      "score": 92,
+      "trend": 71,
+      "score": 97,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -583,83 +428,45 @@
       ]
     },
     {
-      "id": 1013,
-      "name": "विधेयक",
-      "originalTitle": "विधेयक",
+      "id": 1009,
+      "name": "రేషన్ కార్డు",
+      "originalTitle": "రేషన్ కార్డు",
       "region": "印度",
       "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 68,
-      "score": 96,
+      "trend": 54,
+      "score": 90,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「विधेयक」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：Hindustan / India TV Hindi；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「రేషన్ కార్డు」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 1000+。关联新闻源：Sakshi / News18 Telugu；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "विधेयक",
-        "traffic": 2000,
-        "publishedAt": "Thu, 30 Jul 2026 22:20:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZkH0-VfD-VZK89lVcSRNnuuHPLzFhdYdA7W_yUAfIArzIcXNiLAkvskng3R8",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95",
-        "newsUrl": "https://www.livehindustan.com/national/rajya-sabha-mp-raghav-chaddha-on-neet-paper-leak-201785473267057.html",
-        "newsTitle": "राघव चड्ढा ने तोड़ी NEET पेपर लीक पर चुप्पी, बोले- सही है छात्रों का गुस्सा",
-        "newsSource": "Hindustan"
+        "topic": "రేషన్ కార్డు",
+        "traffic": 1000,
+        "publishedAt": "Thu, 30 Jul 2026 22:30:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRs5IZyGnB9219bw6lhTaSd5HdEuZ4AvhJnSrS2pxZp-n6DM4MlZk-mBlCqm4",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B0%B0%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D%20%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%8D%E0%B0%A1%E0%B1%81",
+        "newsUrl": "https://www.sakshi.com/telugu-news/telangana/telangana-extends-ration-card-e-kyc-deadline-till-august-31-2859777",
+        "newsTitle": "రేషన్ కార్డు E-KYC.. తెలంగాణ ప్రభుత్వం కీలక నిర్ణయం",
+        "newsSource": "Sakshi"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "विधेयक",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95"
+          "title": "రేషన్ కార్డు",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B0%B0%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D%20%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%8D%E0%B0%A1%E0%B1%81"
         }
       ]
     },
     {
-      "id": 1014,
-      "name": "tom holland",
-      "originalTitle": "tom holland",
-      "region": "南美洲",
-      "country": "阿根廷",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 52,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「tom holland」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100+。关联新闻源：The Hollywood Reporter / Variety；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 100+。关联新闻源：The Hollywood Reporter / Variety；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "tom holland",
-        "traffic": 100,
-        "publishedAt": "Thu, 30 Jul 2026 22:10:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUdpKTYNe1zb6BRBPDW_XUvyh9xTEW1Ow71mTnm0L_wr3eIU7Fv01od_cnfBo",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=tom%20holland",
-        "newsUrl": "https://www.hollywoodreporter.com/movies/movie-news/tom-holland-spider-man-brand-new-day-premiere-1236657726/",
-        "newsTitle": "Tom Holland Will Play Spider-Man 'For as Long as They'll Have Me'",
-        "newsSource": "The Hollywood Reporter"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "tom holland",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=tom%20holland"
-        }
-      ]
-    },
-    {
-      "id": 1015,
+      "id": 1010,
       "name": "रामायणम्",
       "originalTitle": "रामायणम्",
       "region": "印度",
@@ -668,8 +475,8 @@
         "Wikimedia"
       ],
       "heat": "180K",
-      "trend": 64,
-      "score": 92,
+      "trend": 61,
+      "score": 91,
       "status": "爆发",
       "type": "realtime",
       "selected": false,
@@ -696,81 +503,7 @@
       ]
     },
     {
-      "id": 1016,
-      "name": "الصفحة الرئيسة",
-      "originalTitle": "الصفحة الرئيسة",
-      "region": "中东",
-      "country": "中东",
-      "source": [
-        "Wikimedia"
-      ],
-      "heat": "180K",
-      "trend": 56,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 中东 搜索趋势「الصفحة الرئيسة」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 阿拉伯语 Wikipedia 前一日高访问条目，浏览量约 76K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
-      "wikimedia": {
-        "project": "ar.wikipedia.org",
-        "language": "阿拉伯语",
-        "article": "الصفحة_الرئيسة",
-        "views": 76313,
-        "rank": 1,
-        "date": "2026-07-30",
-        "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D8%A9"
-      },
-      "signals": [
-        {
-          "source": "Wikimedia",
-          "title": "الصفحة الرئيسة",
-          "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D8%A9"
-        }
-      ]
-    },
-    {
-      "id": 1017,
-      "name": "Halaman Utama",
-      "originalTitle": "Halaman Utama",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "Wikimedia"
-      ],
-      "heat": "180K",
-      "trend": 54,
-      "score": 87,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「Halaman Utama」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 印度尼西亚语 Wikipedia 前一日高访问条目，浏览量约 29K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
-      "wikimedia": {
-        "project": "id.wikipedia.org",
-        "language": "印度尼西亚语",
-        "article": "Halaman_Utama",
-        "views": 28784,
-        "rank": 2,
-        "date": "2026-07-30",
-        "url": "https://id.wikipedia.org/wiki/Halaman_Utama"
-      },
-      "signals": [
-        {
-          "source": "Wikimedia",
-          "title": "Halaman Utama",
-          "url": "https://id.wikipedia.org/wiki/Halaman_Utama"
-        }
-      ]
-    },
-    {
-      "id": 1018,
+      "id": 1011,
       "name": "Одиссея",
       "originalTitle": "Одиссея",
       "region": "俄罗斯（东欧）",
@@ -779,8 +512,8 @@
         "Wikimedia"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 90,
+      "trend": 57,
+      "score": 88,
       "status": "爆发",
       "type": "realtime",
       "selected": false,
@@ -807,7 +540,115 @@
       ]
     },
     {
-      "id": 1019,
+      "id": 1012,
+      "name": "Piala Presiden 2026",
+      "originalTitle": "Piala Presiden 2026",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "Wikimedia"
+      ],
+      "heat": "180K",
+      "trend": 48,
+      "score": 84,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「Piala Presiden 2026」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 印度尼西亚语 Wikipedia 前一日高访问条目，浏览量约 9K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "wikimedia": {
+        "project": "id.wikipedia.org",
+        "language": "印度尼西亚语",
+        "article": "Piala_Presiden_2026",
+        "views": 9138,
+        "rank": 4,
+        "date": "2026-07-30",
+        "url": "https://id.wikipedia.org/wiki/Piala_Presiden_2026"
+      },
+      "signals": [
+        {
+          "source": "Wikimedia",
+          "title": "Piala Presiden 2026",
+          "url": "https://id.wikipedia.org/wiki/Piala_Presiden_2026"
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "name": "سبتة",
+      "originalTitle": "سبتة",
+      "region": "中东",
+      "country": "中东",
+      "source": [
+        "Wikimedia"
+      ],
+      "heat": "180K",
+      "trend": 60,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 中东 搜索趋势「سبتة」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 阿拉伯语 Wikipedia 前一日高访问条目，浏览量约 10K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "wikimedia": {
+        "project": "ar.wikipedia.org",
+        "language": "阿拉伯语",
+        "article": "سبتة",
+        "views": 10415,
+        "rank": 4,
+        "date": "2026-07-30",
+        "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%A8%D8%AA%D8%A9"
+      },
+      "signals": [
+        {
+          "source": "Wikimedia",
+          "title": "سبتة",
+          "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%A8%D8%AA%D8%A9"
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "name": "It’s basically a full …",
+      "originalTitle": "It’s basically a full circle moment, girl so confusing you’ll always be famous",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "Instagram"
+      ],
+      "heat": "180K",
+      "trend": 45,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Instagram 全球 热点内容「It’s basically a full circle moment, girl so confusing you’ll always be famous #lollapalooza #festival #lollapalooza2026 #charliexcx #lorde」提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+      "instagram": {
+        "hashtag": "festival",
+        "mediaUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m86/AQP31G7McIfGK-tjS-1EFd6eTn9R7F3hurd9KHegMNRX9lzwC3TsBqmORIFhrmmO_8gs-Vuk9-Nm3dfb0b5L3KCJJyMkyVBW5Z-lumE.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=N85RHXdchmcQ7kNvwHiXtXv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAxNTEzODExMTM1MjM5MywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=1a5cc8d00169b3dd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85NzRCREQxRUE0Q0EzNzYzMkM2MEY5MDJERTQ4Q0Q5RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzM1NEU4Mzk2MDI4RTJEMTQ2MEZEQUNBMjM5NzA4MUFCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaSubOo6NDNAxUCKAJDMywXQD0zMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=VQsXEbVDwTyeYKyL3Ol-Og&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQFlCwFJbBXRqSZ7l8ahCVLyJpqIBfnAeaDs4kmyowYWJA&oe=6A6E231A",
+        "publishedAt": "2026-07-31T05:46:07+0000",
+        "url": "https://www.instagram.com/reel/Dbcit8pOKla/"
+      },
+      "signals": [
+        {
+          "source": "Instagram",
+          "title": "It’s basically a full circle moment, girl so confusing you’ll always be famous",
+          "url": "https://www.instagram.com/reel/Dbcit8pOKla/"
+        }
+      ]
+    },
+    {
+      "id": 1015,
       "name": "Men’s Cricket World Cu…",
       "originalTitle": "Men’s Cricket World Cup 2027 venues and brand revealed",
       "region": "印度",
@@ -816,8 +657,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 46,
-      "score": 80,
+      "trend": 58,
+      "score": 85,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -843,7 +684,7 @@
       ]
     },
     {
-      "id": 1020,
+      "id": 1016,
       "name": "Had made peace with le…",
       "originalTitle": "Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri",
       "region": "印度",
@@ -852,8 +693,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 60,
-      "score": 86,
+      "trend": 51,
+      "score": 82,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -879,7 +720,7 @@
       ]
     },
     {
-      "id": 1021,
+      "id": 1017,
       "name": "'Rotten Tomatoes, Not …",
       "originalTitle": "'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival",
       "region": "印度",
@@ -888,8 +729,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 49,
-      "score": 81,
+      "trend": 51,
+      "score": 82,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -915,7 +756,7 @@
       ]
     },
     {
-      "id": 1022,
+      "id": 1018,
       "name": "Mulai 1 Agustus 2026 ,…",
       "originalTitle": "Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss",
       "region": "印度尼西亚",
@@ -924,20 +765,20 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 54,
-      "score": 83,
+      "trend": 58,
+      "score": 85,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Indonesia Baik」热点《Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Indonesia Baik。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「indonesiabaik.id」热点《Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：indonesiabaik.id。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musik",
         "category": "核心话题",
-        "sourceName": "Indonesia Baik",
+        "sourceName": "indonesiabaik.id",
         "title": "Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss",
         "publishedAt": "Fri, 31 Jul 2026 04:17:24 GMT",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdVQtVkFOZHlYUVBTSEdNY2ZKc0M4M2FZSmo0QmF1WVJtbHl1eDVxa0gxRkx1ajUtekVHZTBwOFVRY3lyTGN1azRta0lueEd3SnRtc2h1ZkpuOTNlZFVaOUlFbi1meW9BZWVzTEJ0WVlrVHVFMVJ3WkpKU2l1NGJDYjJYeG9EQV8zWHI3Vm4wSXVsdFdyZGlGU1hRT0Zpc3BWZWdV?oc=5"
@@ -949,48 +790,12 @@
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdVQtVkFOZHlYUVBTSEdNY2ZKc0M4M2FZSmo0QmF1WVJtbHl1eDVxa0gxRkx1ajUtekVHZTBwOFVRY3lyTGN1azRta0lueEd3SnRtc2h1ZkpuOTNlZFVaOUlFbi1meW9BZWVzTEJ0WVlrVHVFMVJ3WkpKU2l1NGJDYjJYeG9EQV8zWHI3Vm4wSXVsdFdyZGlGU1hRT0Zpc3BWZWdV?oc=5"
         }
       ]
-    },
-    {
-      "id": 1023,
-      "name": "Supian HK Dukung Penuh…",
-      "originalTitle": "Supian HK Dukung Penuh Turnamen Sepakbola Gubernur CUP Sebagai Wadah Pembinaan Atlet Banua",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 56,
-      "score": 84,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「DPRD Prov. Kalsel」热点《Supian HK Dukung Penuh Turnamen Sepakbola Gubernur CUP Sebagai Wadah Pembinaan Atlet Banua》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：DPRD Prov. Kalsel。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "sepak bola",
-        "category": "垂类补充",
-        "sourceName": "DPRD Prov. Kalsel",
-        "title": "Supian HK Dukung Penuh Turnamen Sepakbola Gubernur CUP Sebagai Wadah Pembinaan Atlet Banua",
-        "publishedAt": "Fri, 31 Jul 2026 01:46:32 GMT",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdmZBSkMwYUc5UDdwcDlIdHN4MmcwNHlGMFFpSWtqOENNYllTcm5wU2NPX253N0tFZGZJZXROZG95a2Y0N2JadC1sQXpvdHdEY0JPMU9JMlFXdXctM1ExRS1OS1dXU0tnajFkT2ZZZ3prX3JrQ3FCUEhXUHhCYXVTaV92WjlzcU94QXZNbnFrQWVLS2xITjdOS1Z6eWtLeU9NcTkyRGJ1QVUyS0loN2dOTTJyQ0RyM0R3U1hnUVpn?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "Supian HK Dukung Penuh Turnamen Sepakbola Gubernur CUP Sebagai Wadah Pembinaan Atlet Banua",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdmZBSkMwYUc5UDdwcDlIdHN4MmcwNHlGMFFpSWtqOENNYllTcm5wU2NPX253N0tFZGZJZXROZG95a2Y0N2JadC1sQXpvdHdEY0JPMU9JMlFXdXctM1ExRS1OS1dXU0tnajFkT2ZZZ3prX3JrQ3FCUEhXUHhCYXVTaV92WjlzcU94QXZNbnFrQWVLS2xITjdOS1Z6eWtLeU9NcTkyRGJ1QVUyS0loN2dOTTJyQ0RyM0R3U1hnUVpn?oc=5"
-        }
-      ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 120,
-      "growth": 54,
+      "count": 113,
+      "growth": 55,
       "countries": [
         "印度"
       ],
@@ -1001,8 +806,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 120,
-      "growth": 33,
+      "count": 113,
+      "growth": 30,
       "countries": [
         "印度尼西亚"
       ],
@@ -1013,8 +818,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 73,
-      "growth": 33,
+      "count": 79,
+      "growth": 30,
       "countries": [
         "俄罗斯"
       ],
@@ -1025,7 +830,7 @@
       ]
     },
     "中东": {
-      "count": 73,
+      "count": 79,
       "growth": 30,
       "countries": [
         "沙特阿拉伯",
@@ -1038,7 +843,7 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 92,
+      "count": 98,
       "growth": 58,
       "countries": [
         "尼日利亚",
@@ -1053,8 +858,8 @@
       ]
     },
     "南美洲": {
-      "count": 120,
-      "growth": 54,
+      "count": 113,
+      "growth": 55,
       "countries": [
         "巴西",
         "阿根廷",
@@ -1328,7 +1133,7 @@
       ],
       "watchlist": [
         {
-          "id": 1012,
+          "id": 1008,
           "key": "google trends:pakistan vs sri lanka",
           "name": "pakistan vs sri lanka",
           "source": [
@@ -1336,7 +1141,7 @@
           ],
           "sourceUrl": "https://trends.google.com/trends/explore?geo=AE&q=pakistan%20vs%20sri%20lanka",
           "region": "中东",
-          "playabilityScore": 90,
+          "playabilityScore": 97,
           "reason": "来自 Google Trends 阿联酋 搜索趋势，搜索热度约 5000+。关联新闻源：Pakistan Cricket Board (PCB) / Cricinfo；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 沙特阿拉伯 搜索趋势，搜索热度约 2000+。关联新闻源：ICC / The Hawk；适合判断地区搜索兴趣和热点持续性。",
           "screening": {
             "crossPlatformVerified": false,
@@ -1356,16 +1161,16 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1020,
-          "key": "本地平台:had made peace with leaving yami gautam was ready to quit bollywood before uri",
-          "name": "Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri",
+          "id": 1015,
+          "key": "本地平台:men s cricket world cup 2027 venues and brand revealed",
+          "name": "Men’s Cricket World Cup 2027 venues and brand revealed",
           "source": [
             "本地平台"
           ],
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQjYtNGlYcnIza2dVcUxHcXRycDZpeEFzYjhJRFNtNms5VXl3V3ZKT3ZWN180VV84aGdpX3M2NzYtN2JCajdWOWJhTUw4aEczN0ltcEppVVR4YUlueGNxcmRUTkdEVzNrQVJ4bVNsRFNPLTN1LU53TGRBMzVvbVh3R2FMVVJOd0JmY2x1ZTIxT1kwLWJ4RWZXM3dqT1A4S2o0NVZHVl8wbXFRcks4VTlnaGIwQk9JMURlRjJ0eGZsczjSAcYBQVVfeXFMUE53RGtjT2ZDSWlqZDRzLVNwOTl0TnNXWmZWNzlMU3BqRHVraG9VYXZxQzlsU2FabjltMjJVSHNyemQ2d3d0ODJaNjhMSTR4akdBZGp4TnRaLWdWaWR2WUNMVFVuODZvRzlvelptNnFQa3c2eFVNTEIzQVpqYTVmeGNVZnNiQmRWZnJRX2JTOWo4VVV2TEk3V0lMZ3paeDVnd3g0cFl5eDdKTVZUTlNtQ3hkV0l4SVBjWlNuSk5oUmVGTXBrV1VB?oc=5",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN1p1VWJPNlgzQXFlVF8wVkdXVkRDcjVWY0xEUWJKXzlzdDkyLXhPYm5CdnZONkR6a1NzX0NjdDRzam9ZYm5neUhzX0prS3ZVUFhHYldIVzlIWFBvSkNEelBzdkVvNDRYY25wa2FiNVpWRHJJYXZuQm9BT2tiTnVLUXFKM01HV240eWlJQ2RVUno?oc=5",
           "region": "印度",
-          "playabilityScore": 89,
-          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：India Today。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "playabilityScore": 88,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1375,7 +1180,7 @@
             "longRunning": false,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
-            "personalizable": false,
+            "personalizable": true,
             "copyrightControllable": true,
             "lifecycleFit": true,
             "productionReady": false,
@@ -1473,7 +1278,35 @@
       ],
       "watchlist": [
         {
-          "id": 1021,
+          "id": 1015,
+          "key": "本地平台:men s cricket world cup 2027 venues and brand revealed",
+          "name": "Men’s Cricket World Cup 2027 venues and brand revealed",
+          "source": [
+            "本地平台"
+          ],
+          "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN1p1VWJPNlgzQXFlVF8wVkdXVkRDcjVWY0xEUWJKXzlzdDkyLXhPYm5CdnZONkR6a1NzX0NjdDRzam9ZYm5neUhzX0prS3ZVUFhHYldIVzlIWFBvSkNEelBzdkVvNDRYY25wa2FiNVpWRHJJYXZuQm9BT2tiTnVLUXFKM01HV240eWlJQ2RVUno?oc=5",
+          "region": "印度",
+          "playabilityScore": 100,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": false,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1017,
           "key": "本地平台:rotten tomatoes not like zindagi naa milegi dobara indian woman shares reality of la tomatina fe",
           "name": "'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival",
           "source": [
@@ -1501,20 +1334,20 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1019,
-          "key": "本地平台:men s cricket world cup 2027 venues and brand revealed",
-          "name": "Men’s Cricket World Cup 2027 venues and brand revealed",
+          "id": 1008,
+          "key": "google trends:pakistan vs sri lanka",
+          "name": "pakistan vs sri lanka",
           "source": [
-            "本地平台"
+            "Google Trends"
           ],
-          "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN1p1VWJPNlgzQXFlVF8wVkdXVkRDcjVWY0xEUWJKXzlzdDkyLXhPYm5CdnZONkR6a1NzX0NjdDRzam9ZYm5neUhzX0prS3ZVUFhHYldIVzlIWFBvSkNEelBzdkVvNDRYY25wa2FiNVpWRHJJYXZuQm9BT2tiTnVLUXFKM01HV240eWlJQ2RVUno?oc=5",
-          "region": "印度",
-          "playabilityScore": 99,
-          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "sourceUrl": "https://trends.google.com/trends/explore?geo=AE&q=pakistan%20vs%20sri%20lanka",
+          "region": "中东",
+          "playabilityScore": 75,
+          "reason": "来自 Google Trends 阿联酋 搜索趋势，搜索热度约 5000+。关联新闻源：Pakistan Cricket Board (PCB) / Cricinfo；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 沙特阿拉伯 搜索趋势，搜索热度约 2000+。关联新闻源：ICC / The Hawk；适合判断地区搜索兴趣和热点持续性。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
-            "sustainedHeat": false,
+            "sustainedHeat": true,
             "observationCount": 1,
             "persistenceDays": 0,
             "longRunning": false,
@@ -1544,8 +1377,8 @@
       "source": "Wikimedia",
       "status": "connected",
       "connected": true,
-      "fetchedCount": 14,
-      "detail": "2026-07-30 日榜成功 7/8 个语言项目",
+      "fetchedCount": 16,
+      "detail": "2026-07-30 日榜成功 8/8 个语言项目",
       "visibleCount": 4
     },
     {
@@ -1557,11 +1390,11 @@
     },
     {
       "source": "Instagram",
-      "status": "error",
-      "connected": false,
-      "fetchedCount": 0,
-      "detail": "Hashtag Search 成功 0/5 组，5 组需重试",
-      "visibleCount": 0
+      "status": "connected",
+      "connected": true,
+      "fetchedCount": 8,
+      "detail": "Hashtag Search 成功 2/5 组，3 组需重试",
+      "visibleCount": 1
     },
     {
       "source": "Facebook",
