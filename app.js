@@ -37,7 +37,8 @@ const originalAttrsByNode = new WeakMap();
 const EN_TEXT = {
   "语言切换": "Language switch",
   "本地热点机会中心": "Local Hotspot Opportunity Center",
-  "总览": "Overview", "目标市场": "Target markets", "实时热点池": "Live Hotspots", "趋势监测": "Trend Monitor",
+  "总览": "Overview", "目标市场": "Target markets", "主题样图库": "Theme samples", "壁纸样图库": "Wallpaper samples",
+  "实时热点池": "Live Hotspots", "趋势监测": "Trend Monitor", "趋势与预警": "Trends & alerts",
   "爆发预警": "Surge Alerts", "运营候选": "Creative Candidates", "配置中心": "Configuration",
   "机器人监测中": "Monitoring active", "12 个数据源 · 15 分钟更新": "12 sources · updates every 15 minutes",
   "本地热点机会中心": "Local Trend Opportunity Center",
@@ -500,8 +501,10 @@ function renderTargetMarkets() {
 function updateMarketScopeLabels() {
   const selected = targetMarkets.find(market => market.region === state.region);
   const label = selected ? selected.label : "全部目标市场";
-  const scope = $("#themeScopeLabel");
-  if (scope) scope.textContent = languageState.current === "en" ? toEnglishText(label) : label;
+  ["#themeScopeLabel", "#wallpaperScopeLabel"].forEach(selector => {
+    const scope = $(selector);
+    if (scope) scope.textContent = languageState.current === "en" ? toEnglishText(label) : label;
+  });
 }
 
 function escapeAttr(value = "") {
@@ -979,12 +982,11 @@ function bind() {
   $("#themeTimeFilter").onchange = e => { libraryFilters.theme = e.target.value; renderThemeGallery(); applyLanguage(); };
   $("#wallpaperTimeFilter").onchange = e => { libraryFilters.wallpaper = e.target.value; renderGallery(); applyLanguage(); };
   const viewAnchors = {
-    overview: "#overviewTop",
+    overview: "#marketOverviewSection",
+    themes: "#themePreviewSection",
+    wallpapers: "#styleTemplateSection",
     pool: "#hotspotPoolSection",
-    trend: "#trendSection",
-    alerts: "#alertSection",
-    // 运营候选的第一落点是给设计师浏览的主题样图，而非下方的提示词样图列表。
-    candidates: "#themePreviewSection",
+    insights: "#trendSection",
     config: "#configView"
   };
   $$(".nav-item").forEach(b => b.onclick = () => {
@@ -992,19 +994,17 @@ function bind() {
     const mode = b.dataset.view;
     const anchor = viewAnchors[mode];
     if (mode === "pool") { state.table = "all"; renderTable(); }
-    if (mode === "candidates") { state.table = "candidates"; renderTable(); }
     if (anchor) setTimeout(() => $(anchor).scrollIntoView({ behavior: "smooth", block: "start" }), 40);
   });
 
   // Single-page scroll spy: navigating the content also updates the matching sidebar item.
   const scrollSections = [
-    ["overview", "#overviewTop"],
+    ["overview", "#marketOverviewSection"],
+    ["themes", "#themePreviewSection"],
+    ["wallpapers", "#styleTemplateSection"],
     ["pool", "#hotspotPoolSection"],
-    ["trend", "#trendSection"],
-    ["alerts", "#alertSection"],
-    ["candidates", "#themePreviewSection"],
-    // 提示词样图仍属于运营候选，继续保持左侧同一高亮。
-    ["candidates", "#styleTemplateSection"],
+    ["insights", "#trendSection"],
+    ["insights", "#alertSection"],
     ["config", "#configView"]
   ].map(([view, selector]) => ({ view, node: $(selector) })).filter(x => x.node);
   const activateView = view => {
@@ -1088,7 +1088,7 @@ function bind() {
       setTimeout(() => btn.textContent = localized("↻ 拉取最新"), 1300);
     }
   };
-  $("#candidateBtn").onclick = () => { $(".nav-item[data-view='candidates']").click(); showToast(`当前 ${hotspots.filter(x => x.selected).length} 个运营候选`); };
+  $("#candidateBtn").onclick = () => { $(".nav-item[data-view='themes']").click(); showToast(`当前 ${hotspots.filter(x => x.selected).length} 个运营候选`); };
   $("#galleryPrev").onclick = () => $("#visualGallery").scrollBy({ left: -260, behavior: "smooth" });
   $("#galleryNext").onclick = () => $("#visualGallery").scrollBy({ left: 260, behavior: "smooth" });
   $("#closePreview").onclick = () => $("#previewModal").close();

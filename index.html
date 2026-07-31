@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>本地热点机会中心</title>
-  <link rel="stylesheet" href="./styles.css?v=20260731-market-first">
+  <link rel="stylesheet" href="./styles.css?v=20260731-market-first-v2">
 </head>
 <body>
   <div class="app-shell">
@@ -15,10 +15,10 @@
       </div>
       <nav>
         <button class="nav-item active" data-view="overview"><i></i>目标市场</button>
+        <button class="nav-item" data-view="themes"><i></i>主题样图库</button>
+        <button class="nav-item" data-view="wallpapers"><i></i>壁纸样图库</button>
         <button class="nav-item" data-view="pool"><i></i>实时热点池</button>
-        <button class="nav-item" data-view="trend"><i></i>趋势监测</button>
-        <button class="nav-item" data-view="alerts"><i></i>爆发预警</button>
-        <button class="nav-item" data-view="candidates"><i></i>运营候选</button>
+        <button class="nav-item" data-view="insights"><i></i>趋势与预警</button>
         <button class="nav-item" data-view="config"><i></i>配置中心</button>
       </nav>
       <div class="sidebar-note">
@@ -168,7 +168,7 @@
 
         <article id="styleTemplateSection" class="card gallery-card">
           <div class="card-head">
-            <div><p class="eyebrow">WALLPAPER TEMPLATE LIBRARY · HOTSPOT PLAYABILITY</p><h2>壁纸模板库</h2><p>临近固定节假日与已形成持续性的热点，才会按可玩性定期换批，生成可直接下载的 9:16 OS 壁纸；短期信号先留在观察池。</p></div>
+            <div><p class="eyebrow">WALLPAPER TEMPLATE LIBRARY · HOTSPOT PLAYABILITY</p><h2>壁纸模板库 <span id="wallpaperScopeLabel" class="library-scope-label">全部目标市场</span></h2><p>临近固定节假日与已形成持续性的热点，才会按可玩性定期换批，生成可直接下载的 9:16 OS 壁纸；点击上方市场后，这里同步展示对应市场资产。</p></div>
             <div class="gallery-tools">
               <select id="wallpaperTimeFilter" class="library-time-filter" aria-label="壁纸模板时间范围">
                 <option value="recent">近 30 天</option>
@@ -231,6 +231,6 @@
     <div id="previewCaption"></div>
   </dialog>
   <div id="toast" class="toast">数据已更新</div>
-  <script src="./app.js?v=20260731-market-first"></script>
+  <script src="./app.js?v=20260731-market-first-v2"></script>
 </body>
 </html>
