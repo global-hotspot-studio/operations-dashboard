@@ -271,6 +271,7 @@ button.market-hotspot-row:hover{color:#0071e3}
 .market-sample-info .visual-actions button,.market-sample-info .visual-actions a{display:grid;min-height:36px;place-items:center;padding:7px;border-radius:10px;font-size:11px;font-weight:850;text-decoration:none}
 .market-sample-info .visual-actions button{border:1px solid #b8d3f4;background:#edf6ff;color:#0869c7}
 .market-sample-info .visual-actions a{border:1px solid #d9dfe7;background:#fff;color:#283445}
+.market-sample-info .visual-actions .download-sample{border:1px solid #d9dfe7;background:#fff;color:#283445}
 .market-sample-empty{padding:60px 20px;border:1px dashed #cbd6e4;border-radius:20px;color:#738094;text-align:center}
 
 @media(max-width:1180px){

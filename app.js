@@ -509,7 +509,7 @@ function marketSampleTile(item) {
         <div class="play-tags">${tags.slice(0, 3).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
         <div class="visual-actions">
           ${copyAction}
-          <a class="download-sample" href="${escapeAttr(item.preview)}" download="${escapeAttr(item.downloadName || previewDownloadName(item))}">下载样图</a>
+          <button class="download-sample" type="button" data-download-url="${escapeAttr(item.preview)}" data-download-name="${escapeAttr(item.downloadName || previewDownloadName(item))}">下载样图</button>
         </div>
       </div>
     </article>`;
@@ -926,7 +926,7 @@ function renderGallery() {
             <div class="prompt-block"><span>AI 生成提示词</span><p>${escapeHtml(h.prompt)}</p></div>
             <div class="visual-actions">
               <button class="copy-prompt" data-copy-id="${escapeAttr(h.id)}">复制提示词</button>
-              <a class="download-sample" href="${escapeAttr(h.preview)}" download="${escapeAttr(previewDownloadName(h))}">${h.assetType === "direct-wallpaper" ? "下载壁纸" : "下载样图"}</a>
+              <button class="download-sample" type="button" data-download-url="${escapeAttr(h.preview)}" data-download-name="${escapeAttr(previewDownloadName(h))}">${h.assetType === "direct-wallpaper" ? "下载壁纸" : "下载样图"}</button>
             </div>
           </div>
         </article>`;
@@ -982,7 +982,7 @@ function renderThemeGallery() {
         <div class="play-tags">${(theme.tags || []).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
         <div class="visual-actions">
           <button class="theme-copy" data-theme-copy="${escapeAttr(theme.promptKey || "")}">复制提示词</button>
-          <a class="download-sample" href="${escapeAttr(theme.preview)}" download="${escapeAttr(theme.downloadName || `${theme.id}.png`)}">下载样图</a>
+          <button class="download-sample" type="button" data-download-url="${escapeAttr(theme.preview)}" data-download-name="${escapeAttr(theme.downloadName || `${theme.id}.png`)}">下载样图</button>
         </div>
       </div>
     </article>
