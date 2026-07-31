@@ -701,7 +701,8 @@ function renderGallery() {
 function filterLibraryItems(items, mode) {
   const now = Date.now();
   return items
-    .filter(item => {
+    .map((item, sourceIndex) => ({ item, sourceIndex }))
+    .filter(({ item }) => {
       const generatedAt = Date.parse(item.generatedAt || "");
       const ageDays = Number.isFinite(generatedAt) ? (now - generatedAt) / 86400000 : 0;
       if (mode === "archive") return ageDays > 30;
@@ -709,12 +710,13 @@ function filterLibraryItems(items, mode) {
       return ageDays <= 30;
     })
     .sort((a, b) => {
-      const aGeneratedAt = Date.parse(a.generatedAt || "");
-      const bGeneratedAt = Date.parse(b.generatedAt || "");
+      const aGeneratedAt = Date.parse(a.item.generatedAt || "");
+      const bGeneratedAt = Date.parse(b.item.generatedAt || "");
       const aTime = Number.isFinite(aGeneratedAt) ? aGeneratedAt : 0;
       const bTime = Number.isFinite(bGeneratedAt) ? bGeneratedAt : 0;
-      return bTime - aTime;
-    });
+      return bTime - aTime || b.sourceIndex - a.sourceIndex;
+    })
+    .map(({ item }) => item);
 }
 
 function renderThemeGallery() {
