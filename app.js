@@ -13,6 +13,22 @@ let dashboardMeta = {};
 let state = { region: "全球", source: "全部平台", table: "all" };
 let libraryFilters = { theme: "recent", wallpaper: "recent" };
 let toastTimer;
+const targetMarkets = [
+  { region: "印度", label: "印度", short: "INDIA", accent: "#ff7a45" },
+  { region: "印度尼西亚", label: "印度尼西亚", short: "INDONESIA", accent: "#e85b62" },
+  { region: "俄罗斯（东欧）", label: "俄罗斯（EE1）", short: "RUSSIA · EE1", accent: "#5978c8" },
+  { region: "中东", label: "中东", short: "MIDDLE EAST", accent: "#d79a43" },
+  { region: "撒哈拉以南非洲", label: "撒哈拉以南非洲", short: "SSA", accent: "#178f72" },
+  { region: "南美洲", label: "拉美", short: "LATIN AMERICA", accent: "#9b5bc7" }
+];
+const marketLibraryTerms = {
+  "印度": ["印度", "排灯节", "diwali", "india", "khadi"],
+  "印度尼西亚": ["印度尼西亚", "印尼", "群岛", "indonesia", "archipelago"],
+  "俄罗斯（东欧）": ["俄罗斯", "ee1", "russia", "俄语"],
+  "中东": ["中东", "海湾", "沙特", "阿联酋", "巴林", "卡塔尔", "middle east", "gulf"],
+  "撒哈拉以南非洲": ["ssa", "尼日利亚", "肯尼亚", "南非", "加纳", "非洲", "nigeria", "kenya", "africa"],
+  "南美洲": ["南美", "拉美", "巴西", "阿根廷", "哥伦比亚", "智利", "秘鲁", "brazil", "latin america", "south america"]
+};
 const languageState = {
   current: localStorage.getItem("trendos-language") === "en" ? "en" : "zh"
 };
@@ -21,7 +37,7 @@ const originalAttrsByNode = new WeakMap();
 const EN_TEXT = {
   "语言切换": "Language switch",
   "本地热点机会中心": "Local Hotspot Opportunity Center",
-  "总览": "Overview", "实时热点池": "Live Hotspots", "趋势监测": "Trend Monitor",
+  "总览": "Overview", "目标市场": "Target markets", "实时热点池": "Live Hotspots", "趋势监测": "Trend Monitor",
   "爆发预警": "Surge Alerts", "运营候选": "Creative Candidates", "配置中心": "Configuration",
   "机器人监测中": "Monitoring active", "12 个数据源 · 15 分钟更新": "12 sources · updates every 15 minutes",
   "本地热点机会中心": "Local Trend Opportunity Center",
@@ -82,8 +98,8 @@ const EN_TEXT = {
   "样图已开始下载": "Sample download started", "数据读取失败": "Data load failed",
   "数据读取失败，请稍后再试": "Data load failed. Please try again.", "✓ 已拉取": "✓ Updated",
   "读取中…": "Loading…", "已读取线上最新数据": "Latest online data loaded",
-  "印度": "India", "印度尼西亚": "Indonesia", "俄罗斯（东欧）": "Russia (EE1)",
-  "撒哈拉以南非洲": "Sub-Saharan Africa", "南美洲": "South America", "南美": "South America",
+  "印度": "India", "印度尼西亚": "Indonesia", "俄罗斯（东欧）": "Russia (EE1)", "俄罗斯（EE1）": "Russia (EE1)",
+  "撒哈拉以南非洲": "Sub-Saharan Africa", "南美洲": "South America", "南美": "South America", "拉美": "Latin America",
   "肯尼亚": "Kenya", "尼日利亚": "Nigeria", "巴西": "Brazil", "阿根廷": "Argentina",
   "加拿大": "Canada", "南非": "South Africa", "本地平台": "Local platform",
   "长线热点 · 世界杯冠军": "Long-running · World Cup champion",
@@ -150,7 +166,13 @@ const EN_TEXT = {
   "玩法方向": "Creative direction", "专题": "Collection", "热点样图推荐": "Hotspot inspiration",
   "YouTube 公开数据": "YouTube public data", "Google Trends 相对信号": "Google Trends relative signal",
   "待接入": "Pending connection", "色彩 / 构图": "Color / composition",
-  "有效热点 / 近 24 小时": "Valid hotspots / last 24 hours"
+  "有效热点 / 近 24 小时": "Valid hotspots / last 24 hours",
+  "目标市场热点": "Target market hotspots", "全部目标市场": "All target markets",
+  "点击市场即可联动下面的样图库与热点池。": "Select a market to filter the sample libraries and hotspot pool below.",
+  "长期/节日观察": "Long-term / cultural calendar", "查看该市场样图": "View market samples",
+  "本轮暂无实时数据": "No live items this run", "真实热点": "verified hotspots",
+  "已选中 · 查看下方样图": "Selected · samples below",
+  "先看两印、EE1、中东、SSA 与拉美正在发生什么；点击市场即可联动下面的样图库与热点池。": "See what is happening across India, Indonesia, EE1, the Middle East, SSA and Latin America, then select a market to filter the samples and hotspot pool below."
 };
 
 function toEnglishText(value = "") {
@@ -169,7 +191,8 @@ function toEnglishText(value = "") {
     [/^内部辅助判断 · (\d+)\/100$/, "Internal aid · $1/100"],
     [/^有效率 (.+)$/, "Valid rate $1"],
     [/^较上轮 \+(\d+)%$/, "+$1% vs previous run"],
-    [/^打开 (.+) 原始内容$/, "Open original on $1"]
+    [/^打开 (.+) 原始内容$/, "Open original on $1"],
+    [/^本轮 (\d+) 条真实热点$/, "$1 verified hotspots this run"]
   ];
   for (const [pattern, replacement] of rules) if (pattern.test(text)) return text.replace(pattern, replacement);
   return text;
@@ -221,6 +244,7 @@ function setLanguage(language) {
   languageState.current = language === "en" ? "en" : "zh";
   localStorage.setItem("trendos-language", languageState.current);
   applyLanguage();
+  updateMarketScopeLabels();
 }
 
 const themePrompts = {
@@ -394,6 +418,90 @@ function filtered() {
     (state.source === "全部平台" || h.source.includes(state.source)) &&
     (state.table === "all" || h.type === state.table || (state.table === "candidates" && h.selected))
   );
+}
+
+function marketHotspots(region) {
+  return hotspots
+    .filter(h =>
+      h.region === region &&
+      (state.source === "全部平台" || h.source.includes(state.source))
+    )
+    .sort((a, b) => b.score - a.score || b.trend - a.trend);
+}
+
+function libraryItemMatchesRegion(item, region) {
+  if (region === "全球") return true;
+  if (item.region === region) return true;
+  if (item.region && item.region !== region) return false;
+  const market = targetMarkets.find(entry => entry.region === region);
+  const haystack = [
+    item.region,
+    item.country,
+    item.kicker,
+    item.name,
+    item.hotspotName,
+    item.previewTitle,
+    item.previewMeta,
+    item.description,
+    ...(item.tags || [])
+  ].filter(Boolean).join(" ").toLowerCase();
+  const countries = regionStats[region]?.countries || [];
+  const terms = [...(marketLibraryTerms[region] || []), market?.label, ...countries]
+    .filter(Boolean)
+    .map(term => String(term).toLowerCase());
+  return terms.some(term => haystack.includes(term));
+}
+
+function selectTargetMarket(region, scrollToSamples = false) {
+  state.region = region;
+  const select = $("#regionFilter");
+  if (select) select.value = region;
+  renderAll();
+  if (scrollToSamples) {
+    setTimeout(() => $("#themePreviewSection")?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
+  }
+}
+
+function renderTargetMarkets() {
+  const grid = $("#targetMarketGrid");
+  if (!grid) return;
+  grid.innerHTML = targetMarkets.map(market => {
+    const stats = regionStats[market.region] || { growth: 0, countries: [], top: [] };
+    const realItems = marketHotspots(market.region);
+    const topItems = realItems.slice(0, 3);
+    const fallbackItems = topItems.length ? [] : (stats.top || []).slice(0, 3);
+    const active = state.region === market.region;
+    const topRows = topItems.length
+      ? topItems.map((item, index) => `
+          <button class="market-hotspot-row" type="button" data-market-hotspot="${escapeAttr(item.id)}" title="查看 ${escapeAttr(item.name)} 详情">
+            <span>${index + 1}. ${escapeHtml(item.name)}</span>
+            <b>${item.score}</b>
+          </button>`).join("")
+      : fallbackItems.map((name, index) => `
+          <div class="market-hotspot-row fallback">
+            <span>${index + 1}. ${escapeHtml(name)}</span>
+            <b>长期</b>
+          </div>`).join("");
+    return `
+      <article class="target-market-card${active ? " active" : ""}" data-market-region="${escapeAttr(market.region)}" role="button" tabindex="0" aria-pressed="${active}" style="--market-accent:${market.accent}">
+        <div class="market-card-top">
+          <div><span class="market-code">${market.short}</span><h3>${market.label}</h3></div>
+          <span class="market-growth${stats.growth > 30 ? " hot" : ""}">↑ ${stats.growth || 0}%</span>
+        </div>
+        <div class="market-country-tags">${(stats.countries || []).map(country => `<span>${escapeHtml(country)}</span>`).join("")}</div>
+        <div class="market-count"><strong>${realItems.length}</strong><span>${realItems.length ? `本轮 ${realItems.length} 条真实热点` : "本轮暂无实时数据"}</span></div>
+        <div class="market-hotspot-list ${topItems.length ? "live" : "fallback-list"}">${topRows || `<div class="market-hotspot-row fallback"><span>长期/节日观察</span><b>—</b></div>`}</div>
+        <div class="market-card-action">${active ? "已选中 · 查看下方样图" : "查看该市场样图"} <span>↓</span></div>
+      </article>`;
+  }).join("");
+  $("#showAllMarkets")?.classList.toggle("active", state.region === "全球");
+}
+
+function updateMarketScopeLabels() {
+  const selected = targetMarkets.find(market => market.region === state.region);
+  const label = selected ? selected.label : "全部目标市场";
+  const scope = $("#themeScopeLabel");
+  if (scope) scope.textContent = languageState.current === "en" ? toEnglishText(label) : label;
 }
 
 function escapeAttr(value = "") {
@@ -706,6 +814,7 @@ function filterLibraryItems(items, mode) {
   return items
     .map((item, sourceIndex) => ({ item, sourceIndex }))
     .filter(({ item }) => {
+      if (!libraryItemMatchesRegion(item, state.region)) return false;
       const generatedAt = Date.parse(item.generatedAt || "");
       const ageDays = Number.isFinite(generatedAt) ? (now - generatedAt) / 86400000 : 0;
       if (mode === "archive") return ageDays > 30;
@@ -848,6 +957,7 @@ async function downloadSample(url, filename = "theme-sample.png") {
 }
 
 function renderAll() {
+  renderTargetMarkets();
   renderMetrics();
   renderChart();
   renderAlerts();
@@ -857,6 +967,7 @@ function renderAll() {
   renderGallery();
   renderStrategy();
   applyLanguage();
+  updateMarketScopeLabels();
 }
 
 function bind() {
@@ -910,6 +1021,19 @@ function bind() {
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {
     if (e.target.closest("a")) return;
+    const marketHotspot = e.target.closest("[data-market-hotspot]");
+    const marketCard = e.target.closest("[data-market-region]");
+    if (marketHotspot) {
+      e.preventDefault();
+      e.stopPropagation();
+      openDrawer(marketHotspot.dataset.marketHotspot);
+      return;
+    }
+    if (marketCard) {
+      e.preventDefault();
+      selectTargetMarket(marketCard.dataset.marketRegion, false);
+      return;
+    }
     const download = e.target.closest("[data-download-url]");
     const row = e.target.closest("tr[data-id],.alert[data-id]");
     const preview = e.target.closest("[data-preview]");
@@ -940,6 +1064,13 @@ function bind() {
     }
     if (e.target.dataset.action) { e.stopPropagation(); toggleCandidate(e.target.dataset.action); }
   });
+  document.addEventListener("keydown", e => {
+    const marketCard = e.target.closest?.("[data-market-region]");
+    if (!marketCard || !["Enter", " "].includes(e.key)) return;
+    e.preventDefault();
+    selectTargetMarket(marketCard.dataset.marketRegion, false);
+  });
+  $("#showAllMarkets").onclick = () => selectTargetMarket("全球", false);
   $("#closeDrawer").onclick = closeDrawer; $("#drawerBackdrop").onclick = closeDrawer;
   $("#refreshBtn").onclick = async () => {
     const btn = $("#refreshBtn");

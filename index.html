@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>本地热点机会中心</title>
-  <link rel="stylesheet" href="./styles.css?v=20260731-facebook-public">
+  <link rel="stylesheet" href="./styles.css?v=20260731-market-first">
 </head>
 <body>
   <div class="app-shell">
@@ -14,7 +14,7 @@
         <div><strong>TrendOS</strong><small>AI CONTENT INTELLIGENCE</small></div>
       </div>
       <nav>
-        <button class="nav-item active" data-view="overview"><i></i>总览</button>
+        <button class="nav-item active" data-view="overview"><i></i>目标市场</button>
         <button class="nav-item" data-view="pool"><i></i>实时热点池</button>
         <button class="nav-item" data-view="trend"><i></i>趋势监测</button>
         <button class="nav-item" data-view="alerts"><i></i>爆发预警</button>
@@ -53,6 +53,18 @@
       </section>
 
       <section id="overviewView" class="view active">
+        <section id="marketOverviewSection" class="market-overview-section" aria-labelledby="marketOverviewTitle">
+          <div class="market-overview-head">
+            <div>
+              <p class="eyebrow">TARGET MARKETS · LIVE OPPORTUNITIES</p>
+              <h2 id="marketOverviewTitle">目标市场热点</h2>
+              <p>先看两印、EE1、中东、SSA 与拉美正在发生什么；点击市场即可联动下面的样图库与热点池。</p>
+            </div>
+            <button id="showAllMarkets" class="secondary market-reset active" type="button">全部目标市场</button>
+          </div>
+          <div id="targetMarketGrid" class="target-market-grid" aria-live="polite"></div>
+        </section>
+
         <div class="metrics" id="metrics"></div>
 
         <div class="dashboard-grid">
@@ -92,7 +104,7 @@
 
         <article id="themePreviewSection" class="card gallery-card theme-preview-section">
           <div class="card-head">
-            <div><p class="eyebrow">THEME TEMPLATE LIBRARY · PREDICTABLE + REAL-TIME</p><h2>主题模板库</h2><p>临近固定节假日与已形成持续性的长线热点，才进入完整 OS 主题生产；可玩性用于排序与表现分流，跨平台信号用于增强判断可信度。</p></div>
+            <div><p class="eyebrow">THEME TEMPLATE LIBRARY · PREDICTABLE + REAL-TIME</p><h2>主题模板库 <span id="themeScopeLabel" class="library-scope-label">全部目标市场</span></h2><p>临近固定节假日与已形成持续性的长线热点，才进入完整 OS 主题生产；点击上方市场后，这里只展示对应市场的可视化样图。</p></div>
             <div class="gallery-tools">
               <select id="themeTimeFilter" class="library-time-filter" aria-label="主题模板时间范围">
                 <option value="recent">近 30 天</option>
@@ -219,6 +231,6 @@
     <div id="previewCaption"></div>
   </dialog>
   <div id="toast" class="toast">数据已更新</div>
-  <script src="./app.js?v=20260731-facebook-public"></script>
+  <script src="./app.js?v=20260731-market-first"></script>
 </body>
 </html>
