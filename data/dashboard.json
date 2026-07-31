@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-07-31T05:45:27.995Z",
+  "generatedAt": "2026-07-31T11:05:13.414Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -27,10 +27,10 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1092,
-    "effectiveHotspots": 302,
-    "highPriorityAlerts": 13,
-    "templateCandidates": 11,
+    "rawTopics": 1122,
+    "effectiveHotspots": 314,
+    "highPriorityAlerts": 12,
+    "templateCandidates": 13,
     "rawDelta": 42,
     "effectiveRate": "27.7%"
   },
@@ -50,32 +50,32 @@
       "22:00"
     ],
     "effective": [
-      72,
+      65,
+      24,
+      94,
       20,
-      95,
-      20,
-      102,
-      46,
-      74,
-      109,
+      108,
+      39,
+      80,
+      105,
       45,
       160,
-      81,
-      122
+      75,
+      129
     ],
     "template": [
-      21,
-      21,
-      56,
+      18,
+      24,
+      54,
       7,
-      79,
-      23,
-      58,
+      81,
+      20,
       62,
-      29,
+      59,
+      31,
       90,
-      37,
-      89
+      35,
+      90
     ]
   },
   "hotspots": [
@@ -88,9 +88,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "52.7M",
-      "trend": 73,
-      "score": 97,
+      "heat": "58.2M",
+      "trend": 83,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -98,7 +98,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Avengers: Doomsday | Official Trailer | In Theaters December 18》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（南非、肯尼亚、加纳），播放量 54.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（南非、肯尼亚、加纳），播放量 54.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "irVNGjRFZGk",
         "channelTitle": "Marvel Entertainment",
@@ -124,13 +124,13 @@
       "name": "Alaakaa Loova Lyrical …",
       "originalTitle": "Alaakaa Loova Lyrical | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai",
       "region": "印度",
-      "country": "印度 / 阿联酋",
+      "country": "印度",
       "source": [
         "YouTube"
       ],
-      "heat": "15.4M",
-      "trend": 79,
-      "score": 98,
+      "heat": "13.8M",
+      "trend": 67,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -138,7 +138,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《Alaakaa Loova Lyrical (Tamil) | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度、阿联酋），播放量 14.5M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（印度），播放量 14.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "7VsejGzcJmM",
         "channelTitle": "Divo Music",
@@ -147,8 +147,7 @@
         "url": "https://www.youtube.com/watch?v=7VsejGzcJmM"
       },
       "markets": [
-        "印度",
-        "阿联酋"
+        "印度"
       ],
       "signals": [
         {
@@ -167,9 +166,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "9.5M",
-      "trend": 63,
-      "score": 95,
+      "heat": "11.3M",
+      "trend": 73,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -177,7 +176,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 印度 热门内容《RAMAYANA - Official Trailer》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 10.2M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 11.0M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "1zip1rNaNYs",
         "channelTitle": "Sony Pictures Entertainment",
@@ -207,8 +206,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "3.2M",
-      "trend": 74,
+      "heat": "3.1M",
+      "trend": 68,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -217,7 +216,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 加纳 热门内容《Rudeboy and Sarkodie - Blessed & Alive (Official Video)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（加纳），播放量 3.0M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（加纳），播放量 3.1M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "lIP6Qj6DOvQ",
         "channelTitle": "RudeBoy Official",
@@ -246,8 +245,8 @@
         "YouTube"
       ],
       "heat": "7.2M",
-      "trend": 64,
-      "score": 97,
+      "trend": 63,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -255,7 +254,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Starting Over Using ONLY ROBUX In Keyboard Escape..》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（南非、肯尼亚），播放量 7.4M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（南非、肯尼亚），播放量 7.5M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "AYJkq-UlkYM",
         "channelTitle": "Foltyn",
@@ -284,8 +283,8 @@
       "source": [
         "YouTube"
       ],
-      "heat": "2.1M",
-      "trend": 66,
+      "heat": "2.6M",
+      "trend": 73,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -294,7 +293,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 俄罗斯 热门内容《NO BATIDÃO》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（俄罗斯），播放量 2.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（俄罗斯），播放量 2.5M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "g16sDYTn8j0",
         "channelTitle": "slxughter - Topic",
@@ -322,9 +321,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "4.1M",
-      "trend": 69,
-      "score": 98,
+      "heat": "3.6M",
+      "trend": 58,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -353,53 +352,15 @@
     },
     {
       "id": 1007,
-      "name": "jadwal ewc",
-      "originalTitle": "jadwal ewc",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
+      "name": "clima",
+      "originalTitle": "clima",
+      "region": "南美洲",
+      "country": "阿根廷",
       "source": [
         "Google Trends"
       ],
-      "heat": "180K",
-      "trend": 58,
-      "score": 91,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「jadwal ewc」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 5000+。关联新闻源：Kompas.id / ANTARA News Sulteng；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "jadwal ewc",
-        "traffic": 5000,
-        "publishedAt": "Thu, 30 Jul 2026 22:30:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQ9CXW5kzy7GdWFANkFuUq5jK3Md_lpHnK6Fs4jWlJcXjoyyIgJZLeLc1qvo",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=jadwal%20ewc",
-        "newsUrl": "https://www.kompas.id/artikel/onic-pulangkan-salah-satu-tim-tangguh-di-mobile-legends-bang-bang-mid-season-cup",
-        "newsTitle": "Tim Indonesia Kalahkan Wakil Turki lewat Laga Sengit",
-        "newsSource": "Kompas.id"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "jadwal ewc",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=jadwal%20ewc"
-        }
-      ]
-    },
-    {
-      "id": 1008,
-      "name": "pakistan vs sri lanka",
-      "originalTitle": "pakistan vs sri lanka",
-      "region": "中东",
-      "country": "阿联酋",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 71,
+      "heat": "1.1M",
+      "trend": 82,
       "score": 97,
       "status": "爆发",
       "type": "realtime",
@@ -407,66 +368,142 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿联酋 搜索趋势「pakistan vs sri lanka」和相关新闻视觉线索，提取可转模板方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿联酋 搜索趋势，搜索热度约 5000+。关联新闻源：Pakistan Cricket Board (PCB) / Cricinfo；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 沙特阿拉伯 搜索趋势，搜索热度约 2000+。关联新闻源：ICC / The Hawk；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 阿根廷 搜索趋势「clima」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 1000000+。关联新闻源：Página|12 / Infobae；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 智利 搜索趋势，搜索热度约 50000+。关联新闻源：Infobae / La Opinión；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "pakistan vs sri lanka",
-        "traffic": 5000,
-        "publishedAt": "Thu, 30 Jul 2026 21:20:00 -0700",
-        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSZz7Gb65YtCYbwdfTore1j1tATuzmlHBX471XfhalQVAn4gpZ9ckTIk1suxc",
-        "url": "https://trends.google.com/trends/explore?geo=AE&q=pakistan%20vs%20sri%20lanka",
-        "newsUrl": "https://www.pcb.com.pk/press-release-detail/muneeba-led-pakistan-aim-to-compete-hard-in-three-match-t20i-series-against-sri-lanka.html",
-        "newsTitle": "Muneeba-led Pakistan aim to compete hard in three-match T20I series against Sri Lanka",
-        "newsSource": "Pakistan Cricket Board (PCB)"
+        "topic": "clima",
+        "traffic": 1000000,
+        "publishedAt": "Fri, 31 Jul 2026 02:40:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqXR1VmyVpovcScoKKzRJJGc9YFeRR162yM5XOo-VPa3DkuSEwlhymPc2Vr2Y",
+        "url": "https://trends.google.com/trends/explore?geo=AR&q=clima",
+        "newsUrl": "https://www.pagina12.com.ar/2026/07/31/clima-en-buenos-aires-el-pronostico-del-tiempo-para-este-viernes-31-de-julio/",
+        "newsTitle": "Clima en Buenos Aires: el pronóstico del tiempo para este viernes 31 de julio",
+        "newsSource": "Página|12"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "pakistan vs sri lanka",
-          "url": "https://trends.google.com/trends/explore?geo=AE&q=pakistan%20vs%20sri%20lanka"
+          "title": "clima",
+          "url": "https://trends.google.com/trends/explore?geo=AR&q=clima"
         }
       ]
     },
     {
-      "id": 1009,
-      "name": "రేషన్ కార్డు",
-      "originalTitle": "రేషన్ కార్డు",
-      "region": "印度",
-      "country": "印度",
+      "id": 1008,
+      "name": "tiempo",
+      "originalTitle": "tiempo",
+      "region": "南美洲",
+      "country": "智利",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 54,
-      "score": 90,
+      "trend": 62,
+      "score": 93,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「రేషన్ కార్డు」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 1000+。关联新闻源：Sakshi / News18 Telugu；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 智利 搜索趋势「tiempo」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 智利 搜索趋势，搜索热度约 20000+。关联新闻源：Meteored Chile / La Tercera；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "రేషన్ కార్డు",
-        "traffic": 1000,
-        "publishedAt": "Thu, 30 Jul 2026 22:30:00 -0700",
-        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRs5IZyGnB9219bw6lhTaSd5HdEuZ4AvhJnSrS2pxZp-n6DM4MlZk-mBlCqm4",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B0%B0%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D%20%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%8D%E0%B0%A1%E0%B1%81",
-        "newsUrl": "https://www.sakshi.com/telugu-news/telangana/telangana-extends-ration-card-e-kyc-deadline-till-august-31-2859777",
-        "newsTitle": "రేషన్ కార్డు E-KYC.. తెలంగాణ ప్రభుత్వం కీలక నిర్ణయం",
-        "newsSource": "Sakshi"
+        "topic": "tiempo",
+        "traffic": 20000,
+        "publishedAt": "Fri, 31 Jul 2026 03:30:00 -0700",
+        "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIKwN1i9v2ScgVOTpPucO69KahPVVZRQ5cJTubZDhbR0uc-3YJlY7kFdqPSIY",
+        "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo",
+        "newsUrl": "https://www.meteored.cl/noticias/prediccion/se-aproxima-un-fin-de-semana-lluvioso-en-santiago-hasta-30-mm-y-rachas-de-90-km-h-en-cordillera.html",
+        "newsTitle": "Se aproxima un fin de semana lluvioso en Santiago: hasta 30 mm y rachas de 90 km/h en cordillera",
+        "newsSource": "Meteored Chile"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "రేషన్ కార్డు",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B0%B0%E0%B1%87%E0%B0%B7%E0%B0%A8%E0%B1%8D%20%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B1%8D%E0%B0%A1%E0%B1%81"
+          "title": "tiempo",
+          "url": "https://trends.google.com/trends/explore?geo=CL&q=tiempo"
+        }
+      ]
+    },
+    {
+      "id": 1009,
+      "name": "salto das orquídeas",
+      "originalTitle": "salto das orquídeas",
+      "region": "南美洲",
+      "country": "巴西",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 63,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 巴西 搜索趋势「salto das orquídeas」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 巴西 搜索趋势，搜索热度约 10000+。关联新闻源：G1 / Folha Vitória；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "salto das orquídeas",
+        "traffic": 10000,
+        "publishedAt": "Fri, 31 Jul 2026 03:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW7K_-6GGX-rgUGi5_3xAuDyS7A3GmLZCQwylJ3FsWnhRNwr9RwHWMhvX88cg",
+        "url": "https://trends.google.com/trends/explore?geo=BR&q=salto%20das%20orqu%C3%ADdeas",
+        "newsUrl": "https://g1.globo.com/pr/parana/videos-boa-noite-parana/video/fotografa-desaparecida-em-trilha-e-encontrada-morta-em-sapopema-14826799.ghtml",
+        "newsTitle": "Fotógrafa desaparecida em trilha é encontrada morta em Sapopema",
+        "newsSource": "G1"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "salto das orquídeas",
+          "url": "https://trends.google.com/trends/explore?geo=BR&q=salto%20das%20orqu%C3%ADdeas"
         }
       ]
     },
     {
       "id": 1010,
+      "name": "ரவிச்சந்திரன் அஷ்வின்",
+      "originalTitle": "ரவிச்சந்திரன் அஷ்வின்",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 63,
+      "score": 94,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「ரவிச்சந்திரன் அஷ்வின்」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 200+。关联新闻源：Google Trends；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "ரவிச்சந்திரன் அஷ்வின்",
+        "traffic": 200,
+        "publishedAt": "Fri, 31 Jul 2026 03:50:00 -0700",
+        "picture": "",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AE%B0%E0%AE%B5%E0%AE%BF%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AE%A9%E0%AF%8D%20%E0%AE%85%E0%AE%B7%E0%AF%8D%E0%AE%B5%E0%AE%BF%E0%AE%A9%E0%AF%8D",
+        "newsUrl": "",
+        "newsTitle": "",
+        "newsSource": ""
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "ரவிச்சந்திரன் அஷ்வின்",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%AE%B0%E0%AE%B5%E0%AE%BF%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AE%A9%E0%AF%8D%20%E0%AE%85%E0%AE%B7%E0%AF%8D%E0%AE%B5%E0%AE%BF%E0%AE%A9%E0%AF%8D"
+        }
+      ]
+    },
+    {
+      "id": 1011,
       "name": "रामायणम्",
       "originalTitle": "रामायणम्",
       "region": "印度",
@@ -475,9 +512,9 @@
         "Wikimedia"
       ],
       "heat": "180K",
-      "trend": 61,
-      "score": 91,
-      "status": "爆发",
+      "trend": 52,
+      "score": 87,
+      "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
@@ -503,7 +540,7 @@
       ]
     },
     {
-      "id": 1011,
+      "id": 1012,
       "name": "Одиссея",
       "originalTitle": "Одиссея",
       "region": "俄罗斯（东欧）",
@@ -512,8 +549,8 @@
         "Wikimedia"
       ],
       "heat": "180K",
-      "trend": 57,
-      "score": 88,
+      "trend": 63,
+      "score": 91,
       "status": "爆发",
       "type": "realtime",
       "selected": false,
@@ -540,7 +577,7 @@
       ]
     },
     {
-      "id": 1012,
+      "id": 1013,
       "name": "Piala Presiden 2026",
       "originalTitle": "Piala Presiden 2026",
       "region": "印度尼西亚",
@@ -577,78 +614,109 @@
       ]
     },
     {
-      "id": 1013,
-      "name": "سبتة",
-      "originalTitle": "سبتة",
-      "region": "中东",
-      "country": "中东",
-      "source": [
-        "Wikimedia"
-      ],
-      "heat": "180K",
-      "trend": 60,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 中东 搜索趋势「سبتة」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 阿拉伯语 Wikipedia 前一日高访问条目，浏览量约 10K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
-      "wikimedia": {
-        "project": "ar.wikipedia.org",
-        "language": "阿拉伯语",
-        "article": "سبتة",
-        "views": 10415,
-        "rank": 4,
-        "date": "2026-07-30",
-        "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%A8%D8%AA%D8%A9"
-      },
-      "signals": [
-        {
-          "source": "Wikimedia",
-          "title": "سبتة",
-          "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%A8%D8%AA%D8%A9"
-        }
-      ]
-    },
-    {
       "id": 1014,
-      "name": "It’s basically a full …",
-      "originalTitle": "It’s basically a full circle moment, girl so confusing you’ll always be famous",
+      "name": "Ronaldo …",
+      "originalTitle": "Ronaldo",
       "region": "全球",
       "country": "全球",
       "source": [
         "Instagram"
       ],
       "heat": "180K",
-      "trend": 45,
-      "score": 83,
+      "trend": 54,
+      "score": 87,
       "status": "上升",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「It’s basically a full circle moment, girl so confusing you’ll always be famous #lollapalooza #festival #lollapalooza2026 #charliexcx #lorde」提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
-      "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+      "prompt": "基于 Instagram 全球 热点内容「Ronaldo #cr7 #ronaldo #fypage #edit #football」提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "reason": "来自 Instagram Hashtag #football 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
-        "hashtag": "festival",
-        "mediaUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m86/AQP31G7McIfGK-tjS-1EFd6eTn9R7F3hurd9KHegMNRX9lzwC3TsBqmORIFhrmmO_8gs-Vuk9-Nm3dfb0b5L3KCJJyMkyVBW5Z-lumE.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=N85RHXdchmcQ7kNvwHiXtXv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAxNTEzODExMTM1MjM5MywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=1a5cc8d00169b3dd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85NzRCREQxRUE0Q0EzNzYzMkM2MEY5MDJERTQ4Q0Q5RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzM1NEU4Mzk2MDI4RTJEMTQ2MEZEQUNBMjM5NzA4MUFCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaSubOo6NDNAxUCKAJDMywXQD0zMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=VQsXEbVDwTyeYKyL3Ol-Og&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQFlCwFJbBXRqSZ7l8ahCVLyJpqIBfnAeaDs4kmyowYWJA&oe=6A6E231A",
-        "publishedAt": "2026-07-31T05:46:07+0000",
-        "url": "https://www.instagram.com/reel/Dbcit8pOKla/"
+        "hashtag": "football",
+        "mediaUrl": "https://scontent-ord5-2.cdninstagram.com/o1/v/t2/f2/m86/AQNhQX4j4kpAJcpotdRqd2N_skxwqBlGo_vxsumXbgP8mStTBjKI2n1jnfVxaeMGehboGgrB3mzzRL5BxXZgORps_cD-ShuPkzt6_mE.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_ohc=rjLRDkuAdeQQ7kNvwHr8VIO&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAzOTU2ODc4ODk5NjE4MywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=d0f515852379f664&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85OTREQTQyQjM1RDc4MzQwMUNFODY4QjM3NDg1RkNCN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0E0NEM0QzQzRjAxOTJGRjAyMkE3QjkxMDUyRURFNjg3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaugZqG797YAxUCKAJDMywXQCvul41P3zsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=WuKHLcnzmvI8q_w40oQ_ig&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQFVUetkQlGvs5eG9ehX7djLYd_VhmnXAJYVpNQarEUl_Q&oe=6A6E473C",
+        "publishedAt": "2026-07-31T11:05:49+0000",
+        "url": "https://www.instagram.com/reel/DbdHXXiMzn3/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "It’s basically a full circle moment, girl so confusing you’ll always be famous",
-          "url": "https://www.instagram.com/reel/Dbcit8pOKla/"
+          "title": "Ronaldo",
+          "url": "https://www.instagram.com/reel/DbdHXXiMzn3/"
         }
       ]
     },
     {
       "id": 1015,
+      "name": "vibes song …",
+      "originalTitle": "vibes song Audio Radhey",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "Instagram"
+      ],
+      "heat": "180K",
+      "trend": 54,
+      "score": 87,
+      "status": "上升",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Instagram 全球 热点内容「#Festival vibes#viral song #trending Audio#Radhey Radhey」提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+      "instagram": {
+        "hashtag": "festival",
+        "mediaUrl": "https://scontent-ord5-1.cdninstagram.com/o1/v/t2/f2/m86/AQMMuN0PtC6-vXWOakU7P1u_VL_BU1m7G2g4R9OgknbTTfplIMzx2S7CeQ5ogVa_NCH2d9w2QIV7vQ68TS1rjq24TAVPcTyL5sQzgXg.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_ohc=zejT5-BCaMQQ7kNvwFSJMou&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzE2LmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAxNzczNzY5NDUwMzI3MywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyOCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c2b76488df93745d&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81MTQ3N0I4RTMzMEVDNTNBNUU4NUJFMzZFMzgyMDg5Ql92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0UzNDA3MkM5QkRGODE3MTRBNzQxMDJEMzdBMzU1QTk2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbShYvckOjOAxUCKAJDMywXQDzAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=fC0ude0sbFahDfRhrVZlcw&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQFUrW3lpNHFBRb4FkybrBGJ8Ur2MHZmPc3XHzFvFgOuUg&oe=6A6E6BAC",
+        "publishedAt": "2026-07-31T11:06:13+0000",
+        "url": "https://www.instagram.com/reel/DbdFrbwvqGG/"
+      },
+      "signals": [
+        {
+          "source": "Instagram",
+          "title": "vibes song  Audio Radhey",
+          "url": "https://www.instagram.com/reel/DbdFrbwvqGG/"
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "name": "Franco Baresi has pass…",
+      "originalTitle": "Franco Baresi has passed away at the age of 66... Thank you for everything you gave to the world of football. Rest in peace. ☹ ph: gazzettadellosport #",
+      "region": "全球",
+      "country": "全球",
+      "source": [
+        "Instagram"
+      ],
+      "heat": "180K",
+      "trend": 46,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Instagram 全球 热点内容「Franco Baresi has passed away at the age of 66... Thank you for everything you gave to the world of football. Rest in peace. ☹\nph: gazzettadellosport \n#football#francobaresi#milan#」提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "reason": "来自 Instagram Hashtag #football 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+      "instagram": {
+        "hashtag": "football",
+        "mediaUrl": "https://scontent-ord5-3.cdninstagram.com/v/t51.82787-15/762864427_18470823259110721_5522494755920888591_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1FkQmMJML9wQ7kNvwGreBz3&_nc_oc=Adp7TxqkX3NPeLl3jaqSS5d9pBZwm5gt96dLOaOTGN3pWfRZihFKfXw4BYi9-1qnqsQ&_nc_zt=23&_nc_ht=scontent-ord5-3.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=WuKHLcnzmvI8q_w40oQ_ig&oh=00_AQGenzmEcNCRkxjg9yLaZtXmGC93yKAw9nOEjXArvHLlFQ&oe=6A726BE4",
+        "publishedAt": "2026-07-31T11:05:46+0000",
+        "url": "https://www.instagram.com/p/DbdHfGSsdZI/"
+      },
+      "signals": [
+        {
+          "source": "Instagram",
+          "title": "Franco Baresi has passed away at the age of 66... Thank you for everything you gave to the world of football. Rest in peace. ☹ ph: gazzettadellosport #",
+          "url": "https://www.instagram.com/p/DbdHfGSsdZI/"
+        }
+      ]
+    },
+    {
+      "id": 1017,
       "name": "Men’s Cricket World Cu…",
       "originalTitle": "Men’s Cricket World Cup 2027 venues and brand revealed",
       "region": "印度",
@@ -657,8 +725,8 @@
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 58,
-      "score": 85,
+      "trend": 60,
+      "score": 86,
       "status": "上升",
       "type": "realtime",
       "selected": false,
@@ -684,83 +752,47 @@
       ]
     },
     {
-      "id": 1016,
-      "name": "Had made peace with le…",
-      "originalTitle": "Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri",
+      "id": 1018,
+      "name": "Ram Gopal Varma about …",
+      "originalTitle": "Ram Gopal Varma about Bollywood: ‘Directors don’t get as much freedom’",
       "region": "印度",
       "country": "印度",
       "source": [
         "本地平台"
       ],
       "heat": "180K",
-      "trend": 51,
-      "score": 82,
+      "trend": 46,
+      "score": 80,
       "status": "上升",
       "type": "realtime",
       "selected": false,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「India Today」热点《Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：India Today。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「The Indian Express」热点《Ram Gopal Varma about Bollywood: ‘Directors don’t get as much freedom’》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：The Indian Express。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "bollywood",
         "category": "垂类补充",
-        "sourceName": "India Today",
-        "title": "Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri",
-        "publishedAt": "Fri, 31 Jul 2026 02:24:07 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQjYtNGlYcnIza2dVcUxHcXRycDZpeEFzYjhJRFNtNms5VXl3V3ZKT3ZWN180VV84aGdpX3M2NzYtN2JCajdWOWJhTUw4aEczN0ltcEppVVR4YUlueGNxcmRUTkdEVzNrQVJ4bVNsRFNPLTN1LU53TGRBMzVvbVh3R2FMVVJOd0JmY2x1ZTIxT1kwLWJ4RWZXM3dqT1A4S2o0NVZHVl8wbXFRcks4VTlnaGIwQk9JMURlRjJ0eGZsczjSAcYBQVVfeXFMUE53RGtjT2ZDSWlqZDRzLVNwOTl0TnNXWmZWNzlMU3BqRHVraG9VYXZxQzlsU2FabjltMjJVSHNyemQ2d3d0ODJaNjhMSTR4akdBZGp4TnRaLWdWaWR2WUNMVFVuODZvRzlvelptNnFQa3c2eFVNTEIzQVpqYTVmeGNVZnNiQmRWZnJRX2JTOWo4VVV2TEk3V0lMZ3paeDVnd3g0cFl5eDdKTVZUTlNtQ3hkV0l4SVBjWlNuSk5oUmVGTXBrV1VB?oc=5"
+        "sourceName": "The Indian Express",
+        "title": "Ram Gopal Varma about Bollywood: ‘Directors don’t get as much freedom’",
+        "publishedAt": "Fri, 31 Jul 2026 10:01:35 GMT",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYndWeFpOeWRhVkZIblpxRXVHTnVkTHZ1RWRWVXllZ2wzVEJ4Q2dKOVJ0S0pVQkNVR3lSR1RseVRfSmN2MEd2ZkRNMG5xVkpBVnQzSlYyMEtMVldmV3Z3a1U0aUFzTkcwRms5MEloQTJPZGZtMUtncnVVSDVJRU9oc3plQTEzSXZFOFN0Y1g0S3kzLWtIUmJtd1lNRGlhRXNOdUJ1REE5cmliSi1wSEJPbDFhR1lBLVcxZ1kyQ1hodVBrT0RHRWcyM2RWWmx2enfSAdYBQVVfeXFMTzYtWDFGVEFabHMyNXl3dlhtZHpfRkhzWHQ4RloxS01TbWpfWE5SZm44b0FlanlWVHNUcDBzYTJjaU5tWHNPM0twV0FMZTdEclVoOEFYckM1Z09EWm8yWXgyZjdfa3h0Y1phUDE1djdqT2czblNaNzdDSkxrZUtvaklQTWJYcXIzUUdSeFBUdFd3RWNNME8zWjBfekIzUmpSLXVrNDVzM180MUw4SWdwM190YWNRUkZ5UWJGVElUclQzVHlBVXU4ZGlyb1NTVVo3dF9udmcwZw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Had made peace with leaving: Yami Gautam was ready to quit Bollywood before Uri",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQjYtNGlYcnIza2dVcUxHcXRycDZpeEFzYjhJRFNtNms5VXl3V3ZKT3ZWN180VV84aGdpX3M2NzYtN2JCajdWOWJhTUw4aEczN0ltcEppVVR4YUlueGNxcmRUTkdEVzNrQVJ4bVNsRFNPLTN1LU53TGRBMzVvbVh3R2FMVVJOd0JmY2x1ZTIxT1kwLWJ4RWZXM3dqT1A4S2o0NVZHVl8wbXFRcks4VTlnaGIwQk9JMURlRjJ0eGZsczjSAcYBQVVfeXFMUE53RGtjT2ZDSWlqZDRzLVNwOTl0TnNXWmZWNzlMU3BqRHVraG9VYXZxQzlsU2FabjltMjJVSHNyemQ2d3d0ODJaNjhMSTR4akdBZGp4TnRaLWdWaWR2WUNMVFVuODZvRzlvelptNnFQa3c2eFVNTEIzQVpqYTVmeGNVZnNiQmRWZnJRX2JTOWo4VVV2TEk3V0lMZ3paeDVnd3g0cFl5eDdKTVZUTlNtQ3hkV0l4SVBjWlNuSk5oUmVGTXBrV1VB?oc=5"
+          "title": "Ram Gopal Varma about Bollywood: ‘Directors don’t get as much freedom’",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYndWeFpOeWRhVkZIblpxRXVHTnVkTHZ1RWRWVXllZ2wzVEJ4Q2dKOVJ0S0pVQkNVR3lSR1RseVRfSmN2MEd2ZkRNMG5xVkpBVnQzSlYyMEtMVldmV3Z3a1U0aUFzTkcwRms5MEloQTJPZGZtMUtncnVVSDVJRU9oc3plQTEzSXZFOFN0Y1g0S3kzLWtIUmJtd1lNRGlhRXNOdUJ1REE5cmliSi1wSEJPbDFhR1lBLVcxZ1kyQ1hodVBrT0RHRWcyM2RWWmx2enfSAdYBQVVfeXFMTzYtWDFGVEFabHMyNXl3dlhtZHpfRkhzWHQ4RloxS01TbWpfWE5SZm44b0FlanlWVHNUcDBzYTJjaU5tWHNPM0twV0FMZTdEclVoOEFYckM1Z09EWm8yWXgyZjdfa3h0Y1phUDE1djdqT2czblNaNzdDSkxrZUtvaklQTWJYcXIzUUdSeFBUdFd3RWNNME8zWjBfekIzUmpSLXVrNDVzM180MUw4SWdwM190YWNRUkZ5UWJGVElUclQzVHlBVXU4ZGlyb1NTVVo3dF9udmcwZw?oc=5"
         }
       ]
     },
     {
-      "id": 1017,
-      "name": "'Rotten Tomatoes, Not …",
-      "originalTitle": "'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival",
+      "id": 1019,
+      "name": "Oscar-Qualifying Benga…",
+      "originalTitle": "Oscar-Qualifying Bengaluru International Short Film Festival Expands to 10 Arenas, Adds AI and Dance Competitions",
       "region": "印度",
       "country": "印度",
-      "source": [
-        "本地平台"
-      ],
-      "heat": "180K",
-      "trend": 51,
-      "score": 82,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「NDTV」热点《'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NDTV。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
-      "local": {
-        "topic": "festival",
-        "category": "垂类补充",
-        "sourceName": "NDTV",
-        "title": "'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival",
-        "publishedAt": "Thu, 30 Jul 2026 11:48:49 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQUJRS2Zpd0liMDZqdy14X1ZUdXJjcTh2RUNiaEpLNzNtQjFndWlQSVNiY1dVZXZIb2Q2c3JNeGZIblVrcnlLVXo1RUN0YnJCXzF5S0FFSXNjSGlpaTZscUxCNGVZVzRkNGFkYndyUWp4MkF5UjRWYlFpb1AzUUQ1b1JVc1ZtM05XN0xsQjNSZUI5MmN4NllnMnNpOU9ZemdzQXQ0QnZRWGxEbGdMZnBVNDBuNEp0X191N2xvWHdnMEJTOWdSOVdMQzlrUEtfX3NnUVZUaTUxVdIB3wFBVV95cUxPT2tLbUY0c3NUWkN2cEpsTEcyeldLcGRjNTVKWmhMU1ctcVY0Nl9nSjNra3lvTDNqQjdNWExNUG9ZcWxCOGZpXzg2Zl96Yk5MRmtybUw0T1R3UHl6dE92QjQxNTJpalc3dmp1OWxNR3B2SDhBX1NVZUgwWTlqWDRXVXY0TXJOY1NNcTNOd05RUUJscE5fYWxIelZxbHZvdHhjaGpIN055NkxvYmhTa19lUHN3bGxsM05JZXAyNGpFdXc2SDZkVy1LbFYxUHBRR1E2QzFXTUVkd1dBSjkwUHVB?oc=5"
-      },
-      "signals": [
-        {
-          "source": "本地平台",
-          "title": "'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQUJRS2Zpd0liMDZqdy14X1ZUdXJjcTh2RUNiaEpLNzNtQjFndWlQSVNiY1dVZXZIb2Q2c3JNeGZIblVrcnlLVXo1RUN0YnJCXzF5S0FFSXNjSGlpaTZscUxCNGVZVzRkNGFkYndyUWp4MkF5UjRWYlFpb1AzUUQ1b1JVc1ZtM05XN0xsQjNSZUI5MmN4NllnMnNpOU9ZemdzQXQ0QnZRWGxEbGdMZnBVNDBuNEp0X191N2xvWHdnMEJTOWdSOVdMQzlrUEtfX3NnUVZUaTUxVdIB3wFBVV95cUxPT2tLbUY0c3NUWkN2cEpsTEcyeldLcGRjNTVKWmhMU1ctcVY0Nl9nSjNra3lvTDNqQjdNWExNUG9ZcWxCOGZpXzg2Zl96Yk5MRmtybUw0T1R3UHl6dE92QjQxNTJpalc3dmp1OWxNR3B2SDhBX1NVZUgwWTlqWDRXVXY0TXJOY1NNcTNOd05RUUJscE5fYWxIelZxbHZvdHhjaGpIN055NkxvYmhTa19lUHN3bGxsM05JZXAyNGpFdXc2SDZkVy1LbFYxUHBRR1E2QzFXTUVkd1dBSjkwUHVB?oc=5"
-        }
-      ]
-    },
-    {
-      "id": 1018,
-      "name": "Mulai 1 Agustus 2026 ,…",
-      "originalTitle": "Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
       "source": [
         "本地平台"
       ],
@@ -773,29 +805,102 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「indonesiabaik.id」热点《Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：indonesiabaik.id。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「Variety」热点《Oscar-Qualifying Bengaluru International Short Film Festival Expands to 10 Arenas, Adds AI and Dance Competitions (EXCLUSIVE)》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Variety。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "local": {
+        "topic": "festival",
+        "category": "垂类补充",
+        "sourceName": "Variety",
+        "title": "Oscar-Qualifying Bengaluru International Short Film Festival Expands to 10 Arenas, Adds AI and Dance Competitions (EXCLUSIVE)",
+        "publishedAt": "Fri, 31 Jul 2026 08:56:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORXRYS3ZaZzlTd1ZxNXFPa1RKM0xST1Bybjd5Z0FoRTQ5S3MyWWxRUnlwLW1CWndBcGt1Z1lOTEFsNVhCRjEzck9ZMTU1YVZQb3pBcWVpMmI0SzNJTmQ5ZFJ2MmdneUNpMXdBOVl1VmNLTkRqTzJBYm5adHV0aTZ4Y3ZHYzhrbHVwUm1sVk13a09FUXk0cTlVQ0w4NFYwb3otbkREck13?oc=5"
+      },
+      "signals": [
+        {
+          "source": "本地平台",
+          "title": "Oscar-Qualifying Bengaluru International Short Film Festival Expands to 10 Arenas, Adds AI and Dance Competitions",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORXRYS3ZaZzlTd1ZxNXFPa1RKM0xST1Bybjd5Z0FoRTQ5S3MyWWxRUnlwLW1CWndBcGt1Z1lOTEFsNVhCRjEzck9ZMTU1YVZQb3pBcWVpMmI0SzNJTmQ5ZFJ2MmdneUNpMXdBOVl1VmNLTkRqTzJBYm5adHV0aTZ4Y3ZHYzhrbHVwUm1sVk13a09FUXk0cTlVQ0w4NFYwb3otbkREck13?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "name": "Mulai 1 Agustus 2026 P…",
+      "originalTitle": "Mulai 1 Agustus 2026 Pencatatan Hak Cipta Lagu dan Musik Gratisss",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "本地平台"
+      ],
+      "heat": "180K",
+      "trend": 52,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 印度尼西亚 本地媒体「Indonesia Baik」热点《Mulai 1 Agustus 2026 Pencatatan Hak Cipta Lagu dan Musik Gratisss》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Indonesia Baik。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musik",
         "category": "核心话题",
-        "sourceName": "indonesiabaik.id",
-        "title": "Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss",
-        "publishedAt": "Fri, 31 Jul 2026 04:17:24 GMT",
+        "sourceName": "Indonesia Baik",
+        "title": "Mulai 1 Agustus 2026 Pencatatan Hak Cipta Lagu dan Musik Gratisss",
+        "publishedAt": "Fri, 31 Jul 2026 10:17:24 GMT",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdVQtVkFOZHlYUVBTSEdNY2ZKc0M4M2FZSmo0QmF1WVJtbHl1eDVxa0gxRkx1ajUtekVHZTBwOFVRY3lyTGN1azRta0lueEd3SnRtc2h1ZkpuOTNlZFVaOUlFbi1meW9BZWVzTEJ0WVlrVHVFMVJ3WkpKU2l1NGJDYjJYeG9EQV8zWHI3Vm4wSXVsdFdyZGlGU1hRT0Zpc3BWZWdV?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Mulai 1 Agustus 2026 , Pencatatan Hak Cipta Lagu dan Musik Gratisss",
+          "title": "Mulai 1 Agustus 2026 Pencatatan Hak Cipta Lagu dan Musik Gratisss",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdVQtVkFOZHlYUVBTSEdNY2ZKc0M4M2FZSmo0QmF1WVJtbHl1eDVxa0gxRkx1ajUtekVHZTBwOFVRY3lyTGN1azRta0lueEd3SnRtc2h1ZkpuOTNlZFVaOUlFbi1meW9BZWVzTEJ0WVlrVHVFMVJ3WkpKU2l1NGJDYjJYeG9EQV8zWHI3Vm4wSXVsdFdyZGlGU1hRT0Zpc3BWZWdV?oc=5"
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "name": "Pacific Ocean",
+      "originalTitle": "Pacific Ocean",
+      "region": "撒哈拉以南非洲",
+      "country": "尼日利亚",
+      "source": [
+        "Wikimedia"
+      ],
+      "heat": "180K",
+      "trend": 45,
+      "score": 81,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 尼日利亚 搜索趋势「Pacific Ocean」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 豪萨语 Wikipedia 前一日高访问条目，浏览量约 1K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "wikimedia": {
+        "project": "ha.wikipedia.org",
+        "language": "豪萨语",
+        "article": "Pacific_Ocean",
+        "views": 116,
+        "rank": 6,
+        "date": "2026-07-30",
+        "url": "https://ha.wikipedia.org/wiki/Pacific_Ocean"
+      },
+      "signals": [
+        {
+          "source": "Wikimedia",
+          "title": "Pacific Ocean",
+          "url": "https://ha.wikipedia.org/wiki/Pacific_Ocean"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 113,
-      "growth": 55,
+      "count": 120,
+      "growth": 58,
       "countries": [
         "印度"
       ],
@@ -806,8 +911,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 113,
-      "growth": 30,
+      "count": 120,
+      "growth": 28,
       "countries": [
         "印度尼西亚"
       ],
@@ -818,8 +923,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 79,
-      "growth": 30,
+      "count": 84,
+      "growth": 28,
       "countries": [
         "俄罗斯"
       ],
@@ -830,8 +935,8 @@
       ]
     },
     "中东": {
-      "count": 79,
-      "growth": 30,
+      "count": 84,
+      "growth": 28,
       "countries": [
         "沙特阿拉伯",
         "阿联酋"
@@ -858,8 +963,8 @@
       ]
     },
     "南美洲": {
-      "count": 113,
-      "growth": 55,
+      "count": 120,
+      "growth": 58,
       "countries": [
         "巴西",
         "阿根廷",
@@ -1047,22 +1152,22 @@
       "reason": "3 个新的长期热点进入头部，建议人工触发新壁纸批次。",
       "candidates": [
         {
-          "id": 1001,
-          "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
-          "name": "Alaakaa Loova Lyrical | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai",
+          "id": 1005,
+          "key": "youtube:no batidão",
+          "name": "NO BATIDÃO",
           "source": [
             "YouTube"
           ],
-          "sourceUrl": "https://www.youtube.com/watch?v=7VsejGzcJmM",
-          "region": "印度",
-          "playabilityScore": 89,
-          "reason": "来自 YouTube 热门榜（印度、阿联酋），播放量 14.5M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "sourceUrl": "https://www.youtube.com/watch?v=g16sDYTn8j0",
+          "region": "俄罗斯（东欧）",
+          "playabilityScore": 87,
+          "reason": "来自 YouTube 热门榜（俄罗斯），播放量 2.5M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
             "observationCount": 2,
-            "persistenceDays": 0,
+            "persistenceDays": 1,
             "longRunning": true,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
@@ -1083,14 +1188,14 @@
           ],
           "sourceUrl": "https://www.youtube.com/watch?v=lIP6Qj6DOvQ",
           "region": "撒哈拉以南非洲",
-          "playabilityScore": 88,
-          "reason": "来自 YouTube 热门榜（加纳），播放量 3.0M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "playabilityScore": 86,
+          "reason": "来自 YouTube 热门榜（加纳），播放量 3.1M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
             "observationCount": 2,
-            "persistenceDays": 0,
+            "persistenceDays": 1,
             "longRunning": true,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
@@ -1103,22 +1208,22 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1005,
-          "key": "youtube:no batidão",
-          "name": "NO BATIDÃO",
+          "id": 1001,
+          "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
+          "name": "Alaakaa Loova Lyrical | OM | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai",
           "source": [
             "YouTube"
           ],
-          "sourceUrl": "https://www.youtube.com/watch?v=g16sDYTn8j0",
-          "region": "俄罗斯（东欧）",
-          "playabilityScore": 85,
-          "reason": "来自 YouTube 热门榜（俄罗斯），播放量 2.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "sourceUrl": "https://www.youtube.com/watch?v=7VsejGzcJmM",
+          "region": "印度",
+          "playabilityScore": 84,
+          "reason": "来自 YouTube 热门榜（印度），播放量 14.7M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
             "observationCount": 2,
-            "persistenceDays": 0,
+            "persistenceDays": 1,
             "longRunning": true,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
@@ -1133,35 +1238,7 @@
       ],
       "watchlist": [
         {
-          "id": 1008,
-          "key": "google trends:pakistan vs sri lanka",
-          "name": "pakistan vs sri lanka",
-          "source": [
-            "Google Trends"
-          ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=AE&q=pakistan%20vs%20sri%20lanka",
-          "region": "中东",
-          "playabilityScore": 97,
-          "reason": "来自 Google Trends 阿联酋 搜索趋势，搜索热度约 5000+。关联新闻源：Pakistan Cricket Board (PCB) / Cricinfo；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 沙特阿拉伯 搜索趋势，搜索热度约 2000+。关联新闻源：ICC / The Hawk；适合判断地区搜索兴趣和热点持续性。",
-          "screening": {
-            "crossPlatformVerified": false,
-            "coreRegionPriority": true,
-            "sustainedHeat": true,
-            "observationCount": 1,
-            "persistenceDays": 0,
-            "longRunning": false,
-            "strongVisualSymbol": true,
-            "positiveEmotion": true,
-            "personalizable": true,
-            "copyrightControllable": true,
-            "lifecycleFit": true,
-            "productionReady": false,
-            "status": "watch"
-          },
-          "triggerType": "realtime"
-        },
-        {
-          "id": 1015,
+          "id": 1017,
           "key": "本地平台:men s cricket world cup 2027 venues and brand revealed",
           "name": "Men’s Cricket World Cup 2027 venues and brand revealed",
           "source": [
@@ -1169,7 +1246,7 @@
           ],
           "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN1p1VWJPNlgzQXFlVF8wVkdXVkRDcjVWY0xEUWJKXzlzdDkyLXhPYm5CdnZONkR6a1NzX0NjdDRzam9ZYm5neUhzX0prS3ZVUFhHYldIVzlIWFBvSkNEelBzdkVvNDRYY25wa2FiNVpWRHJJYXZuQm9BT2tiTnVLUXFKM01HV240eWlJQ2RVUno?oc=5",
           "region": "印度",
-          "playabilityScore": 88,
+          "playabilityScore": 89,
           "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
@@ -1189,16 +1266,16 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1006,
-          "key": "youtube:live msc at ewc 2026 knockout stage aurora gaming vs onic bahasa indonesia",
-          "name": "🔴 LIVE | MSC at EWC 2026 | Knockout Stage | Aurora Gaming vs ONIC | Bahasa Indonesia",
+          "id": 1019,
+          "key": "本地平台:oscar qualifying bengaluru international short film festival expands to 10 arenas adds ai and da",
+          "name": "Oscar-Qualifying Bengaluru International Short Film Festival Expands to 10 Arenas, Adds AI and Dance Competitions",
           "source": [
-            "YouTube"
+            "本地平台"
           ],
-          "sourceUrl": "https://www.youtube.com/watch?v=vNBqnS9rgmI",
-          "region": "印度尼西亚",
-          "playabilityScore": 86,
-          "reason": "来自 YouTube 热门榜（印度尼西亚），播放量 3.9M。视觉判断：音乐 / 舞台 / 人物；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORXRYS3ZaZzlTd1ZxNXFPa1RKM0xST1Bybjd5Z0FoRTQ5S3MyWWxRUnlwLW1CWndBcGt1Z1lOTEFsNVhCRjEzck9ZMTU1YVZQb3pBcWVpMmI0SzNJTmQ5ZFJ2MmdneUNpMXdBOVl1VmNLTkRqTzJBYm5adHV0aTZ4Y3ZHYzhrbHVwUm1sVk13a09FUXk0cTlVQ0w4NFYwb3otbkREck13?oc=5",
+          "region": "印度",
+          "playabilityScore": 88,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Variety。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1209,6 +1286,34 @@
             "strongVisualSymbol": true,
             "positiveEmotion": true,
             "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": true,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1007,
+          "key": "google trends:clima",
+          "name": "clima",
+          "source": [
+            "Google Trends"
+          ],
+          "sourceUrl": "https://trends.google.com/trends/explore?geo=AR&q=clima",
+          "region": "南美洲",
+          "playabilityScore": 87,
+          "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 1000000+。关联新闻源：Página|12 / Infobae；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 智利 搜索趋势，搜索热度约 50000+。关联新闻源：Infobae / La Opinión；适合判断地区搜索兴趣和热点持续性。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": true,
+            "sustainedHeat": true,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": false,
+            "positiveEmotion": true,
+            "personalizable": false,
             "copyrightControllable": true,
             "lifecycleFit": true,
             "productionReady": false,
@@ -1278,7 +1383,7 @@
       ],
       "watchlist": [
         {
-          "id": 1015,
+          "id": 1017,
           "key": "本地平台:men s cricket world cup 2027 venues and brand revealed",
           "name": "Men’s Cricket World Cup 2027 venues and brand revealed",
           "source": [
@@ -1306,20 +1411,20 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1017,
-          "key": "本地平台:rotten tomatoes not like zindagi naa milegi dobara indian woman shares reality of la tomatina fe",
-          "name": "'Rotten Tomatoes, Not Like Zindagi Naa Milegi Dobara': Indian Woman Shares Reality Of La Tomatina Festival",
+          "id": 1019,
+          "key": "本地平台:oscar qualifying bengaluru international short film festival expands to 10 arenas adds ai and da",
+          "name": "Oscar-Qualifying Bengaluru International Short Film Festival Expands to 10 Arenas, Adds AI and Dance Competitions",
           "source": [
             "本地平台"
           ],
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQUJRS2Zpd0liMDZqdy14X1ZUdXJjcTh2RUNiaEpLNzNtQjFndWlQSVNiY1dVZXZIb2Q2c3JNeGZIblVrcnlLVXo1RUN0YnJCXzF5S0FFSXNjSGlpaTZscUxCNGVZVzRkNGFkYndyUWp4MkF5UjRWYlFpb1AzUUQ1b1JVc1ZtM05XN0xsQjNSZUI5MmN4NllnMnNpOU9ZemdzQXQ0QnZRWGxEbGdMZnBVNDBuNEp0X191N2xvWHdnMEJTOWdSOVdMQzlrUEtfX3NnUVZUaTUxVdIB3wFBVV95cUxPT2tLbUY0c3NUWkN2cEpsTEcyeldLcGRjNTVKWmhMU1ctcVY0Nl9nSjNra3lvTDNqQjdNWExNUG9ZcWxCOGZpXzg2Zl96Yk5MRmtybUw0T1R3UHl6dE92QjQxNTJpalc3dmp1OWxNR3B2SDhBX1NVZUgwWTlqWDRXVXY0TXJOY1NNcTNOd05RUUJscE5fYWxIelZxbHZvdHhjaGpIN055NkxvYmhTa19lUHN3bGxsM05JZXAyNGpFdXc2SDZkVy1LbFYxUHBRR1E2QzFXTUVkd1dBSjkwUHVB?oc=5",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORXRYS3ZaZzlTd1ZxNXFPa1RKM0xST1Bybjd5Z0FoRTQ5S3MyWWxRUnlwLW1CWndBcGt1Z1lOTEFsNVhCRjEzck9ZMTU1YVZQb3pBcWVpMmI0SzNJTmQ5ZFJ2MmdneUNpMXdBOVl1VmNLTkRqTzJBYm5adHV0aTZ4Y3ZHYzhrbHVwUm1sVk13a09FUXk0cTlVQ0w4NFYwb3otbkREck13?oc=5",
           "region": "印度",
           "playabilityScore": 100,
-          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NDTV。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：Variety。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
-            "sustainedHeat": false,
+            "sustainedHeat": true,
             "observationCount": 1,
             "persistenceDays": 0,
             "longRunning": false,
@@ -1334,19 +1439,19 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1008,
-          "key": "google trends:pakistan vs sri lanka",
-          "name": "pakistan vs sri lanka",
+          "id": 1015,
+          "key": "instagram:vibes song audio radhey",
+          "name": "vibes song Audio Radhey",
           "source": [
-            "Google Trends"
+            "Instagram"
           ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=AE&q=pakistan%20vs%20sri%20lanka",
-          "region": "中东",
-          "playabilityScore": 75,
-          "reason": "来自 Google Trends 阿联酋 搜索趋势，搜索热度约 5000+。关联新闻源：Pakistan Cricket Board (PCB) / Cricinfo；适合判断地区搜索兴趣和热点持续性。；来自 Google Trends 沙特阿拉伯 搜索趋势，搜索热度约 2000+。关联新闻源：ICC / The Hawk；适合判断地区搜索兴趣和热点持续性。",
+          "sourceUrl": "https://www.instagram.com/reel/DbdFrbwvqGG/",
+          "region": "全球",
+          "playabilityScore": 100,
+          "reason": "来自 Instagram Hashtag #festival 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
           "screening": {
             "crossPlatformVerified": false,
-            "coreRegionPriority": true,
+            "coreRegionPriority": false,
             "sustainedHeat": true,
             "observationCount": 1,
             "persistenceDays": 0,
@@ -1377,8 +1482,8 @@
       "source": "Wikimedia",
       "status": "connected",
       "connected": true,
-      "fetchedCount": 16,
-      "detail": "2026-07-30 日榜成功 8/8 个语言项目",
+      "fetchedCount": 14,
+      "detail": "2026-07-30 日榜成功 7/8 个语言项目",
       "visibleCount": 4
     },
     {
@@ -1393,8 +1498,8 @@
       "status": "connected",
       "connected": true,
       "fetchedCount": 8,
-      "detail": "Hashtag Search 成功 2/5 组，3 组需重试",
-      "visibleCount": 1
+      "detail": "Hashtag Search 成功 3/5 组，2 组需重试",
+      "visibleCount": 3
     },
     {
       "source": "Facebook",
