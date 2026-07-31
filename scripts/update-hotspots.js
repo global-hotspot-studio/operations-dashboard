@@ -43,7 +43,8 @@ const metaSourceStatus = {
   facebook: { source: "Facebook", status: "pending", connected: false, fetchedCount: 0, detail: "" }
 };
 const openSourceStatus = {
-  bluesky: { source: "Bluesky", status: "pending", connected: false, fetchedCount: 0, detail: "" }
+  bluesky: { source: "Bluesky", status: "pending", connected: false, fetchedCount: 0, detail: "" },
+  wikimedia: { source: "Wikimedia", status: "pending", connected: false, fetchedCount: 0, detail: "" }
 };
 
 const youtubeMarkets = [
@@ -93,6 +94,17 @@ const blueskyQueries = [
   { query: "музыка", market: youtubeMarkets.find(item => item.code === "RU") },
   { query: "Dubai", market: youtubeMarkets.find(item => item.code === "AE") }
 ].filter(item => item.market);
+
+const wikimediaMarkets = [
+  { project: "hi.wikipedia.org", country: "印度", region: "印度", language: "印地语" },
+  { project: "id.wikipedia.org", country: "印度尼西亚", region: "印度尼西亚", language: "印度尼西亚语" },
+  { project: "ru.wikipedia.org", country: "俄罗斯", region: "俄罗斯（东欧）", language: "俄语" },
+  { project: "ar.wikipedia.org", country: "中东", region: "中东", language: "阿拉伯语" },
+  { project: "ha.wikipedia.org", country: "尼日利亚", region: "撒哈拉以南非洲", language: "豪萨语" },
+  { project: "sw.wikipedia.org", country: "肯尼亚 / 东非", region: "撒哈拉以南非洲", language: "斯瓦希里语" },
+  { project: "pt.wikipedia.org", country: "巴西", region: "南美洲", language: "葡萄牙语" },
+  { project: "es.wikipedia.org", country: "拉美", region: "南美洲", language: "西班牙语" }
+];
 
 const googleNewsLocales = {
   IN: { hl: "en-IN", ceid: "IN:en" },
@@ -162,10 +174,16 @@ async function fetchJsonWithTimeout(url, options = {}, timeoutMs = 12000) {
   try {
     const response = await fetch(url, { ...options, signal: controller.signal });
     const body = await response.text();
+    let json = {};
+    try {
+      json = body ? JSON.parse(body) : {};
+    } catch {
+      json = {};
+    }
     return {
       ok: response.ok,
       status: response.status,
-      json: body ? JSON.parse(body) : {},
+      json,
       body
     };
   } finally {
@@ -288,7 +306,7 @@ function mergeSources(left = [], right = []) {
 }
 
 function mergeLinks(target, incoming) {
-  for (const key of ["youtube", "trends", "local", "gdelt", "manual", "x", "instagram", "facebook", "tiktok", "bluesky"]) {
+  for (const key of ["youtube", "trends", "local", "gdelt", "manual", "x", "instagram", "facebook", "tiktok", "bluesky", "wikimedia"]) {
     if (!target[key] && incoming[key]) target[key] = incoming[key];
   }
 }
@@ -297,7 +315,7 @@ function cleanSignal(item) {
   const originalTitle = cleanTitle(item.originalTitle || item.name);
   const name = cleanTitle(item.name || originalTitle);
   const source = Array.isArray(item.source) ? item.source : [item.source || "未知来源"];
-  const url = item.youtube?.url || item.trends?.url || item.local?.url || item.gdelt?.url || item.manual?.url || item.x?.url || item.instagram?.url || item.facebook?.url || item.tiktok?.url || item.bluesky?.url || "";
+  const url = item.youtube?.url || item.trends?.url || item.local?.url || item.gdelt?.url || item.manual?.url || item.x?.url || item.instagram?.url || item.facebook?.url || item.tiktok?.url || item.bluesky?.url || item.wikimedia?.url || "";
   return {
     ...item,
     name: textSnippet(name || originalTitle || "未命名热点"),
@@ -326,8 +344,8 @@ function mergeSignals(target, incoming) {
   target.selected = Boolean(target.selected || incoming.selected || score >= 88);
   target.reason = [...new Set(reasonParts)].slice(0, 2).join("；");
   target.signals = [
-    ...(target.signals || [{ source: target.source[0], title: target.originalTitle, url: target.youtube?.url || target.trends?.url || target.local?.url || target.gdelt?.url || target.manual?.url || target.x?.url || target.instagram?.url || target.facebook?.url || target.tiktok?.url || target.bluesky?.url || "" }]),
-    { source: incoming.source.join(" + "), title: incoming.originalTitle, url: incoming.youtube?.url || incoming.trends?.url || incoming.local?.url || incoming.gdelt?.url || incoming.manual?.url || incoming.x?.url || incoming.instagram?.url || incoming.facebook?.url || incoming.tiktok?.url || incoming.bluesky?.url || "" }
+    ...(target.signals || [{ source: target.source[0], title: target.originalTitle, url: target.youtube?.url || target.trends?.url || target.local?.url || target.gdelt?.url || target.manual?.url || target.x?.url || target.instagram?.url || target.facebook?.url || target.tiktok?.url || target.bluesky?.url || target.wikimedia?.url || "" }]),
+    { source: incoming.source.join(" + "), title: incoming.originalTitle, url: incoming.youtube?.url || incoming.trends?.url || incoming.local?.url || incoming.gdelt?.url || incoming.manual?.url || incoming.x?.url || incoming.instagram?.url || incoming.facebook?.url || incoming.tiktok?.url || incoming.bluesky?.url || incoming.wikimedia?.url || "" }
   ].filter((signal, index, array) => array.findIndex(item => item.source === signal.source && item.title === signal.title) === index);
   mergeLinks(target, incoming);
   return target;
@@ -613,6 +631,7 @@ function sourceUrlForHotspot(item) {
   return item.instagram?.url
     || item.facebook?.url
     || item.bluesky?.url
+    || item.wikimedia?.url
     || item.youtube?.url
     || item.trends?.url
     || item.local?.url
@@ -1350,6 +1369,109 @@ async function fetchBlueskySignals() {
   return signals;
 }
 
+function previousUtcDateParts() {
+  const date = new Date(Date.now() - 24 * 60 * 60 * 1000);
+  return {
+    year: String(date.getUTCFullYear()),
+    month: String(date.getUTCMonth() + 1).padStart(2, "0"),
+    day: String(date.getUTCDate()).padStart(2, "0")
+  };
+}
+
+function isUsefulWikimediaArticle(article = "") {
+  const title = String(article).replaceAll("_", " ").trim();
+  if (!title || title.includes(":")) return false;
+  if (/^(main page|página principal|página inicial|заглавная страница|الصفحة الرئيسية)$/iu.test(title)) return false;
+  if (/^(wikipedia|wikimedia|search|buscar|بحث|поиск)$/iu.test(title)) return false;
+  if (/^\d{1,4}$/.test(title) || /^\d{1,2}[_\s-]\p{L}+/u.test(title)) return false;
+  if (/\b(list of|lists of|disambiguation)\b/i.test(title)) return false;
+  return true;
+}
+
+function wikimediaArticleUrl(project, article) {
+  return `https://${project}/wiki/${encodeURIComponent(article).replaceAll("%2F", "/")}`;
+}
+
+async function fetchWikimediaMarketSignals(market, dateParts) {
+  const { year, month, day } = dateParts;
+  const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/${market.project}/all-access/${year}/${month}/${day}`;
+  const result = await fetchJsonWithTimeout(url, {
+    headers: {
+      "user-agent": "LocalHotspotOpportunityCenter/1.0 (public-interest analytics)"
+    }
+  }, 15000);
+  if (!result.ok) {
+    throw new Error(`Wikimedia ${market.project} 请求失败：${result.status} ${result.body.slice(0, 140)}`);
+  }
+  const rows = result.json.items?.[0]?.articles || [];
+  return rows
+    .filter(item => isUsefulWikimediaArticle(item.article))
+    .slice(0, 2)
+    .map((item, rank) => {
+      const title = String(item.article).replaceAll("_", " ").trim();
+      const views = Number(item.views || 0);
+      const score = sourceScore(60, rank, views);
+      const trend = sourceTrend(20, rank, views);
+      return {
+        id: `wm-${market.project}-${encodeURIComponent(item.article).slice(0, 44)}`,
+        name: textSnippet(title, 30),
+        originalTitle: title,
+        region: market.region,
+        country: market.country,
+        source: ["Wikimedia"],
+        heat: formatHeat(Math.max(views, 1000)),
+        trend,
+        score,
+        status: statusFromTrend(trend, score),
+        type: "realtime",
+        selected: false,
+        preview: "",
+        previewTitle: "",
+        previewMeta: "",
+        prompt: promptFromTrend(title, market, ""),
+        reason: `来自 ${market.language} Wikipedia 前一日高访问条目，浏览量约 ${formatHeat(Math.max(views, 1000))}。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。`,
+        wikimedia: {
+          project: market.project,
+          language: market.language,
+          article: item.article,
+          views,
+          rank: Number(item.rank || rank + 1),
+          date: `${year}-${month}-${day}`,
+          url: wikimediaArticleUrl(market.project, item.article)
+        }
+      };
+    });
+}
+
+async function fetchWikimediaSignals() {
+  const dateParts = previousUtcDateParts();
+  let successfulProjects = 0;
+  const results = await Promise.all(wikimediaMarkets.map(async market => {
+    try {
+      const rows = await fetchWikimediaMarketSignals(market, dateParts);
+      successfulProjects += 1;
+      return rows;
+    } catch (error) {
+      console.warn(error.name === "AbortError" ? `Wikimedia ${market.project} 请求超时` : error.message);
+      return [];
+    }
+  }));
+  const signals = [
+    ...results.map(rows => rows[0]).filter(Boolean),
+    ...results.map(rows => rows[1]).filter(Boolean)
+  ].slice(0, 16);
+  openSourceStatus.wikimedia = {
+    source: "Wikimedia",
+    status: successfulProjects ? (signals.length ? "connected" : "empty") : "error",
+    connected: successfulProjects > 0,
+    fetchedCount: signals.length,
+    detail: successfulProjects
+      ? `${dateParts.year}-${dateParts.month}-${dateParts.day} 日榜成功 ${successfulProjects}/${wikimediaMarkets.length} 个语言项目`
+      : "公开 Pageviews API 暂时无法连接"
+  };
+  return signals;
+}
+
 async function discoverMetaAccounts() {
   if (!metaAccessToken) {
     metaSourceStatus.meta = { ...metaSourceStatus.meta, status: "missing", detail: "未配置 META_ACCESS_TOKEN" };
@@ -1798,6 +1920,7 @@ function composeSignals(groups) {
     ...takeBySource(groups.manual, "人工录入", 6),
     ...takeBySource(groups.x, "X", 4),
     ...takeBySource(groups.bluesky, "Bluesky", 4),
+    ...takeBySource(groups.wikimedia, "Wikimedia", 6),
     ...takeBySource(groups.instagram, "Instagram", 4),
     ...takeBySource(groups.facebook, "Facebook", 4),
     ...takeBySource(groups.tiktok, "TikTok", 4)
@@ -1817,6 +1940,7 @@ async function fetchExternalSignals() {
    * - Google Trends RSS：已接入，无需密钥，适合趋势和搜索热度
    * - X / Instagram / Facebook：已预留官方接口连接器，配置 Secret 后启用
    * - Bluesky：已接入公开搜索 API，无需密钥
+   * - Wikimedia：已接入公开 Pageviews API，无需密钥
    * - TikTok：商业运营链路暂用人工观察或合规数据供应商，不启用 Research API
    * - 公司内部飞书表格 / CMS：适合运营手动入选与复盘
    */
@@ -1827,6 +1951,7 @@ async function fetchExternalSignals() {
   const manualSignals = await fetchManualSignals();
   const xSignals = await fetchXSignals();
   const blueskySignals = await fetchBlueskySignals();
+  const wikimediaSignals = await fetchWikimediaSignals();
   await discoverMetaAccounts();
   const instagramSignals = await fetchInstagramSignals();
   const facebookSignals = await fetchFacebookSignals();
@@ -1839,6 +1964,7 @@ async function fetchExternalSignals() {
     manual: manualSignals,
     x: xSignals,
     bluesky: blueskySignals,
+    wikimedia: wikimediaSignals,
     instagram: instagramSignals,
     facebook: facebookSignals,
     tiktok: tiktokSignals
@@ -1872,6 +1998,7 @@ async function update() {
     "GDELT",
     "人工录入",
     "Bluesky",
+    "Wikimedia",
     "TikTok",
     "Instagram",
     "X",
@@ -1896,6 +2023,10 @@ async function update() {
     {
       ...openSourceStatus.bluesky,
       visibleCount: data.hotspots.filter(item => item.source?.includes("Bluesky")).length
+    },
+    {
+      ...openSourceStatus.wikimedia,
+      visibleCount: data.hotspots.filter(item => item.source?.includes("Wikimedia")).length
     },
     metaSourceStatus.meta,
     {

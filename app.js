@@ -141,6 +141,7 @@ const EN_TEXT = {
   "搜索趋势": "Search trend", "Google Trends 搜索趋势": "Google Trends search interest",
   "Instagram 视觉趋势": "Instagram visual trend", "Facebook 公开内容": "Facebook public content",
   "Bluesky 公开讨论": "Bluesky public discussion",
+  "Wikimedia 语言市场热度": "Wikimedia language-market interest",
   "TikTok 短视频趋势": "TikTok short-video trend", "X 实时讨论": "Live discussion on X",
   "本地媒体": "Local media", "本地媒体 / 新闻源": "Local media / news",
   "GDELT 全球新闻": "GDELT global news", "GDELT 全球新闻数据库": "GDELT global news database",
@@ -415,6 +416,7 @@ function getPlatformUrl(h, source) {
   if (source === "X" && h.x?.url) return h.x.url;
   if (source === "Facebook" && h.facebook?.url) return h.facebook.url;
   if (source === "Bluesky" && h.bluesky?.url) return h.bluesky.url;
+  if (source === "Wikimedia" && h.wikimedia?.url) return h.wikimedia.url;
   if (source === "本地平台" && h.local?.url) return h.local.url;
   if (source === "GDELT" && h.gdelt?.url) return h.gdelt.url;
   if (source === "人工录入" && h.manual?.url) return h.manual.url;
@@ -455,6 +457,12 @@ function getSourceVisual(h, source) {
     return {
       image: h.bluesky?.image || "",
       label: h.bluesky?.handle ? `@${h.bluesky.handle} · Bluesky` : "Bluesky 公开讨论"
+    };
+  }
+  if (source === "Wikimedia") {
+    return {
+      image: "",
+      label: h.wikimedia?.language ? `${h.wikimedia.language} · Wikimedia` : "Wikimedia 语言市场热度"
     };
   }
   if (source === "TikTok") {

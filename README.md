@@ -107,6 +107,7 @@ GDELT 用于补充跨语言、跨国家的新闻热度信号，不需要额外 S
 | Instagram | 已接通真实数据 | 指定 Hashtag 的近期媒体，不是全网热榜 |
 | Facebook | 已支持管理主页；公共主页池代码已完成，等待 Meta 审核 | 管理主页帖子 + 重点市场公共主页搜索与帖子 |
 | Bluesky | 已接入公开 API，无需 Secret | 重点市场关键词的公开帖子与互动量 |
+| Wikimedia | 已接入公开 API，无需 Secret | 重点语言项目前一日高访问条目；作为语言市场兴趣信号 |
 | TikTok | 不直接启用 Research API | 商业运营账号不满足 Research API 资格；先用人工观察或合规数据供应商 |
 
 X / Instagram / Facebook 拿到官方权限后，在 GitHub 仓库 Secrets 里补齐：
@@ -133,6 +134,7 @@ Meta 不提供“全 Facebook 任意关键词帖子搜索”。本项目采用�
 - Instagram：需要 Meta App、Instagram 专业账号及关联 Facebook Page；令牌至少需要 `instagram_basic`、`pages_show_list`、`pages_read_engagement`。如果 Page 归属于 Business Portfolio，还需要 `business_management`。脚本调用 Instagram Graph API 的 Hashtag Search / Recent Media 获取视觉内容线索。
 - Facebook：同一令牌会自动发现当前账号可管理的 Page；审核前读取管理主页，审核通过后自动启用公共主页搜索和非自有主页 Feed。
 - Bluesky：通过官方公开 AppView 搜索重点市场的公开帖子，无需登录或 Secret；作为社区讨论信号，必须与搜索趋势、视频榜或本地媒体交叉验证。
+- Wikimedia：通过官方 Pageviews API 抓取印地语、印度尼西亚语、俄语、阿拉伯语、豪萨语、斯瓦希里语、葡萄牙语和西班牙语 Wikipedia 的前一日高访问条目。该数据只代表语言项目关注度，不冒充精确国家热榜。
 - TikTok：Research API 面向符合条件的非营利研究人员，Token 也不适合当前长期定时任务；当前不把它冒充为已开通的商业实时源。
 
 如果 Secret 未配置，脚本会明确跳过该平台，不会生成假数据。
