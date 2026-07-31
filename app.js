@@ -12,6 +12,7 @@ let funnel = [];
 let dashboardMeta = {};
 let state = { region: "全球", source: "全部平台", table: "all" };
 let libraryFilters = { theme: "recent", wallpaper: "recent" };
+let toastTimer;
 const languageState = {
   current: localStorage.getItem("trendos-language") === "en" ? "en" : "zh"
 };
@@ -375,21 +376,7 @@ function formatUpdateTime(iso) {
 function updateDataStatus() {
   $("#lastUpdated").textContent = `更新于 ${formatUpdateTime(dashboardMeta.generatedAt)}`;
   $("#dataMode").textContent = dashboardMeta.mode || "定时更新";
-  const sourceStatuses = (dashboardMeta.sourceStatus || [])
-    .filter(item => item.source === "Instagram" || item.source === "Facebook");
-  const statusLabels = {
-    connected: "已写入",
-    empty: "接口正常 · 本轮 0 条",
-    error: "连接异常",
-    missing: "待配置",
-    pending: "待验证"
-  };
-  const healthBadges = sourceStatuses.map(item => {
-    const cssStatus = item.status === "connected" ? "ok" : item.status === "empty" ? "empty" : "error";
-    const countText = item.status === "connected" ? ` · ${item.visibleCount ?? item.fetchedCount ?? 0} 条` : "";
-    return `<span class="source-health-badge ${cssStatus}" title="${escapeAttr(item.detail || "")}">${escapeHtml(item.source)}：${statusLabels[item.status] || item.status}${countText}</span>`;
-  }).join("");
-  $("#liveStatus").innerHTML = `<span>${escapeHtml(dashboardMeta.cadence || "筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化")}</span>${healthBadges ? `<span class="source-health-badges">${healthBadges}</span>` : ""}`;
+  $("#liveStatus").textContent = "筛选逻辑：持续热度 × 视觉符号 × 正向情绪 × 可个性化";
 }
 
 function initSelects() {
@@ -783,7 +770,42 @@ function toggleCandidate(id) {
   const h = hotspots.find(x => x.id === Number(id)); h.selected = !h.selected; renderAll(); openDrawer(id); showToast(h.selected ? "已加入本地候选" : "已移出本地候选");
 }
 
-function showToast(text) { const t = $("#toast"); t.textContent = localized(text); t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1500); }
+function showToast(text, duration = 1500) {
+  const t = $("#toast");
+  clearTimeout(toastTimer);
+  t.classList.remove("refresh-summary");
+  t.textContent = localized(text);
+  t.classList.add("show");
+  toastTimer = setTimeout(() => t.classList.remove("show"), duration);
+}
+
+function showRefreshToast() {
+  const t = $("#toast");
+  clearTimeout(toastTimer);
+  const isEnglish = languageState.current === "en";
+  const statusLabels = isEnglish
+    ? { connected: "Written", empty: "API healthy · 0 this run", error: "Connection error", missing: "Not configured", pending: "Pending verification" }
+    : { connected: "已写入", empty: "接口正常 · 本轮 0 条", error: "连接异常", missing: "待配置", pending: "待验证" };
+  const sourceStatuses = (dashboardMeta.sourceStatus || [])
+    .filter(item => item.source === "Instagram" || item.source === "Facebook");
+  const healthBadges = sourceStatuses.map(item => {
+    const cssStatus = item.status === "connected" ? "ok" : item.status === "empty" ? "empty" : "error";
+    const countText = item.status === "connected"
+      ? ` · ${item.visibleCount ?? item.fetchedCount ?? 0} ${isEnglish ? "items" : "条"}`
+      : "";
+    return `<span class="source-health-badge ${cssStatus}" title="${escapeAttr(item.detail || "")}">${escapeHtml(item.source)}：${escapeHtml(statusLabels[item.status] || item.status)}${countText}</span>`;
+  }).join("");
+  const cadence = isEnglish
+    ? "Scheduled daily at 09:00 Beijing time; major holidays are planned 4–6 weeks ahead."
+    : (dashboardMeta.cadence || "每日北京时间 09:00 自动更新；大型节假日提前 4–6 周准备。");
+  t.innerHTML = `
+    <div class="toast-refresh-title"><span>✓</span><strong>${isEnglish ? "Latest data refreshed" : "最新数据已刷新"}</strong></div>
+    <div class="toast-refresh-time">${isEnglish ? "Updated" : "更新于"} ${escapeHtml(formatUpdateTime(dashboardMeta.generatedAt))}</div>
+    ${healthBadges ? `<div class="toast-refresh-badges">${healthBadges}</div>` : ""}
+    <div class="toast-refresh-cadence">${escapeHtml(cadence)}</div>`;
+  t.classList.add("refresh-summary", "show");
+  toastTimer = setTimeout(() => t.classList.remove("show"), 5200);
+}
 
 async function downloadSample(url, filename = "theme-sample.png") {
   try {
@@ -911,7 +933,7 @@ function bind() {
       initSelects();
       renderAll();
       btn.textContent = localized("✓ 已拉取");
-      showToast("已读取线上最新数据");
+      showRefreshToast();
     } catch (error) {
       btn.textContent = localized("数据读取失败");
       showToast("数据读取失败，请稍后再试");
