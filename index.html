@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>本地热点机会中心</title>
-  <link rel="stylesheet" href="./styles.css?v=20260731-market-first-v3">
+  <link rel="stylesheet" href="./styles.css?v=20260731-market-samples-v4">
 </head>
 <body>
   <div class="app-shell">
@@ -219,6 +219,19 @@
     </main>
   </div>
 
+  <div id="marketSampleBackdrop" class="market-sample-backdrop" aria-hidden="true"></div>
+  <aside id="marketSamplePanel" class="market-sample-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="marketSampleTitle">
+    <div class="market-sample-panel-head">
+      <div>
+        <p class="eyebrow">MARKET SAMPLE RECOMMENDATIONS</p>
+        <h2 id="marketSampleTitle">市场样图推荐</h2>
+        <p id="marketSampleSummary">主题与壁纸混排展示</p>
+      </div>
+      <button id="closeMarketSamples" class="market-sample-close" type="button">收起 <span>×</span></button>
+    </div>
+    <div id="marketSampleMasonry" class="market-sample-masonry"></div>
+  </aside>
+
   <div id="drawerBackdrop" class="drawer-backdrop"></div>
   <aside id="detailDrawer" class="drawer">
     <button id="closeDrawer" class="close">×</button>
@@ -230,6 +243,6 @@
     <div id="previewCaption"></div>
   </dialog>
   <div id="toast" class="toast">数据已更新</div>
-  <script src="./app.js?v=20260731-market-first-v3"></script>
+  <script src="./app.js?v=20260731-market-samples-v4"></script>
 </body>
 </html>

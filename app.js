@@ -170,9 +170,12 @@ const EN_TEXT = {
   "有效热点 / 近 24 小时": "Valid hotspots / last 24 hours",
   "目标市场热点": "Target market hotspots", "全部目标市场": "All target markets",
   "点击市场即可联动下面的样图库与热点池。": "Select a market to filter the sample libraries and hotspot pool below.",
-  "长期/节日观察": "Long-term / cultural calendar", "查看该市场样图": "View market samples",
+  "长期/节日观察": "Long-term / cultural calendar", "查看该市场样图": "View market samples", "查看样图推荐": "View sample recommendations",
   "本轮暂无实时数据": "No live items this run", "真实热点": "verified hotspots",
   "已选中 · 查看下方样图": "Selected · samples below",
+  "市场样图推荐": "Market sample recommendations", "主题与壁纸混排展示": "Themes and wallpapers in a masonry layout",
+  "主题样图": "Theme sample", "壁纸样图": "Wallpaper sample", "收起": "Collapse",
+  "当前市场暂无可视化样图": "No visual samples are available for this market yet",
   "先看两印、EE1、中东、SSA 与拉美正在发生什么；点击市场即可联动下面的样图库与热点池。": "See what is happening across India, Indonesia, EE1, the Middle East, SSA and Latin America, then select a market to filter the samples and hotspot pool below."
 };
 
@@ -463,6 +466,18 @@ function selectTargetMarket(region, scrollToSamples = false) {
   }
 }
 
+function marketSampleItems(region) {
+  const themes = themeOutputs
+    .filter(item => libraryItemMatchesRegion(item, region))
+    .map(item => ({ ...item, marketSampleType: "theme" }));
+  const wallpapers = templateOutputs
+    .filter(item => libraryItemMatchesRegion(item, region))
+    .map(item => ({ ...item, marketSampleType: "wallpaper" }));
+  return [...themes, ...wallpapers]
+    .filter(item => item.preview)
+    .sort((a, b) => Date.parse(b.generatedAt || "") - Date.parse(a.generatedAt || ""));
+}
+
 function renderTargetMarkets() {
   const grid = $("#targetMarketGrid");
   if (!grid) return;
@@ -472,6 +487,7 @@ function renderTargetMarkets() {
     const topItems = realItems.slice(0, 3);
     const fallbackItems = topItems.length ? [] : (stats.top || []).slice(0, 3);
     const active = state.region === market.region;
+    const sampleCount = marketSampleItems(market.region).length;
     const topRows = topItems.length
       ? topItems.map((item, index) => `
           <button class="market-hotspot-row" type="button" data-market-hotspot="${escapeAttr(item.id)}" title="查看 ${escapeAttr(item.name)} 详情">
@@ -492,9 +508,87 @@ function renderTargetMarkets() {
         <div class="market-country-tags">${(stats.countries || []).map(country => `<span>${escapeHtml(country)}</span>`).join("")}</div>
         <div class="market-count"><strong>${realItems.length}</strong><span>${realItems.length ? `本轮 ${realItems.length} 条真实热点` : "本轮暂无实时数据"}</span></div>
         <div class="market-hotspot-list ${topItems.length ? "live" : "fallback-list"}">${topRows || `<div class="market-hotspot-row fallback"><span>长期/节日观察</span><b>—</b></div>`}</div>
-        <div class="market-card-action">${active ? "已选中 · 查看下方样图" : "查看该市场样图"} <span>↓</span></div>
+        <button class="market-sample-button" type="button" data-market-samples="${escapeAttr(market.region)}" aria-expanded="false">
+          <span>查看样图推荐</span><b>${sampleCount}</b><i>↗</i>
+        </button>
       </article>`;
   }).join("");
+}
+
+function closeMarketSamples() {
+  const panel = $("#marketSamplePanel");
+  const backdrop = $("#marketSampleBackdrop");
+  if (!panel || !backdrop) return;
+  panel.classList.remove("open");
+  backdrop.classList.remove("open");
+  panel.setAttribute("aria-hidden", "true");
+  backdrop.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("market-samples-open");
+  $$("[data-market-samples]").forEach(button => button.setAttribute("aria-expanded", "false"));
+}
+
+function toggleMarketSamples(region) {
+  const panel = $("#marketSamplePanel");
+  const backdrop = $("#marketSampleBackdrop");
+  if (!panel || !backdrop) return;
+  if (panel.classList.contains("open") && panel.dataset.region === region) {
+    closeMarketSamples();
+    return;
+  }
+
+  state.region = region;
+  const regionSelect = $("#regionFilter");
+  if (regionSelect) regionSelect.value = region;
+  renderAll();
+
+  const market = targetMarkets.find(entry => entry.region === region);
+  const items = marketSampleItems(region);
+  const themeCount = items.filter(item => item.marketSampleType === "theme").length;
+  const wallpaperCount = items.filter(item => item.marketSampleType === "wallpaper").length;
+  const masonry = $("#marketSampleMasonry");
+  masonry.innerHTML = items.length ? items.map(item => {
+    const isTheme = item.marketSampleType === "theme";
+    const name = isTheme ? item.name : (item.previewTitle || item.hotspotName || "壁纸样图");
+    const kicker = isTheme ? (item.kicker || "主题样图") : (item.hotspotName || "壁纸样图");
+    const description = isTheme ? (item.description || "") : (item.previewMeta || "");
+    const tags = isTheme ? (item.tags || []) : playTags(item);
+    const copyAction = isTheme
+      ? `<button class="theme-copy" data-theme-copy="${escapeAttr(item.promptKey || "")}">复制提示词</button>`
+      : `<button class="copy-prompt" data-copy-id="${escapeAttr(item.id)}">复制提示词</button>`;
+    return `
+      <article class="market-sample-tile">
+        <button class="market-sample-image visual-preview" type="button" data-preview="${escapeAttr(item.preview)}" data-caption="${escapeAttr(item.caption || name)}" aria-label="预览${escapeAttr(name)}">
+          <img src="${escapeAttr(item.preview)}" alt="${escapeAttr(name)}" loading="lazy">
+          <span>${isTheme ? "主题样图" : "壁纸样图"}</span>
+        </button>
+        <div class="market-sample-info">
+          <small>${escapeHtml(kicker)}</small>
+          <h3>${escapeHtml(name)}</h3>
+          ${description ? `<p>${escapeHtml(description)}</p>` : ""}
+          <div class="play-tags">${tags.slice(0, 3).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+          <div class="visual-actions">
+            ${copyAction}
+            <a class="download-sample" href="${escapeAttr(item.preview)}" download="${escapeAttr(item.downloadName || previewDownloadName(item))}">下载样图</a>
+          </div>
+        </div>
+      </article>`;
+  }).join("") : `<div class="market-sample-empty">当前市场暂无可视化样图</div>`;
+
+  panel.dataset.region = region;
+  panel.classList.add("open");
+  backdrop.classList.add("open");
+  panel.setAttribute("aria-hidden", "false");
+  backdrop.setAttribute("aria-hidden", "false");
+  document.body.classList.add("market-samples-open");
+  applyLanguage(panel);
+  $("#marketSampleTitle").textContent = languageState.current === "en"
+    ? `${toEnglishText(market?.label || region)} sample recommendations`
+    : `${market?.label || region}样图推荐`;
+  $("#marketSampleSummary").textContent = languageState.current === "en"
+    ? `${themeCount} themes · ${wallpaperCount} wallpapers`
+    : `${themeCount} 套主题 · ${wallpaperCount} 张壁纸`;
+  const trigger = $(`[data-market-samples="${CSS.escape(region)}"]`);
+  if (trigger) trigger.setAttribute("aria-expanded", "true");
 }
 
 function updateMarketScopeLabels() {
@@ -1020,8 +1114,15 @@ function bind() {
   $$(".chip").forEach(b => b.onclick = () => { $$(".chip").forEach(x => x.classList.remove("active")); b.classList.add("active"); state.table = b.dataset.table; renderTable(); });
   document.addEventListener("click", async e => {
     if (e.target.closest("a")) return;
+    const marketSamples = e.target.closest("[data-market-samples]");
     const marketHotspot = e.target.closest("[data-market-hotspot]");
     const marketCard = e.target.closest("[data-market-region]");
+    if (marketSamples) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMarketSamples(marketSamples.dataset.marketSamples);
+      return;
+    }
     if (marketHotspot) {
       e.preventDefault();
       e.stopPropagation();
@@ -1064,11 +1165,17 @@ function bind() {
     if (e.target.dataset.action) { e.stopPropagation(); toggleCandidate(e.target.dataset.action); }
   });
   document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && $("#marketSamplePanel")?.classList.contains("open")) {
+      closeMarketSamples();
+      return;
+    }
     const marketCard = e.target.closest?.("[data-market-region]");
     if (!marketCard || !["Enter", " "].includes(e.key)) return;
     e.preventDefault();
     selectTargetMarket(marketCard.dataset.marketRegion, false);
   });
+  $("#closeMarketSamples").onclick = closeMarketSamples;
+  $("#marketSampleBackdrop").onclick = closeMarketSamples;
   $("#closeDrawer").onclick = closeDrawer; $("#drawerBackdrop").onclick = closeDrawer;
   $("#refreshBtn").onclick = async () => {
     const btn = $("#refreshBtn");
