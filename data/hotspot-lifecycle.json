@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-31T11:05:13.414Z",
+  "updatedAt": "2026-08-01T08:57:52.245Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,12 +45,13 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
         "2026-07-30",
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -84,12 +85,13 @@
       "key": "youtube:starting over using only robux in keyboard escape",
       "name": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
         "2026-07-30",
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -428,12 +430,13 @@
       "key": "youtube:ramayana official trailer",
       "name": "RAMAYANA - Official Trailer",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
         "2026-07-30",
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -821,11 +824,12 @@
       "key": "本地平台:mulai 1 agustus 2026 pencatatan hak cipta lagu dan musik gratisss",
       "name": "Mulai 1 Agustus 2026 Pencatatan Hak Cipta Lagu dan Musik Gratisss",
       "firstSeenAt": "2026-07-31T05:35:57.339Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "本地平台"
       ],
@@ -901,11 +905,12 @@
       "key": "wikimedia:र म यणम",
       "name": "रामायणम्",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -997,11 +1002,12 @@
       "key": "wikimedia:piala presiden 2026",
       "name": "Piala Presiden 2026",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -1013,11 +1019,12 @@
       "key": "wikimedia:سبتة",
       "name": "سبتة",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-07-31T05:45:27.995Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-01"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -1199,6 +1206,221 @@
       ],
       "markets": [
         "尼日利亚"
+      ]
+    },
+    "youtube:ariana grande petal": {
+      "key": "youtube:ariana grande petal",
+      "name": "Ariana Grande - petal",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "巴西",
+        "阿根廷",
+        "哥伦比亚",
+        "智利",
+        "秘鲁",
+        "沙特阿拉伯",
+        "阿联酋",
+        "巴西 / 阿根廷 / 哥伦比亚 / 智利 / 秘鲁 / 沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:no na honk": {
+      "key": "youtube:no na honk",
+      "name": "no na - honk!",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "youtube:knockout stage msc di ewc hari 3": {
+      "key": "youtube:knockout stage msc di ewc hari 3",
+      "name": "| Knockout Stage MSC DI EWC Hari 3 |",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "youtube:todo lo fue": {
+      "key": "youtube:todo lo fue",
+      "name": "Todo Lo Fue",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "哥伦比亚"
+      ]
+    },
+    "google trends:loteria de medellin": {
+      "key": "google trends:loteria de medellin",
+      "name": "loteria de medellin",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "哥伦比亚"
+      ]
+    },
+    "google trends:московская область": {
+      "key": "google trends:московская область",
+      "name": "московская область",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "俄罗斯"
+      ]
+    },
+    "google trends:ర మ గ ప ల వర మ": {
+      "key": "google trends:ర మ గ ప ల వర మ",
+      "name": "రామ్ గోపాల్ వర్మ",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:lazio": {
+      "key": "google trends:lazio",
+      "name": "lazio",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "google trends:infidelidade": {
+      "key": "google trends:infidelidade",
+      "name": "infidelidade",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "巴西"
+      ]
+    },
+    "wikimedia:сеута": {
+      "key": "wikimedia:сеута",
+      "name": "Сеута",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "俄罗斯"
+      ]
+    },
+    "本地平台:claire taylor interview from quitting her job to becoming england s world cup and wisden legend": {
+      "key": "本地平台:claire taylor interview from quitting her job to becoming england s world cup and wisden legend",
+      "name": "Claire Taylor interview: From quitting her job to becoming England’s World Cup and Wisden legend",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:the lokhandwala bathroom murder bollywood borrowed names and a suicide note waiting in a bank lo": {
+      "key": "本地平台:the lokhandwala bathroom murder bollywood borrowed names and a suicide note waiting in a bank lo",
+      "name": "The Lokhandwala Bathroom Murder: Bollywood, Borrowed Names And A Suicide Note Waiting In A Bank Locker",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:dortmund chess festival attracts top players": {
+      "key": "本地平台:dortmund chess festival attracts top players",
+      "name": "Dortmund Chess Festival attracts top players",
+      "firstSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "observedDates": [
+        "2026-08-01"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
       ]
     }
   }
