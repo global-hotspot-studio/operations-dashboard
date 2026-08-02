@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-01T08:57:52.245Z",
+  "updatedAt": "2026-08-02T09:18:08.115Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,13 +45,14 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "YouTube"
       ],
@@ -430,13 +431,14 @@
       "key": "youtube:ramayana official trailer",
       "name": "RAMAYANA - Official Trailer",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "YouTube"
       ],
@@ -905,12 +907,13 @@
       "key": "wikimedia:र म यणम",
       "name": "रामायणम्",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
         "2026-07-31",
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "Wikimedia"
       ],
@@ -1002,12 +1005,13 @@
       "key": "wikimedia:piala presiden 2026",
       "name": "Piala Presiden 2026",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
         "2026-07-31",
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "Wikimedia"
       ],
@@ -1019,12 +1023,13 @@
       "key": "wikimedia:سبتة",
       "name": "سبتة",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
         "2026-07-31",
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "Wikimedia"
       ],
@@ -1212,11 +1217,12 @@
       "key": "youtube:ariana grande petal",
       "name": "Ariana Grande - petal",
       "firstSeenAt": "2026-08-01T08:57:52.245Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -1228,18 +1234,20 @@
         "秘鲁",
         "沙特阿拉伯",
         "阿联酋",
-        "巴西 / 阿根廷 / 哥伦比亚 / 智利 / 秘鲁 / 沙特阿拉伯 / 阿联酋"
+        "巴西 / 阿根廷 / 哥伦比亚 / 智利 / 秘鲁 / 沙特阿拉伯 / 阿联酋",
+        "智利 / 沙特阿拉伯 / 阿联酋"
       ]
     },
     "youtube:no na honk": {
       "key": "youtube:no na honk",
       "name": "no na - honk!",
       "firstSeenAt": "2026-08-01T08:57:52.245Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -1363,11 +1371,12 @@
       "key": "wikimedia:сеута",
       "name": "Сеута",
       "firstSeenAt": "2026-08-01T08:57:52.245Z",
-      "lastSeenAt": "2026-08-01T08:57:52.245Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -1421,6 +1430,255 @@
       ],
       "markets": [
         "印度"
+      ]
+    },
+    "youtube:exploring my abandoned minecraft server": {
+      "key": "youtube:exploring my abandoned minecraft server",
+      "name": "Exploring My Abandoned Minecraft Server",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "哥伦比亚",
+        "智利",
+        "秘鲁",
+        "南非",
+        "阿联酋",
+        "哥伦比亚 / 智利 / 秘鲁 / 南非 / 阿联酋"
+      ]
+    },
+    "youtube:amr diab orange lola el banat عمرو دياب واورنچ لولا البنات": {
+      "key": "youtube:amr diab orange lola el banat عمرو دياب واورنچ لولا البنات",
+      "name": "Amr Diab & Orange - Lola El Banat - عمرو دياب واورنچ - لولا البنات",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "沙特阿拉伯",
+        "阿联酋",
+        "沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:the gaming market is starting to break": {
+      "key": "youtube:the gaming market is starting to break",
+      "name": "The Gaming Market is Starting to Break.",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "尼日利亚",
+        "加纳",
+        "尼日利亚 / 加纳"
+      ]
+    },
+    "google trends:ચ મ સ": {
+      "key": "google trends:ચ મ સ",
+      "name": "ચોમાસું",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:loteria de boyaca": {
+      "key": "google trends:loteria de boyaca",
+      "name": "loteria de boyaca",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "哥伦比亚"
+      ]
+    },
+    "google trends:inter miami vs columbus": {
+      "key": "google trends:inter miami vs columbus",
+      "name": "inter miami vs columbus",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "加纳"
+      ]
+    },
+    "google trends:mht cet cap round seat allotment": {
+      "key": "google trends:mht cet cap round seat allotment",
+      "name": "mht cet cap round seat allotment",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "instagram:नद क ठ न सर ग च य स न न ध य त स र च ज द मन श त करण र स ग त आण ड ळ य न स ख वण र न सर गस दर य य प ": {
+      "key": "instagram:नद क ठ न सर ग च य स न न ध य त स र च ज द मन श त करण र स ग त आण ड ळ य न स ख वण र न सर गस दर य य प ",
+      "name": "नदीकाठी निसर्गाच्या सान्निध्यात सुरांची जादू... 🌿💙 मन शांत करणारे संगीत आणि डोळ्यांना सुखावणारे निसर्गसौंदर्य—यापेक्षा सुंदर क्षण कोणता? ✨🎻 हॅशटॅग्स:",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:knicklichtweib": {
+      "key": "instagram:knicklichtweib",
+      "name": "knicklichtweib._ 📷❤️",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:bas mainu tu chahida ve out now": {
+      "key": "instagram:bas mainu tu chahida ve out now",
+      "name": "Bas Mainu Tu Chahida Ve ❤️ Out Now",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:mingay": {
+      "key": "instagram:mingay",
+      "name": "Mingay✨😸",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "本地平台:sajid khan profile cricket player u a e stats records video": {
+      "key": "本地平台:sajid khan profile cricket player u a e stats records video",
+      "name": "Sajid Khan Profile - Cricket Player U.A.E. | Stats, Records, Video",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:friendship day 2026 the best bollywood songs that celebrate the bond of friendship": {
+      "key": "本地平台:friendship day 2026 the best bollywood songs that celebrate the bond of friendship",
+      "name": "Friendship Day 2026: The Best Bollywood Songs That Celebrate the Bond of Friendship",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:mazzo at marriott executive apartments hyderabad to host tamil nadu food festival from august 3": {
+      "key": "本地平台:mazzo at marriott executive apartments hyderabad to host tamil nadu food festival from august 3",
+      "name": "Mazzo at Marriott Executive Apartments Hyderabad to host Tamil Nadu food festival from August 3",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:hiburan rakyat live musik hadir malam minggu di kabupaten bekasi": {
+      "key": "本地平台:hiburan rakyat live musik hadir malam minggu di kabupaten bekasi",
+      "name": "Hiburan Rakyat Live Musik Hadir Malam Minggu di Kabupaten Bekasi",
+      "firstSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "observedDates": [
+        "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
       ]
     }
   }
