@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-02T09:18:08.115Z",
+  "updatedAt": "2026-08-03T12:44:50.339Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,14 +45,15 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
         "2026-08-01",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "YouTube"
       ],
@@ -415,11 +416,12 @@
       "key": "youtube:children of blood and bone official trailer thuso mbedu damson idris amandla stenberg",
       "name": "Children of Blood and Bone | Official Trailer - Thuso Mbedu, Damson Idris, Amandla Stenberg",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-07-30T10:51:39.528Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-08-03"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -431,14 +433,15 @@
       "key": "youtube:ramayana official trailer",
       "name": "RAMAYANA - Official Trailer",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
         "2026-08-01",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "YouTube"
       ],
@@ -907,13 +910,14 @@
       "key": "wikimedia:र म यणम",
       "name": "रामायणम्",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "Wikimedia"
       ],
@@ -1005,13 +1009,14 @@
       "key": "wikimedia:piala presiden 2026",
       "name": "Piala Presiden 2026",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "Wikimedia"
       ],
@@ -1023,13 +1028,14 @@
       "key": "wikimedia:سبتة",
       "name": "سبتة",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "Wikimedia"
       ],
@@ -1436,11 +1442,12 @@
       "key": "youtube:exploring my abandoned minecraft server",
       "name": "Exploring My Abandoned Minecraft Server",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -1450,7 +1457,8 @@
         "秘鲁",
         "南非",
         "阿联酋",
-        "哥伦比亚 / 智利 / 秘鲁 / 南非 / 阿联酋"
+        "哥伦比亚 / 智利 / 秘鲁 / 南非 / 阿联酋",
+        "南非 / 阿联酋"
       ]
     },
     "youtube:amr diab orange lola el banat عمرو دياب واورنچ لولا البنات": {
@@ -1475,11 +1483,12 @@
       "key": "youtube:the gaming market is starting to break",
       "name": "The Gaming Market is Starting to Break.",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-02T09:18:08.115Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
       "observedDates": [
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-03"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -1672,6 +1681,204 @@
       "lastSeenAt": "2026-08-02T09:18:08.115Z",
       "observedDates": [
         "2026-08-02"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "youtube:babymonster moon m v": {
+      "key": "youtube:babymonster moon m v",
+      "name": "BABYMONSTER - 'MOON' M/V",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度尼西亚",
+        "阿根廷",
+        "秘鲁",
+        "俄罗斯",
+        "沙特阿拉伯",
+        "阿联酋",
+        "印度尼西亚 / 阿根廷 / 秘鲁 / 俄罗斯 / 沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:100 000 druvaen x suit crate opening jonathan is back bgmi": {
+      "key": "youtube:100 000 druvaen x suit crate opening jonathan is back bgmi",
+      "name": "100,000 DRUVAEN X-SUIT CRATE OPENING | JONATHAN IS BACK!! | BGMI!",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:banjir padang": {
+      "key": "google trends:banjir padang",
+      "name": "banjir padang",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "google trends:dia": {
+      "key": "google trends:dia",
+      "name": "dia",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "智利"
+      ]
+    },
+    "google trends:mega sena 3039 resultado": {
+      "key": "google trends:mega sena 3039 resultado",
+      "name": "mega sena 3039 resultado",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "巴西"
+      ]
+    },
+    "google trends:న దమ ర బ లక ష ణ": {
+      "key": "google trends:న దమ ర బ లక ష ణ",
+      "name": "నందమూరి బాలకృష్ణ",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:bali": {
+      "key": "google trends:bali",
+      "name": "bali",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "wikimedia:чайко александр юрьевич": {
+      "key": "wikimedia:чайко александр юрьевич",
+      "name": "Чайко, Александр Юрьевич",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "俄罗斯"
+      ]
+    },
+    "本地平台:bangladesh forms committee to probe reason behind national cricket team s withdrawal from icc me": {
+      "key": "本地平台:bangladesh forms committee to probe reason behind national cricket team s withdrawal from icc me",
+      "name": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:never dated a bollywood actress brett lee reacts to romance rumours with preity zinta": {
+      "key": "本地平台:never dated a bollywood actress brett lee reacts to romance rumours with preity zinta",
+      "name": "‘Never dated a Bollywood actress’: Brett Lee reacts to romance rumours with Preity Zinta",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:tsungremmung festival celebrated in mokokchung": {
+      "key": "本地平台:tsungremmung festival celebrated in mokokchung",
+      "name": "TSUNGREMMUNG FESTIVAL CELEBRATED IN MOKOKCHUNG",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:semarak agustus 2026 dengan berbagai event seru di jawa barat": {
+      "key": "本地平台:semarak agustus 2026 dengan berbagai event seru di jawa barat",
+      "name": "Semarak Agustus 2026 dengan Berbagai Event Seru di Jawa Barat",
+      "firstSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "observedDates": [
+        "2026-08-03"
       ],
       "observationCount": 1,
       "sources": [
