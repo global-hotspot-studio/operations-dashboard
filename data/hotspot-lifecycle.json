@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-03T12:44:50.339Z",
+  "updatedAt": "2026-08-04T10:59:57.443Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,15 +45,16 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "YouTube"
       ],
@@ -416,12 +417,13 @@
       "key": "youtube:children of blood and bone official trailer thuso mbedu damson idris amandla stenberg",
       "name": "Children of Blood and Bone | Official Trailer - Thuso Mbedu, Damson Idris, Amandla Stenberg",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-07-30",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -433,15 +435,16 @@
       "key": "youtube:ramayana official trailer",
       "name": "RAMAYANA - Official Trailer",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "YouTube"
       ],
@@ -910,14 +913,15 @@
       "key": "wikimedia:र म यणम",
       "name": "रामायणम्",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "Wikimedia"
       ],
@@ -961,11 +965,12 @@
       "key": "wikimedia:одиссея",
       "name": "Одиссея",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-04"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -1009,14 +1014,15 @@
       "key": "wikimedia:piala presiden 2026",
       "name": "Piala Presiden 2026",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "Wikimedia"
       ],
@@ -1442,12 +1448,13 @@
       "key": "youtube:exploring my abandoned minecraft server",
       "name": "Exploring My Abandoned Minecraft Server",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -1483,12 +1490,13 @@
       "key": "youtube:the gaming market is starting to break",
       "name": "The Gaming Market is Starting to Break.",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-08-02",
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -1694,11 +1702,12 @@
       "key": "youtube:babymonster moon m v",
       "name": "BABYMONSTER - 'MOON' M/V",
       "firstSeenAt": "2026-08-03T12:44:50.339Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-04"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -1886,6 +1895,230 @@
       ],
       "markets": [
         "印度尼西亚"
+      ]
+    },
+    "youtube:बर ब द ह त भ ल ज new bhojpuri bolbam song 2026 स परह ट व यरल ब लबम ग त": {
+      "key": "youtube:बर ब द ह त भ ल ज new bhojpuri bolbam song 2026 स परह ट व यरल ब लबम ग त",
+      "name": "| बर्बादी होता भोला जी | | New Bhojpuri Bolbam Song 2026 | सुपरहिट वायरल बोलबम गीत",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:eclipse solar agosto": {
+      "key": "google trends:eclipse solar agosto",
+      "name": "eclipse solar agosto",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "巴西"
+      ]
+    },
+    "google trends:jeju united vs bayern": {
+      "key": "google trends:jeju united vs bayern",
+      "name": "jeju united vs bayern",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "google trends:ర త": {
+      "key": "google trends:ర త",
+      "name": "రైతు",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:gustavo gatica": {
+      "key": "google trends:gustavo gatica",
+      "name": "gustavo gatica",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "智利"
+      ]
+    },
+    "wikimedia:زلزال القاهرة 1992": {
+      "key": "wikimedia:زلزال القاهرة 1992",
+      "name": "زلزال القاهرة 1992",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "中东"
+      ]
+    },
+    "instagram:os benefícios da chia": {
+      "key": "instagram:os benefícios da chia",
+      "name": "Os benefícios da chia",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:look at the art in this gorgeous allogloom trailer": {
+      "key": "instagram:look at the art in this gorgeous allogloom trailer",
+      "name": "look at the art in this gorgeous ALLOGLOOM trailer!",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:jesu dåp 70x90 cm olje på lerret dette motivet har jeg malt før og den originalen fikk nytt hjem": {
+      "key": "instagram:jesu dåp 70x90 cm olje på lerret dette motivet har jeg malt før og den originalen fikk nytt hjem",
+      "name": "«Jesu dåp» 70x90 cm olje på lerret. Dette motivet har jeg malt før og den originalen fikk nytt hjem med en gang! Så malte jeg en uten duen på som også fikk nytt hjem omtrent før det var tørt. Dette maleriet ble ferdig nå i sommer men ble til på en litt spesiell måte😅 Jeg hadde et bilde av et fyrtårn som jeg ikke syntes funket helt. Så jeg tok det med hjem og en dag fikk jeg ideen om å rett og slett male Jesus over fyrtårnet. Han ER jo vårt lys! Maleriet henger i galleriet og koster 23.000,-",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "本地平台:pakistan appoint new batting coach for the men s team": {
+      "key": "本地平台:pakistan appoint new batting coach for the men s team",
+      "name": "Pakistan appoint new batting coach for the men's team",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:bollywood actress tabu moves delhi high court seeking protection of personality rights": {
+      "key": "本地平台:bollywood actress tabu moves delhi high court seeking protection of personality rights",
+      "name": "Bollywood Actress Tabu Moves Delhi High Court Seeking Protection Of Personality Rights",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:thangamayil jewellery achieves 344 16 crore three day festival sales growing 119 55 yoy": {
+      "key": "本地平台:thangamayil jewellery achieves 344 16 crore three day festival sales growing 119 55 yoy",
+      "name": "Thangamayil Jewellery Achieves ₹344.16 Crore Three-Day Festival Sales, Growing 119.55% YoY",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:jogja sonic index upaya mengarsipkan musik elektronik dan eksperimental di yogyakarta": {
+      "key": "本地平台:jogja sonic index upaya mengarsipkan musik elektronik dan eksperimental di yogyakarta",
+      "name": "Jogja Sonic Index: Upaya Mengarsipkan Musik Elektronik dan Eksperimental di Yogyakarta",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "instagram:ಅ ಮ ಡದ ದ ಮಳ ಗ ಒ ದ ಸ ಪ ರ ತ ಇದ": {
+      "key": "instagram:ಅ ಮ ಡದ ದ ಮಳ ಗ ಒ ದ ಸ ಪ ರ ತ ಇದ",
+      "name": "ಅ ಮೋಡದಿಂದ ಮಳೆಗೆ ಒಂದು ಸ್ಪೂರ್ತಿ ಇದೆ... .. ... .... .....",
+      "firstSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "observedDates": [
+        "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
       ]
     }
   }
