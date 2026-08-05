@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04T10:59:57.443Z",
+  "updatedAt": "2026-08-05T10:17:53.740Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,16 +45,17 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
         "2026-08-03",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
-      "observationCount": 6,
+      "observationCount": 7,
       "sources": [
         "YouTube"
       ],
@@ -417,13 +418,14 @@
       "key": "youtube:children of blood and bone official trailer thuso mbedu damson idris amandla stenberg",
       "name": "Children of Blood and Bone | Official Trailer - Thuso Mbedu, Damson Idris, Amandla Stenberg",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-07-30",
         "2026-08-03",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "YouTube"
       ],
@@ -965,12 +967,13 @@
       "key": "wikimedia:одиссея",
       "name": "Одиссея",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-07-31",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "Wikimedia"
       ],
@@ -1014,15 +1017,16 @@
       "key": "wikimedia:piala presiden 2026",
       "name": "Piala Presiden 2026",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
         "2026-08-03",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "Wikimedia"
       ],
@@ -1069,11 +1073,12 @@
       "key": "google trends:clima",
       "name": "clima",
       "firstSeenAt": "2026-07-31T11:05:13.414Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-05"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Google Trends"
       ],
@@ -1085,16 +1090,18 @@
       "key": "google trends:tiempo",
       "name": "tiempo",
       "firstSeenAt": "2026-07-31T11:05:13.414Z",
-      "lastSeenAt": "2026-07-31T11:05:13.414Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-05"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Google Trends"
       ],
       "markets": [
-        "智利"
+        "智利",
+        "阿根廷"
       ]
     },
     "google trends:salto das orquídeas": {
@@ -1448,13 +1455,14 @@
       "key": "youtube:exploring my abandoned minecraft server",
       "name": "Exploring My Abandoned Minecraft Server",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "YouTube"
       ],
@@ -1490,13 +1498,14 @@
       "key": "youtube:the gaming market is starting to break",
       "name": "The Gaming Market is Starting to Break.",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-04T10:59:57.443Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
-        "2026-08-04"
+        "2026-08-04",
+        "2026-08-05"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "YouTube"
       ],
@@ -2112,6 +2121,275 @@
       "lastSeenAt": "2026-08-04T10:59:57.443Z",
       "observedDates": [
         "2026-08-04"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "youtube:babymonster moon performance video": {
+      "key": "youtube:babymonster moon performance video",
+      "name": "BABYMONSTER - 'MOON' PERFORMANCE VIDEO",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度尼西亚",
+        "沙特阿拉伯",
+        "印度尼西亚 / 沙特阿拉伯"
+      ]
+    },
+    "youtube:thudakkam official trailer vismaya mohanlal jude anthany joseph aashish joe antony": {
+      "key": "youtube:thudakkam official trailer vismaya mohanlal jude anthany joseph aashish joe antony",
+      "name": "Thudakkam - Official Trailer | Vismaya Mohanlal | Jude Anthany Joseph | Aashish Joe Antony",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度",
+        "沙特阿拉伯",
+        "阿联酋",
+        "印度 / 沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:the hood the world is his character reveal trailer marvel rivals": {
+      "key": "youtube:the hood the world is his character reveal trailer marvel rivals",
+      "name": "The Hood: The World is His | Character Reveal Trailer | Marvel Rivals",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "巴西",
+        "阿根廷",
+        "哥伦比亚",
+        "智利",
+        "秘鲁",
+        "俄罗斯",
+        "沙特阿拉伯",
+        "阿联酋",
+        "巴西 / 阿根廷 / 哥伦比亚 / 智利 / 秘鲁 / 俄罗斯 / 沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "google trends:consultar rui sisben ventanilla social": {
+      "key": "google trends:consultar rui sisben ventanilla social",
+      "name": "consultar rui sisben ventanilla social",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "哥伦比亚"
+      ]
+    },
+    "google trends:स न ल ग वस कर": {
+      "key": "google trends:स न ल ग वस कर",
+      "name": "सुनील गावस्कर",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:ac milan vs inter milan": {
+      "key": "google trends:ac milan vs inter milan",
+      "name": "ac milan vs inter milan",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "wikimedia:प रश त क श र": {
+      "key": "wikimedia:प रश त क श र",
+      "name": "प्रशांत किशोर",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "wikimedia:سارة خليفة": {
+      "key": "wikimedia:سارة خليفة",
+      "name": "سارة خليفة",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "中东"
+      ]
+    },
+    "instagram:artists relatable": {
+      "key": "instagram:artists relatable",
+      "name": "Artists relatable??",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:collar corto hecho a mano no se cuanto tiempo tardé pegando con hilo y aguja todas las mostacill": {
+      "key": "instagram:collar corto hecho a mano no se cuanto tiempo tardé pegando con hilo y aguja todas las mostacill",
+      "name": "Collar corto hecho a mano. No se cuanto tiempo tardé pegando con hilo y aguja todas las mostacillas pero disfruté haciéndolo. Es pieza única porque hay que tener muuuucha paciencia y no sé si volveré a hacer uno parecido. El tiempo lo dirá. Yo feliz con el resultado. He quitado el fondo de la foto con IA por si ya se estaban preguntando. Gracias por apreciar siempre lo que hago.",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:8 25 usd budgets check out my profile for more examples": {
+      "key": "instagram:8 25 usd budgets check out my profile for more examples",
+      "name": "8-25 USD budgets! Check out my profile for more examples!",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "本地平台:puneet kapoor profile": {
+      "key": "本地平台:puneet kapoor profile",
+      "name": "Puneet Kapoor Profile",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:ranbir kapoor s ramayana can nitesh tiwari s epic break bollywood s mythology curse after adipur": {
+      "key": "本地平台:ranbir kapoor s ramayana can nitesh tiwari s epic break bollywood s mythology curse after adipur",
+      "name": "Ranbir Kapoor’s Ramayana: Can Nitesh Tiwari’s epic break Bollywood’s mythology curse after Adipurush? - CNBC TV18",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:4th metümnyo festival football tournament undereway at sangphur": {
+      "key": "本地平台:4th metümnyo festival football tournament undereway at sangphur",
+      "name": "4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:guru mantap berinovasi aplikasi pembelajaran interaktif permudah siswa belajar seni musik di man": {
+      "key": "本地平台:guru mantap berinovasi aplikasi pembelajaran interaktif permudah siswa belajar seni musik di man",
+      "name": "Guru MANTAP Berinovasi! Aplikasi Pembelajaran Interaktif Permudah Siswa Belajar Seni Musik di Mana Saja",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "instagram:new pfp": {
+      "key": "instagram:new pfp",
+      "name": "new pfp😙",
+      "firstSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "observedDates": [
+        "2026-08-05"
       ],
       "observationCount": 1,
       "sources": [
