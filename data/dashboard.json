@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "mode": "真实数据更新",
-  "generatedAt": "2026-08-05T10:17:53.740Z",
+  "generatedAt": "2026-08-06T10:57:07.887Z",
   "cadence": "已接入外部热点源；每日北京时间早上 09:00 自动更新。大型节假日可提前 4–6 周加入观察。",
   "regions": [
     "全球",
@@ -27,12 +27,12 @@
     "Facebook"
   ],
   "summary": {
-    "rawTopics": 1080,
-    "effectiveHotspots": 300,
+    "rawTopics": 1062,
+    "effectiveHotspots": 296,
     "highPriorityAlerts": 15,
     "templateCandidates": 13,
     "rawDelta": 42,
-    "effectiveRate": "27.7%"
+    "effectiveRate": "27.8%"
   },
   "trendSeries": {
     "labels": [
@@ -50,32 +50,32 @@
       "22:00"
     ],
     "effective": [
-      71,
-      20,
-      98,
+      72,
       20,
       105,
-      44,
-      73,
-      111,
+      20,
+      110,
       42,
+      71,
+      116,
+      35,
       160,
-      80,
-      122
+      76,
+      123
     ],
     "template": [
+      20,
+      20,
+      62,
+      5,
+      88,
       21,
-      21,
-      59,
-      7,
-      84,
-      23,
-      61,
-      65,
-      29,
+      62,
+      67,
+      26,
       90,
-      37,
-      88
+      34,
+      90
     ]
   },
   "hotspots": [
@@ -88,7 +88,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "58.2M",
+      "heat": "58.7M",
       "trend": 77,
       "score": 98,
       "status": "爆发",
@@ -98,7 +98,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Avengers: Doomsday | Official Trailer | In Theaters December 18》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（南非、肯尼亚、加纳），播放量 57.6M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（南非、肯尼亚、加纳），播放量 58.1M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "irVNGjRFZGk",
         "channelTitle": "Marvel Entertainment",
@@ -128,7 +128,7 @@
       "source": [
         "YouTube"
       ],
-      "heat": "32.5M",
+      "heat": "34.5M",
       "trend": 74,
       "score": 98,
       "status": "爆发",
@@ -138,7 +138,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 南非 热门内容《Exploring My Abandoned Minecraft Server》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（南非），播放量 31.9M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（南非），播放量 33.8M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "PRp5Y543LN0",
         "channelTitle": "MrBeast Gaming",
@@ -197,45 +197,6 @@
     },
     {
       "id": 1003,
-      "name": "BABYMONSTER - 'MOON' P…",
-      "originalTitle": "BABYMONSTER - 'MOON' PERFORMANCE VIDEO",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚 / 沙特阿拉伯",
-      "source": [
-        "YouTube"
-      ],
-      "heat": "3.0M",
-      "trend": 75,
-      "score": 98,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 YouTube 印度尼西亚 热门内容《BABYMONSTER - 'MOON' PERFORMANCE VIDEO》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度尼西亚、沙特阿拉伯），播放量 2.8M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
-      "youtube": {
-        "videoId": "LYbHsAsj6i8",
-        "channelTitle": "BABYMONSTER",
-        "publishedAt": "2026-08-04T14:59:57Z",
-        "thumbnail": "https://i.ytimg.com/vi/LYbHsAsj6i8/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=LYbHsAsj6i8"
-      },
-      "markets": [
-        "印度尼西亚",
-        "沙特阿拉伯"
-      ],
-      "signals": [
-        {
-          "source": "YouTube",
-          "title": "BABYMONSTER - 'MOON' PERFORMANCE VIDEO",
-          "url": "https://www.youtube.com/watch?v=LYbHsAsj6i8"
-        }
-      ]
-    },
-    {
-      "id": 1004,
       "name": "The Gaming Market is S…",
       "originalTitle": "The Gaming Market is Starting to Break.",
       "region": "撒哈拉以南非洲",
@@ -243,9 +204,9 @@
       "source": [
         "YouTube"
       ],
-      "heat": "4.8M",
-      "trend": 60,
-      "score": 95,
+      "heat": "5.7M",
+      "trend": 73,
+      "score": 98,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
@@ -253,7 +214,7 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 YouTube 尼日利亚 热门内容《The Gaming Market is Starting to Break.》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（尼日利亚、加纳），播放量 5.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "reason": "来自 YouTube 热门榜（尼日利亚、加纳），播放量 5.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
         "videoId": "Eo5w2S-h5dI",
         "channelTitle": "Mrwhosetheboss",
@@ -274,31 +235,31 @@
       ]
     },
     {
-      "id": 1005,
-      "name": "Thudakkam - Official T…",
-      "originalTitle": "Thudakkam - Official Trailer | Vismaya Mohanlal | Jude Anthany Joseph | Aashish Joe Antony",
+      "id": 1004,
+      "name": "Awarapan 2 : Trailer: …",
+      "originalTitle": "Awarapan 2 : Trailer: Shivam’s Rage Vishesh | Emraan | Disha | Shabana | Puran | 14th Aug",
       "region": "印度",
       "country": "印度 / 沙特阿拉伯 / 阿联酋",
       "source": [
         "YouTube"
       ],
-      "heat": "1.6M",
-      "trend": 67,
-      "score": 98,
+      "heat": "1.2M",
+      "trend": 57,
+      "score": 95,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 印度 热门内容《Thudakkam - Official Trailer | Vismaya Mohanlal | Jude Anthany Joseph | Aashish Joe Antony》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 1.5M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 印度 热门内容《Awarapan 2 : Trailer: Shivam’s Rage  Vishesh | Emraan | Disha | Shabana | Puran | 14th Aug》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 热门榜（印度、沙特阿拉伯、阿联酋），播放量 1.3M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "ivZ2c69D69E",
-        "channelTitle": "Aashirvad Cinemas",
-        "publishedAt": "2026-08-03T13:38:33Z",
-        "thumbnail": "https://i.ytimg.com/vi/ivZ2c69D69E/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=ivZ2c69D69E"
+        "videoId": "1ya87ENCRj0",
+        "channelTitle": "Vishesh Films",
+        "publishedAt": "2026-08-06T05:48:19Z",
+        "thumbnail": "https://i.ytimg.com/vi/1ya87ENCRj0/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=1ya87ENCRj0"
       },
       "markets": [
         "印度",
@@ -308,22 +269,22 @@
       "signals": [
         {
           "source": "YouTube",
-          "title": "Thudakkam - Official Trailer | Vismaya Mohanlal | Jude Anthany Joseph | Aashish Joe Antony",
-          "url": "https://www.youtube.com/watch?v=ivZ2c69D69E"
+          "title": "Awarapan 2 : Trailer: Shivam’s Rage Vishesh | Emraan | Disha | Shabana | Puran | 14th Aug",
+          "url": "https://www.youtube.com/watch?v=1ya87ENCRj0"
         }
       ]
     },
     {
-      "id": 1006,
-      "name": "The Hood: The World is…",
-      "originalTitle": "The Hood: The World is His | Character Reveal Trailer | Marvel Rivals",
-      "region": "南美洲",
-      "country": "巴西 / 阿根廷 / 哥伦比亚 / 智利 / 秘鲁 / 俄罗斯 / 沙特阿拉伯 / 阿联酋",
+      "id": 1005,
+      "name": "JUMANJI: OPEN WORLD - …",
+      "originalTitle": "JUMANJI: OPEN WORLD - Official Trailer",
+      "region": "撒哈拉以南非洲",
+      "country": "肯尼亚",
       "source": [
         "YouTube"
       ],
-      "heat": "1.4M",
-      "trend": 62,
+      "heat": "8.4M",
+      "trend": 67,
       "score": 98,
       "status": "爆发",
       "type": "realtime",
@@ -331,44 +292,75 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 YouTube 巴西 热门内容《The Hood: The World is His | Character Reveal Trailer | Marvel Rivals》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
-      "reason": "来自 YouTube 热门榜（巴西、阿根廷、哥伦比亚、智利、秘鲁、俄罗斯、沙特阿拉伯、阿联酋），播放量 1.4M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "prompt": "基于 YouTube 肯尼亚 热门内容《JUMANJI: OPEN WORLD - Official Trailer (4K)》提取视觉方向：影视 / 角色 / 海报感。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 热门榜（肯尼亚），播放量 8.1M。视觉判断：影视 / 角色 / 海报感；适合先进入候选池，由设计师二次判断是否转主题模板。",
       "youtube": {
-        "videoId": "YMweqIzyB7s",
-        "channelTitle": "Marvel Rivals",
-        "publishedAt": "2026-08-04T16:00:00Z",
-        "thumbnail": "https://i.ytimg.com/vi/YMweqIzyB7s/hqdefault.jpg",
-        "url": "https://www.youtube.com/watch?v=YMweqIzyB7s"
+        "videoId": "zhApeaHMvfs",
+        "channelTitle": "Sony Pictures Entertainment",
+        "publishedAt": "2026-07-29T00:59:43Z",
+        "thumbnail": "https://i.ytimg.com/vi/zhApeaHMvfs/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
       },
       "markets": [
-        "巴西",
-        "阿根廷",
-        "哥伦比亚",
-        "智利",
-        "秘鲁",
-        "俄罗斯",
-        "沙特阿拉伯",
-        "阿联酋"
+        "肯尼亚"
       ],
       "signals": [
         {
           "source": "YouTube",
-          "title": "The Hood: The World is His | Character Reveal Trailer | Marvel Rivals",
-          "url": "https://www.youtube.com/watch?v=YMweqIzyB7s"
+          "title": "JUMANJI: OPEN WORLD - Official Trailer",
+          "url": "https://www.youtube.com/watch?v=zhApeaHMvfs"
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "Moonlight | Yo Yo Hone…",
+      "originalTitle": "Moonlight | Yo Yo Honey Singh feat. Priceless | Full Video",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "YouTube"
+      ],
+      "heat": "468K",
+      "trend": 61,
+      "score": 98,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 YouTube 印度 热门内容《Moonlight | Yo Yo Honey Singh feat. Priceless | Full Video》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留当地文化情绪和色彩符号，画面高级、干净、可商业化，顶部留出时钟区域，无文字、无品牌标识、避免直接使用真人明星或版权角色。",
+      "reason": "来自 YouTube 热门榜（印度），播放量 473K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+      "youtube": {
+        "videoId": "JF42RpxAEko",
+        "channelTitle": "Yo Yo Honey Singh",
+        "publishedAt": "2026-08-06T05:30:07Z",
+        "thumbnail": "https://i.ytimg.com/vi/JF42RpxAEko/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=JF42RpxAEko"
+      },
+      "markets": [
+        "印度"
+      ],
+      "signals": [
+        {
+          "source": "YouTube",
+          "title": "Moonlight | Yo Yo Honey Singh feat. Priceless | Full Video",
+          "url": "https://www.youtube.com/watch?v=JF42RpxAEko"
         }
       ]
     },
     {
       "id": 1007,
-      "name": "clima",
-      "originalTitle": "clima",
-      "region": "南美洲",
-      "country": "阿根廷",
+      "name": "दिल्ली",
+      "originalTitle": "दिल्ली",
+      "region": "印度",
+      "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 68,
+      "trend": 60,
       "score": 93,
       "status": "爆发",
       "type": "realtime",
@@ -376,113 +368,113 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「clima」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 100000+。关联新闻源：Página|12 / Clarin.com；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「दिल्ली」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 5000+。关联新闻源：AajTak / Hindustan；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "clima",
-        "traffic": 100000,
-        "publishedAt": "Wed, 5 Aug 2026 02:40:00 -0700",
-        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShUihAM4oJsug6JnvD1NpqntrgLh-FFFR8TqbibMc2sq835dmwX3v3h3bdI4o",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=clima",
-        "newsUrl": "https://www.pagina12.com.ar/2026/08/05/clima-en-buenos-aires-el-pronostico-del-tiempo-para-este-miercoles-5-de-mayo/",
-        "newsTitle": "Clima en Buenos Aires: el pronóstico del tiempo para este miércoles 5 de mayo",
-        "newsSource": "Página|12"
+        "topic": "दिल्ली",
+        "traffic": 5000,
+        "publishedAt": "Thu, 6 Aug 2026 03:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxhJRqqQiAs7e8q2cOFVpvy1ntOhoUz_I48IodwZxVSd_yz_bdB3sMiM-XCro",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80",
+        "newsUrl": "https://www.aajtak.in/india/delhi/story/delhi-ncr-monsoon-rainfall-traffic-jam-banyan-tree-fall-ntcpvp-rpti-2616404-2026-08-06",
+        "newsTitle": "दिल्ली में झमाझम बारिश से गिरा विशालकाय बरगद का पेड़, तीन गाड़ियां दबीं, VIDEO",
+        "newsSource": "AajTak"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "clima",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=clima"
+          "title": "दिल्ली",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80"
         }
       ]
     },
     {
       "id": 1008,
-      "name": "consultar rui sisben v…",
-      "originalTitle": "consultar rui sisben ventanilla social",
-      "region": "南美洲",
-      "country": "哥伦比亚",
+      "name": "ржд",
+      "originalTitle": "ржд",
+      "region": "俄罗斯（东欧）",
+      "country": "俄罗斯",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 69,
-      "score": 97,
+      "trend": 68,
+      "score": 96,
       "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 哥伦比亚 搜索趋势「consultar rui sisben ventanilla social」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：Departamento Nacional de Planeación / Bloomberg Línea；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 俄罗斯 搜索趋势「ржд」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 俄罗斯 搜索趋势，搜索热度约 5000+。关联新闻源：Peterburg2.ru / 110km.ru；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "consultar rui sisben ventanilla social",
+        "topic": "ржд",
         "traffic": 5000,
-        "publishedAt": "Tue, 4 Aug 2026 22:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfg1EwYWo4MksOoo6OyBVC9W0wl9ExKVIWV_Osx6Lmx1XZYyZ2GhTn7-WtIz0",
-        "url": "https://trends.google.com/trends/explore?geo=CO&q=consultar%20rui%20sisben%20ventanilla%20social",
-        "newsUrl": "https://www.dnp.gov.co/Prensa_/Noticias/Paginas/servicio-interminente-alta-demanta-rui.aspx",
-        "newsTitle": "Información importante sobre la consulta del Registro Universal de Ingresos (RUI)",
-        "newsSource": "Departamento Nacional de Planeación"
+        "publishedAt": "Thu, 6 Aug 2026 03:20:00 -0700",
+        "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSODHJyyvAMol-0Ak4rVh1CgZI-pjbJ1o_0Ve_0LiehySmHKb98rJx01aSQ-oc",
+        "url": "https://trends.google.com/trends/explore?geo=RU&q=%D1%80%D0%B6%D0%B4",
+        "newsUrl": "https://peterburg2.ru/news/rzhd-pokazali-novyy-plackart-bolshe-prostranstva-i-nikakih-verhnih-polok-247410.html",
+        "newsTitle": "РЖД показали новый плацкарт: больше пространства и никаких верхних полок",
+        "newsSource": "Peterburg2.ru"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "consultar rui sisben ventanilla social",
-          "url": "https://trends.google.com/trends/explore?geo=CO&q=consultar%20rui%20sisben%20ventanilla%20social"
+          "title": "ржд",
+          "url": "https://trends.google.com/trends/explore?geo=RU&q=%D1%80%D0%B6%D0%B4"
         }
       ]
     },
     {
       "id": 1009,
-      "name": "सुनील गावस्कर",
-      "originalTitle": "सुनील गावस्कर",
+      "name": "inter miami vs atletic…",
+      "originalTitle": "inter miami vs atletico san luis standings",
+      "region": "撒哈拉以南非洲",
+      "country": "加纳",
+      "source": [
+        "Google Trends"
+      ],
+      "heat": "180K",
+      "trend": 54,
+      "score": 89,
+      "status": "爆发",
+      "type": "realtime",
+      "selected": true,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 加纳 搜索趋势「inter miami vs atletico san luis standings」和相关新闻视觉线索，提取可转模板方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 加纳 搜索趋势，搜索热度约 5000+。关联新闻源：Sofascore / Goal.com；适合判断地区搜索兴趣和热点持续性。",
+      "trends": {
+        "topic": "inter miami vs atletico san luis standings",
+        "traffic": 5000,
+        "publishedAt": "Wed, 5 Aug 2026 20:20:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgJXtBEP0xu9IFcKmLTAZtLBSOCxxx6R6TqjUBoohNpPHY4POpTgmj-uiWgpE",
+        "url": "https://trends.google.com/trends/explore?geo=GH&q=inter%20miami%20vs%20atletico%20san%20luis%20standings",
+        "newsUrl": "https://www.sofascore.com/news/lionel-messi-delivers-perfect-10-as-inter-miami-top-atletico-san-luis-in-the-leagues-cup",
+        "newsTitle": "Lionel Messi delivers perfect 10 as Inter Miami top Atlético San Luis in the Leagues Cup",
+        "newsSource": "Sofascore"
+      },
+      "signals": [
+        {
+          "source": "Google Trends",
+          "title": "inter miami vs atletico san luis standings",
+          "url": "https://trends.google.com/trends/explore?geo=GH&q=inter%20miami%20vs%20atletico%20san%20luis%20standings"
+        }
+      ]
+    },
+    {
+      "id": 1010,
+      "name": "షకీబ్ అల్ హసన్",
+      "originalTitle": "షకీబ్ అల్ హసన్",
       "region": "印度",
       "country": "印度",
       "source": [
         "Google Trends"
       ],
       "heat": "180K",
-      "trend": 54,
-      "score": 90,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": true,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「सुनील गावस्कर」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 2000+。关联新闻源：AajTak / India TV Hindi；适合判断地区搜索兴趣和热点持续性。",
-      "trends": {
-        "topic": "सुनील गावस्कर",
-        "traffic": 2000,
-        "publishedAt": "Wed, 5 Aug 2026 03:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkMaFOF_qP-i2uxTb4ocSajeCqYUpzfGiFbFDaAP8yF5FoPQdNW1iILq7lGA",
-        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%80%E0%A4%B2%20%E0%A4%97%E0%A4%BE%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%B0",
-        "newsUrl": "https://www.aajtak.in/short-videos/video/ajinkya-rahane-retirement-from-international-cricket-bcci-mumbai-test-ipl-emotional-post-mmtc-2611846-2026-07-30",
-        "newsTitle": "अजिंक्य रहाणे ने क्रिकेट के सभी फॉर्मेट को कहा अलविदा",
-        "newsSource": "AajTak"
-      },
-      "signals": [
-        {
-          "source": "Google Trends",
-          "title": "सुनील गावस्कर",
-          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%80%E0%A4%B2%20%E0%A4%97%E0%A4%BE%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%B0"
-        }
-      ]
-    },
-    {
-      "id": 1010,
-      "name": "tiempo",
-      "originalTitle": "tiempo",
-      "region": "南美洲",
-      "country": "阿根廷",
-      "source": [
-        "Google Trends"
-      ],
-      "heat": "180K",
-      "trend": 69,
+      "trend": 65,
       "score": 95,
       "status": "爆发",
       "type": "realtime",
@@ -490,30 +482,30 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 阿根廷 搜索趋势「tiempo」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 20000+。关联新闻源：La Nación / La Nueva Provincia；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度 搜索趋势「షకీబ్ అల్ హసన్」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度 搜索趋势，搜索热度约 500+。关联新闻源：Eenadu / BBC；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "tiempo",
-        "traffic": 20000,
-        "publishedAt": "Wed, 5 Aug 2026 02:10:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZPKNlxi0MWXWcX6Ymb6KWXeRK55_5mJ2XVxY6GpHOwydyiApRRiokr5NqWw",
-        "url": "https://trends.google.com/trends/explore?geo=AR&q=tiempo",
-        "newsUrl": "https://www.lanacion.com.ar/clima/buenos-aires/bahia-blanca/clima-en-bahia-blanca-hoy-cual-es-el-pronostico-del-tiempo-para-el-5-de-agosto-de-2026-nid04082026/",
-        "newsTitle": "Clima en Bahía Blanca hoy: cuál es el pronóstico del tiempo para el 5 de agosto de 2026",
-        "newsSource": "La Nación"
+        "topic": "షకీబ్ అల్ హసన్",
+        "traffic": 500,
+        "publishedAt": "Thu, 6 Aug 2026 03:30:00 -0700",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37TxsTs1q2QSycuvE1JHDF-37himbdRoN8jMUAxUOU5rkTafbDxlqa1L09gk",
+        "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B0%B7%E0%B0%95%E0%B1%80%E0%B0%AC%E0%B1%8D%20%E0%B0%85%E0%B0%B2%E0%B1%8D%20%E0%B0%B9%E0%B0%B8%E0%B0%A8%E0%B1%8D",
+        "newsUrl": "https://www.eenadu.net/telugu-news/world/shakib-house-set-ablaze-hours-after-he-joined-sheikh-hasina-presser/0801/126139647",
+        "newsTitle": "Shakib Al Hasan: బంగ్లాదేశ్‌ క్రికెటర్ షకీబ్ ఇంటిపై పెట్రోల్ బాంబులతో దాడి",
+        "newsSource": "Eenadu"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "tiempo",
-          "url": "https://trends.google.com/trends/explore?geo=AR&q=tiempo"
+          "title": "షకీబ్ అల్ హసన్",
+          "url": "https://trends.google.com/trends/explore?geo=IN&q=%E0%B0%B7%E0%B0%95%E0%B1%80%E0%B0%AC%E0%B1%8D%20%E0%B0%85%E0%B0%B2%E0%B1%8D%20%E0%B0%B9%E0%B0%B8%E0%B0%A8%E0%B1%8D"
         }
       ]
     },
     {
       "id": 1011,
-      "name": "ac milan vs inter mila…",
-      "originalTitle": "ac milan vs inter milan",
+      "name": "kementerian sosial rep…",
+      "originalTitle": "kementerian sosial republik indonesia",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -528,23 +520,23 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「ac milan vs inter milan」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 100+。关联新闻源：detiksport / CNN Indonesia；适合判断地区搜索兴趣和热点持续性。",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「kementerian sosial republik indonesia」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 Google Trends 印度尼西亚 搜索趋势，搜索热度约 100+。关联新闻源：Pemerintah Kabupaten Batang / detikNews；适合判断地区搜索兴趣和热点持续性。",
       "trends": {
-        "topic": "ac milan vs inter milan",
+        "topic": "kementerian sosial republik indonesia",
         "traffic": 100,
-        "publishedAt": "Wed, 5 Aug 2026 03:00:00 -0700",
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-P_lmywumUaEBf9UNgTYz5Z5TwybqJMvkY9Ck8QgHB1QxR_kR2dRihcJofRA",
-        "url": "https://trends.google.com/trends/explore?geo=ID&q=ac%20milan%20vs%20inter%20milan",
-        "newsUrl": "https://sport.detik.com/sepakbola/liga-italia/d-8604711/amorim-jelang-milan-vs-inter-juara-pramusim-nggak-penting",
-        "newsTitle": "Amorim Jelang Milan Vs Inter: Juara Pramusim Nggak Penting",
-        "newsSource": "detiksport"
+        "publishedAt": "Thu, 6 Aug 2026 03:40:00 -0700",
+        "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3COM7IWOpcyGgrpoZJs25oAyl-MREX0EKjC9llD1bRZBlkw0eX7SbBkIcNoI",
+        "url": "https://trends.google.com/trends/explore?geo=ID&q=kementerian%20sosial%20republik%20indonesia",
+        "newsUrl": "https://berita.batangkab.go.id/detail/15710/semangat-mengabdi-di-tanah-sendiri-wamensos-buka-peluang-putra-daerah-mengajar-di-sekolah-rakyat",
+        "newsTitle": "Semangat Mengabdi di Tanah Sendiri, WamenSos Buka Peluang Putra Daerah Mengajar di Sekolah Rakyat",
+        "newsSource": "Pemerintah Kabupaten Batang"
       },
       "signals": [
         {
           "source": "Google Trends",
-          "title": "ac milan vs inter milan",
-          "url": "https://trends.google.com/trends/explore?geo=ID&q=ac%20milan%20vs%20inter%20milan"
+          "title": "kementerian sosial republik indonesia",
+          "url": "https://trends.google.com/trends/explore?geo=ID&q=kementerian%20sosial%20republik%20indonesia"
         }
       ]
     },
@@ -567,14 +559,14 @@
       "previewTitle": "",
       "previewMeta": "",
       "prompt": "基于 Google Trends 俄罗斯 搜索趋势「Одиссея (фильм, 2026)」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 俄语 Wikipedia 前一日高访问条目，浏览量约 35K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "reason": "来自 俄语 Wikipedia 前一日高访问条目，浏览量约 32K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
       "wikimedia": {
         "project": "ru.wikipedia.org",
         "language": "俄语",
         "article": "Одиссея_(фильм,_2026)",
-        "views": 34673,
+        "views": 32305,
         "rank": 3,
-        "date": "2026-08-04",
+        "date": "2026-08-05",
         "url": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B4%D0%B8%D1%81%D1%81%D0%B5%D1%8F_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%2C_2026)"
       },
       "signals": [
@@ -587,82 +579,8 @@
     },
     {
       "id": 1013,
-      "name": "Piala Presiden 2026",
-      "originalTitle": "Piala Presiden 2026",
-      "region": "印度尼西亚",
-      "country": "印度尼西亚",
-      "source": [
-        "Wikimedia"
-      ],
-      "heat": "180K",
-      "trend": 58,
-      "score": 89,
-      "status": "爆发",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「Piala Presiden 2026」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 印度尼西亚语 Wikipedia 前一日高访问条目，浏览量约 18K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
-      "wikimedia": {
-        "project": "id.wikipedia.org",
-        "language": "印度尼西亚语",
-        "article": "Piala_Presiden_2026",
-        "views": 17628,
-        "rank": 4,
-        "date": "2026-08-04",
-        "url": "https://id.wikipedia.org/wiki/Piala_Presiden_2026"
-      },
-      "signals": [
-        {
-          "source": "Wikimedia",
-          "title": "Piala Presiden 2026",
-          "url": "https://id.wikipedia.org/wiki/Piala_Presiden_2026"
-        }
-      ]
-    },
-    {
-      "id": 1014,
-      "name": "प्रशांत किशोर",
-      "originalTitle": "प्रशांत किशोर",
-      "region": "印度",
-      "country": "印度",
-      "source": [
-        "Wikimedia"
-      ],
-      "heat": "180K",
-      "trend": 48,
-      "score": 83,
-      "status": "上升",
-      "type": "realtime",
-      "selected": false,
-      "preview": "",
-      "previewTitle": "",
-      "previewMeta": "",
-      "prompt": "基于 Google Trends 印度 搜索趋势「प्रशांत किशोर」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 印地语 Wikipedia 前一日高访问条目，浏览量约 13K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
-      "wikimedia": {
-        "project": "hi.wikipedia.org",
-        "language": "印地语",
-        "article": "प्रशांत_किशोर",
-        "views": 12810,
-        "rank": 1,
-        "date": "2026-08-04",
-        "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4_%E0%A4%95%E0%A4%BF%E0%A4%B6%E0%A5%8B%E0%A4%B0"
-      },
-      "signals": [
-        {
-          "source": "Wikimedia",
-          "title": "प्रशांत किशोर",
-          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4_%E0%A4%95%E0%A4%BF%E0%A4%B6%E0%A5%8B%E0%A4%B0"
-        }
-      ]
-    },
-    {
-      "id": 1015,
-      "name": "سارة خليفة",
-      "originalTitle": "سارة خليفة",
+      "name": "طرابزون سبور",
+      "originalTitle": "طرابزون سبور",
       "region": "中东",
       "country": "中东",
       "source": [
@@ -677,63 +595,137 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Google Trends 中东 搜索趋势「سارة خليفة」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
-      "reason": "来自 阿拉伯语 Wikipedia 前一日高访问条目，浏览量约 8K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "prompt": "基于 Google Trends 中东 搜索趋势「طرابزون سبور」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 阿拉伯语 Wikipedia 前一日高访问条目，浏览量约 21K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
       "wikimedia": {
         "project": "ar.wikipedia.org",
         "language": "阿拉伯语",
-        "article": "سارة_خليفة",
-        "views": 8219,
-        "rank": 4,
-        "date": "2026-08-04",
-        "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B1%D8%A9_%D8%AE%D9%84%D9%8A%D9%81%D8%A9"
+        "article": "طرابزون_سبور",
+        "views": 21200,
+        "rank": 3,
+        "date": "2026-08-05",
+        "url": "https://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D8%A7%D8%A8%D8%B2%D9%88%D9%86_%D8%B3%D8%A8%D9%88%D8%B1"
       },
       "signals": [
         {
           "source": "Wikimedia",
-          "title": "سارة خليفة",
-          "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B1%D8%A9_%D8%AE%D9%84%D9%8A%D9%81%D8%A9"
+          "title": "طرابزون سبور",
+          "url": "https://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D8%A7%D8%A8%D8%B2%D9%88%D9%86_%D8%B3%D8%A8%D9%88%D8%B1"
         }
       ]
     },
     {
-      "id": 1016,
-      "name": "Artists relatable??…",
-      "originalTitle": "Artists relatable??",
+      "id": 1014,
+      "name": "प्रदीप रावत",
+      "originalTitle": "प्रदीप रावत",
+      "region": "印度",
+      "country": "印度",
+      "source": [
+        "Wikimedia"
+      ],
+      "heat": "180K",
+      "trend": 48,
+      "score": 83,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度 搜索趋势「प्रदीप रावत」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 印地语 Wikipedia 前一日高访问条目，浏览量约 13K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "wikimedia": {
+        "project": "hi.wikipedia.org",
+        "language": "印地语",
+        "article": "प्रदीप_रावत",
+        "views": 13259,
+        "rank": 1,
+        "date": "2026-08-05",
+        "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A5%80%E0%A4%AA_%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A4"
+      },
+      "signals": [
+        {
+          "source": "Wikimedia",
+          "title": "प्रदीप रावत",
+          "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A5%80%E0%A4%AA_%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A4"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "Study of girl… …",
+      "originalTitle": "Study of girl…",
       "region": "全球",
       "country": "全球",
       "source": [
         "Instagram"
       ],
       "heat": "180K",
-      "trend": 46,
-      "score": 83,
-      "status": "上升",
+      "trend": 59,
+      "score": 89,
+      "status": "爆发",
       "type": "realtime",
       "selected": true,
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「Artists relatable??#fyp#artist#art#fyp#viral」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "prompt": "基于 Instagram 全球 热点内容「Study of girl… #drawing #portrait #art #lovedrawing #manxart」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
       "reason": "来自 Instagram Hashtag #art 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
         "hashtag": "art",
-        "mediaUrl": "https://scontent-sin6-3.cdninstagram.com/o1/v/t2/f2/m86/AQPdJA-fNRfdP8-NzEEXKEitkuVeDuWeqCPr51SK_xjJmVdd_kKsIcBDBVOyW3dgM4a1069g9vsgap5dyfC32w2UvEJrJFwZzjjEssQ.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-sin6-3.cdninstagram.com&_nc_ohc=6uAUstoGrFgQ7kNvwEyWAPY&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTUzNjIzMDg2NzcxNTc4MywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c65813337ca31c9d&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80ODQxMkMyOUE5MDRERDEwQUQ4QzUzMEQyMkMxNzhBOF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA2NDM0ODc3RTM0MDE2QkJGQzE1RUVFRTNBMzkwRkEwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaOm87ys8y6BRUCKAJDMywXQCghysCDEm8YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=dEEyE0cVgDWmXKn8ClBoJQ&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQFhfZaXbT5d9P6j2jMp41-ynnKr8ePi4Y8kNlBsbSXW5g&oe=6A7501E7",
-        "publishedAt": "2026-08-05T10:19:13+0000",
-        "url": "https://www.instagram.com/reel/Dbp5vSYtWyN/"
+        "mediaUrl": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/766074396_18108856862101270_8240754211208097645_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=7lV75pC4FpAQ7kNvwGs0Qcu&_nc_oc=AdoUn2KXRJlc23LWnM05bXt2luqPsWf2xzQFTnrDb4-H7T9v6sfQFGUnQipDVISbo6w&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=LXVUdAqH5PQgm-y_gBPhug&oh=00_AQFZnvuPlayEIl7fi-VKjw6doFLXDV7b4j3H5pspU55UwQ&oe=6A7A268F",
+        "publishedAt": "2026-08-06T10:58:23+0000",
+        "url": "https://www.instagram.com/p/DbsjWIWIGf7/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "Artists relatable??",
-          "url": "https://www.instagram.com/reel/Dbp5vSYtWyN/"
+          "title": "Study of girl…",
+          "url": "https://www.instagram.com/p/DbsjWIWIGf7/"
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "name": "Hong Kong",
+      "originalTitle": "Hong Kong",
+      "region": "印度尼西亚",
+      "country": "印度尼西亚",
+      "source": [
+        "Wikimedia"
+      ],
+      "heat": "180K",
+      "trend": 46,
+      "score": 82,
+      "status": "上升",
+      "type": "realtime",
+      "selected": false,
+      "preview": "",
+      "previewTitle": "",
+      "previewMeta": "",
+      "prompt": "基于 Google Trends 印度尼西亚 搜索趋势「Hong Kong」和相关新闻视觉线索，提取可转模板方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，表达当地正在讨论的热点情绪，画面高级、干净、可商业化，避免直接使用版权人物、新闻照片或平台 Logo，顶部留出时钟区域。",
+      "reason": "来自 印度尼西亚语 Wikipedia 前一日高访问条目，浏览量约 6K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
+      "wikimedia": {
+        "project": "id.wikipedia.org",
+        "language": "印度尼西亚语",
+        "article": "Hong_Kong",
+        "views": 5776,
+        "rank": 3,
+        "date": "2026-08-05",
+        "url": "https://id.wikipedia.org/wiki/Hong_Kong"
+      },
+      "signals": [
+        {
+          "source": "Wikimedia",
+          "title": "Hong Kong",
+          "url": "https://id.wikipedia.org/wiki/Hong_Kong"
         }
       ]
     },
     {
       "id": 1017,
-      "name": "Collar corto hecho a m…",
-      "originalTitle": "Collar corto hecho a mano. No se cuanto tiempo tardé pegando con hilo y aguja todas las mostacillas pero disfruté haciéndolo. Es pieza única porque hay que tener muuuucha paciencia y no sé si volveré a hacer uno parecido. El tiempo lo dirá. Yo feliz con el resultado. He quitado el fondo de la foto con IA por si ya se estaban preguntando. Gracias por apreciar siempre lo que hago.",
+      "name": "Miwi Byler but it’s Ha…",
+      "originalTitle": "Miwi Byler but it’s Haibane Renmei….",
       "region": "全球",
       "country": "全球",
       "source": [
@@ -748,26 +740,26 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「Collar corto hecho a mano. No se cuanto tiempo tardé pegando con hilo y aguja todas las mostacillas pero disfruté haciéndolo. Es pieza única porque hay que tener muuuucha paciencia y no sé si volveré a hacer uno parecido. El tiempo lo dirá. Yo feliz con el resultado. He quitado el fondo de la foto con IA por si ya se estaban preguntando. Gracias por apreciar siempre lo que hago. #colores #verano #joyeriaartesanal #art #tenerife」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "prompt": "基于 Instagram 全球 热点内容「Miwi Byler but it’s Haibane Renmei….#strangerthings #willbyers #digital #sketch #art」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
       "reason": "来自 Instagram Hashtag #art 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
         "hashtag": "art",
-        "mediaUrl": "https://scontent-sin11-2.cdninstagram.com/o1/v/t2/f2/m86/AQPBNl4jdNYNn_fGvw332UhWB94cMpvAv4nsDYX8B6jyJ_ZIb7wMVRfQeLFbm5QN7By2uUjc0kjcfKOoDwSJygGZAYgmA2GEUlp-NoA.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-sin11-2.cdninstagram.com&_nc_ohc=TsQ8ZESx7swQ7kNvwG-xV-m&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6Mjg5MjQ1NDAyNTM3OTkzMDIsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a14649b20c6139ed&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85OTQ0OTlCMzBCODFGOTQ5QjAwRkI3RTc0RDM5RTFBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzJGNDE5QTFENDhFMTMzMERCNEYwMjA4NEJDQzE1QkJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaMjvSx6q3hZhUCKAJDMywXQBQhysCDEm8YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=dEEyE0cVgDWmXKn8ClBoJQ&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQHDdCXL_IHwTkNXikQoJaUJ941TVoewyr6ojJiCvJsfpQ&oe=6A7502EE",
-        "publishedAt": "2026-08-05T10:19:09+0000",
-        "url": "https://www.instagram.com/reel/Dbp5hJpNXYF/"
+        "mediaUrl": "",
+        "publishedAt": "2026-08-06T10:58:22+0000",
+        "url": "https://www.instagram.com/reel/DbsjT3sIrua/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "Collar corto hecho a mano. No se cuanto tiempo tardé pegando con hilo y aguja todas las mostacillas pero disfruté haciéndolo. Es pieza única porque hay que tener muuuucha paciencia y no sé si volveré a hacer uno parecido. El tiempo lo dirá. Yo feliz con el resultado. He quitado el fondo de la foto con IA por si ya se estaban preguntando. Gracias por apreciar siempre lo que hago.",
-          "url": "https://www.instagram.com/reel/Dbp5hJpNXYF/"
+          "title": "Miwi Byler but it’s Haibane Renmei….",
+          "url": "https://www.instagram.com/reel/DbsjT3sIrua/"
         }
       ]
     },
     {
       "id": 1018,
-      "name": "8-25 USD budgets! Chec…",
-      "originalTitle": "8-25 USD budgets! Check out my profile for more examples!",
+      "name": "Desenho desenho …",
+      "originalTitle": "Desenho desenho",
       "region": "全球",
       "country": "全球",
       "source": [
@@ -782,26 +774,26 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「8-25 USD budgets! Check out my profile for more examples!\n\n#art #vgencomm」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "prompt": "基于 Instagram 全球 热点内容「Desenho desenho #desenho #art #culturabrasileira #fanart」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
       "reason": "来自 Instagram Hashtag #art 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
         "hashtag": "art",
-        "mediaUrl": "",
-        "publishedAt": "2026-08-05T10:19:07+0000",
-        "url": "https://www.instagram.com/reel/Dbp6DT_ydna/"
+        "mediaUrl": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/765277113_18137715361529561_4468814418717756253_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ILxWWLzXhXAQ7kNvwFVwtWX&_nc_oc=AdqvHGQ0qcKBvBemPRJ7OKuK5tTN692T5QEnoCHf3sOONTCSA5JVY4mKpPZc9hL7kaE&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=LXVUdAqH5PQgm-y_gBPhug&oh=00_AQECkPYZAtSyO0jy1LuJI9zhAtu8h4ZjT2aEzsMLfUsZCA&oe=6A7A4C1B",
+        "publishedAt": "2026-08-06T10:58:20+0000",
+        "url": "https://www.instagram.com/p/DbsjaLREUNq/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "8-25 USD budgets! Check out my profile for more examples!",
-          "url": "https://www.instagram.com/reel/Dbp6DT_ydna/"
+          "title": "Desenho desenho",
+          "url": "https://www.instagram.com/p/DbsjaLREUNq/"
         }
       ]
     },
     {
       "id": 1019,
-      "name": "Puneet Kapoor Profile",
-      "originalTitle": "Puneet Kapoor Profile",
+      "name": "INVITATION TO TENDER P…",
+      "originalTitle": "INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -816,28 +808,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「Cricinfo」热点《Puneet Kapoor Profile》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Cricinfo。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「ICC」热点《INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES》提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "cricket",
         "category": "核心话题",
-        "sourceName": "Cricinfo",
-        "title": "Puneet Kapoor Profile",
-        "publishedAt": "Wed, 05 Aug 2026 03:02:56 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wN0RnTXRMUTNnRUJ5VEpMY0w1ZFVpVy0yYTcwSUplaHU2SkpaWkJ2MVk3RzU0M2RfcWFWdldpOHVHVE5RTjhXUXk1LWs1d0hkaDVKdUxzWHlVaHJTVkFOYVFvQ1Nhdw?oc=5"
+        "sourceName": "ICC",
+        "title": "INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES",
+        "publishedAt": "Thu, 06 Aug 2026 07:10:38 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR3MxOWJMbjJQRXNJcDllUXdFd3hPQUJUSDdLTXNXVlJ2YnhPVlh5d2VCRVJzWkRNYl9BMHVUUTJlM2s3OGxPdnViQjU1R0tfS3JYaVRfVmhlbi1OQldveDdmaW05QzFtWUZzaVNBbGdYcGU0RkJrRGVEMWJUNG41NzlFcHU4b0lmSlcyYU9YeXI3ZVhQamJMZzZHOXNTTktjcjkxaUJBMDRrWEFfb25EUXQ1Z0tiZWtvU083amhlazdHdVVp?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Puneet Kapoor Profile",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wN0RnTXRMUTNnRUJ5VEpMY0w1ZFVpVy0yYTcwSUplaHU2SkpaWkJ2MVk3RzU0M2RfcWFWdldpOHVHVE5RTjhXUXk1LWs1d0hkaDVKdUxzWHlVaHJTVkFOYVFvQ1Nhdw?oc=5"
+          "title": "INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR3MxOWJMbjJQRXNJcDllUXdFd3hPQUJUSDdLTXNXVlJ2YnhPVlh5d2VCRVJzWkRNYl9BMHVUUTJlM2s3OGxPdnViQjU1R0tfS3JYaVRfVmhlbi1OQldveDdmaW05QzFtWUZzaVNBbGdYcGU0RkJrRGVEMWJUNG41NzlFcHU4b0lmSlcyYU9YeXI3ZVhQamJMZzZHOXNTTktjcjkxaUJBMDRrWEFfb25EUXQ1Z0tiZWtvU083amhlazdHdVVp?oc=5"
         }
       ]
     },
     {
       "id": 1020,
-      "name": "Ranbir Kapoor’s Ramaya…",
-      "originalTitle": "Ranbir Kapoor’s Ramayana: Can Nitesh Tiwari’s epic break Bollywood’s mythology curse after Adipurush? - CNBC TV18",
+      "name": "Inside The Jal Kamal M…",
+      "originalTitle": "Inside The Jal Kamal Massacre: The Bollywood Birthday Party That Ended In 3 Bodies",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -852,28 +844,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「LinkedIn」热点《Ranbir Kapoor’s Ramayana: Can Nitesh Tiwari’s epic break Bollywood’s mythology curse after Adipurush? - CNBC TV18》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：LinkedIn。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「NDTV」热点《Inside The Jal Kamal Massacre: The Bollywood Birthday Party That Ended In 3 Bodies》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NDTV。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "bollywood",
         "category": "垂类补充",
-        "sourceName": "LinkedIn",
-        "title": "Ranbir Kapoor’s Ramayana: Can Nitesh Tiwari’s epic break Bollywood’s mythology curse after Adipurush? - CNBC TV18",
-        "publishedAt": "Wed, 05 Aug 2026 06:29:20 GMT",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeEIzcWtaOE9WajJvVEg3UmxoWEoyNW9vRXprTVYxZWZ5WVBPbmVKVWpjRnBvLUlGMXZOa2ZwQnpFS0F4N1dLUVFadDVwLTRKX3JKVzJxak04U0JXdzZHRF9LM3NTc1VoUkV6U3NORm1RXzBVWDdkSFIycGRHX2ZrSzdmY1R0VTJRM1dkQ2tUVGpSUVZ3S1ZKYW8ybHBmaUNjUFo0cjR6cmE1NmNWMVJKMFl4SUljS1k?oc=5"
+        "sourceName": "NDTV",
+        "title": "Inside The Jal Kamal Massacre: The Bollywood Birthday Party That Ended In 3 Bodies",
+        "publishedAt": "Thu, 06 Aug 2026 04:09:09 GMT",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOXzEwRndOMC1fNkxLM3Q5cmdqN1NrZEZqblhjMTBuUlRKSTFUODlnV1NtbFpvYUVZdWw2cDk2WEViNFFaUnFPSFNramVSZnAyZWdEWXJCRnpaRDVaaWpySFU1ZUhDN2dscGhxRUgxVF9rb1dfcERwaExjaWRhN0VXd0RqZkZVbVQ3LW5jWFM2aVZHazNlV0lCT1BaWUJHSUREcWVxWDM0TFRMb1pOcXJNRjA3bkJnUFllM2pYWUVlMWUydmPSAcsBQVVfeXFMTVFJOUVfeWwzcElieWhaeFFxTnJWcEVFYS1FcjRyWmExU3FUWGtqTFNaZmp3NGNUSk1BbElqcjdCMGlTTEFuOUxabl96YnJ1SklWTzFBM1Q4d2ZNU2JjZEFoTUoxWkc1V0pYWEs4c3lhUzBiSGZJbjQ4dDRQVjk2VV9TazdBcHQzTWNyeXRDbGtIMG5ITWhCODdXa2xBR3l6SnhPeTRWSkxzNmVKVjRIQnp3R0FxSGMtX3g5cklPbmRjXzRLN3NvVl8zVFk?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Ranbir Kapoor’s Ramayana: Can Nitesh Tiwari’s epic break Bollywood’s mythology curse after Adipurush? - CNBC TV18",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeEIzcWtaOE9WajJvVEg3UmxoWEoyNW9vRXprTVYxZWZ5WVBPbmVKVWpjRnBvLUlGMXZOa2ZwQnpFS0F4N1dLUVFadDVwLTRKX3JKVzJxak04U0JXdzZHRF9LM3NTc1VoUkV6U3NORm1RXzBVWDdkSFIycGRHX2ZrSzdmY1R0VTJRM1dkQ2tUVGpSUVZ3S1ZKYW8ybHBmaUNjUFo0cjR6cmE1NmNWMVJKMFl4SUljS1k?oc=5"
+          "title": "Inside The Jal Kamal Massacre: The Bollywood Birthday Party That Ended In 3 Bodies",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOXzEwRndOMC1fNkxLM3Q5cmdqN1NrZEZqblhjMTBuUlRKSTFUODlnV1NtbFpvYUVZdWw2cDk2WEViNFFaUnFPSFNramVSZnAyZWdEWXJCRnpaRDVaaWpySFU1ZUhDN2dscGhxRUgxVF9rb1dfcERwaExjaWRhN0VXd0RqZkZVbVQ3LW5jWFM2aVZHazNlV0lCT1BaWUJHSUREcWVxWDM0TFRMb1pOcXJNRjA3bkJnUFllM2pYWUVlMWUydmPSAcsBQVVfeXFMTVFJOUVfeWwzcElieWhaeFFxTnJWcEVFYS1FcjRyWmExU3FUWGtqTFNaZmp3NGNUSk1BbElqcjdCMGlTTEFuOUxabl96YnJ1SklWTzFBM1Q4d2ZNU2JjZEFoTUoxWkc1V0pYWEs4c3lhUzBiSGZJbjQ4dDRQVjk2VV9TazdBcHQzTWNyeXRDbGtIMG5ITWhCODdXa2xBR3l6SnhPeTRWSkxzNmVKVjRIQnp3R0FxSGMtX3g5cklPbmRjXzRLN3NvVl8zVFk?oc=5"
         }
       ]
     },
     {
       "id": 1021,
-      "name": "4th METÜMNYO FESTIVAL …",
-      "originalTitle": "4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR",
+      "name": "Deepak Singh's Film Ch…",
+      "originalTitle": "Deepak Singh's Film Chhath Selected for Indian Film Festival of Melbourne 2026!",
       "region": "印度",
       "country": "印度",
       "source": [
@@ -888,28 +880,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度 本地媒体「DIPR Nagaland」热点《4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：DIPR Nagaland。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度 本地媒体「ANI News」热点《Deepak Singh's Film Chhath Selected for Indian Film Festival of Melbourne 2026!》提取视觉方向：音乐 / 舞台 / 人物。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：ANI News。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "festival",
         "category": "垂类补充",
-        "sourceName": "DIPR Nagaland",
-        "title": "4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR",
-        "publishedAt": "Wed, 05 Aug 2026 05:08:05 GMT",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNDQ2SU01bjBoeThmVzdMY0lnUFdDd3BRRl81WEF6VEthN1lzSnR2bVhPbUU2MkZQN2JfTkQwYm5qN2tVa3ZyMnJYd0JaOGN0NW52amZTQlpyZWhPQk5oaFhreElNZ1d3clhSRWdkSDhucHVsUm9Vc3J5MnRLeW1fU00tSV8xZEdPSVJmc2lxdl92V1o2dVBR?oc=5"
+        "sourceName": "ANI News",
+        "title": "Deepak Singh's Film Chhath Selected for Indian Film Festival of Melbourne 2026!",
+        "publishedAt": "Thu, 06 Aug 2026 08:44:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVDYwN3VIdWJHcU5BNVZvblV4eVBVTkg1MEJxSWdXQ2NyRDgyMkhOTXBjWV9lU3JPTGJMOFBlSGpoUXdKbnNkRVE4Znh2OVlsaDRoWU5ZdW03X0JCZHdMdTZzY1pXSkpGZmJQbzdkd0FSdHQyNjlDVVJ3WU5FOEx1M2U0VVltNERybmxwd1NqUTRpTzkzS1FYWXdyOUlKcENSUi1BN0hwbmlic2NWUV9NSFFEdVBtTVBHZVd6amdUT2NuZkhrQUQw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNDQ2SU01bjBoeThmVzdMY0lnUFdDd3BRRl81WEF6VEthN1lzSnR2bVhPbUU2MkZQN2JfTkQwYm5qN2tVa3ZyMnJYd0JaOGN0NW52amZTQlpyZWhPQk5oaFhreElNZ1d3clhSRWdkSDhucHVsUm9Vc3J5MnRLeW1fU00tSV8xZEdPSVJmc2lxdl92V1o2dVBR?oc=5"
+          "title": "Deepak Singh's Film Chhath Selected for Indian Film Festival of Melbourne 2026!",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVDYwN3VIdWJHcU5BNVZvblV4eVBVTkg1MEJxSWdXQ2NyRDgyMkhOTXBjWV9lU3JPTGJMOFBlSGpoUXdKbnNkRVE4Znh2OVlsaDRoWU5ZdW03X0JCZHdMdTZzY1pXSkpGZmJQbzdkd0FSdHQyNjlDVVJ3WU5FOEx1M2U0VVltNERybmxwd1NqUTRpTzkzS1FYWXdyOUlKcENSUi1BN0hwbmlic2NWUV9NSFFEdVBtTVBHZVd6amdUT2NuZkhrQUQw?oc=5"
         }
       ]
     },
     {
       "id": 1022,
-      "name": "Guru MANTAP Berinovasi…",
-      "originalTitle": "Guru MANTAP Berinovasi! Aplikasi Pembelajaran Interaktif Permudah Siswa Belajar Seni Musik di Mana Saja",
+      "name": "Setelah Saling Cibir, …",
+      "originalTitle": "Setelah Saling Cibir, Mau Apa Lagi untuk Industri Musik?",
       "region": "印度尼西亚",
       "country": "印度尼西亚",
       "source": [
@@ -924,28 +916,28 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 印度尼西亚 本地媒体「Kementerian Agama」热点《Guru MANTAP Berinovasi! Aplikasi Pembelajaran Interaktif Permudah Siswa Belajar Seni Musik di Mana Saja》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
-      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Kementerian Agama。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+      "prompt": "基于 印度尼西亚 本地媒体「Pophariini」热点《Setelah Saling Cibir, Mau Apa Lagi untuk Industri Musik?》提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，用抽象符号和地区色彩表达热点情绪，不直接使用新闻照片、人物肖像或品牌标识，画面高级、干净、可商业化。",
+      "reason": "来自 印度尼西亚 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：Pophariini。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
       "local": {
         "topic": "musik",
         "category": "核心话题",
-        "sourceName": "Kementerian Agama",
-        "title": "Guru MANTAP Berinovasi! Aplikasi Pembelajaran Interaktif Permudah Siswa Belajar Seni Musik di Mana Saja",
-        "publishedAt": "Wed, 05 Aug 2026 07:14:32 GMT",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMXZnY25NVC11eHgyYlE4WWZ5RFRFbDM2N0t6bG5FSmNKczFTV0piRy1TeWlHR3VpSzlfVXFiWExUOHlYdmpvSkh4dHh3V0dTMWJXTlNXN0xEdUxrZ2Zxc1FqSkNSRmtxNGFZVTFUbGVaODdUUFJCQlIwY3VTSTJWZ0hyNjFjSFpZcTVLc2FPZ1F3RjlRVnV0ZFRVY05INlB3OVQ1RGhVUXNOc3phTEFWZzZLT19Qa1R5Z01ON0JqNkJZcWUyZWxQVS1oY19NQk9yZWd0TmhR?oc=5"
+        "sourceName": "Pophariini",
+        "title": "Setelah Saling Cibir, Mau Apa Lagi untuk Industri Musik?",
+        "publishedAt": "Thu, 06 Aug 2026 10:53:50 GMT",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNzF1TXdDODFscHowQnlMa3BrYnpVa3cyWkVqM2ZZWkRsa2xUTGNleEtwUmhfT01EaEt3RlMwUzBza1JjdWE2Z0JWenc2T185TlhvZkFfb2lMUnhrMmh1UWdKWTdjaDNfMGNDTURtT2RPaWJhN2lFNVI0X1FQZU5lZUl3V1ZCTFk3U09fNw?oc=5"
       },
       "signals": [
         {
           "source": "本地平台",
-          "title": "Guru MANTAP Berinovasi! Aplikasi Pembelajaran Interaktif Permudah Siswa Belajar Seni Musik di Mana Saja",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMXZnY25NVC11eHgyYlE4WWZ5RFRFbDM2N0t6bG5FSmNKczFTV0piRy1TeWlHR3VpSzlfVXFiWExUOHlYdmpvSkh4dHh3V0dTMWJXTlNXN0xEdUxrZ2Zxc1FqSkNSRmtxNGFZVTFUbGVaODdUUFJCQlIwY3VTSTJWZ0hyNjFjSFpZcTVLc2FPZ1F3RjlRVnV0ZFRVY05INlB3OVQ1RGhVUXNOc3phTEFWZzZLT19Qa1R5Z01ON0JqNkJZcWUyZWxQVS1oY19NQk9yZWd0TmhR?oc=5"
+          "title": "Setelah Saling Cibir, Mau Apa Lagi untuk Industri Musik?",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNzF1TXdDODFscHowQnlMa3BrYnpVa3cyWkVqM2ZZWkRsa2xUTGNleEtwUmhfT01EaEt3RlMwUzBza1JjdWE2Z0JWenc2T185TlhvZkFfb2lMUnhrMmh1UWdKWTdjaDNfMGNDTURtT2RPaWJhN2lFNVI0X1FQZU5lZUl3V1ZCTFk3U09fNw?oc=5"
         }
       ]
     },
     {
       "id": 1023,
-      "name": "new pfp😙 …",
-      "originalTitle": "new pfp😙",
+      "name": "Watch this blank canva…",
+      "originalTitle": "Watch this blank canvas turn into a bouquet of roses 💐🎨 Which part was your favorite the messy mixing or the final strokes?",
       "region": "全球",
       "country": "全球",
       "source": [
@@ -960,26 +952,26 @@
       "preview": "",
       "previewTitle": "",
       "previewMeta": "",
-      "prompt": "基于 Instagram 全球 热点内容「new pfp😙\n\n#art #artist #artistsoninstagram #digitalart」提取视觉方向：人物 / 场景 / 热点符号。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
+      "prompt": "基于 Instagram 全球 热点内容「Watch this blank canvas turn into a bouquet of roses 💐🎨\nWhich part was your favorite the messy mixing or the final strokes?#oilpainting #wallart #art」提取视觉方向：赛事 / 应援 / 国家色。生成 9:16 手机锁屏主题壁纸，保留平台热点情绪与当地文化符号，画面高级、干净、可商业化，避免直接复刻达人/明星/品牌素材，顶部留出时钟区域。",
       "reason": "来自 Instagram Hashtag #art 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
       "instagram": {
         "hashtag": "art",
-        "mediaUrl": "https://scontent-sin2-1.cdninstagram.com/v/t51.82787-15/764855070_17992635675007941_1064611394991534118_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qyN9Z8PvfGwQ7kNvwG7Kw4V&_nc_oc=AdqnUudDAHeU6R5WBAmdb-Nanm2JlQcuUGz8Vjz2Sb0O_5d0IDBTQZ6PG3JzGN1IZ38&_nc_zt=23&_nc_ht=scontent-sin2-1.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=dEEyE0cVgDWmXKn8ClBoJQ&oh=00_AQGXKyEZxfiAB_7Sc5V5moQRiPnR0EPbcM3AtA4GNE3QMw&oe=6A78FABC",
-        "publishedAt": "2026-08-05T10:19:03+0000",
-        "url": "https://www.instagram.com/p/Dbp6HTtz56Y/"
+        "mediaUrl": "https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m86/AQPJlSiNc6Qj_fEjn7Ta4cH7cUecObA-qs0sKHjdhJNU_GMAt5Tj5KQvq0twGdGc-IWrJ5UCQmIRVaC7bBNFpCsfXHZy-m_HbMjk0Dk.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_ohc=7CfHfuHsnRMQ7kNvwEF3o7r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjA5Mjk0NDkwMTYxMTkwOSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMywid2F0Y2hfdGltZV9zIjowLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=b146e613f2b94737&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FQTQxQTM1NkJFNkE3MUMyRDJDQUM3NkRCMjI0MUU4RV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FDNEY5MkYyRTVCNjVBN0Q5NzdFNDI4N0U3QUU3QkI1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaKhqnWtuG3BxUCKAJDMywXQDciDEm6XjUYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=LXVUdAqH5PQgm-y_gBPhug&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AQGk9fO_7aoIfprgmin3iLgrDNCNkQ3RX87nEjudiX3fig&oe=6A76621B",
+        "publishedAt": "2026-08-06T10:58:19+0000",
+        "url": "https://www.instagram.com/reel/DbsfTrHNbPW/"
       },
       "signals": [
         {
           "source": "Instagram",
-          "title": "new pfp😙",
-          "url": "https://www.instagram.com/p/Dbp6HTtz56Y/"
+          "title": "Watch this blank canvas turn into a bouquet of roses 💐🎨 Which part was your favorite the messy mixing or the final strokes?",
+          "url": "https://www.instagram.com/reel/DbsfTrHNbPW/"
         }
       ]
     }
   ],
   "regionStats": {
     "印度": {
-      "count": 99,
+      "count": 106,
       "growth": 58,
       "countries": [
         "印度"
@@ -991,8 +983,8 @@
       ]
     },
     "印度尼西亚": {
-      "count": 99,
-      "growth": 31,
+      "count": 106,
+      "growth": 32,
       "countries": [
         "印度尼西亚"
       ],
@@ -1003,8 +995,8 @@
       ]
     },
     "俄罗斯（东欧）": {
-      "count": 80,
-      "growth": 31,
+      "count": 86,
+      "growth": 32,
       "countries": [
         "俄罗斯"
       ],
@@ -1015,8 +1007,8 @@
       ]
     },
     "中东": {
-      "count": 80,
-      "growth": 31,
+      "count": 86,
+      "growth": 32,
       "countries": [
         "沙特阿拉伯",
         "阿联酋"
@@ -1028,7 +1020,7 @@
       ]
     },
     "撒哈拉以南非洲": {
-      "count": 117,
+      "count": 112,
       "growth": 58,
       "countries": [
         "尼日利亚",
@@ -1043,7 +1035,7 @@
       ]
     },
     "南美洲": {
-      "count": 99,
+      "count": 106,
       "growth": 58,
       "countries": [
         "巴西",
@@ -1224,12 +1216,12 @@
     "wallpaper": {
       "libraryType": "wallpaper",
       "generatedAt": "2026-07-16T12:45:00.000Z",
-      "ageDays": 19,
+      "ageDays": 20,
       "minimumIntervalDays": 7,
       "maximumAgeDays": 21,
       "activeWindowDays": 30,
       "recommended": true,
-      "reason": "5 个新的长期热点进入头部，建议人工触发新壁纸批次。",
+      "reason": "3 个新的长期热点进入头部，建议人工触发新壁纸批次。",
       "candidates": [
         {
           "id": 1001,
@@ -1241,13 +1233,13 @@
           "sourceUrl": "https://www.youtube.com/watch?v=PRp5Y543LN0",
           "region": "撒哈拉以南非洲",
           "playabilityScore": 100,
-          "reason": "来自 YouTube 热门榜（南非），播放量 31.9M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "reason": "来自 YouTube 热门榜（南非），播放量 33.8M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
-            "observationCount": 4,
-            "persistenceDays": 3,
+            "observationCount": 5,
+            "persistenceDays": 4,
             "longRunning": true,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
@@ -1260,7 +1252,7 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1004,
+          "id": 1003,
           "key": "youtube:the gaming market is starting to break",
           "name": "The Gaming Market is Starting to Break.",
           "source": [
@@ -1268,14 +1260,14 @@
           ],
           "sourceUrl": "https://www.youtube.com/watch?v=Eo5w2S-h5dI",
           "region": "撒哈拉以南非洲",
-          "playabilityScore": 95,
-          "reason": "来自 YouTube 热门榜（尼日利亚、加纳），播放量 5.1M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "playabilityScore": 100,
+          "reason": "来自 YouTube 热门榜（尼日利亚、加纳），播放量 5.3M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
-            "observationCount": 4,
-            "persistenceDays": 3,
+            "observationCount": 5,
+            "persistenceDays": 4,
             "longRunning": true,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
@@ -1288,22 +1280,22 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1010,
-          "key": "google trends:tiempo",
-          "name": "tiempo",
+          "id": 1012,
+          "key": "wikimedia:одиссея",
+          "name": "Одиссея",
           "source": [
-            "Google Trends"
+            "Wikimedia"
           ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=AR&q=tiempo",
-          "region": "南美洲",
-          "playabilityScore": 81,
-          "reason": "来自 Google Trends 阿根廷 搜索趋势，搜索热度约 20000+。关联新闻源：La Nación / La Nueva Provincia；适合判断地区搜索兴趣和热点持续性。",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B4%D0%B8%D1%81%D1%81%D0%B5%D1%8F_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%2C_2026)",
+          "region": "俄罗斯（东欧）",
+          "playabilityScore": 71,
+          "reason": "来自 俄语 Wikipedia 前一日高访问条目，浏览量约 32K。这是语言市场兴趣信号，不等同于该国家全网热榜，需与 Google Trends、YouTube 或本地媒体交叉验证后再进入模板候选。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
-            "observationCount": 2,
-            "persistenceDays": 4,
+            "observationCount": 4,
+            "persistenceDays": 6,
             "longRunning": true,
             "strongVisualSymbol": false,
             "positiveEmotion": true,
@@ -1318,16 +1310,16 @@
       ],
       "watchlist": [
         {
-          "id": 1008,
-          "key": "google trends:consultar rui sisben ventanilla social",
-          "name": "consultar rui sisben ventanilla social",
+          "id": 1020,
+          "key": "本地平台:inside the jal kamal massacre the bollywood birthday party that ended in 3 bodies",
+          "name": "Inside The Jal Kamal Massacre: The Bollywood Birthday Party That Ended In 3 Bodies",
           "source": [
-            "Google Trends"
+            "本地平台"
           ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=consultar%20rui%20sisben%20ventanilla%20social",
-          "region": "南美洲",
-          "playabilityScore": 96,
-          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：Departamento Nacional de Planeación / Bloomberg Línea；适合判断地区搜索兴趣和热点持续性。",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOXzEwRndOMC1fNkxLM3Q5cmdqN1NrZEZqblhjMTBuUlRKSTFUODlnV1NtbFpvYUVZdWw2cDk2WEViNFFaUnFPSFNramVSZnAyZWdEWXJCRnpaRDVaaWpySFU1ZUhDN2dscGhxRUgxVF9rb1dfcERwaExjaWRhN0VXd0RqZkZVbVQ3LW5jWFM2aVZHazNlV0lCT1BaWUJHSUREcWVxWDM0TFRMb1pOcXJNRjA3bkJnUFllM2pYWUVlMWUydmPSAcsBQVVfeXFMTVFJOUVfeWwzcElieWhaeFFxTnJWcEVFYS1FcjRyWmExU3FUWGtqTFNaZmp3NGNUSk1BbElqcjdCMGlTTEFuOUxabl96YnJ1SklWTzFBM1Q4d2ZNU2JjZEFoTUoxWkc1V0pYWEs4c3lhUzBiSGZJbjQ4dDRQVjk2VV9TazdBcHQzTWNyeXRDbGtIMG5ITWhCODdXa2xBR3l6SnhPeTRWSkxzNmVKVjRIQnp3R0FxSGMtX3g5cklPbmRjXzRLN3NvVl8zVFk?oc=5",
+          "region": "印度",
+          "playabilityScore": 89,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：NDTV。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1346,16 +1338,16 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1003,
-          "key": "youtube:babymonster moon performance video",
-          "name": "BABYMONSTER - 'MOON' PERFORMANCE VIDEO",
+          "id": 1006,
+          "key": "youtube:moonlight yo yo honey singh feat priceless full video",
+          "name": "Moonlight | Yo Yo Honey Singh feat. Priceless | Full Video",
           "source": [
             "YouTube"
           ],
-          "sourceUrl": "https://www.youtube.com/watch?v=LYbHsAsj6i8",
-          "region": "印度尼西亚",
-          "playabilityScore": 88,
-          "reason": "来自 YouTube 热门榜（印度尼西亚、沙特阿拉伯），播放量 2.8M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "sourceUrl": "https://www.youtube.com/watch?v=JF42RpxAEko",
+          "region": "印度",
+          "playabilityScore": 83,
+          "reason": "来自 YouTube 热门榜（印度），播放量 473K。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1374,16 +1366,16 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1021,
-          "key": "本地平台:4th metümnyo festival football tournament undereway at sangphur",
-          "name": "4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR",
+          "id": 1019,
+          "key": "本地平台:invitation to tender process icc men s cricket world cup 2027 marketing pr services",
+          "name": "INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES",
           "source": [
             "本地平台"
           ],
-          "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNDQ2SU01bjBoeThmVzdMY0lnUFdDd3BRRl81WEF6VEthN1lzSnR2bVhPbUU2MkZQN2JfTkQwYm5qN2tVa3ZyMnJYd0JaOGN0NW52amZTQlpyZWhPQk5oaFhreElNZ1d3clhSRWdkSDhucHVsUm9Vc3J5MnRLeW1fU00tSV8xZEdPSVJmc2lxdl92V1o2dVBR?oc=5",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR3MxOWJMbjJQRXNJcDllUXdFd3hPQUJUSDdLTXNXVlJ2YnhPVlh5d2VCRVJzWkRNYl9BMHVUUTJlM2s3OGxPdnViQjU1R0tfS3JYaVRfVmhlbi1OQldveDdmaW05QzFtWUZzaVNBbGdYcGU0RkJrRGVEMWJUNG41NzlFcHU4b0lmSlcyYU9YeXI3ZVhQamJMZzZHOXNTTktjcjkxaUJBMDRrWEFfb25EUXQ1Z0tiZWtvU083amhlazdHdVVp?oc=5",
           "region": "印度",
-          "playabilityScore": 81,
-          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：DIPR Nagaland。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "playabilityScore": 83,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1406,7 +1398,7 @@
     "theme": {
       "libraryType": "theme",
       "generatedAt": "2026-07-27T12:00:00.000Z",
-      "ageDays": 8,
+      "ageDays": 9,
       "minimumIntervalDays": 21,
       "activeWindowDays": 30,
       "recommended": false,
@@ -1422,13 +1414,13 @@
           "sourceUrl": "https://www.youtube.com/watch?v=PRp5Y543LN0",
           "region": "撒哈拉以南非洲",
           "playabilityScore": 100,
-          "reason": "来自 YouTube 热门榜（南非），播放量 31.9M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
+          "reason": "来自 YouTube 热门榜（南非），播放量 33.8M。视觉判断：人物 / 场景 / 热点符号；适合先进入候选池，由设计师二次判断是否转主题模板。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
             "sustainedHeat": true,
-            "observationCount": 4,
-            "persistenceDays": 3,
+            "observationCount": 5,
+            "persistenceDays": 4,
             "longRunning": true,
             "strongVisualSymbol": true,
             "positiveEmotion": true,
@@ -1451,7 +1443,7 @@
           "region": "印度",
           "market": "印度",
           "date": "2026-08-15",
-          "daysUntil": 10,
+          "daysUntil": 9,
           "playabilityScore": 95,
           "reason": "手织棉纹、晨光、城市与自然曲线；以藏红、象牙白、深绿作克制色彩转译，不直接使用国旗或国徽",
           "triggerType": "holiday"
@@ -1467,7 +1459,7 @@
           "region": "印度尼西亚",
           "market": "印度尼西亚",
           "date": "2026-08-17",
-          "daysUntil": 12,
+          "daysUntil": 11,
           "playabilityScore": 94,
           "reason": "珊瑚红、暖白、火山岩与海岛晨光的现代主题系统，不复制国旗、地图或官方标识",
           "triggerType": "holiday"
@@ -1475,16 +1467,16 @@
       ],
       "watchlist": [
         {
-          "id": 1021,
-          "key": "本地平台:4th metümnyo festival football tournament undereway at sangphur",
-          "name": "4th METÜMNYO FESTIVAL FOOTBALL TOURNAMENT UNDEREWAY AT SANGPHUR",
+          "id": 1019,
+          "key": "本地平台:invitation to tender process icc men s cricket world cup 2027 marketing pr services",
+          "name": "INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES",
           "source": [
             "本地平台"
           ],
-          "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNDQ2SU01bjBoeThmVzdMY0lnUFdDd3BRRl81WEF6VEthN1lzSnR2bVhPbUU2MkZQN2JfTkQwYm5qN2tVa3ZyMnJYd0JaOGN0NW52amZTQlpyZWhPQk5oaFhreElNZ1d3clhSRWdkSDhucHVsUm9Vc3J5MnRLeW1fU00tSV8xZEdPSVJmc2lxdl92V1o2dVBR?oc=5",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR3MxOWJMbjJQRXNJcDllUXdFd3hPQUJUSDdLTXNXVlJ2YnhPVlh5d2VCRVJzWkRNYl9BMHVUUTJlM2s3OGxPdnViQjU1R0tfS3JYaVRfVmhlbi1OQldveDdmaW05QzFtWUZzaVNBbGdYcGU0RkJrRGVEMWJUNG41NzlFcHU4b0lmSlcyYU9YeXI3ZVhQamJMZzZHOXNTTktjcjkxaUJBMDRrWEFfb25EUXQ1Z0tiZWtvU083amhlazdHdVVp?oc=5",
           "region": "印度",
-          "playabilityScore": 99,
-          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：DIPR Nagaland。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
+          "playabilityScore": 100,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：核心话题，媒体：ICC。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
@@ -1503,19 +1495,47 @@
           "triggerType": "realtime"
         },
         {
-          "id": 1008,
-          "key": "google trends:consultar rui sisben ventanilla social",
-          "name": "consultar rui sisben ventanilla social",
+          "id": 1021,
+          "key": "本地平台:deepak singh s film chhath selected for indian film festival of melbourne 2026",
+          "name": "Deepak Singh's Film Chhath Selected for Indian Film Festival of Melbourne 2026!",
           "source": [
-            "Google Trends"
+            "本地平台"
           ],
-          "sourceUrl": "https://trends.google.com/trends/explore?geo=CO&q=consultar%20rui%20sisben%20ventanilla%20social",
-          "region": "南美洲",
-          "playabilityScore": 74,
-          "reason": "来自 Google Trends 哥伦比亚 搜索趋势，搜索热度约 5000+。关联新闻源：Departamento Nacional de Planeación / Bloomberg Línea；适合判断地区搜索兴趣和热点持续性。",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVDYwN3VIdWJHcU5BNVZvblV4eVBVTkg1MEJxSWdXQ2NyRDgyMkhOTXBjWV9lU3JPTGJMOFBlSGpoUXdKbnNkRVE4Znh2OVlsaDRoWU5ZdW03X0JCZHdMdTZzY1pXSkpGZmJQbzdkd0FSdHQyNjlDVVJ3WU5FOEx1M2U0VVltNERybmxwd1NqUTRpTzkzS1FYWXdyOUlKcENSUi1BN0hwbmlic2NWUV9NSFFEdVBtTVBHZVd6amdUT2NuZkhrQUQw?oc=5",
+          "region": "印度",
+          "playabilityScore": 99,
+          "reason": "来自 印度 本地媒体/Google News 公开新闻源，分类：垂类补充，媒体：ANI News。适合补充本地语境和文化线索，帮助运营判断热点是否具备视觉转模板价值。",
           "screening": {
             "crossPlatformVerified": false,
             "coreRegionPriority": true,
+            "sustainedHeat": false,
+            "observationCount": 1,
+            "persistenceDays": 0,
+            "longRunning": false,
+            "strongVisualSymbol": true,
+            "positiveEmotion": true,
+            "personalizable": true,
+            "copyrightControllable": true,
+            "lifecycleFit": false,
+            "productionReady": false,
+            "status": "watch"
+          },
+          "triggerType": "realtime"
+        },
+        {
+          "id": 1015,
+          "key": "instagram:study of girl",
+          "name": "Study of girl…",
+          "source": [
+            "Instagram"
+          ],
+          "sourceUrl": "https://www.instagram.com/p/DbsjWIWIGf7/",
+          "region": "全球",
+          "playabilityScore": 73,
+          "reason": "来自 Instagram Hashtag #art 近期媒体，适合判断视觉符号、风格和内容转模板方向。",
+          "screening": {
+            "crossPlatformVerified": false,
+            "coreRegionPriority": false,
             "sustainedHeat": true,
             "observationCount": 1,
             "persistenceDays": 0,
@@ -1547,7 +1567,7 @@
       "status": "connected",
       "connected": true,
       "fetchedCount": 16,
-      "detail": "2026-08-04 日榜成功 8/8 个语言项目",
+      "detail": "2026-08-05 日榜成功 8/8 个语言项目",
       "visibleCount": 4
     },
     {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05T10:17:53.740Z",
+  "updatedAt": "2026-08-06T10:57:07.887Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,7 +45,7 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
@@ -53,9 +53,10 @@
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06"
       ],
-      "observationCount": 7,
+      "observationCount": 8,
       "sources": [
         "YouTube"
       ],
@@ -129,12 +130,13 @@
       "key": "youtube:jumanji open world official trailer",
       "name": "JUMANJI: OPEN WORLD - Official Trailer",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-07-31T05:41:50.906Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
       "observedDates": [
         "2026-07-30",
-        "2026-07-31"
+        "2026-07-31",
+        "2026-08-06"
       ],
-      "observationCount": 2,
+      "observationCount": 3,
       "sources": [
         "YouTube"
       ],
@@ -418,14 +420,15 @@
       "key": "youtube:children of blood and bone official trailer thuso mbedu damson idris amandla stenberg",
       "name": "Children of Blood and Bone | Official Trailer - Thuso Mbedu, Damson Idris, Amandla Stenberg",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
       "observedDates": [
         "2026-07-30",
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "YouTube"
       ],
@@ -967,13 +970,14 @@
       "key": "wikimedia:одиссея",
       "name": "Одиссея",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06"
       ],
-      "observationCount": 3,
+      "observationCount": 4,
       "sources": [
         "Wikimedia"
       ],
@@ -1455,14 +1459,15 @@
       "key": "youtube:exploring my abandoned minecraft server",
       "name": "Exploring My Abandoned Minecraft Server",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "YouTube"
       ],
@@ -1498,14 +1503,15 @@
       "key": "youtube:the gaming market is starting to break",
       "name": "The Gaming Market is Starting to Break.",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "YouTube"
       ],
@@ -2390,6 +2396,297 @@
       "lastSeenAt": "2026-08-05T10:17:53.740Z",
       "observedDates": [
         "2026-08-05"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "youtube:awarapan 2 trailer shivam s rage vishesh emraan disha shabana puran 14th aug": {
+      "key": "youtube:awarapan 2 trailer shivam s rage vishesh emraan disha shabana puran 14th aug",
+      "name": "Awarapan 2 : Trailer: Shivam’s Rage Vishesh | Emraan | Disha | Shabana | Puran | 14th Aug",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度",
+        "沙特阿拉伯",
+        "阿联酋",
+        "印度 / 沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:moonlight yo yo honey singh feat priceless full video": {
+      "key": "youtube:moonlight yo yo honey singh feat priceless full video",
+      "name": "Moonlight | Yo Yo Honey Singh feat. Priceless | Full Video",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:द ल ल": {
+      "key": "google trends:द ल ल",
+      "name": "दिल्ली",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:ржд": {
+      "key": "google trends:ржд",
+      "name": "ржд",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "俄罗斯"
+      ]
+    },
+    "google trends:inter miami vs atletico san luis standings": {
+      "key": "google trends:inter miami vs atletico san luis standings",
+      "name": "inter miami vs atletico san luis standings",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "加纳"
+      ]
+    },
+    "google trends:షక బ అల హసన": {
+      "key": "google trends:షక బ అల హసన",
+      "name": "షకీబ్ అల్ హసన్",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:kementerian sosial republik indonesia": {
+      "key": "google trends:kementerian sosial republik indonesia",
+      "name": "kementerian sosial republik indonesia",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "wikimedia:طرابزون سبور": {
+      "key": "wikimedia:طرابزون سبور",
+      "name": "طرابزون سبور",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "中东"
+      ]
+    },
+    "wikimedia:प रद प र वत": {
+      "key": "wikimedia:प रद प र वत",
+      "name": "प्रदीप रावत",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "instagram:study of girl": {
+      "key": "instagram:study of girl",
+      "name": "Study of girl…",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "wikimedia:hong kong": {
+      "key": "wikimedia:hong kong",
+      "name": "Hong Kong",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "instagram:miwi byler but it s haibane renmei": {
+      "key": "instagram:miwi byler but it s haibane renmei",
+      "name": "Miwi Byler but it’s Haibane Renmei….",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:desenho desenho": {
+      "key": "instagram:desenho desenho",
+      "name": "Desenho desenho",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "本地平台:invitation to tender process icc men s cricket world cup 2027 marketing pr services": {
+      "key": "本地平台:invitation to tender process icc men s cricket world cup 2027 marketing pr services",
+      "name": "INVITATION TO TENDER PROCESS – ICC MEN’S CRICKET WORLD CUP 2027, MARKETING & PR SERVICES",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:inside the jal kamal massacre the bollywood birthday party that ended in 3 bodies": {
+      "key": "本地平台:inside the jal kamal massacre the bollywood birthday party that ended in 3 bodies",
+      "name": "Inside The Jal Kamal Massacre: The Bollywood Birthday Party That Ended In 3 Bodies",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:deepak singh s film chhath selected for indian film festival of melbourne 2026": {
+      "key": "本地平台:deepak singh s film chhath selected for indian film festival of melbourne 2026",
+      "name": "Deepak Singh's Film Chhath Selected for Indian Film Festival of Melbourne 2026!",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:setelah saling cibir mau apa lagi untuk industri musik": {
+      "key": "本地平台:setelah saling cibir mau apa lagi untuk industri musik",
+      "name": "Setelah Saling Cibir, Mau Apa Lagi untuk Industri Musik?",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "instagram:watch this blank canvas turn into a bouquet of roses which part was your favorite the messy mixi": {
+      "key": "instagram:watch this blank canvas turn into a bouquet of roses which part was your favorite the messy mixi",
+      "name": "Watch this blank canvas turn into a bouquet of roses 💐🎨 Which part was your favorite the messy mixing or the final strokes?",
+      "firstSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "observedDates": [
+        "2026-08-06"
       ],
       "observationCount": 1,
       "sources": [
