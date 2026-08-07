@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T10:57:07.887Z",
+  "updatedAt": "2026-08-07T03:50:08.395Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,7 +45,7 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
@@ -54,9 +54,10 @@
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 8,
+      "observationCount": 9,
       "sources": [
         "YouTube"
       ],
@@ -66,7 +67,8 @@
         "肯尼亚",
         "加纳",
         "尼日利亚 / 南非 / 肯尼亚 / 加纳",
-        "南非 / 肯尼亚 / 加纳"
+        "南非 / 肯尼亚 / 加纳",
+        "南非 / 肯尼亚"
       ]
     },
     "youtube:rudeboy and sarkodie blessed alive": {
@@ -420,15 +422,16 @@
       "key": "youtube:children of blood and bone official trailer thuso mbedu damson idris amandla stenberg",
       "name": "Children of Blood and Bone | Official Trailer - Thuso Mbedu, Damson Idris, Amandla Stenberg",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-07-30",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "YouTube"
       ],
@@ -970,14 +973,15 @@
       "key": "wikimedia:одиссея",
       "name": "Одиссея",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 4,
+      "observationCount": 5,
       "sources": [
         "Wikimedia"
       ],
@@ -1021,16 +1025,17 @@
       "key": "wikimedia:piala presiden 2026",
       "name": "Piala Presiden 2026",
       "firstSeenAt": "2026-07-31T05:45:27.995Z",
-      "lastSeenAt": "2026-08-05T10:17:53.740Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-01",
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-07"
       ],
-      "observationCount": 6,
+      "observationCount": 7,
       "sources": [
         "Wikimedia"
       ],
@@ -1459,15 +1464,16 @@
       "key": "youtube:exploring my abandoned minecraft server",
       "name": "Exploring My Abandoned Minecraft Server",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "YouTube"
       ],
@@ -1503,15 +1509,16 @@
       "key": "youtube:the gaming market is starting to break",
       "name": "The Gaming Market is Starting to Break.",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "YouTube"
       ],
@@ -2409,11 +2416,12 @@
       "key": "youtube:awarapan 2 trailer shivam s rage vishesh emraan disha shabana puran 14th aug",
       "name": "Awarapan 2 : Trailer: Shivam’s Rage Vishesh | Emraan | Disha | Shabana | Puran | 14th Aug",
       "firstSeenAt": "2026-08-06T10:57:07.887Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -2540,11 +2548,12 @@
       "key": "wikimedia:प रद प र वत",
       "name": "प्रदीप रावत",
       "firstSeenAt": "2026-08-06T10:57:07.887Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-07"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -2694,6 +2703,299 @@
       ],
       "markets": [
         "全球"
+      ]
+    },
+    "youtube:tera mera rishta continues awarapan 2 emraan disha mithoon saaj sayeed mustafa": {
+      "key": "youtube:tera mera rishta continues awarapan 2 emraan disha mithoon saaj sayeed mustafa",
+      "name": "Tera Mera Rishta Continues | Awarapan 2| Emraan, Disha| Mithoon, Saaj, Sayeed, Mustafa",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度",
+        "阿联酋",
+        "印度 / 阿联酋"
+      ]
+    },
+    "youtube:primetime official trailer hd a24": {
+      "key": "youtube:primetime official trailer hd a24",
+      "name": "Primetime | Official Trailer HD | A24",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "阿根廷",
+        "哥伦比亚",
+        "智利",
+        "阿根廷 / 哥伦比亚 / 智利"
+      ]
+    },
+    "google trends:атака": {
+      "key": "google trends:атака",
+      "name": "атака",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "俄罗斯"
+      ]
+    },
+    "google trends:frente frío": {
+      "key": "google trends:frente frío",
+      "name": "frente frío",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "智利"
+      ]
+    },
+    "google trends:st stithians college student death": {
+      "key": "google trends:st stithians college student death",
+      "name": "st stithians college student death",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "南非"
+      ]
+    },
+    "google trends:eknath shinde": {
+      "key": "google trends:eknath shinde",
+      "name": "eknath shinde",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:enhypen": {
+      "key": "google trends:enhypen",
+      "name": "enhypen",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "wikimedia:عبد الرحمن السيد": {
+      "key": "wikimedia:عبد الرحمن السيد",
+      "name": "عبد الرحمن السيد",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "中东"
+      ]
+    },
+    "gdelt:lauryn hill says her actions speak through ambitious diaspora festival": {
+      "key": "gdelt:lauryn hill says her actions speak through ambitious diaspora festival",
+      "name": "Lauryn Hill Says Her Actions Speak Through Ambitious Diaspora Festival",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "GDELT"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:harnagalla sreekartanniru": {
+      "key": "instagram:harnagalla sreekartanniru",
+      "name": "harnagalla sreekartanniru 🔥 ⚽️",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:pov every night drive deserves a song like this": {
+      "key": "instagram:pov every night drive deserves a song like this",
+      "name": "POV: every night drive deserves a song like this…",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:guys listen asap": {
+      "key": "instagram:guys listen asap",
+      "name": "guys listen asap!",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "gdelt:живая музыка кино под открытым небом необычные экскурсии афиша на выходные в красноярске": {
+      "key": "gdelt:живая музыка кино под открытым небом необычные экскурсии афиша на выходные в красноярске",
+      "name": "Живая музыка , кино под открытым небом , необычные экскурсии : афиша на выходные в Красноярске",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "GDELT"
+      ],
+      "markets": [
+        "俄罗斯"
+      ]
+    },
+    "instagram:el balon mas grande de la historia del futbol": {
+      "key": "instagram:el balon mas grande de la historia del futbol",
+      "name": "El balon mas grande de la historia del futbol",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "本地平台:england unveil squad for first two tests against pakistan": {
+      "key": "本地平台:england unveil squad for first two tests against pakistan",
+      "name": "England unveil squad for first two Tests against Pakistan",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:best of both sides for bollywood s woes blame the ecosystem not the industry": {
+      "key": "本地平台:best of both sides for bollywood s woes blame the ecosystem not the industry",
+      "name": "Best of Both Sides: For Bollywood’s woes, blame the ecosystem, not the industry",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:gallery of 100 in 1 day festival open call for interventions in santiago 1": {
+      "key": "本地平台:gallery of 100 in 1 day festival open call for interventions in santiago 1",
+      "name": "Gallery of 100 in 1 Day Festival: Open call for interventions in Santiago - 1",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:idgitaf ciptakan 5 lagu untuk home sweet loan the musical bawa kisah perjuangan anak muda ke pan": {
+      "key": "本地平台:idgitaf ciptakan 5 lagu untuk home sweet loan the musical bawa kisah perjuangan anak muda ke pan",
+      "name": "Idgitaf Ciptakan 5 Lagu untuk Home Sweet Loan The Musical, Bawa Kisah Perjuangan Anak Muda ke Panggung",
+      "firstSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "observedDates": [
+        "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
       ]
     }
   }
