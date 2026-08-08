@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-07T03:50:08.395Z",
+  "updatedAt": "2026-08-08T02:54:28.813Z",
   "records": {
     "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai": {
       "key": "youtube:alaakaa loova lyrical om dhanush mammootty sai pallavi sreeleela rajkumar sai",
@@ -45,7 +45,7 @@
       "key": "youtube:avengers doomsday official trailer in theaters december 18",
       "name": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "firstSeenAt": "2026-07-30T10:26:31.950Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
         "2026-07-30",
         "2026-07-31",
@@ -55,9 +55,10 @@
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 9,
+      "observationCount": 10,
       "sources": [
         "YouTube"
       ],
@@ -422,16 +423,17 @@
       "key": "youtube:children of blood and bone official trailer thuso mbedu damson idris amandla stenberg",
       "name": "Children of Blood and Bone | Official Trailer - Thuso Mbedu, Damson Idris, Amandla Stenberg",
       "firstSeenAt": "2026-07-30T10:51:39.528Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
         "2026-07-30",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 6,
+      "observationCount": 7,
       "sources": [
         "YouTube"
       ],
@@ -973,15 +975,16 @@
       "key": "wikimedia:одиссея",
       "name": "Одиссея",
       "firstSeenAt": "2026-07-31T05:41:50.906Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
         "2026-07-31",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 5,
+      "observationCount": 6,
       "sources": [
         "Wikimedia"
       ],
@@ -1464,16 +1467,17 @@
       "key": "youtube:exploring my abandoned minecraft server",
       "name": "Exploring My Abandoned Minecraft Server",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 6,
+      "observationCount": 7,
       "sources": [
         "YouTube"
       ],
@@ -1509,16 +1513,17 @@
       "key": "youtube:the gaming market is starting to break",
       "name": "The Gaming Market is Starting to Break.",
       "firstSeenAt": "2026-08-02T09:18:08.115Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
         "2026-08-02",
         "2026-08-03",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 6,
+      "observationCount": 7,
       "sources": [
         "YouTube"
       ],
@@ -1859,11 +1864,12 @@
       "key": "本地平台:bangladesh forms committee to probe reason behind national cricket team s withdrawal from icc me",
       "name": "Bangladesh forms committee to probe reason behind national cricket team’s withdrawal from ICC Men’s T20 World Cup in India",
       "firstSeenAt": "2026-08-03T12:44:50.339Z",
-      "lastSeenAt": "2026-08-03T12:44:50.339Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
-        "2026-08-03"
+        "2026-08-03",
+        "2026-08-08"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "本地平台"
       ],
@@ -2581,11 +2587,12 @@
       "key": "wikimedia:hong kong",
       "name": "Hong Kong",
       "firstSeenAt": "2026-08-06T10:57:07.887Z",
-      "lastSeenAt": "2026-08-06T10:57:07.887Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
-        "2026-08-06"
+        "2026-08-06",
+        "2026-08-08"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -2709,11 +2716,12 @@
       "key": "youtube:tera mera rishta continues awarapan 2 emraan disha mithoon saaj sayeed mustafa",
       "name": "Tera Mera Rishta Continues | Awarapan 2| Emraan, Disha| Mithoon, Saaj, Sayeed, Mustafa",
       "firstSeenAt": "2026-08-07T03:50:08.395Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "YouTube"
       ],
@@ -2826,11 +2834,12 @@
       "key": "wikimedia:عبد الرحمن السيد",
       "name": "عبد الرحمن السيد",
       "firstSeenAt": "2026-08-07T03:50:08.395Z",
-      "lastSeenAt": "2026-08-07T03:50:08.395Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
       "observedDates": [
-        "2026-08-07"
+        "2026-08-07",
+        "2026-08-08"
       ],
-      "observationCount": 1,
+      "observationCount": 2,
       "sources": [
         "Wikimedia"
       ],
@@ -2989,6 +2998,240 @@
       "lastSeenAt": "2026-08-07T03:50:08.395Z",
       "observedDates": [
         "2026-08-07"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "youtube:stray kids this that m v": {
+      "key": "youtube:stray kids this that m v",
+      "name": "Stray Kids \"This & That\" M/V",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "印度尼西亚",
+        "巴西",
+        "阿根廷",
+        "智利",
+        "秘鲁",
+        "俄罗斯",
+        "沙特阿拉伯",
+        "阿联酋",
+        "印度尼西亚 / 巴西 / 阿根廷 / 智利 / 秘鲁 / 俄罗斯 / 沙特阿拉伯 / 阿联酋"
+      ]
+    },
+    "youtube:return to minecraft ft ishowspeed kai": {
+      "key": "youtube:return to minecraft ft ishowspeed kai",
+      "name": "Return To Minecraft ft. iShowSpeed & Kai",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "YouTube"
+      ],
+      "markets": [
+        "肯尼亚",
+        "加纳",
+        "肯尼亚 / 加纳"
+      ]
+    },
+    "google trends:भ रत बन म श र ल क": {
+      "key": "google trends:भ रत बन म श र ल क",
+      "name": "भारत बनाम श्रीलंका",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "google trends:pandang istana": {
+      "key": "google trends:pandang istana",
+      "name": "pandang istana",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "印度尼西亚"
+      ]
+    },
+    "google trends:nanda costa": {
+      "key": "google trends:nanda costa",
+      "name": "nanda costa",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "巴西"
+      ]
+    },
+    "google trends:tigres": {
+      "key": "google trends:tigres",
+      "name": "tigres",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "阿根廷"
+      ]
+    },
+    "google trends:faustino asprilla": {
+      "key": "google trends:faustino asprilla",
+      "name": "faustino asprilla",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Google Trends"
+      ],
+      "markets": [
+        "哥伦比亚"
+      ]
+    },
+    "instagram:ब र ड ड द न ट शर ट खर द कर फक त ४९९ र पय त आमच पत त ग जर त क म प ल क स च वड फ टव अर च य ब ज ल श ": {
+      "key": "instagram:ब र ड ड द न ट शर ट खर द कर फक त ४९९ र पय त आमच पत त ग जर त क म प ल क स च वड फ टव अर च य ब ज ल श ",
+      "name": "💁ब्रँडेड दोन टी-शर्ट खरेदी करा फक्त ४९९ रुपयात.. आमचा पत्ता :- गुजराती कॉम्प्लेक्स ,चावडा फुटवेअर च्या बाजूला, शिरपूर ⬆️",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:design by padmavati creations80 padmavati creations 8871221950": {
+      "key": "instagram:design by padmavati creations80 padmavati creations 8871221950",
+      "name": "Design By - Padmavati_creations80 . Padmavati Creations | 8871221950 . . .",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "instagram:bonalu": {
+      "key": "instagram:bonalu",
+      "name": "Bonalu",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Instagram"
+      ],
+      "markets": [
+        "全球"
+      ]
+    },
+    "wikimedia:अत क अहमद": {
+      "key": "wikimedia:अत क अहमद",
+      "name": "अतीक अहमद",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "Wikimedia"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:why bollywood stayed silent when india s gen z spoke out": {
+      "key": "本地平台:why bollywood stayed silent when india s gen z spoke out",
+      "name": "Why Bollywood stayed silent when India's Gen Z spoke out",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:muslim vendor told to remove hijab at mumbai jain food festival": {
+      "key": "本地平台:muslim vendor told to remove hijab at mumbai jain food festival",
+      "name": "Muslim vendor told to remove hijab at Mumbai Jain food festival",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
+      ],
+      "observationCount": 1,
+      "sources": [
+        "本地平台"
+      ],
+      "markets": [
+        "印度"
+      ]
+    },
+    "本地平台:ungu rilis video musik utara selatan buka perjalanan menuju konser 30 tahun": {
+      "key": "本地平台:ungu rilis video musik utara selatan buka perjalanan menuju konser 30 tahun",
+      "name": "UNGU Rilis Video Musik “Utara-Selatan”, Buka Perjalanan Menuju Konser 30 Tahun",
+      "firstSeenAt": "2026-08-08T02:54:28.813Z",
+      "lastSeenAt": "2026-08-08T02:54:28.813Z",
+      "observedDates": [
+        "2026-08-08"
       ],
       "observationCount": 1,
       "sources": [
